@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National textbooks and other books: Gender in School Textbooks</title>
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
+  --rule:#D5DEE0; --rule-soft:#E8EEEF;
+  --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
+  --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+    --rule:#33454A; --rule-soft:#243337;
+    --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+  --rule:#33454A; --rule-soft:#243337;
+  --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:0;
+  line-height:1.5; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums}
+.tg{background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-variant-numeric:tabular-nums; overflow-x:hidden}
+.tg a{color:var(--accent)}
+.tg :focus-visible{outline:2px solid var(--focus); outline-offset:2px}
+.tg .wrap{max-width:820px; margin:0 auto; padding-inline:16px; padding-block:0 48px}
+.tg .band{background:var(--band); color:var(--band-ink)}
+.tg .bandin{max-width:820px; margin:0 auto; padding:20px 16px 22px}
+.tg .org{font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--band-sub);
+  margin:0 0 10px}
+.tg h1{font-size:clamp(24px,5vw,31px); line-height:1.15; letter-spacing:-.01em; margin:0;
+  color:var(--band-ink)}
+.tg .sub{font-size:15.5px; color:var(--band-sub); margin:8px 0 0; max-width:62ch; line-height:1.55}
+.tg .sub a{color:var(--band-ink)}
+.tg .goldrule{height:4px; background:var(--gold)}
+.tg section{padding-block:28px 26px}
+.tg section + section{border-top:1px solid var(--rule)}
+.tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
+.tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
+.tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
+.tg .note{font-size:13.5px; color:var(--muted); margin-top:12px}
+
+.tg .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:22px 28px;
+  margin:0; padding:0; list-style:none}
+.tg .stat{border-top:3px solid var(--f); padding-top:12px}
+.tg .stat.m{border-top-color:var(--m)}
+.tg .stat.n{border-top-color:var(--brand)}
+.tg .big{display:block; font-size:clamp(36px,8vw,46px); font-weight:700; letter-spacing:-.03em;
+  line-height:1; color:var(--ink)}
+.tg .stat p{font-size:14.5px; margin:8px 0 0}
+
+.tg .chartbox{max-width:680px}
+.tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
+.tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
+.tg .chart .axis{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lab{font-weight:700}
+.tg .chart .cnt{font-weight:400; fill:var(--muted)}
+.tg .chart .val{font-weight:700}
+.tg .chart .bf{fill:var(--f)}
+.tg .chart .bm{fill:var(--m)}
+.tg .chart .few rect{opacity:.45}
+.tg .chart .few .lab{font-weight:400}
+.tg .chart .halo{stroke:var(--paper); stroke-width:5.5}
+.tg .chart .par{stroke:var(--gold); stroke-width:2.5}
+@media (max-width:600px){
+  .tg .chart text{font-size:18px}
+  .tg .chart .axis{font-size:15px}
+}
+.tg .legend{display:flex; gap:8px 18px; flex-wrap:wrap; margin-top:12px; font-size:13px;
+  color:var(--ink-2)}
+.tg .legend span{display:inline-flex; align-items:center; gap:7px}
+.tg .sw{display:inline-block; width:12px; height:12px; border-radius:2px}
+.tg .sw.sf{background:var(--f)} .tg .sw.sm{background:var(--m)}
+.tg .sw.sp{width:3px; height:14px; border-radius:0; background:var(--gold)}
+
+.tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
+  margin-top:14px}
+.tg .filters .q{grid-column:1 / -1}
+.tg label{display:block; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:5px}
+.tg input, .tg select{width:100%; font:inherit; font-size:14.5px; padding:8px 10px;
+  border:1px solid var(--rule); border-radius:6px; background:var(--card); color:var(--ink)}
+.tg .bar{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;
+  margin:16px 0 8px}
+.tg .count{font-size:14px; color:var(--ink-2); margin:0}
+.tg .count b{color:var(--ink)}
+.tg button{font:inherit; font-size:13.5px; cursor:pointer}
+.tg .ghost{padding:6px 12px; border:1px solid var(--rule); border-radius:6px; background:var(--card);
+  color:var(--ink-2)}
+.tg .ghost:disabled{opacity:.45; cursor:default}
+.tg .tscroll{overflow-x:auto; border-top:1px solid var(--rule); -webkit-overflow-scrolling:touch}
+.tg table{width:100%; min-width:760px; border-collapse:collapse; font-size:13.5px}
+.tg th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; padding:10px 10px 8px 0; border-bottom:1px solid var(--rule);
+  white-space:nowrap}
+.tg th button{background:none; border:0; padding:0; color:inherit; font:inherit;
+  letter-spacing:inherit; text-transform:inherit}
+.tg th button::after{content:" \2195"; opacity:.45}
+.tg th[aria-sort="ascending"] button::after{content:" \2191"; opacity:1}
+.tg th[aria-sort="descending"] button::after{content:" \2193"; opacity:1}
+.tg td{padding:8px 10px 8px 0; border-bottom:1px solid var(--rule-soft); color:var(--ink-2);
+  vertical-align:top}
+.tg .num{text-align:right}
+.tg td.num{color:var(--ink); white-space:nowrap}
+.tg td.t{min-width:220px; max-width:340px; color:var(--ink); overflow-wrap:anywhere}
+.tg .mini{display:inline-block; width:56px; height:8px; background:var(--m); border-radius:2px;
+  position:relative; vertical-align:middle; margin-right:8px; overflow:hidden}
+.tg .mini i{position:absolute; inset:0 auto 0 0; background:var(--f)}
+.tg .mini b{position:absolute; top:0; bottom:0; left:50%; width:1px; background:var(--card)}
+.tg .none{color:var(--muted)}
+.tg .pager{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin-top:12px;
+  font-size:13.5px; color:var(--muted)}
+
+.tg dl{margin:8px 0 0; display:grid; grid-template-columns:max-content 1fr; gap:6px 16px;
+  font-size:14.5px; max-width:68ch}
+.tg dt{font-weight:700; color:var(--ink)}
+.tg dd{margin:0; color:var(--ink-2)}
+@media (max-width:520px){ .tg dl{grid-template-columns:1fr} .tg dd{margin-bottom:6px} }
+.tg .cite{background:var(--card); border-left:3px solid var(--brand); padding:10px 14px;
+  font-size:14px; color:var(--ink-2); max-width:68ch}
+.tg .dl{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; padding:0; list-style:none}
+.tg .dl a{display:inline-block; padding:8px 14px; border:1px solid var(--accent); border-radius:6px;
+  text-decoration:none; font-weight:700; font-size:14px}
+.tg .vh{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);
+  white-space:nowrap}
+@media (prefers-reduced-motion: reduce){
+  .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+
+.tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
+.tg .sitename a{color:var(--band-ink);text-decoration:none}
+.tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
+.tg .topnav a{color:var(--band-sub);text-decoration:none;padding:.15rem 0;
+  border-bottom:2px solid transparent}
+.tg .topnav a:hover{color:var(--band-ink)}
+.tg .topnav a[aria-current="page"]{color:var(--band-ink);border-bottom-color:var(--gold)}
+.tg .band :focus-visible{outline-color:var(--gold)}
+.tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
+.tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .chart .ci{stroke:var(--muted);stroke-width:2}
+.tg .chart .pt{fill:var(--f)}
+.tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
+.tg .chart .dot{fill:var(--f);fill-opacity:.85}
+.tg .chart .grid{stroke:var(--rule-soft)}
+.tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
+.tg .chart .sq{fill:var(--ink-2)}
+.tg .legend .sdot{background:var(--f);border-radius:50%}
+.tg .legend .sci{background:var(--muted);height:2px;align-self:center}
+.tg .legend .snew{background:var(--card);border:2px solid var(--f);border-radius:50%}
+.tg .legend .ssq{background:var(--ink-2)}
+.tg details.dt{margin:.6rem 0 1.2rem}
+.tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.tg details.dt table{min-width:0}
+.tg details.dt th{white-space:normal}
+.tg details.dt tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink-2);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top}
+.tg #tg-table td.t{max-width:28ch;white-space:normal;min-width:190px}
+.tg .embed-link{font-size:.85rem;margin:-.4rem 0 1.6rem}
+.tg .embed-link a{color:var(--muted)}
+.tg .wrap.foot{border-top:1px solid var(--rule);margin-top:2.5rem;padding-block:1.2rem}
+.tg.embed .wrap{padding-block:.5rem}
+.tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
+  font-size:.82rem}
+</style>
+</head>
+<body>
+<div class="tg embed"><main class="wrap">
+<h1 class="vh">National textbooks and other books: Gender in School Textbooks</h1>
+<section id="collections" aria-labelledby="h-collections"><h2 id="h-collections">National textbooks and other books</h2><p class="lede">The headline counts national textbooks only. The same measure for teacher guides, readers, programme books, NGO collections and excerpts (sample pages, not whole books), which are not mixed into it.</p><div class="chartbox"><svg class="chart" id="tg-collections" viewBox="0 0 560 383" role="img" aria-labelledby="tg-collections-t tg-collections-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-collections-t">Female share of gendered words by collection</title>
+<desc id="tg-collections-d">National textbooks 36.6%; Teacher guides 44.0%; Readers and supplementary books 34.2%; Programme books 40.5%; Pratham Books 48.1%; The Citizens Foundation 47.4%; Luminos Fund 47.2%; African Storybook 32.7%; Excerpts (sample pages, not whole books) 25.1%</desc>
+<text class="axis" x="0" y="14">0%</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="axis" x="490" y="14" text-anchor="end">100%</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>National textbooks: 36.6% female, 2,369 books</title>
+<text class="lab" x="0" y="42">National textbooks<tspan class="cnt" dx="8">2,369 books</tspan></text>
+<rect class="bf" x="0" y="48" width="179.14" height="13"/>
+<rect class="bm" x="179.14" y="48" width="310.86" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">36.6%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Teacher guides: 44.0% female, 723 books</title>
+<text class="lab" x="0" y="81">Teacher guides<tspan class="cnt" dx="8">723 books</tspan></text>
+<rect class="bf" x="0" y="87" width="215.40" height="13"/>
+<rect class="bm" x="215.40" y="87" width="274.60" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">44.0%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+<g class="row"><title>Readers and supplementary books: 34.2% female, 106 books</title>
+<text class="lab" x="0" y="120">Readers and supplementary books<tspan class="cnt" dx="8">106 books</tspan></text>
+<rect class="bf" x="0" y="126" width="167.43" height="13"/>
+<rect class="bm" x="167.43" y="126" width="322.57" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">34.2%</text>
+<line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+</g>
+<g class="row"><title>Programme books: 40.5% female, 11 books</title>
+<text class="lab" x="0" y="159">Programme books<tspan class="cnt" dx="8">11 books</tspan></text>
+<rect class="bf" x="0" y="165" width="198.65" height="13"/>
+<rect class="bm" x="198.65" y="165" width="291.35" height="13"/>
+<text class="val" x="560" y="176" text-anchor="end">40.5%</text>
+<line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+</g>
+<g class="row"><title>Pratham Books: 48.1% female, 109 books</title>
+<text class="lab" x="0" y="198">Pratham Books<tspan class="cnt" dx="8">109 books</tspan></text>
+<rect class="bf" x="0" y="204" width="235.59" height="13"/>
+<rect class="bm" x="235.59" y="204" width="254.41" height="13"/>
+<text class="val" x="560" y="215" text-anchor="end">48.1%</text>
+<line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+<line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+</g>
+<g class="row"><title>The Citizens Foundation: 47.4% female, 32 books</title>
+<text class="lab" x="0" y="237">The Citizens Foundation<tspan class="cnt" dx="8">32 books</tspan></text>
+<rect class="bf" x="0" y="243" width="232.26" height="13"/>
+<rect class="bm" x="232.26" y="243" width="257.74" height="13"/>
+<text class="val" x="560" y="254" text-anchor="end">47.4%</text>
+<line class="halo" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+<line class="par" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+</g>
+<g class="row"><title>Luminos Fund: 47.2% female, 16 books</title>
+<text class="lab" x="0" y="276">Luminos Fund<tspan class="cnt" dx="8">16 books</tspan></text>
+<rect class="bf" x="0" y="282" width="231.43" height="13"/>
+<rect class="bm" x="231.43" y="282" width="258.57" height="13"/>
+<text class="val" x="560" y="293" text-anchor="end">47.2%</text>
+<line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+<line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+</g>
+<g class="row"><title>African Storybook: 32.7% female, 11 books</title>
+<text class="lab" x="0" y="315">African Storybook<tspan class="cnt" dx="8">11 books</tspan></text>
+<rect class="bf" x="0" y="321" width="160.33" height="13"/>
+<rect class="bm" x="160.33" y="321" width="329.67" height="13"/>
+<text class="val" x="560" y="332" text-anchor="end">32.7%</text>
+<line class="halo" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+<line class="par" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+</g>
+<g class="row"><title>Excerpts (sample pages, not whole books): 25.1% female, 90 books</title>
+<text class="lab" x="0" y="354">Excerpts (sample pages, not whole books)<tspan class="cnt" dx="8">90 books</tspan></text>
+<rect class="bf" x="0" y="360" width="123.14" height="13"/>
+<rect class="bm" x="123.14" y="360" width="366.86" height="13"/>
+<text class="val" x="560" y="371" text-anchor="end">25.1%</text>
+<line class="halo" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
+<line class="par" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
+</g>
+</svg></div><div class="legend" aria-hidden="true"><span><i class="sw sf"></i>Women and girls</span><span><i class="sw sm"></i>Men and boys</span><span><i class="sw sp"></i>Parity (50%)</span></div><details class="dt"><summary>Data table: female share by collection</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by collection, scrolls sideways"><table><caption class="vh">Data table: female share by collection</caption><thead><tr><th scope="col">Collection</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">National textbooks</th><td>2,369</td><td>36.6%</td></tr><tr><th scope="row">Teacher guides</th><td>723</td><td>44.0%</td></tr><tr><th scope="row">Readers and supplementary books</th><td>106</td><td>34.2%</td></tr><tr><th scope="row">Programme books</th><td>11</td><td>40.5%</td></tr><tr><th scope="row">Pratham Books</th><td>109</td><td>48.1%</td></tr><tr><th scope="row">The Citizens Foundation</th><td>32</td><td>47.4%</td></tr><tr><th scope="row">Luminos Fund</th><td>16</td><td>47.2%</td></tr><tr><th scope="row">African Storybook</th><td>11</td><td>32.7%</td></tr><tr><th scope="row">Excerpts (sample pages, not whole books)</th><td>90</td><td>25.1%</td></tr></tbody></table></div></details></section>
+<p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
+</main></div>
+<script>
+(function () {
+  function post() {
+    window.parent.postMessage({tgsEmbed: "collections", height: Math.ceil(document.documentElement.getBoundingClientRect().height)}, "*");
+  }
+  window.addEventListener("load", post);
+  window.addEventListener("resize", post);
+  document.addEventListener("toggle", post, true);
+})();
+</script>
+</body>
+</html>

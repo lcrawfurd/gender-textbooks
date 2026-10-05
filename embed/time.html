@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Over time: Gender in School Textbooks</title>
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
+  --rule:#D5DEE0; --rule-soft:#E8EEEF;
+  --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
+  --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+    --rule:#33454A; --rule-soft:#243337;
+    --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+  --rule:#33454A; --rule-soft:#243337;
+  --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:0;
+  line-height:1.5; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums}
+.tg{background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-variant-numeric:tabular-nums; overflow-x:hidden}
+.tg a{color:var(--accent)}
+.tg :focus-visible{outline:2px solid var(--focus); outline-offset:2px}
+.tg .wrap{max-width:820px; margin:0 auto; padding-inline:16px; padding-block:0 48px}
+.tg .band{background:var(--band); color:var(--band-ink)}
+.tg .bandin{max-width:820px; margin:0 auto; padding:20px 16px 22px}
+.tg .org{font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--band-sub);
+  margin:0 0 10px}
+.tg h1{font-size:clamp(24px,5vw,31px); line-height:1.15; letter-spacing:-.01em; margin:0;
+  color:var(--band-ink)}
+.tg .sub{font-size:15.5px; color:var(--band-sub); margin:8px 0 0; max-width:62ch; line-height:1.55}
+.tg .sub a{color:var(--band-ink)}
+.tg .goldrule{height:4px; background:var(--gold)}
+.tg section{padding-block:28px 26px}
+.tg section + section{border-top:1px solid var(--rule)}
+.tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
+.tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
+.tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
+.tg .note{font-size:13.5px; color:var(--muted); margin-top:12px}
+
+.tg .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:22px 28px;
+  margin:0; padding:0; list-style:none}
+.tg .stat{border-top:3px solid var(--f); padding-top:12px}
+.tg .stat.m{border-top-color:var(--m)}
+.tg .stat.n{border-top-color:var(--brand)}
+.tg .big{display:block; font-size:clamp(36px,8vw,46px); font-weight:700; letter-spacing:-.03em;
+  line-height:1; color:var(--ink)}
+.tg .stat p{font-size:14.5px; margin:8px 0 0}
+
+.tg .chartbox{max-width:680px}
+.tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
+.tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
+.tg .chart .axis{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lab{font-weight:700}
+.tg .chart .cnt{font-weight:400; fill:var(--muted)}
+.tg .chart .val{font-weight:700}
+.tg .chart .bf{fill:var(--f)}
+.tg .chart .bm{fill:var(--m)}
+.tg .chart .few rect{opacity:.45}
+.tg .chart .few .lab{font-weight:400}
+.tg .chart .halo{stroke:var(--paper); stroke-width:5.5}
+.tg .chart .par{stroke:var(--gold); stroke-width:2.5}
+@media (max-width:600px){
+  .tg .chart text{font-size:18px}
+  .tg .chart .axis{font-size:15px}
+}
+.tg .legend{display:flex; gap:8px 18px; flex-wrap:wrap; margin-top:12px; font-size:13px;
+  color:var(--ink-2)}
+.tg .legend span{display:inline-flex; align-items:center; gap:7px}
+.tg .sw{display:inline-block; width:12px; height:12px; border-radius:2px}
+.tg .sw.sf{background:var(--f)} .tg .sw.sm{background:var(--m)}
+.tg .sw.sp{width:3px; height:14px; border-radius:0; background:var(--gold)}
+
+.tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
+  margin-top:14px}
+.tg .filters .q{grid-column:1 / -1}
+.tg label{display:block; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:5px}
+.tg input, .tg select{width:100%; font:inherit; font-size:14.5px; padding:8px 10px;
+  border:1px solid var(--rule); border-radius:6px; background:var(--card); color:var(--ink)}
+.tg .bar{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;
+  margin:16px 0 8px}
+.tg .count{font-size:14px; color:var(--ink-2); margin:0}
+.tg .count b{color:var(--ink)}
+.tg button{font:inherit; font-size:13.5px; cursor:pointer}
+.tg .ghost{padding:6px 12px; border:1px solid var(--rule); border-radius:6px; background:var(--card);
+  color:var(--ink-2)}
+.tg .ghost:disabled{opacity:.45; cursor:default}
+.tg .tscroll{overflow-x:auto; border-top:1px solid var(--rule); -webkit-overflow-scrolling:touch}
+.tg table{width:100%; min-width:760px; border-collapse:collapse; font-size:13.5px}
+.tg th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; padding:10px 10px 8px 0; border-bottom:1px solid var(--rule);
+  white-space:nowrap}
+.tg th button{background:none; border:0; padding:0; color:inherit; font:inherit;
+  letter-spacing:inherit; text-transform:inherit}
+.tg th button::after{content:" \2195"; opacity:.45}
+.tg th[aria-sort="ascending"] button::after{content:" \2191"; opacity:1}
+.tg th[aria-sort="descending"] button::after{content:" \2193"; opacity:1}
+.tg td{padding:8px 10px 8px 0; border-bottom:1px solid var(--rule-soft); color:var(--ink-2);
+  vertical-align:top}
+.tg .num{text-align:right}
+.tg td.num{color:var(--ink); white-space:nowrap}
+.tg td.t{min-width:220px; max-width:340px; color:var(--ink); overflow-wrap:anywhere}
+.tg .mini{display:inline-block; width:56px; height:8px; background:var(--m); border-radius:2px;
+  position:relative; vertical-align:middle; margin-right:8px; overflow:hidden}
+.tg .mini i{position:absolute; inset:0 auto 0 0; background:var(--f)}
+.tg .mini b{position:absolute; top:0; bottom:0; left:50%; width:1px; background:var(--card)}
+.tg .none{color:var(--muted)}
+.tg .pager{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin-top:12px;
+  font-size:13.5px; color:var(--muted)}
+
+.tg dl{margin:8px 0 0; display:grid; grid-template-columns:max-content 1fr; gap:6px 16px;
+  font-size:14.5px; max-width:68ch}
+.tg dt{font-weight:700; color:var(--ink)}
+.tg dd{margin:0; color:var(--ink-2)}
+@media (max-width:520px){ .tg dl{grid-template-columns:1fr} .tg dd{margin-bottom:6px} }
+.tg .cite{background:var(--card); border-left:3px solid var(--brand); padding:10px 14px;
+  font-size:14px; color:var(--ink-2); max-width:68ch}
+.tg .dl{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; padding:0; list-style:none}
+.tg .dl a{display:inline-block; padding:8px 14px; border:1px solid var(--accent); border-radius:6px;
+  text-decoration:none; font-weight:700; font-size:14px}
+.tg .vh{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);
+  white-space:nowrap}
+@media (prefers-reduced-motion: reduce){
+  .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+
+.tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
+.tg .sitename a{color:var(--band-ink);text-decoration:none}
+.tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
+.tg .topnav a{color:var(--band-sub);text-decoration:none;padding:.15rem 0;
+  border-bottom:2px solid transparent}
+.tg .topnav a:hover{color:var(--band-ink)}
+.tg .topnav a[aria-current="page"]{color:var(--band-ink);border-bottom-color:var(--gold)}
+.tg .band :focus-visible{outline-color:var(--gold)}
+.tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
+.tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .chart .ci{stroke:var(--muted);stroke-width:2}
+.tg .chart .pt{fill:var(--f)}
+.tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
+.tg .chart .dot{fill:var(--f);fill-opacity:.85}
+.tg .chart .grid{stroke:var(--rule-soft)}
+.tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
+.tg .chart .sq{fill:var(--ink-2)}
+.tg .legend .sdot{background:var(--f);border-radius:50%}
+.tg .legend .sci{background:var(--muted);height:2px;align-self:center}
+.tg .legend .snew{background:var(--card);border:2px solid var(--f);border-radius:50%}
+.tg .legend .ssq{background:var(--ink-2)}
+.tg details.dt{margin:.6rem 0 1.2rem}
+.tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.tg details.dt table{min-width:0}
+.tg details.dt th{white-space:normal}
+.tg details.dt tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink-2);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top}
+.tg #tg-table td.t{max-width:28ch;white-space:normal;min-width:190px}
+.tg .embed-link{font-size:.85rem;margin:-.4rem 0 1.6rem}
+.tg .embed-link a{color:var(--muted)}
+.tg .wrap.foot{border-top:1px solid var(--rule);margin-top:2.5rem;padding-block:1.2rem}
+.tg.embed .wrap{padding-block:.5rem}
+.tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
+  font-size:.82rem}
+</style>
+</head>
+<body>
+<div class="tg embed"><main class="wrap">
+<h1 class="vh">Over time: Gender in School Textbooks</h1>
+<section id="time" aria-labelledby="h-time"><h2 id="h-time">Over time</h2><p class="lede">National textbooks published from 2000 on (1,401 books; 10 with an earlier year and 90 with no gendered words left out), compared within countries and adjusted for book length. 868 national textbooks have no publication year and are not in this chart.</p><div class="chartbox"><svg class="chart" id="tg-time" viewBox="0 0 560 168" role="img" aria-labelledby="tg-time-t tg-time-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-time-t">Female share by publication period, within countries</title>
+<desc id="tg-time-d">Adjusted female share by period of publication.</desc>
+<text class="axis" x="0.0" y="14" text-anchor="start">30%</text>
+<text class="axis" x="163.3" y="14" text-anchor="middle">40%</text>
+<text class="axis" x="326.7" y="14" text-anchor="middle">50%</text>
+<text class="axis" x="490.0" y="14" text-anchor="end">60%</text>
+<g class="row"><title>2000–09: 45.2% female, 95% interval 34.6–55.8, 76 books</title>
+<text class="lab" x="0" y="38">2000–09<tspan class="cnt" dx="8">76 books</tspan></text>
+<line class="grid" x1="0.0" y1="44.0" x2="0.0" y2="54.0"/>
+<line class="grid" x1="163.3" y1="44.0" x2="163.3" y2="54.0"/>
+<line class="grid" x1="490.0" y1="44.0" x2="490.0" y2="54.0"/>
+<line class="halo" x1="326.7" y1="43.0" x2="326.7" y2="55.0"/>
+<line class="par" x1="326.7" y1="43.0" x2="326.7" y2="55.0"/>
+<line class="ci" x1="75.3" y1="49" x2="421.9" y2="49"/>
+<circle class="pt" cx="248.6" cy="49" r="4.5"/>
+<text class="val" x="560" y="53" text-anchor="end">45.2%</text></g>
+<g class="row"><title>2010–14: 39.4% female, 95% interval 33.7–45.0, 181 books</title>
+<text class="lab" x="0" y="72">2010–14<tspan class="cnt" dx="8">181 books</tspan></text>
+<line class="grid" x1="0.0" y1="78.0" x2="0.0" y2="88.0"/>
+<line class="grid" x1="163.3" y1="78.0" x2="163.3" y2="88.0"/>
+<line class="grid" x1="490.0" y1="78.0" x2="490.0" y2="88.0"/>
+<line class="halo" x1="326.7" y1="77.0" x2="326.7" y2="89.0"/>
+<line class="par" x1="326.7" y1="77.0" x2="326.7" y2="89.0"/>
+<line class="ci" x1="60.1" y1="83" x2="245.5" y2="83"/>
+<circle class="pt" cx="152.9" cy="83" r="4.5"/>
+<text class="val" x="560" y="87" text-anchor="end">39.4%</text></g>
+<g class="row"><title>2015–19: 44.0% female, 95% interval 40.0–47.9, 285 books</title>
+<text class="lab" x="0" y="106">2015–19<tspan class="cnt" dx="8">285 books</tspan></text>
+<line class="grid" x1="0.0" y1="112.0" x2="0.0" y2="122.0"/>
+<line class="grid" x1="163.3" y1="112.0" x2="163.3" y2="122.0"/>
+<line class="grid" x1="490.0" y1="112.0" x2="490.0" y2="122.0"/>
+<line class="halo" x1="326.7" y1="111.0" x2="326.7" y2="123.0"/>
+<line class="par" x1="326.7" y1="111.0" x2="326.7" y2="123.0"/>
+<line class="ci" x1="163.8" y1="117" x2="292.5" y2="117"/>
+<circle class="pt" cx="228.2" cy="117" r="4.5"/>
+<text class="val" x="560" y="121" text-anchor="end">44.0%</text></g>
+<g class="row"><title>2020 on: 40.8% female, 95% interval 38.6–42.9, 859 books</title>
+<text class="lab" x="0" y="140">2020 on<tspan class="cnt" dx="8">859 books</tspan></text>
+<line class="grid" x1="0.0" y1="146.0" x2="0.0" y2="156.0"/>
+<line class="grid" x1="163.3" y1="146.0" x2="163.3" y2="156.0"/>
+<line class="grid" x1="490.0" y1="146.0" x2="490.0" y2="156.0"/>
+<line class="halo" x1="326.7" y1="145.0" x2="326.7" y2="157.0"/>
+<line class="par" x1="326.7" y1="145.0" x2="326.7" y2="157.0"/>
+<line class="ci" x1="140.5" y1="151" x2="211.0" y2="151"/>
+<circle class="pt" cx="175.7" cy="151" r="4.5"/>
+<text class="val" x="560" y="155" text-anchor="end">40.8%</text></g>
+</svg></div><div class="legend" aria-hidden="true"><span><i class="sw sdot"></i>Adjusted female share</span><span><i class="sw sci"></i>95% interval</span><span><i class="sw sp"></i>Parity (50%)</span></div><p class="note">The female share changes by +1.2 points a decade within countries (95% interval −3.6 to +6.0), so the data cannot rule out no change.</p><details class="dt"><summary>Data table: adjusted female share by period of publication</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by period of publication, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by period of publication</caption><thead><tr><th scope="col">Period</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">2000–09</th><td>45.2%</td><td>34.6–55.8</td><td>76</td></tr><tr><th scope="row">2010–14</th><td>39.4%</td><td>33.7–45.0</td><td>181</td></tr><tr><th scope="row">2015–19</th><td>44.0%</td><td>40.0–47.9</td><td>285</td></tr><tr><th scope="row">2020 on</th><td>40.8%</td><td>38.6–42.9</td><td>859</td></tr></tbody></table></div></details></section>
+<p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
+</main></div>
+<script>
+(function () {
+  function post() {
+    window.parent.postMessage({tgsEmbed: "time", height: Math.ceil(document.documentElement.getBoundingClientRect().height)}, "*");
+  }
+  window.addEventListener("load", post);
+  window.addEventListener("resize", post);
+  document.addEventListener("toggle", post, true);
+})();
+</script>
+</body>
+</html>

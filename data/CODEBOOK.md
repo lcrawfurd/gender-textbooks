@@ -4,8 +4,8 @@ One row per scored book; a book found more than once appears once (see search/v1
 
 | Column | Meaning |
 |---|---|
-| `id` | Stable book identifier: the paper corpus's id, or `s-` and the first 16 characters of the file's SHA-256 for a search book. |
-| `file_sha256` | SHA-256 of the book's file (for some of the paper's books, of its text file, when no PDF was kept). |
+| `id` | Stable book identifier: the paper corpus's id, or `s-` and the first 16 characters of the file's SHA-256 for a search book, or `c-` and the first 16 characters of the SHA-1 of the sorted ids of its files for a book that was published as chapter files and combined into one (see `parts`). |
+| `file_sha256` | SHA-256 of the book's file (for some of the paper's books, of its text file, when no PDF was kept). Empty for a combined book, which has several files. |
 | `title` | Title: as recorded at the source for search books; built from the archive path (country · grade · subject · file) for the paper's books and NGO collections. |
 | `collection` | `national` (official English student textbooks: every headline result uses these only), `teacher-guides`, `readers`, `programme`, `excerpts` (files of a few pages from a source that posts only sample pages of each book, Lebanon's curriculum centre: not whole books, so in no headline or national result, whatever their kind), or an NGO collection. |
 | `origin` | `paper-2024` (the 2024 paper's corpus), an NGO collection, or `search` (the systematic search, 2026). |
@@ -35,3 +35,4 @@ One row per scored book; a book found more than once appears once (see search/v1
 | `male_object` | Male words that are a grammatical object. |
 | `occupations_json` | Occupations named near a gendered word, as JSON: term, category and female and male counts. |
 | `source_url` | Where the book was found: a link to the file itself for search books and the Luminos collection; for the paper's books, the page of the country's source (not a link to the book); empty where none is recorded. Books are never hosted here. |
+| `parts` | Files the book was made of: 1 for a book that is one file; more for a book published as one file per chapter ("title: chapter 3"), whose chapters are combined into one row with their words and gendered words added, the title before the chapter marker, and the first file's link. Sections, parts, units and volumes are not combined. |

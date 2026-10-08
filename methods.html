@@ -12,6 +12,7 @@
   --rule:#D5DEE0; --rule-soft:#E8EEEF;
   --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
   --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f-text:#007590; --m-text:#946000;
   --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
   --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -22,6 +23,7 @@
     --rule:#33454A; --rule-soft:#243337;
     --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
     --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f-text:#3DB8D3; --m-text:#D98F2E;
     --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
   }
 }
@@ -31,6 +33,7 @@
   --rule:#33454A; --rule-soft:#243337;
   --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
   --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f-text:#3DB8D3; --m-text:#D98F2E;
   --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
 }
 *{box-sizing:border-box}
@@ -84,12 +87,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg .chart text{font-size:18px}
   .tg .chart .axis{font-size:15px}
 }
-.tg .legend{display:flex; gap:8px 18px; flex-wrap:wrap; margin-top:12px; font-size:13px;
-  color:var(--ink-2)}
-.tg .legend span{display:inline-flex; align-items:center; gap:7px}
-.tg .sw{display:inline-block; width:12px; height:12px; border-radius:2px}
-.tg .sw.sf{background:var(--f)} .tg .sw.sm{background:var(--m)}
-.tg .sw.sp{width:3px; height:14px; border-radius:0; background:var(--gold)}
 
 .tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
   margin-top:14px}
@@ -162,10 +159,34 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
-.tg .legend .sdot{background:var(--f);border-radius:50%}
-.tg .legend .sci{background:var(--muted);height:2px;align-self:center}
-.tg .legend .snew{background:var(--card);border:2px solid var(--f);border-radius:50%}
-.tg .legend .ssq{background:var(--ink-2)}
+.tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
+  stroke-width:3px; stroke-linejoin:round}
+.tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
+.tg .chart .dl-ci{fill:var(--muted)} .tg .chart .dl-sq,.tg .chart .dl-fit{fill:var(--ink-2)}
+.tg .chart .dl-par{fill:var(--muted)}
+.tg .chart .plab{font-weight:700; fill:var(--muted)}
+.tg .chart .ytitle{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lead{stroke:var(--muted); stroke-width:1}
+@media (max-width:600px){ .tg .chart .dl,.tg .chart .ytitle{font-size:15px} }
+.tg .chart.map .dl,.tg .chart.map .axis{font-size:11.5px}
+@media (max-width:600px){ .tg .chart.map .dl,.tg .chart.map .axis{font-size:18px} }
+.tg .chart.map .ct{stroke:var(--paper);stroke-width:.6;stroke-linejoin:round;fill-rule:evenodd}
+.tg .chart.map .f{fill:var(--f)}
+.tg .chart.map .m{fill:var(--m)}
+.tg .chart.map .none{fill:var(--rule)}
+.tg .chart.map .ct[tabindex]{cursor:pointer}
+.tg .chart.map.js .ct:focus{outline:none}
+.tg .chart.map .hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;
+  pointer-events:none}
+.tg .chart .hatch-bg{fill:var(--rule)}
+.tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .gs-f{stop-color:var(--f)}
+.tg .chart .gs-m{stop-color:var(--m)}
+.tg .chart .swatch{stroke:var(--rule)}
+.tg .chart .swatch.none{fill:var(--rule)}
+.tg .chart .dl-key{fill:var(--ink-2);font-weight:400}
+.tg .mapread{min-height:1.6em;margin:6px 0 0;font-size:13.5px;color:var(--ink-2)}
+.tg tr.hl th,.tg tr.hl td{background:var(--accent-soft)}
 .tg details.dt{margin:.6rem 0 1.2rem}
 .tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
 .tg details.dt table{min-width:0}
@@ -197,25 +218,25 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <p>Each book&rsquo;s text is matched against the paper&rsquo;s list of gendered nouns and pronouns
   (&ldquo;she&rdquo;, &ldquo;mother&rdquo;, &ldquo;queen&rdquo;; &ldquo;he&rdquo;,
   &ldquo;father&rdquo;, &ldquo;king&rdquo;&hellip;). The female share is female words divided by
-  female and male words. 122 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
+  female and male words. 115 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
   the <code>tgs</code> software, on a larger set of books, so they differ from the published
-  paper. 253 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv).</p>
+  paper. 253 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). 76 chapter files are counted as the 7 books they belong to.</p>
 <h2>Which books count</h2>
 <p>The headline and every cross-country result use national textbooks only, the paper&rsquo;s own
   rule: official English student textbooks. That is the paper&rsquo;s corpus plus the student books
   the 2026 systematic search found on ministry and agency sites and their official mirrors
-  (1,122 books). Teacher guides, readers, programme books and NGO
-  collections are shown beside them, never mixed in. 90 files from Lebanon&rsquo;s curriculum centre are excerpts (5 to 22 pages each), not whole textbooks; they are shown beside the national textbooks as their own group and are in no national result, so Lebanon is not ranked. For 47 of the search&rsquo;s books the title names a different kind from the search&rsquo;s guess from the file (a &ldquo;Student Textbook&rdquo; filed as a teacher&rsquo;s guide, a &ldquo;Teacher&rsquo;s Guide&rdquo; filed as a student book), and the title is taken; for 2 files whose titles contradict their contents, the file is followed.</p>
+  (1,085 books). Teacher guides, readers, programme books and NGO
+  collections are shown beside them, never mixed in. 90 files from Lebanon&rsquo;s curriculum centre are excerpts (5 to 22 pages each), not whole textbooks; they are shown beside the national textbooks as their own group and are in no national result, so Lebanon is not ranked. For 22 of the search&rsquo;s books the title names a different kind from the search&rsquo;s guess from the file (a &ldquo;Student Textbook&rdquo; filed as a teacher&rsquo;s guide, a &ldquo;Teacher&rsquo;s Guide&rdquo; filed as a student book), and the title is taken; for 2 files whose titles contradict their contents, the file is followed.</p>
 <h2>Subjects and grades</h2>
 <p>New books&rsquo; subject and grade labels are mapped to the paper&rsquo;s 13 subject groups and
-  to grades 1&ndash;13 by rule, then by hand. Of 2,369 national textbooks,
+  to grades 1&ndash;13 by rule, then by hand. Of 2,326 national textbooks,
   90 have no subject group and 120
   have no grade; books missing either count in the headline but not in the
   adjusted results.</p>
 <h2>The adjustment</h2>
 <p>Country and subject shares come from the paper&rsquo;s regression of each book&rsquo;s female
   share on country, subject group, grade and the log of its length
-  (2,068 books with a country, a subject group, a grade and at least one gendered
+  (2,032 books with a country, a subject group, a grade and at least one gendered
   word), summarised as the average prediction for each country or subject
   (Stata&rsquo;s <code>margins</code>), with 95% intervals. Countries with fewer than 5
   books in the model share one level of the country factor, as the paper&rsquo;s
@@ -232,7 +253,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Over time</h2>
 <p>The time chart compares books within countries: a regression of each book&rsquo;s share on its
   country, its period of publication and the log of its length (no subject or grade), on books
-  with a publication year from 2000 on (1,401); 10 books with an earlier year are left out, since some of those years are misread; 90 books with no gendered words are left out (the other 32 are among those with no year). 868 national textbooks have no publication year and are not in the time chart. The change
+  with a publication year from 2000 on (1,370); 10 books with an earlier year are left out, since some of those years are misread; 84 books with no gendered words are left out (the other 31 are among those with no year). 862 national textbooks have no publication year and are not in the time chart. The change
   per decade comes from a second regression that uses the year, in decades, in place of the
   period.</p>
 <h2>Limits</h2>
@@ -249,15 +270,15 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   Student&rsquo;s <em>t</em> for its interval, and is not the paper&rsquo;s book-level regression
   (which found a positive link with income).</p>
 <h2>Changes</h2>
-<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
+<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
 
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/countries.html</code>, height 2373</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3366</li><li><code>embed/collections.html</code>, height 1018</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2332</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/collections.html</code>, height 1018</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
-  width=&quot;100%&quot; height=&quot;2373&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>
+  width=&quot;100%&quot; height=&quot;2332&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>
 <p>Each page also tells the page that holds it how tall it is. To have the frames fit their
   charts, add this once to that page, after the frames:</p>
 <pre><code class="snip" tabindex="0">&lt;script&gt;

@@ -12,6 +12,7 @@
   --rule:#D5DEE0; --rule-soft:#E8EEEF;
   --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
   --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f-text:#007590; --m-text:#946000;
   --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
   --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -22,6 +23,7 @@
     --rule:#33454A; --rule-soft:#243337;
     --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
     --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f-text:#3DB8D3; --m-text:#D98F2E;
     --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
   }
 }
@@ -31,6 +33,7 @@
   --rule:#33454A; --rule-soft:#243337;
   --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
   --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f-text:#3DB8D3; --m-text:#D98F2E;
   --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
 }
 *{box-sizing:border-box}
@@ -84,12 +87,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg .chart text{font-size:18px}
   .tg .chart .axis{font-size:15px}
 }
-.tg .legend{display:flex; gap:8px 18px; flex-wrap:wrap; margin-top:12px; font-size:13px;
-  color:var(--ink-2)}
-.tg .legend span{display:inline-flex; align-items:center; gap:7px}
-.tg .sw{display:inline-block; width:12px; height:12px; border-radius:2px}
-.tg .sw.sf{background:var(--f)} .tg .sw.sm{background:var(--m)}
-.tg .sw.sp{width:3px; height:14px; border-radius:0; background:var(--gold)}
 
 .tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
   margin-top:14px}
@@ -162,10 +159,34 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
-.tg .legend .sdot{background:var(--f);border-radius:50%}
-.tg .legend .sci{background:var(--muted);height:2px;align-self:center}
-.tg .legend .snew{background:var(--card);border:2px solid var(--f);border-radius:50%}
-.tg .legend .ssq{background:var(--ink-2)}
+.tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
+  stroke-width:3px; stroke-linejoin:round}
+.tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
+.tg .chart .dl-ci{fill:var(--muted)} .tg .chart .dl-sq,.tg .chart .dl-fit{fill:var(--ink-2)}
+.tg .chart .dl-par{fill:var(--muted)}
+.tg .chart .plab{font-weight:700; fill:var(--muted)}
+.tg .chart .ytitle{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lead{stroke:var(--muted); stroke-width:1}
+@media (max-width:600px){ .tg .chart .dl,.tg .chart .ytitle{font-size:15px} }
+.tg .chart.map .dl,.tg .chart.map .axis{font-size:11.5px}
+@media (max-width:600px){ .tg .chart.map .dl,.tg .chart.map .axis{font-size:18px} }
+.tg .chart.map .ct{stroke:var(--paper);stroke-width:.6;stroke-linejoin:round;fill-rule:evenodd}
+.tg .chart.map .f{fill:var(--f)}
+.tg .chart.map .m{fill:var(--m)}
+.tg .chart.map .none{fill:var(--rule)}
+.tg .chart.map .ct[tabindex]{cursor:pointer}
+.tg .chart.map.js .ct:focus{outline:none}
+.tg .chart.map .hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;
+  pointer-events:none}
+.tg .chart .hatch-bg{fill:var(--rule)}
+.tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .gs-f{stop-color:var(--f)}
+.tg .chart .gs-m{stop-color:var(--m)}
+.tg .chart .swatch{stroke:var(--rule)}
+.tg .chart .swatch.none{fill:var(--rule)}
+.tg .chart .dl-key{fill:var(--ink-2);font-weight:400}
+.tg .mapread{min-height:1.6em;margin:6px 0 0;font-size:13.5px;color:var(--ink-2)}
+.tg tr.hl th,.tg tr.hl td{background:var(--accent-soft)}
 .tg details.dt{margin:.6rem 0 1.2rem}
 .tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
 .tg details.dt table{min-width:0}

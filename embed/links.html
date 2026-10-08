@@ -11,6 +11,7 @@
   --rule:#D5DEE0; --rule-soft:#E8EEEF;
   --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
   --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f-text:#007590; --m-text:#946000;
   --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
   --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -21,6 +22,7 @@
     --rule:#33454A; --rule-soft:#243337;
     --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
     --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f-text:#3DB8D3; --m-text:#D98F2E;
     --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
   }
 }
@@ -30,6 +32,7 @@
   --rule:#33454A; --rule-soft:#243337;
   --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
   --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f-text:#3DB8D3; --m-text:#D98F2E;
   --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
 }
 *{box-sizing:border-box}
@@ -83,12 +86,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg .chart text{font-size:18px}
   .tg .chart .axis{font-size:15px}
 }
-.tg .legend{display:flex; gap:8px 18px; flex-wrap:wrap; margin-top:12px; font-size:13px;
-  color:var(--ink-2)}
-.tg .legend span{display:inline-flex; align-items:center; gap:7px}
-.tg .sw{display:inline-block; width:12px; height:12px; border-radius:2px}
-.tg .sw.sf{background:var(--f)} .tg .sw.sm{background:var(--m)}
-.tg .sw.sp{width:3px; height:14px; border-radius:0; background:var(--gold)}
 
 .tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
   margin-top:14px}
@@ -161,10 +158,34 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
-.tg .legend .sdot{background:var(--f);border-radius:50%}
-.tg .legend .sci{background:var(--muted);height:2px;align-self:center}
-.tg .legend .snew{background:var(--card);border:2px solid var(--f);border-radius:50%}
-.tg .legend .ssq{background:var(--ink-2)}
+.tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
+  stroke-width:3px; stroke-linejoin:round}
+.tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
+.tg .chart .dl-ci{fill:var(--muted)} .tg .chart .dl-sq,.tg .chart .dl-fit{fill:var(--ink-2)}
+.tg .chart .dl-par{fill:var(--muted)}
+.tg .chart .plab{font-weight:700; fill:var(--muted)}
+.tg .chart .ytitle{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lead{stroke:var(--muted); stroke-width:1}
+@media (max-width:600px){ .tg .chart .dl,.tg .chart .ytitle{font-size:15px} }
+.tg .chart.map .dl,.tg .chart.map .axis{font-size:11.5px}
+@media (max-width:600px){ .tg .chart.map .dl,.tg .chart.map .axis{font-size:18px} }
+.tg .chart.map .ct{stroke:var(--paper);stroke-width:.6;stroke-linejoin:round;fill-rule:evenodd}
+.tg .chart.map .f{fill:var(--f)}
+.tg .chart.map .m{fill:var(--m)}
+.tg .chart.map .none{fill:var(--rule)}
+.tg .chart.map .ct[tabindex]{cursor:pointer}
+.tg .chart.map.js .ct:focus{outline:none}
+.tg .chart.map .hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;
+  pointer-events:none}
+.tg .chart .hatch-bg{fill:var(--rule)}
+.tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .gs-f{stop-color:var(--f)}
+.tg .chart .gs-m{stop-color:var(--m)}
+.tg .chart .swatch{stroke:var(--rule)}
+.tg .chart .swatch.none{fill:var(--rule)}
+.tg .chart .dl-key{fill:var(--ink-2);font-weight:400}
+.tg .mapread{min-height:1.6em;margin:6px 0 0;font-size:13.5px;color:var(--ink-2)}
+.tg tr.hl th,.tg tr.hl td{background:var(--accent-soft)}
 .tg details.dt{margin:.6rem 0 1.2rem}
 .tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
 .tg details.dt table{min-width:0}
@@ -184,289 +205,297 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <body>
 <div class="tg embed"><main class="wrap">
 <h1 class="vh">Country characteristics: Gender in School Textbooks</h1>
-<section id="links" aria-labelledby="h-links"><h2 id="h-links">Country characteristics</h2><p class="lede">Each country&rsquo;s adjusted share against its income and measures of women&rsquo;s schooling, representation and work (World Bank, most recent year), and the pooled share by region and income group.</p><h3>Income</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-log_gdp" viewBox="0 0 560 300" role="img" aria-labelledby="tg-link-log_gdp-t tg-link-log_gdp-d" preserveAspectRatio="xMinYMin meet">
+<section id="links" aria-labelledby="h-links"><h2 id="h-links">Country characteristics</h2><p class="lede">Each country&rsquo;s adjusted share against its income and measures of women&rsquo;s schooling, representation and work (World Bank, most recent year), and the pooled share by region and income group.</p><h3>Income</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-log_gdp" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-log_gdp-t tg-link-log_gdp-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-log_gdp-t">Adjusted female share against GDP per head, PPP dollars (log scale)</title>
-<desc id="tg-link-log_gdp-d">41 countries plotted. A doubling of GDP per head goes with a change of −1.13 points (95% interval −2.76 to +0.51), correlation −0.22, so the data cannot rule out no link. No value for South Sudan; Taiwan, China.</desc>
-<defs><clipPath id="tg-link-log_gdp-clip"><rect x="46" y="12" width="502" height="242"/></clipPath></defs>
-<line class="grid" x1="46" y1="254.0" x2="548" y2="254.0"/>
-<text class="axis" x="40" y="258.0" text-anchor="end">20%</text>
-<line class="grid" x1="46" y1="205.6" x2="548" y2="205.6"/>
-<text class="axis" x="40" y="209.6" text-anchor="end">30%</text>
-<line class="grid" x1="46" y1="157.2" x2="548" y2="157.2"/>
-<text class="axis" x="40" y="161.2" text-anchor="end">40%</text>
-<line class="grid" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<text class="axis" x="40" y="112.8" text-anchor="end">50%</text>
-<line class="grid" x1="46" y1="60.4" x2="548" y2="60.4"/>
-<text class="axis" x="40" y="64.4" text-anchor="end">60%</text>
-<line class="grid" x1="46" y1="12.0" x2="548" y2="12.0"/>
-<text class="axis" x="40" y="16.0" text-anchor="end">70%</text>
-<line class="grid" x1="76.6" y1="12" x2="76.6" y2="254"/>
-<text class="axis" x="76.6" y="272" text-anchor="middle">$2k</text>
-<line class="grid" x1="186.7" y1="12" x2="186.7" y2="254"/>
-<text class="axis" x="186.7" y="272" text-anchor="middle">$5k</text>
-<line class="grid" x1="270.0" y1="12" x2="270.0" y2="254"/>
-<text class="axis" x="270.0" y="272" text-anchor="middle">$10k</text>
-<line class="grid" x1="353.2" y1="12" x2="353.2" y2="254"/>
-<text class="axis" x="353.2" y="272" text-anchor="middle">$20k</text>
-<line class="grid" x1="463.3" y1="12" x2="463.3" y2="254"/>
-<text class="axis" x="463.3" y="272" text-anchor="middle">$50k</text>
-<line class="grid" x1="546.6" y1="12" x2="546.6" y2="254"/>
-<text class="axis" x="546.6" y="272" text-anchor="middle">$100k</text>
-<text class="axis" x="297.0" y="296" text-anchor="middle">GDP per head, PPP dollars (log scale)</text>
-<line class="par" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<line class="fitline" clip-path="url(#tg-link-log_gdp-clip)" x1="46.0" y1="133.6" x2="548.0" y2="166.5"/>
-<circle class="dot" cx="518.2" cy="238.2" r="5"><title>Brunei Darussalam: 23.3% female</title></circle>
-<circle class="dot" cx="377.1" cy="218.3" r="5"><title>Maldives: 27.4% female</title></circle>
-<circle class="dot" cx="315.3" cy="206.8" r="5"><title>Sri Lanka: 29.8% female</title></circle>
-<circle class="dot" cx="200.7" cy="204.8" r="5"><title>Pakistan: 30.2% female</title></circle>
-<circle class="dot" cx="97.6" cy="192.4" r="5"><title>Solomon Islands: 32.7% female</title></circle>
-<circle class="dot" cx="188.1" cy="181.5" r="5"><title>Tajikistan: 35.0% female</title></circle>
-<circle class="dot" cx="407.5" cy="181.3" r="5"><title>St. Kitts and Nevis: 35.0% female</title></circle>
-<circle class="dot" cx="270.4" cy="179.5" r="5"><title>India: 35.4% female</title></circle>
-<circle class="dot" cx="252.9" cy="179.0" r="5"><title>Bangladesh: 35.5% female</title></circle>
-<circle class="dot" cx="331.9" cy="174.7" r="5"><title>Bhutan: 36.4% female</title></circle>
-<circle class="dot" cx="68.8" cy="167.3" r="5"><title>Sudan: 37.9% female</title></circle>
-<circle class="dot" cx="242.6" cy="164.1" r="5"><title>Samoa: 38.6% female</title></circle>
-<circle class="dot" cx="313.0" cy="162.7" r="5"><title>Ecuador: 38.9% female</title></circle>
-<circle class="dot" cx="459.0" cy="159.9" r="5"><title>Kuwait: 39.4% female</title></circle>
-<circle class="dot" cx="431.0" cy="159.5" r="5"><title>Greece: 39.5% female</title></circle>
-<circle class="dot" cx="176.1" cy="154.7" r="5"><title>Syrian Arab Republic: 40.5% female</title></circle>
-<circle class="dot" cx="167.8" cy="154.3" r="5"><title>West Bank and Gaza: 40.6% female</title></circle>
-<circle class="dot" cx="485.5" cy="151.5" r="5"><title>Australia: 41.2% female</title></circle>
-<circle class="dot" cx="279.2" cy="150.6" r="5"><title>Jordan: 41.4% female</title></circle>
-<circle class="dot" cx="245.3" cy="149.6" r="5"><title>Nigeria: 41.6% female</title></circle>
-<circle class="dot" cx="424.3" cy="149.5" r="5"><title>Oman: 41.6% female</title></circle>
-<circle class="dot" cx="306.8" cy="149.0" r="5"><title>South Africa: 41.7% female</title></circle>
-<circle class="dot" cx="132.1" cy="146.4" r="5"><title>Sierra Leone: 42.2% female</title></circle>
-<circle class="dot" cx="129.1" cy="146.0" r="5"><title>Ethiopia: 42.3% female</title></circle>
-<circle class="dot" cx="472.6" cy="144.2" r="5"><title>United Kingdom: 42.7% female</title></circle>
-<circle class="dot" cx="301.6" cy="143.6" r="5"><title>Tunisia: 42.8% female</title></circle>
-<circle class="dot" cx="515.1" cy="143.2" r="5"><title>United States: 42.9% female</title></circle>
-<circle class="dot" cx="124.6" cy="142.4" r="5"><title>Uganda: 43.0% female</title></circle>
-<circle class="dot" cx="525.2" cy="141.0" r="5"><title>Guyana: 43.4% female</title></circle>
-<circle class="dot" cx="366.4" cy="140.5" r="5"><title>Azerbaijan: 43.5% female</title></circle>
-<circle class="dot" cx="400.6" cy="140.3" r="5"><title>Belarus: 43.5% female</title></circle>
-<circle class="dot" cx="145.8" cy="137.2" r="5"><title>Rwanda: 44.1% female</title></circle>
-<circle class="dot" cx="233.2" cy="122.5" r="5"><title>Ghana: 47.2% female</title></circle>
-<circle class="dot" cx="193.1" cy="118.8" r="5"><title>Nepal: 47.9% female</title></circle>
-<circle class="dot" cx="319.4" cy="117.7" r="5"><title>Indonesia: 48.2% female</title></circle>
-<circle class="dot" cx="208.5" cy="113.0" r="5"><title>Kenya: 49.1% female</title></circle>
-<circle class="dot" cx="428.1" cy="109.7" r="5"><title>Türkiye: 49.8% female</title></circle>
-<circle class="dot" cx="232.2" cy="108.4" r="5"><title>Cambodia: 50.1% female</title></circle>
-<circle class="dot" cx="139.1" cy="90.2" r="5"><title>Kiribati: 53.8% female</title></circle>
-<circle class="dot" cx="172.8" cy="68.8" r="5"><title>Papua New Guinea: 58.3% female</title></circle>
-<circle class="dot" cx="198.8" cy="23.8" r="5"><title>Zimbabwe: 67.6% female</title></circle>
-</svg></div><p class="note">A doubling of GDP per head goes with a change of −1.13 points (95% interval −2.76 to +0.51), correlation −0.22, so the data cannot rule out no link. No value for South Sudan; Taiwan, China.</p><details class="dt"><summary>Data table: adjusted female share against income</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against income, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against income</caption><thead><tr><th scope="col">Country</th><th scope="col">GDP per head, PPP dollars</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Brunei Darussalam</th><td>$78,985</td><td>23.3%</td></tr><tr><th scope="row">Maldives</th><td>$24,401</td><td>27.4%</td></tr><tr><th scope="row">Sri Lanka</th><td>$14,583</td><td>29.8%</td></tr><tr><th scope="row">Pakistan</th><td>$5,617</td><td>30.2%</td></tr><tr><th scope="row">Solomon Islands</th><td>$2,382</td><td>32.7%</td></tr><tr><th scope="row">Tajikistan</th><td>$5,062</td><td>35.0%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>$31,428</td><td>35.0%</td></tr><tr><th scope="row">India</th><td>$10,039</td><td>35.4%</td></tr><tr><th scope="row">Bangladesh</th><td>$8,677</td><td>35.5%</td></tr><tr><th scope="row">Bhutan</th><td>$16,744</td><td>36.4%</td></tr><tr><th scope="row">Sudan</th><td>$1,873</td><td>37.9%</td></tr><tr><th scope="row">Samoa</th><td>$7,963</td><td>38.6%</td></tr><tr><th scope="row">Ecuador</th><td>$14,319</td><td>38.9%</td></tr><tr><th scope="row">Kuwait</th><td>$48,254</td><td>39.4%</td></tr><tr><th scope="row">Greece</th><td>$38,219</td><td>39.5%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>$4,579</td><td>40.5%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>$4,272</td><td>40.6%</td></tr><tr><th scope="row">Australia</th><td>$60,194</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>$10,794</td><td>41.4%</td></tr><tr><th scope="row">Nigeria</th><td>$8,145</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>$36,143</td><td>41.6%</td></tr><tr><th scope="row">South Africa</th><td>$13,592</td><td>41.7%</td></tr><tr><th scope="row">Sierra Leone</th><td>$3,176</td><td>42.2%</td></tr><tr><th scope="row">Ethiopia</th><td>$3,095</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>$53,993</td><td>42.7%</td></tr><tr><th scope="row">Tunisia</th><td>$13,018</td><td>42.8%</td></tr><tr><th scope="row">United States</th><td>$76,931</td><td>42.9%</td></tr><tr><th scope="row">Uganda</th><td>$2,980</td><td>43.0%</td></tr><tr><th scope="row">Guyana</th><td>$83,659</td><td>43.4%</td></tr><tr><th scope="row">Azerbaijan</th><td>$22,314</td><td>43.5%</td></tr><tr><th scope="row">Belarus</th><td>$29,666</td><td>43.5%</td></tr><tr><th scope="row">Rwanda</th><td>$3,559</td><td>44.1%</td></tr><tr><th scope="row">Ghana</th><td>$7,358</td><td>47.2%</td></tr><tr><th scope="row">Nepal</th><td>$5,277</td><td>47.9%</td></tr><tr><th scope="row">Indonesia</th><td>$15,091</td><td>48.2%</td></tr><tr><th scope="row">Kenya</th><td>$5,995</td><td>49.1%</td></tr><tr><th scope="row">Türkiye</th><td>$37,301</td><td>49.8%</td></tr><tr><th scope="row">Cambodia</th><td>$7,300</td><td>50.1%</td></tr><tr><th scope="row">Kiribati</th><td>$3,364</td><td>53.8%</td></tr><tr><th scope="row">Papua New Guinea</th><td>$4,456</td><td>58.3%</td></tr><tr><th scope="row">Zimbabwe</th><td>$5,529</td><td>67.6%</td></tr></tbody></table></div></details><h3>Girls in secondary school</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-sec_parity" viewBox="0 0 560 300" role="img" aria-labelledby="tg-link-sec_parity-t tg-link-sec_parity-d" preserveAspectRatio="xMinYMin meet">
+<desc id="tg-link-log_gdp-d">40 countries plotted. A doubling of GDP per head goes with a change of −0.63 points (95% interval −2.27 to +1.01), correlation −0.12, so the data cannot rule out no link. No value for South Sudan; Taiwan, China.</desc>
+<defs><clipPath id="tg-link-log_gdp-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
+<line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
+<text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
+<line class="grid" x1="46" y1="225.6" x2="464" y2="225.6"/>
+<text class="axis" x="40" y="229.6" text-anchor="end">30%</text>
+<line class="grid" x1="46" y1="177.2" x2="464" y2="177.2"/>
+<text class="axis" x="40" y="181.2" text-anchor="end">40%</text>
+<line class="grid" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<text class="axis" x="40" y="132.8" text-anchor="end">50%</text>
+<line class="grid" x1="46" y1="80.4" x2="464" y2="80.4"/>
+<text class="axis" x="40" y="84.4" text-anchor="end">60%</text>
+<line class="grid" x1="46" y1="32.0" x2="464" y2="32.0"/>
+<text class="axis" x="40" y="36.0" text-anchor="end">70%</text>
+<line class="grid" x1="71.5" y1="32" x2="71.5" y2="274"/>
+<text class="axis" x="71.5" y="292" text-anchor="middle">$2k</text>
+<line class="grid" x1="163.1" y1="32" x2="163.1" y2="274"/>
+<text class="axis" x="163.1" y="292" text-anchor="middle">$5k</text>
+<line class="grid" x1="232.5" y1="32" x2="232.5" y2="274"/>
+<text class="axis" x="232.5" y="292" text-anchor="middle">$10k</text>
+<line class="grid" x1="301.8" y1="32" x2="301.8" y2="274"/>
+<text class="axis" x="301.8" y="292" text-anchor="middle">$20k</text>
+<line class="grid" x1="393.5" y1="32" x2="393.5" y2="274"/>
+<text class="axis" x="393.5" y="292" text-anchor="middle">$50k</text>
+<line class="grid" x1="462.8" y1="32" x2="462.8" y2="274"/>
+<text class="axis" x="462.8" y="292" text-anchor="middle">$100k</text>
+<text class="axis" x="255.0" y="316" text-anchor="middle">GDP per head, PPP dollars (log scale)</text>
+<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<line class="fitline" clip-path="url(#tg-link-log_gdp-clip)" x1="46.0" y1="158.9" x2="464.0" y2="177.3"/>
+<circle class="dot" cx="321.7" cy="234.7" r="5"><title>Maldives: 28.1% female</title></circle>
+<circle class="dot" cx="270.3" cy="228.5" r="5"><title>Sri Lanka: 29.4% female</title></circle>
+<circle class="dot" cx="174.8" cy="225.5" r="5"><title>Pakistan: 30.0% female</title></circle>
+<circle class="dot" cx="89.0" cy="213.7" r="5"><title>Solomon Islands: 32.5% female</title></circle>
+<circle class="dot" cx="164.3" cy="203.1" r="5"><title>Tajikistan: 34.6% female</title></circle>
+<circle class="dot" cx="347.0" cy="202.5" r="5"><title>St. Kitts and Nevis: 34.8% female</title></circle>
+<circle class="dot" cx="218.2" cy="200.2" r="5"><title>Bangladesh: 35.2% female</title></circle>
+<circle class="dot" cx="232.8" cy="200.0" r="5"><title>India: 35.3% female</title></circle>
+<circle class="dot" cx="284.1" cy="195.9" r="5"><title>Bhutan: 36.1% female</title></circle>
+<circle class="dot" cx="65.0" cy="187.8" r="5"><title>Sudan: 37.8% female</title></circle>
+<circle class="dot" cx="209.7" cy="184.7" r="5"><title>Samoa: 38.5% female</title></circle>
+<circle class="dot" cx="268.4" cy="183.5" r="5"><title>Ecuador: 38.7% female</title></circle>
+<circle class="dot" cx="366.6" cy="181.6" r="5"><title>Greece: 39.1% female</title></circle>
+<circle class="dot" cx="389.9" cy="181.3" r="5"><title>Kuwait: 39.2% female</title></circle>
+<circle class="dot" cx="154.3" cy="175.2" r="5"><title>Syrian Arab Republic: 40.4% female</title></circle>
+<circle class="dot" cx="147.4" cy="174.9" r="5"><title>West Bank and Gaza: 40.5% female</title></circle>
+<circle class="dot" cx="412.0" cy="171.2" r="5"><title>Australia: 41.2% female</title></circle>
+<circle class="dot" cx="240.1" cy="171.1" r="5"><title>Jordan: 41.2% female</title></circle>
+<circle class="dot" cx="263.2" cy="169.5" r="5"><title>South Africa: 41.6% female</title></circle>
+<circle class="dot" cx="361.0" cy="169.3" r="5"><title>Oman: 41.6% female</title></circle>
+<circle class="dot" cx="117.7" cy="167.8" r="5"><title>Sierra Leone: 42.0% female</title></circle>
+<circle class="dot" cx="115.2" cy="166.9" r="5"><title>Ethiopia: 42.1% female</title></circle>
+<circle class="dot" cx="258.9" cy="166.1" r="5"><title>Tunisia: 42.3% female</title></circle>
+<circle class="dot" cx="401.2" cy="164.8" r="5"><title>United Kingdom: 42.6% female</title></circle>
+<circle class="dot" cx="111.4" cy="164.7" r="5"><title>Uganda: 42.6% female</title></circle>
+<circle class="dot" cx="436.6" cy="163.4" r="5"><title>United States: 42.9% female</title></circle>
+<circle class="dot" cx="211.9" cy="162.9" r="5"><title>Nigeria: 43.0% female</title></circle>
+<circle class="dot" cx="341.3" cy="162.0" r="5"><title>Belarus: 43.1% female</title></circle>
+<circle class="dot" cx="312.8" cy="161.6" r="5"><title>Azerbaijan: 43.2% female</title></circle>
+<circle class="dot" cx="445.0" cy="158.4" r="5"><title>Guyana: 43.9% female</title></circle>
+<circle class="dot" cx="129.1" cy="156.9" r="5"><title>Rwanda: 44.2% female</title></circle>
+<circle class="dot" cx="201.8" cy="143.2" r="5"><title>Ghana: 47.0% female</title></circle>
+<circle class="dot" cx="273.7" cy="139.3" r="5"><title>Indonesia: 47.8% female</title></circle>
+<circle class="dot" cx="168.5" cy="138.4" r="5"><title>Nepal: 48.0% female</title></circle>
+<circle class="dot" cx="364.2" cy="131.1" r="5"><title>Türkiye: 49.5% female</title></circle>
+<circle class="dot" cx="201.0" cy="130.2" r="5"><title>Cambodia: 49.7% female</title></circle>
+<circle class="dot" cx="181.3" cy="126.7" r="5"><title>Kenya: 50.4% female</title></circle>
+<circle class="dot" cx="123.5" cy="110.9" r="5"><title>Kiribati: 53.7% female</title></circle>
+<circle class="dot" cx="151.6" cy="87.9" r="5"><title>Papua New Guinea: 58.5% female</title></circle>
+<circle class="dot" cx="173.2" cy="44.5" r="5"><title>Zimbabwe: 67.4% female</title></circle>
+<text class="ytitle" x="0" y="12">Adjusted female share</text>
+<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-fit" x="472" y="181.3">Fitted line</text>
+</svg></div><p class="note">A doubling of GDP per head goes with a change of −0.63 points (95% interval −2.27 to +1.01), correlation −0.12, so the data cannot rule out no link. No value for South Sudan; Taiwan, China.</p><details class="dt"><summary>Data table: adjusted female share against income</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against income, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against income</caption><thead><tr><th scope="col">Country</th><th scope="col">GDP per head, PPP dollars</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>$24,401</td><td>28.1%</td></tr><tr><th scope="row">Sri Lanka</th><td>$14,583</td><td>29.4%</td></tr><tr><th scope="row">Pakistan</th><td>$5,617</td><td>30.0%</td></tr><tr><th scope="row">Solomon Islands</th><td>$2,382</td><td>32.5%</td></tr><tr><th scope="row">Tajikistan</th><td>$5,062</td><td>34.6%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>$31,428</td><td>34.8%</td></tr><tr><th scope="row">Bangladesh</th><td>$8,677</td><td>35.2%</td></tr><tr><th scope="row">India</th><td>$10,039</td><td>35.3%</td></tr><tr><th scope="row">Bhutan</th><td>$16,744</td><td>36.1%</td></tr><tr><th scope="row">Sudan</th><td>$1,873</td><td>37.8%</td></tr><tr><th scope="row">Samoa</th><td>$7,963</td><td>38.5%</td></tr><tr><th scope="row">Ecuador</th><td>$14,319</td><td>38.7%</td></tr><tr><th scope="row">Greece</th><td>$38,219</td><td>39.1%</td></tr><tr><th scope="row">Kuwait</th><td>$48,254</td><td>39.2%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>$4,579</td><td>40.4%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>$4,272</td><td>40.5%</td></tr><tr><th scope="row">Australia</th><td>$60,194</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>$10,794</td><td>41.2%</td></tr><tr><th scope="row">South Africa</th><td>$13,592</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>$36,143</td><td>41.6%</td></tr><tr><th scope="row">Sierra Leone</th><td>$3,176</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>$3,095</td><td>42.1%</td></tr><tr><th scope="row">Tunisia</th><td>$13,018</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>$53,993</td><td>42.6%</td></tr><tr><th scope="row">Uganda</th><td>$2,980</td><td>42.6%</td></tr><tr><th scope="row">United States</th><td>$76,931</td><td>42.9%</td></tr><tr><th scope="row">Nigeria</th><td>$8,145</td><td>43.0%</td></tr><tr><th scope="row">Belarus</th><td>$29,666</td><td>43.1%</td></tr><tr><th scope="row">Azerbaijan</th><td>$22,314</td><td>43.2%</td></tr><tr><th scope="row">Guyana</th><td>$83,659</td><td>43.9%</td></tr><tr><th scope="row">Rwanda</th><td>$3,559</td><td>44.2%</td></tr><tr><th scope="row">Ghana</th><td>$7,358</td><td>47.0%</td></tr><tr><th scope="row">Indonesia</th><td>$15,091</td><td>47.8%</td></tr><tr><th scope="row">Nepal</th><td>$5,277</td><td>48.0%</td></tr><tr><th scope="row">Türkiye</th><td>$37,301</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>$7,300</td><td>49.7%</td></tr><tr><th scope="row">Kenya</th><td>$5,995</td><td>50.4%</td></tr><tr><th scope="row">Kiribati</th><td>$3,364</td><td>53.7%</td></tr><tr><th scope="row">Papua New Guinea</th><td>$4,456</td><td>58.5%</td></tr><tr><th scope="row">Zimbabwe</th><td>$5,529</td><td>67.4%</td></tr></tbody></table></div></details><h3>Girls in secondary school</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-sec_parity" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-sec_parity-t tg-link-sec_parity-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-sec_parity-t">Adjusted female share against Girls per boy enrolled in secondary school</title>
-<desc id="tg-link-sec_parity-d">40 countries plotted. Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +0.06 points (95% interval −2.22 to +2.34), correlation 0.01, so the data cannot rule out no link. No value for Taiwan, China; Kenya; Kiribati.</desc>
-<defs><clipPath id="tg-link-sec_parity-clip"><rect x="46" y="12" width="502" height="242"/></clipPath></defs>
-<line class="grid" x1="46" y1="254.0" x2="548" y2="254.0"/>
-<text class="axis" x="40" y="258.0" text-anchor="end">20%</text>
-<line class="grid" x1="46" y1="205.6" x2="548" y2="205.6"/>
-<text class="axis" x="40" y="209.6" text-anchor="end">30%</text>
-<line class="grid" x1="46" y1="157.2" x2="548" y2="157.2"/>
-<text class="axis" x="40" y="161.2" text-anchor="end">40%</text>
-<line class="grid" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<text class="axis" x="40" y="112.8" text-anchor="end">50%</text>
-<line class="grid" x1="46" y1="60.4" x2="548" y2="60.4"/>
-<text class="axis" x="40" y="64.4" text-anchor="end">60%</text>
-<line class="grid" x1="46" y1="12.0" x2="548" y2="12.0"/>
-<text class="axis" x="40" y="16.0" text-anchor="end">70%</text>
-<line class="grid" x1="109.5" y1="12" x2="109.5" y2="254"/>
-<text class="axis" x="109.5" y="272" text-anchor="middle">0.6</text>
-<line class="grid" x1="238.6" y1="12" x2="238.6" y2="254"/>
-<text class="axis" x="238.6" y="272" text-anchor="middle">0.8</text>
-<line class="grid" x1="367.7" y1="12" x2="367.7" y2="254"/>
-<text class="axis" x="367.7" y="272" text-anchor="middle">1.0</text>
-<line class="grid" x1="496.8" y1="12" x2="496.8" y2="254"/>
-<text class="axis" x="496.8" y="272" text-anchor="middle">1.2</text>
-<text class="axis" x="297.0" y="296" text-anchor="middle">Girls per boy enrolled in secondary school</text>
-<line class="par" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<line class="fitline" clip-path="url(#tg-link-sec_parity-clip)" x1="46.0" y1="154.2" x2="548.0" y2="151.9"/>
-<circle class="dot" cx="389.0" cy="238.2" r="5"><title>Brunei Darussalam: 23.3% female</title></circle>
-<circle class="dot" cx="322.5" cy="218.3" r="5"><title>Maldives: 27.4% female</title></circle>
-<circle class="dot" cx="398.0" cy="206.8" r="5"><title>Sri Lanka: 29.8% female</title></circle>
-<circle class="dot" cx="282.5" cy="204.8" r="5"><title>Pakistan: 30.2% female</title></circle>
-<circle class="dot" cx="335.4" cy="192.4" r="5"><title>Solomon Islands: 32.7% female</title></circle>
-<circle class="dot" cx="68.8" cy="184.7" r="5"><title>South Sudan: 34.3% female</title></circle>
-<circle class="dot" cx="303.8" cy="181.5" r="5"><title>Tajikistan: 35.0% female</title></circle>
-<circle class="dot" cx="361.9" cy="181.3" r="5"><title>St. Kitts and Nevis: 35.0% female</title></circle>
-<circle class="dot" cx="348.3" cy="179.5" r="5"><title>India: 35.4% female</title></circle>
-<circle class="dot" cx="525.2" cy="179.0" r="5"><title>Bangladesh: 35.5% female</title></circle>
-<circle class="dot" cx="451.6" cy="174.7" r="5"><title>Bhutan: 36.4% female</title></circle>
-<circle class="dot" cx="380.6" cy="167.3" r="5"><title>Sudan: 37.9% female</title></circle>
-<circle class="dot" cx="434.2" cy="164.1" r="5"><title>Samoa: 38.6% female</title></circle>
-<circle class="dot" cx="383.8" cy="162.7" r="5"><title>Ecuador: 38.9% female</title></circle>
-<circle class="dot" cx="409.0" cy="159.9" r="5"><title>Kuwait: 39.4% female</title></circle>
-<circle class="dot" cx="338.6" cy="159.5" r="5"><title>Greece: 39.5% female</title></circle>
-<circle class="dot" cx="363.8" cy="154.7" r="5"><title>Syrian Arab Republic: 40.5% female</title></circle>
-<circle class="dot" cx="427.1" cy="154.3" r="5"><title>West Bank and Gaza: 40.6% female</title></circle>
-<circle class="dot" cx="343.2" cy="151.5" r="5"><title>Australia: 41.2% female</title></circle>
-<circle class="dot" cx="380.6" cy="150.6" r="5"><title>Jordan: 41.4% female</title></circle>
-<circle class="dot" cx="336.7" cy="149.6" r="5"><title>Nigeria: 41.6% female</title></circle>
-<circle class="dot" cx="327.0" cy="149.5" r="5"><title>Oman: 41.6% female</title></circle>
-<circle class="dot" cx="425.1" cy="149.0" r="5"><title>South Africa: 41.7% female</title></circle>
-<circle class="dot" cx="345.7" cy="146.4" r="5"><title>Sierra Leone: 42.2% female</title></circle>
-<circle class="dot" cx="343.2" cy="146.0" r="5"><title>Ethiopia: 42.3% female</title></circle>
-<circle class="dot" cx="383.2" cy="144.2" r="5"><title>United Kingdom: 42.7% female</title></circle>
-<circle class="dot" cx="460.0" cy="143.6" r="5"><title>Tunisia: 42.8% female</title></circle>
-<circle class="dot" cx="354.1" cy="143.2" r="5"><title>United States: 42.9% female</title></circle>
-<circle class="dot" cx="303.8" cy="142.4" r="5"><title>Uganda: 43.0% female</title></circle>
-<circle class="dot" cx="387.0" cy="141.0" r="5"><title>Guyana: 43.4% female</title></circle>
-<circle class="dot" cx="356.7" cy="140.5" r="5"><title>Azerbaijan: 43.5% female</title></circle>
-<circle class="dot" cx="358.0" cy="140.3" r="5"><title>Belarus: 43.5% female</title></circle>
-<circle class="dot" cx="461.3" cy="137.2" r="5"><title>Rwanda: 44.1% female</title></circle>
-<circle class="dot" cx="370.3" cy="122.5" r="5"><title>Ghana: 47.2% female</title></circle>
-<circle class="dot" cx="359.3" cy="118.8" r="5"><title>Nepal: 47.9% female</title></circle>
-<circle class="dot" cx="383.8" cy="117.7" r="5"><title>Indonesia: 48.2% female</title></circle>
-<circle class="dot" cx="350.3" cy="109.7" r="5"><title>Türkiye: 49.8% female</title></circle>
-<circle class="dot" cx="463.2" cy="108.4" r="5"><title>Cambodia: 50.1% female</title></circle>
-<circle class="dot" cx="237.9" cy="68.8" r="5"><title>Papua New Guinea: 58.3% female</title></circle>
-<circle class="dot" cx="341.9" cy="23.8" r="5"><title>Zimbabwe: 67.6% female</title></circle>
-</svg></div><p class="note">Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +0.06 points (95% interval −2.22 to +2.34), correlation 0.01, so the data cannot rule out no link. No value for Taiwan, China; Kenya; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against girls in secondary school</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against girls in secondary school, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against girls in secondary school</caption><thead><tr><th scope="col">Country</th><th scope="col">Girls per boy enrolled in secondary school</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Brunei Darussalam</th><td>1.03</td><td>23.3%</td></tr><tr><th scope="row">Maldives</th><td>0.93</td><td>27.4%</td></tr><tr><th scope="row">Sri Lanka</th><td>1.05</td><td>29.8%</td></tr><tr><th scope="row">Pakistan</th><td>0.87</td><td>30.2%</td></tr><tr><th scope="row">Solomon Islands</th><td>0.95</td><td>32.7%</td></tr><tr><th scope="row">South Sudan</th><td>0.54</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>0.90</td><td>35.0%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>0.99</td><td>35.0%</td></tr><tr><th scope="row">India</th><td>0.97</td><td>35.4%</td></tr><tr><th scope="row">Bangladesh</th><td>1.24</td><td>35.5%</td></tr><tr><th scope="row">Bhutan</th><td>1.13</td><td>36.4%</td></tr><tr><th scope="row">Sudan</th><td>1.02</td><td>37.9%</td></tr><tr><th scope="row">Samoa</th><td>1.10</td><td>38.6%</td></tr><tr><th scope="row">Ecuador</th><td>1.02</td><td>38.9%</td></tr><tr><th scope="row">Kuwait</th><td>1.06</td><td>39.4%</td></tr><tr><th scope="row">Greece</th><td>0.95</td><td>39.5%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>0.99</td><td>40.5%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>1.09</td><td>40.6%</td></tr><tr><th scope="row">Australia</th><td>0.96</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>1.02</td><td>41.4%</td></tr><tr><th scope="row">Nigeria</th><td>0.95</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>0.94</td><td>41.6%</td></tr><tr><th scope="row">South Africa</th><td>1.09</td><td>41.7%</td></tr><tr><th scope="row">Sierra Leone</th><td>0.97</td><td>42.2%</td></tr><tr><th scope="row">Ethiopia</th><td>0.96</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>1.02</td><td>42.7%</td></tr><tr><th scope="row">Tunisia</th><td>1.14</td><td>42.8%</td></tr><tr><th scope="row">United States</th><td>0.98</td><td>42.9%</td></tr><tr><th scope="row">Uganda</th><td>0.90</td><td>43.0%</td></tr><tr><th scope="row">Guyana</th><td>1.03</td><td>43.4%</td></tr><tr><th scope="row">Azerbaijan</th><td>0.98</td><td>43.5%</td></tr><tr><th scope="row">Belarus</th><td>0.98</td><td>43.5%</td></tr><tr><th scope="row">Rwanda</th><td>1.15</td><td>44.1%</td></tr><tr><th scope="row">Ghana</th><td>1.00</td><td>47.2%</td></tr><tr><th scope="row">Nepal</th><td>0.99</td><td>47.9%</td></tr><tr><th scope="row">Indonesia</th><td>1.03</td><td>48.2%</td></tr><tr><th scope="row">Türkiye</th><td>0.97</td><td>49.8%</td></tr><tr><th scope="row">Cambodia</th><td>1.15</td><td>50.1%</td></tr><tr><th scope="row">Papua New Guinea</th><td>0.80</td><td>58.3%</td></tr><tr><th scope="row">Zimbabwe</th><td>0.96</td><td>67.6%</td></tr></tbody></table></div></details><h3>Women in parliament</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-women_parliament" viewBox="0 0 560 300" role="img" aria-labelledby="tg-link-women_parliament-t tg-link-women_parliament-d" preserveAspectRatio="xMinYMin meet">
+<desc id="tg-link-sec_parity-d">39 countries plotted. Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +0.15 points (95% interval −2.01 to +2.30), correlation 0.02, so the data cannot rule out no link. No value for Taiwan, China; Kenya; Kiribati.</desc>
+<defs><clipPath id="tg-link-sec_parity-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
+<line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
+<text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
+<line class="grid" x1="46" y1="225.6" x2="464" y2="225.6"/>
+<text class="axis" x="40" y="229.6" text-anchor="end">30%</text>
+<line class="grid" x1="46" y1="177.2" x2="464" y2="177.2"/>
+<text class="axis" x="40" y="181.2" text-anchor="end">40%</text>
+<line class="grid" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<text class="axis" x="40" y="132.8" text-anchor="end">50%</text>
+<line class="grid" x1="46" y1="80.4" x2="464" y2="80.4"/>
+<text class="axis" x="40" y="84.4" text-anchor="end">60%</text>
+<line class="grid" x1="46" y1="32.0" x2="464" y2="32.0"/>
+<text class="axis" x="40" y="36.0" text-anchor="end">70%</text>
+<line class="grid" x1="98.9" y1="32" x2="98.9" y2="274"/>
+<text class="axis" x="98.9" y="292" text-anchor="middle">0.6</text>
+<line class="grid" x1="206.4" y1="32" x2="206.4" y2="274"/>
+<text class="axis" x="206.4" y="292" text-anchor="middle">0.8</text>
+<line class="grid" x1="313.9" y1="32" x2="313.9" y2="274"/>
+<text class="axis" x="313.9" y="292" text-anchor="middle">1.0</text>
+<line class="grid" x1="421.4" y1="32" x2="421.4" y2="274"/>
+<text class="axis" x="421.4" y="292" text-anchor="middle">1.2</text>
+<text class="axis" x="255.0" y="316" text-anchor="middle">Girls per boy enrolled in secondary school</text>
+<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<line class="fitline" clip-path="url(#tg-link-sec_parity-clip)" x1="46.0" y1="174.5" x2="464.0" y2="169.0"/>
+<circle class="dot" cx="276.2" cy="234.7" r="5"><title>Maldives: 28.1% female</title></circle>
+<circle class="dot" cx="339.1" cy="228.5" r="5"><title>Sri Lanka: 29.4% female</title></circle>
+<circle class="dot" cx="242.9" cy="225.5" r="5"><title>Pakistan: 30.0% female</title></circle>
+<circle class="dot" cx="287.0" cy="213.7" r="5"><title>Solomon Islands: 32.5% female</title></circle>
+<circle class="dot" cx="65.0" cy="204.9" r="5"><title>South Sudan: 34.3% female</title></circle>
+<circle class="dot" cx="260.6" cy="203.1" r="5"><title>Tajikistan: 34.6% female</title></circle>
+<circle class="dot" cx="309.0" cy="202.5" r="5"><title>St. Kitts and Nevis: 34.8% female</title></circle>
+<circle class="dot" cx="445.0" cy="200.2" r="5"><title>Bangladesh: 35.2% female</title></circle>
+<circle class="dot" cx="297.7" cy="200.0" r="5"><title>India: 35.3% female</title></circle>
+<circle class="dot" cx="383.7" cy="195.9" r="5"><title>Bhutan: 36.1% female</title></circle>
+<circle class="dot" cx="324.6" cy="187.8" r="5"><title>Sudan: 37.8% female</title></circle>
+<circle class="dot" cx="369.2" cy="184.7" r="5"><title>Samoa: 38.5% female</title></circle>
+<circle class="dot" cx="327.3" cy="183.5" r="5"><title>Ecuador: 38.7% female</title></circle>
+<circle class="dot" cx="289.7" cy="181.6" r="5"><title>Greece: 39.1% female</title></circle>
+<circle class="dot" cx="348.3" cy="181.3" r="5"><title>Kuwait: 39.2% female</title></circle>
+<circle class="dot" cx="310.6" cy="175.2" r="5"><title>Syrian Arab Republic: 40.4% female</title></circle>
+<circle class="dot" cx="363.3" cy="174.9" r="5"><title>West Bank and Gaza: 40.5% female</title></circle>
+<circle class="dot" cx="293.4" cy="171.2" r="5"><title>Australia: 41.2% female</title></circle>
+<circle class="dot" cx="324.6" cy="171.1" r="5"><title>Jordan: 41.2% female</title></circle>
+<circle class="dot" cx="361.7" cy="169.5" r="5"><title>South Africa: 41.6% female</title></circle>
+<circle class="dot" cx="280.0" cy="169.3" r="5"><title>Oman: 41.6% female</title></circle>
+<circle class="dot" cx="295.6" cy="167.8" r="5"><title>Sierra Leone: 42.0% female</title></circle>
+<circle class="dot" cx="293.4" cy="166.9" r="5"><title>Ethiopia: 42.1% female</title></circle>
+<circle class="dot" cx="390.7" cy="166.1" r="5"><title>Tunisia: 42.3% female</title></circle>
+<circle class="dot" cx="326.8" cy="164.8" r="5"><title>United Kingdom: 42.6% female</title></circle>
+<circle class="dot" cx="260.6" cy="164.7" r="5"><title>Uganda: 42.6% female</title></circle>
+<circle class="dot" cx="302.6" cy="163.4" r="5"><title>United States: 42.9% female</title></circle>
+<circle class="dot" cx="288.1" cy="162.9" r="5"><title>Nigeria: 43.0% female</title></circle>
+<circle class="dot" cx="305.8" cy="162.0" r="5"><title>Belarus: 43.1% female</title></circle>
+<circle class="dot" cx="304.7" cy="161.6" r="5"><title>Azerbaijan: 43.2% female</title></circle>
+<circle class="dot" cx="330.0" cy="158.4" r="5"><title>Guyana: 43.9% female</title></circle>
+<circle class="dot" cx="391.8" cy="156.9" r="5"><title>Rwanda: 44.2% female</title></circle>
+<circle class="dot" cx="316.0" cy="143.2" r="5"><title>Ghana: 47.0% female</title></circle>
+<circle class="dot" cx="327.3" cy="139.3" r="5"><title>Indonesia: 47.8% female</title></circle>
+<circle class="dot" cx="306.9" cy="138.4" r="5"><title>Nepal: 48.0% female</title></circle>
+<circle class="dot" cx="299.3" cy="131.1" r="5"><title>Türkiye: 49.5% female</title></circle>
+<circle class="dot" cx="393.4" cy="130.2" r="5"><title>Cambodia: 49.7% female</title></circle>
+<circle class="dot" cx="205.8" cy="87.9" r="5"><title>Papua New Guinea: 58.5% female</title></circle>
+<circle class="dot" cx="292.4" cy="44.5" r="5"><title>Zimbabwe: 67.4% female</title></circle>
+<text class="ytitle" x="0" y="12">Adjusted female share</text>
+<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-fit" x="472" y="173.0">Fitted line</text>
+</svg></div><p class="note">Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +0.15 points (95% interval −2.01 to +2.30), correlation 0.02, so the data cannot rule out no link. No value for Taiwan, China; Kenya; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against girls in secondary school</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against girls in secondary school, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against girls in secondary school</caption><thead><tr><th scope="col">Country</th><th scope="col">Girls per boy enrolled in secondary school</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>0.93</td><td>28.1%</td></tr><tr><th scope="row">Sri Lanka</th><td>1.05</td><td>29.4%</td></tr><tr><th scope="row">Pakistan</th><td>0.87</td><td>30.0%</td></tr><tr><th scope="row">Solomon Islands</th><td>0.95</td><td>32.5%</td></tr><tr><th scope="row">South Sudan</th><td>0.54</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>0.90</td><td>34.6%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>0.99</td><td>34.8%</td></tr><tr><th scope="row">Bangladesh</th><td>1.24</td><td>35.2%</td></tr><tr><th scope="row">India</th><td>0.97</td><td>35.3%</td></tr><tr><th scope="row">Bhutan</th><td>1.13</td><td>36.1%</td></tr><tr><th scope="row">Sudan</th><td>1.02</td><td>37.8%</td></tr><tr><th scope="row">Samoa</th><td>1.10</td><td>38.5%</td></tr><tr><th scope="row">Ecuador</th><td>1.02</td><td>38.7%</td></tr><tr><th scope="row">Greece</th><td>0.95</td><td>39.1%</td></tr><tr><th scope="row">Kuwait</th><td>1.06</td><td>39.2%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>0.99</td><td>40.4%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>1.09</td><td>40.5%</td></tr><tr><th scope="row">Australia</th><td>0.96</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>1.02</td><td>41.2%</td></tr><tr><th scope="row">South Africa</th><td>1.09</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>0.94</td><td>41.6%</td></tr><tr><th scope="row">Sierra Leone</th><td>0.97</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>0.96</td><td>42.1%</td></tr><tr><th scope="row">Tunisia</th><td>1.14</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>1.02</td><td>42.6%</td></tr><tr><th scope="row">Uganda</th><td>0.90</td><td>42.6%</td></tr><tr><th scope="row">United States</th><td>0.98</td><td>42.9%</td></tr><tr><th scope="row">Nigeria</th><td>0.95</td><td>43.0%</td></tr><tr><th scope="row">Belarus</th><td>0.98</td><td>43.1%</td></tr><tr><th scope="row">Azerbaijan</th><td>0.98</td><td>43.2%</td></tr><tr><th scope="row">Guyana</th><td>1.03</td><td>43.9%</td></tr><tr><th scope="row">Rwanda</th><td>1.15</td><td>44.2%</td></tr><tr><th scope="row">Ghana</th><td>1.00</td><td>47.0%</td></tr><tr><th scope="row">Indonesia</th><td>1.03</td><td>47.8%</td></tr><tr><th scope="row">Nepal</th><td>0.99</td><td>48.0%</td></tr><tr><th scope="row">Türkiye</th><td>0.97</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>1.15</td><td>49.7%</td></tr><tr><th scope="row">Papua New Guinea</th><td>0.80</td><td>58.5%</td></tr><tr><th scope="row">Zimbabwe</th><td>0.96</td><td>67.4%</td></tr></tbody></table></div></details><h3>Women in parliament</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-women_parliament" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-women_parliament-t tg-link-women_parliament-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-women_parliament-t">Adjusted female share against Seats held by women (%)</title>
-<desc id="tg-link-women_parliament-d">41 countries plotted. Each 1-unit rise in seats held by women (%) goes with a change of +0.08 points (95% interval −0.10 to +0.25), correlation 0.14, so the data cannot rule out no link. No value for West Bank and Gaza; Taiwan, China.</desc>
-<defs><clipPath id="tg-link-women_parliament-clip"><rect x="46" y="12" width="502" height="242"/></clipPath></defs>
-<line class="grid" x1="46" y1="254.0" x2="548" y2="254.0"/>
-<text class="axis" x="40" y="258.0" text-anchor="end">20%</text>
-<line class="grid" x1="46" y1="205.6" x2="548" y2="205.6"/>
-<text class="axis" x="40" y="209.6" text-anchor="end">30%</text>
-<line class="grid" x1="46" y1="157.2" x2="548" y2="157.2"/>
-<text class="axis" x="40" y="161.2" text-anchor="end">40%</text>
-<line class="grid" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<text class="axis" x="40" y="112.8" text-anchor="end">50%</text>
-<line class="grid" x1="46" y1="60.4" x2="548" y2="60.4"/>
-<text class="axis" x="40" y="64.4" text-anchor="end">60%</text>
-<line class="grid" x1="46" y1="12.0" x2="548" y2="12.0"/>
-<text class="axis" x="40" y="16.0" text-anchor="end">70%</text>
-<line class="grid" x1="68.8" y1="12" x2="68.8" y2="254"/>
-<text class="axis" x="68.8" y="272" text-anchor="middle">0</text>
-<line class="grid" x1="212.0" y1="12" x2="212.0" y2="254"/>
-<text class="axis" x="212.0" y="272" text-anchor="middle">20</text>
-<line class="grid" x1="355.2" y1="12" x2="355.2" y2="254"/>
-<text class="axis" x="355.2" y="272" text-anchor="middle">40</text>
-<line class="grid" x1="498.3" y1="12" x2="498.3" y2="254"/>
-<text class="axis" x="498.3" y="272" text-anchor="middle">60</text>
-<text class="axis" x="297.0" y="296" text-anchor="middle">Seats held by women (%)</text>
-<line class="par" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<line class="fitline" clip-path="url(#tg-link-women_parliament-clip)" x1="46.0" y1="160.0" x2="548.0" y2="133.2"/>
-<circle class="dot" cx="150.6" cy="238.2" r="5"><title>Brunei Darussalam: 23.3% female</title></circle>
-<circle class="dot" cx="91.9" cy="218.3" r="5"><title>Maldives: 27.4% female</title></circle>
-<circle class="dot" cx="138.8" cy="206.8" r="5"><title>Sri Lanka: 29.8% female</title></circle>
-<circle class="dot" cx="190.8" cy="204.8" r="5"><title>Pakistan: 30.2% female</title></circle>
-<circle class="dot" cx="111.8" cy="192.4" r="5"><title>Solomon Islands: 32.7% female</title></circle>
-<circle class="dot" cx="300.5" cy="184.7" r="5"><title>South Sudan: 34.3% female</title></circle>
-<circle class="dot" cx="273.3" cy="181.5" r="5"><title>Tajikistan: 35.0% female</title></circle>
-<circle class="dot" cx="292.5" cy="181.3" r="5"><title>St. Kitts and Nevis: 35.0% female</title></circle>
-<circle class="dot" cx="167.5" cy="179.5" r="5"><title>India: 35.4% female</title></circle>
-<circle class="dot" cx="218.1" cy="179.0" r="5"><title>Bangladesh: 35.5% female</title></circle>
-<circle class="dot" cx="99.3" cy="174.7" r="5"><title>Bhutan: 36.4% female</title></circle>
-<circle class="dot" cx="287.3" cy="167.3" r="5"><title>Sudan: 37.9% female</title></circle>
-<circle class="dot" cx="139.0" cy="164.1" r="5"><title>Samoa: 38.6% female</title></circle>
-<circle class="dot" cx="391.2" cy="162.7" r="5"><title>Ecuador: 38.9% female</title></circle>
-<circle class="dot" cx="90.8" cy="159.9" r="5"><title>Kuwait: 39.4% female</title></circle>
-<circle class="dot" cx="232.7" cy="159.5" r="5"><title>Greece: 39.5% female</title></circle>
-<circle class="dot" cx="104.0" cy="154.7" r="5"><title>Syrian Arab Republic: 40.5% female</title></circle>
-<circle class="dot" cx="398.1" cy="151.5" r="5"><title>Australia: 41.2% female</title></circle>
-<circle class="dot" cx="208.9" cy="150.6" r="5"><title>Jordan: 41.4% female</title></circle>
-<circle class="dot" cx="99.0" cy="149.6" r="5"><title>Nigeria: 41.6% female</title></circle>
-<circle class="dot" cx="68.8" cy="149.5" r="5"><title>Oman: 41.6% female</title></circle>
-<circle class="dot" cx="390.0" cy="149.0" r="5"><title>South Africa: 41.7% female</title></circle>
-<circle class="dot" cx="280.2" cy="146.4" r="5"><title>Sierra Leone: 42.2% female</title></circle>
-<circle class="dot" cx="368.8" cy="146.0" r="5"><title>Ethiopia: 42.3% female</title></circle>
-<circle class="dot" cx="358.5" cy="144.2" r="5"><title>United Kingdom: 42.7% female</title></circle>
-<circle class="dot" cx="181.8" cy="143.6" r="5"><title>Tunisia: 42.8% female</title></circle>
-<circle class="dot" cx="276.0" cy="143.2" r="5"><title>United States: 42.9% female</title></circle>
-<circle class="dot" cx="312.6" cy="142.4" r="5"><title>Uganda: 43.0% female</title></circle>
-<circle class="dot" cx="327.3" cy="141.0" r="5"><title>Guyana: 43.4% female</title></circle>
-<circle class="dot" cx="217.7" cy="140.5" r="5"><title>Azerbaijan: 43.5% female</title></circle>
-<circle class="dot" cx="311.8" cy="140.3" r="5"><title>Belarus: 43.5% female</title></circle>
-<circle class="dot" cx="525.2" cy="137.2" r="5"><title>Rwanda: 44.1% female</title></circle>
-<circle class="dot" cx="172.9" cy="122.5" r="5"><title>Ghana: 47.2% female</title></circle>
-<circle class="dot" cx="305.7" cy="118.8" r="5"><title>Nepal: 47.9% female</title></circle>
-<circle class="dot" cx="225.6" cy="117.7" r="5"><title>Indonesia: 48.2% female</title></circle>
-<circle class="dot" cx="236.3" cy="113.0" r="5"><title>Kenya: 49.1% female</title></circle>
-<circle class="dot" cx="211.3" cy="109.7" r="5"><title>Türkiye: 49.8% female</title></circle>
-<circle class="dot" cx="166.2" cy="108.4" r="5"><title>Cambodia: 50.1% female</title></circle>
-<circle class="dot" cx="148.4" cy="90.2" r="5"><title>Kiribati: 53.8% female</title></circle>
-<circle class="dot" cx="88.2" cy="68.8" r="5"><title>Papua New Guinea: 58.3% female</title></circle>
-<circle class="dot" cx="284.4" cy="23.8" r="5"><title>Zimbabwe: 67.6% female</title></circle>
-</svg></div><p class="note">Each 1-unit rise in seats held by women (%) goes with a change of +0.08 points (95% interval −0.10 to +0.25), correlation 0.14, so the data cannot rule out no link. No value for West Bank and Gaza; Taiwan, China.</p><details class="dt"><summary>Data table: adjusted female share against women in parliament</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in parliament, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in parliament</caption><thead><tr><th scope="col">Country</th><th scope="col">Seats held by women (%)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Brunei Darussalam</th><td>11.4</td><td>23.3%</td></tr><tr><th scope="row">Maldives</th><td>3.23</td><td>27.4%</td></tr><tr><th scope="row">Sri Lanka</th><td>9.78</td><td>29.8%</td></tr><tr><th scope="row">Pakistan</th><td>17.0</td><td>30.2%</td></tr><tr><th scope="row">Solomon Islands</th><td>6.00</td><td>32.7%</td></tr><tr><th scope="row">South Sudan</th><td>32.4</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>28.6</td><td>35.0%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>31.2</td><td>35.0%</td></tr><tr><th scope="row">India</th><td>13.8</td><td>35.4%</td></tr><tr><th scope="row">Bangladesh</th><td>20.9</td><td>35.5%</td></tr><tr><th scope="row">Bhutan</th><td>4.26</td><td>36.4%</td></tr><tr><th scope="row">Sudan</th><td>30.5</td><td>37.9%</td></tr><tr><th scope="row">Samoa</th><td>9.80</td><td>38.6%</td></tr><tr><th scope="row">Ecuador</th><td>45.0</td><td>38.9%</td></tr><tr><th scope="row">Kuwait</th><td>3.08</td><td>39.4%</td></tr><tr><th scope="row">Greece</th><td>22.9</td><td>39.5%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>4.92</td><td>40.5%</td></tr><tr><th scope="row">Australia</th><td>46.0</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>19.6</td><td>41.4%</td></tr><tr><th scope="row">Nigeria</th><td>4.21</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>0.00</td><td>41.6%</td></tr><tr><th scope="row">South Africa</th><td>44.9</td><td>41.7%</td></tr><tr><th scope="row">Sierra Leone</th><td>29.5</td><td>42.2%</td></tr><tr><th scope="row">Ethiopia</th><td>41.9</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>40.5</td><td>42.7%</td></tr><tr><th scope="row">Tunisia</th><td>15.8</td><td>42.8%</td></tr><tr><th scope="row">United States</th><td>28.9</td><td>42.9%</td></tr><tr><th scope="row">Uganda</th><td>34.1</td><td>43.0%</td></tr><tr><th scope="row">Guyana</th><td>36.1</td><td>43.4%</td></tr><tr><th scope="row">Azerbaijan</th><td>20.8</td><td>43.5%</td></tr><tr><th scope="row">Belarus</th><td>33.9</td><td>43.5%</td></tr><tr><th scope="row">Rwanda</th><td>63.8</td><td>44.1%</td></tr><tr><th scope="row">Ghana</th><td>14.5</td><td>47.2%</td></tr><tr><th scope="row">Nepal</th><td>33.1</td><td>47.9%</td></tr><tr><th scope="row">Indonesia</th><td>21.9</td><td>48.2%</td></tr><tr><th scope="row">Kenya</th><td>23.4</td><td>49.1%</td></tr><tr><th scope="row">Türkiye</th><td>19.9</td><td>49.8%</td></tr><tr><th scope="row">Cambodia</th><td>13.6</td><td>50.1%</td></tr><tr><th scope="row">Kiribati</th><td>11.1</td><td>53.8%</td></tr><tr><th scope="row">Papua New Guinea</th><td>2.70</td><td>58.3%</td></tr><tr><th scope="row">Zimbabwe</th><td>30.1</td><td>67.6%</td></tr></tbody></table></div></details><h3>Women in work</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-flfp" viewBox="0 0 560 300" role="img" aria-labelledby="tg-link-flfp-t tg-link-flfp-d" preserveAspectRatio="xMinYMin meet">
+<desc id="tg-link-women_parliament-d">40 countries plotted. Each 1-unit rise in seats held by women (%) goes with a change of +0.05 points (95% interval −0.12 to +0.22), correlation 0.10, so the data cannot rule out no link. No value for West Bank and Gaza; Taiwan, China.</desc>
+<defs><clipPath id="tg-link-women_parliament-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
+<line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
+<text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
+<line class="grid" x1="46" y1="225.6" x2="464" y2="225.6"/>
+<text class="axis" x="40" y="229.6" text-anchor="end">30%</text>
+<line class="grid" x1="46" y1="177.2" x2="464" y2="177.2"/>
+<text class="axis" x="40" y="181.2" text-anchor="end">40%</text>
+<line class="grid" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<text class="axis" x="40" y="132.8" text-anchor="end">50%</text>
+<line class="grid" x1="46" y1="80.4" x2="464" y2="80.4"/>
+<text class="axis" x="40" y="84.4" text-anchor="end">60%</text>
+<line class="grid" x1="46" y1="32.0" x2="464" y2="32.0"/>
+<text class="axis" x="40" y="36.0" text-anchor="end">70%</text>
+<line class="grid" x1="65.0" y1="32" x2="65.0" y2="274"/>
+<text class="axis" x="65.0" y="292" text-anchor="middle">0</text>
+<line class="grid" x1="184.2" y1="32" x2="184.2" y2="274"/>
+<text class="axis" x="184.2" y="292" text-anchor="middle">20</text>
+<line class="grid" x1="303.4" y1="32" x2="303.4" y2="274"/>
+<text class="axis" x="303.4" y="292" text-anchor="middle">40</text>
+<line class="grid" x1="422.6" y1="32" x2="422.6" y2="274"/>
+<text class="axis" x="422.6" y="292" text-anchor="middle">60</text>
+<text class="axis" x="255.0" y="316" text-anchor="middle">Seats held by women (%)</text>
+<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<line class="fitline" clip-path="url(#tg-link-women_parliament-clip)" x1="46.0" y1="174.9" x2="464.0" y2="157.0"/>
+<circle class="dot" cx="84.2" cy="234.7" r="5"><title>Maldives: 28.1% female</title></circle>
+<circle class="dot" cx="123.3" cy="228.5" r="5"><title>Sri Lanka: 29.4% female</title></circle>
+<circle class="dot" cx="166.6" cy="225.5" r="5"><title>Pakistan: 30.0% female</title></circle>
+<circle class="dot" cx="100.8" cy="213.7" r="5"><title>Solomon Islands: 32.5% female</title></circle>
+<circle class="dot" cx="257.9" cy="204.9" r="5"><title>South Sudan: 34.3% female</title></circle>
+<circle class="dot" cx="235.3" cy="203.1" r="5"><title>Tajikistan: 34.6% female</title></circle>
+<circle class="dot" cx="251.3" cy="202.5" r="5"><title>St. Kitts and Nevis: 34.8% female</title></circle>
+<circle class="dot" cx="189.3" cy="200.2" r="5"><title>Bangladesh: 35.2% female</title></circle>
+<circle class="dot" cx="147.2" cy="200.0" r="5"><title>India: 35.3% female</title></circle>
+<circle class="dot" cx="90.4" cy="195.9" r="5"><title>Bhutan: 36.1% female</title></circle>
+<circle class="dot" cx="246.9" cy="187.8" r="5"><title>Sudan: 37.8% female</title></circle>
+<circle class="dot" cx="123.4" cy="184.7" r="5"><title>Samoa: 38.5% female</title></circle>
+<circle class="dot" cx="333.4" cy="183.5" r="5"><title>Ecuador: 38.7% female</title></circle>
+<circle class="dot" cx="201.5" cy="181.6" r="5"><title>Greece: 39.1% female</title></circle>
+<circle class="dot" cx="83.3" cy="181.3" r="5"><title>Kuwait: 39.2% female</title></circle>
+<circle class="dot" cx="94.3" cy="175.2" r="5"><title>Syrian Arab Republic: 40.4% female</title></circle>
+<circle class="dot" cx="339.2" cy="171.2" r="5"><title>Australia: 41.2% female</title></circle>
+<circle class="dot" cx="181.6" cy="171.1" r="5"><title>Jordan: 41.2% female</title></circle>
+<circle class="dot" cx="332.4" cy="169.5" r="5"><title>South Africa: 41.6% female</title></circle>
+<circle class="dot" cx="65.0" cy="169.3" r="5"><title>Oman: 41.6% female</title></circle>
+<circle class="dot" cx="241.0" cy="167.8" r="5"><title>Sierra Leone: 42.0% female</title></circle>
+<circle class="dot" cx="314.8" cy="166.9" r="5"><title>Ethiopia: 42.1% female</title></circle>
+<circle class="dot" cx="159.1" cy="166.1" r="5"><title>Tunisia: 42.3% female</title></circle>
+<circle class="dot" cx="306.2" cy="164.8" r="5"><title>United Kingdom: 42.6% female</title></circle>
+<circle class="dot" cx="268.0" cy="164.7" r="5"><title>Uganda: 42.6% female</title></circle>
+<circle class="dot" cx="237.5" cy="163.4" r="5"><title>United States: 42.9% female</title></circle>
+<circle class="dot" cx="90.1" cy="162.9" r="5"><title>Nigeria: 43.0% female</title></circle>
+<circle class="dot" cx="267.3" cy="162.0" r="5"><title>Belarus: 43.1% female</title></circle>
+<circle class="dot" cx="189.0" cy="161.6" r="5"><title>Azerbaijan: 43.2% female</title></circle>
+<circle class="dot" cx="280.2" cy="158.4" r="5"><title>Guyana: 43.9% female</title></circle>
+<circle class="dot" cx="445.0" cy="156.9" r="5"><title>Rwanda: 44.2% female</title></circle>
+<circle class="dot" cx="151.7" cy="143.2" r="5"><title>Ghana: 47.0% female</title></circle>
+<circle class="dot" cx="195.5" cy="139.3" r="5"><title>Indonesia: 47.8% female</title></circle>
+<circle class="dot" cx="262.2" cy="138.4" r="5"><title>Nepal: 48.0% female</title></circle>
+<circle class="dot" cx="183.6" cy="131.1" r="5"><title>Türkiye: 49.5% female</title></circle>
+<circle class="dot" cx="146.1" cy="130.2" r="5"><title>Cambodia: 49.7% female</title></circle>
+<circle class="dot" cx="204.4" cy="126.7" r="5"><title>Kenya: 50.4% female</title></circle>
+<circle class="dot" cx="131.2" cy="110.9" r="5"><title>Kiribati: 53.7% female</title></circle>
+<circle class="dot" cx="81.1" cy="87.9" r="5"><title>Papua New Guinea: 58.5% female</title></circle>
+<circle class="dot" cx="244.5" cy="44.5" r="5"><title>Zimbabwe: 67.4% female</title></circle>
+<text class="ytitle" x="0" y="12">Adjusted female share</text>
+<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-fit" x="472" y="161.0">Fitted line</text>
+</svg></div><p class="note">Each 1-unit rise in seats held by women (%) goes with a change of +0.05 points (95% interval −0.12 to +0.22), correlation 0.10, so the data cannot rule out no link. No value for West Bank and Gaza; Taiwan, China.</p><details class="dt"><summary>Data table: adjusted female share against women in parliament</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in parliament, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in parliament</caption><thead><tr><th scope="col">Country</th><th scope="col">Seats held by women (%)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>3.23</td><td>28.1%</td></tr><tr><th scope="row">Sri Lanka</th><td>9.78</td><td>29.4%</td></tr><tr><th scope="row">Pakistan</th><td>17.0</td><td>30.0%</td></tr><tr><th scope="row">Solomon Islands</th><td>6.00</td><td>32.5%</td></tr><tr><th scope="row">South Sudan</th><td>32.4</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>28.6</td><td>34.6%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>31.2</td><td>34.8%</td></tr><tr><th scope="row">Bangladesh</th><td>20.9</td><td>35.2%</td></tr><tr><th scope="row">India</th><td>13.8</td><td>35.3%</td></tr><tr><th scope="row">Bhutan</th><td>4.26</td><td>36.1%</td></tr><tr><th scope="row">Sudan</th><td>30.5</td><td>37.8%</td></tr><tr><th scope="row">Samoa</th><td>9.80</td><td>38.5%</td></tr><tr><th scope="row">Ecuador</th><td>45.0</td><td>38.7%</td></tr><tr><th scope="row">Greece</th><td>22.9</td><td>39.1%</td></tr><tr><th scope="row">Kuwait</th><td>3.08</td><td>39.2%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>4.92</td><td>40.4%</td></tr><tr><th scope="row">Australia</th><td>46.0</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>19.6</td><td>41.2%</td></tr><tr><th scope="row">South Africa</th><td>44.9</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>0.00</td><td>41.6%</td></tr><tr><th scope="row">Sierra Leone</th><td>29.5</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>41.9</td><td>42.1%</td></tr><tr><th scope="row">Tunisia</th><td>15.8</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>40.5</td><td>42.6%</td></tr><tr><th scope="row">Uganda</th><td>34.1</td><td>42.6%</td></tr><tr><th scope="row">United States</th><td>28.9</td><td>42.9%</td></tr><tr><th scope="row">Nigeria</th><td>4.21</td><td>43.0%</td></tr><tr><th scope="row">Belarus</th><td>33.9</td><td>43.1%</td></tr><tr><th scope="row">Azerbaijan</th><td>20.8</td><td>43.2%</td></tr><tr><th scope="row">Guyana</th><td>36.1</td><td>43.9%</td></tr><tr><th scope="row">Rwanda</th><td>63.8</td><td>44.2%</td></tr><tr><th scope="row">Ghana</th><td>14.5</td><td>47.0%</td></tr><tr><th scope="row">Indonesia</th><td>21.9</td><td>47.8%</td></tr><tr><th scope="row">Nepal</th><td>33.1</td><td>48.0%</td></tr><tr><th scope="row">Türkiye</th><td>19.9</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>13.6</td><td>49.7%</td></tr><tr><th scope="row">Kenya</th><td>23.4</td><td>50.4%</td></tr><tr><th scope="row">Kiribati</th><td>11.1</td><td>53.7%</td></tr><tr><th scope="row">Papua New Guinea</th><td>2.70</td><td>58.5%</td></tr><tr><th scope="row">Zimbabwe</th><td>30.1</td><td>67.4%</td></tr></tbody></table></div></details><h3>Women in work</h3><div class="chartbox"><svg class="chart scatter" id="tg-link-flfp" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-flfp-t tg-link-flfp-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-flfp-t">Adjusted female share against Women in the labour force (% of women 15+)</title>
-<desc id="tg-link-flfp-d">40 countries plotted. Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.09 points (95% interval −0.04 to +0.23), correlation 0.22, so the data cannot rule out no link. No value for St. Kitts and Nevis; Taiwan, China; Kiribati.</desc>
-<defs><clipPath id="tg-link-flfp-clip"><rect x="46" y="12" width="502" height="242"/></clipPath></defs>
-<line class="grid" x1="46" y1="254.0" x2="548" y2="254.0"/>
-<text class="axis" x="40" y="258.0" text-anchor="end">20%</text>
-<line class="grid" x1="46" y1="205.6" x2="548" y2="205.6"/>
-<text class="axis" x="40" y="209.6" text-anchor="end">30%</text>
-<line class="grid" x1="46" y1="157.2" x2="548" y2="157.2"/>
-<text class="axis" x="40" y="161.2" text-anchor="end">40%</text>
-<line class="grid" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<text class="axis" x="40" y="112.8" text-anchor="end">50%</text>
-<line class="grid" x1="46" y1="60.4" x2="548" y2="60.4"/>
-<text class="axis" x="40" y="64.4" text-anchor="end">60%</text>
-<line class="grid" x1="46" y1="12.0" x2="548" y2="12.0"/>
-<text class="axis" x="40" y="16.0" text-anchor="end">70%</text>
-<line class="grid" x1="116.5" y1="12" x2="116.5" y2="254"/>
-<text class="axis" x="116.5" y="272" text-anchor="middle">20</text>
-<line class="grid" x1="247.6" y1="12" x2="247.6" y2="254"/>
-<text class="axis" x="247.6" y="272" text-anchor="middle">40</text>
-<line class="grid" x1="378.7" y1="12" x2="378.7" y2="254"/>
-<text class="axis" x="378.7" y="272" text-anchor="middle">60</text>
-<line class="grid" x1="509.9" y1="12" x2="509.9" y2="254"/>
-<text class="axis" x="509.9" y="272" text-anchor="middle">80</text>
-<text class="axis" x="297.0" y="296" text-anchor="middle">Women in the labour force (% of women 15+)</text>
-<line class="par" x1="46" y1="108.8" x2="548" y2="108.8"/>
-<line class="fitline" clip-path="url(#tg-link-flfp-clip)" x1="46.0" y1="167.8" x2="548.0" y2="133.7"/>
-<circle class="dot" cx="342.3" cy="238.2" r="5"><title>Brunei Darussalam: 23.3% female</title></circle>
-<circle class="dot" cx="252.4" cy="218.3" r="5"><title>Maldives: 27.4% female</title></circle>
-<circle class="dot" cx="188.6" cy="206.8" r="5"><title>Sri Lanka: 29.8% female</title></circle>
-<circle class="dot" cx="143.0" cy="204.8" r="5"><title>Pakistan: 30.2% female</title></circle>
-<circle class="dot" cx="525.2" cy="192.4" r="5"><title>Solomon Islands: 32.7% female</title></circle>
-<circle class="dot" cx="446.9" cy="184.7" r="5"><title>South Sudan: 34.3% female</title></circle>
-<circle class="dot" cx="128.9" cy="181.5" r="5"><title>Tajikistan: 35.0% female</title></circle>
-<circle class="dot" cx="198.0" cy="179.5" r="5"><title>India: 35.4% female</title></circle>
-<circle class="dot" cx="238.8" cy="179.0" r="5"><title>Bangladesh: 35.5% female</title></circle>
-<circle class="dot" cx="357.1" cy="174.7" r="5"><title>Bhutan: 36.4% female</title></circle>
-<circle class="dot" cx="80.1" cy="167.3" r="5"><title>Sudan: 37.9% female</title></circle>
-<circle class="dot" cx="186.9" cy="164.1" r="5"><title>Samoa: 38.6% female</title></circle>
-<circle class="dot" cx="328.8" cy="162.7" r="5"><title>Ecuador: 38.9% female</title></circle>
-<circle class="dot" cx="294.8" cy="159.9" r="5"><title>Kuwait: 39.4% female</title></circle>
-<circle class="dot" cx="278.2" cy="159.5" r="5"><title>Greece: 39.5% female</title></circle>
-<circle class="dot" cx="68.8" cy="154.7" r="5"><title>Syrian Arab Republic: 40.5% female</title></circle>
-<circle class="dot" cx="109.5" cy="154.3" r="5"><title>West Bank and Gaza: 40.6% female</title></circle>
-<circle class="dot" cx="395.2" cy="151.5" r="5"><title>Australia: 41.2% female</title></circle>
-<circle class="dot" cx="90.5" cy="150.6" r="5"><title>Jordan: 41.4% female</title></circle>
-<circle class="dot" cx="514.4" cy="149.6" r="5"><title>Nigeria: 41.6% female</title></circle>
-<circle class="dot" cx="181.8" cy="149.5" r="5"><title>Oman: 41.6% female</title></circle>
-<circle class="dot" cx="312.4" cy="149.0" r="5"><title>South Africa: 41.7% female</title></circle>
-<circle class="dot" cx="323.7" cy="146.4" r="5"><title>Sierra Leone: 42.2% female</title></circle>
-<circle class="dot" cx="368.6" cy="146.0" r="5"><title>Ethiopia: 42.3% female</title></circle>
-<circle class="dot" cx="361.3" cy="144.2" r="5"><title>United Kingdom: 42.7% female</title></circle>
-<circle class="dot" cx="159.1" cy="143.6" r="5"><title>Tunisia: 42.8% female</title></circle>
-<circle class="dot" cx="354.8" cy="143.2" r="5"><title>United States: 42.9% female</title></circle>
-<circle class="dot" cx="481.0" cy="142.4" r="5"><title>Uganda: 43.0% female</title></circle>
-<circle class="dot" cx="295.8" cy="141.0" r="5"><title>Guyana: 43.4% female</title></circle>
-<circle class="dot" cx="383.7" cy="140.5" r="5"><title>Azerbaijan: 43.5% female</title></circle>
-<circle class="dot" cx="357.6" cy="140.3" r="5"><title>Belarus: 43.5% female</title></circle>
-<circle class="dot" cx="361.1" cy="137.2" r="5"><title>Rwanda: 44.1% female</title></circle>
-<circle class="dot" cx="347.7" cy="122.5" r="5"><title>Ghana: 47.2% female</title></circle>
-<circle class="dot" cx="165.5" cy="118.8" r="5"><title>Nepal: 47.9% female</title></circle>
-<circle class="dot" cx="337.6" cy="117.7" r="5"><title>Indonesia: 48.2% female</title></circle>
-<circle class="dot" cx="398.6" cy="113.0" r="5"><title>Kenya: 49.1% female</title></circle>
-<circle class="dot" cx="228.9" cy="109.7" r="5"><title>Türkiye: 49.8% female</title></circle>
-<circle class="dot" cx="492.5" cy="108.4" r="5"><title>Cambodia: 50.1% female</title></circle>
-<circle class="dot" cx="318.6" cy="68.8" r="5"><title>Papua New Guinea: 58.3% female</title></circle>
-<circle class="dot" cx="392.9" cy="23.8" r="5"><title>Zimbabwe: 67.6% female</title></circle>
-</svg></div><p class="note">Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.09 points (95% interval −0.04 to +0.23), correlation 0.22, so the data cannot rule out no link. No value for St. Kitts and Nevis; Taiwan, China; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against women in work</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in work, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in work</caption><thead><tr><th scope="col">Country</th><th scope="col">Women in the labour force (% of women 15+)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Brunei Darussalam</th><td>54.4</td><td>23.3%</td></tr><tr><th scope="row">Maldives</th><td>40.7</td><td>27.4%</td></tr><tr><th scope="row">Sri Lanka</th><td>31.0</td><td>29.8%</td></tr><tr><th scope="row">Pakistan</th><td>24.0</td><td>30.2%</td></tr><tr><th scope="row">Solomon Islands</th><td>82.3</td><td>32.7%</td></tr><tr><th scope="row">South Sudan</th><td>70.4</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>21.9</td><td>35.0%</td></tr><tr><th scope="row">India</th><td>32.4</td><td>35.4%</td></tr><tr><th scope="row">Bangladesh</th><td>38.6</td><td>35.5%</td></tr><tr><th scope="row">Bhutan</th><td>56.7</td><td>36.4%</td></tr><tr><th scope="row">Sudan</th><td>14.5</td><td>37.9%</td></tr><tr><th scope="row">Samoa</th><td>30.7</td><td>38.6%</td></tr><tr><th scope="row">Ecuador</th><td>52.4</td><td>38.9%</td></tr><tr><th scope="row">Kuwait</th><td>47.2</td><td>39.4%</td></tr><tr><th scope="row">Greece</th><td>44.7</td><td>39.5%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>12.7</td><td>40.5%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>18.9</td><td>40.6%</td></tr><tr><th scope="row">Australia</th><td>62.5</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>16.0</td><td>41.4%</td></tr><tr><th scope="row">Nigeria</th><td>80.7</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>30.0</td><td>41.6%</td></tr><tr><th scope="row">South Africa</th><td>49.9</td><td>41.7%</td></tr><tr><th scope="row">Sierra Leone</th><td>51.6</td><td>42.2%</td></tr><tr><th scope="row">Ethiopia</th><td>58.5</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>57.3</td><td>42.7%</td></tr><tr><th scope="row">Tunisia</th><td>26.5</td><td>42.8%</td></tr><tr><th scope="row">United States</th><td>56.3</td><td>42.9%</td></tr><tr><th scope="row">Uganda</th><td>75.6</td><td>43.0%</td></tr><tr><th scope="row">Guyana</th><td>47.4</td><td>43.4%</td></tr><tr><th scope="row">Azerbaijan</th><td>60.8</td><td>43.5%</td></tr><tr><th scope="row">Belarus</th><td>56.8</td><td>43.5%</td></tr><tr><th scope="row">Rwanda</th><td>57.3</td><td>44.1%</td></tr><tr><th scope="row">Ghana</th><td>55.3</td><td>47.2%</td></tr><tr><th scope="row">Nepal</th><td>27.5</td><td>47.9%</td></tr><tr><th scope="row">Indonesia</th><td>53.7</td><td>48.2%</td></tr><tr><th scope="row">Kenya</th><td>63.0</td><td>49.1%</td></tr><tr><th scope="row">Türkiye</th><td>37.1</td><td>49.8%</td></tr><tr><th scope="row">Cambodia</th><td>77.4</td><td>50.1%</td></tr><tr><th scope="row">Papua New Guinea</th><td>50.8</td><td>58.3%</td></tr><tr><th scope="row">Zimbabwe</th><td>62.2</td><td>67.6%</td></tr></tbody></table></div></details><h3>By World Bank region</h3><div class="chartbox"><svg class="chart" id="tg-region" viewBox="0 0 560 305" role="img" aria-labelledby="tg-region-t tg-region-d" preserveAspectRatio="xMinYMin meet">
+<desc id="tg-link-flfp-d">39 countries plotted. Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.11 points (95% interval −0.02 to +0.23), correlation 0.27, so the data cannot rule out no link. No value for St. Kitts and Nevis; Taiwan, China; Kiribati.</desc>
+<defs><clipPath id="tg-link-flfp-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
+<line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
+<text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
+<line class="grid" x1="46" y1="225.6" x2="464" y2="225.6"/>
+<text class="axis" x="40" y="229.6" text-anchor="end">30%</text>
+<line class="grid" x1="46" y1="177.2" x2="464" y2="177.2"/>
+<text class="axis" x="40" y="181.2" text-anchor="end">40%</text>
+<line class="grid" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<text class="axis" x="40" y="132.8" text-anchor="end">50%</text>
+<line class="grid" x1="46" y1="80.4" x2="464" y2="80.4"/>
+<text class="axis" x="40" y="84.4" text-anchor="end">60%</text>
+<line class="grid" x1="46" y1="32.0" x2="464" y2="32.0"/>
+<text class="axis" x="40" y="36.0" text-anchor="end">70%</text>
+<line class="grid" x1="104.7" y1="32" x2="104.7" y2="274"/>
+<text class="axis" x="104.7" y="292" text-anchor="middle">20</text>
+<line class="grid" x1="213.9" y1="32" x2="213.9" y2="274"/>
+<text class="axis" x="213.9" y="292" text-anchor="middle">40</text>
+<line class="grid" x1="323.1" y1="32" x2="323.1" y2="274"/>
+<text class="axis" x="323.1" y="292" text-anchor="middle">60</text>
+<line class="grid" x1="432.2" y1="32" x2="432.2" y2="274"/>
+<text class="axis" x="432.2" y="292" text-anchor="middle">80</text>
+<text class="axis" x="255.0" y="316" text-anchor="middle">Women in the labour force (% of women 15+)</text>
+<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
+<line class="fitline" clip-path="url(#tg-link-flfp-clip)" x1="46.0" y1="188.5" x2="464.0" y2="149.2"/>
+<circle class="dot" cx="217.9" cy="234.7" r="5"><title>Maldives: 28.1% female</title></circle>
+<circle class="dot" cx="164.7" cy="228.5" r="5"><title>Sri Lanka: 29.4% female</title></circle>
+<circle class="dot" cx="126.8" cy="225.5" r="5"><title>Pakistan: 30.0% female</title></circle>
+<circle class="dot" cx="445.0" cy="213.7" r="5"><title>Solomon Islands: 32.5% female</title></circle>
+<circle class="dot" cx="379.8" cy="204.9" r="5"><title>South Sudan: 34.3% female</title></circle>
+<circle class="dot" cx="115.1" cy="203.1" r="5"><title>Tajikistan: 34.6% female</title></circle>
+<circle class="dot" cx="206.5" cy="200.2" r="5"><title>Bangladesh: 35.2% female</title></circle>
+<circle class="dot" cx="172.5" cy="200.0" r="5"><title>India: 35.3% female</title></circle>
+<circle class="dot" cx="305.0" cy="195.9" r="5"><title>Bhutan: 36.1% female</title></circle>
+<circle class="dot" cx="74.4" cy="187.8" r="5"><title>Sudan: 37.8% female</title></circle>
+<circle class="dot" cx="163.3" cy="184.7" r="5"><title>Samoa: 38.5% female</title></circle>
+<circle class="dot" cx="281.5" cy="183.5" r="5"><title>Ecuador: 38.7% female</title></circle>
+<circle class="dot" cx="239.4" cy="181.6" r="5"><title>Greece: 39.1% female</title></circle>
+<circle class="dot" cx="253.2" cy="181.3" r="5"><title>Kuwait: 39.2% female</title></circle>
+<circle class="dot" cx="65.0" cy="175.2" r="5"><title>Syrian Arab Republic: 40.4% female</title></circle>
+<circle class="dot" cx="98.9" cy="174.9" r="5"><title>West Bank and Gaza: 40.5% female</title></circle>
+<circle class="dot" cx="336.8" cy="171.2" r="5"><title>Australia: 41.2% female</title></circle>
+<circle class="dot" cx="83.0" cy="171.1" r="5"><title>Jordan: 41.2% female</title></circle>
+<circle class="dot" cx="267.8" cy="169.5" r="5"><title>South Africa: 41.6% female</title></circle>
+<circle class="dot" cx="159.1" cy="169.3" r="5"><title>Oman: 41.6% female</title></circle>
+<circle class="dot" cx="277.2" cy="167.8" r="5"><title>Sierra Leone: 42.0% female</title></circle>
+<circle class="dot" cx="314.6" cy="166.9" r="5"><title>Ethiopia: 42.1% female</title></circle>
+<circle class="dot" cx="140.2" cy="166.1" r="5"><title>Tunisia: 42.3% female</title></circle>
+<circle class="dot" cx="308.5" cy="164.8" r="5"><title>United Kingdom: 42.6% female</title></circle>
+<circle class="dot" cx="408.2" cy="164.7" r="5"><title>Uganda: 42.6% female</title></circle>
+<circle class="dot" cx="303.1" cy="163.4" r="5"><title>United States: 42.9% female</title></circle>
+<circle class="dot" cx="436.1" cy="162.9" r="5"><title>Nigeria: 43.0% female</title></circle>
+<circle class="dot" cx="305.4" cy="162.0" r="5"><title>Belarus: 43.1% female</title></circle>
+<circle class="dot" cx="327.2" cy="161.6" r="5"><title>Azerbaijan: 43.2% female</title></circle>
+<circle class="dot" cx="254.0" cy="158.4" r="5"><title>Guyana: 43.9% female</title></circle>
+<circle class="dot" cx="308.3" cy="156.9" r="5"><title>Rwanda: 44.2% female</title></circle>
+<circle class="dot" cx="297.2" cy="143.2" r="5"><title>Ghana: 47.0% female</title></circle>
+<circle class="dot" cx="288.8" cy="139.3" r="5"><title>Indonesia: 47.8% female</title></circle>
+<circle class="dot" cx="145.5" cy="138.4" r="5"><title>Nepal: 48.0% female</title></circle>
+<circle class="dot" cx="198.3" cy="131.1" r="5"><title>Türkiye: 49.5% female</title></circle>
+<circle class="dot" cx="417.8" cy="130.2" r="5"><title>Cambodia: 49.7% female</title></circle>
+<circle class="dot" cx="339.6" cy="126.7" r="5"><title>Kenya: 50.4% female</title></circle>
+<circle class="dot" cx="273.0" cy="87.9" r="5"><title>Papua New Guinea: 58.5% female</title></circle>
+<circle class="dot" cx="334.8" cy="44.5" r="5"><title>Zimbabwe: 67.4% female</title></circle>
+<text class="ytitle" x="0" y="12">Adjusted female share</text>
+<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-fit" x="472" y="153.2">Fitted line</text>
+</svg></div><p class="note">Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.11 points (95% interval −0.02 to +0.23), correlation 0.27, so the data cannot rule out no link. No value for St. Kitts and Nevis; Taiwan, China; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against women in work</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in work, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in work</caption><thead><tr><th scope="col">Country</th><th scope="col">Women in the labour force (% of women 15+)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>40.7</td><td>28.1%</td></tr><tr><th scope="row">Sri Lanka</th><td>31.0</td><td>29.4%</td></tr><tr><th scope="row">Pakistan</th><td>24.0</td><td>30.0%</td></tr><tr><th scope="row">Solomon Islands</th><td>82.3</td><td>32.5%</td></tr><tr><th scope="row">South Sudan</th><td>70.4</td><td>34.3%</td></tr><tr><th scope="row">Tajikistan</th><td>21.9</td><td>34.6%</td></tr><tr><th scope="row">Bangladesh</th><td>38.6</td><td>35.2%</td></tr><tr><th scope="row">India</th><td>32.4</td><td>35.3%</td></tr><tr><th scope="row">Bhutan</th><td>56.7</td><td>36.1%</td></tr><tr><th scope="row">Sudan</th><td>14.5</td><td>37.8%</td></tr><tr><th scope="row">Samoa</th><td>30.7</td><td>38.5%</td></tr><tr><th scope="row">Ecuador</th><td>52.4</td><td>38.7%</td></tr><tr><th scope="row">Greece</th><td>44.7</td><td>39.1%</td></tr><tr><th scope="row">Kuwait</th><td>47.2</td><td>39.2%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>12.7</td><td>40.4%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>18.9</td><td>40.5%</td></tr><tr><th scope="row">Australia</th><td>62.5</td><td>41.2%</td></tr><tr><th scope="row">Jordan</th><td>16.0</td><td>41.2%</td></tr><tr><th scope="row">South Africa</th><td>49.9</td><td>41.6%</td></tr><tr><th scope="row">Oman</th><td>30.0</td><td>41.6%</td></tr><tr><th scope="row">Sierra Leone</th><td>51.6</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>58.5</td><td>42.1%</td></tr><tr><th scope="row">Tunisia</th><td>26.5</td><td>42.3%</td></tr><tr><th scope="row">United Kingdom</th><td>57.3</td><td>42.6%</td></tr><tr><th scope="row">Uganda</th><td>75.6</td><td>42.6%</td></tr><tr><th scope="row">United States</th><td>56.3</td><td>42.9%</td></tr><tr><th scope="row">Nigeria</th><td>80.7</td><td>43.0%</td></tr><tr><th scope="row">Belarus</th><td>56.8</td><td>43.1%</td></tr><tr><th scope="row">Azerbaijan</th><td>60.8</td><td>43.2%</td></tr><tr><th scope="row">Guyana</th><td>47.4</td><td>43.9%</td></tr><tr><th scope="row">Rwanda</th><td>57.3</td><td>44.2%</td></tr><tr><th scope="row">Ghana</th><td>55.3</td><td>47.0%</td></tr><tr><th scope="row">Indonesia</th><td>53.7</td><td>47.8%</td></tr><tr><th scope="row">Nepal</th><td>27.5</td><td>48.0%</td></tr><tr><th scope="row">Türkiye</th><td>37.1</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>77.4</td><td>49.7%</td></tr><tr><th scope="row">Kenya</th><td>63.0</td><td>50.4%</td></tr><tr><th scope="row">Papua New Guinea</th><td>50.8</td><td>58.5%</td></tr><tr><th scope="row">Zimbabwe</th><td>62.2</td><td>67.4%</td></tr></tbody></table></div></details><h3>By World Bank region</h3><div class="chartbox"><svg class="chart" id="tg-region" viewBox="0 0 560 305" role="img" aria-labelledby="tg-region-t tg-region-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-region-t">Female share of national textbooks by World Bank region</title>
 <desc id="tg-region-d">East Asia &amp; Pacific 37.7%; Europe &amp; Central Asia 42.2%; Latin America &amp; Caribbean 43.6%; Middle East, North Africa, Afghanistan &amp; Pakistan 33.7%; North America 44.3%; South Asia 31.0%; Sub-Saharan Africa 39.8%</desc>
-<text class="axis" x="0" y="14">0%</text>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
 <text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
-<text class="axis" x="490" y="14" text-anchor="end">100%</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
 <text class="axis" x="560" y="14" text-anchor="end">Female</text>
-<g class="row"><title>East Asia &amp; Pacific: 37.7% female, 409 books</title>
-<text class="lab" x="0" y="42">East Asia &amp; Pacific<tspan class="cnt" dx="8">409 books</tspan></text>
+<g class="row"><title>East Asia &amp; Pacific: 37.7% female, 372 books</title>
+<text class="lab" x="0" y="42">East Asia &amp; Pacific<tspan class="cnt" dx="8">372 books</tspan></text>
 <rect class="bf" x="0" y="48" width="184.83" height="13"/>
 <rect class="bm" x="184.83" y="48" width="305.17" height="13"/>
 <text class="val" x="560" y="59" text-anchor="end">37.7%</text>
@@ -505,8 +534,8 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
 <line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
 </g>
-<g class="row"><title>South Asia: 31.0% female, 453 books</title>
-<text class="lab" x="0" y="237">South Asia<tspan class="cnt" dx="8">453 books</tspan></text>
+<g class="row"><title>South Asia: 31.0% female, 447 books</title>
+<text class="lab" x="0" y="237">South Asia<tspan class="cnt" dx="8">447 books</tspan></text>
 <rect class="bf" x="0" y="243" width="151.95" height="13"/>
 <rect class="bm" x="151.95" y="243" width="338.05" height="13"/>
 <text class="val" x="560" y="254" text-anchor="end">31.0%</text>
@@ -521,15 +550,15 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
 <line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
 </g>
-</svg></div><div class="legend" aria-hidden="true"><span><i class="sw sf"></i>Women and girls</span><span><i class="sw sm"></i>Men and boys</span><span><i class="sw sp"></i>Parity (50%)</span></div><details class="dt"><summary>Data table: female share by World Bank region</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by World Bank region, scrolls sideways"><table><caption class="vh">Data table: female share by World Bank region</caption><thead><tr><th scope="col">Group</th><th scope="col">Countries</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">East Asia &amp; Pacific</th><td>11</td><td>409</td><td>37.7%</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>9</td><td>132</td><td>42.2%</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>9</td><td>133</td><td>43.6%</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>12</td><td>318</td><td>33.7%</td></tr><tr><th scope="row">North America</th><td>1</td><td>72</td><td>44.3%</td></tr><tr><th scope="row">South Asia</th><td>6</td><td>453</td><td>31.0%</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>18</td><td>852</td><td>39.8%</td></tr></tbody></table></div></details><h3>By income group</h3><div class="chartbox"><svg class="chart" id="tg-income" viewBox="0 0 560 188" role="img" aria-labelledby="tg-income-t tg-income-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><details class="dt"><summary>Data table: female share by World Bank region</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by World Bank region, scrolls sideways"><table><caption class="vh">Data table: female share by World Bank region</caption><thead><tr><th scope="col">Group</th><th scope="col">Countries</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">East Asia &amp; Pacific</th><td>11</td><td>372</td><td>37.7%</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>9</td><td>132</td><td>42.2%</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>9</td><td>133</td><td>43.6%</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>12</td><td>318</td><td>33.7%</td></tr><tr><th scope="row">North America</th><td>1</td><td>72</td><td>44.3%</td></tr><tr><th scope="row">South Asia</th><td>6</td><td>447</td><td>31.0%</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>18</td><td>852</td><td>39.8%</td></tr></tbody></table></div></details><h3>By income group</h3><div class="chartbox"><svg class="chart" id="tg-income" viewBox="0 0 560 188" role="img" aria-labelledby="tg-income-t tg-income-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-income-t">Female share of national textbooks by income group</title>
 <desc id="tg-income-d">High income 42.6%; Low income 37.2%; Lower middle income 33.3%; Upper middle income 41.2%</desc>
-<text class="axis" x="0" y="14">0%</text>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
 <text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
-<text class="axis" x="490" y="14" text-anchor="end">100%</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
 <text class="axis" x="560" y="14" text-anchor="end">Female</text>
-<g class="row"><title>High income: 42.6% female, 483 books</title>
-<text class="lab" x="0" y="42">High income<tspan class="cnt" dx="8">483 books</tspan></text>
+<g class="row"><title>High income: 42.6% female, 446 books</title>
+<text class="lab" x="0" y="42">High income<tspan class="cnt" dx="8">446 books</tspan></text>
 <rect class="bf" x="0" y="48" width="208.84" height="13"/>
 <rect class="bm" x="208.84" y="48" width="281.16" height="13"/>
 <text class="val" x="560" y="59" text-anchor="end">42.6%</text>
@@ -552,15 +581,15 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
 <line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
 </g>
-<g class="row"><title>Upper middle income: 41.2% female, 462 books</title>
-<text class="lab" x="0" y="159">Upper middle income<tspan class="cnt" dx="8">462 books</tspan></text>
+<g class="row"><title>Upper middle income: 41.2% female, 456 books</title>
+<text class="lab" x="0" y="159">Upper middle income<tspan class="cnt" dx="8">456 books</tspan></text>
 <rect class="bf" x="0" y="165" width="201.68" height="13"/>
 <rect class="bm" x="201.68" y="165" width="288.32" height="13"/>
 <text class="val" x="560" y="176" text-anchor="end">41.2%</text>
 <line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
 <line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
 </g>
-</svg></div><div class="legend" aria-hidden="true"><span><i class="sw sf"></i>Women and girls</span><span><i class="sw sm"></i>Men and boys</span><span><i class="sw sp"></i>Parity (50%)</span></div><details class="dt"><summary>Data table: female share by income group</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by income group, scrolls sideways"><table><caption class="vh">Data table: female share by income group</caption><thead><tr><th scope="col">Group</th><th scope="col">Countries</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">High income</th><td>13</td><td>483</td><td>42.6%</td></tr><tr><th scope="row">Low income</th><td>11</td><td>405</td><td>37.2%</td></tr><tr><th scope="row">Lower middle income</th><td>24</td><td>1,019</td><td>33.3%</td></tr><tr><th scope="row">Upper middle income</th><td>18</td><td>462</td><td>41.2%</td></tr></tbody></table></div></details></section>
+</svg></div><details class="dt"><summary>Data table: female share by income group</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by income group, scrolls sideways"><table><caption class="vh">Data table: female share by income group</caption><thead><tr><th scope="col">Group</th><th scope="col">Countries</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">High income</th><td>13</td><td>446</td><td>42.6%</td></tr><tr><th scope="row">Low income</th><td>11</td><td>405</td><td>37.2%</td></tr><tr><th scope="row">Lower middle income</th><td>24</td><td>1,019</td><td>33.3%</td></tr><tr><th scope="row">Upper middle income</th><td>18</td><td>456</td><td>41.2%</td></tr></tbody></table></div></details></section>
 <p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
 </main></div>
 <script>

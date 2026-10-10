@@ -853,6 +853,285 @@
   ],
   "model_books": 2633
  },
+ "within": {
+  "IND": {
+   "iso3": "IND",
+   "name": "India",
+   "books": 709,
+   "model_books": 700,
+   "state_books": 485,
+   "i4i_state_books": 382,
+   "units": [
+    {
+     "label": "Karnataka",
+     "subnational": "Karnataka",
+     "books": 52,
+     "model": 52,
+     "raw": 22.38,
+     "subjects": [
+      "Business and Economics",
+      "General and Social Studies",
+      "Home Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Social Science"
+     ],
+     "adjusted": 25.81,
+     "lo": 21.41,
+     "hi": 30.21
+    },
+    {
+     "label": "Kerala",
+     "subnational": "Kerala",
+     "books": 84,
+     "model": 84,
+     "raw": 30.69,
+     "subjects": [
+      "Business and Economics",
+      "General and Social Studies",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 26.18,
+     "lo": 22.32,
+     "hi": 30.04
+    },
+    {
+     "label": "Punjab",
+     "subnational": "Punjab",
+     "books": 62,
+     "model": 62,
+     "raw": 31.8,
+     "subjects": [
+      "Agriculture",
+      "General and Social Studies",
+      "Home Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Social Science"
+     ],
+     "adjusted": 28.82,
+     "lo": 24.51,
+     "hi": 33.13
+    },
+    {
+     "label": "Gujarat",
+     "subnational": "Gujarat",
+     "books": 47,
+     "model": 47,
+     "raw": 28.85,
+     "subjects": [
+      "Business and Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 30.66,
+     "lo": 26.02,
+     "hi": 35.3
+    },
+    {
+     "label": "Tamil Nadu",
+     "subnational": "Tamil Nadu",
+     "books": 91,
+     "model": 91,
+     "raw": 27.36,
+     "subjects": [
+      "Business and Economics",
+      "General and Social Studies",
+      "Home Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 30.68,
+     "lo": 27.29,
+     "hi": 34.07
+    },
+    {
+     "label": "Telangana",
+     "subnational": "Telangana",
+     "books": 31,
+     "model": 31,
+     "raw": 33.11,
+     "subjects": [
+      "General and Social Studies",
+      "Language",
+      "Maths",
+      "Science"
+     ],
+     "adjusted": 31.76,
+     "lo": 25.92,
+     "hi": 37.6
+    },
+    {
+     "label": "Andhra Pradesh",
+     "subnational": "Andhra Pradesh",
+     "books": 32,
+     "model": 29,
+     "raw": 34.62,
+     "subjects": [
+      "General and Social Studies",
+      "Language",
+      "Maths",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 32.14,
+     "lo": 25.98,
+     "hi": 38.31
+    },
+    {
+     "label": "Maharashtra",
+     "subnational": "Maharashtra",
+     "books": 66,
+     "model": 66,
+     "raw": 28.45,
+     "subjects": [
+      "Arts",
+      "Business and Economics",
+      "Home Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 32.8,
+     "lo": 28.86,
+     "hi": 36.74
+    },
+    {
+     "label": "Mizoram",
+     "subnational": "Mizoram",
+     "books": 10,
+     "model": 10,
+     "raw": 34.98,
+     "subjects": [
+      "General and Social Studies",
+      "Language",
+      "Maths",
+      "Social Science"
+     ],
+     "adjusted": 33.67,
+     "lo": 23.63,
+     "hi": 43.72
+    },
+    {
+     "label": "Chhattisgarh",
+     "subnational": "Chhattisgarh",
+     "books": 10,
+     "model": 10,
+     "raw": 42.52,
+     "subjects": [
+      "Maths"
+     ],
+     "adjusted": 36.24,
+     "lo": 26.09,
+     "hi": 46.4
+    },
+    {
+     "label": "NCERT (national)",
+     "subnational": "",
+     "books": 224,
+     "model": 218,
+     "raw": 36.14,
+     "subjects": [
+      "Arts",
+      "Business and Economics",
+      "General and Social Studies",
+      "Home Economics",
+      "Humanities",
+      "IT",
+      "Language",
+      "Maths",
+      "Physical Education",
+      "Science",
+      "Social Science"
+     ],
+     "adjusted": 38.2,
+     "lo": 35.99,
+     "hi": 40.41
+    }
+   ],
+   "few": []
+  },
+  "USA": {
+   "iso3": "USA",
+   "name": "United States",
+   "books": 475,
+   "model_books": 362,
+   "state_books": 379,
+   "i4i_state_books": 0,
+   "units": [
+    {
+     "label": "Texas",
+     "subnational": "Texas",
+     "books": 360,
+     "model": 252,
+     "raw": 36.55,
+     "subjects": [
+      "Language",
+      "Maths"
+     ],
+     "adjusted": 38.2,
+     "lo": 35.03,
+     "hi": 41.36
+    },
+    {
+     "label": "Utah",
+     "subnational": "Utah",
+     "books": 19,
+     "model": 19,
+     "raw": 49.6,
+     "subjects": [
+      "Maths"
+     ],
+     "adjusted": 40.8,
+     "lo": 28.6,
+     "hi": 53.0
+    },
+    {
+     "label": "No state recorded",
+     "subnational": "",
+     "books": 96,
+     "model": 91,
+     "raw": 44.01,
+     "subjects": [
+      "Business and Economics",
+      "General and Social Studies",
+      "Humanities",
+      "Language",
+      "Science"
+     ],
+     "adjusted": 51.23,
+     "lo": 44.71,
+     "hi": 57.75
+    }
+   ],
+   "few": []
+  }
+ },
  "subjects": [
   {
    "label": "Religion",

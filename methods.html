@@ -242,7 +242,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   books in the model share one level of the country factor, as the paper&rsquo;s
   &ldquo;Other&rdquo; did; countries with fewer than 10 are listed, not ranked. The pooled
   share beside each adjusted share is female words over all gendered words in all of a
-  country&rsquo;s national textbooks (or of a subject group&rsquo;s), with no adjustment.</p>
+  country&rsquo;s national textbooks (or of a subject group&rsquo;s), with no adjustment. Within India and the United States, the same regression is run on that country&rsquo;s books alone, with state in place of country (books with no state are a group of their own), for countries whose books come from at least two states with 10 or more books in the model each; states with fewer are listed, not estimated.</p>
 <p>Run on the paper&rsquo;s own books, the adjusted country shares here differ from the corrected figures (the paper&rsquo;s own Stata code rerun with an exact word count) by 1.6 points on average across 27 countries (largest: 7.2 points, Kenya), and the subject shares by 1.5 points on average across 13 subject groups (largest: 4.2 points, Arts). The differences reflect the rebuilt corpus and the reimplemented counts. The comparison uses all of the paper&rsquo;s books, as published (including any the site counts once because they were found more than once). Not compared, because the model has no margin for them here: 1 country (Malawi).</p>
 <h2>Children and adults</h2>
 <p>The children and adults figures follow the paper&rsquo;s Figure 3: each book with at least
@@ -275,7 +275,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2290</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/collections.html</code>, height 1018</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2290</li><li><code>embed/within.html</code>, height 1359</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/collections.html</code>, height 1018</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2290&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

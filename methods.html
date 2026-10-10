@@ -218,25 +218,25 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <p>Each book&rsquo;s text is matched against the paper&rsquo;s list of gendered nouns and pronouns
   (&ldquo;she&rdquo;, &ldquo;mother&rdquo;, &ldquo;queen&rdquo;; &ldquo;he&rdquo;,
   &ldquo;father&rdquo;, &ldquo;king&rdquo;&hellip;). The female share is female words divided by
-  female and male words. 40 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
+  female and male words. 130 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
   the <code>tgs</code> software, on a larger set of books, so they differ from the published
-  paper. 258 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 549 files that hold a chapter, section or unit of a book are counted as the 64 books they belong to.</p>
+  paper. 1,105 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 1,250 files that hold a chapter, section or unit of a book are counted as the 123 books they belong to.</p>
 <h2>Which books count</h2>
 <p>The headline and every cross-country result use national textbooks only, the paper&rsquo;s own
   rule: official English student textbooks. That is the paper&rsquo;s corpus plus the student books
   the 2026 systematic search found on ministry and agency sites and their official mirrors
-  (755 books). Teacher guides, readers, programme books and NGO
+  (1,347 books). The 417 Indian state-board and NCERT textbooks among them (2020&ndash;23 editions) come from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, which took them from an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Teacher guides, readers, programme books and NGO
   collections are shown beside them, never mixed in. 90 files from Lebanon&rsquo;s curriculum centre are excerpts (5 to 22 pages each), not whole textbooks; they are shown beside the national textbooks as their own group and are in no national result, so Lebanon is not ranked. For 22 of the search&rsquo;s books the title names a different kind from the search&rsquo;s guess from the file (a &ldquo;Student Textbook&rdquo; filed as a teacher&rsquo;s guide, a &ldquo;Teacher&rsquo;s Guide&rdquo; filed as a student book), and the title is taken; for 2 files whose titles contradict their contents, the file is followed.</p>
 <h2>Subjects and grades</h2>
 <p>New books&rsquo; subject and grade labels are mapped to the paper&rsquo;s 13 subject groups and
-  to grades 1&ndash;13 by rule, then by hand. Of 1,968 national textbooks,
-  58 have no subject group and 120
+  to grades 1&ndash;13 by rule, then by hand. Of 2,974 national textbooks,
+  65 have no subject group and 203
   have no grade; books missing either count in the headline but not in the
   adjusted results.</p>
 <h2>The adjustment</h2>
 <p>Country and subject shares come from the paper&rsquo;s regression of each book&rsquo;s female
   share on country, subject group, grade and the log of its length
-  (1,775 books with a country, a subject group, a grade and at least one gendered
+  (2,633 books with a country, a subject group, a grade and at least one gendered
   word), summarised as the average prediction for each country or subject
   (Stata&rsquo;s <code>margins</code>), with 95% intervals. Countries with fewer than 5
   books in the model share one level of the country factor, as the paper&rsquo;s
@@ -253,7 +253,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Over time</h2>
 <p>The time chart compares books within countries: a regression of each book&rsquo;s share on its
   country, its period of publication and the log of its length (no subject or grade), on books
-  with a publication year from 2000 on (1,113); 9 books with an earlier year are left out, since some of those years are misread; 12 books with no gendered words are left out (the other 28 are among those with no year). 834 national textbooks have no publication year and are not in the time chart. The change
+  with a publication year from 2000 on (1,482); 9 books with an earlier year are left out, since some of those years are misread; 97 books with no gendered words are left out (the other 33 are among those with no year). 1,386 national textbooks have no publication year and are not in the time chart. The change
   per decade comes from a second regression that uses the year, in decades, in place of the
   period.</p>
 <h2>Limits</h2>
@@ -270,7 +270,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   Student&rsquo;s <em>t</em> for its interval, and is not the paper&rsquo;s book-level regression
   (which found a positive link with income).</p>
 <h2>Changes</h2>
-<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
+<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
 
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this

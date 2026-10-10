@@ -1,14 +1,14 @@
 {
- "built": "2026-10-09",
+ "built": "2026-10-10",
  "headline": {
-  "books": 1968,
-  "female": 215457,
-  "male": 377393,
-  "share": 36.34,
-  "countries": 66,
-  "ratio": 1.75,
-  "paper_books": 1213,
-  "search_books": 755
+  "books": 2974,
+  "female": 294871,
+  "male": 544328,
+  "share": 35.14,
+  "countries": 76,
+  "ratio": 1.85,
+  "paper_books": 1210,
+  "search_books": 1347
  },
  "countries": {
   "ranked": [
@@ -19,20 +19,9 @@
     "model": 23,
     "raw": 44.99,
     "new": false,
-    "adjusted": 26.42,
-    "lo": 19.05,
-    "hi": 33.78
-   },
-   {
-    "iso3": "LKA",
-    "name": "Sri Lanka",
-    "books": 99,
-    "model": 98,
-    "raw": 24.96,
-    "new": false,
-    "adjusted": 28.96,
-    "lo": 25.62,
-    "hi": 32.31
+    "adjusted": 28.69,
+    "lo": 21.16,
+    "hi": 36.22
    },
    {
     "iso3": "PAK",
@@ -41,9 +30,20 @@
     "model": 92,
     "raw": 25.27,
     "new": false,
-    "adjusted": 29.66,
-    "lo": 26.2,
-    "hi": 33.11
+    "adjusted": 29.04,
+    "lo": 25.38,
+    "hi": 32.69
+   },
+   {
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "books": 99,
+    "model": 98,
+    "raw": 24.96,
+    "new": false,
+    "adjusted": 29.91,
+    "lo": 26.37,
+    "hi": 33.45
    },
    {
     "iso3": "SLB",
@@ -52,42 +52,20 @@
     "model": 53,
     "raw": 24.79,
     "new": false,
-    "adjusted": 31.44,
-    "lo": 26.87,
-    "hi": 36.01
+    "adjusted": 32.56,
+    "lo": 27.75,
+    "hi": 37.38
    },
    {
-    "iso3": "KNA",
-    "name": "St. Kitts and Nevis",
-    "books": 53,
-    "model": 44,
-    "raw": 40.09,
+    "iso3": "IND",
+    "name": "India",
+    "books": 709,
+    "model": 700,
+    "raw": 31.77,
     "new": false,
-    "adjusted": 32.35,
-    "lo": 26.96,
-    "hi": 37.73
-   },
-   {
-    "iso3": "BTN",
-    "name": "Bhutan",
-    "books": 19,
-    "model": 19,
-    "raw": 39.41,
-    "new": false,
-    "adjusted": 33.94,
-    "lo": 26.44,
-    "hi": 41.44
-   },
-   {
-    "iso3": "SSD",
-    "name": "South Sudan",
-    "books": 112,
-    "model": 84,
-    "raw": 31.02,
-    "new": false,
-    "adjusted": 34.25,
-    "lo": 30.64,
-    "hi": 37.86
+    "adjusted": 33.0,
+    "lo": 31.58,
+    "hi": 34.43
    },
    {
     "iso3": "BGD",
@@ -96,9 +74,42 @@
     "model": 86,
     "raw": 26.48,
     "new": false,
-    "adjusted": 34.41,
-    "lo": 30.63,
-    "hi": 38.19
+    "adjusted": 34.18,
+    "lo": 30.19,
+    "hi": 38.17
+   },
+   {
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "books": 112,
+    "model": 84,
+    "raw": 31.02,
+    "new": false,
+    "adjusted": 34.29,
+    "lo": 30.47,
+    "hi": 38.11
+   },
+   {
+    "iso3": "KNA",
+    "name": "St. Kitts and Nevis",
+    "books": 53,
+    "model": 44,
+    "raw": 40.09,
+    "new": false,
+    "adjusted": 34.36,
+    "lo": 28.87,
+    "hi": 39.84
+   },
+   {
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "books": 19,
+    "model": 19,
+    "raw": 39.41,
+    "new": false,
+    "adjusted": 36.08,
+    "lo": 28.12,
+    "hi": 44.04
    },
    {
     "iso3": "TJK",
@@ -107,97 +118,9 @@
     "model": 10,
     "raw": 30.18,
     "new": true,
-    "adjusted": 34.81,
-    "lo": 24.52,
-    "hi": 45.1
-   },
-   {
-    "iso3": "IND",
-    "name": "India",
-    "books": 162,
-    "model": 162,
-    "raw": 33.54,
-    "new": false,
-    "adjusted": 35.82,
-    "lo": 33.1,
-    "hi": 38.55
-   },
-   {
-    "iso3": "SDN",
-    "name": "Sudan",
-    "books": 13,
-    "model": 12,
-    "raw": 38.67,
-    "new": true,
-    "adjusted": 37.11,
-    "lo": 27.72,
-    "hi": 46.5
-   },
-   {
-    "iso3": "WSM",
-    "name": "Samoa",
-    "books": 72,
-    "model": 66,
-    "raw": 44.73,
-    "new": false,
-    "adjusted": 37.22,
-    "lo": 32.82,
-    "hi": 41.62
-   },
-   {
-    "iso3": "ECU",
-    "name": "Ecuador",
-    "books": 15,
-    "model": 15,
-    "raw": 45.14,
-    "new": true,
-    "adjusted": 37.36,
-    "lo": 28.86,
-    "hi": 45.87
-   },
-   {
-    "iso3": "NPL",
-    "name": "Nepal",
-    "books": 21,
-    "model": 15,
-    "raw": 49.24,
-    "new": true,
-    "adjusted": 37.96,
-    "lo": 28.14,
-    "hi": 47.78
-   },
-   {
-    "iso3": "GRC",
-    "name": "Greece",
-    "books": 26,
-    "model": 24,
-    "raw": 42.11,
-    "new": true,
-    "adjusted": 39.15,
-    "lo": 32.41,
-    "hi": 45.9
-   },
-   {
-    "iso3": "SYR",
-    "name": "Syrian Arab Republic",
-    "books": 24,
-    "model": 24,
-    "raw": 40.55,
-    "new": true,
-    "adjusted": 40.0,
-    "lo": 33.29,
-    "hi": 46.72
-   },
-   {
-    "iso3": "PSE",
-    "name": "West Bank and Gaza",
-    "books": 25,
-    "model": 25,
-    "raw": 36.93,
-    "new": true,
-    "adjusted": 40.09,
-    "lo": 33.53,
-    "hi": 46.65
+    "adjusted": 36.5,
+    "lo": 25.55,
+    "hi": 47.44
    },
    {
     "iso3": "PNG",
@@ -206,64 +129,53 @@
     "model": 14,
     "raw": 41.85,
     "new": false,
-    "adjusted": 40.54,
-    "lo": 31.71,
-    "hi": 49.37
+    "adjusted": 37.44,
+    "lo": 28.13,
+    "hi": 46.74
    },
    {
-    "iso3": "UGA",
-    "name": "Uganda",
-    "books": 36,
-    "model": 24,
-    "raw": 32.87,
-    "new": false,
-    "adjusted": 40.55,
-    "lo": 33.59,
-    "hi": 47.5
-   },
-   {
-    "iso3": "NGA",
-    "name": "Nigeria",
-    "books": 11,
-    "model": 11,
-    "raw": 54.78,
-    "new": false,
-    "adjusted": 40.85,
-    "lo": 30.41,
-    "hi": 51.28
-   },
-   {
-    "iso3": "JOR",
-    "name": "Jordan",
-    "books": 20,
-    "model": 20,
-    "raw": 42.16,
+    "iso3": "NPL",
+    "name": "Nepal",
+    "books": 21,
+    "model": 15,
+    "raw": 49.24,
     "new": true,
-    "adjusted": 41.05,
-    "lo": 33.72,
-    "hi": 48.39
+    "adjusted": 37.67,
+    "lo": 27.56,
+    "hi": 47.78
    },
    {
-    "iso3": "AUS",
-    "name": "Australia",
-    "books": 78,
-    "model": 76,
-    "raw": 41.86,
+    "iso3": "WSM",
+    "name": "Samoa",
+    "books": 72,
+    "model": 66,
+    "raw": 44.73,
     "new": false,
-    "adjusted": 41.12,
-    "lo": 37.29,
-    "hi": 44.96
+    "adjusted": 38.21,
+    "lo": 33.65,
+    "hi": 42.77
    },
    {
-    "iso3": "OMN",
-    "name": "Oman",
-    "books": 37,
-    "model": 37,
-    "raw": 44.96,
+    "iso3": "USA",
+    "name": "United States",
+    "books": 475,
+    "model": 362,
+    "raw": 40.22,
+    "new": false,
+    "adjusted": 38.73,
+    "lo": 36.75,
+    "hi": 40.72
+   },
+   {
+    "iso3": "SDN",
+    "name": "Sudan",
+    "books": 13,
+    "model": 12,
+    "raw": 38.67,
     "new": true,
-    "adjusted": 41.24,
-    "lo": 35.78,
-    "hi": 46.71
+    "adjusted": 39.42,
+    "lo": 29.43,
+    "hi": 49.41
    },
    {
     "iso3": "GUY",
@@ -272,20 +184,9 @@
     "model": 32,
     "raw": 38.45,
     "new": false,
-    "adjusted": 41.7,
-    "lo": 35.75,
-    "hi": 47.66
-   },
-   {
-    "iso3": "TUN",
-    "name": "Tunisia",
-    "books": 15,
-    "model": 15,
-    "raw": 44.22,
-    "new": true,
-    "adjusted": 41.92,
-    "lo": 33.4,
-    "hi": 50.45
+    "adjusted": 40.16,
+    "lo": 33.95,
+    "hi": 46.37
    },
    {
     "iso3": "ZAF",
@@ -294,9 +195,53 @@
     "model": 51,
     "raw": 40.84,
     "new": false,
-    "adjusted": 41.97,
-    "lo": 37.34,
-    "hi": 46.61
+    "adjusted": 40.79,
+    "lo": 35.91,
+    "hi": 45.68
+   },
+   {
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "books": 15,
+    "model": 15,
+    "raw": 45.14,
+    "new": true,
+    "adjusted": 40.94,
+    "lo": 31.96,
+    "hi": 49.92
+   },
+   {
+    "iso3": "GRC",
+    "name": "Greece",
+    "books": 26,
+    "model": 24,
+    "raw": 42.11,
+    "new": true,
+    "adjusted": 41.16,
+    "lo": 34.01,
+    "hi": 48.31
+   },
+   {
+    "iso3": "UGA",
+    "name": "Uganda",
+    "books": 36,
+    "model": 24,
+    "raw": 32.87,
+    "new": false,
+    "adjusted": 41.23,
+    "lo": 33.91,
+    "hi": 48.56
+   },
+   {
+    "iso3": "AUS",
+    "name": "Australia",
+    "books": 88,
+    "model": 76,
+    "raw": 41.74,
+    "new": false,
+    "adjusted": 41.82,
+    "lo": 37.8,
+    "hi": 45.84
    },
    {
     "iso3": "SLE",
@@ -305,20 +250,20 @@
     "model": 39,
     "raw": 41.5,
     "new": false,
-    "adjusted": 42.24,
-    "lo": 36.91,
-    "hi": 47.56
+    "adjusted": 41.91,
+    "lo": 36.28,
+    "hi": 47.53
    },
    {
-    "iso3": "USA",
-    "name": "United States",
-    "books": 72,
-    "model": 71,
-    "raw": 44.05,
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "books": 21,
+    "model": 17,
+    "raw": 42.75,
     "new": false,
-    "adjusted": 42.56,
-    "lo": 38.6,
-    "hi": 46.51
+    "adjusted": 41.99,
+    "lo": 33.59,
+    "hi": 50.39
    },
    {
     "iso3": "ETH",
@@ -327,42 +272,31 @@
     "model": 37,
     "raw": 45.43,
     "new": false,
-    "adjusted": 42.58,
-    "lo": 37.16,
-    "hi": 48.0
+    "adjusted": 42.01,
+    "lo": 36.27,
+    "hi": 47.75
    },
    {
-    "iso3": "GBR",
-    "name": "United Kingdom",
-    "books": 20,
-    "model": 17,
-    "raw": 42.72,
-    "new": false,
-    "adjusted": 43.02,
-    "lo": 35.1,
-    "hi": 50.95
-   },
-   {
-    "iso3": "AZE",
-    "name": "Azerbaijan",
-    "books": 18,
-    "model": 18,
-    "raw": 44.1,
+    "iso3": "PSE",
+    "name": "West Bank and Gaza",
+    "books": 25,
+    "model": 25,
+    "raw": 36.93,
     "new": true,
-    "adjusted": 43.15,
-    "lo": 35.45,
-    "hi": 50.84
+    "adjusted": 42.47,
+    "lo": 35.51,
+    "hi": 49.43
    },
    {
-    "iso3": "BLR",
-    "name": "Belarus",
-    "books": 26,
-    "model": 26,
-    "raw": 42.86,
+    "iso3": "SYR",
+    "name": "Syrian Arab Republic",
+    "books": 24,
+    "model": 24,
+    "raw": 40.55,
     "new": true,
-    "adjusted": 43.6,
-    "lo": 37.09,
-    "hi": 50.11
+    "adjusted": 42.48,
+    "lo": 35.36,
+    "hi": 49.59
    },
    {
     "iso3": "RWA",
@@ -371,53 +305,75 @@
     "model": 116,
     "raw": 34.64,
     "new": false,
-    "adjusted": 44.2,
-    "lo": 41.06,
-    "hi": 47.34
+    "adjusted": 43.2,
+    "lo": 39.92,
+    "hi": 46.49
    },
    {
-    "iso3": "KWT",
-    "name": "Kuwait",
-    "books": 34,
-    "model": 32,
-    "raw": 39.71,
+    "iso3": "JOR",
+    "name": "Jordan",
+    "books": 20,
+    "model": 20,
+    "raw": 42.16,
     "new": true,
-    "adjusted": 45.71,
-    "lo": 39.79,
-    "hi": 51.62
+    "adjusted": 43.35,
+    "lo": 35.57,
+    "hi": 51.12
    },
    {
-    "iso3": "IDN",
-    "name": "Indonesia",
-    "books": 32,
-    "model": 12,
-    "raw": 50.28,
+    "iso3": "OMN",
+    "name": "Oman",
+    "books": 37,
+    "model": 37,
+    "raw": 44.96,
     "new": true,
-    "adjusted": 47.6,
-    "lo": 38.21,
-    "hi": 56.99
+    "adjusted": 43.54,
+    "lo": 37.77,
+    "hi": 49.3
    },
    {
-    "iso3": "KHM",
-    "name": "Cambodia",
-    "books": 15,
-    "model": 13,
-    "raw": 50.92,
+    "iso3": "BLR",
+    "name": "Belarus",
+    "books": 26,
+    "model": 26,
+    "raw": 42.86,
     "new": true,
-    "adjusted": 47.83,
-    "lo": 38.77,
-    "hi": 56.88
+    "adjusted": 44.99,
+    "lo": 38.11,
+    "hi": 51.87
    },
    {
-    "iso3": "KEN",
-    "name": "Kenya",
-    "books": 12,
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "books": 11,
     "model": 11,
-    "raw": 53.44,
+    "raw": 54.78,
     "new": false,
-    "adjusted": 49.0,
-    "lo": 38.77,
-    "hi": 59.24
+    "adjusted": 45.0,
+    "lo": 34.23,
+    "hi": 55.77
+   },
+   {
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "books": 18,
+    "model": 18,
+    "raw": 44.1,
+    "new": true,
+    "adjusted": 45.02,
+    "lo": 36.84,
+    "hi": 53.21
+   },
+   {
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "books": 15,
+    "model": 15,
+    "raw": 44.22,
+    "new": true,
+    "adjusted": 45.33,
+    "lo": 36.28,
+    "hi": 54.37
    },
    {
     "iso3": "GHA",
@@ -426,9 +382,53 @@
     "model": 101,
     "raw": 46.98,
     "new": true,
-    "adjusted": 49.09,
-    "lo": 45.41,
-    "hi": 52.78
+    "adjusted": 48.85,
+    "lo": 45.09,
+    "hi": 52.61
+   },
+   {
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "books": 34,
+    "model": 32,
+    "raw": 39.71,
+    "new": true,
+    "adjusted": 49.0,
+    "lo": 42.79,
+    "hi": 55.21
+   },
+   {
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "books": 32,
+    "model": 12,
+    "raw": 50.28,
+    "new": true,
+    "adjusted": 49.51,
+    "lo": 39.52,
+    "hi": 59.5
+   },
+   {
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "books": 15,
+    "model": 13,
+    "raw": 50.92,
+    "new": true,
+    "adjusted": 50.41,
+    "lo": 40.79,
+    "hi": 60.04
+   },
+   {
+    "iso3": "KEN",
+    "name": "Kenya",
+    "books": 12,
+    "model": 11,
+    "raw": 53.44,
+    "new": false,
+    "adjusted": 51.11,
+    "lo": 40.45,
+    "hi": 61.76
    },
    {
     "iso3": "TUR",
@@ -437,9 +437,9 @@
     "model": 22,
     "raw": 50.73,
     "new": true,
-    "adjusted": 49.51,
-    "lo": 42.47,
-    "hi": 56.55
+    "adjusted": 51.19,
+    "lo": 43.73,
+    "hi": 58.65
    },
    {
     "iso3": "KIR",
@@ -448,9 +448,9 @@
     "model": 22,
     "raw": 43.03,
     "new": false,
-    "adjusted": 52.16,
-    "lo": 44.94,
-    "hi": 59.39
+    "adjusted": 53.78,
+    "lo": 46.21,
+    "hi": 61.34
    },
    {
     "iso3": "ZWE",
@@ -459,9 +459,9 @@
     "model": 12,
     "raw": 59.96,
     "new": false,
-    "adjusted": 67.74,
-    "lo": 58.32,
-    "hi": 77.17
+    "adjusted": 68.98,
+    "lo": 58.97,
+    "hi": 79.0
    }
   ],
   "few": [
@@ -472,9 +472,20 @@
     "model": 9,
     "raw": 29.28,
     "new": false,
-    "adjusted": 29.71,
-    "lo": 18.9,
-    "hi": 40.52
+    "adjusted": 32.2,
+    "lo": 20.69,
+    "hi": 43.72
+   },
+   {
+    "iso3": "DZA",
+    "name": "Algeria",
+    "books": 1,
+    "model": 1,
+    "raw": 36.07,
+    "new": true,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
    },
    {
     "iso3": "BHR",
@@ -516,9 +527,20 @@
     "model": 6,
     "raw": 54.58,
     "new": true,
-    "adjusted": 53.92,
-    "lo": 40.69,
-    "hi": 67.15
+    "adjusted": 56.87,
+    "lo": 42.77,
+    "hi": 70.96
+   },
+   {
+    "iso3": "CAN",
+    "name": "Canada",
+    "books": 12,
+    "model": 6,
+    "raw": 33.06,
+    "new": true,
+    "adjusted": 51.7,
+    "lo": 37.6,
+    "hi": 65.81
    },
    {
     "iso3": "CUB",
@@ -527,9 +549,9 @@
     "model": 8,
     "raw": 48.3,
     "new": true,
-    "adjusted": 45.42,
-    "lo": 33.95,
-    "hi": 56.89
+    "adjusted": 47.48,
+    "lo": 35.27,
+    "hi": 59.7
    },
    {
     "iso3": "DJI",
@@ -549,9 +571,9 @@
     "model": 5,
     "raw": 50.0,
     "new": false,
-    "adjusted": 54.14,
-    "lo": 39.51,
-    "hi": 68.77
+    "adjusted": 53.51,
+    "lo": 37.99,
+    "hi": 69.04
    },
    {
     "iso3": "EGY",
@@ -587,11 +609,33 @@
     "hi": null
    },
    {
+    "iso3": "FJI",
+    "name": "Fiji",
+    "books": 9,
+    "model": 9,
+    "raw": 38.46,
+    "new": true,
+    "adjusted": 32.56,
+    "lo": 21.05,
+    "hi": 44.08
+   },
+   {
     "iso3": "GEO",
     "name": "Georgia",
     "books": 1,
     "model": 0,
     "raw": 44.44,
+    "new": true,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
+   },
+   {
+    "iso3": "GRD",
+    "name": "Grenada",
+    "books": 1,
+    "model": 0,
+    "raw": 9.09,
     "new": true,
     "adjusted": null,
     "lo": null,
@@ -604,6 +648,17 @@
     "model": 3,
     "raw": 38.14,
     "new": false,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
+   },
+   {
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "books": 1,
+    "model": 1,
+    "raw": 50.86,
+    "new": true,
     "adjusted": null,
     "lo": null,
     "hi": null
@@ -642,15 +697,48 @@
     "hi": null
    },
    {
+    "iso3": "MLT",
+    "name": "Malta",
+    "books": 6,
+    "model": 5,
+    "raw": 19.17,
+    "new": true,
+    "adjusted": 28.75,
+    "lo": 13.24,
+    "hi": 44.26
+   },
+   {
     "iso3": "MRT",
     "name": "Mauritania",
     "books": 7,
     "model": 7,
     "raw": 38.78,
     "new": true,
-    "adjusted": 37.25,
-    "lo": 24.83,
-    "hi": 49.68
+    "adjusted": 41.07,
+    "lo": 27.88,
+    "hi": 54.27
+   },
+   {
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "books": 10,
+    "model": 7,
+    "raw": 42.31,
+    "new": true,
+    "adjusted": 34.26,
+    "lo": 20.88,
+    "hi": 47.64
+   },
+   {
+    "iso3": "FSM",
+    "name": "Micronesia, Fed. Sts.",
+    "books": 2,
+    "model": 0,
+    "raw": 15.9,
+    "new": true,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
    },
    {
     "iso3": "MMR",
@@ -670,9 +758,9 @@
     "model": 6,
     "raw": 42.08,
     "new": false,
-    "adjusted": 54.4,
-    "lo": 41.01,
-    "hi": 67.78
+    "adjusted": 52.82,
+    "lo": 38.62,
+    "hi": 67.03
    },
    {
     "iso3": "PAN",
@@ -686,15 +774,26 @@
     "hi": null
    },
    {
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "books": 1,
+    "model": 0,
+    "raw": 62.5,
+    "new": true,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
+   },
+   {
     "iso3": "TWN",
     "name": "Taiwan, China",
     "books": 7,
     "model": 6,
     "raw": 48.44,
     "new": true,
-    "adjusted": 33.91,
-    "lo": 20.63,
-    "hi": 47.18
+    "adjusted": 37.88,
+    "lo": 23.77,
+    "hi": 51.99
    },
    {
     "iso3": "TON",
@@ -719,15 +818,26 @@
     "hi": null
    },
    {
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "books": 2,
+    "model": 0,
+    "raw": 72.22,
+    "new": true,
+    "adjusted": null,
+    "lo": null,
+    "hi": null
+   },
+   {
     "iso3": "YEM",
     "name": "Yemen, Rep.",
     "books": 8,
     "model": 8,
     "raw": 30.87,
     "new": true,
-    "adjusted": 33.35,
-    "lo": 21.81,
-    "hi": 44.89
+    "adjusted": 36.94,
+    "lo": 24.68,
+    "hi": 49.19
    },
    {
     "iso3": "ZMB",
@@ -741,7 +851,7 @@
     "hi": null
    }
   ],
-  "model_books": 1775
+  "model_books": 2633
  },
  "subjects": [
   {
@@ -749,147 +859,147 @@
    "books": 79,
    "model": 72,
    "raw": 19.13,
-   "adjusted": 22.53,
-   "lo": 18.47,
-   "hi": 26.59
+   "adjusted": 21.37,
+   "lo": 17.03,
+   "hi": 25.71
   },
   {
    "label": "Humanities",
-   "books": 107,
-   "model": 98,
-   "raw": 23.89,
-   "adjusted": 29.7,
-   "lo": 26.27,
-   "hi": 33.13
+   "books": 145,
+   "model": 133,
+   "raw": 21.0,
+   "adjusted": 28.64,
+   "lo": 25.52,
+   "hi": 31.77
   },
   {
    "label": "Arts",
-   "books": 35,
-   "model": 34,
-   "raw": 28.93,
-   "adjusted": 30.6,
-   "lo": 24.78,
-   "hi": 36.41
-  },
-  {
-   "label": "Science",
-   "books": 264,
-   "model": 250,
-   "raw": 38.64,
-   "adjusted": 35.99,
-   "lo": 33.79,
-   "hi": 38.18
+   "books": 45,
+   "model": 44,
+   "raw": 28.75,
+   "adjusted": 31.55,
+   "lo": 26.17,
+   "hi": 36.92
   },
   {
    "label": "IT",
-   "books": 63,
-   "model": 60,
-   "raw": 28.97,
-   "adjusted": 37.47,
-   "lo": 33.14,
-   "hi": 41.79
+   "books": 100,
+   "model": 97,
+   "raw": 26.26,
+   "adjusted": 35.62,
+   "lo": 32.02,
+   "hi": 39.22
+  },
+  {
+   "label": "Science",
+   "books": 348,
+   "model": 330,
+   "raw": 37.81,
+   "adjusted": 36.18,
+   "lo": 34.15,
+   "hi": 38.2
   },
   {
    "label": "Business and Economics",
-   "books": 66,
-   "model": 52,
-   "raw": 36.74,
-   "adjusted": 39.85,
-   "lo": 35.16,
-   "hi": 44.53
-  },
-  {
-   "label": "Maths",
-   "books": 273,
-   "model": 255,
-   "raw": 41.4,
-   "adjusted": 40.39,
-   "lo": 38.18,
-   "hi": 42.61
-  },
-  {
-   "label": "General and Social Studies",
-   "books": 73,
-   "model": 67,
-   "raw": 39.84,
-   "adjusted": 40.54,
-   "lo": 36.45,
-   "hi": 44.64
+   "books": 108,
+   "model": 94,
+   "raw": 29.75,
+   "adjusted": 36.85,
+   "lo": 33.09,
+   "hi": 40.62
   },
   {
    "label": "Language",
-   "books": 788,
-   "model": 746,
-   "raw": 38.75,
-   "adjusted": 41.11,
-   "lo": 39.62,
-   "hi": 42.59
+   "books": 1114,
+   "model": 1000,
+   "raw": 37.5,
+   "adjusted": 37.83,
+   "lo": 36.51,
+   "hi": 39.16
   },
   {
    "label": "Social Science",
-   "books": 84,
-   "model": 64,
-   "raw": 41.04,
-   "adjusted": 44.47,
-   "lo": 40.15,
-   "hi": 48.78
-  },
-  {
-   "label": "Agriculture",
-   "books": 30,
-   "model": 30,
-   "raw": 49.97,
-   "adjusted": 48.31,
-   "lo": 41.25,
-   "hi": 55.37
+   "books": 169,
+   "model": 148,
+   "raw": 30.88,
+   "adjusted": 39.23,
+   "lo": 36.22,
+   "hi": 42.24
   },
   {
    "label": "Physical Education",
-   "books": 22,
-   "model": 21,
-   "raw": 45.79,
-   "adjusted": 50.82,
-   "lo": 43.62,
-   "hi": 58.02
+   "books": 45,
+   "model": 44,
+   "raw": 32.72,
+   "adjusted": 40.52,
+   "lo": 35.24,
+   "hi": 45.79
+  },
+  {
+   "label": "General and Social Studies",
+   "books": 118,
+   "model": 107,
+   "raw": 39.46,
+   "adjusted": 40.57,
+   "lo": 37.08,
+   "hi": 44.07
+  },
+  {
+   "label": "Maths",
+   "books": 565,
+   "model": 491,
+   "raw": 43.39,
+   "adjusted": 41.98,
+   "lo": 40.31,
+   "hi": 43.65
+  },
+  {
+   "label": "Agriculture",
+   "books": 37,
+   "model": 37,
+   "raw": 50.02,
+   "adjusted": 47.6,
+   "lo": 41.07,
+   "hi": 54.12
   },
   {
    "label": "Home Economics",
-   "books": 26,
-   "model": 26,
-   "raw": 63.22,
-   "adjusted": 58.22,
-   "lo": 51.55,
-   "hi": 64.89
+   "books": 36,
+   "model": 36,
+   "raw": 60.38,
+   "adjusted": 58.92,
+   "lo": 52.96,
+   "hi": 64.88
   }
  ],
  "ages": {
   "overall": {
    "label": "All countries",
-   "books": 1586,
-   "child": 40.05,
+   "books": 2259,
+   "child": 38.57,
    "adult": 41.47,
-   "gap": -1.41,
-   "lo": -2.96,
-   "hi": 0.13
+   "gap": -2.9,
+   "lo": -4.23,
+   "hi": -1.57
   },
   "regions": [
    {
     "label": "East Asia & Pacific",
-    "books": 197,
-    "child": 39.99,
-    "adult": 41.35,
-    "gap": -1.37,
-    "lo": -5.83,
-    "hi": 3.09
+    "books": 211,
+    "child": 39.59,
+    "adult": 41.04,
+    "gap": -1.45,
+    "lo": -5.69,
+    "hi": 2.8
    },
    {
     "label": "Europe & Central Asia",
-    "books": 121,
-    "child": 43.51,
-    "adult": 46.61,
-    "gap": -3.1,
-    "lo": -6.98,
-    "hi": 0.78
+    "books": 123,
+    "child": 43.3,
+    "adult": 46.96,
+    "gap": -3.66,
+    "lo": -7.59,
+    "hi": 0.27
    },
    {
     "label": "Latin America & Caribbean",
@@ -902,30 +1012,30 @@
    },
    {
     "label": "Middle East, North Africa, Afghanistan & Pakistan",
-    "books": 284,
+    "books": 285,
     "child": 35.74,
-    "adult": 39.85,
-    "gap": -4.11,
-    "lo": -7.9,
-    "hi": -0.32
+    "adult": 39.84,
+    "gap": -4.1,
+    "lo": -7.88,
+    "hi": -0.33
    },
    {
     "label": "North America",
-    "books": 60,
-    "child": 35.75,
-    "adult": 45.76,
-    "gap": -10.0,
-    "lo": -17.15,
-    "hi": -2.86
+    "books": 244,
+    "child": 32.94,
+    "adult": 41.99,
+    "gap": -9.06,
+    "lo": -13.82,
+    "hi": -4.29
    },
    {
     "label": "South Asia",
-    "books": 356,
-    "child": 38.89,
-    "adult": 37.11,
-    "gap": 1.78,
-    "lo": -1.2,
-    "hi": 4.76
+    "books": 828,
+    "child": 37.42,
+    "adult": 39.77,
+    "gap": -2.36,
+    "lo": -4.42,
+    "hi": -0.29
    },
    {
     "label": "Sub-Saharan Africa",
@@ -939,42 +1049,42 @@
   ]
  },
  "time": {
-  "books": 1113,
+  "books": 1482,
   "before": 9,
   "periods": [
    {
     "label": "2000–09",
-    "books": 76,
-    "adjusted": 43.73,
-    "lo": 35.26,
-    "hi": 52.2
+    "books": 89,
+    "adjusted": 42.1,
+    "lo": 34.5,
+    "hi": 49.71
    },
    {
     "label": "2010–14",
-    "books": 138,
-    "adjusted": 37.99,
-    "lo": 32.84,
-    "hi": 43.13
+    "books": 151,
+    "adjusted": 40.36,
+    "lo": 35.38,
+    "hi": 45.33
    },
    {
     "label": "2015–19",
-    "books": 262,
-    "adjusted": 43.8,
-    "lo": 40.59,
-    "hi": 47.01
+    "books": 285,
+    "adjusted": 43.02,
+    "lo": 39.67,
+    "hi": 46.36
    },
    {
     "label": "2020 on",
-    "books": 637,
-    "adjusted": 39.65,
-    "lo": 37.67,
-    "hi": 41.63
+    "books": 957,
+    "adjusted": 39.98,
+    "lo": 38.35,
+    "hi": 41.61
    }
   ],
   "per_decade": {
-   "estimate": 0.64,
-   "lo": -3.42,
-   "hi": 4.7
+   "estimate": -0.65,
+   "lo": -4.27,
+   "hi": 2.96
   }
  },
  "links": [
@@ -988,280 +1098,280 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 10.102,
-     "y": 26.42,
+     "y": 28.69,
      "value": 24401.3159253635
-    },
-    {
-     "iso3": "LKA",
-     "name": "Sri Lanka",
-     "x": 9.588,
-     "y": 28.96,
-     "value": 14582.7603740374
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 8.634,
-     "y": 29.66,
+     "y": 29.04,
      "value": 5617.25078028458
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 9.588,
+     "y": 29.91,
+     "value": 14582.7603740374
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 7.776,
-     "y": 31.44,
+     "y": 32.56,
      "value": 2382.1314520674
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 9.214,
+     "y": 33.0,
+     "value": 10039.0708910587
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 9.068,
+     "y": 34.18,
+     "value": 8676.7557622508
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 10.355,
-     "y": 32.35,
+     "y": 34.36,
      "value": 31427.6630825717
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 9.726,
-     "y": 33.94,
+     "y": 36.08,
      "value": 16743.8703854575
-    },
-    {
-     "iso3": "BGD",
-     "name": "Bangladesh",
-     "x": 9.068,
-     "y": 34.41,
-     "value": 8676.7557622508
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 8.529,
-     "y": 34.81,
+     "y": 36.5,
      "value": 5061.84700623649
-    },
-    {
-     "iso3": "IND",
-     "name": "India",
-     "x": 9.214,
-     "y": 35.82,
-     "value": 10039.0708910587
-    },
-    {
-     "iso3": "SDN",
-     "name": "Sudan",
-     "x": 7.536,
-     "y": 37.11,
-     "value": 1873.38562011719
-    },
-    {
-     "iso3": "WSM",
-     "name": "Samoa",
-     "x": 8.983,
-     "y": 37.22,
-     "value": 7963.42749052153
-    },
-    {
-     "iso3": "ECU",
-     "name": "Ecuador",
-     "x": 9.569,
-     "y": 37.36,
-     "value": 14319.2406558299
-    },
-    {
-     "iso3": "NPL",
-     "name": "Nepal",
-     "x": 8.571,
-     "y": 37.96,
-     "value": 5276.92387725538
-    },
-    {
-     "iso3": "GRC",
-     "name": "Greece",
-     "x": 10.551,
-     "y": 39.15,
-     "value": 38218.721628616
-    },
-    {
-     "iso3": "SYR",
-     "name": "Syrian Arab Republic",
-     "x": 8.429,
-     "y": 40.0,
-     "value": 4579.43973633341
-    },
-    {
-     "iso3": "PSE",
-     "name": "West Bank and Gaza",
-     "x": 8.36,
-     "y": 40.09,
-     "value": 4272.45762077019
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 8.402,
-     "y": 40.54,
+     "y": 37.44,
      "value": 4456.23105962118
     },
     {
-     "iso3": "UGA",
-     "name": "Uganda",
-     "x": 8.0,
-     "y": 40.55,
-     "value": 2980.37942135501
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 8.571,
+     "y": 37.67,
+     "value": 5276.92387725538
     },
     {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 9.005,
-     "y": 40.85,
-     "value": 8145.14808387469
-    },
-    {
-     "iso3": "JOR",
-     "name": "Jordan",
-     "x": 9.287,
-     "y": 41.05,
-     "value": 10794.2402687732
-    },
-    {
-     "iso3": "AUS",
-     "name": "Australia",
-     "x": 11.005,
-     "y": 41.12,
-     "value": 60194.0633547961
-    },
-    {
-     "iso3": "OMN",
-     "name": "Oman",
-     "x": 10.495,
-     "y": 41.24,
-     "value": 36142.9439797194
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 11.335,
-     "y": 41.7,
-     "value": 83658.6773475997
-    },
-    {
-     "iso3": "TUN",
-     "name": "Tunisia",
-     "x": 9.474,
-     "y": 41.92,
-     "value": 13017.6340422977
-    },
-    {
-     "iso3": "ZAF",
-     "name": "South Africa",
-     "x": 9.517,
-     "y": 41.97,
-     "value": 13592.0484020929
-    },
-    {
-     "iso3": "SLE",
-     "name": "Sierra Leone",
-     "x": 8.063,
-     "y": 42.24,
-     "value": 3176.23681292996
+     "iso3": "WSM",
+     "name": "Samoa",
+     "x": 8.983,
+     "y": 38.21,
+     "value": 7963.42749052153
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 11.251,
-     "y": 42.56,
+     "y": 38.73,
      "value": 76931.3106990408
     },
     {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 8.038,
-     "y": 42.58,
-     "value": 3094.86811868352
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 7.536,
+     "y": 39.42,
+     "value": 1873.38562011719
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 11.335,
+     "y": 40.16,
+     "value": 83658.6773475997
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 9.517,
+     "y": 40.79,
+     "value": 13592.0484020929
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 9.569,
+     "y": 40.94,
+     "value": 14319.2406558299
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 10.551,
+     "y": 41.16,
+     "value": 38218.721628616
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 8.0,
+     "y": 41.23,
+     "value": 2980.37942135501
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 11.005,
+     "y": 41.82,
+     "value": 60194.0633547961
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 8.063,
+     "y": 41.91,
+     "value": 3176.23681292996
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 10.897,
-     "y": 43.02,
+     "y": 41.99,
      "value": 53993.1172607885
     },
     {
-     "iso3": "AZE",
-     "name": "Azerbaijan",
-     "x": 10.013,
-     "y": 43.15,
-     "value": 22314.2168957333
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 8.038,
+     "y": 42.01,
+     "value": 3094.86811868352
     },
     {
-     "iso3": "BLR",
-     "name": "Belarus",
-     "x": 10.298,
-     "y": 43.6,
-     "value": 29666.2115719117
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 8.36,
+     "y": 42.47,
+     "value": 4272.45762077019
+    },
+    {
+     "iso3": "SYR",
+     "name": "Syrian Arab Republic",
+     "x": 8.429,
+     "y": 42.48,
+     "value": 4579.43973633341
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 8.177,
-     "y": 44.2,
+     "y": 43.2,
      "value": 3558.68003753808
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 9.287,
+     "y": 43.35,
+     "value": 10794.2402687732
+    },
+    {
+     "iso3": "OMN",
+     "name": "Oman",
+     "x": 10.495,
+     "y": 43.54,
+     "value": 36142.9439797194
+    },
+    {
+     "iso3": "BLR",
+     "name": "Belarus",
+     "x": 10.298,
+     "y": 44.99,
+     "value": 29666.2115719117
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 9.005,
+     "y": 45.0,
+     "value": 8145.14808387469
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 10.013,
+     "y": 45.02,
+     "value": 22314.2168957333
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 9.474,
+     "y": 45.33,
+     "value": 13017.6340422977
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 8.904,
+     "y": 48.85,
+     "value": 7357.83332993014
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 10.784,
-     "y": 45.71,
+     "y": 49.0,
      "value": 48253.963885132
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 9.622,
-     "y": 47.6,
+     "y": 49.51,
      "value": 15091.0088604652
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 8.896,
-     "y": 47.83,
+     "y": 50.41,
      "value": 7300.08078250634
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 8.699,
-     "y": 49.0,
+     "y": 51.11,
      "value": 5995.40177895632
-    },
-    {
-     "iso3": "GHA",
-     "name": "Ghana",
-     "x": 8.904,
-     "y": 49.09,
-     "value": 7357.83332993014
     },
     {
      "iso3": "TUR",
      "name": "Türkiye",
      "x": 10.527,
-     "y": 49.51,
+     "y": 51.19,
      "value": 37300.7485739354
     },
     {
      "iso3": "KIR",
      "name": "Kiribati",
      "x": 8.121,
-     "y": 52.16,
+     "y": 53.78,
      "value": 3363.99521326766
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 8.618,
-     "y": 67.74,
+     "y": 68.98,
      "value": 5529.23310016154
     }
    ],
@@ -1269,11 +1379,11 @@
     "South Sudan"
    ],
    "fit": {
-    "slope": -0.135,
-    "intercept": 42.202,
-    "lo": -2.428,
-    "hi": 2.157,
-    "r": -0.02
+    "slope": -0.193,
+    "intercept": 43.699,
+    "lo": -2.578,
+    "hi": 2.191,
+    "r": -0.03
    }
   },
   {
@@ -1286,273 +1396,273 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 0.93,
-     "y": 26.42,
+     "y": 28.69,
      "value": 0.930400013923645
-    },
-    {
-     "iso3": "LKA",
-     "name": "Sri Lanka",
-     "x": 1.047,
-     "y": 28.96,
-     "value": 1.04683005809784
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 0.868,
-     "y": 29.66,
+     "y": 29.04,
      "value": 0.868359982967377
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 1.047,
+     "y": 29.91,
+     "value": 1.04683005809784
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 0.95,
-     "y": 31.44,
+     "y": 32.56,
      "value": 0.949559986591339
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 0.97,
+     "y": 33.0,
+     "value": 0.969559252262115
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 1.244,
+     "y": 34.18,
+     "value": 1.24441254138947
+    },
+    {
+     "iso3": "SSD",
+     "name": "South Sudan",
+     "x": 0.537,
+     "y": 34.29,
+     "value": 0.536710023880005
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 0.991,
-     "y": 32.35,
+     "y": 34.36,
      "value": 0.990710020065308
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 1.13,
-     "y": 33.94,
+     "y": 36.08,
      "value": 1.12988996505737
-    },
-    {
-     "iso3": "SSD",
-     "name": "South Sudan",
-     "x": 0.537,
-     "y": 34.25,
-     "value": 0.536710023880005
-    },
-    {
-     "iso3": "BGD",
-     "name": "Bangladesh",
-     "x": 1.244,
-     "y": 34.41,
-     "value": 1.24441254138947
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 0.901,
-     "y": 34.81,
+     "y": 36.5,
      "value": 0.901369988918304
-    },
-    {
-     "iso3": "IND",
-     "name": "India",
-     "x": 0.97,
-     "y": 35.82,
-     "value": 0.969559252262115
-    },
-    {
-     "iso3": "SDN",
-     "name": "Sudan",
-     "x": 1.02,
-     "y": 37.11,
-     "value": 1.02030003070831
-    },
-    {
-     "iso3": "WSM",
-     "name": "Samoa",
-     "x": 1.103,
-     "y": 37.22,
-     "value": 1.10344994068146
-    },
-    {
-     "iso3": "ECU",
-     "name": "Ecuador",
-     "x": 1.025,
-     "y": 37.36,
-     "value": 1.02479004859924
-    },
-    {
-     "iso3": "NPL",
-     "name": "Nepal",
-     "x": 0.987,
-     "y": 37.96,
-     "value": 0.987173140048981
-    },
-    {
-     "iso3": "GRC",
-     "name": "Greece",
-     "x": 0.955,
-     "y": 39.15,
-     "value": 0.954909980297089
-    },
-    {
-     "iso3": "SYR",
-     "name": "Syrian Arab Republic",
-     "x": 0.994,
-     "y": 40.0,
-     "value": 0.994440019130707
-    },
-    {
-     "iso3": "PSE",
-     "name": "West Bank and Gaza",
-     "x": 1.092,
-     "y": 40.09,
-     "value": 1.09232997894287
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 0.799,
-     "y": 40.54,
+     "y": 37.44,
      "value": 0.799239993095398
     },
     {
-     "iso3": "UGA",
-     "name": "Uganda",
-     "x": 0.901,
-     "y": 40.55,
-     "value": 0.901470303535461
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 0.987,
+     "y": 37.67,
+     "value": 0.987173140048981
     },
     {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 0.952,
-     "y": 40.85,
-     "value": 0.951550006866455
-    },
-    {
-     "iso3": "JOR",
-     "name": "Jordan",
-     "x": 1.02,
-     "y": 41.05,
-     "value": 1.02014994621277
-    },
-    {
-     "iso3": "AUS",
-     "name": "Australia",
-     "x": 0.962,
-     "y": 41.12,
-     "value": 0.962329983711243
-    },
-    {
-     "iso3": "OMN",
-     "name": "Oman",
-     "x": 0.937,
-     "y": 41.24,
-     "value": 0.936540007591248
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 1.03,
-     "y": 41.7,
-     "value": 1.03032994270325
-    },
-    {
-     "iso3": "TUN",
-     "name": "Tunisia",
-     "x": 1.143,
-     "y": 41.92,
-     "value": 1.14288997650146
-    },
-    {
-     "iso3": "ZAF",
-     "name": "South Africa",
-     "x": 1.089,
-     "y": 41.97,
-     "value": 1.08913004398346
-    },
-    {
-     "iso3": "SLE",
-     "name": "Sierra Leone",
-     "x": 0.966,
-     "y": 42.24,
-     "value": 0.965510010719299
+     "iso3": "WSM",
+     "name": "Samoa",
+     "x": 1.103,
+     "y": 38.21,
+     "value": 1.10344994068146
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 0.979,
-     "y": 42.56,
+     "y": 38.73,
      "value": 0.978860020637512
     },
     {
-     "iso3": "ETH",
-     "name": "Ethiopia",
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 1.02,
+     "y": 39.42,
+     "value": 1.02030003070831
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 1.03,
+     "y": 40.16,
+     "value": 1.03032994270325
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 1.089,
+     "y": 40.79,
+     "value": 1.08913004398346
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 1.025,
+     "y": 40.94,
+     "value": 1.02479004859924
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 0.955,
+     "y": 41.16,
+     "value": 0.954909980297089
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 0.901,
+     "y": 41.23,
+     "value": 0.901470303535461
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
      "x": 0.962,
-     "y": 42.58,
-     "value": 0.961709976196289
+     "y": 41.82,
+     "value": 0.962329983711243
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 0.966,
+     "y": 41.91,
+     "value": 0.965510010719299
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 1.024,
-     "y": 43.02,
+     "y": 41.99,
      "value": 1.024090051651
     },
     {
-     "iso3": "AZE",
-     "name": "Azerbaijan",
-     "x": 0.983,
-     "y": 43.15,
-     "value": 0.983489990234375
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 0.962,
+     "y": 42.01,
+     "value": 0.961709976196289
     },
     {
-     "iso3": "BLR",
-     "name": "Belarus",
-     "x": 0.985,
-     "y": 43.6,
-     "value": 0.984879970550537
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 1.092,
+     "y": 42.47,
+     "value": 1.09232997894287
+    },
+    {
+     "iso3": "SYR",
+     "name": "Syrian Arab Republic",
+     "x": 0.994,
+     "y": 42.48,
+     "value": 0.994440019130707
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 1.145,
-     "y": 44.2,
+     "y": 43.2,
      "value": 1.1450400352478
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 1.02,
+     "y": 43.35,
+     "value": 1.02014994621277
+    },
+    {
+     "iso3": "OMN",
+     "name": "Oman",
+     "x": 0.937,
+     "y": 43.54,
+     "value": 0.936540007591248
+    },
+    {
+     "iso3": "BLR",
+     "name": "Belarus",
+     "x": 0.985,
+     "y": 44.99,
+     "value": 0.984879970550537
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 0.952,
+     "y": 45.0,
+     "value": 0.951550006866455
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 0.983,
+     "y": 45.02,
+     "value": 0.983489990234375
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 1.143,
+     "y": 45.33,
+     "value": 1.14288997650146
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 1.004,
+     "y": 48.85,
+     "value": 1.00419998168945
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 1.064,
-     "y": 45.71,
+     "y": 49.0,
      "value": 1.06357002258301
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 1.025,
-     "y": 47.6,
+     "y": 49.51,
      "value": 1.02502000331879
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 1.148,
-     "y": 47.83,
+     "y": 50.41,
      "value": 1.14830851554871
-    },
-    {
-     "iso3": "GHA",
-     "name": "Ghana",
-     "x": 1.004,
-     "y": 49.09,
-     "value": 1.00419998168945
     },
     {
      "iso3": "TUR",
      "name": "Türkiye",
      "x": 0.973,
-     "y": 49.51,
+     "y": 51.19,
      "value": 0.973070025444031
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 0.96,
-     "y": 67.74,
+     "y": 68.98,
      "value": 0.959890007972717
     }
    ],
@@ -1561,11 +1671,11 @@
     "Kiribati"
    ],
    "fit": {
-    "slope": 8.304,
-    "intercept": 32.014,
-    "lo": -12.172,
-    "hi": 28.78,
-    "r": 0.13
+    "slope": 11.461,
+    "intercept": 29.764,
+    "lo": -9.627,
+    "hi": 32.548,
+    "r": 0.18
    }
   },
   {
@@ -1578,280 +1688,280 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 3.226,
-     "y": 26.42,
+     "y": 28.69,
      "value": 3.2258064516129
-    },
-    {
-     "iso3": "LKA",
-     "name": "Sri Lanka",
-     "x": 9.778,
-     "y": 28.96,
-     "value": 9.77777777777778
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 17.042,
-     "y": 29.66,
+     "y": 29.04,
      "value": 17.0418006430868
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 9.778,
+     "y": 29.91,
+     "value": 9.77777777777778
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 6.0,
-     "y": 31.44,
+     "y": 32.56,
      "value": 6.0
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 13.787,
+     "y": 33.0,
+     "value": 13.7867647058824
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 20.857,
+     "y": 34.18,
+     "value": 20.8571428571429
+    },
+    {
+     "iso3": "SSD",
+     "name": "South Sudan",
+     "x": 32.364,
+     "y": 34.29,
+     "value": 32.3636363636364
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 31.25,
-     "y": 32.35,
+     "y": 34.36,
      "value": 31.25
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 4.255,
-     "y": 33.94,
+     "y": 36.08,
      "value": 4.25531914893617
-    },
-    {
-     "iso3": "SSD",
-     "name": "South Sudan",
-     "x": 32.364,
-     "y": 34.25,
-     "value": 32.3636363636364
-    },
-    {
-     "iso3": "BGD",
-     "name": "Bangladesh",
-     "x": 20.857,
-     "y": 34.41,
-     "value": 20.8571428571429
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 28.571,
-     "y": 34.81,
+     "y": 36.5,
      "value": 28.5714285714286
-    },
-    {
-     "iso3": "IND",
-     "name": "India",
-     "x": 13.787,
-     "y": 35.82,
-     "value": 13.7867647058824
-    },
-    {
-     "iso3": "SDN",
-     "name": "Sudan",
-     "x": 30.516,
-     "y": 37.11,
-     "value": 30.5164319248826
-    },
-    {
-     "iso3": "WSM",
-     "name": "Samoa",
-     "x": 9.804,
-     "y": 37.22,
-     "value": 9.80392156862745
-    },
-    {
-     "iso3": "ECU",
-     "name": "Ecuador",
-     "x": 45.033,
-     "y": 37.36,
-     "value": 45.0331125827815
-    },
-    {
-     "iso3": "NPL",
-     "name": "Nepal",
-     "x": 33.088,
-     "y": 37.96,
-     "value": 33.0882352941176
-    },
-    {
-     "iso3": "GRC",
-     "name": "Greece",
-     "x": 22.896,
-     "y": 39.15,
-     "value": 22.8956228956229
-    },
-    {
-     "iso3": "SYR",
-     "name": "Syrian Arab Republic",
-     "x": 4.918,
-     "y": 40.0,
-     "value": 4.91803278688525
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 2.703,
-     "y": 40.54,
+     "y": 37.44,
      "value": 2.7027027027027
     },
     {
-     "iso3": "UGA",
-     "name": "Uganda",
-     "x": 34.054,
-     "y": 40.55,
-     "value": 34.0540540540541
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 33.088,
+     "y": 37.67,
+     "value": 33.0882352941176
     },
     {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 4.213,
-     "y": 40.85,
-     "value": 4.21348314606742
-    },
-    {
-     "iso3": "JOR",
-     "name": "Jordan",
-     "x": 19.565,
-     "y": 41.05,
-     "value": 19.5652173913043
-    },
-    {
-     "iso3": "AUS",
-     "name": "Australia",
-     "x": 46.0,
-     "y": 41.12,
-     "value": 46.0
-    },
-    {
-     "iso3": "OMN",
-     "name": "Oman",
-     "x": 0.0,
-     "y": 41.24,
-     "value": 0.0
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 36.111,
-     "y": 41.7,
-     "value": 36.1111111111111
-    },
-    {
-     "iso3": "TUN",
-     "name": "Tunisia",
-     "x": 15.789,
-     "y": 41.92,
-     "value": 15.7894736842105
-    },
-    {
-     "iso3": "ZAF",
-     "name": "South Africa",
-     "x": 44.862,
-     "y": 41.97,
-     "value": 44.8621553884712
-    },
-    {
-     "iso3": "SLE",
-     "name": "Sierra Leone",
-     "x": 29.53,
-     "y": 42.24,
-     "value": 29.5302013422819
+     "iso3": "WSM",
+     "name": "Samoa",
+     "x": 9.804,
+     "y": 38.21,
+     "value": 9.80392156862745
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 28.935,
-     "y": 42.56,
+     "y": 38.73,
      "value": 28.9351851851852
     },
     {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 41.909,
-     "y": 42.58,
-     "value": 41.9087136929461
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 30.516,
+     "y": 39.42,
+     "value": 30.5164319248826
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 36.111,
+     "y": 40.16,
+     "value": 36.1111111111111
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 44.862,
+     "y": 40.79,
+     "value": 44.8621553884712
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 45.033,
+     "y": 40.94,
+     "value": 45.0331125827815
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 22.896,
+     "y": 41.16,
+     "value": 22.8956228956229
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 34.054,
+     "y": 41.23,
+     "value": 34.0540540540541
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 46.0,
+     "y": 41.82,
+     "value": 46.0
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 29.53,
+     "y": 41.91,
+     "value": 29.5302013422819
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 40.462,
-     "y": 43.02,
+     "y": 41.99,
      "value": 40.4615384615385
     },
     {
-     "iso3": "AZE",
-     "name": "Azerbaijan",
-     "x": 20.8,
-     "y": 43.15,
-     "value": 20.8
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 41.909,
+     "y": 42.01,
+     "value": 41.9087136929461
     },
     {
-     "iso3": "BLR",
-     "name": "Belarus",
-     "x": 33.945,
-     "y": 43.6,
-     "value": 33.9449541284404
+     "iso3": "SYR",
+     "name": "Syrian Arab Republic",
+     "x": 4.918,
+     "y": 42.48,
+     "value": 4.91803278688525
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 63.75,
-     "y": 44.2,
+     "y": 43.2,
      "value": 63.75
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 19.565,
+     "y": 43.35,
+     "value": 19.5652173913043
+    },
+    {
+     "iso3": "OMN",
+     "name": "Oman",
+     "x": 0.0,
+     "y": 43.54,
+     "value": 0.0
+    },
+    {
+     "iso3": "BLR",
+     "name": "Belarus",
+     "x": 33.945,
+     "y": 44.99,
+     "value": 33.9449541284404
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 4.213,
+     "y": 45.0,
+     "value": 4.21348314606742
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 20.8,
+     "y": 45.02,
+     "value": 20.8
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 15.789,
+     "y": 45.33,
+     "value": 15.7894736842105
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 14.545,
+     "y": 48.85,
+     "value": 14.5454545454545
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 3.077,
-     "y": 45.71,
+     "y": 49.0,
      "value": 3.07692307692308
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 21.897,
-     "y": 47.6,
+     "y": 49.51,
      "value": 21.8965517241379
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 13.6,
-     "y": 47.83,
+     "y": 50.41,
      "value": 13.6
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 23.392,
-     "y": 49.0,
+     "y": 51.11,
      "value": 23.3918128654971
-    },
-    {
-     "iso3": "GHA",
-     "name": "Ghana",
-     "x": 14.545,
-     "y": 49.09,
-     "value": 14.5454545454545
     },
     {
      "iso3": "TUR",
      "name": "Türkiye",
      "x": 19.899,
-     "y": 49.51,
+     "y": 51.19,
      "value": 19.8988195615514
     },
     {
      "iso3": "KIR",
      "name": "Kiribati",
      "x": 11.111,
-     "y": 52.16,
+     "y": 53.78,
      "value": 11.1111111111111
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 30.108,
-     "y": 67.74,
+     "y": 68.98,
      "value": 30.1075268817204
     }
    ],
@@ -1859,11 +1969,11 @@
     "West Bank and Gaza"
    ],
    "fit": {
-    "slope": 0.081,
-    "intercept": 38.951,
-    "lo": -0.079,
-    "hi": 0.241,
-    "r": 0.16
+    "slope": 0.042,
+    "intercept": 40.728,
+    "lo": -0.126,
+    "hi": 0.211,
+    "r": 0.08
    }
   },
   {
@@ -1876,273 +1986,273 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 40.732,
-     "y": 26.42,
+     "y": 28.69,
      "value": 40.732
-    },
-    {
-     "iso3": "LKA",
-     "name": "Sri Lanka",
-     "x": 30.992,
-     "y": 28.96,
-     "value": 30.992
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 24.046,
-     "y": 29.66,
+     "y": 29.04,
      "value": 24.046
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 30.992,
+     "y": 29.91,
+     "value": 30.992
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 82.337,
-     "y": 31.44,
+     "y": 32.56,
      "value": 82.337
-    },
-    {
-     "iso3": "BTN",
-     "name": "Bhutan",
-     "x": 56.7,
-     "y": 33.94,
-     "value": 56.7
-    },
-    {
-     "iso3": "SSD",
-     "name": "South Sudan",
-     "x": 70.393,
-     "y": 34.25,
-     "value": 70.393
-    },
-    {
-     "iso3": "BGD",
-     "name": "Bangladesh",
-     "x": 38.649,
-     "y": 34.41,
-     "value": 38.649
-    },
-    {
-     "iso3": "TJK",
-     "name": "Tajikistan",
-     "x": 21.897,
-     "y": 34.81,
-     "value": 21.897
     },
     {
      "iso3": "IND",
      "name": "India",
      "x": 32.425,
-     "y": 35.82,
+     "y": 33.0,
      "value": 32.425
     },
     {
-     "iso3": "SDN",
-     "name": "Sudan",
-     "x": 14.452,
-     "y": 37.11,
-     "value": 14.452
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 38.649,
+     "y": 34.18,
+     "value": 38.649
     },
     {
-     "iso3": "WSM",
-     "name": "Samoa",
-     "x": 30.739,
-     "y": 37.22,
-     "value": 30.739
+     "iso3": "SSD",
+     "name": "South Sudan",
+     "x": 70.393,
+     "y": 34.29,
+     "value": 70.393
     },
     {
-     "iso3": "ECU",
-     "name": "Ecuador",
-     "x": 52.386,
-     "y": 37.36,
-     "value": 52.386
+     "iso3": "BTN",
+     "name": "Bhutan",
+     "x": 56.7,
+     "y": 36.08,
+     "value": 56.7
     },
     {
-     "iso3": "NPL",
-     "name": "Nepal",
-     "x": 27.473,
-     "y": 37.96,
-     "value": 27.473
-    },
-    {
-     "iso3": "GRC",
-     "name": "Greece",
-     "x": 44.666,
-     "y": 39.15,
-     "value": 44.666
-    },
-    {
-     "iso3": "SYR",
-     "name": "Syrian Arab Republic",
-     "x": 12.727,
-     "y": 40.0,
-     "value": 12.727
-    },
-    {
-     "iso3": "PSE",
-     "name": "West Bank and Gaza",
-     "x": 18.934,
-     "y": 40.09,
-     "value": 18.934
+     "iso3": "TJK",
+     "name": "Tajikistan",
+     "x": 21.897,
+     "y": 36.5,
+     "value": 21.897
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 50.822,
-     "y": 40.54,
+     "y": 37.44,
      "value": 50.822
     },
     {
-     "iso3": "UGA",
-     "name": "Uganda",
-     "x": 75.595,
-     "y": 40.55,
-     "value": 75.595
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 27.473,
+     "y": 37.67,
+     "value": 27.473
     },
     {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 80.7,
-     "y": 40.85,
-     "value": 80.7
-    },
-    {
-     "iso3": "JOR",
-     "name": "Jordan",
-     "x": 16.029,
-     "y": 41.05,
-     "value": 16.029
-    },
-    {
-     "iso3": "AUS",
-     "name": "Australia",
-     "x": 62.513,
-     "y": 41.12,
-     "value": 62.513
-    },
-    {
-     "iso3": "OMN",
-     "name": "Oman",
-     "x": 29.958,
-     "y": 41.24,
-     "value": 29.958
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 47.35,
-     "y": 41.7,
-     "value": 47.35
-    },
-    {
-     "iso3": "TUN",
-     "name": "Tunisia",
-     "x": 26.497,
-     "y": 41.92,
-     "value": 26.497
-    },
-    {
-     "iso3": "ZAF",
-     "name": "South Africa",
-     "x": 49.881,
-     "y": 41.97,
-     "value": 49.881
-    },
-    {
-     "iso3": "SLE",
-     "name": "Sierra Leone",
-     "x": 51.604,
-     "y": 42.24,
-     "value": 51.604
+     "iso3": "WSM",
+     "name": "Samoa",
+     "x": 30.739,
+     "y": 38.21,
+     "value": 30.739
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 56.343,
-     "y": 42.56,
+     "y": 38.73,
      "value": 56.343
     },
     {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 58.456,
-     "y": 42.58,
-     "value": 58.456
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 14.452,
+     "y": 39.42,
+     "value": 14.452
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 47.35,
+     "y": 40.16,
+     "value": 47.35
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 49.881,
+     "y": 40.79,
+     "value": 49.881
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 52.386,
+     "y": 40.94,
+     "value": 52.386
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 44.666,
+     "y": 41.16,
+     "value": 44.666
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 75.595,
+     "y": 41.23,
+     "value": 75.595
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 62.513,
+     "y": 41.82,
+     "value": 62.513
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 51.604,
+     "y": 41.91,
+     "value": 51.604
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 57.333,
-     "y": 43.02,
+     "y": 41.99,
      "value": 57.333
     },
     {
-     "iso3": "AZE",
-     "name": "Azerbaijan",
-     "x": 60.759,
-     "y": 43.15,
-     "value": 60.759
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 58.456,
+     "y": 42.01,
+     "value": 58.456
     },
     {
-     "iso3": "BLR",
-     "name": "Belarus",
-     "x": 56.769,
-     "y": 43.6,
-     "value": 56.769
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 18.934,
+     "y": 42.47,
+     "value": 18.934
+    },
+    {
+     "iso3": "SYR",
+     "name": "Syrian Arab Republic",
+     "x": 12.727,
+     "y": 42.48,
+     "value": 12.727
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 57.304,
-     "y": 44.2,
+     "y": 43.2,
      "value": 57.304
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 16.029,
+     "y": 43.35,
+     "value": 16.029
+    },
+    {
+     "iso3": "OMN",
+     "name": "Oman",
+     "x": 29.958,
+     "y": 43.54,
+     "value": 29.958
+    },
+    {
+     "iso3": "BLR",
+     "name": "Belarus",
+     "x": 56.769,
+     "y": 44.99,
+     "value": 56.769
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 80.7,
+     "y": 45.0,
+     "value": 80.7
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 60.759,
+     "y": 45.02,
+     "value": 60.759
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 26.497,
+     "y": 45.33,
+     "value": 26.497
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 55.265,
+     "y": 48.85,
+     "value": 55.265
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 47.2,
-     "y": 45.71,
+     "y": 49.0,
      "value": 47.2
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 53.72,
-     "y": 47.6,
+     "y": 49.51,
      "value": 53.72
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 77.351,
-     "y": 47.83,
+     "y": 50.41,
      "value": 77.351
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 63.036,
-     "y": 49.0,
+     "y": 51.11,
      "value": 63.036
-    },
-    {
-     "iso3": "GHA",
-     "name": "Ghana",
-     "x": 55.265,
-     "y": 49.09,
-     "value": 55.265
     },
     {
      "iso3": "TUR",
      "name": "Türkiye",
      "x": 37.145,
-     "y": 49.51,
+     "y": 51.19,
      "value": 37.145
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 62.155,
-     "y": 67.74,
+     "y": 68.98,
      "value": 62.155
     }
    ],
@@ -2151,11 +2261,11 @@
     "Kiribati"
    ],
    "fit": {
-    "slope": 0.106,
-    "intercept": 35.73,
-    "lo": -0.014,
+    "slope": 0.098,
+    "intercept": 36.975,
+    "lo": -0.028,
     "hi": 0.225,
-    "r": 0.28
+    "r": 0.25
    }
   }
  ],
@@ -2163,69 +2273,69 @@
   "region": [
    {
     "label": "East Asia & Pacific",
-    "countries": 11,
-    "books": 305,
-    "female": 35515,
-    "male": 59777,
-    "share": 37.27
+    "countries": 14,
+    "books": 328,
+    "female": 37233,
+    "male": 64901,
+    "share": 36.46
    },
    {
     "label": "Europe & Central Asia",
-    "countries": 9,
-    "books": 132,
-    "female": 26054,
-    "male": 35844,
-    "share": 42.09
+    "countries": 10,
+    "books": 134,
+    "female": 26175,
+    "male": 35960,
+    "share": 42.13
    },
    {
     "label": "Latin America & Caribbean",
-    "countries": 9,
-    "books": 133,
-    "female": 5983,
-    "male": 7923,
-    "share": 43.02
+    "countries": 10,
+    "books": 134,
+    "female": 5984,
+    "male": 7933,
+    "share": 43.0
    },
    {
     "label": "Middle East, North Africa, Afghanistan & Pakistan",
-    "countries": 12,
-    "books": 318,
-    "female": 32893,
-    "male": 65373,
-    "share": 33.47
+    "countries": 14,
+    "books": 325,
+    "female": 32995,
+    "male": 65610,
+    "share": 33.46
    },
    {
     "label": "North America",
-    "countries": 1,
-    "books": 72,
-    "female": 10231,
-    "male": 12994,
-    "share": 44.05
+    "countries": 2,
+    "books": 487,
+    "female": 27489,
+    "male": 41379,
+    "share": 39.92
    },
    {
     "label": "South Asia",
     "countries": 6,
-    "books": 412,
-    "female": 50527,
-    "male": 113021,
-    "share": 30.89
+    "books": 959,
+    "female": 110634,
+    "male": 245961,
+    "share": 31.03
    },
    {
     "label": "Sub-Saharan Africa",
-    "countries": 18,
-    "books": 596,
-    "female": 54254,
-    "male": 82461,
-    "share": 39.68
+    "countries": 20,
+    "books": 607,
+    "female": 54361,
+    "male": 82584,
+    "share": 39.7
    }
   ],
   "income": [
    {
     "label": "High income",
-    "countries": 13,
-    "books": 384,
-    "female": 30651,
-    "male": 41325,
-    "share": 42.59
+    "countries": 16,
+    "books": 817,
+    "female": 48234,
+    "male": 70235,
+    "share": 40.71
    },
    {
     "label": "Low income",
@@ -2237,19 +2347,19 @@
    },
    {
     "label": "Lower middle income",
-    "countries": 24,
-    "books": 758,
-    "female": 99531,
-    "male": 202526,
-    "share": 32.95
+    "countries": 25,
+    "books": 1307,
+    "female": 159690,
+    "male": 335486,
+    "share": 32.25
    },
    {
     "label": "Upper middle income",
-    "countries": 18,
-    "books": 421,
-    "female": 42566,
-    "male": 61039,
-    "share": 41.08
+    "countries": 24,
+    "books": 445,
+    "female": 44238,
+    "male": 66104,
+    "share": 40.09
    }
   ]
  },
@@ -2257,26 +2367,26 @@
   {
    "key": "national",
    "label": "National textbooks",
-   "books": 1968,
-   "female": 215457,
-   "male": 377393,
-   "share": 36.34
+   "books": 2974,
+   "female": 294871,
+   "male": 544328,
+   "share": 35.14
   },
   {
    "key": "teacher-guides",
    "label": "Teacher guides",
-   "books": 634,
-   "female": 51154,
-   "male": 66350,
-   "share": 43.53
+   "books": 874,
+   "female": 81388,
+   "male": 119988,
+   "share": 40.42
   },
   {
    "key": "readers",
    "label": "Readers and supplementary books",
-   "books": 106,
-   "female": 1856,
-   "male": 3586,
-   "share": 34.11
+   "books": 451,
+   "female": 4559,
+   "male": 7485,
+   "share": 37.85
   },
   {
    "key": "programme",
@@ -2328,22 +2438,23 @@
   }
  ],
  "counts": {
-  "books": 2977,
-  "national": 1968,
-  "model": 1775,
-  "no_share": 40,
-  "no_subject": 58,
-  "no_grade": 120,
-  "no_year": 834,
-  "no_share_with_year": 12,
-  "paper_with_year": 381,
-  "search_national": 755,
+  "books": 4568,
+  "national": 2974,
+  "model": 2633,
+  "no_share": 130,
+  "no_subject": 65,
+  "no_grade": 203,
+  "no_year": 1386,
+  "no_share_with_year": 97,
+  "paper_with_year": 378,
+  "search_national": 1347,
+  "india_i4i": 417,
   "kind_from_title": 22,
   "kind_from_file": 2,
-  "parts_combined": 549,
-  "combined_books": 64,
-  "dropped": 258,
-  "dropped_national": 238,
+  "parts_combined": 1250,
+  "combined_books": 123,
+  "dropped": 1105,
+  "dropped_national": 1057,
   "excerpts": 90,
   "excerpt_min_pages": 5,
   "excerpt_max_pages": 22

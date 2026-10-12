@@ -201,6 +201,12 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg.embed .wrap{padding-block:.5rem}
 .tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
   font-size:.82rem}
+.tgtip{position:fixed;z-index:20;max-width:280px;padding:6px 9px;border-radius:4px;
+  background:var(--ink);color:var(--paper);font-size:13px;line-height:1.35;pointer-events:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tg .chart .dot[data-tip]:hover,.tg .chart .dot[data-tip]:focus{fill-opacity:1;stroke:var(--ink);
+  stroke-width:1.5;outline:none}
+.tg .chart g.row[data-tip]:focus{outline:none}
 </style>
 </head>
 <body>
@@ -233,5 +239,57 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 </main>
 <footer class="wrap foot"><p class="cite">Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p><p class="note">Data: Center for Global Development, CC-BY 4.0.</p></footer>
 </div>
+<script>
+(function () {
+  var marks = document.querySelectorAll(".tg svg.chart:not(.map) .dot, .tg svg.chart:not(.map) g.row");
+  if (!marks.length) return;
+  var tip = document.createElement("div");
+  tip.className = "tgtip";
+  tip.setAttribute("role", "tooltip");
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  marks.forEach(function (el) {
+    var t = el.querySelector("title");
+    if (!t) return;
+    el.setAttribute("data-tip", t.textContent);
+    el.setAttribute("aria-label", t.textContent);
+    el.setAttribute("tabindex", "0");
+    t.remove();
+  });
+  function place(x, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 12), window.innerWidth - w - 8);
+    var top = y - h - 12 < 8 ? y + 16 : y - h - 12;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function show(el, x, y) {
+    tip.textContent = el.getAttribute("data-tip");
+    tip.hidden = false;
+    place(x, y);
+  }
+  function hide() { tip.hidden = true; }
+  function mark(e) { return e.target.closest ? e.target.closest("[data-tip]") : null; }
+  document.addEventListener("mouseover", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (!tip.hidden && mark(e)) place(e.clientX, e.clientY);
+  });
+  document.addEventListener("focusin", function (e) {
+    var el = mark(e);
+    if (!el) return hide();
+    var r = el.getBoundingClientRect();
+    show(el, r.left + r.width / 2, r.top);
+  });
+  document.addEventListener("focusout", hide);
+  document.addEventListener("click", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  window.addEventListener("scroll", hide, {passive: true});
+})();
+</script>
 </body>
 </html>

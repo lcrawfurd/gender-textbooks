@@ -200,6 +200,12 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg.embed .wrap{padding-block:.5rem}
 .tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
   font-size:.82rem}
+.tgtip{position:fixed;z-index:20;max-width:280px;padding:6px 9px;border-radius:4px;
+  background:var(--ink);color:var(--paper);font-size:13px;line-height:1.35;pointer-events:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tg .chart .dot[data-tip]:hover,.tg .chart .dot[data-tip]:focus{fill-opacity:1;stroke:var(--ink);
+  stroke-width:1.5;outline:none}
+.tg .chart g.row[data-tip]:focus{outline:none}
 </style>
 </head>
 <body>
@@ -207,32 +213,32 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h1 class="vh">National textbooks and other books: Gender in School Textbooks</h1>
 <section id="collections" aria-labelledby="h-collections"><h2 id="h-collections">National textbooks and other books</h2><p class="lede">The headline counts national textbooks only. The same measure for teacher guides, readers, programme books, NGO collections and excerpts (sample pages, not whole books), which are not mixed into it.</p><div class="chartbox"><svg class="chart" id="tg-collections" viewBox="0 0 560 383" role="img" aria-labelledby="tg-collections-t tg-collections-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-collections-t">Female share of gendered words by collection</title>
-<desc id="tg-collections-d">National textbooks 35.0%; Teacher guides 40.4%; Readers and supplementary books 38.4%; Programme books 40.6%; Pratham Books 47.9%; The Citizens Foundation 47.0%; Luminos Fund 47.2%; African Storybook 32.7%; Excerpts (sample pages, not whole books) 24.8%</desc>
+<desc id="tg-collections-d">National textbooks 35.0%; Teacher guides 40.4%; Readers and supplementary books 39.5%; Programme books 40.6%; Pratham Books 47.9%; The Citizens Foundation 47.0%; Luminos Fund 47.2%; African Storybook 32.7%; Excerpts (sample pages, not whole books) 24.8%</desc>
 <text class="dl dl-f" x="0" y="14">Women and girls</text>
 <text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
 <text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
 <text class="axis" x="560" y="14" text-anchor="end">Female</text>
-<g class="row"><title>National textbooks: 35.0% female, 3,252 books</title>
-<text class="lab" x="0" y="42">National textbooks<tspan class="cnt" dx="8">3,252 books</tspan></text>
+<g class="row"><title>National textbooks: 35.0% female, 3,259 books</title>
+<text class="lab" x="0" y="42">National textbooks<tspan class="cnt" dx="8">3,259 books</tspan></text>
 <rect class="bf" x="0" y="48" width="171.65" height="13"/>
 <rect class="bm" x="171.65" y="48" width="318.35" height="13"/>
 <text class="val" x="560" y="59" text-anchor="end">35.0%</text>
 <line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
 <line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
 </g>
-<g class="row"><title>Teacher guides: 40.4% female, 874 books</title>
-<text class="lab" x="0" y="81">Teacher guides<tspan class="cnt" dx="8">874 books</tspan></text>
-<rect class="bf" x="0" y="87" width="198.06" height="13"/>
-<rect class="bm" x="198.06" y="87" width="291.94" height="13"/>
+<g class="row"><title>Teacher guides: 40.4% female, 876 books</title>
+<text class="lab" x="0" y="81">Teacher guides<tspan class="cnt" dx="8">876 books</tspan></text>
+<rect class="bf" x="0" y="87" width="198.01" height="13"/>
+<rect class="bm" x="198.01" y="87" width="291.99" height="13"/>
 <text class="val" x="560" y="98" text-anchor="end">40.4%</text>
 <line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
 <line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
 </g>
-<g class="row"><title>Readers and supplementary books: 38.4% female, 509 books</title>
-<text class="lab" x="0" y="120">Readers and supplementary books<tspan class="cnt" dx="8">509 books</tspan></text>
-<rect class="bf" x="0" y="126" width="188.31" height="13"/>
-<rect class="bm" x="188.31" y="126" width="301.69" height="13"/>
-<text class="val" x="560" y="137" text-anchor="end">38.4%</text>
+<g class="row"><title>Readers and supplementary books: 39.5% female, 591 books</title>
+<text class="lab" x="0" y="120">Readers and supplementary books<tspan class="cnt" dx="8">591 books</tspan></text>
+<rect class="bf" x="0" y="126" width="193.65" height="13"/>
+<rect class="bm" x="193.65" y="126" width="296.35" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">39.5%</text>
 <line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
 <line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
 </g>
@@ -284,7 +290,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="halo" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
 <line class="par" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
 </g>
-</svg></div><details class="dt"><summary>Data table: female share by collection</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by collection, scrolls sideways"><table><caption class="vh">Data table: female share by collection</caption><thead><tr><th scope="col">Collection</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">National textbooks</th><td>3,252</td><td>35.0%</td></tr><tr><th scope="row">Teacher guides</th><td>874</td><td>40.4%</td></tr><tr><th scope="row">Readers and supplementary books</th><td>509</td><td>38.4%</td></tr><tr><th scope="row">Programme books</th><td>11</td><td>40.6%</td></tr><tr><th scope="row">Pratham Books</th><td>109</td><td>47.9%</td></tr><tr><th scope="row">The Citizens Foundation</th><td>32</td><td>47.0%</td></tr><tr><th scope="row">Luminos Fund</th><td>16</td><td>47.2%</td></tr><tr><th scope="row">African Storybook</th><td>11</td><td>32.7%</td></tr><tr><th scope="row">Excerpts (sample pages, not whole books)</th><td>90</td><td>24.8%</td></tr></tbody></table></div></details></section>
+</svg></div><details class="dt"><summary>Data table: female share by collection</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share by collection, scrolls sideways"><table><caption class="vh">Data table: female share by collection</caption><thead><tr><th scope="col">Collection</th><th scope="col">Books</th><th scope="col">Share</th></tr></thead><tbody><tr><th scope="row">National textbooks</th><td>3,259</td><td>35.0%</td></tr><tr><th scope="row">Teacher guides</th><td>876</td><td>40.4%</td></tr><tr><th scope="row">Readers and supplementary books</th><td>591</td><td>39.5%</td></tr><tr><th scope="row">Programme books</th><td>11</td><td>40.6%</td></tr><tr><th scope="row">Pratham Books</th><td>109</td><td>47.9%</td></tr><tr><th scope="row">The Citizens Foundation</th><td>32</td><td>47.0%</td></tr><tr><th scope="row">Luminos Fund</th><td>16</td><td>47.2%</td></tr><tr><th scope="row">African Storybook</th><td>11</td><td>32.7%</td></tr><tr><th scope="row">Excerpts (sample pages, not whole books)</th><td>90</td><td>24.8%</td></tr></tbody></table></div></details></section>
 <p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
 </main></div>
 <script>
@@ -295,6 +301,58 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   window.addEventListener("load", post);
   window.addEventListener("resize", post);
   document.addEventListener("toggle", post, true);
+})();
+</script>
+<script>
+(function () {
+  var marks = document.querySelectorAll(".tg svg.chart:not(.map) .dot, .tg svg.chart:not(.map) g.row");
+  if (!marks.length) return;
+  var tip = document.createElement("div");
+  tip.className = "tgtip";
+  tip.setAttribute("role", "tooltip");
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  marks.forEach(function (el) {
+    var t = el.querySelector("title");
+    if (!t) return;
+    el.setAttribute("data-tip", t.textContent);
+    el.setAttribute("aria-label", t.textContent);
+    el.setAttribute("tabindex", "0");
+    t.remove();
+  });
+  function place(x, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 12), window.innerWidth - w - 8);
+    var top = y - h - 12 < 8 ? y + 16 : y - h - 12;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function show(el, x, y) {
+    tip.textContent = el.getAttribute("data-tip");
+    tip.hidden = false;
+    place(x, y);
+  }
+  function hide() { tip.hidden = true; }
+  function mark(e) { return e.target.closest ? e.target.closest("[data-tip]") : null; }
+  document.addEventListener("mouseover", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (!tip.hidden && mark(e)) place(e.clientX, e.clientY);
+  });
+  document.addEventListener("focusin", function (e) {
+    var el = mark(e);
+    if (!el) return hide();
+    var r = el.getBoundingClientRect();
+    show(el, r.left + r.width / 2, r.top);
+  });
+  document.addEventListener("focusout", hide);
+  document.addEventListener("click", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  window.addEventListener("scroll", hide, {passive: true});
 })();
 </script>
 </body>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How women and men are described: Gender in School Textbooks</title>
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
+  --rule:#D5DEE0; --rule-soft:#E8EEEF;
+  --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f-text:#007590; --m-text:#946000;
+  --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
+  --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+    --rule:#33454A; --rule-soft:#243337;
+    --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f-text:#3DB8D3; --m-text:#D98F2E;
+    --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+  --rule:#33454A; --rule-soft:#243337;
+  --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f-text:#3DB8D3; --m-text:#D98F2E;
+  --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:0;
+  line-height:1.5; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums}
+.tg{background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-variant-numeric:tabular-nums; overflow-x:hidden}
+.tg a{color:var(--accent)}
+.tg :focus-visible{outline:2px solid var(--focus); outline-offset:2px}
+.tg .wrap{max-width:820px; margin:0 auto; padding-inline:16px; padding-block:0 48px}
+.tg .band{background:var(--band); color:var(--band-ink)}
+.tg .bandin{max-width:820px; margin:0 auto; padding:20px 16px 22px}
+.tg .org{font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--band-sub);
+  margin:0 0 10px}
+.tg h1{font-size:clamp(24px,5vw,31px); line-height:1.15; letter-spacing:-.01em; margin:0;
+  color:var(--band-ink)}
+.tg .sub{font-size:15.5px; color:var(--band-sub); margin:8px 0 0; max-width:62ch; line-height:1.55}
+.tg .sub a{color:var(--band-ink)}
+.tg .goldrule{height:4px; background:var(--gold)}
+.tg section{padding-block:28px 26px}
+.tg section + section{border-top:1px solid var(--rule)}
+.tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
+.tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
+.tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
+.tg .note{font-size:13.5px; color:var(--muted); margin-top:12px}
+
+.tg .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:22px 28px;
+  margin:0; padding:0; list-style:none}
+.tg .stat{border-top:3px solid var(--f); padding-top:12px}
+.tg .stat.m{border-top-color:var(--m)}
+.tg .stat.n{border-top-color:var(--brand)}
+.tg .big{display:block; font-size:clamp(36px,8vw,46px); font-weight:700; letter-spacing:-.03em;
+  line-height:1; color:var(--ink)}
+.tg .stat p{font-size:14.5px; margin:8px 0 0}
+
+.tg .chartbox{max-width:680px}
+.tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
+.tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
+.tg .chart .axis{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lab{font-weight:700}
+.tg .chart .cnt{font-weight:400; fill:var(--muted)}
+.tg .chart .val{font-weight:700}
+.tg .chart .bf{fill:var(--f)}
+.tg .chart .bm{fill:var(--m)}
+.tg .chart .few rect{opacity:.45}
+.tg .chart .few .lab{font-weight:400}
+.tg .chart .halo{stroke:var(--paper); stroke-width:5.5}
+.tg .chart .par{stroke:var(--gold); stroke-width:2.5}
+@media (max-width:600px){
+  .tg .chart text{font-size:18px}
+  .tg .chart .axis{font-size:15px}
+}
+
+.tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
+  margin-top:14px}
+.tg .filters .q{grid-column:1 / -1}
+.tg label{display:block; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:5px}
+.tg input, .tg select{width:100%; font:inherit; font-size:14.5px; padding:8px 10px;
+  border:1px solid var(--rule); border-radius:6px; background:var(--card); color:var(--ink)}
+.tg .bar{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;
+  margin:16px 0 8px}
+.tg .count{font-size:14px; color:var(--ink-2); margin:0}
+.tg .count b{color:var(--ink)}
+.tg button{font:inherit; font-size:13.5px; cursor:pointer}
+.tg .ghost{padding:6px 12px; border:1px solid var(--rule); border-radius:6px; background:var(--card);
+  color:var(--ink-2)}
+.tg .ghost:disabled{opacity:.45; cursor:default}
+.tg .tscroll{overflow-x:auto; border-top:1px solid var(--rule); -webkit-overflow-scrolling:touch}
+.tg table{width:100%; min-width:760px; border-collapse:collapse; font-size:13.5px}
+.tg th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; padding:10px 10px 8px 0; border-bottom:1px solid var(--rule);
+  white-space:nowrap}
+.tg th button{background:none; border:0; padding:0; color:inherit; font:inherit;
+  letter-spacing:inherit; text-transform:inherit}
+.tg th button::after{content:" \2195"; opacity:.45}
+.tg th[aria-sort="ascending"] button::after{content:" \2191"; opacity:1}
+.tg th[aria-sort="descending"] button::after{content:" \2193"; opacity:1}
+.tg td{padding:8px 10px 8px 0; border-bottom:1px solid var(--rule-soft); color:var(--ink-2);
+  vertical-align:top}
+.tg .num{text-align:right}
+.tg td.num{color:var(--ink); white-space:nowrap}
+.tg td.t{min-width:220px; max-width:340px; color:var(--ink); overflow-wrap:anywhere}
+.tg .mini{display:inline-block; width:56px; height:8px; background:var(--m); border-radius:2px;
+  position:relative; vertical-align:middle; margin-right:8px; overflow:hidden}
+.tg .mini i{position:absolute; inset:0 auto 0 0; background:var(--f)}
+.tg .mini b{position:absolute; top:0; bottom:0; left:50%; width:1px; background:var(--card)}
+.tg .none{color:var(--muted)}
+.tg .pager{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin-top:12px;
+  font-size:13.5px; color:var(--muted)}
+
+.tg dl{margin:8px 0 0; display:grid; grid-template-columns:max-content 1fr; gap:6px 16px;
+  font-size:14.5px; max-width:68ch}
+.tg dt{font-weight:700; color:var(--ink)}
+.tg dd{margin:0; color:var(--ink-2)}
+@media (max-width:520px){ .tg dl{grid-template-columns:1fr} .tg dd{margin-bottom:6px} }
+.tg .cite{background:var(--card); border-left:3px solid var(--brand); padding:10px 14px;
+  font-size:14px; color:var(--ink-2); max-width:68ch}
+.tg .dl{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; padding:0; list-style:none}
+.tg .dl a{display:inline-block; padding:8px 14px; border:1px solid var(--accent); border-radius:6px;
+  text-decoration:none; font-weight:700; font-size:14px}
+.tg .vh{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);
+  white-space:nowrap}
+@media (prefers-reduced-motion: reduce){
+  .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+
+.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold)}
+.tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
+.tg .sitename a{color:var(--band-ink);text-decoration:none}
+.tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
+.tg .topnav a{color:var(--band-sub);text-decoration:none;padding:.15rem 0;
+  border-bottom:2px solid transparent}
+.tg .topnav a:hover{color:var(--band-ink)}
+.tg .topnav a[aria-current="page"]{color:var(--band-ink);border-bottom-color:var(--gold)}
+.tg .band :focus-visible{outline-color:var(--gold)}
+.tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
+.tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .chart .ci{stroke:var(--muted);stroke-width:2}
+.tg .chart .pt{fill:var(--f)}
+.tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
+.tg .chart .dot{fill:var(--f);fill-opacity:.85}
+.tg .chart .grid{stroke:var(--rule-soft)}
+.tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
+.tg .chart .sq{fill:var(--ink-2)}
+.tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
+  stroke-width:3px; stroke-linejoin:round}
+.tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
+.tg .chart .dl-ci{fill:var(--muted)} .tg .chart .dl-sq,.tg .chart .dl-fit{fill:var(--ink-2)}
+.tg .chart .dl-par{fill:var(--muted)}
+.tg .chart .plab{font-weight:700; fill:var(--muted)}
+.tg .chart .ytitle{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lead{stroke:var(--muted); stroke-width:1}
+@media (max-width:600px){ .tg .chart .dl,.tg .chart .ytitle{font-size:15px} }
+.tg .chart.map .dl,.tg .chart.map .axis{font-size:11.5px}
+@media (max-width:600px){ .tg .chart.map .dl,.tg .chart.map .axis{font-size:18px} }
+.tg .chart.map .ct{stroke:var(--paper);stroke-width:.6;stroke-linejoin:round;fill-rule:evenodd}
+.tg .chart.map .f{fill:var(--f)}
+.tg .chart.map .m{fill:var(--m)}
+.tg .chart.map .none{fill:var(--rule)}
+.tg .chart.map .ct[tabindex]{cursor:pointer}
+.tg .chart.map.js .ct:focus{outline:none}
+.tg .chart.map .hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;
+  pointer-events:none}
+.tg .chart .hatch-bg{fill:var(--rule)}
+.tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .gs-f{stop-color:var(--f)}
+.tg .chart .gs-m{stop-color:var(--m)}
+.tg .chart .swatch{stroke:var(--rule)}
+.tg .chart .swatch.none{fill:var(--rule)}
+.tg .chart .dl-key{fill:var(--ink-2);font-weight:400}
+.tg .mapread{min-height:1.6em;margin:6px 0 0;font-size:13.5px;color:var(--ink-2)}
+.tg tr.hl th,.tg tr.hl td{background:var(--accent-soft)}
+.tg details.dt{margin:.6rem 0 1.2rem}
+.tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.tg details.dt table{min-width:0}
+.tg details.dt th{white-space:normal}
+.tg details.dt tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink-2);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top}
+.tg #tg-table td.t{max-width:28ch;white-space:normal;min-width:190px}
+.tg .embed-link{font-size:.85rem;margin:-.4rem 0 1.6rem}
+.tg .embed-link a{color:var(--muted)}
+.tg .wrap.foot{border-top:1px solid var(--rule);margin-top:2.5rem;padding-block:1.2rem}
+.tg.embed .wrap{padding-block:.5rem}
+.tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
+  font-size:.82rem}
+.tgtip{position:fixed;z-index:20;max-width:280px;padding:6px 9px;border-radius:4px;
+  background:var(--ink);color:var(--paper);font-size:13px;line-height:1.35;pointer-events:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tg .chart .dot[data-tip]:hover,.tg .chart .dot[data-tip]:focus{fill-opacity:1;stroke:var(--ink);
+  stroke-width:1.5;outline:none}
+.tg .chart g.row[data-tip]:focus{outline:none}
+</style>
+</head>
+<body>
+<div class="tg embed"><main class="wrap">
+<h1 class="vh">How women and men are described: Gender in School Textbooks</h1>
+<section id="descriptors" aria-labelledby="h-descriptors"><h2 id="h-descriptors">How women and men are described</h2><p class="lede">The adjectives used of women and men (&ldquo;a kind woman&rdquo;, &ldquo;he seemed strong&rdquo;) and the verbs they are the subject of (&ldquo;she cooked&rdquo;, &ldquo;he built&rdquo;), scored on the NRC lexicon from 0 to 1. Dominance stands in for agency, as in the paper. In dominance, the adjectives used of women differ from those used of men by −0.019 (95% interval −0.028 to −0.009); the verbs women are the subject of differ from those of men by −0.011 (95% interval −0.015 to −0.005).</p><div class="chartbox"><svg class="chart" id="tg-descriptors" viewBox="0 0 560 254" role="img" aria-labelledby="tg-descriptors-t tg-descriptors-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-descriptors-t">Dominance, valence and arousal of the words used of women and men, women minus men</title>
+<desc id="tg-descriptors-d">Adjectives dominance −0.019 (95% interval −0.028 to −0.009); Adjectives valence +0.008 (95% interval −0.005 to +0.018); Adjectives arousal +0.008 (95% interval 0.000 to +0.014); Verbs dominance −0.011 (95% interval −0.015 to −0.005); Verbs valence +0.011 (95% interval +0.008 to +0.015); Verbs arousal −0.009 (95% interval −0.012 to −0.005)</desc>
+<text class="axis" x="0" y="12">NRC VAD score (0 to 1), women minus men</text>
+<text class="axis" x="107.6" y="32" text-anchor="middle">−0.02</text>
+<text class="axis" x="476.5" y="32" text-anchor="middle">0.02</text>
+<text class="axis plab" x="292.0" y="32" text-anchor="middle">no gap</text>
+<g class="row"><title>Adjectives: dominance: −0.019 (95% interval −0.028 to −0.009)</title>
+<text class="lab" x="0" y="56">Adjectives: dominance</text>
+<line class="grid" x1="107.6" y1="62" x2="107.6" y2="72"/>
+<line class="grid" x1="476.5" y1="62" x2="476.5" y2="72"/>
+<line class="halo" x1="292.0" y1="61.0" x2="292.0" y2="73.0"/>
+<line class="par" x1="292.0" y1="61.0" x2="292.0" y2="73.0"/>
+<line class="ci" x1="33.8" y1="67" x2="207.2" y2="67"/>
+<circle class="pt" cx="114.0" cy="67" r="4.5"/>
+<text class="val" x="560" y="71" text-anchor="end">−0.019</text></g>
+<text class="dl dl-f" x="302.0" y="71">Gap</text>
+<text class="dl dl-ci" x="337.2" y="71">95% interval</text>
+<g class="row"><title>Adjectives: valence: +0.008 (95% interval −0.005 to +0.018)</title>
+<text class="lab" x="0" y="90">Adjectives: valence</text>
+<line class="grid" x1="107.6" y1="96" x2="107.6" y2="106"/>
+<line class="grid" x1="476.5" y1="96" x2="476.5" y2="106"/>
+<line class="halo" x1="292.0" y1="95.0" x2="292.0" y2="107.0"/>
+<line class="par" x1="292.0" y1="95.0" x2="292.0" y2="107.0"/>
+<line class="ci" x1="244.1" y1="101" x2="456.2" y2="101"/>
+<circle class="pt" cx="369.5" cy="101" r="4.5"/>
+<text class="val" x="560" y="105" text-anchor="end">+0.008</text></g>
+<g class="row"><title>Adjectives: arousal: +0.008 (95% interval 0.000 to +0.014)</title>
+<text class="lab" x="0" y="124">Adjectives: arousal</text>
+<line class="grid" x1="107.6" y1="130" x2="107.6" y2="140"/>
+<line class="grid" x1="476.5" y1="130" x2="476.5" y2="140"/>
+<line class="halo" x1="292.0" y1="129.0" x2="292.0" y2="141.0"/>
+<line class="par" x1="292.0" y1="129.0" x2="292.0" y2="141.0"/>
+<line class="ci" x1="292.0" y1="135" x2="418.4" y2="135"/>
+<circle class="pt" cx="362.1" cy="135" r="4.5"/>
+<text class="val" x="560" y="139" text-anchor="end">+0.008</text></g>
+<g class="row"><title>Verbs: dominance: −0.011 (95% interval −0.015 to −0.005)</title>
+<text class="lab" x="0" y="158">Verbs: dominance</text>
+<line class="grid" x1="107.6" y1="164" x2="107.6" y2="174"/>
+<line class="grid" x1="476.5" y1="164" x2="476.5" y2="174"/>
+<line class="halo" x1="292.0" y1="163.0" x2="292.0" y2="175.0"/>
+<line class="par" x1="292.0" y1="163.0" x2="292.0" y2="175.0"/>
+<line class="ci" x1="156.5" y1="169" x2="246.8" y2="169"/>
+<circle class="pt" cx="187.8" cy="169" r="4.5"/>
+<text class="val" x="560" y="173" text-anchor="end">−0.011</text></g>
+<g class="row"><title>Verbs: valence: +0.011 (95% interval +0.008 to +0.015)</title>
+<text class="lab" x="0" y="192">Verbs: valence</text>
+<line class="grid" x1="107.6" y1="198" x2="107.6" y2="208"/>
+<line class="grid" x1="476.5" y1="198" x2="476.5" y2="208"/>
+<line class="halo" x1="292.0" y1="197.0" x2="292.0" y2="209.0"/>
+<line class="par" x1="292.0" y1="197.0" x2="292.0" y2="209.0"/>
+<line class="ci" x1="364.0" y1="203" x2="428.5" y2="203"/>
+<circle class="pt" cx="393.5" cy="203" r="4.5"/>
+<text class="val" x="560" y="207" text-anchor="end">+0.011</text></g>
+<g class="row"><title>Verbs: arousal: −0.009 (95% interval −0.012 to −0.005)</title>
+<text class="lab" x="0" y="226">Verbs: arousal</text>
+<line class="grid" x1="107.6" y1="232" x2="107.6" y2="242"/>
+<line class="grid" x1="476.5" y1="232" x2="476.5" y2="242"/>
+<line class="halo" x1="292.0" y1="231.0" x2="292.0" y2="243.0"/>
+<line class="par" x1="292.0" y1="231.0" x2="292.0" y2="243.0"/>
+<line class="ci" x1="182.3" y1="237" x2="248.7" y2="237"/>
+<circle class="pt" cx="208.1" cy="237" r="4.5"/>
+<text class="val" x="560" y="241" text-anchor="end">−0.009</text></g>
+</svg></div><p class="note">Countries cannot be told apart on these measures: two countries would need to differ by at least 0.122 in adjective dominance, 6 times the gap across all books, so no country values are shown.</p><details class="dt"><summary>Data table: scores of the words used of women and of men</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: scores of the words used of women and of men, scrolls sideways"><table><caption class="vh">Data table: scores of the words used of women and of men</caption><thead><tr><th scope="col">Measure</th><th scope="col">Group</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Gap</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">Adjectives: dominance</th><td>All national textbooks</td><td>0.517</td><td>0.536</td><td>−0.019</td><td>−0.028 to −0.009</td><td>3,259</td></tr><tr><th scope="row">Adjectives: dominance</th><td>East Asia &amp; Pacific</td><td>0.488</td><td>0.512</td><td>−0.025</td><td>−0.036 to −0.011</td><td>329</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Europe &amp; Central Asia</td><td>0.531</td><td>0.545</td><td>−0.014</td><td>−0.028 to +0.002</td><td>135</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Latin America &amp; Caribbean</td><td>0.538</td><td>0.522</td><td>+0.016</td><td>−0.016 to +0.049</td><td>134</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.521</td><td>0.537</td><td>−0.016</td><td>−0.026 to +0.002</td><td>326</td></tr><tr><th scope="row">Adjectives: dominance</th><td>North America</td><td>0.564</td><td>0.544</td><td>+0.019</td><td>+0.010 to +0.162</td><td>487</td></tr><tr><th scope="row">Adjectives: dominance</th><td>South Asia</td><td>0.511</td><td>0.538</td><td>−0.027</td><td>−0.053 to −0.006</td><td>1,242</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Sub-Saharan Africa</td><td>0.523</td><td>0.540</td><td>−0.017</td><td>−0.030 to +0.003</td><td>606</td></tr><tr><th scope="row">Adjectives: dominance</th><td>High income</td><td>0.536</td><td>0.537</td><td>0.000</td><td>−0.029 to +0.028</td><td>818</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Low income</td><td>0.514</td><td>0.534</td><td>−0.021</td><td>−0.031 to −0.002</td><td>405</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Lower middle income</td><td>0.512</td><td>0.534</td><td>−0.022</td><td>−0.037 to −0.004</td><td>1,590</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Upper middle income</td><td>0.524</td><td>0.549</td><td>−0.025</td><td>−0.046 to +0.006</td><td>446</td></tr><tr><th scope="row">Adjectives: valence</th><td>All national textbooks</td><td>0.604</td><td>0.596</td><td>+0.008</td><td>−0.005 to +0.018</td><td>3,259</td></tr><tr><th scope="row">Adjectives: valence</th><td>East Asia &amp; Pacific</td><td>0.581</td><td>0.575</td><td>+0.006</td><td>−0.012 to +0.022</td><td>329</td></tr><tr><th scope="row">Adjectives: valence</th><td>Europe &amp; Central Asia</td><td>0.618</td><td>0.612</td><td>+0.005</td><td>−0.023 to +0.029</td><td>135</td></tr><tr><th scope="row">Adjectives: valence</th><td>Latin America &amp; Caribbean</td><td>0.649</td><td>0.592</td><td>+0.058</td><td>+0.014 to +0.102</td><td>134</td></tr><tr><th scope="row">Adjectives: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.600</td><td>0.606</td><td>−0.005</td><td>−0.031 to +0.028</td><td>326</td></tr><tr><th scope="row">Adjectives: valence</th><td>North America</td><td>0.633</td><td>0.611</td><td>+0.022</td><td>+0.017 to +0.099</td><td>487</td></tr><tr><th scope="row">Adjectives: valence</th><td>South Asia</td><td>0.601</td><td>0.596</td><td>+0.005</td><td>−0.035 to +0.018</td><td>1,242</td></tr><tr><th scope="row">Adjectives: valence</th><td>Sub-Saharan Africa</td><td>0.610</td><td>0.589</td><td>+0.021</td><td>+0.006 to +0.044</td><td>606</td></tr><tr><th scope="row">Adjectives: valence</th><td>High income</td><td>0.610</td><td>0.598</td><td>+0.012</td><td>−0.010 to +0.035</td><td>818</td></tr><tr><th scope="row">Adjectives: valence</th><td>Low income</td><td>0.593</td><td>0.587</td><td>+0.006</td><td>−0.009 to +0.019</td><td>405</td></tr><tr><th scope="row">Adjectives: valence</th><td>Lower middle income</td><td>0.601</td><td>0.593</td><td>+0.008</td><td>−0.018 to +0.022</td><td>1,590</td></tr><tr><th scope="row">Adjectives: valence</th><td>Upper middle income</td><td>0.623</td><td>0.619</td><td>+0.005</td><td>−0.015 to +0.035</td><td>446</td></tr><tr><th scope="row">Adjectives: arousal</th><td>All national textbooks</td><td>0.482</td><td>0.474</td><td>+0.008</td><td>0.000 to +0.014</td><td>3,259</td></tr><tr><th scope="row">Adjectives: arousal</th><td>East Asia &amp; Pacific</td><td>0.475</td><td>0.481</td><td>−0.006</td><td>−0.020 to +0.009</td><td>329</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Europe &amp; Central Asia</td><td>0.489</td><td>0.495</td><td>−0.006</td><td>−0.027 to +0.007</td><td>135</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Latin America &amp; Caribbean</td><td>0.494</td><td>0.489</td><td>+0.005</td><td>−0.008 to +0.037</td><td>134</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.474</td><td>0.478</td><td>−0.005</td><td>−0.018 to +0.005</td><td>326</td></tr><tr><th scope="row">Adjectives: arousal</th><td>North America</td><td>0.481</td><td>0.486</td><td>−0.005</td><td>−0.010 to +0.057</td><td>487</td></tr><tr><th scope="row">Adjectives: arousal</th><td>South Asia</td><td>0.478</td><td>0.467</td><td>+0.011</td><td>+0.009 to +0.028</td><td>1,242</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Sub-Saharan Africa</td><td>0.496</td><td>0.472</td><td>+0.024</td><td>−0.003 to +0.048</td><td>606</td></tr><tr><th scope="row">Adjectives: arousal</th><td>High income</td><td>0.481</td><td>0.493</td><td>−0.012</td><td>−0.025 to +0.005</td><td>818</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Low income</td><td>0.490</td><td>0.475</td><td>+0.015</td><td>−0.011 to +0.035</td><td>405</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Lower middle income</td><td>0.478</td><td>0.469</td><td>+0.009</td><td>−0.003 to +0.018</td><td>1,590</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Upper middle income</td><td>0.489</td><td>0.485</td><td>+0.004</td><td>−0.010 to +0.013</td><td>446</td></tr><tr><th scope="row">Verbs: dominance</th><td>All national textbooks</td><td>0.524</td><td>0.535</td><td>−0.011</td><td>−0.015 to −0.005</td><td>3,259</td></tr><tr><th scope="row">Verbs: dominance</th><td>East Asia &amp; Pacific</td><td>0.517</td><td>0.522</td><td>−0.005</td><td>−0.013 to +0.002</td><td>329</td></tr><tr><th scope="row">Verbs: dominance</th><td>Europe &amp; Central Asia</td><td>0.526</td><td>0.531</td><td>−0.005</td><td>−0.010 to +0.004</td><td>135</td></tr><tr><th scope="row">Verbs: dominance</th><td>Latin America &amp; Caribbean</td><td>0.519</td><td>0.521</td><td>−0.002</td><td>−0.015 to +0.009</td><td>134</td></tr><tr><th scope="row">Verbs: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.523</td><td>0.532</td><td>−0.009</td><td>−0.014 to −0.001</td><td>326</td></tr><tr><th scope="row">Verbs: dominance</th><td>North America</td><td>0.527</td><td>0.527</td><td>−0.001</td><td>−0.001 to +0.017</td><td>487</td></tr><tr><th scope="row">Verbs: dominance</th><td>South Asia</td><td>0.523</td><td>0.542</td><td>−0.018</td><td>−0.022 to −0.016</td><td>1,242</td></tr><tr><th scope="row">Verbs: dominance</th><td>Sub-Saharan Africa</td><td>0.528</td><td>0.538</td><td>−0.010</td><td>−0.014 to −0.004</td><td>606</td></tr><tr><th scope="row">Verbs: dominance</th><td>High income</td><td>0.523</td><td>0.527</td><td>−0.004</td><td>−0.011 to −0.001</td><td>818</td></tr><tr><th scope="row">Verbs: dominance</th><td>Low income</td><td>0.525</td><td>0.536</td><td>−0.011</td><td>−0.015 to −0.003</td><td>405</td></tr><tr><th scope="row">Verbs: dominance</th><td>Lower middle income</td><td>0.523</td><td>0.537</td><td>−0.014</td><td>−0.017 to −0.004</td><td>1,590</td></tr><tr><th scope="row">Verbs: dominance</th><td>Upper middle income</td><td>0.526</td><td>0.534</td><td>−0.008</td><td>−0.016 to +0.002</td><td>446</td></tr><tr><th scope="row">Verbs: valence</th><td>All national textbooks</td><td>0.633</td><td>0.622</td><td>+0.011</td><td>+0.008 to +0.015</td><td>3,259</td></tr><tr><th scope="row">Verbs: valence</th><td>East Asia &amp; Pacific</td><td>0.623</td><td>0.611</td><td>+0.013</td><td>+0.004 to +0.021</td><td>329</td></tr><tr><th scope="row">Verbs: valence</th><td>Europe &amp; Central Asia</td><td>0.648</td><td>0.640</td><td>+0.009</td><td>+0.002 to +0.017</td><td>135</td></tr><tr><th scope="row">Verbs: valence</th><td>Latin America &amp; Caribbean</td><td>0.640</td><td>0.624</td><td>+0.016</td><td>−0.004 to +0.031</td><td>134</td></tr><tr><th scope="row">Verbs: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.641</td><td>0.624</td><td>+0.016</td><td>+0.011 to +0.021</td><td>326</td></tr><tr><th scope="row">Verbs: valence</th><td>North America</td><td>0.639</td><td>0.623</td><td>+0.017</td><td>+0.015 to +0.047</td><td>487</td></tr><tr><th scope="row">Verbs: valence</th><td>South Asia</td><td>0.625</td><td>0.621</td><td>+0.004</td><td>−0.002 to +0.008</td><td>1,242</td></tr><tr><th scope="row">Verbs: valence</th><td>Sub-Saharan Africa</td><td>0.635</td><td>0.621</td><td>+0.014</td><td>+0.008 to +0.019</td><td>606</td></tr><tr><th scope="row">Verbs: valence</th><td>High income</td><td>0.639</td><td>0.625</td><td>+0.013</td><td>+0.005 to +0.019</td><td>818</td></tr><tr><th scope="row">Verbs: valence</th><td>Low income</td><td>0.634</td><td>0.619</td><td>+0.016</td><td>+0.009 to +0.022</td><td>405</td></tr><tr><th scope="row">Verbs: valence</th><td>Lower middle income</td><td>0.628</td><td>0.619</td><td>+0.008</td><td>+0.006 to +0.016</td><td>1,590</td></tr><tr><th scope="row">Verbs: valence</th><td>Upper middle income</td><td>0.639</td><td>0.632</td><td>+0.007</td><td>+0.002 to +0.014</td><td>446</td></tr><tr><th scope="row">Verbs: arousal</th><td>All national textbooks</td><td>0.475</td><td>0.484</td><td>−0.009</td><td>−0.012 to −0.005</td><td>3,259</td></tr><tr><th scope="row">Verbs: arousal</th><td>East Asia &amp; Pacific</td><td>0.473</td><td>0.474</td><td>−0.001</td><td>−0.017 to +0.005</td><td>329</td></tr><tr><th scope="row">Verbs: arousal</th><td>Europe &amp; Central Asia</td><td>0.471</td><td>0.482</td><td>−0.011</td><td>−0.015 to −0.006</td><td>135</td></tr><tr><th scope="row">Verbs: arousal</th><td>Latin America &amp; Caribbean</td><td>0.486</td><td>0.494</td><td>−0.008</td><td>−0.020 to −0.001</td><td>134</td></tr><tr><th scope="row">Verbs: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.472</td><td>0.482</td><td>−0.010</td><td>−0.015 to −0.005</td><td>326</td></tr><tr><th scope="row">Verbs: arousal</th><td>North America</td><td>0.477</td><td>0.486</td><td>−0.009</td><td>−0.009 to −0.005</td><td>487</td></tr><tr><th scope="row">Verbs: arousal</th><td>South Asia</td><td>0.472</td><td>0.486</td><td>−0.014</td><td>−0.016 to −0.006</td><td>1,242</td></tr><tr><th scope="row">Verbs: arousal</th><td>Sub-Saharan Africa</td><td>0.484</td><td>0.489</td><td>−0.005</td><td>−0.009 to −0.001</td><td>606</td></tr><tr><th scope="row">Verbs: arousal</th><td>High income</td><td>0.474</td><td>0.486</td><td>−0.011</td><td>−0.017 to −0.009</td><td>818</td></tr><tr><th scope="row">Verbs: arousal</th><td>Low income</td><td>0.481</td><td>0.488</td><td>−0.008</td><td>−0.015 to −0.003</td><td>405</td></tr><tr><th scope="row">Verbs: arousal</th><td>Lower middle income</td><td>0.473</td><td>0.482</td><td>−0.010</td><td>−0.013 to 0.000</td><td>1,590</td></tr><tr><th scope="row">Verbs: arousal</th><td>Upper middle income</td><td>0.477</td><td>0.485</td><td>−0.008</td><td>−0.013 to −0.003</td><td>446</td></tr></tbody></table></div></details></section>
+<p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
+</main></div>
+<script>
+(function () {
+  function post() {
+    window.parent.postMessage({tgsEmbed: "descriptors", height: Math.ceil(document.documentElement.getBoundingClientRect().height)}, "*");
+  }
+  window.addEventListener("load", post);
+  window.addEventListener("resize", post);
+  document.addEventListener("toggle", post, true);
+})();
+</script>
+<script>
+(function () {
+  var marks = document.querySelectorAll(".tg svg.chart:not(.map) .dot, .tg svg.chart:not(.map) g.row");
+  if (!marks.length) return;
+  var tip = document.createElement("div");
+  tip.className = "tgtip";
+  tip.setAttribute("role", "tooltip");
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  marks.forEach(function (el) {
+    var t = el.querySelector("title");
+    if (!t) return;
+    el.setAttribute("data-tip", t.textContent);
+    el.setAttribute("aria-label", t.textContent);
+    el.setAttribute("tabindex", "0");
+    t.remove();
+  });
+  function place(x, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 12), window.innerWidth - w - 8);
+    var top = y - h - 12 < 8 ? y + 16 : y - h - 12;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function show(el, x, y) {
+    tip.textContent = el.getAttribute("data-tip");
+    tip.hidden = false;
+    place(x, y);
+  }
+  function hide() { tip.hidden = true; }
+  function mark(e) { return e.target.closest ? e.target.closest("[data-tip]") : null; }
+  document.addEventListener("mouseover", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (!tip.hidden && mark(e)) place(e.clientX, e.clientY);
+  });
+  document.addEventListener("focusin", function (e) {
+    var el = mark(e);
+    if (!el) return hide();
+    var r = el.getBoundingClientRect();
+    show(el, r.left + r.width / 2, r.top);
+  });
+  document.addEventListener("focusout", hide);
+  document.addEventListener("click", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  window.addEventListener("scroll", hide, {passive: true});
+})();
+</script>
+</body>
+</html>

@@ -162,6 +162,12 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
 .tg .chart .sqm{fill:var(--m)}
+.tg .chart .ptm{fill:var(--m)}
+.tg .chart .ptn{fill:var(--muted)}
+.tg .chart .val.dl-f{fill:var(--f-text)}
+.tg .chart .val.dl-m{fill:var(--m-text)}
+.tg .chart .half-f{fill:var(--f);fill-opacity:.16}
+.tg .chart .half-m{fill:var(--m);fill-opacity:.18}
 .tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
   stroke-width:3px; stroke-linejoin:round}
 .tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
@@ -334,55 +340,13 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   is published with the data.</p>
 
 
-<h2>Can children read their textbooks?</h2>
-<p>Each textbook for Grades 1&ndash;6 is scored as passages of 70 running words, the
-  length of the Grade 2 stories children are tested on, skipping tables and badly read pages; a
-  book is the median of its passages. The main measure is the share of a passage&rsquo;s words
-  outside the 2,000 most frequent words of its language (wordfreq), the measure second-language
-  reading research ties to comprehension. A book is set against a figure for children tested in
-  the book&rsquo;s language, whatever that language is; a language wordfreq has no list for is
-  not scored. Two grade formulas are computed alongside: Flesch&ndash;Kincaid
-  (sentence and word length) and the revised Spache formula (sentence length and words outside a
-  list of about 1,000 words familiar to children in Grades 1&ndash;3), which was built for early
-  grades; both are computed for English only. Copyright, licence and imprint passages are left out. The surveys&rsquo;
-  own Grade 2 passages (UNICEF MICS6 Foundational Learning Skills; Uwezo, ASER and the PAL Network)
-  are scored the same way. A survey counts when every child was tested in one language, or when
-  it pools several, as a ceiling on reading in each. For the MICS countries the figure is computed from the
-  child-level data: the share who read the English story among the children given it, which is a
-  ceiling if the children not given it (mostly those taught in another language) read English no
-  better; a grade counts with at least 50 children given the story. South Africa has no Grade 2
-  story test, so its figure is PIRLS 2021: the share of children tested in English who reached the
-  lowest benchmark (400 points: finding facts stated plainly in a simple text), in Grade 4 and Grade
-  6, against the two released passages, a story and an information text. In Grade 4 these are the
-  children taught in English from Grade 1, about a fifth of the grade; in Grade 6 nearly all
-  children were tested in English. Each book is set against the
-  figure for the next grade or, where there is none, the nearest grade above that: those children
-  have all finished the book&rsquo;s grade, so the ceiling holds wherever in the school year the
-  survey was done (most test mid-year). For this, MICS figures include Grade 7, the year after
-  Grade 6. A country is shown with at least 5 scored books. A book is harder only when it is harder on two measures: more of its
-  words fall outside the 2,000 most common words than in the hardest version of its test passage,
-  by more than one percentage point, and its sentences are longer (median words per finished
-  sentence, in any language) than in that version.
-  Names are left out of the word counts. The ceiling is the most children who could read a
-  textbook drawn at random from the country&rsquo;s set: a harder book at most the share who
-  read the test passage, any other book at most all of them. Its 90% interval comes from
-  20,000 draws: each grade&rsquo;s share of harder books from its Beta posterior (Jeffreys prior),
-  and each pass rate from a Beta with its sampling error: for MICS, the survey-design standard
-  error from the microdata (clusters within strata); for Bangladesh, the report&rsquo;s design
-  effect; for ASER, Uwezo and PIRLS, which print no standard error, one from the number of
-  children tested with a design effect of 2. Where no survey
-  has a figure, an Early Grade Reading Assessment (EGRA) is used: the share of children who
-  answer at least 80% of the comprehension questions on its passage, the most lenient standard
-  that still asks them to understand it. An EGRA from a sample that is not national, with no printed
-  passage, or from long before the books, gives a line apart from the others.
-  Left out: GHA (0 scored books (minimum 5)), LSO (0 scored books (minimum 5)), SLE (0 scored books (minimum 5)), ZWE (2 scored books (minimum 5)).</p>
 <h2>Changes</h2>
 <div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-11-06</td><td>+2 books, 0 countries</td><td class="num">3,157</td><td class="num">78</td><td class="num">34.91%</td></tr><tr><td>2026-10-15</td><td>−14 books, 0 countries</td><td class="num">3,155</td><td class="num">78</td><td class="num">34.90%</td></tr><tr><td>2026-10-14</td><td>−90 books, 0 countries</td><td class="num">3,169</td><td class="num">78</td><td class="num">34.87%</td></tr><tr><td>2026-10-12</td><td>+7 books, +2 countries</td><td class="num">3,259</td><td class="num">78</td><td class="num">35.03%</td></tr><tr><td>2026-10-11</td><td>+278 books, 0 countries</td><td class="num">3,252</td><td class="num">76</td><td class="num">35.03%</td></tr><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
 
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2312</li><li><code>embed/within.html</code>, height 1359</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/reading.html</code>, height 941</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/themes.html</code>, height 777</li><li><code>embed/descriptors.html</code>, height 860</li><li><code>embed/jobs.html</code>, height 1087</li><li><code>embed/collections.html</code>, height 1018</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2312</li><li><code>embed/within.html</code>, height 1359</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/themes.html</code>, height 777</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li><li><code>embed/collections.html</code>, height 1018</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2312&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

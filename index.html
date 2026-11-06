@@ -162,6 +162,12 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
 .tg .chart .sqm{fill:var(--m)}
+.tg .chart .ptm{fill:var(--m)}
+.tg .chart .ptn{fill:var(--muted)}
+.tg .chart .val.dl-f{fill:var(--f-text)}
+.tg .chart .val.dl-m{fill:var(--m-text)}
+.tg .chart .half-f{fill:var(--f);fill-opacity:.16}
+.tg .chart .half-m{fill:var(--m);fill-opacity:.18}
 .tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
   stroke-width:3px; stroke-linejoin:round}
 .tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
@@ -1192,104 +1198,105 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="ci" x1="340.9" y1="457" x2="434.5" y2="457"/>
 <circle class="pt" cx="387.7" cy="457" r="4.5"/>
 <text class="val" x="560" y="461" text-anchor="end">57.5%</text></g>
-</svg></div><details class="dt"><summary>Data table: adjusted female share by subject</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by subject, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by subject</caption><thead><tr><th scope="col">Subject</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Religion</th><td>20.8%</td><td>16.5–25.1</td><td>19.1%</td><td>72</td></tr><tr><th scope="row">Humanities</th><td>28.3%</td><td>25.3–31.2</td><td>20.7%</td><td>143</td></tr><tr><th scope="row">Arts</th><td>32.2%</td><td>27.2–37.1</td><td>30.9%</td><td>50</td></tr><tr><th scope="row">IT</th><td>34.4%</td><td>31.1–37.8</td><td>25.6%</td><td>111</td></tr><tr><th scope="row">Business and Economics</th><td>35.8%</td><td>32.2–39.4</td><td>28.8%</td><td>102</td></tr><tr><th scope="row">Science</th><td>35.8%</td><td>33.9–37.8</td><td>37.8%</td><td>347</td></tr><tr><th scope="row">Language</th><td>37.4%</td><td>36.1–38.6</td><td>37.2%</td><td>1,066</td></tr><tr><th scope="row">Physical Education</th><td>39.2%</td><td>34.4–44.0</td><td>31.4%</td><td>52</td></tr><tr><th scope="row">Social Science</th><td>39.5%</td><td>36.6–42.4</td><td>30.8%</td><td>157</td></tr><tr><th scope="row">General and Social Studies</th><td>40.1%</td><td>36.8–43.4</td><td>39.3%</td><td>116</td></tr><tr><th scope="row">Maths</th><td>41.3%</td><td>39.7–42.9</td><td>43.1%</td><td>511</td></tr><tr><th scope="row">Agriculture</th><td>47.5%</td><td>41.5–53.6</td><td>48.8%</td><td>41</td></tr><tr><th scope="row">Home Economics</th><td>57.5%</td><td>51.7–63.2</td><td>59.8%</td><td>38</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/subjects.html">Embed this chart<span class="vh"> (subjects)</span></a></p></section><section id="ages" aria-labelledby="h-ages"><h2 id="h-ages">Children and adults</h2><p class="lede">Book by book, the average female share of gendered words about children (girl, boy, son, daughter&hellip;) and about adults (woman, man, mother, father&hellip;), among books with both, overall and by World Bank region, as in the paper&rsquo;s Figure 3.</p><div class="chartbox"><svg class="chart" id="tg-ages" viewBox="0 0 560 304" role="img" aria-labelledby="tg-ages-t tg-ages-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><details class="dt"><summary>Data table: adjusted female share by subject</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by subject, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by subject</caption><thead><tr><th scope="col">Subject</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Religion</th><td>20.8%</td><td>16.5–25.1</td><td>19.1%</td><td>72</td></tr><tr><th scope="row">Humanities</th><td>28.3%</td><td>25.3–31.2</td><td>20.7%</td><td>143</td></tr><tr><th scope="row">Arts</th><td>32.2%</td><td>27.2–37.1</td><td>30.9%</td><td>50</td></tr><tr><th scope="row">IT</th><td>34.4%</td><td>31.1–37.8</td><td>25.6%</td><td>111</td></tr><tr><th scope="row">Business and Economics</th><td>35.8%</td><td>32.2–39.4</td><td>28.8%</td><td>102</td></tr><tr><th scope="row">Science</th><td>35.8%</td><td>33.9–37.8</td><td>37.8%</td><td>347</td></tr><tr><th scope="row">Language</th><td>37.4%</td><td>36.1–38.6</td><td>37.2%</td><td>1,066</td></tr><tr><th scope="row">Physical Education</th><td>39.2%</td><td>34.4–44.0</td><td>31.4%</td><td>52</td></tr><tr><th scope="row">Social Science</th><td>39.5%</td><td>36.6–42.4</td><td>30.8%</td><td>157</td></tr><tr><th scope="row">General and Social Studies</th><td>40.1%</td><td>36.8–43.4</td><td>39.3%</td><td>116</td></tr><tr><th scope="row">Maths</th><td>41.3%</td><td>39.7–42.9</td><td>43.1%</td><td>511</td></tr><tr><th scope="row">Agriculture</th><td>47.5%</td><td>41.5–53.6</td><td>48.8%</td><td>41</td></tr><tr><th scope="row">Home Economics</th><td>57.5%</td><td>51.7–63.2</td><td>59.8%</td><td>38</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/subjects.html">Embed this chart<span class="vh"> (subjects)</span></a></p></section><section id="ages" aria-labelledby="h-ages"><h2 id="h-ages">Children and adults</h2><p class="lede">Book by book, the average female share of gendered words about children (girl, boy, son, daughter&hellip;) and about adults (woman, man, mother, father&hellip;), among books with both, overall and by World Bank region, as in the paper&rsquo;s Figure 3.</p><div class="chartbox"><svg class="chart" id="tg-ages" viewBox="0 0 560 322" role="img" aria-labelledby="tg-ages-t tg-ages-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-ages-t">Female share of words about children and adults</title>
 <desc id="tg-ages-d">Children and adults, overall and by region.</desc>
-<text class="axis" x="6.0" y="14" text-anchor="start">30%</text>
-<text class="axis" x="188.7" y="14" text-anchor="middle">40%</text>
-<text class="axis" x="371.3" y="14" text-anchor="middle">50%</text>
-<text class="axis plab" x="388.3" y="14">parity</text>
-<text class="axis" x="554.0" y="14" text-anchor="end">60%</text>
+<text class="axis" x="6.0" y="32" text-anchor="start">30%</text>
+<text class="axis" x="188.7" y="32" text-anchor="middle">40%</text>
+<text class="axis" x="371.3" y="32" text-anchor="middle">50%</text>
+<text class="axis" x="554.0" y="32" text-anchor="end">60%</text>
+<text class="dl dl-m" x="363.3" y="14" text-anchor="end">More men</text>
+<text class="dl dl-f" x="379.3" y="14">More women</text>
 <g class="row"><title>All countries: children 38.3%, adults 41.2% female</title>
-<text class="lab" x="0" y="38">All countries</text>
-<line class="grid" x1="6.0" y1="44.0" x2="6.0" y2="54.0"/>
-<line class="grid" x1="188.7" y1="44.0" x2="188.7" y2="54.0"/>
-<line class="grid" x1="554.0" y1="44.0" x2="554.0" y2="54.0"/>
-<line class="halo" x1="371.3" y1="43.0" x2="371.3" y2="55.0"/>
-<line class="par" x1="371.3" y1="43.0" x2="371.3" y2="55.0"/>
-<line class="ci" x1="157.6" y1="49" x2="210.8" y2="49"/>
-<rect class="sq" x="206.3" y="44.5" width="9" height="9"/>
-<circle class="pt" cx="157.6" cy="49" r="4.5"/>
+<text class="lab" x="0" y="56">All countries</text>
+<rect class="half-m" x="6" y="61" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="61" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="62.0" x2="6.0" y2="72.0"/>
+<line class="grid" x1="188.7" y1="62.0" x2="188.7" y2="72.0"/>
+<line class="grid" x1="554.0" y1="62.0" x2="554.0" y2="72.0"/>
+<line class="ci" x1="157.6" y1="67" x2="210.8" y2="67"/>
+<rect class="sq" x="206.3" y="62.5" width="9" height="9"/>
+<circle class="pt" cx="157.6" cy="67" r="4.5"/>
 </g>
 <g class="row"><title>East Asia &amp; Pacific: children 39.6%, adults 41.0% female</title>
-<text class="lab" x="0" y="72">East Asia &amp; Pacific</text>
-<line class="grid" x1="6.0" y1="78.0" x2="6.0" y2="88.0"/>
-<line class="grid" x1="188.7" y1="78.0" x2="188.7" y2="88.0"/>
-<line class="grid" x1="554.0" y1="78.0" x2="554.0" y2="88.0"/>
-<line class="halo" x1="371.3" y1="77.0" x2="371.3" y2="89.0"/>
-<line class="par" x1="371.3" y1="77.0" x2="371.3" y2="89.0"/>
-<line class="ci" x1="180.6" y1="83" x2="206.8" y2="83"/>
-<rect class="sq" x="202.3" y="78.5" width="9" height="9"/>
-<circle class="pt" cx="180.6" cy="83" r="4.5"/>
+<text class="lab" x="0" y="90">East Asia &amp; Pacific</text>
+<rect class="half-m" x="6" y="95" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="95" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="96.0" x2="6.0" y2="106.0"/>
+<line class="grid" x1="188.7" y1="96.0" x2="188.7" y2="106.0"/>
+<line class="grid" x1="554.0" y1="96.0" x2="554.0" y2="106.0"/>
+<line class="ci" x1="180.6" y1="101" x2="206.8" y2="101"/>
+<rect class="sq" x="202.3" y="96.5" width="9" height="9"/>
+<circle class="pt" cx="180.6" cy="101" r="4.5"/>
 </g>
 <g class="row"><title>Europe &amp; Central Asia: children 43.2%, adults 47.0% female</title>
-<text class="lab" x="0" y="106">Europe &amp; Central Asia</text>
-<line class="grid" x1="6.0" y1="112.0" x2="6.0" y2="122.0"/>
-<line class="grid" x1="188.7" y1="112.0" x2="188.7" y2="122.0"/>
-<line class="grid" x1="554.0" y1="112.0" x2="554.0" y2="122.0"/>
-<line class="halo" x1="371.3" y1="111.0" x2="371.3" y2="123.0"/>
-<line class="par" x1="371.3" y1="111.0" x2="371.3" y2="123.0"/>
-<line class="ci" x1="247.5" y1="117" x2="317.4" y2="117"/>
-<rect class="sq" x="312.9" y="112.5" width="9" height="9"/>
-<circle class="pt" cx="247.5" cy="117" r="4.5"/>
+<text class="lab" x="0" y="124">Europe &amp; Central Asia</text>
+<rect class="half-m" x="6" y="129" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="129" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="130.0" x2="6.0" y2="140.0"/>
+<line class="grid" x1="188.7" y1="130.0" x2="188.7" y2="140.0"/>
+<line class="grid" x1="554.0" y1="130.0" x2="554.0" y2="140.0"/>
+<line class="ci" x1="247.5" y1="135" x2="317.4" y2="135"/>
+<rect class="sq" x="312.9" y="130.5" width="9" height="9"/>
+<circle class="pt" cx="247.5" cy="135" r="4.5"/>
 </g>
 <g class="row"><title>Latin America &amp; Caribbean: children 37.2%, adults 44.2% female</title>
-<text class="lab" x="0" y="140">Latin America &amp; Caribbean</text>
-<line class="grid" x1="6.0" y1="146.0" x2="6.0" y2="156.0"/>
-<line class="grid" x1="188.7" y1="146.0" x2="188.7" y2="156.0"/>
-<line class="grid" x1="554.0" y1="146.0" x2="554.0" y2="156.0"/>
-<line class="halo" x1="371.3" y1="145.0" x2="371.3" y2="157.0"/>
-<line class="par" x1="371.3" y1="145.0" x2="371.3" y2="157.0"/>
-<line class="ci" x1="138.3" y1="151" x2="265.8" y2="151"/>
-<rect class="sq" x="261.3" y="146.5" width="9" height="9"/>
-<circle class="pt" cx="138.3" cy="151" r="4.5"/>
+<text class="lab" x="0" y="158">Latin America &amp; Caribbean</text>
+<rect class="half-m" x="6" y="163" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="163" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="164.0" x2="6.0" y2="174.0"/>
+<line class="grid" x1="188.7" y1="164.0" x2="188.7" y2="174.0"/>
+<line class="grid" x1="554.0" y1="164.0" x2="554.0" y2="174.0"/>
+<line class="ci" x1="138.3" y1="169" x2="265.8" y2="169"/>
+<rect class="sq" x="261.3" y="164.5" width="9" height="9"/>
+<circle class="pt" cx="138.3" cy="169" r="4.5"/>
 </g>
 <g class="row"><title>Middle East, North Africa, Afghanistan &amp; Pakistan: children 35.8%, adults 39.8% female</title>
-<text class="lab" x="0" y="174">Middle East, North Africa, Afghanistan &amp; Pakistan</text>
-<line class="grid" x1="6.0" y1="180.0" x2="6.0" y2="190.0"/>
-<line class="grid" x1="188.7" y1="180.0" x2="188.7" y2="190.0"/>
-<line class="grid" x1="554.0" y1="180.0" x2="554.0" y2="190.0"/>
-<line class="halo" x1="371.3" y1="179.0" x2="371.3" y2="191.0"/>
-<line class="par" x1="371.3" y1="179.0" x2="371.3" y2="191.0"/>
-<line class="ci" x1="111.0" y1="185" x2="185.4" y2="185"/>
-<rect class="sq" x="180.9" y="180.5" width="9" height="9"/>
-<circle class="pt" cx="111.0" cy="185" r="4.5"/>
+<text class="lab" x="0" y="192">Middle East, North Africa, Afghanistan &amp; Pakistan</text>
+<rect class="half-m" x="6" y="197" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="197" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="198.0" x2="6.0" y2="208.0"/>
+<line class="grid" x1="188.7" y1="198.0" x2="188.7" y2="208.0"/>
+<line class="grid" x1="554.0" y1="198.0" x2="554.0" y2="208.0"/>
+<line class="ci" x1="111.0" y1="203" x2="185.4" y2="203"/>
+<rect class="sq" x="180.9" y="198.5" width="9" height="9"/>
+<circle class="pt" cx="111.0" cy="203" r="4.5"/>
 </g>
 <g class="row"><title>North America: children 32.9%, adults 42.0% female</title>
-<text class="lab" x="0" y="208">North America</text>
-<line class="grid" x1="6.0" y1="214.0" x2="6.0" y2="224.0"/>
-<line class="grid" x1="188.7" y1="214.0" x2="188.7" y2="224.0"/>
-<line class="grid" x1="554.0" y1="214.0" x2="554.0" y2="224.0"/>
-<line class="halo" x1="371.3" y1="213.0" x2="371.3" y2="225.0"/>
-<line class="par" x1="371.3" y1="213.0" x2="371.3" y2="225.0"/>
-<line class="ci" x1="59.7" y1="219" x2="225.0" y2="219"/>
-<rect class="sq" x="220.5" y="214.5" width="9" height="9"/>
-<circle class="pt" cx="59.7" cy="219" r="4.5"/>
+<text class="lab" x="0" y="226">North America</text>
+<rect class="half-m" x="6" y="231" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="231" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="232.0" x2="6.0" y2="242.0"/>
+<line class="grid" x1="188.7" y1="232.0" x2="188.7" y2="242.0"/>
+<line class="grid" x1="554.0" y1="232.0" x2="554.0" y2="242.0"/>
+<line class="ci" x1="59.7" y1="237" x2="225.0" y2="237"/>
+<rect class="sq" x="220.5" y="232.5" width="9" height="9"/>
+<circle class="pt" cx="59.7" cy="237" r="4.5"/>
 </g>
 <g class="row"><title>South Asia: children 36.9%, adults 39.4% female</title>
-<text class="lab" x="0" y="242">South Asia</text>
-<line class="grid" x1="6.0" y1="248.0" x2="6.0" y2="258.0"/>
-<line class="grid" x1="188.7" y1="248.0" x2="188.7" y2="258.0"/>
-<line class="grid" x1="554.0" y1="248.0" x2="554.0" y2="258.0"/>
-<line class="halo" x1="371.3" y1="247.0" x2="371.3" y2="259.0"/>
-<line class="par" x1="371.3" y1="247.0" x2="371.3" y2="259.0"/>
-<line class="ci" x1="132.0" y1="253" x2="178.1" y2="253"/>
-<rect class="sq" x="173.6" y="248.5" width="9" height="9"/>
-<circle class="pt" cx="132.0" cy="253" r="4.5"/>
+<text class="lab" x="0" y="260">South Asia</text>
+<rect class="half-m" x="6" y="265" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="265" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="266.0" x2="6.0" y2="276.0"/>
+<line class="grid" x1="188.7" y1="266.0" x2="188.7" y2="276.0"/>
+<line class="grid" x1="554.0" y1="266.0" x2="554.0" y2="276.0"/>
+<line class="ci" x1="132.0" y1="271" x2="178.1" y2="271"/>
+<rect class="sq" x="173.6" y="266.5" width="9" height="9"/>
+<circle class="pt" cx="132.0" cy="271" r="4.5"/>
 </g>
 <g class="row"><title>Sub-Saharan Africa: children 43.8%, adults 43.4% female</title>
-<text class="lab" x="0" y="276">Sub-Saharan Africa</text>
-<line class="grid" x1="6.0" y1="282.0" x2="6.0" y2="292.0"/>
-<line class="grid" x1="188.7" y1="282.0" x2="188.7" y2="292.0"/>
-<line class="grid" x1="554.0" y1="282.0" x2="554.0" y2="292.0"/>
-<line class="halo" x1="371.3" y1="281.0" x2="371.3" y2="293.0"/>
-<line class="par" x1="371.3" y1="281.0" x2="371.3" y2="293.0"/>
-<line class="ci" x1="257.2" y1="287" x2="249.9" y2="287"/>
-<rect class="sq" x="245.4" y="282.5" width="9" height="9"/>
-<circle class="pt" cx="257.2" cy="287" r="4.5"/>
+<text class="lab" x="0" y="294">Sub-Saharan Africa</text>
+<rect class="half-m" x="6" y="299" width="365.3" height="12"/>
+<rect class="half-f" x="371.3" y="299" width="182.7" height="12"/>
+<line class="grid" x1="6.0" y1="300.0" x2="6.0" y2="310.0"/>
+<line class="grid" x1="188.7" y1="300.0" x2="188.7" y2="310.0"/>
+<line class="grid" x1="554.0" y1="300.0" x2="554.0" y2="310.0"/>
+<line class="ci" x1="257.2" y1="305" x2="249.9" y2="305"/>
+<rect class="sq" x="245.4" y="300.5" width="9" height="9"/>
+<circle class="pt" cx="257.2" cy="305" r="4.5"/>
 </g>
-<text class="dl dl-f" x="170.6" y="87" text-anchor="end">Words about children</text>
-<text class="dl dl-sq" x="216.8" y="87">Words about adults</text>
+<text class="dl dl-f" x="170.6" y="105" text-anchor="end">Words about children</text>
+<text class="dl dl-sq" x="216.8" y="105">Words about adults</text>
 </svg></div><details class="dt"><summary>Data table: female share of words about children and adults</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share of words about children and adults, scrolls sideways"><table><caption class="vh">Data table: female share of words about children and adults</caption><thead><tr><th scope="col">Group</th><th scope="col">Children</th><th scope="col">Adults</th><th scope="col">Difference</th><th scope="col">95% interval</th><th scope="col">Books with both</th></tr></thead><tbody><tr><th scope="row">All countries</th><td>38.3%</td><td>41.2%</td><td>−2.9</td><td>−4.2 to −1.6</td><td>2,423</td></tr><tr><th scope="row">East Asia &amp; Pacific</th><td>39.6%</td><td>41.0%</td><td>−1.4</td><td>−5.7 to +2.8</td><td>212</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>43.2%</td><td>47.0%</td><td>−3.8</td><td>−7.7 to +0.1</td><td>124</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>37.2%</td><td>44.2%</td><td>−7.0</td><td>−14.7 to +0.8</td><td>87</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>35.8%</td><td>39.8%</td><td>−4.1</td><td>−7.8 to −0.3</td><td>286</td></tr><tr><th scope="row">North America</th><td>32.9%</td><td>42.0%</td><td>−9.1</td><td>−13.8 to −4.3</td><td>244</td></tr><tr><th scope="row">South Asia</th><td>36.9%</td><td>39.4%</td><td>−2.5</td><td>−4.5 to −0.6</td><td>986</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>43.8%</td><td>43.4%</td><td>+0.4</td><td>−2.6 to +3.4</td><td>484</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/ages.html">Embed this chart<span class="vh"> (children and adults)</span></a></p></section><section id="time" aria-labelledby="h-time"><h2 id="h-time">Over time</h2><p class="lede">National textbooks published from 2000 on (1,677 books; 9 with an earlier year and 99 with no gendered words left out), compared within countries and adjusted for book length. The chart also counts 172 earlier editions of books the site holds in a newer one (see the methods). 1,372 national textbooks have no publication year and are not in this chart. Dots are the adjusted shares; lines are 95% intervals.</p><div class="chartbox"><svg class="chart" id="tg-time" viewBox="0 0 560 168" role="img" aria-labelledby="tg-time-t tg-time-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-time-t">Female share by publication period, within countries</title>
 <desc id="tg-time-d">Adjusted female share by period of publication.</desc>
@@ -1338,69 +1345,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="ci" x1="110.2" y1="151" x2="152.4" y2="151"/>
 <circle class="pt" cx="131.3" cy="151" r="4.5"/>
 <text class="val" x="560" y="155" text-anchor="end">38.0%</text></g>
-</svg></div><p class="note">The female share changes by −0.1 points a decade within countries (95% interval −2.6 to +2.5), so the data cannot rule out no change.</p><details class="dt"><summary>Data table: adjusted female share by period of publication</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by period of publication, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by period of publication</caption><thead><tr><th scope="col">Period</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">2000–09</th><td>37.4%</td><td>30.6–44.1</td><td>93</td></tr><tr><th scope="row">2010–14</th><td>38.9%</td><td>35.6–42.1</td><td>197</td></tr><tr><th scope="row">2015–19</th><td>41.5%</td><td>39.1–43.8</td><td>405</td></tr><tr><th scope="row">2020 on</th><td>38.0%</td><td>36.8–39.3</td><td>1,154</td></tr></tbody></table></div></details><h3>Same title, old and new edition</h3><p class="note">Pooled over 15 titles: 28.1% female in the older editions, 38.5% in the newer; 11 rose and 4 fell.</p><div class="tscroll" tabindex="0" role="region" aria-label="Same title, old and new edition, scrolls sideways"><table><caption class="vh">Same title, old and new edition</caption><thead><tr><th scope="col">Country</th><th scope="col">Older edition</th><th scope="col" class="num">Year</th><th scope="col" class="num">Female share</th><th scope="col">Newer edition</th><th scope="col" class="num">Year</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>India</td><td>Class 12 Computerised Accounting System (Accountancy), NCERT, pre-2022 edition</td><td class="num">2019</td><td class="num">40.5%</td><td>Accountancy (E) PART-3 (Class 12, 2025-26)</td><td class="num">2025</td><td class="num">44.0%</td></tr><tr><td>India</td><td>१ ली बालभारती इंग्रजी</td><td class="num">2013</td><td class="num">62.9%</td><td>१ ली बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">38.2%</td></tr><tr><td>India</td><td>२ री गणित इंग्रजी</td><td class="num">2011</td><td class="num">58.3%</td><td>२ री गणित इंग्रजी</td><td class="num">2013</td><td class="num">39.1%</td></tr><tr><td>India</td><td>२ री गणित इंग्रजी</td><td class="num">2013</td><td class="num">39.1%</td><td>२ री गणित इंग्रजी</td><td class="num">2026</td><td class="num">43.8%</td></tr><tr><td>India</td><td>२ री बालभारती इंग्रजी</td><td class="num">2013</td><td class="num">29.0%</td><td>२ री बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">39.7%</td></tr><tr><td>India</td><td>३ री बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">26.3%</td><td>३ री बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">56.4%</td></tr><tr><td>India</td><td>४ थी गणित इंग्रजी</td><td class="num">2011</td><td class="num">28.6%</td><td>४ थी गणित इंग्रजी</td><td class="num">2026</td><td class="num">37.7%</td></tr><tr><td>India</td><td>४ थी बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">20.0%</td><td>४ थी बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">38.9%</td></tr><tr><td>India</td><td>५ वी गणित इंग्रजी</td><td class="num">2011</td><td class="num">29.2%</td><td>५ वी गणित इंग्रजी</td><td class="num">2022</td><td class="num">18.1%</td></tr><tr><td>India</td><td>६ वी तारूफे उर्दू उर्दू</td><td class="num">2006</td><td class="num">18.2%</td><td>६ वी तारूफे उर्दू उर्दू</td><td class="num">2021</td><td class="num">17.1%</td></tr><tr><td>India</td><td>६ वी बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">28.2%</td><td>६ वी बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">37.1%</td></tr><tr><td>India</td><td>६ वी भूगोल इंग्रजी</td><td class="num">2011</td><td class="num">21.2%</td><td>६ वी भूगोल इंग्रजी</td><td class="num">2026</td><td class="num">26.3%</td></tr><tr><td>India</td><td>६ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2011</td><td class="num">24.0%</td><td>६ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2026</td><td class="num">38.6%</td></tr><tr><td>India</td><td>८ वी भूगोल इंग्रजी</td><td class="num">2011</td><td class="num">3.6%</td><td>८ वी भूगोल इंग्रजी</td><td class="num">2022</td><td class="num">31.0%</td></tr><tr><td>India</td><td>८ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2011</td><td class="num">8.8%</td><td>८ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2022</td><td class="num">16.7%</td></tr></tbody></table></div><p class="embed-link"><a href="embed/time.html">Embed this chart<span class="vh"> (over time)</span></a></p></section><section id="reading" aria-labelledby="h-reading"><h2 id="h-reading">Can children read their textbooks?</h2><p class="lede">How far the textbooks for Grades 1&ndash;6 sit above the text that children are tested on (a Grade 2 story; for South Africa, PIRLS&rsquo;s Grade 4 passages), in the language children are tested in, in 13 countries. A child who cannot read the test text cannot read a harder book, so the share who can read it is a ceiling on the share who can read their textbooks.</p><div class="chartbox"><svg class="chart scatter" id="tg-reading" viewBox="0 0 560 320" role="img" aria-labelledby="tg-reading-t tg-reading-d" preserveAspectRatio="xMinYMin meet">
-<title id="tg-reading-t">Children who can read their reading test, and how far their textbooks sit above it</title>
-<desc id="tg-reading-d">One dot per country.</desc>
-<line class="grid" x1="46" y1="274.0" x2="410" y2="274.0"/>
-<text class="axis" x="40" y="278.0" text-anchor="end">−10</text>
-<line class="grid" x1="46" y1="233.7" x2="410" y2="233.7"/>
-<text class="axis" x="40" y="237.7" text-anchor="end">−5</text>
-<line class="par" x1="46" y1="193.3" x2="410" y2="193.3"/>
-<text class="axis" x="40" y="197.3" text-anchor="end">0</text>
-<line class="grid" x1="46" y1="153.0" x2="410" y2="153.0"/>
-<text class="axis" x="40" y="157.0" text-anchor="end">5</text>
-<line class="grid" x1="46" y1="112.7" x2="410" y2="112.7"/>
-<text class="axis" x="40" y="116.7" text-anchor="end">10</text>
-<line class="grid" x1="46" y1="72.3" x2="410" y2="72.3"/>
-<text class="axis" x="40" y="76.3" text-anchor="end">15</text>
-<line class="grid" x1="46" y1="32.0" x2="410" y2="32.0"/>
-<text class="axis" x="40" y="36.0" text-anchor="end">20</text>
-<line class="grid" x1="46.0" y1="32" x2="46.0" y2="274"/>
-<text class="axis" x="46.0" y="292" text-anchor="middle">0%</text>
-<line class="grid" x1="118.8" y1="32" x2="118.8" y2="274"/>
-<text class="axis" x="118.8" y="292" text-anchor="middle">20%</text>
-<line class="grid" x1="191.6" y1="32" x2="191.6" y2="274"/>
-<text class="axis" x="191.6" y="292" text-anchor="middle">40%</text>
-<line class="grid" x1="264.4" y1="32" x2="264.4" y2="274"/>
-<text class="axis" x="264.4" y="292" text-anchor="middle">60%</text>
-<line class="grid" x1="337.2" y1="32" x2="337.2" y2="274"/>
-<text class="axis" x="337.2" y="292" text-anchor="middle">80%</text>
-<line class="grid" x1="410.0" y1="32" x2="410.0" y2="274"/>
-<text class="axis" x="410.0" y="292" text-anchor="middle">100%</text>
-<text class="axis" x="228.0" y="316" text-anchor="middle">Children who can read a Grade 2 text</text>
-<text class="ytitle" x="0" y="12">Textbooks above the Grade 2 text (points more uncommon words)</text>
-<circle class="dot" cx="72.9" cy="131.1" r="5"><title>Uganda (Uwezo): 7.4% can read the Grade 2 text; textbooks 7.7 points above it</title></circle>
-<circle class="dot" cx="81.7" cy="146.9" r="5"><title>Pakistan (ASER): 9.8% can read the Grade 2 text; textbooks 5.8 points above it</title></circle>
-<circle class="dot" cx="84.2" cy="34.4" r="5"><title>India (ASER): 10.5% can read the Grade 2 text; textbooks 19.7 points above it</title></circle>
-<circle class="dot" cx="100.6" cy="180.7" r="5"><title>Tanzania (Uwezo): 15.0% can read the Grade 2 text; textbooks 1.6 points above it</title></circle>
-<circle class="dot" cx="104.6" cy="172.8" r="5"><title>Malawi (MICS6): 16.1% can read the Grade 2 text; textbooks 2.5 points above it</title></circle>
-<circle class="dot" cx="142.1" cy="119.9" r="5"><title>Kiribati (MICS6): 26.4% can read the Grade 2 text; textbooks 9.1 points above it</title></circle>
-<circle class="dot" cx="165.0" cy="112.7" r="5"><title>Bangladesh (Bangla) (MICS6): 32.7% can read the Grade 2 text; textbooks 10.0 points above it</title></circle>
-<circle class="dot" cx="184.3" cy="168.3" r="5"><title>Nigeria (MICS6): 38.0% can read the Grade 2 text; textbooks 3.1 points above it</title></circle>
-<circle class="dot" cx="191.2" cy="262.5" r="5"><title>Kenya (Uwezo): 39.9% can read the Grade 2 text; textbooks −8.6 points above it</title></circle>
-<circle class="dot" cx="222.5" cy="247.2" r="5"><title>South Africa (PIRLS): 48.5% can read the Grade 2 text; textbooks −6.7 points above it</title></circle>
-<circle class="dot" cx="317.5" cy="163.8" r="5"><title>Guyana (MICS6): 74.6% can read the Grade 2 text; textbooks 3.7 points above it</title></circle>
-<text class="dl" x="93.2" y="38.4">India (ASER)</text>
-<text class="dl" x="174.0" y="116.7">Bangladesh (Bangla) (MICS6)</text>
-<text class="dl" x="151.1" y="129.7">Kiribati (MICS6)</text>
-<line class="lead" x1="147.1" y1="119.9" x2="150.1" y2="125.7"/>
-<text class="dl" x="81.9" y="142.7">Uganda (Uwezo)</text>
-<line class="lead" x1="77.9" y1="131.1" x2="80.9" y2="138.7"/>
-<text class="dl" x="90.7" y="155.7">Pakistan (ASER)</text>
-<line class="lead" x1="86.7" y1="146.9" x2="89.7" y2="151.7"/>
-<text class="dl" x="326.5" y="168.7">Guyana (MICS6)</text>
-<line class="lead" x1="322.5" y1="163.8" x2="325.5" y2="164.7"/>
-<text class="dl" x="193.3" y="181.7">Nigeria (MICS6)</text>
-<line class="lead" x1="189.3" y1="168.3" x2="192.3" y2="177.7"/>
-<text class="dl" x="113.6" y="194.7">Malawi (MICS6)</text>
-<line class="lead" x1="109.6" y1="172.8" x2="112.6" y2="190.7"/>
-<text class="dl" x="109.6" y="207.7">Tanzania (Uwezo)</text>
-<line class="lead" x1="105.6" y1="180.7" x2="108.6" y2="203.7"/>
-<text class="dl" x="231.5" y="251.2">South Africa (PIRLS)</text>
-<text class="dl" x="200.2" y="266.5">Kenya (Uwezo)</text>
-</svg></div><ul><li>In Uganda, 7% of children in Grade 3 can read a Grade 2 story (Uwezo, 2024), and 16 of its 18 Grade 1&ndash;5 textbooks are harder than that. Against each grade&rsquo;s figure, at most 7% can read the harder ones in Grade 3 (4 textbooks), 22% in Grade 4 (3 textbooks), 36% in Grade 5 (5 textbooks) and 53% in Grade 6 (4 textbooks). Taken together, at most 38% (90% interval 34%&ndash;54%) can read a textbook drawn at random from them.</li><li>In Pakistan, 10% of children in Grade 3 can read simple English sentences (ASER, 2025; provisional report), and 23 of its 31 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 10% can read the harder ones in Grade 3 (2 textbooks), 16% in Grade 4 (2 textbooks), 54% in Grade 5 (6 textbooks), 54% in Grade 6 (6 textbooks) and 66% in Grade 7 (7 textbooks). Taken together, at most 63% (90% interval 58%&ndash;70%) can read a textbook drawn at random from them.</li><li>In India, 10% of children in Grade 3 can read simple English sentences (ASER, 2022; rural children only), and all of its 238 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 6% can read the harder ones in Grade 2 (34 textbooks), 10% in Grade 3 (27 textbooks), 17% in Grade 4 (49 textbooks), 24% in Grade 5 (41 textbooks), 32% in Grade 6 (35 textbooks) and 40% in Grade 7 (52 textbooks). Taken together, at most 23% (90% interval 23%&ndash;25%) can read a textbook drawn at random from them.</li><li>In Tanzania, 15% of children in Grade 3 can read a Grade 2 story (Uwezo, 2017), and 6 of its 13 Grade 1&ndash;5 textbooks are harder than that. Against each grade&rsquo;s figure, at most 15% can read the harder ones in Grade 3 (1 textbook), 33% in Grade 5 (3 textbooks) and 40% in Grade 6 (2 textbooks). Taken together, at most 69% (90% interval 55%&ndash;80%) can read a textbook drawn at random from them.</li><li>In Malawi, of the children in Grade 3 given the English Grade 2 story, 16% could read it (MICS6, 2019), and 2 of its 5 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 14% can read the harder ones in Grade 5 (1 textbook) and 22% in Grade 7 (1 textbook). Taken together, at most 67% (90% interval 49%&ndash;81%) can read a textbook drawn at random from them.</li><li>In Kiribati, of the children in Grade 5 given the English Grade 2 story, 26% could read it (MICS6, 2018), and 15 of its 16 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 26% can read the harder ones in Grade 5 (3 textbooks), 22% in Grade 6 (6 textbooks) and 40% in Grade 7 (6 textbooks). Taken together, at most 35% (90% interval 31%&ndash;51%) can read a textbook drawn at random from them.</li><li>In Bangladesh (Bangla), 33% of children in Grade 3 can read a Grade 2 story in Bangla or English (MICS6, 2019), and 36 of its 47 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 33% can read the harder ones in Grade 3 (1 textbook), 45% in Grade 4 (7 textbooks), 64% in Grade 5 (7 textbooks), 74% in Grade 6 (7 textbooks) and 80% in Grade 7 (14 textbooks). Taken together, at most 75% (90% interval 72%&ndash;79%) can read a textbook drawn at random from them.</li><li>In Nigeria, of the children in Grade 3 given the English Grade 2 story, 38% could read it (MICS6, 2021), and 3 of its 11 Grade 1&ndash;3 textbooks are harder than that: at most 83% (90% interval 66%&ndash;91%) can read a textbook drawn at random from them.</li><li>In Guyana, of the children in Grade 3 given the English Grade 2 story, 75% could read it (MICS6, 2019), and 21 of its 35 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 51% can read the harder ones in Grade 2 (3 textbooks), 75% in Grade 3 (1 textbook), 79% in Grade 4 (4 textbooks), 65% in Grade 5 (5 textbooks), 62% in Grade 6 (4 textbooks) and 72% in Grade 7 (4 textbooks). Taken together, at most 80% (90% interval 76%&ndash;85%) can read a textbook drawn at random from them.</li></ul><p>For books in a language fewer of its children were tested in:</p><ul><li>In Rwanda (English), 0% of children in Grade 6 can read a Grade 2 story (EGRA, 2011; 2011, before the 2015 curriculum; tested at the start of P6), and 2 of its 49 Grade 1&ndash;5 textbooks are harder than that: at most 96% (90% interval 89%&ndash;99%) can read a textbook drawn at random from them.</li><li>In South Sudan (English), 2% of children in Grade 3 can read a Grade 2 story (EGRA, 2016; 25 chosen schools; the MICS story stands in for the unprinted passage), and 2 of its 10 Grade 1&ndash;2 textbooks are harder than that: at most 80% (90% interval 56%&ndash;94%) can read a textbook drawn at random from them.</li><li>In Bangladesh (English), 33% of children in Grade 3 can read a Grade 2 story in Bangla or English (MICS6, 2019), and 24 of its 29 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 64% can read the harder ones in Grade 5 (5 textbooks), 74% in Grade 6 (5 textbooks) and 80% in Grade 7 (14 textbooks). Taken together, at most 80% (90% interval 78%&ndash;84%) can read a textbook drawn at random from them.</li></ul><p>Kenya: 40% of children read the Uwezo Grade 2 English story; in Glewwe, Kremer and Moulin&rsquo;s schools (2009), the median pupil could read the English textbook in 16% of Grade 3 classes and 28% of Grade 4.</p><p class="note">Note: Each dot is a country and language with at least 5 scored textbooks for Grades 1&ndash;6 in the language of the test. The horizontal axis is the share of children who read the survey&rsquo;s text (a Grade 2 story from MICS6 or a citizen-led assessment, or PIRLS&rsquo;s Grade 4 passages; named beside each country); the vertical axis is the median textbook&rsquo;s share of words outside the 2,000 most frequent words of its language (names left out in English), minus the test text&rsquo;s, in percentage points, for the books of each grade with a reading figure at or above it. ASER&rsquo;s English test is four short sentences, not a story, so its countries are measured against a lower bar. A country&rsquo;s line for books in a language fewer of its children were tested in is in the table only.</p><details class="dt"><summary>Data table: textbooks against the test text</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: textbooks against the test text, scrolls sideways"><table><caption class="vh">Data table: textbooks against the test text</caption><thead><tr><th scope="col">Country</th><th scope="col">Source</th><th scope="col">Year</th><th scope="col">Can read the test text</th><th scope="col">Textbooks</th><th scope="col">Harder than it</th><th scope="col">Gap (points)</th><th scope="col">Flesch&amp;ndash;Kincaid gap (grades)</th><th scope="col">Spache gap (grades)</th></tr></thead><tbody><tr><th scope="row">Rwanda (English)</th><td>EGRA</td><td>2011</td><td>0%</td><td>49</td><td>4%</td><td>7.0</td><td>2.7</td><td>1.1</td></tr><tr><th scope="row">South Sudan (English)</th><td>EGRA</td><td>2016</td><td>2%</td><td>10</td><td>20%</td><td>−0.8</td><td>1.7</td><td>1.1</td></tr><tr><th scope="row">Uganda</th><td>Uwezo</td><td>2024</td><td>7%</td><td>18</td><td>89%</td><td>7.7</td><td>3.9</td><td>1.8</td></tr><tr><th scope="row">Pakistan</th><td>ASER</td><td>2025</td><td>10%</td><td>31</td><td>74%</td><td>5.8</td><td>7.6</td><td>2.1</td></tr><tr><th scope="row">India</th><td>ASER</td><td>2022</td><td>10%</td><td>238</td><td>100%</td><td>19.7</td><td>6.4</td><td>2.2</td></tr><tr><th scope="row">Tanzania</th><td>Uwezo</td><td>2017</td><td>15%</td><td>13</td><td>46%</td><td>1.6</td><td>2.4</td><td>0.6</td></tr><tr><th scope="row">Malawi</th><td>MICS6</td><td>2019</td><td>16%</td><td>5</td><td>40%</td><td>2.5</td><td>2.1</td><td>1.4</td></tr><tr><th scope="row">Kiribati</th><td>MICS6</td><td>2018</td><td>26%</td><td>16</td><td>94%</td><td>9.1</td><td>6.1</td><td>2.8</td></tr><tr><th scope="row">Bangladesh (Bangla)</th><td>MICS6</td><td>2019</td><td>33%</td><td>47</td><td>77%</td><td>10.0</td><td>—</td><td>—</td></tr><tr><th scope="row">Bangladesh (English)</th><td>MICS6</td><td>2019</td><td>33%</td><td>29</td><td>83%</td><td>7.0</td><td>3.8</td><td>1.9</td></tr><tr><th scope="row">Nigeria</th><td>MICS6</td><td>2021</td><td>38%</td><td>11</td><td>27%</td><td>3.1</td><td>1.6</td><td>0.6</td></tr><tr><th scope="row">Kenya</th><td>Uwezo</td><td>2015</td><td>40%</td><td>5</td><td>0%</td><td>−8.6</td><td>1.9</td><td>0.3</td></tr><tr><th scope="row">South Africa</th><td>PIRLS</td><td>2021</td><td>48%</td><td>14</td><td>0%</td><td>−6.7</td><td>−1.8</td><td>0.1</td></tr><tr><th scope="row">Guyana</th><td>MICS6</td><td>2019</td><td>75%</td><td>35</td><td>60%</td><td>3.7</td><td>2.3</td><td>1.5</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/reading.html">Embed this chart<span class="vh"> (can children read their textbooks?)</span></a></p></section><section id="links" aria-labelledby="h-links"><h2 id="h-links">Country characteristics</h2><p class="lede">Each country&rsquo;s adjusted share against its income and measures of women&rsquo;s schooling, representation and work (World Bank, most recent year), and the pooled share by region and income group.</p><div class="chartbox"><h3 class="ptitle">Income</h3><svg class="chart scatter" id="tg-link-log_gdp" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-log_gdp-t tg-link-log_gdp-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><p class="note">The female share changes by −0.1 points a decade within countries (95% interval −2.6 to +2.5), so the data cannot rule out no change.</p><details class="dt"><summary>Data table: adjusted female share by period of publication</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by period of publication, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by period of publication</caption><thead><tr><th scope="col">Period</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">2000–09</th><td>37.4%</td><td>30.6–44.1</td><td>93</td></tr><tr><th scope="row">2010–14</th><td>38.9%</td><td>35.6–42.1</td><td>197</td></tr><tr><th scope="row">2015–19</th><td>41.5%</td><td>39.1–43.8</td><td>405</td></tr><tr><th scope="row">2020 on</th><td>38.0%</td><td>36.8–39.3</td><td>1,154</td></tr></tbody></table></div></details><h3>Same title, old and new edition</h3><p class="note">Pooled over 15 titles: 28.1% female in the older editions, 38.5% in the newer; 11 rose and 4 fell.</p><div class="tscroll" tabindex="0" role="region" aria-label="Same title, old and new edition, scrolls sideways"><table><caption class="vh">Same title, old and new edition</caption><thead><tr><th scope="col">Country</th><th scope="col">Older edition</th><th scope="col" class="num">Year</th><th scope="col" class="num">Female share</th><th scope="col">Newer edition</th><th scope="col" class="num">Year</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>India</td><td>Class 12 Computerised Accounting System (Accountancy), NCERT, pre-2022 edition</td><td class="num">2019</td><td class="num">40.5%</td><td>Accountancy (E) PART-3 (Class 12, 2025-26)</td><td class="num">2025</td><td class="num">44.0%</td></tr><tr><td>India</td><td>१ ली बालभारती इंग्रजी</td><td class="num">2013</td><td class="num">62.9%</td><td>१ ली बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">38.2%</td></tr><tr><td>India</td><td>२ री गणित इंग्रजी</td><td class="num">2011</td><td class="num">58.3%</td><td>२ री गणित इंग्रजी</td><td class="num">2013</td><td class="num">39.1%</td></tr><tr><td>India</td><td>२ री गणित इंग्रजी</td><td class="num">2013</td><td class="num">39.1%</td><td>२ री गणित इंग्रजी</td><td class="num">2026</td><td class="num">43.8%</td></tr><tr><td>India</td><td>२ री बालभारती इंग्रजी</td><td class="num">2013</td><td class="num">29.0%</td><td>२ री बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">39.7%</td></tr><tr><td>India</td><td>३ री बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">26.3%</td><td>३ री बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">56.4%</td></tr><tr><td>India</td><td>४ थी गणित इंग्रजी</td><td class="num">2011</td><td class="num">28.6%</td><td>४ थी गणित इंग्रजी</td><td class="num">2026</td><td class="num">37.7%</td></tr><tr><td>India</td><td>४ थी बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">20.0%</td><td>४ थी बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">38.9%</td></tr><tr><td>India</td><td>५ वी गणित इंग्रजी</td><td class="num">2011</td><td class="num">29.2%</td><td>५ वी गणित इंग्रजी</td><td class="num">2022</td><td class="num">18.1%</td></tr><tr><td>India</td><td>६ वी तारूफे उर्दू उर्दू</td><td class="num">2006</td><td class="num">18.2%</td><td>६ वी तारूफे उर्दू उर्दू</td><td class="num">2021</td><td class="num">17.1%</td></tr><tr><td>India</td><td>६ वी बालभारती इंग्रजी</td><td class="num">2011</td><td class="num">28.2%</td><td>६ वी बालभारती इंग्रजी</td><td class="num">2026</td><td class="num">37.1%</td></tr><tr><td>India</td><td>६ वी भूगोल इंग्रजी</td><td class="num">2011</td><td class="num">21.2%</td><td>६ वी भूगोल इंग्रजी</td><td class="num">2026</td><td class="num">26.3%</td></tr><tr><td>India</td><td>६ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2011</td><td class="num">24.0%</td><td>६ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2026</td><td class="num">38.6%</td></tr><tr><td>India</td><td>८ वी भूगोल इंग्रजी</td><td class="num">2011</td><td class="num">3.6%</td><td>८ वी भूगोल इंग्रजी</td><td class="num">2022</td><td class="num">31.0%</td></tr><tr><td>India</td><td>८ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2011</td><td class="num">8.8%</td><td>८ वी सामान्य विज्ञान इंग्रजी</td><td class="num">2022</td><td class="num">16.7%</td></tr></tbody></table></div><p class="embed-link"><a href="embed/time.html">Embed this chart<span class="vh"> (over time)</span></a></p></section><section id="links" aria-labelledby="h-links"><h2 id="h-links">Country characteristics</h2><p class="lede">Each country&rsquo;s adjusted share against its income and measures of women&rsquo;s schooling, representation and work (World Bank, most recent year), and the pooled share by region and income group.</p><div class="chartbox"><h3 class="ptitle">Income</h3><svg class="chart scatter" id="tg-link-log_gdp" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-log_gdp-t tg-link-log_gdp-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-log_gdp-t">Adjusted female share against GDP per head, PPP dollars (log scale)</title>
 <desc id="tg-link-log_gdp-d">40 countries plotted. A doubling of GDP per head goes with a change of −0.14 points (95% interval −1.80 to +1.51), correlation −0.03, so the data cannot rule out no link. No value for South Sudan.</desc>
+<rect class="half-f" x="46" y="32" width="418" height="96.8"/>
+<rect class="half-m" x="46" y="128.8" width="418" height="145.2"/>
 <defs><clipPath id="tg-link-log_gdp-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
 <line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
 <text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
@@ -1427,7 +1376,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="462.8" y1="32" x2="462.8" y2="274"/>
 <text class="axis" x="462.8" y="292" text-anchor="middle">$100k</text>
 <text class="axis" x="255.0" y="316" text-anchor="middle">GDP per head, PPP dollars (log scale)</text>
-<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
 <line class="fitline" clip-path="url(#tg-link-log_gdp-clip)" x1="46.0" y1="166.4" x2="464.0" y2="170.5"/>
 <circle class="dot" cx="321.7" cy="233.0" r="5"><title>Maldives: 28.5% female; GDP per head, PPP dollars: $24,401</title></circle>
 <circle class="dot" cx="174.8" cy="230.3" r="5"><title>Pakistan: 29.0% female; GDP per head, PPP dollars: $5,617</title></circle>
@@ -1470,11 +1418,14 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <circle class="dot" cx="123.5" cy="109.1" r="5"><title>Kiribati: 54.1% female; GDP per head, PPP dollars: $3,364</title></circle>
 <circle class="dot" cx="173.2" cy="38.0" r="5"><title>Zimbabwe: 68.8% female; GDP per head, PPP dollars: $5,529</title></circle>
 <text class="ytitle" x="0" y="12">Adjusted female share</text>
-<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-f" x="472" y="122.8">More women</text>
+<text class="dl dl-m" x="472" y="142.8">More men</text>
 <text class="dl dl-fit" x="472" y="174.5">Fitted line</text>
 </svg></div><p class="note">A doubling of GDP per head goes with a change of −0.14 points (95% interval −1.80 to +1.51), correlation −0.03, so the data cannot rule out no link. No value for South Sudan.</p><details class="dt"><summary>Data table: adjusted female share against income</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against income, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against income</caption><thead><tr><th scope="col">Country</th><th scope="col">GDP per head, PPP dollars</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>$24,401</td><td>28.5%</td></tr><tr><th scope="row">Pakistan</th><td>$5,617</td><td>29.0%</td></tr><tr><th scope="row">Sri Lanka</th><td>$14,583</td><td>30.0%</td></tr><tr><th scope="row">India</th><td>$10,039</td><td>32.4%</td></tr><tr><th scope="row">Solomon Islands</th><td>$2,382</td><td>32.6%</td></tr><tr><th scope="row">Bangladesh</th><td>$8,677</td><td>34.0%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>$31,428</td><td>34.7%</td></tr><tr><th scope="row">Bhutan</th><td>$16,744</td><td>36.1%</td></tr><tr><th scope="row">Tajikistan</th><td>$5,062</td><td>36.3%</td></tr><tr><th scope="row">Papua New Guinea</th><td>$4,456</td><td>37.4%</td></tr><tr><th scope="row">Nepal</th><td>$5,277</td><td>37.4%</td></tr><tr><th scope="row">Samoa</th><td>$7,963</td><td>38.4%</td></tr><tr><th scope="row">United States</th><td>$76,931</td><td>38.7%</td></tr><tr><th scope="row">Sudan</th><td>$1,873</td><td>39.4%</td></tr><tr><th scope="row">Guyana</th><td>$83,659</td><td>40.0%</td></tr><tr><th scope="row">South Africa</th><td>$13,592</td><td>40.7%</td></tr><tr><th scope="row">Greece</th><td>$38,219</td><td>40.9%</td></tr><tr><th scope="row">Ecuador</th><td>$14,319</td><td>41.1%</td></tr><tr><th scope="row">Uganda</th><td>$2,980</td><td>41.4%</td></tr><tr><th scope="row">Australia</th><td>$60,194</td><td>41.8%</td></tr><tr><th scope="row">United Kingdom</th><td>$53,993</td><td>41.9%</td></tr><tr><th scope="row">Sierra Leone</th><td>$3,176</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>$3,095</td><td>42.0%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>$4,272</td><td>42.4%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>$4,579</td><td>42.6%</td></tr><tr><th scope="row">Rwanda</th><td>$3,559</td><td>43.0%</td></tr><tr><th scope="row">Jordan</th><td>$10,794</td><td>43.4%</td></tr><tr><th scope="row">Oman</th><td>$36,143</td><td>43.5%</td></tr><tr><th scope="row">Nigeria</th><td>$8,145</td><td>43.8%</td></tr><tr><th scope="row">Belarus</th><td>$29,666</td><td>44.8%</td></tr><tr><th scope="row">Azerbaijan</th><td>$22,314</td><td>44.9%</td></tr><tr><th scope="row">Tunisia</th><td>$13,018</td><td>45.3%</td></tr><tr><th scope="row">Ghana</th><td>$7,358</td><td>49.0%</td></tr><tr><th scope="row">Kuwait</th><td>$48,254</td><td>49.1%</td></tr><tr><th scope="row">Indonesia</th><td>$15,091</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>$7,300</td><td>50.4%</td></tr><tr><th scope="row">Kenya</th><td>$5,995</td><td>51.0%</td></tr><tr><th scope="row">Türkiye</th><td>$37,301</td><td>51.1%</td></tr><tr><th scope="row">Kiribati</th><td>$3,364</td><td>54.1%</td></tr><tr><th scope="row">Zimbabwe</th><td>$5,529</td><td>68.8%</td></tr></tbody></table></div></details><div class="chartbox"><h3 class="ptitle">Girls in secondary school</h3><svg class="chart scatter" id="tg-link-sec_parity" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-sec_parity-t tg-link-sec_parity-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-sec_parity-t">Adjusted female share against Girls per boy enrolled in secondary school</title>
 <desc id="tg-link-sec_parity-d">39 countries plotted. Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +1.16 points (95% interval −0.95 to +3.26), correlation 0.18, so the data cannot rule out no link. No value for Kenya; Kiribati.</desc>
+<rect class="half-f" x="46" y="32" width="418" height="96.8"/>
+<rect class="half-m" x="46" y="128.8" width="418" height="145.2"/>
 <defs><clipPath id="tg-link-sec_parity-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
 <line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
 <text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
@@ -1497,7 +1448,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="421.4" y1="32" x2="421.4" y2="274"/>
 <text class="axis" x="421.4" y="292" text-anchor="middle">1.2</text>
 <text class="axis" x="255.0" y="316" text-anchor="middle">Girls per boy enrolled in secondary school</text>
-<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
 <line class="fitline" clip-path="url(#tg-link-sec_parity-clip)" x1="46.0" y1="199.5" x2="464.0" y2="156.0"/>
 <circle class="dot" cx="276.2" cy="233.0" r="5"><title>Maldives: 28.5% female; Girls per boy enrolled in secondary school: 0.93</title></circle>
 <circle class="dot" cx="242.9" cy="230.3" r="5"><title>Pakistan: 29.0% female; Girls per boy enrolled in secondary school: 0.87</title></circle>
@@ -1539,11 +1489,14 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <circle class="dot" cx="299.3" cy="123.3" r="5"><title>Türkiye: 51.1% female; Girls per boy enrolled in secondary school: 0.97</title></circle>
 <circle class="dot" cx="292.4" cy="38.0" r="5"><title>Zimbabwe: 68.8% female; Girls per boy enrolled in secondary school: 0.96</title></circle>
 <text class="ytitle" x="0" y="12">Adjusted female share</text>
-<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-f" x="472" y="122.8">More women</text>
+<text class="dl dl-m" x="472" y="142.8">More men</text>
 <text class="dl dl-fit" x="472" y="160.0">Fitted line</text>
 </svg></div><p class="note">Each 0.1-unit rise in girls per boy enrolled in secondary school goes with a change of +1.16 points (95% interval −0.95 to +3.26), correlation 0.18, so the data cannot rule out no link. No value for Kenya; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against girls in secondary school</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against girls in secondary school, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against girls in secondary school</caption><thead><tr><th scope="col">Country</th><th scope="col">Girls per boy enrolled in secondary school</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>0.93</td><td>28.5%</td></tr><tr><th scope="row">Pakistan</th><td>0.87</td><td>29.0%</td></tr><tr><th scope="row">Sri Lanka</th><td>1.05</td><td>30.0%</td></tr><tr><th scope="row">India</th><td>0.97</td><td>32.4%</td></tr><tr><th scope="row">Solomon Islands</th><td>0.95</td><td>32.6%</td></tr><tr><th scope="row">Bangladesh</th><td>1.24</td><td>34.0%</td></tr><tr><th scope="row">South Sudan</th><td>0.54</td><td>34.3%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>0.99</td><td>34.7%</td></tr><tr><th scope="row">Bhutan</th><td>1.13</td><td>36.1%</td></tr><tr><th scope="row">Tajikistan</th><td>0.90</td><td>36.3%</td></tr><tr><th scope="row">Papua New Guinea</th><td>0.80</td><td>37.4%</td></tr><tr><th scope="row">Nepal</th><td>0.99</td><td>37.4%</td></tr><tr><th scope="row">Samoa</th><td>1.10</td><td>38.4%</td></tr><tr><th scope="row">United States</th><td>0.98</td><td>38.7%</td></tr><tr><th scope="row">Sudan</th><td>1.02</td><td>39.4%</td></tr><tr><th scope="row">Guyana</th><td>1.03</td><td>40.0%</td></tr><tr><th scope="row">South Africa</th><td>1.09</td><td>40.7%</td></tr><tr><th scope="row">Greece</th><td>0.95</td><td>40.9%</td></tr><tr><th scope="row">Ecuador</th><td>1.02</td><td>41.1%</td></tr><tr><th scope="row">Uganda</th><td>0.90</td><td>41.4%</td></tr><tr><th scope="row">Australia</th><td>0.96</td><td>41.8%</td></tr><tr><th scope="row">United Kingdom</th><td>1.02</td><td>41.9%</td></tr><tr><th scope="row">Sierra Leone</th><td>0.97</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>0.96</td><td>42.0%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>1.09</td><td>42.4%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>0.99</td><td>42.6%</td></tr><tr><th scope="row">Rwanda</th><td>1.15</td><td>43.0%</td></tr><tr><th scope="row">Jordan</th><td>1.02</td><td>43.4%</td></tr><tr><th scope="row">Oman</th><td>0.94</td><td>43.5%</td></tr><tr><th scope="row">Nigeria</th><td>0.95</td><td>43.8%</td></tr><tr><th scope="row">Belarus</th><td>0.98</td><td>44.8%</td></tr><tr><th scope="row">Azerbaijan</th><td>0.98</td><td>44.9%</td></tr><tr><th scope="row">Tunisia</th><td>1.14</td><td>45.3%</td></tr><tr><th scope="row">Ghana</th><td>1.00</td><td>49.0%</td></tr><tr><th scope="row">Kuwait</th><td>1.06</td><td>49.1%</td></tr><tr><th scope="row">Indonesia</th><td>1.03</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>1.15</td><td>50.4%</td></tr><tr><th scope="row">Türkiye</th><td>0.97</td><td>51.1%</td></tr><tr><th scope="row">Zimbabwe</th><td>0.96</td><td>68.8%</td></tr></tbody></table></div></details><div class="chartbox"><h3 class="ptitle">Women in parliament</h3><svg class="chart scatter" id="tg-link-women_parliament" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-women_parliament-t tg-link-women_parliament-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-women_parliament-t">Adjusted female share against Seats held by women (%)</title>
 <desc id="tg-link-women_parliament-d">40 countries plotted. Each 1-unit rise in seats held by women (%) goes with a change of +0.04 points (95% interval −0.12 to +0.21), correlation 0.08, so the data cannot rule out no link. No value for West Bank and Gaza.</desc>
+<rect class="half-f" x="46" y="32" width="418" height="96.8"/>
+<rect class="half-m" x="46" y="128.8" width="418" height="145.2"/>
 <defs><clipPath id="tg-link-women_parliament-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
 <line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
 <text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
@@ -1566,7 +1519,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="422.6" y1="32" x2="422.6" y2="274"/>
 <text class="axis" x="422.6" y="292" text-anchor="middle">60</text>
 <text class="axis" x="255.0" y="316" text-anchor="middle">Seats held by women (%)</text>
-<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
 <line class="fitline" clip-path="url(#tg-link-women_parliament-clip)" x1="46.0" y1="174.8" x2="464.0" y2="159.9"/>
 <circle class="dot" cx="84.2" cy="233.0" r="5"><title>Maldives: 28.5% female; Seats held by women (%): 3.23</title></circle>
 <circle class="dot" cx="166.6" cy="230.3" r="5"><title>Pakistan: 29.0% female; Seats held by women (%): 17.0</title></circle>
@@ -1609,11 +1561,14 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <circle class="dot" cx="131.2" cy="109.1" r="5"><title>Kiribati: 54.1% female; Seats held by women (%): 11.1</title></circle>
 <circle class="dot" cx="244.5" cy="38.0" r="5"><title>Zimbabwe: 68.8% female; Seats held by women (%): 30.1</title></circle>
 <text class="ytitle" x="0" y="12">Adjusted female share</text>
-<text class="dl dl-par" x="472" y="132.8">50% parity</text>
+<text class="dl dl-f" x="472" y="122.8">More women</text>
+<text class="dl dl-m" x="472" y="142.8">More men</text>
 <text class="dl dl-fit" x="472" y="163.9">Fitted line</text>
 </svg></div><p class="note">Each 1-unit rise in seats held by women (%) goes with a change of +0.04 points (95% interval −0.12 to +0.21), correlation 0.08, so the data cannot rule out no link. No value for West Bank and Gaza.</p><details class="dt"><summary>Data table: adjusted female share against women in parliament</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in parliament, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in parliament</caption><thead><tr><th scope="col">Country</th><th scope="col">Seats held by women (%)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>3.23</td><td>28.5%</td></tr><tr><th scope="row">Pakistan</th><td>17.0</td><td>29.0%</td></tr><tr><th scope="row">Sri Lanka</th><td>9.78</td><td>30.0%</td></tr><tr><th scope="row">India</th><td>13.8</td><td>32.4%</td></tr><tr><th scope="row">Solomon Islands</th><td>6.00</td><td>32.6%</td></tr><tr><th scope="row">Bangladesh</th><td>20.9</td><td>34.0%</td></tr><tr><th scope="row">South Sudan</th><td>32.4</td><td>34.3%</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>31.2</td><td>34.7%</td></tr><tr><th scope="row">Bhutan</th><td>4.26</td><td>36.1%</td></tr><tr><th scope="row">Tajikistan</th><td>28.6</td><td>36.3%</td></tr><tr><th scope="row">Papua New Guinea</th><td>2.70</td><td>37.4%</td></tr><tr><th scope="row">Nepal</th><td>33.1</td><td>37.4%</td></tr><tr><th scope="row">Samoa</th><td>9.80</td><td>38.4%</td></tr><tr><th scope="row">United States</th><td>28.9</td><td>38.7%</td></tr><tr><th scope="row">Sudan</th><td>30.5</td><td>39.4%</td></tr><tr><th scope="row">Guyana</th><td>36.1</td><td>40.0%</td></tr><tr><th scope="row">South Africa</th><td>44.9</td><td>40.7%</td></tr><tr><th scope="row">Greece</th><td>22.9</td><td>40.9%</td></tr><tr><th scope="row">Ecuador</th><td>45.0</td><td>41.1%</td></tr><tr><th scope="row">Uganda</th><td>34.1</td><td>41.4%</td></tr><tr><th scope="row">Australia</th><td>46.0</td><td>41.8%</td></tr><tr><th scope="row">United Kingdom</th><td>40.5</td><td>41.9%</td></tr><tr><th scope="row">Sierra Leone</th><td>29.5</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>41.9</td><td>42.0%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>4.92</td><td>42.6%</td></tr><tr><th scope="row">Rwanda</th><td>63.8</td><td>43.0%</td></tr><tr><th scope="row">Jordan</th><td>19.6</td><td>43.4%</td></tr><tr><th scope="row">Oman</th><td>0.00</td><td>43.5%</td></tr><tr><th scope="row">Nigeria</th><td>4.21</td><td>43.8%</td></tr><tr><th scope="row">Belarus</th><td>33.9</td><td>44.8%</td></tr><tr><th scope="row">Azerbaijan</th><td>20.8</td><td>44.9%</td></tr><tr><th scope="row">Tunisia</th><td>15.8</td><td>45.3%</td></tr><tr><th scope="row">Ghana</th><td>14.5</td><td>49.0%</td></tr><tr><th scope="row">Kuwait</th><td>3.08</td><td>49.1%</td></tr><tr><th scope="row">Indonesia</th><td>21.9</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>13.6</td><td>50.4%</td></tr><tr><th scope="row">Kenya</th><td>23.4</td><td>51.0%</td></tr><tr><th scope="row">Türkiye</th><td>19.9</td><td>51.1%</td></tr><tr><th scope="row">Kiribati</th><td>11.1</td><td>54.1%</td></tr><tr><th scope="row">Zimbabwe</th><td>30.1</td><td>68.8%</td></tr></tbody></table></div></details><div class="chartbox"><h3 class="ptitle">Women in work</h3><svg class="chart scatter" id="tg-link-flfp" viewBox="0 0 560 320" role="img" aria-labelledby="tg-link-flfp-t tg-link-flfp-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-link-flfp-t">Adjusted female share against Women in the labour force (% of women 15+)</title>
 <desc id="tg-link-flfp-d">39 countries plotted. Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.10 points (95% interval −0.03 to +0.22), correlation 0.25, so the data cannot rule out no link. No value for St. Kitts and Nevis; Kiribati.</desc>
+<rect class="half-f" x="46" y="32" width="418" height="96.8"/>
+<rect class="half-m" x="46" y="128.8" width="418" height="145.2"/>
 <defs><clipPath id="tg-link-flfp-clip"><rect x="46" y="32" width="418" height="242"/></clipPath></defs>
 <line class="grid" x1="46" y1="274.0" x2="464" y2="274.0"/>
 <text class="axis" x="40" y="278.0" text-anchor="end">20%</text>
@@ -1636,7 +1591,6 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="432.2" y1="32" x2="432.2" y2="274"/>
 <text class="axis" x="432.2" y="292" text-anchor="middle">80</text>
 <text class="axis" x="255.0" y="316" text-anchor="middle">Women in the labour force (% of women 15+)</text>
-<line class="par" x1="46" y1="128.8" x2="464" y2="128.8"/>
 <line class="fitline" clip-path="url(#tg-link-flfp-clip)" x1="46.0" y1="187.5" x2="464.0" y2="151.9"/>
 <circle class="dot" cx="217.9" cy="233.0" r="5"><title>Maldives: 28.5% female; Women in the labour force (% of women 15+): 40.7</title></circle>
 <circle class="dot" cx="126.8" cy="230.3" r="5"><title>Pakistan: 29.0% female; Women in the labour force (% of women 15+): 24.0</title></circle>
@@ -1678,8 +1632,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <circle class="dot" cx="198.3" cy="123.3" r="5"><title>Türkiye: 51.1% female; Women in the labour force (% of women 15+): 37.1</title></circle>
 <circle class="dot" cx="334.8" cy="38.0" r="5"><title>Zimbabwe: 68.8% female; Women in the labour force (% of women 15+): 62.2</title></circle>
 <text class="ytitle" x="0" y="12">Adjusted female share</text>
-<text class="dl dl-par" x="472" y="132.8">50% parity</text>
-<text class="dl dl-fit" x="472" y="155.9">Fitted line</text>
+<text class="dl dl-f" x="472" y="122.8">More women</text>
+<text class="dl dl-m" x="472" y="142.8">More men</text>
+<text class="dl dl-fit" x="472" y="157.8">Fitted line</text>
+<line class="lead" x1="464" y1="151.9" x2="470" y2="153.8"/>
 </svg></div><p class="note">Each 1-unit rise in women in the labour force (% of women 15+) goes with a change of +0.10 points (95% interval −0.03 to +0.22), correlation 0.25, so the data cannot rule out no link. No value for St. Kitts and Nevis; Kiribati.</p><details class="dt"><summary>Data table: adjusted female share against women in work</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share against women in work, scrolls sideways"><table><caption class="vh">Data table: adjusted female share against women in work</caption><thead><tr><th scope="col">Country</th><th scope="col">Women in the labour force (% of women 15+)</th><th scope="col">Adjusted share</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>40.7</td><td>28.5%</td></tr><tr><th scope="row">Pakistan</th><td>24.0</td><td>29.0%</td></tr><tr><th scope="row">Sri Lanka</th><td>31.0</td><td>30.0%</td></tr><tr><th scope="row">India</th><td>32.4</td><td>32.4%</td></tr><tr><th scope="row">Solomon Islands</th><td>82.3</td><td>32.6%</td></tr><tr><th scope="row">Bangladesh</th><td>38.6</td><td>34.0%</td></tr><tr><th scope="row">South Sudan</th><td>70.4</td><td>34.3%</td></tr><tr><th scope="row">Bhutan</th><td>56.7</td><td>36.1%</td></tr><tr><th scope="row">Tajikistan</th><td>21.9</td><td>36.3%</td></tr><tr><th scope="row">Papua New Guinea</th><td>50.8</td><td>37.4%</td></tr><tr><th scope="row">Nepal</th><td>27.5</td><td>37.4%</td></tr><tr><th scope="row">Samoa</th><td>30.7</td><td>38.4%</td></tr><tr><th scope="row">United States</th><td>56.3</td><td>38.7%</td></tr><tr><th scope="row">Sudan</th><td>14.5</td><td>39.4%</td></tr><tr><th scope="row">Guyana</th><td>47.4</td><td>40.0%</td></tr><tr><th scope="row">South Africa</th><td>49.9</td><td>40.7%</td></tr><tr><th scope="row">Greece</th><td>44.7</td><td>40.9%</td></tr><tr><th scope="row">Ecuador</th><td>52.4</td><td>41.1%</td></tr><tr><th scope="row">Uganda</th><td>75.6</td><td>41.4%</td></tr><tr><th scope="row">Australia</th><td>62.5</td><td>41.8%</td></tr><tr><th scope="row">United Kingdom</th><td>57.3</td><td>41.9%</td></tr><tr><th scope="row">Sierra Leone</th><td>51.6</td><td>42.0%</td></tr><tr><th scope="row">Ethiopia</th><td>58.5</td><td>42.0%</td></tr><tr><th scope="row">West Bank and Gaza</th><td>18.9</td><td>42.4%</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>12.7</td><td>42.6%</td></tr><tr><th scope="row">Rwanda</th><td>57.3</td><td>43.0%</td></tr><tr><th scope="row">Jordan</th><td>16.0</td><td>43.4%</td></tr><tr><th scope="row">Oman</th><td>30.0</td><td>43.5%</td></tr><tr><th scope="row">Nigeria</th><td>80.7</td><td>43.8%</td></tr><tr><th scope="row">Belarus</th><td>56.8</td><td>44.8%</td></tr><tr><th scope="row">Azerbaijan</th><td>60.8</td><td>44.9%</td></tr><tr><th scope="row">Tunisia</th><td>26.5</td><td>45.3%</td></tr><tr><th scope="row">Ghana</th><td>55.3</td><td>49.0%</td></tr><tr><th scope="row">Kuwait</th><td>47.2</td><td>49.1%</td></tr><tr><th scope="row">Indonesia</th><td>53.7</td><td>49.5%</td></tr><tr><th scope="row">Cambodia</th><td>77.4</td><td>50.4%</td></tr><tr><th scope="row">Kenya</th><td>63.0</td><td>51.0%</td></tr><tr><th scope="row">Türkiye</th><td>37.1</td><td>51.1%</td></tr><tr><th scope="row">Zimbabwe</th><td>62.2</td><td>68.8%</td></tr></tbody></table></div></details><h3>By World Bank region</h3><div class="chartbox"><svg class="chart" id="tg-region" viewBox="0 0 560 305" role="img" aria-labelledby="tg-region-t tg-region-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-region-t">Female share of national textbooks by World Bank region</title>
 <desc id="tg-region-d">East Asia &amp; Pacific 36.4%; Europe &amp; Central Asia 42.1%; Latin America &amp; Caribbean 43.0%; Middle East, North Africa, Afghanistan &amp; Pakistan 33.5%; North America 39.9%; South Asia 30.9%; Sub-Saharan Africa 39.7%</desc>
@@ -1786,276 +1742,277 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <title id="tg-themes-t">Theme words near a mention, per 100 mentions of women and of men</title>
 <desc id="tg-themes-d">Family and the home: women 5.8, men 3.7; gap +2.1 (95% interval +1.3 to +2.5); Appearance: women 0.5, men 0.2; gap +0.3 (95% interval +0.2 to +0.3); Work: women 3.4, men 3.8; gap −0.3 (95% interval −0.6 to +0.1); Achievement: women 1.4, men 2.1; gap −0.7 (95% interval −0.8 to −0.5)</desc>
 <text class="axis" x="0" y="12">Theme words per 100 mentions</text>
-<text class="axis" x="10.0" y="32" text-anchor="middle">0</text>
-<text class="axis" x="182.8" y="32" text-anchor="middle">2</text>
-<text class="axis" x="355.6" y="32" text-anchor="middle">4</text>
-<text class="axis" x="528.4" y="32" text-anchor="middle">6</text>
+<text class="axis" x="89.6" y="32" text-anchor="middle">0</text>
+<text class="axis" x="211.5" y="32" text-anchor="middle">2</text>
+<text class="axis" x="333.3" y="32" text-anchor="middle">4</text>
+<text class="axis" x="455.2" y="32" text-anchor="middle">6</text>
 <g class="row"><title>Family and the home: women 5.8, men 3.7; gap +2.1 (95% interval +1.3 to +2.5)</title>
 <text class="lab" x="0" y="56">Family and the home</text>
-<line class="grid" x1="10.0" y1="62" x2="10.0" y2="72"/>
-<line class="grid" x1="182.8" y1="62" x2="182.8" y2="72"/>
-<line class="grid" x1="355.6" y1="62" x2="355.6" y2="72"/>
-<line class="grid" x1="528.4" y1="62" x2="528.4" y2="72"/>
-<line class="ci" x1="510.0" y1="67" x2="329.7" y2="67"/>
-<rect class="sqm" x="325.2" y="62.5" width="9" height="9"/>
-<circle class="pt" cx="510.0" cy="67" r="4.5"/>
-<text class="dl dl-f" x="520.0" y="71">Women 5.8</text>
-<text class="dl dl-m" x="319.7" y="71" text-anchor="end">Men 3.7</text>
+<line class="grid" x1="89.6" y1="62" x2="89.6" y2="72"/>
+<line class="grid" x1="211.5" y1="62" x2="211.5" y2="72"/>
+<line class="grid" x1="333.3" y1="62" x2="333.3" y2="72"/>
+<line class="grid" x1="455.2" y1="62" x2="455.2" y2="72"/>
+<line class="ci" x1="442.2" y1="67" x2="315.1" y2="67"/>
+<rect class="sqm" x="310.6" y="62.5" width="9" height="9"/>
+<circle class="pt" cx="442.2" cy="67" r="4.5"/>
+<text class="dl dl-m" x="305.1" y="71" text-anchor="end">Men 3.7</text>
+<text class="dl dl-f" x="452.2" y="71">Women 5.8</text>
 </g>
 <g class="row"><title>Appearance: women 0.5, men 0.2; gap +0.3 (95% interval +0.2 to +0.3)</title>
 <text class="lab" x="0" y="90">Appearance</text>
-<line class="grid" x1="10.0" y1="96" x2="10.0" y2="106"/>
-<line class="grid" x1="182.8" y1="96" x2="182.8" y2="106"/>
-<line class="grid" x1="355.6" y1="96" x2="355.6" y2="106"/>
-<line class="grid" x1="528.4" y1="96" x2="528.4" y2="106"/>
-<line class="ci" x1="51.3" y1="101" x2="27.3" y2="101"/>
-<rect class="sqm" x="22.8" y="96.5" width="9" height="9"/>
-<circle class="pt" cx="51.3" cy="101" r="4.5"/>
-<text class="dl dl-f" x="61.3" y="105">Women 0.5</text>
-<text class="dl dl-m" x="144.9" y="105">Men 0.2</text>
+<line class="grid" x1="89.6" y1="96" x2="89.6" y2="106"/>
+<line class="grid" x1="211.5" y1="96" x2="211.5" y2="106"/>
+<line class="grid" x1="333.3" y1="96" x2="333.3" y2="106"/>
+<line class="grid" x1="455.2" y1="96" x2="455.2" y2="106"/>
+<line class="ci" x1="118.7" y1="101" x2="101.8" y2="101"/>
+<rect class="sqm" x="97.3" y="96.5" width="9" height="9"/>
+<circle class="pt" cx="118.7" cy="101" r="4.5"/>
+<text class="dl dl-m" x="91.8" y="105" text-anchor="end">Men 0.2</text>
+<text class="dl dl-f" x="128.7" y="105">Women 0.5</text>
 </g>
 <g class="row"><title>Work: women 3.4, men 3.8; gap −0.3 (95% interval −0.6 to +0.1)</title>
 <text class="lab" x="0" y="124">Work</text>
-<line class="grid" x1="10.0" y1="130" x2="10.0" y2="140"/>
-<line class="grid" x1="182.8" y1="130" x2="182.8" y2="140"/>
-<line class="grid" x1="355.6" y1="130" x2="355.6" y2="140"/>
-<line class="grid" x1="528.4" y1="130" x2="528.4" y2="140"/>
-<line class="ci" x1="305.6" y1="135" x2="335.1" y2="135"/>
-<rect class="sqm" x="330.6" y="130.5" width="9" height="9"/>
-<circle class="pt" cx="305.6" cy="135" r="4.5"/>
-<text class="dl dl-m" x="345.1" y="139">Men 3.8</text>
-<text class="dl dl-f" x="295.6" y="139" text-anchor="end">Women 3.4</text>
+<line class="grid" x1="89.6" y1="130" x2="89.6" y2="140"/>
+<line class="grid" x1="211.5" y1="130" x2="211.5" y2="140"/>
+<line class="grid" x1="333.3" y1="130" x2="333.3" y2="140"/>
+<line class="grid" x1="455.2" y1="130" x2="455.2" y2="140"/>
+<line class="ci" x1="298.1" y1="135" x2="318.9" y2="135"/>
+<rect class="sqm" x="314.4" y="130.5" width="9" height="9"/>
+<circle class="pt" cx="298.1" cy="135" r="4.5"/>
+<text class="dl dl-f" x="288.1" y="139" text-anchor="end">Women 3.4</text>
+<text class="dl dl-m" x="328.9" y="139">Men 3.8</text>
 </g>
 <g class="row"><title>Achievement: women 1.4, men 2.1; gap −0.7 (95% interval −0.8 to −0.5)</title>
 <text class="lab" x="0" y="158">Achievement</text>
-<line class="grid" x1="10.0" y1="164" x2="10.0" y2="174"/>
-<line class="grid" x1="182.8" y1="164" x2="182.8" y2="174"/>
-<line class="grid" x1="355.6" y1="164" x2="355.6" y2="174"/>
-<line class="grid" x1="528.4" y1="164" x2="528.4" y2="174"/>
-<line class="ci" x1="131.4" y1="169" x2="192.6" y2="169"/>
-<rect class="sqm" x="188.1" y="164.5" width="9" height="9"/>
-<circle class="pt" cx="131.4" cy="169" r="4.5"/>
-<text class="dl dl-m" x="202.6" y="173">Men 2.1</text>
-<text class="dl dl-f" x="121.4" y="173" text-anchor="end">Women 1.4</text>
+<line class="grid" x1="89.6" y1="164" x2="89.6" y2="174"/>
+<line class="grid" x1="211.5" y1="164" x2="211.5" y2="174"/>
+<line class="grid" x1="333.3" y1="164" x2="333.3" y2="174"/>
+<line class="grid" x1="455.2" y1="164" x2="455.2" y2="174"/>
+<line class="ci" x1="175.2" y1="169" x2="218.4" y2="169"/>
+<rect class="sqm" x="213.9" y="164.5" width="9" height="9"/>
+<circle class="pt" cx="175.2" cy="169" r="4.5"/>
+<text class="dl dl-f" x="165.2" y="173" text-anchor="end">Women 1.4</text>
+<text class="dl dl-m" x="228.4" y="173">Men 2.1</text>
 </g>
-</svg></div><p class="note">Two checks that use word vectors instead of counting words point the same way for all 4 themes: see <a href="methods.html#stereotypes">Methods</a>.</p><details class="dt"><summary>Data table: theme words per 100 mentions of women and of men</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: theme words per 100 mentions of women and of men, scrolls sideways"><table><caption class="vh">Data table: theme words per 100 mentions of women and of men</caption><thead><tr><th scope="col">Theme</th><th scope="col">Group</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Gap</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>All national textbooks</td><td>1.4</td><td>2.1</td><td>−0.7</td><td>−0.8 to −0.5</td><td>3,157</td></tr><tr><th scope="row">Achievement</th><td>East Asia &amp; Pacific</td><td>1.5</td><td>2.1</td><td>−0.7</td><td>−1.9 to +0.1</td><td>329</td></tr><tr><th scope="row">Achievement</th><td>Europe &amp; Central Asia</td><td>1.2</td><td>1.5</td><td>−0.3</td><td>−0.5 to +0.2</td><td>135</td></tr><tr><th scope="row">Achievement</th><td>Latin America &amp; Caribbean</td><td>1.1</td><td>1.6</td><td>−0.6</td><td>−1.2 to +0.2</td><td>134</td></tr><tr><th scope="row">Achievement</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>1.2</td><td>1.8</td><td>−0.6</td><td>−0.8 to −0.3</td><td>326</td></tr><tr><th scope="row">Achievement</th><td>North America</td><td>1.3</td><td>2.3</td><td>−0.9</td><td>−1.1 to −0.9</td><td>486</td></tr><tr><th scope="row">Achievement</th><td>South Asia</td><td>1.5</td><td>2.2</td><td>−0.7</td><td>−1.3 to −0.5</td><td>1,138</td></tr><tr><th scope="row">Achievement</th><td>Sub-Saharan Africa</td><td>1.5</td><td>2.3</td><td>−0.7</td><td>−1.0 to −0.3</td><td>609</td></tr><tr><th scope="row">Achievement</th><td>High income</td><td>1.3</td><td>1.9</td><td>−0.6</td><td>−0.9 to +0.1</td><td>817</td></tr><tr><th scope="row">Achievement</th><td>Low income</td><td>1.3</td><td>2.2</td><td>−0.9</td><td>−1.1 to −0.5</td><td>407</td></tr><tr><th scope="row">Achievement</th><td>Lower middle income</td><td>1.5</td><td>2.1</td><td>−0.6</td><td>−0.7 to −0.4</td><td>1,487</td></tr><tr><th scope="row">Achievement</th><td>Upper middle income</td><td>1.4</td><td>2.3</td><td>−0.9</td><td>−1.9 to −0.1</td><td>446</td></tr><tr><th scope="row">Appearance</th><td>All national textbooks</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.3</td><td>3,157</td></tr><tr><th scope="row">Appearance</th><td>East Asia &amp; Pacific</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.1 to +0.4</td><td>329</td></tr><tr><th scope="row">Appearance</th><td>Europe &amp; Central Asia</td><td>0.8</td><td>0.3</td><td>+0.5</td><td>+0.2 to +0.7</td><td>135</td></tr><tr><th scope="row">Appearance</th><td>Latin America &amp; Caribbean</td><td>0.6</td><td>0.3</td><td>+0.3</td><td>+0.1 to +0.5</td><td>134</td></tr><tr><th scope="row">Appearance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.4</td><td>326</td></tr><tr><th scope="row">Appearance</th><td>North America</td><td>0.3</td><td>0.2</td><td>+0.1</td><td>−0.1 to +0.1</td><td>486</td></tr><tr><th scope="row">Appearance</th><td>South Asia</td><td>0.4</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.5</td><td>1,138</td></tr><tr><th scope="row">Appearance</th><td>Sub-Saharan Africa</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.1 to +0.4</td><td>609</td></tr><tr><th scope="row">Appearance</th><td>High income</td><td>0.3</td><td>0.2</td><td>+0.1</td><td>+0.1 to +0.2</td><td>817</td></tr><tr><th scope="row">Appearance</th><td>Low income</td><td>0.6</td><td>0.2</td><td>+0.4</td><td>+0.3 to +0.4</td><td>407</td></tr><tr><th scope="row">Appearance</th><td>Lower middle income</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.3</td><td>1,487</td></tr><tr><th scope="row">Appearance</th><td>Upper middle income</td><td>0.6</td><td>0.2</td><td>+0.4</td><td>+0.2 to +0.6</td><td>446</td></tr><tr><th scope="row">Family and the home</th><td>All national textbooks</td><td>5.8</td><td>3.7</td><td>+2.1</td><td>+1.3 to +2.5</td><td>3,157</td></tr><tr><th scope="row">Family and the home</th><td>East Asia &amp; Pacific</td><td>6.0</td><td>3.8</td><td>+2.2</td><td>+0.2 to +3.3</td><td>329</td></tr><tr><th scope="row">Family and the home</th><td>Europe &amp; Central Asia</td><td>4.8</td><td>4.1</td><td>+0.8</td><td>+0.1 to +1.3</td><td>135</td></tr><tr><th scope="row">Family and the home</th><td>Latin America &amp; Caribbean</td><td>6.5</td><td>5.5</td><td>+1.0</td><td>+0.2 to +1.8</td><td>134</td></tr><tr><th scope="row">Family and the home</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>4.5</td><td>3.3</td><td>+1.1</td><td>+0.7 to +1.5</td><td>326</td></tr><tr><th scope="row">Family and the home</th><td>North America</td><td>4.1</td><td>3.1</td><td>+1.0</td><td>+0.9 to +2.6</td><td>486</td></tr><tr><th scope="row">Family and the home</th><td>South Asia</td><td>6.4</td><td>3.5</td><td>+2.9</td><td>+1.9 to +4.9</td><td>1,138</td></tr><tr><th scope="row">Family and the home</th><td>Sub-Saharan Africa</td><td>6.5</td><td>4.6</td><td>+1.9</td><td>+1.4 to +2.3</td><td>609</td></tr><tr><th scope="row">Family and the home</th><td>High income</td><td>4.1</td><td>3.4</td><td>+0.7</td><td>+0.1 to +1.2</td><td>817</td></tr><tr><th scope="row">Family and the home</th><td>Low income</td><td>6.4</td><td>4.4</td><td>+2.0</td><td>+1.3 to +2.6</td><td>407</td></tr><tr><th scope="row">Family and the home</th><td>Lower middle income</td><td>6.0</td><td>3.5</td><td>+2.5</td><td>+1.5 to +3.2</td><td>1,487</td></tr><tr><th scope="row">Family and the home</th><td>Upper middle income</td><td>6.3</td><td>4.5</td><td>+1.8</td><td>+0.7 to +2.6</td><td>446</td></tr><tr><th scope="row">Work</th><td>All national textbooks</td><td>3.4</td><td>3.8</td><td>−0.3</td><td>−0.6 to +0.1</td><td>3,157</td></tr><tr><th scope="row">Work</th><td>East Asia &amp; Pacific</td><td>2.7</td><td>3.1</td><td>−0.4</td><td>−1.8 to +0.2</td><td>329</td></tr><tr><th scope="row">Work</th><td>Europe &amp; Central Asia</td><td>2.8</td><td>3.5</td><td>−0.7</td><td>−1.1 to −0.3</td><td>135</td></tr><tr><th scope="row">Work</th><td>Latin America &amp; Caribbean</td><td>2.6</td><td>3.4</td><td>−0.8</td><td>−1.5 to −0.3</td><td>134</td></tr><tr><th scope="row">Work</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>3.0</td><td>3.6</td><td>−0.6</td><td>−1.4 to −0.2</td><td>326</td></tr><tr><th scope="row">Work</th><td>North America</td><td>3.9</td><td>3.3</td><td>+0.6</td><td>+0.6 to +1.6</td><td>486</td></tr><tr><th scope="row">Work</th><td>South Asia</td><td>3.3</td><td>3.9</td><td>−0.7</td><td>−0.8 to −0.1</td><td>1,138</td></tr><tr><th scope="row">Work</th><td>Sub-Saharan Africa</td><td>4.6</td><td>4.4</td><td>+0.2</td><td>−0.2 to +0.7</td><td>609</td></tr><tr><th scope="row">Work</th><td>High income</td><td>3.5</td><td>3.4</td><td>0.0</td><td>−1.1 to +0.4</td><td>817</td></tr><tr><th scope="row">Work</th><td>Low income</td><td>4.1</td><td>4.1</td><td>0.0</td><td>−0.6 to +0.5</td><td>407</td></tr><tr><th scope="row">Work</th><td>Lower middle income</td><td>3.3</td><td>3.7</td><td>−0.4</td><td>−0.7 to +0.3</td><td>1,487</td></tr><tr><th scope="row">Work</th><td>Upper middle income</td><td>3.3</td><td>4.1</td><td>−0.8</td><td>−1.4 to −0.3</td><td>446</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/themes.html">Embed this chart<span class="vh"> (words near women and men)</span></a></p></section><section id="descriptors" aria-labelledby="h-descriptors"><h2 id="h-descriptors">How women and men are described</h2><p class="lede">The adjectives used of women and men (&ldquo;a kind woman&rdquo;, &ldquo;he seemed strong&rdquo;) and the verbs they are the subject of (&ldquo;she cooked&rdquo;, &ldquo;he built&rdquo;), scored on the NRC lexicon from 0 to 1. Dominance stands in for agency, as in the paper. In dominance, the adjectives used of women differ from those used of men by −0.019 (95% interval −0.028 to −0.009); the verbs women are the subject of differ from those of men by −0.011 (95% interval −0.014 to −0.005). Dots are the gaps; lines are 95% intervals.</p><div class="chartbox"><svg class="chart" id="tg-descriptors" viewBox="0 0 560 254" role="img" aria-labelledby="tg-descriptors-t tg-descriptors-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><p class="note">Two checks that use word vectors instead of counting words point the same way for all 4 themes: see <a href="methods.html#stereotypes">Methods</a>.</p><details class="dt"><summary>Data table: theme words per 100 mentions of women and of men</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: theme words per 100 mentions of women and of men, scrolls sideways"><table><caption class="vh">Data table: theme words per 100 mentions of women and of men</caption><thead><tr><th scope="col">Theme</th><th scope="col">Group</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Gap</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>All national textbooks</td><td>1.4</td><td>2.1</td><td>−0.7</td><td>−0.8 to −0.5</td><td>3,157</td></tr><tr><th scope="row">Achievement</th><td>East Asia &amp; Pacific</td><td>1.5</td><td>2.1</td><td>−0.7</td><td>−1.9 to +0.1</td><td>329</td></tr><tr><th scope="row">Achievement</th><td>Europe &amp; Central Asia</td><td>1.2</td><td>1.5</td><td>−0.3</td><td>−0.5 to +0.2</td><td>135</td></tr><tr><th scope="row">Achievement</th><td>Latin America &amp; Caribbean</td><td>1.1</td><td>1.6</td><td>−0.6</td><td>−1.2 to +0.2</td><td>134</td></tr><tr><th scope="row">Achievement</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>1.2</td><td>1.8</td><td>−0.6</td><td>−0.8 to −0.3</td><td>326</td></tr><tr><th scope="row">Achievement</th><td>North America</td><td>1.3</td><td>2.3</td><td>−0.9</td><td>−1.1 to −0.9</td><td>486</td></tr><tr><th scope="row">Achievement</th><td>South Asia</td><td>1.5</td><td>2.2</td><td>−0.7</td><td>−1.3 to −0.5</td><td>1,138</td></tr><tr><th scope="row">Achievement</th><td>Sub-Saharan Africa</td><td>1.5</td><td>2.3</td><td>−0.7</td><td>−1.0 to −0.3</td><td>609</td></tr><tr><th scope="row">Achievement</th><td>High income</td><td>1.3</td><td>1.9</td><td>−0.6</td><td>−0.9 to +0.1</td><td>817</td></tr><tr><th scope="row">Achievement</th><td>Low income</td><td>1.3</td><td>2.2</td><td>−0.9</td><td>−1.1 to −0.5</td><td>407</td></tr><tr><th scope="row">Achievement</th><td>Lower middle income</td><td>1.5</td><td>2.1</td><td>−0.6</td><td>−0.7 to −0.4</td><td>1,487</td></tr><tr><th scope="row">Achievement</th><td>Upper middle income</td><td>1.4</td><td>2.3</td><td>−0.9</td><td>−1.9 to −0.1</td><td>446</td></tr><tr><th scope="row">Appearance</th><td>All national textbooks</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.3</td><td>3,157</td></tr><tr><th scope="row">Appearance</th><td>East Asia &amp; Pacific</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.1 to +0.4</td><td>329</td></tr><tr><th scope="row">Appearance</th><td>Europe &amp; Central Asia</td><td>0.8</td><td>0.3</td><td>+0.5</td><td>+0.2 to +0.7</td><td>135</td></tr><tr><th scope="row">Appearance</th><td>Latin America &amp; Caribbean</td><td>0.6</td><td>0.3</td><td>+0.3</td><td>+0.1 to +0.5</td><td>134</td></tr><tr><th scope="row">Appearance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.4</td><td>326</td></tr><tr><th scope="row">Appearance</th><td>North America</td><td>0.3</td><td>0.2</td><td>+0.1</td><td>−0.1 to +0.1</td><td>486</td></tr><tr><th scope="row">Appearance</th><td>South Asia</td><td>0.4</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.5</td><td>1,138</td></tr><tr><th scope="row">Appearance</th><td>Sub-Saharan Africa</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.1 to +0.4</td><td>609</td></tr><tr><th scope="row">Appearance</th><td>High income</td><td>0.3</td><td>0.2</td><td>+0.1</td><td>+0.1 to +0.2</td><td>817</td></tr><tr><th scope="row">Appearance</th><td>Low income</td><td>0.6</td><td>0.2</td><td>+0.4</td><td>+0.3 to +0.4</td><td>407</td></tr><tr><th scope="row">Appearance</th><td>Lower middle income</td><td>0.5</td><td>0.2</td><td>+0.3</td><td>+0.2 to +0.3</td><td>1,487</td></tr><tr><th scope="row">Appearance</th><td>Upper middle income</td><td>0.6</td><td>0.2</td><td>+0.4</td><td>+0.2 to +0.6</td><td>446</td></tr><tr><th scope="row">Family and the home</th><td>All national textbooks</td><td>5.8</td><td>3.7</td><td>+2.1</td><td>+1.3 to +2.5</td><td>3,157</td></tr><tr><th scope="row">Family and the home</th><td>East Asia &amp; Pacific</td><td>6.0</td><td>3.8</td><td>+2.2</td><td>+0.2 to +3.3</td><td>329</td></tr><tr><th scope="row">Family and the home</th><td>Europe &amp; Central Asia</td><td>4.8</td><td>4.1</td><td>+0.8</td><td>+0.1 to +1.3</td><td>135</td></tr><tr><th scope="row">Family and the home</th><td>Latin America &amp; Caribbean</td><td>6.5</td><td>5.5</td><td>+1.0</td><td>+0.2 to +1.8</td><td>134</td></tr><tr><th scope="row">Family and the home</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>4.5</td><td>3.3</td><td>+1.1</td><td>+0.7 to +1.5</td><td>326</td></tr><tr><th scope="row">Family and the home</th><td>North America</td><td>4.1</td><td>3.1</td><td>+1.0</td><td>+0.9 to +2.6</td><td>486</td></tr><tr><th scope="row">Family and the home</th><td>South Asia</td><td>6.4</td><td>3.5</td><td>+2.9</td><td>+1.9 to +4.9</td><td>1,138</td></tr><tr><th scope="row">Family and the home</th><td>Sub-Saharan Africa</td><td>6.5</td><td>4.6</td><td>+1.9</td><td>+1.4 to +2.3</td><td>609</td></tr><tr><th scope="row">Family and the home</th><td>High income</td><td>4.1</td><td>3.4</td><td>+0.7</td><td>+0.1 to +1.2</td><td>817</td></tr><tr><th scope="row">Family and the home</th><td>Low income</td><td>6.4</td><td>4.4</td><td>+2.0</td><td>+1.3 to +2.6</td><td>407</td></tr><tr><th scope="row">Family and the home</th><td>Lower middle income</td><td>6.0</td><td>3.5</td><td>+2.5</td><td>+1.5 to +3.2</td><td>1,487</td></tr><tr><th scope="row">Family and the home</th><td>Upper middle income</td><td>6.3</td><td>4.5</td><td>+1.8</td><td>+0.7 to +2.6</td><td>446</td></tr><tr><th scope="row">Work</th><td>All national textbooks</td><td>3.4</td><td>3.8</td><td>−0.3</td><td>−0.6 to +0.1</td><td>3,157</td></tr><tr><th scope="row">Work</th><td>East Asia &amp; Pacific</td><td>2.7</td><td>3.1</td><td>−0.4</td><td>−1.8 to +0.2</td><td>329</td></tr><tr><th scope="row">Work</th><td>Europe &amp; Central Asia</td><td>2.8</td><td>3.5</td><td>−0.7</td><td>−1.1 to −0.3</td><td>135</td></tr><tr><th scope="row">Work</th><td>Latin America &amp; Caribbean</td><td>2.6</td><td>3.4</td><td>−0.8</td><td>−1.5 to −0.3</td><td>134</td></tr><tr><th scope="row">Work</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>3.0</td><td>3.6</td><td>−0.6</td><td>−1.4 to −0.2</td><td>326</td></tr><tr><th scope="row">Work</th><td>North America</td><td>3.9</td><td>3.3</td><td>+0.6</td><td>+0.6 to +1.6</td><td>486</td></tr><tr><th scope="row">Work</th><td>South Asia</td><td>3.3</td><td>3.9</td><td>−0.7</td><td>−0.8 to −0.1</td><td>1,138</td></tr><tr><th scope="row">Work</th><td>Sub-Saharan Africa</td><td>4.6</td><td>4.4</td><td>+0.2</td><td>−0.2 to +0.7</td><td>609</td></tr><tr><th scope="row">Work</th><td>High income</td><td>3.5</td><td>3.4</td><td>0.0</td><td>−1.1 to +0.4</td><td>817</td></tr><tr><th scope="row">Work</th><td>Low income</td><td>4.1</td><td>4.1</td><td>0.0</td><td>−0.6 to +0.5</td><td>407</td></tr><tr><th scope="row">Work</th><td>Lower middle income</td><td>3.3</td><td>3.7</td><td>−0.4</td><td>−0.7 to +0.3</td><td>1,487</td></tr><tr><th scope="row">Work</th><td>Upper middle income</td><td>3.3</td><td>4.1</td><td>−0.8</td><td>−1.4 to −0.3</td><td>446</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/themes.html">Embed this chart<span class="vh"> (words near women and men)</span></a></p></section><section id="descriptors" aria-labelledby="h-descriptors"><h2 id="h-descriptors">How women and men are described</h2><p class="lede">The adjectives used of women and men (&ldquo;a kind woman&rdquo;, &ldquo;he seemed strong&rdquo;) and the verbs they are the subject of (&ldquo;she cooked&rdquo;, &ldquo;he built&rdquo;), scored on the NRC lexicon from 0 to 1. Dominance stands in for agency, as in the paper. In dominance, the adjectives used of women differ from those used of men by −0.019 (95% interval −0.028 to −0.009); the verbs women are the subject of differ from those of men by −0.011 (95% interval −0.014 to −0.005). Dots are the gaps and lines their 95% intervals: teal where women&rsquo;s words score higher, amber where men&rsquo;s do, and grey where the interval holds no gap.</p><div class="chartbox"><svg class="chart" id="tg-descriptors" viewBox="0 0 560 272" role="img" aria-labelledby="tg-descriptors-t tg-descriptors-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-descriptors-t">Dominance, valence and arousal of the words used of women and men, women minus men</title>
 <desc id="tg-descriptors-d">Adjectives dominance −0.019 (95% interval −0.028 to −0.009); Adjectives valence +0.008 (95% interval −0.006 to +0.017); Adjectives arousal +0.009 (95% interval 0.000 to +0.015); Verbs dominance −0.011 (95% interval −0.014 to −0.005); Verbs valence +0.012 (95% interval +0.009 to +0.015); Verbs arousal −0.009 (95% interval −0.012 to −0.005)</desc>
 <text class="axis" x="0" y="12">NRC VAD score (0 to 1), women minus men</text>
-<text class="axis" x="108.0" y="32" text-anchor="middle">−0.02</text>
-<text class="axis" x="483.4" y="32" text-anchor="middle">0.02</text>
-<text class="axis plab" x="295.7" y="32" text-anchor="middle">no gap</text>
+<text class="dl dl-m" x="287.7" y="32" text-anchor="end">Higher for men</text>
+<text class="dl dl-f" x="303.7" y="32">Higher for women</text>
+<text class="axis" x="108.0" y="50" text-anchor="middle">−0.02</text>
+<text class="axis" x="483.4" y="50" text-anchor="middle">0.02</text>
+<text class="axis plab" x="295.7" y="50" text-anchor="middle">no gap</text>
 <g class="row"><title>Adjectives: dominance: −0.019 (95% interval −0.028 to −0.009)</title>
-<text class="lab" x="0" y="56">Adjectives: dominance</text>
-<line class="grid" x1="108.0" y1="62" x2="108.0" y2="72"/>
-<line class="grid" x1="483.4" y1="62" x2="483.4" y2="72"/>
-<line class="halo" x1="295.7" y1="61.0" x2="295.7" y2="73.0"/>
-<line class="par" x1="295.7" y1="61.0" x2="295.7" y2="73.0"/>
-<line class="ci" x1="33.8" y1="67" x2="208.4" y2="67"/>
-<circle class="pt" cx="121.1" cy="67" r="4.5"/>
-<text class="val" x="560" y="71" text-anchor="end">−0.019</text></g>
-<text class="dl dl-f" x="305.7" y="71">Gap</text>
-<text class="dl dl-ci" x="340.9" y="71">95% interval</text>
+<text class="lab" x="0" y="74">Adjectives: dominance</text>
+<line class="grid" x1="108.0" y1="80" x2="108.0" y2="90"/>
+<line class="grid" x1="483.4" y1="80" x2="483.4" y2="90"/>
+<line class="halo" x1="295.7" y1="79.0" x2="295.7" y2="91.0"/>
+<line class="par" x1="295.7" y1="79.0" x2="295.7" y2="91.0"/>
+<line class="ci" x1="33.8" y1="85" x2="208.4" y2="85"/>
+<circle class="ptm" cx="121.1" cy="85" r="4.5"/>
+<text class="val dl-m" x="560" y="89" text-anchor="end">−0.019</text></g>
 <g class="row"><title>Adjectives: valence: +0.008 (95% interval −0.006 to +0.017)</title>
-<text class="lab" x="0" y="90">Adjectives: valence</text>
-<line class="grid" x1="108.0" y1="96" x2="108.0" y2="106"/>
-<line class="grid" x1="483.4" y1="96" x2="483.4" y2="106"/>
-<line class="halo" x1="295.7" y1="95.0" x2="295.7" y2="107.0"/>
-<line class="par" x1="295.7" y1="95.0" x2="295.7" y2="107.0"/>
-<line class="ci" x1="241.2" y1="101" x2="456.2" y2="101"/>
-<circle class="pt" cx="367.0" cy="101" r="4.5"/>
-<text class="val" x="560" y="105" text-anchor="end">+0.008</text></g>
+<text class="lab" x="0" y="108">Adjectives: valence</text>
+<line class="grid" x1="108.0" y1="114" x2="108.0" y2="124"/>
+<line class="grid" x1="483.4" y1="114" x2="483.4" y2="124"/>
+<line class="halo" x1="295.7" y1="113.0" x2="295.7" y2="125.0"/>
+<line class="par" x1="295.7" y1="113.0" x2="295.7" y2="125.0"/>
+<line class="ci" x1="241.2" y1="119" x2="456.2" y2="119"/>
+<circle class="ptn" cx="367.0" cy="119" r="4.5"/>
+<text class="val" x="560" y="123" text-anchor="end">+0.008</text></g>
 <g class="row"><title>Adjectives: arousal: +0.009 (95% interval 0.000 to +0.015)</title>
-<text class="lab" x="0" y="124">Adjectives: arousal</text>
-<line class="grid" x1="108.0" y1="130" x2="108.0" y2="140"/>
-<line class="grid" x1="483.4" y1="130" x2="483.4" y2="140"/>
-<line class="halo" x1="295.7" y1="129.0" x2="295.7" y2="141.0"/>
-<line class="par" x1="295.7" y1="129.0" x2="295.7" y2="141.0"/>
-<line class="ci" x1="294.8" y1="135" x2="440.2" y2="135"/>
-<circle class="pt" cx="383.9" cy="135" r="4.5"/>
-<text class="val" x="560" y="139" text-anchor="end">+0.009</text></g>
+<text class="lab" x="0" y="142">Adjectives: arousal</text>
+<line class="grid" x1="108.0" y1="148" x2="108.0" y2="158"/>
+<line class="grid" x1="483.4" y1="148" x2="483.4" y2="158"/>
+<line class="halo" x1="295.7" y1="147.0" x2="295.7" y2="159.0"/>
+<line class="par" x1="295.7" y1="147.0" x2="295.7" y2="159.0"/>
+<line class="ci" x1="294.8" y1="153" x2="440.2" y2="153"/>
+<circle class="ptn" cx="383.9" cy="153" r="4.5"/>
+<text class="val" x="560" y="157" text-anchor="end">+0.009</text></g>
 <g class="row"><title>Verbs: dominance: −0.011 (95% interval −0.014 to −0.005)</title>
-<text class="lab" x="0" y="158">Verbs: dominance</text>
-<line class="grid" x1="108.0" y1="164" x2="108.0" y2="174"/>
-<line class="grid" x1="483.4" y1="164" x2="483.4" y2="174"/>
-<line class="halo" x1="295.7" y1="163.0" x2="295.7" y2="175.0"/>
-<line class="par" x1="295.7" y1="163.0" x2="295.7" y2="175.0"/>
-<line class="ci" x1="165.2" y1="169" x2="249.7" y2="169"/>
-<circle class="pt" cx="194.3" cy="169" r="4.5"/>
-<text class="val" x="560" y="173" text-anchor="end">−0.011</text></g>
+<text class="lab" x="0" y="176">Verbs: dominance</text>
+<line class="grid" x1="108.0" y1="182" x2="108.0" y2="192"/>
+<line class="grid" x1="483.4" y1="182" x2="483.4" y2="192"/>
+<line class="halo" x1="295.7" y1="181.0" x2="295.7" y2="193.0"/>
+<line class="par" x1="295.7" y1="181.0" x2="295.7" y2="193.0"/>
+<line class="ci" x1="165.2" y1="187" x2="249.7" y2="187"/>
+<circle class="ptm" cx="194.3" cy="187" r="4.5"/>
+<text class="val dl-m" x="560" y="191" text-anchor="end">−0.011</text></g>
 <g class="row"><title>Verbs: valence: +0.012 (95% interval +0.009 to +0.015)</title>
-<text class="lab" x="0" y="192">Verbs: valence</text>
-<line class="grid" x1="108.0" y1="198" x2="108.0" y2="208"/>
-<line class="grid" x1="483.4" y1="198" x2="483.4" y2="208"/>
-<line class="halo" x1="295.7" y1="197.0" x2="295.7" y2="209.0"/>
-<line class="par" x1="295.7" y1="197.0" x2="295.7" y2="209.0"/>
-<line class="ci" x1="378.3" y1="203" x2="434.6" y2="203"/>
-<circle class="pt" cx="407.4" cy="203" r="4.5"/>
-<text class="val" x="560" y="207" text-anchor="end">+0.012</text></g>
+<text class="lab" x="0" y="210">Verbs: valence</text>
+<line class="grid" x1="108.0" y1="216" x2="108.0" y2="226"/>
+<line class="grid" x1="483.4" y1="216" x2="483.4" y2="226"/>
+<line class="halo" x1="295.7" y1="215.0" x2="295.7" y2="227.0"/>
+<line class="par" x1="295.7" y1="215.0" x2="295.7" y2="227.0"/>
+<line class="ci" x1="378.3" y1="221" x2="434.6" y2="221"/>
+<circle class="pt" cx="407.4" cy="221" r="4.5"/>
+<text class="val dl-f" x="560" y="225" text-anchor="end">+0.012</text></g>
 <g class="row"><title>Verbs: arousal: −0.009 (95% interval −0.012 to −0.005)</title>
-<text class="lab" x="0" y="226">Verbs: arousal</text>
-<line class="grid" x1="108.0" y1="232" x2="108.0" y2="242"/>
-<line class="grid" x1="483.4" y1="232" x2="483.4" y2="242"/>
-<line class="halo" x1="295.7" y1="231.0" x2="295.7" y2="243.0"/>
-<line class="par" x1="295.7" y1="231.0" x2="295.7" y2="243.0"/>
-<line class="ci" x1="186.8" y1="237" x2="251.6" y2="237"/>
-<circle class="pt" cx="212.1" cy="237" r="4.5"/>
-<text class="val" x="560" y="241" text-anchor="end">−0.009</text></g>
-</svg></div><p class="note">Countries cannot be told apart on these measures: two countries would need to differ by at least 0.119 in adjective dominance, 6 times the gap across all books, so no country values are shown.</p><details class="dt"><summary>Data table: scores of the words used of women and of men</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: scores of the words used of women and of men, scrolls sideways"><table><caption class="vh">Data table: scores of the words used of women and of men</caption><thead><tr><th scope="col">Measure</th><th scope="col">Group</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Gap</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">Adjectives: dominance</th><td>All national textbooks</td><td>0.518</td><td>0.536</td><td>−0.019</td><td>−0.028 to −0.009</td><td>3,157</td></tr><tr><th scope="row">Adjectives: dominance</th><td>East Asia &amp; Pacific</td><td>0.488</td><td>0.512</td><td>−0.025</td><td>−0.036 to −0.011</td><td>329</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Europe &amp; Central Asia</td><td>0.531</td><td>0.545</td><td>−0.014</td><td>−0.028 to +0.002</td><td>135</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Latin America &amp; Caribbean</td><td>0.538</td><td>0.522</td><td>+0.016</td><td>−0.016 to +0.049</td><td>134</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.521</td><td>0.537</td><td>−0.016</td><td>−0.026 to +0.002</td><td>326</td></tr><tr><th scope="row">Adjectives: dominance</th><td>North America</td><td>0.564</td><td>0.544</td><td>+0.019</td><td>+0.010 to +0.162</td><td>486</td></tr><tr><th scope="row">Adjectives: dominance</th><td>South Asia</td><td>0.513</td><td>0.539</td><td>−0.025</td><td>−0.053 to −0.006</td><td>1,138</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Sub-Saharan Africa</td><td>0.523</td><td>0.540</td><td>−0.018</td><td>−0.031 to +0.002</td><td>609</td></tr><tr><th scope="row">Adjectives: dominance</th><td>High income</td><td>0.536</td><td>0.537</td><td>0.000</td><td>−0.029 to +0.028</td><td>817</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Low income</td><td>0.513</td><td>0.535</td><td>−0.022</td><td>−0.032 to −0.004</td><td>407</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Lower middle income</td><td>0.513</td><td>0.534</td><td>−0.021</td><td>−0.037 to −0.004</td><td>1,487</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Upper middle income</td><td>0.524</td><td>0.549</td><td>−0.025</td><td>−0.046 to +0.006</td><td>446</td></tr><tr><th scope="row">Adjectives: valence</th><td>All national textbooks</td><td>0.604</td><td>0.597</td><td>+0.008</td><td>−0.006 to +0.017</td><td>3,157</td></tr><tr><th scope="row">Adjectives: valence</th><td>East Asia &amp; Pacific</td><td>0.581</td><td>0.575</td><td>+0.006</td><td>−0.012 to +0.022</td><td>329</td></tr><tr><th scope="row">Adjectives: valence</th><td>Europe &amp; Central Asia</td><td>0.618</td><td>0.612</td><td>+0.005</td><td>−0.023 to +0.029</td><td>135</td></tr><tr><th scope="row">Adjectives: valence</th><td>Latin America &amp; Caribbean</td><td>0.649</td><td>0.592</td><td>+0.058</td><td>+0.014 to +0.102</td><td>134</td></tr><tr><th scope="row">Adjectives: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.600</td><td>0.606</td><td>−0.005</td><td>−0.031 to +0.028</td><td>326</td></tr><tr><th scope="row">Adjectives: valence</th><td>North America</td><td>0.633</td><td>0.611</td><td>+0.022</td><td>+0.017 to +0.099</td><td>486</td></tr><tr><th scope="row">Adjectives: valence</th><td>South Asia</td><td>0.602</td><td>0.598</td><td>+0.004</td><td>−0.035 to +0.018</td><td>1,138</td></tr><tr><th scope="row">Adjectives: valence</th><td>Sub-Saharan Africa</td><td>0.610</td><td>0.589</td><td>+0.020</td><td>+0.005 to +0.043</td><td>609</td></tr><tr><th scope="row">Adjectives: valence</th><td>High income</td><td>0.610</td><td>0.598</td><td>+0.012</td><td>−0.010 to +0.035</td><td>817</td></tr><tr><th scope="row">Adjectives: valence</th><td>Low income</td><td>0.593</td><td>0.588</td><td>+0.005</td><td>−0.011 to +0.018</td><td>407</td></tr><tr><th scope="row">Adjectives: valence</th><td>Lower middle income</td><td>0.601</td><td>0.594</td><td>+0.007</td><td>−0.018 to +0.022</td><td>1,487</td></tr><tr><th scope="row">Adjectives: valence</th><td>Upper middle income</td><td>0.623</td><td>0.619</td><td>+0.005</td><td>−0.015 to +0.035</td><td>446</td></tr><tr><th scope="row">Adjectives: arousal</th><td>All national textbooks</td><td>0.483</td><td>0.474</td><td>+0.009</td><td>0.000 to +0.015</td><td>3,157</td></tr><tr><th scope="row">Adjectives: arousal</th><td>East Asia &amp; Pacific</td><td>0.475</td><td>0.481</td><td>−0.006</td><td>−0.020 to +0.009</td><td>329</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Europe &amp; Central Asia</td><td>0.489</td><td>0.495</td><td>−0.006</td><td>−0.027 to +0.007</td><td>135</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Latin America &amp; Caribbean</td><td>0.494</td><td>0.489</td><td>+0.005</td><td>−0.008 to +0.037</td><td>134</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.474</td><td>0.478</td><td>−0.005</td><td>−0.018 to +0.005</td><td>326</td></tr><tr><th scope="row">Adjectives: arousal</th><td>North America</td><td>0.481</td><td>0.486</td><td>−0.005</td><td>−0.010 to +0.057</td><td>486</td></tr><tr><th scope="row">Adjectives: arousal</th><td>South Asia</td><td>0.482</td><td>0.466</td><td>+0.016</td><td>+0.011 to +0.028</td><td>1,138</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Sub-Saharan Africa</td><td>0.496</td><td>0.473</td><td>+0.023</td><td>−0.003 to +0.046</td><td>609</td></tr><tr><th scope="row">Adjectives: arousal</th><td>High income</td><td>0.481</td><td>0.493</td><td>−0.012</td><td>−0.025 to +0.005</td><td>817</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Low income</td><td>0.489</td><td>0.475</td><td>+0.015</td><td>−0.012 to +0.034</td><td>407</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Lower middle income</td><td>0.481</td><td>0.469</td><td>+0.012</td><td>−0.003 to +0.019</td><td>1,487</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Upper middle income</td><td>0.489</td><td>0.485</td><td>+0.004</td><td>−0.010 to +0.013</td><td>446</td></tr><tr><th scope="row">Verbs: dominance</th><td>All national textbooks</td><td>0.525</td><td>0.536</td><td>−0.011</td><td>−0.014 to −0.005</td><td>3,157</td></tr><tr><th scope="row">Verbs: dominance</th><td>East Asia &amp; Pacific</td><td>0.517</td><td>0.522</td><td>−0.005</td><td>−0.013 to +0.002</td><td>329</td></tr><tr><th scope="row">Verbs: dominance</th><td>Europe &amp; Central Asia</td><td>0.526</td><td>0.531</td><td>−0.005</td><td>−0.010 to +0.004</td><td>135</td></tr><tr><th scope="row">Verbs: dominance</th><td>Latin America &amp; Caribbean</td><td>0.519</td><td>0.521</td><td>−0.002</td><td>−0.015 to +0.009</td><td>134</td></tr><tr><th scope="row">Verbs: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.523</td><td>0.532</td><td>−0.009</td><td>−0.014 to −0.001</td><td>326</td></tr><tr><th scope="row">Verbs: dominance</th><td>North America</td><td>0.527</td><td>0.527</td><td>−0.001</td><td>−0.001 to +0.017</td><td>486</td></tr><tr><th scope="row">Verbs: dominance</th><td>South Asia</td><td>0.526</td><td>0.543</td><td>−0.017</td><td>−0.022 to −0.016</td><td>1,138</td></tr><tr><th scope="row">Verbs: dominance</th><td>Sub-Saharan Africa</td><td>0.528</td><td>0.538</td><td>−0.010</td><td>−0.014 to −0.004</td><td>609</td></tr><tr><th scope="row">Verbs: dominance</th><td>High income</td><td>0.523</td><td>0.527</td><td>−0.004</td><td>−0.011 to −0.001</td><td>817</td></tr><tr><th scope="row">Verbs: dominance</th><td>Low income</td><td>0.525</td><td>0.536</td><td>−0.011</td><td>−0.015 to −0.003</td><td>407</td></tr><tr><th scope="row">Verbs: dominance</th><td>Lower middle income</td><td>0.525</td><td>0.538</td><td>−0.013</td><td>−0.015 to −0.004</td><td>1,487</td></tr><tr><th scope="row">Verbs: dominance</th><td>Upper middle income</td><td>0.526</td><td>0.534</td><td>−0.008</td><td>−0.016 to +0.002</td><td>446</td></tr><tr><th scope="row">Verbs: valence</th><td>All national textbooks</td><td>0.633</td><td>0.621</td><td>+0.012</td><td>+0.009 to +0.015</td><td>3,157</td></tr><tr><th scope="row">Verbs: valence</th><td>East Asia &amp; Pacific</td><td>0.623</td><td>0.611</td><td>+0.013</td><td>+0.004 to +0.021</td><td>329</td></tr><tr><th scope="row">Verbs: valence</th><td>Europe &amp; Central Asia</td><td>0.648</td><td>0.640</td><td>+0.009</td><td>+0.002 to +0.017</td><td>135</td></tr><tr><th scope="row">Verbs: valence</th><td>Latin America &amp; Caribbean</td><td>0.640</td><td>0.624</td><td>+0.016</td><td>−0.004 to +0.031</td><td>134</td></tr><tr><th scope="row">Verbs: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.641</td><td>0.624</td><td>+0.016</td><td>+0.011 to +0.021</td><td>326</td></tr><tr><th scope="row">Verbs: valence</th><td>North America</td><td>0.639</td><td>0.623</td><td>+0.017</td><td>+0.015 to +0.047</td><td>486</td></tr><tr><th scope="row">Verbs: valence</th><td>South Asia</td><td>0.627</td><td>0.621</td><td>+0.006</td><td>−0.002 to +0.009</td><td>1,138</td></tr><tr><th scope="row">Verbs: valence</th><td>Sub-Saharan Africa</td><td>0.635</td><td>0.621</td><td>+0.014</td><td>+0.009 to +0.019</td><td>609</td></tr><tr><th scope="row">Verbs: valence</th><td>High income</td><td>0.639</td><td>0.625</td><td>+0.013</td><td>+0.005 to +0.019</td><td>817</td></tr><tr><th scope="row">Verbs: valence</th><td>Low income</td><td>0.635</td><td>0.619</td><td>+0.016</td><td>+0.009 to +0.022</td><td>407</td></tr><tr><th scope="row">Verbs: valence</th><td>Lower middle income</td><td>0.629</td><td>0.619</td><td>+0.010</td><td>+0.007 to +0.016</td><td>1,487</td></tr><tr><th scope="row">Verbs: valence</th><td>Upper middle income</td><td>0.639</td><td>0.632</td><td>+0.007</td><td>+0.002 to +0.014</td><td>446</td></tr><tr><th scope="row">Verbs: arousal</th><td>All national textbooks</td><td>0.475</td><td>0.484</td><td>−0.009</td><td>−0.012 to −0.005</td><td>3,157</td></tr><tr><th scope="row">Verbs: arousal</th><td>East Asia &amp; Pacific</td><td>0.473</td><td>0.474</td><td>−0.001</td><td>−0.017 to +0.005</td><td>329</td></tr><tr><th scope="row">Verbs: arousal</th><td>Europe &amp; Central Asia</td><td>0.471</td><td>0.482</td><td>−0.011</td><td>−0.015 to −0.006</td><td>135</td></tr><tr><th scope="row">Verbs: arousal</th><td>Latin America &amp; Caribbean</td><td>0.486</td><td>0.494</td><td>−0.008</td><td>−0.020 to −0.001</td><td>134</td></tr><tr><th scope="row">Verbs: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.472</td><td>0.482</td><td>−0.010</td><td>−0.015 to −0.005</td><td>326</td></tr><tr><th scope="row">Verbs: arousal</th><td>North America</td><td>0.477</td><td>0.486</td><td>−0.009</td><td>−0.009 to −0.005</td><td>486</td></tr><tr><th scope="row">Verbs: arousal</th><td>South Asia</td><td>0.473</td><td>0.486</td><td>−0.013</td><td>−0.016 to −0.006</td><td>1,138</td></tr><tr><th scope="row">Verbs: arousal</th><td>Sub-Saharan Africa</td><td>0.484</td><td>0.489</td><td>−0.005</td><td>−0.009 to −0.001</td><td>609</td></tr><tr><th scope="row">Verbs: arousal</th><td>High income</td><td>0.474</td><td>0.486</td><td>−0.011</td><td>−0.017 to −0.009</td><td>817</td></tr><tr><th scope="row">Verbs: arousal</th><td>Low income</td><td>0.481</td><td>0.488</td><td>−0.008</td><td>−0.015 to −0.003</td><td>407</td></tr><tr><th scope="row">Verbs: arousal</th><td>Lower middle income</td><td>0.473</td><td>0.483</td><td>−0.009</td><td>−0.013 to 0.000</td><td>1,487</td></tr><tr><th scope="row">Verbs: arousal</th><td>Upper middle income</td><td>0.477</td><td>0.485</td><td>−0.008</td><td>−0.013 to −0.003</td><td>446</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/descriptors.html">Embed this chart<span class="vh"> (how women and men are described)</span></a></p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs">The jobs they are shown in</h2><p class="lede">Women are 28.9% of the people the books show in a job (95% interval 25.8–34.8). Among the jobs that can be matched to labour-market data, women are 28.7% of the people shown, against 37.6% of the same jobs in the labour market (ILOSTAT): a gap of −8.8 points (95% interval −12.4 to −6.6). Women are also shown in more female-typed jobs than men: in the labour market, the jobs women are shown in are 5.0 points more female than the jobs men are shown in (95% interval +3.2 to +5.9).</p><div class="chartbox"><svg class="chart" id="tg-jobs" viewBox="0 0 560 440" role="img" aria-labelledby="tg-jobs-t tg-jobs-d" preserveAspectRatio="xMinYMin meet">
+<text class="lab" x="0" y="244">Verbs: arousal</text>
+<line class="grid" x1="108.0" y1="250" x2="108.0" y2="260"/>
+<line class="grid" x1="483.4" y1="250" x2="483.4" y2="260"/>
+<line class="halo" x1="295.7" y1="249.0" x2="295.7" y2="261.0"/>
+<line class="par" x1="295.7" y1="249.0" x2="295.7" y2="261.0"/>
+<line class="ci" x1="186.8" y1="255" x2="251.6" y2="255"/>
+<circle class="ptm" cx="212.1" cy="255" r="4.5"/>
+<text class="val dl-m" x="560" y="259" text-anchor="end">−0.009</text></g>
+</svg></div><p class="note">Countries cannot be told apart on these measures: two countries would need to differ by at least 0.119 in adjective dominance, 6 times the gap across all books, so no country values are shown.</p><details class="dt"><summary>Data table: scores of the words used of women and of men</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: scores of the words used of women and of men, scrolls sideways"><table><caption class="vh">Data table: scores of the words used of women and of men</caption><thead><tr><th scope="col">Measure</th><th scope="col">Group</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Gap</th><th scope="col">95% interval</th><th scope="col">Books</th></tr></thead><tbody><tr><th scope="row">Adjectives: dominance</th><td>All national textbooks</td><td>0.518</td><td>0.536</td><td>−0.019</td><td>−0.028 to −0.009</td><td>3,157</td></tr><tr><th scope="row">Adjectives: dominance</th><td>East Asia &amp; Pacific</td><td>0.488</td><td>0.512</td><td>−0.025</td><td>−0.036 to −0.011</td><td>329</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Europe &amp; Central Asia</td><td>0.531</td><td>0.545</td><td>−0.014</td><td>−0.028 to +0.002</td><td>135</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Latin America &amp; Caribbean</td><td>0.538</td><td>0.522</td><td>+0.016</td><td>−0.016 to +0.049</td><td>134</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.521</td><td>0.537</td><td>−0.016</td><td>−0.026 to +0.002</td><td>326</td></tr><tr><th scope="row">Adjectives: dominance</th><td>North America</td><td>0.564</td><td>0.544</td><td>+0.019</td><td>+0.010 to +0.162</td><td>486</td></tr><tr><th scope="row">Adjectives: dominance</th><td>South Asia</td><td>0.513</td><td>0.539</td><td>−0.025</td><td>−0.053 to −0.006</td><td>1,138</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Sub-Saharan Africa</td><td>0.523</td><td>0.540</td><td>−0.018</td><td>−0.031 to +0.002</td><td>609</td></tr><tr><th scope="row">Adjectives: dominance</th><td>High income</td><td>0.536</td><td>0.537</td><td>0.000</td><td>−0.029 to +0.028</td><td>817</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Low income</td><td>0.513</td><td>0.535</td><td>−0.022</td><td>−0.032 to −0.004</td><td>407</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Lower middle income</td><td>0.513</td><td>0.534</td><td>−0.021</td><td>−0.037 to −0.004</td><td>1,487</td></tr><tr><th scope="row">Adjectives: dominance</th><td>Upper middle income</td><td>0.524</td><td>0.549</td><td>−0.025</td><td>−0.046 to +0.006</td><td>446</td></tr><tr><th scope="row">Adjectives: valence</th><td>All national textbooks</td><td>0.604</td><td>0.597</td><td>+0.008</td><td>−0.006 to +0.017</td><td>3,157</td></tr><tr><th scope="row">Adjectives: valence</th><td>East Asia &amp; Pacific</td><td>0.581</td><td>0.575</td><td>+0.006</td><td>−0.012 to +0.022</td><td>329</td></tr><tr><th scope="row">Adjectives: valence</th><td>Europe &amp; Central Asia</td><td>0.618</td><td>0.612</td><td>+0.005</td><td>−0.023 to +0.029</td><td>135</td></tr><tr><th scope="row">Adjectives: valence</th><td>Latin America &amp; Caribbean</td><td>0.649</td><td>0.592</td><td>+0.058</td><td>+0.014 to +0.102</td><td>134</td></tr><tr><th scope="row">Adjectives: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.600</td><td>0.606</td><td>−0.005</td><td>−0.031 to +0.028</td><td>326</td></tr><tr><th scope="row">Adjectives: valence</th><td>North America</td><td>0.633</td><td>0.611</td><td>+0.022</td><td>+0.017 to +0.099</td><td>486</td></tr><tr><th scope="row">Adjectives: valence</th><td>South Asia</td><td>0.602</td><td>0.598</td><td>+0.004</td><td>−0.035 to +0.018</td><td>1,138</td></tr><tr><th scope="row">Adjectives: valence</th><td>Sub-Saharan Africa</td><td>0.610</td><td>0.589</td><td>+0.020</td><td>+0.005 to +0.043</td><td>609</td></tr><tr><th scope="row">Adjectives: valence</th><td>High income</td><td>0.610</td><td>0.598</td><td>+0.012</td><td>−0.010 to +0.035</td><td>817</td></tr><tr><th scope="row">Adjectives: valence</th><td>Low income</td><td>0.593</td><td>0.588</td><td>+0.005</td><td>−0.011 to +0.018</td><td>407</td></tr><tr><th scope="row">Adjectives: valence</th><td>Lower middle income</td><td>0.601</td><td>0.594</td><td>+0.007</td><td>−0.018 to +0.022</td><td>1,487</td></tr><tr><th scope="row">Adjectives: valence</th><td>Upper middle income</td><td>0.623</td><td>0.619</td><td>+0.005</td><td>−0.015 to +0.035</td><td>446</td></tr><tr><th scope="row">Adjectives: arousal</th><td>All national textbooks</td><td>0.483</td><td>0.474</td><td>+0.009</td><td>0.000 to +0.015</td><td>3,157</td></tr><tr><th scope="row">Adjectives: arousal</th><td>East Asia &amp; Pacific</td><td>0.475</td><td>0.481</td><td>−0.006</td><td>−0.020 to +0.009</td><td>329</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Europe &amp; Central Asia</td><td>0.489</td><td>0.495</td><td>−0.006</td><td>−0.027 to +0.007</td><td>135</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Latin America &amp; Caribbean</td><td>0.494</td><td>0.489</td><td>+0.005</td><td>−0.008 to +0.037</td><td>134</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.474</td><td>0.478</td><td>−0.005</td><td>−0.018 to +0.005</td><td>326</td></tr><tr><th scope="row">Adjectives: arousal</th><td>North America</td><td>0.481</td><td>0.486</td><td>−0.005</td><td>−0.010 to +0.057</td><td>486</td></tr><tr><th scope="row">Adjectives: arousal</th><td>South Asia</td><td>0.482</td><td>0.466</td><td>+0.016</td><td>+0.011 to +0.028</td><td>1,138</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Sub-Saharan Africa</td><td>0.496</td><td>0.473</td><td>+0.023</td><td>−0.003 to +0.046</td><td>609</td></tr><tr><th scope="row">Adjectives: arousal</th><td>High income</td><td>0.481</td><td>0.493</td><td>−0.012</td><td>−0.025 to +0.005</td><td>817</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Low income</td><td>0.489</td><td>0.475</td><td>+0.015</td><td>−0.012 to +0.034</td><td>407</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Lower middle income</td><td>0.481</td><td>0.469</td><td>+0.012</td><td>−0.003 to +0.019</td><td>1,487</td></tr><tr><th scope="row">Adjectives: arousal</th><td>Upper middle income</td><td>0.489</td><td>0.485</td><td>+0.004</td><td>−0.010 to +0.013</td><td>446</td></tr><tr><th scope="row">Verbs: dominance</th><td>All national textbooks</td><td>0.525</td><td>0.536</td><td>−0.011</td><td>−0.014 to −0.005</td><td>3,157</td></tr><tr><th scope="row">Verbs: dominance</th><td>East Asia &amp; Pacific</td><td>0.517</td><td>0.522</td><td>−0.005</td><td>−0.013 to +0.002</td><td>329</td></tr><tr><th scope="row">Verbs: dominance</th><td>Europe &amp; Central Asia</td><td>0.526</td><td>0.531</td><td>−0.005</td><td>−0.010 to +0.004</td><td>135</td></tr><tr><th scope="row">Verbs: dominance</th><td>Latin America &amp; Caribbean</td><td>0.519</td><td>0.521</td><td>−0.002</td><td>−0.015 to +0.009</td><td>134</td></tr><tr><th scope="row">Verbs: dominance</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.523</td><td>0.532</td><td>−0.009</td><td>−0.014 to −0.001</td><td>326</td></tr><tr><th scope="row">Verbs: dominance</th><td>North America</td><td>0.527</td><td>0.527</td><td>−0.001</td><td>−0.001 to +0.017</td><td>486</td></tr><tr><th scope="row">Verbs: dominance</th><td>South Asia</td><td>0.526</td><td>0.543</td><td>−0.017</td><td>−0.022 to −0.016</td><td>1,138</td></tr><tr><th scope="row">Verbs: dominance</th><td>Sub-Saharan Africa</td><td>0.528</td><td>0.538</td><td>−0.010</td><td>−0.014 to −0.004</td><td>609</td></tr><tr><th scope="row">Verbs: dominance</th><td>High income</td><td>0.523</td><td>0.527</td><td>−0.004</td><td>−0.011 to −0.001</td><td>817</td></tr><tr><th scope="row">Verbs: dominance</th><td>Low income</td><td>0.525</td><td>0.536</td><td>−0.011</td><td>−0.015 to −0.003</td><td>407</td></tr><tr><th scope="row">Verbs: dominance</th><td>Lower middle income</td><td>0.525</td><td>0.538</td><td>−0.013</td><td>−0.015 to −0.004</td><td>1,487</td></tr><tr><th scope="row">Verbs: dominance</th><td>Upper middle income</td><td>0.526</td><td>0.534</td><td>−0.008</td><td>−0.016 to +0.002</td><td>446</td></tr><tr><th scope="row">Verbs: valence</th><td>All national textbooks</td><td>0.633</td><td>0.621</td><td>+0.012</td><td>+0.009 to +0.015</td><td>3,157</td></tr><tr><th scope="row">Verbs: valence</th><td>East Asia &amp; Pacific</td><td>0.623</td><td>0.611</td><td>+0.013</td><td>+0.004 to +0.021</td><td>329</td></tr><tr><th scope="row">Verbs: valence</th><td>Europe &amp; Central Asia</td><td>0.648</td><td>0.640</td><td>+0.009</td><td>+0.002 to +0.017</td><td>135</td></tr><tr><th scope="row">Verbs: valence</th><td>Latin America &amp; Caribbean</td><td>0.640</td><td>0.624</td><td>+0.016</td><td>−0.004 to +0.031</td><td>134</td></tr><tr><th scope="row">Verbs: valence</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.641</td><td>0.624</td><td>+0.016</td><td>+0.011 to +0.021</td><td>326</td></tr><tr><th scope="row">Verbs: valence</th><td>North America</td><td>0.639</td><td>0.623</td><td>+0.017</td><td>+0.015 to +0.047</td><td>486</td></tr><tr><th scope="row">Verbs: valence</th><td>South Asia</td><td>0.627</td><td>0.621</td><td>+0.006</td><td>−0.002 to +0.009</td><td>1,138</td></tr><tr><th scope="row">Verbs: valence</th><td>Sub-Saharan Africa</td><td>0.635</td><td>0.621</td><td>+0.014</td><td>+0.009 to +0.019</td><td>609</td></tr><tr><th scope="row">Verbs: valence</th><td>High income</td><td>0.639</td><td>0.625</td><td>+0.013</td><td>+0.005 to +0.019</td><td>817</td></tr><tr><th scope="row">Verbs: valence</th><td>Low income</td><td>0.635</td><td>0.619</td><td>+0.016</td><td>+0.009 to +0.022</td><td>407</td></tr><tr><th scope="row">Verbs: valence</th><td>Lower middle income</td><td>0.629</td><td>0.619</td><td>+0.010</td><td>+0.007 to +0.016</td><td>1,487</td></tr><tr><th scope="row">Verbs: valence</th><td>Upper middle income</td><td>0.639</td><td>0.632</td><td>+0.007</td><td>+0.002 to +0.014</td><td>446</td></tr><tr><th scope="row">Verbs: arousal</th><td>All national textbooks</td><td>0.475</td><td>0.484</td><td>−0.009</td><td>−0.012 to −0.005</td><td>3,157</td></tr><tr><th scope="row">Verbs: arousal</th><td>East Asia &amp; Pacific</td><td>0.473</td><td>0.474</td><td>−0.001</td><td>−0.017 to +0.005</td><td>329</td></tr><tr><th scope="row">Verbs: arousal</th><td>Europe &amp; Central Asia</td><td>0.471</td><td>0.482</td><td>−0.011</td><td>−0.015 to −0.006</td><td>135</td></tr><tr><th scope="row">Verbs: arousal</th><td>Latin America &amp; Caribbean</td><td>0.486</td><td>0.494</td><td>−0.008</td><td>−0.020 to −0.001</td><td>134</td></tr><tr><th scope="row">Verbs: arousal</th><td>Middle East, North Africa, Afghanistan &amp; Pakistan</td><td>0.472</td><td>0.482</td><td>−0.010</td><td>−0.015 to −0.005</td><td>326</td></tr><tr><th scope="row">Verbs: arousal</th><td>North America</td><td>0.477</td><td>0.486</td><td>−0.009</td><td>−0.009 to −0.005</td><td>486</td></tr><tr><th scope="row">Verbs: arousal</th><td>South Asia</td><td>0.473</td><td>0.486</td><td>−0.013</td><td>−0.016 to −0.006</td><td>1,138</td></tr><tr><th scope="row">Verbs: arousal</th><td>Sub-Saharan Africa</td><td>0.484</td><td>0.489</td><td>−0.005</td><td>−0.009 to −0.001</td><td>609</td></tr><tr><th scope="row">Verbs: arousal</th><td>High income</td><td>0.474</td><td>0.486</td><td>−0.011</td><td>−0.017 to −0.009</td><td>817</td></tr><tr><th scope="row">Verbs: arousal</th><td>Low income</td><td>0.481</td><td>0.488</td><td>−0.008</td><td>−0.015 to −0.003</td><td>407</td></tr><tr><th scope="row">Verbs: arousal</th><td>Lower middle income</td><td>0.473</td><td>0.483</td><td>−0.009</td><td>−0.013 to 0.000</td><td>1,487</td></tr><tr><th scope="row">Verbs: arousal</th><td>Upper middle income</td><td>0.477</td><td>0.485</td><td>−0.008</td><td>−0.013 to −0.003</td><td>446</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/descriptors.html">Embed this chart<span class="vh"> (how women and men are described)</span></a></p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs">The jobs they are shown in</h2><p class="lede">Women are 28.9% of the people the books show in a job (95% interval 25.8–34.8). Among the jobs that can be matched to labour-market data, women are 28.7% of the people shown, against 37.6% of the same jobs in the labour market (ILOSTAT): a gap of −8.8 points (95% interval −12.4 to −6.6). Women are also shown in more female-typed jobs than men: in the labour market, the jobs women are shown in are 5.0 points more female than the jobs men are shown in (95% interval +3.2 to +5.9).</p><div class="chartbox"><svg class="chart" id="tg-jobs" viewBox="0 0 560 458" role="img" aria-labelledby="tg-jobs-t tg-jobs-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-jobs-t">Women&#x27;s share of the people shown in a job, and of the same jobs in the labour market</title>
 <desc id="tg-jobs-d">All national textbooks: women 28.7% of the people shown in a job; 37.6% of the same jobs in the labour market; gap −8.8 (95% interval −12.4 to −6.6); East Asia &amp; Pacific: women 33.2% of the people shown in a job; 44.8% of the same jobs in the labour market; gap −11.7 (95% interval −18.6 to −5.1); Europe &amp; Central Asia: women 34.3% of the people shown in a job; 48.8% of the same jobs in the labour market; gap −14.6 (95% interval −24.4 to −4.3); Latin America &amp; Caribbean: women 40.4% of the people shown in a job; 52.8% of the same jobs in the labour market; gap −12.4 (95% interval −15.7 to −8.2); Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.4% of the people shown in a job; 33.2% of the same jobs in the labour market; gap −5.8 (95% interval −10.1 to +0.9); North America: women 39.3% of the people shown in a job; 47.6% of the same jobs in the labour market; gap −8.3 (95% interval −17.4 to −7.8); South Asia: women 23.5% of the people shown in a job; 31.0% of the same jobs in the labour market; gap −7.5 (95% interval −17.9 to −1.5); Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.1% of the same jobs in the labour market; gap −9.9 (95% interval −15.8 to −2.0); High income: women 38.3% of the people shown in a job; 47.9% of the same jobs in the labour market; gap −9.6 (95% interval −13.9 to −7.9); Low income: women 30.7% of the people shown in a job; 39.3% of the same jobs in the labour market; gap −8.6 (95% interval −15.8 to +4.6); Lower middle income: women 25.0% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.5 (95% interval −10.5 to −4.5); Upper middle income: women 33.7% of the people shown in a job; 48.1% of the same jobs in the labour market; gap −14.3 (95% interval −22.7 to −4.7)</desc>
-<text class="axis" x="6.0" y="14" text-anchor="start">20%</text>
-<text class="axis" x="143.0" y="14" text-anchor="middle">30%</text>
-<text class="axis" x="280.0" y="14" text-anchor="middle">40%</text>
-<text class="axis" x="417.0" y="14" text-anchor="middle">50%</text>
-<text class="axis plab" x="434.0" y="14">parity</text>
-<text class="axis" x="554.0" y="14" text-anchor="end">60%</text>
+<text class="axis" x="6.0" y="32" text-anchor="start">20%</text>
+<text class="axis" x="143.0" y="32" text-anchor="middle">30%</text>
+<text class="axis" x="280.0" y="32" text-anchor="middle">40%</text>
+<text class="axis" x="417.0" y="32" text-anchor="middle">50%</text>
+<text class="axis" x="554.0" y="32" text-anchor="end">60%</text>
+<text class="dl dl-m" x="409.0" y="14" text-anchor="end">More men</text>
+<text class="dl dl-f" x="425.0" y="14">More women</text>
 <g class="row"><title>All national textbooks: women 28.7% of the people shown in a job; 37.6% of the same jobs in the labour market; gap −8.8 (95% interval −12.4 to −6.6)</title>
-<text class="lab" x="0" y="38">All national textbooks</text>
-<line class="grid" x1="6.0" y1="44.0" x2="6.0" y2="54.0"/>
-<line class="grid" x1="143.0" y1="44.0" x2="143.0" y2="54.0"/>
-<line class="grid" x1="280.0" y1="44.0" x2="280.0" y2="54.0"/>
-<line class="grid" x1="554.0" y1="44.0" x2="554.0" y2="54.0"/>
-<line class="halo" x1="417.0" y1="43.0" x2="417.0" y2="55.0"/>
-<line class="par" x1="417.0" y1="43.0" x2="417.0" y2="55.0"/>
-<line class="ci" x1="125.8" y1="49" x2="246.5" y2="49"/>
-<rect class="sq" x="242.0" y="44.5" width="9" height="9"/>
-<circle class="pt" cx="125.8" cy="49" r="4.5"/>
+<text class="lab" x="0" y="56">All national textbooks</text>
+<rect class="half-m" x="6" y="61" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="61" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="62.0" x2="6.0" y2="72.0"/>
+<line class="grid" x1="143.0" y1="62.0" x2="143.0" y2="72.0"/>
+<line class="grid" x1="280.0" y1="62.0" x2="280.0" y2="72.0"/>
+<line class="grid" x1="554.0" y1="62.0" x2="554.0" y2="72.0"/>
+<line class="ci" x1="125.8" y1="67" x2="246.5" y2="67"/>
+<rect class="sq" x="242.0" y="62.5" width="9" height="9"/>
+<circle class="pt" cx="125.8" cy="67" r="4.5"/>
 </g>
 <g class="row"><title>East Asia &amp; Pacific: women 33.2% of the people shown in a job; 44.8% of the same jobs in the labour market; gap −11.7 (95% interval −18.6 to −5.1)</title>
-<text class="lab" x="0" y="72">East Asia &amp; Pacific</text>
-<line class="grid" x1="6.0" y1="78.0" x2="6.0" y2="88.0"/>
-<line class="grid" x1="143.0" y1="78.0" x2="143.0" y2="88.0"/>
-<line class="grid" x1="280.0" y1="78.0" x2="280.0" y2="88.0"/>
-<line class="grid" x1="554.0" y1="78.0" x2="554.0" y2="88.0"/>
-<line class="halo" x1="417.0" y1="77.0" x2="417.0" y2="89.0"/>
-<line class="par" x1="417.0" y1="77.0" x2="417.0" y2="89.0"/>
-<line class="ci" x1="186.3" y1="83" x2="346.4" y2="83"/>
-<rect class="sq" x="341.9" y="78.5" width="9" height="9"/>
-<circle class="pt" cx="186.3" cy="83" r="4.5"/>
+<text class="lab" x="0" y="90">East Asia &amp; Pacific</text>
+<rect class="half-m" x="6" y="95" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="95" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="96.0" x2="6.0" y2="106.0"/>
+<line class="grid" x1="143.0" y1="96.0" x2="143.0" y2="106.0"/>
+<line class="grid" x1="280.0" y1="96.0" x2="280.0" y2="106.0"/>
+<line class="grid" x1="554.0" y1="96.0" x2="554.0" y2="106.0"/>
+<line class="ci" x1="186.3" y1="101" x2="346.4" y2="101"/>
+<rect class="sq" x="341.9" y="96.5" width="9" height="9"/>
+<circle class="pt" cx="186.3" cy="101" r="4.5"/>
 </g>
 <g class="row"><title>Europe &amp; Central Asia: women 34.3% of the people shown in a job; 48.8% of the same jobs in the labour market; gap −14.6 (95% interval −24.4 to −4.3)</title>
-<text class="lab" x="0" y="106">Europe &amp; Central Asia</text>
-<line class="grid" x1="6.0" y1="112.0" x2="6.0" y2="122.0"/>
-<line class="grid" x1="143.0" y1="112.0" x2="143.0" y2="122.0"/>
-<line class="grid" x1="280.0" y1="112.0" x2="280.0" y2="122.0"/>
-<line class="grid" x1="554.0" y1="112.0" x2="554.0" y2="122.0"/>
-<line class="halo" x1="417.0" y1="111.0" x2="417.0" y2="123.0"/>
-<line class="par" x1="417.0" y1="111.0" x2="417.0" y2="123.0"/>
-<line class="ci" x1="201.2" y1="117" x2="401.0" y2="117"/>
-<rect class="sq" x="396.5" y="112.5" width="9" height="9"/>
-<circle class="pt" cx="201.2" cy="117" r="4.5"/>
+<text class="lab" x="0" y="124">Europe &amp; Central Asia</text>
+<rect class="half-m" x="6" y="129" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="129" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="130.0" x2="6.0" y2="140.0"/>
+<line class="grid" x1="143.0" y1="130.0" x2="143.0" y2="140.0"/>
+<line class="grid" x1="280.0" y1="130.0" x2="280.0" y2="140.0"/>
+<line class="grid" x1="554.0" y1="130.0" x2="554.0" y2="140.0"/>
+<line class="ci" x1="201.2" y1="135" x2="401.0" y2="135"/>
+<rect class="sq" x="396.5" y="130.5" width="9" height="9"/>
+<circle class="pt" cx="201.2" cy="135" r="4.5"/>
 </g>
 <g class="row"><title>Latin America &amp; Caribbean: women 40.4% of the people shown in a job; 52.8% of the same jobs in the labour market; gap −12.4 (95% interval −15.7 to −8.2)</title>
-<text class="lab" x="0" y="140">Latin America &amp; Caribbean</text>
-<line class="grid" x1="6.0" y1="146.0" x2="6.0" y2="156.0"/>
-<line class="grid" x1="143.0" y1="146.0" x2="143.0" y2="156.0"/>
-<line class="grid" x1="280.0" y1="146.0" x2="280.0" y2="156.0"/>
-<line class="grid" x1="554.0" y1="146.0" x2="554.0" y2="156.0"/>
-<line class="halo" x1="417.0" y1="145.0" x2="417.0" y2="157.0"/>
-<line class="par" x1="417.0" y1="145.0" x2="417.0" y2="157.0"/>
-<line class="ci" x1="286.0" y1="151" x2="455.5" y2="151"/>
-<rect class="sq" x="451.0" y="146.5" width="9" height="9"/>
-<circle class="pt" cx="286.0" cy="151" r="4.5"/>
+<text class="lab" x="0" y="158">Latin America &amp; Caribbean</text>
+<rect class="half-m" x="6" y="163" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="163" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="164.0" x2="6.0" y2="174.0"/>
+<line class="grid" x1="143.0" y1="164.0" x2="143.0" y2="174.0"/>
+<line class="grid" x1="280.0" y1="164.0" x2="280.0" y2="174.0"/>
+<line class="grid" x1="554.0" y1="164.0" x2="554.0" y2="174.0"/>
+<line class="ci" x1="286.0" y1="169" x2="455.5" y2="169"/>
+<rect class="sq" x="451.0" y="164.5" width="9" height="9"/>
+<circle class="pt" cx="286.0" cy="169" r="4.5"/>
 </g>
 <g class="row"><title>Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.4% of the people shown in a job; 33.2% of the same jobs in the labour market; gap −5.8 (95% interval −10.1 to +0.9)</title>
-<text class="lab" x="0" y="174">Middle East, North Africa, Afghanistan &amp; Pakistan</text>
-<line class="grid" x1="6.0" y1="180.0" x2="6.0" y2="190.0"/>
-<line class="grid" x1="143.0" y1="180.0" x2="143.0" y2="190.0"/>
-<line class="grid" x1="280.0" y1="180.0" x2="280.0" y2="190.0"/>
-<line class="grid" x1="554.0" y1="180.0" x2="554.0" y2="190.0"/>
-<line class="halo" x1="417.0" y1="179.0" x2="417.0" y2="191.0"/>
-<line class="par" x1="417.0" y1="179.0" x2="417.0" y2="191.0"/>
-<line class="ci" x1="107.3" y1="185" x2="186.7" y2="185"/>
-<rect class="sq" x="182.2" y="180.5" width="9" height="9"/>
-<circle class="pt" cx="107.3" cy="185" r="4.5"/>
+<text class="lab" x="0" y="192">Middle East, North Africa, Afghanistan &amp; Pakistan</text>
+<rect class="half-m" x="6" y="197" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="197" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="198.0" x2="6.0" y2="208.0"/>
+<line class="grid" x1="143.0" y1="198.0" x2="143.0" y2="208.0"/>
+<line class="grid" x1="280.0" y1="198.0" x2="280.0" y2="208.0"/>
+<line class="grid" x1="554.0" y1="198.0" x2="554.0" y2="208.0"/>
+<line class="ci" x1="107.3" y1="203" x2="186.7" y2="203"/>
+<rect class="sq" x="182.2" y="198.5" width="9" height="9"/>
+<circle class="pt" cx="107.3" cy="203" r="4.5"/>
 </g>
 <g class="row"><title>North America: women 39.3% of the people shown in a job; 47.6% of the same jobs in the labour market; gap −8.3 (95% interval −17.4 to −7.8)</title>
-<text class="lab" x="0" y="208">North America</text>
-<line class="grid" x1="6.0" y1="214.0" x2="6.0" y2="224.0"/>
-<line class="grid" x1="143.0" y1="214.0" x2="143.0" y2="224.0"/>
-<line class="grid" x1="280.0" y1="214.0" x2="280.0" y2="224.0"/>
-<line class="grid" x1="554.0" y1="214.0" x2="554.0" y2="224.0"/>
-<line class="halo" x1="417.0" y1="213.0" x2="417.0" y2="225.0"/>
-<line class="par" x1="417.0" y1="213.0" x2="417.0" y2="225.0"/>
-<line class="ci" x1="271.0" y1="219" x2="384.4" y2="219"/>
-<rect class="sq" x="379.9" y="214.5" width="9" height="9"/>
-<circle class="pt" cx="271.0" cy="219" r="4.5"/>
+<text class="lab" x="0" y="226">North America</text>
+<rect class="half-m" x="6" y="231" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="231" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="232.0" x2="6.0" y2="242.0"/>
+<line class="grid" x1="143.0" y1="232.0" x2="143.0" y2="242.0"/>
+<line class="grid" x1="280.0" y1="232.0" x2="280.0" y2="242.0"/>
+<line class="grid" x1="554.0" y1="232.0" x2="554.0" y2="242.0"/>
+<line class="ci" x1="271.0" y1="237" x2="384.4" y2="237"/>
+<rect class="sq" x="379.9" y="232.5" width="9" height="9"/>
+<circle class="pt" cx="271.0" cy="237" r="4.5"/>
 </g>
 <g class="row"><title>South Asia: women 23.5% of the people shown in a job; 31.0% of the same jobs in the labour market; gap −7.5 (95% interval −17.9 to −1.5)</title>
-<text class="lab" x="0" y="242">South Asia</text>
-<line class="grid" x1="6.0" y1="248.0" x2="6.0" y2="258.0"/>
-<line class="grid" x1="143.0" y1="248.0" x2="143.0" y2="258.0"/>
-<line class="grid" x1="280.0" y1="248.0" x2="280.0" y2="258.0"/>
-<line class="grid" x1="554.0" y1="248.0" x2="554.0" y2="258.0"/>
-<line class="halo" x1="417.0" y1="247.0" x2="417.0" y2="259.0"/>
-<line class="par" x1="417.0" y1="247.0" x2="417.0" y2="259.0"/>
-<line class="ci" x1="53.8" y1="253" x2="156.4" y2="253"/>
-<rect class="sq" x="151.9" y="248.5" width="9" height="9"/>
-<circle class="pt" cx="53.8" cy="253" r="4.5"/>
+<text class="lab" x="0" y="260">South Asia</text>
+<rect class="half-m" x="6" y="265" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="265" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="266.0" x2="6.0" y2="276.0"/>
+<line class="grid" x1="143.0" y1="266.0" x2="143.0" y2="276.0"/>
+<line class="grid" x1="280.0" y1="266.0" x2="280.0" y2="276.0"/>
+<line class="grid" x1="554.0" y1="266.0" x2="554.0" y2="276.0"/>
+<line class="ci" x1="53.8" y1="271" x2="156.4" y2="271"/>
+<rect class="sq" x="151.9" y="266.5" width="9" height="9"/>
+<circle class="pt" cx="53.8" cy="271" r="4.5"/>
 </g>
 <g class="row"><title>Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.1% of the same jobs in the labour market; gap −9.9 (95% interval −15.8 to −2.0)</title>
-<text class="lab" x="0" y="276">Sub-Saharan Africa</text>
-<line class="grid" x1="6.0" y1="282.0" x2="6.0" y2="292.0"/>
-<line class="grid" x1="143.0" y1="282.0" x2="143.0" y2="292.0"/>
-<line class="grid" x1="280.0" y1="282.0" x2="280.0" y2="292.0"/>
-<line class="grid" x1="554.0" y1="282.0" x2="554.0" y2="292.0"/>
-<line class="halo" x1="417.0" y1="281.0" x2="417.0" y2="293.0"/>
-<line class="par" x1="417.0" y1="281.0" x2="417.0" y2="293.0"/>
-<line class="ci" x1="173.0" y1="287" x2="308.6" y2="287"/>
-<rect class="sq" x="304.1" y="282.5" width="9" height="9"/>
-<circle class="pt" cx="173.0" cy="287" r="4.5"/>
+<text class="lab" x="0" y="294">Sub-Saharan Africa</text>
+<rect class="half-m" x="6" y="299" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="299" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="300.0" x2="6.0" y2="310.0"/>
+<line class="grid" x1="143.0" y1="300.0" x2="143.0" y2="310.0"/>
+<line class="grid" x1="280.0" y1="300.0" x2="280.0" y2="310.0"/>
+<line class="grid" x1="554.0" y1="300.0" x2="554.0" y2="310.0"/>
+<line class="ci" x1="173.0" y1="305" x2="308.6" y2="305"/>
+<rect class="sq" x="304.1" y="300.5" width="9" height="9"/>
+<circle class="pt" cx="173.0" cy="305" r="4.5"/>
 </g>
 <g class="row"><title>High income: women 38.3% of the people shown in a job; 47.9% of the same jobs in the labour market; gap −9.6 (95% interval −13.9 to −7.9)</title>
-<text class="lab" x="0" y="310">High income</text>
-<line class="grid" x1="6.0" y1="316.0" x2="6.0" y2="326.0"/>
-<line class="grid" x1="143.0" y1="316.0" x2="143.0" y2="326.0"/>
-<line class="grid" x1="280.0" y1="316.0" x2="280.0" y2="326.0"/>
-<line class="grid" x1="554.0" y1="316.0" x2="554.0" y2="326.0"/>
-<line class="halo" x1="417.0" y1="315.0" x2="417.0" y2="327.0"/>
-<line class="par" x1="417.0" y1="315.0" x2="417.0" y2="327.0"/>
-<line class="ci" x1="257.2" y1="321" x2="388.4" y2="321"/>
-<rect class="sq" x="383.9" y="316.5" width="9" height="9"/>
-<circle class="pt" cx="257.2" cy="321" r="4.5"/>
+<text class="lab" x="0" y="328">High income</text>
+<rect class="half-m" x="6" y="333" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="333" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="334.0" x2="6.0" y2="344.0"/>
+<line class="grid" x1="143.0" y1="334.0" x2="143.0" y2="344.0"/>
+<line class="grid" x1="280.0" y1="334.0" x2="280.0" y2="344.0"/>
+<line class="grid" x1="554.0" y1="334.0" x2="554.0" y2="344.0"/>
+<line class="ci" x1="257.2" y1="339" x2="388.4" y2="339"/>
+<rect class="sq" x="383.9" y="334.5" width="9" height="9"/>
+<circle class="pt" cx="257.2" cy="339" r="4.5"/>
 </g>
 <g class="row"><title>Low income: women 30.7% of the people shown in a job; 39.3% of the same jobs in the labour market; gap −8.6 (95% interval −15.8 to +4.6)</title>
-<text class="lab" x="0" y="344">Low income</text>
-<line class="grid" x1="6.0" y1="350.0" x2="6.0" y2="360.0"/>
-<line class="grid" x1="143.0" y1="350.0" x2="143.0" y2="360.0"/>
-<line class="grid" x1="280.0" y1="350.0" x2="280.0" y2="360.0"/>
-<line class="grid" x1="554.0" y1="350.0" x2="554.0" y2="360.0"/>
-<line class="halo" x1="417.0" y1="349.0" x2="417.0" y2="361.0"/>
-<line class="par" x1="417.0" y1="349.0" x2="417.0" y2="361.0"/>
-<line class="ci" x1="152.7" y1="355" x2="269.8" y2="355"/>
-<rect class="sq" x="265.3" y="350.5" width="9" height="9"/>
-<circle class="pt" cx="152.7" cy="355" r="4.5"/>
+<text class="lab" x="0" y="362">Low income</text>
+<rect class="half-m" x="6" y="367" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="367" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="368.0" x2="6.0" y2="378.0"/>
+<line class="grid" x1="143.0" y1="368.0" x2="143.0" y2="378.0"/>
+<line class="grid" x1="280.0" y1="368.0" x2="280.0" y2="378.0"/>
+<line class="grid" x1="554.0" y1="368.0" x2="554.0" y2="378.0"/>
+<line class="ci" x1="152.7" y1="373" x2="269.8" y2="373"/>
+<rect class="sq" x="265.3" y="368.5" width="9" height="9"/>
+<circle class="pt" cx="152.7" cy="373" r="4.5"/>
 </g>
 <g class="row"><title>Lower middle income: women 25.0% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.5 (95% interval −10.5 to −4.5)</title>
-<text class="lab" x="0" y="378">Lower middle income</text>
-<line class="grid" x1="6.0" y1="384.0" x2="6.0" y2="394.0"/>
-<line class="grid" x1="143.0" y1="384.0" x2="143.0" y2="394.0"/>
-<line class="grid" x1="280.0" y1="384.0" x2="280.0" y2="394.0"/>
-<line class="grid" x1="554.0" y1="384.0" x2="554.0" y2="394.0"/>
-<line class="halo" x1="417.0" y1="383.0" x2="417.0" y2="395.0"/>
-<line class="par" x1="417.0" y1="383.0" x2="417.0" y2="395.0"/>
-<line class="ci" x1="75.2" y1="389" x2="177.4" y2="389"/>
-<rect class="sq" x="172.9" y="384.5" width="9" height="9"/>
-<circle class="pt" cx="75.2" cy="389" r="4.5"/>
+<text class="lab" x="0" y="396">Lower middle income</text>
+<rect class="half-m" x="6" y="401" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="401" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="402.0" x2="6.0" y2="412.0"/>
+<line class="grid" x1="143.0" y1="402.0" x2="143.0" y2="412.0"/>
+<line class="grid" x1="280.0" y1="402.0" x2="280.0" y2="412.0"/>
+<line class="grid" x1="554.0" y1="402.0" x2="554.0" y2="412.0"/>
+<line class="ci" x1="75.2" y1="407" x2="177.4" y2="407"/>
+<rect class="sq" x="172.9" y="402.5" width="9" height="9"/>
+<circle class="pt" cx="75.2" cy="407" r="4.5"/>
 </g>
 <g class="row"><title>Upper middle income: women 33.7% of the people shown in a job; 48.1% of the same jobs in the labour market; gap −14.3 (95% interval −22.7 to −4.7)</title>
-<text class="lab" x="0" y="412">Upper middle income</text>
-<line class="grid" x1="6.0" y1="418.0" x2="6.0" y2="428.0"/>
-<line class="grid" x1="143.0" y1="418.0" x2="143.0" y2="428.0"/>
-<line class="grid" x1="280.0" y1="418.0" x2="280.0" y2="428.0"/>
-<line class="grid" x1="554.0" y1="418.0" x2="554.0" y2="428.0"/>
-<line class="halo" x1="417.0" y1="417.0" x2="417.0" y2="429.0"/>
-<line class="par" x1="417.0" y1="417.0" x2="417.0" y2="429.0"/>
-<line class="ci" x1="194.2" y1="423" x2="390.6" y2="423"/>
-<rect class="sq" x="386.1" y="418.5" width="9" height="9"/>
-<circle class="pt" cx="194.2" cy="423" r="4.5"/>
+<text class="lab" x="0" y="430">Upper middle income</text>
+<rect class="half-m" x="6" y="435" width="411.0" height="12"/>
+<rect class="half-f" x="417.0" y="435" width="137.0" height="12"/>
+<line class="grid" x1="6.0" y1="436.0" x2="6.0" y2="446.0"/>
+<line class="grid" x1="143.0" y1="436.0" x2="143.0" y2="446.0"/>
+<line class="grid" x1="280.0" y1="436.0" x2="280.0" y2="446.0"/>
+<line class="grid" x1="554.0" y1="436.0" x2="554.0" y2="446.0"/>
+<line class="ci" x1="194.2" y1="441" x2="390.6" y2="441"/>
+<rect class="sq" x="386.1" y="436.5" width="9" height="9"/>
+<circle class="pt" cx="194.2" cy="441" r="4.5"/>
 </g>
-<text class="dl dl-f" x="115.8" y="53" text-anchor="end">In the books</text>
-<text class="dl dl-sq" x="256.5" y="53">Same jobs, labour market</text>
+<text class="dl dl-f" x="115.8" y="71" text-anchor="end">In the books</text>
+<text class="dl dl-sq" x="256.5" y="71">Same jobs, labour market</text>
 </svg></div><details class="dt"><summary>Data table: women in the jobs shown, by group</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by group, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by group</caption><thead><tr><th scope="col">Group</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">All national textbooks</th><td>3,157</td><td>28.7%</td><td>37.6%</td><td>−8.8</td><td>−12.4 to −6.6</td></tr><tr><th scope="row">East Asia &amp; Pacific</th><td>329</td><td>33.2%</td><td>44.8%</td><td>−11.7</td><td>−18.6 to −5.1</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>135</td><td>34.3%</td><td>48.8%</td><td>−14.6</td><td>−24.4 to −4.3</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>134</td><td>40.4%</td><td>52.8%</td><td>−12.4</td><td>−15.7 to −8.2</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>326</td><td>27.4%</td><td>33.2%</td><td>−5.8</td><td>−10.1 to +0.9</td></tr><tr><th scope="row">North America</th><td>486</td><td>39.3%</td><td>47.6%</td><td>−8.3</td><td>−17.4 to −7.8</td></tr><tr><th scope="row">South Asia</th><td>1,138</td><td>23.5%</td><td>31.0%</td><td>−7.5</td><td>−17.9 to −1.5</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>609</td><td>32.2%</td><td>42.1%</td><td>−9.9</td><td>−15.8 to −2.0</td></tr><tr><th scope="row">High income</th><td>817</td><td>38.3%</td><td>47.9%</td><td>−9.6</td><td>−13.9 to −7.9</td></tr><tr><th scope="row">Low income</th><td>407</td><td>30.7%</td><td>39.3%</td><td>−8.6</td><td>−15.8 to +4.6</td></tr><tr><th scope="row">Lower middle income</th><td>1,487</td><td>25.0%</td><td>32.5%</td><td>−7.5</td><td>−10.5 to −4.5</td></tr><tr><th scope="row">Upper middle income</th><td>446</td><td>33.7%</td><td>48.1%</td><td>−14.3</td><td>−22.7 to −4.7</td></tr></tbody></table></div></details><p class="note">Countries with at least 10 national textbooks. The 23 countries whose 95% interval is narrower than 22.0 points (the least difference between two countries the data can detect) come first, lowest gap first; the rest follow alphabetically.</p><details class="dt"><summary>Data table: women in the jobs shown, by country</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by country, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">Papua New Guinea</th><td>14</td><td>0.0%</td><td>50.2%</td><td>−50.2</td><td>−51.3 to −49.1</td></tr><tr><th scope="row">Belarus</th><td>26</td><td>29.6%</td><td>63.5%</td><td>−33.9</td><td>−42.4 to −23.0</td></tr><tr><th scope="row">Sri Lanka</th><td>99</td><td>17.4%</td><td>46.8%</td><td>−29.4</td><td>−35.4 to −22.5</td></tr><tr><th scope="row">South Sudan</th><td>112</td><td>23.3%</td><td>45.4%</td><td>−22.0</td><td>−28.7 to −15.0</td></tr><tr><th scope="row">Rwanda</th><td>121</td><td>26.6%</td><td>44.4%</td><td>−17.8</td><td>−23.5 to −11.0</td></tr><tr><th scope="row">Solomon Islands</th><td>53</td><td>24.4%</td><td>40.1%</td><td>−15.7</td><td>−19.5 to −8.5</td></tr><tr><th scope="row">Greece</th><td>26</td><td>36.6%</td><td>49.9%</td><td>−13.3</td><td>−21.6 to −3.5</td></tr><tr><th scope="row">Kuwait</th><td>34</td><td>31.4%</td><td>44.1%</td><td>−12.6</td><td>−19.4 to −4.9</td></tr><tr><th scope="row">Pakistan</th><td>92</td><td>18.9%</td><td>30.4%</td><td>−11.6</td><td>−16.2 to −6.3</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>24</td><td>37.5%</td><td>48.7%</td><td>−11.2</td><td>−20.5 to −1.1</td></tr><tr><th scope="row">Tajikistan</th><td>10</td><td>21.1%</td><td>31.9%</td><td>−10.8</td><td>−17.3 to +2.8</td></tr><tr><th scope="row">Tunisia</th><td>15</td><td>34.6%</td><td>44.3%</td><td>−9.7</td><td>−20.0 to +1.7</td></tr><tr><th scope="row">West Bank and Gaza</th><td>25</td><td>28.9%</td><td>38.3%</td><td>−9.4</td><td>−17.1 to −1.0</td></tr><tr><th scope="row">United States</th><td>474</td><td>39.9%</td><td>47.7%</td><td>−7.8</td><td>−12.0 to −3.1</td></tr><tr><th scope="row">India</th><td>888</td><td>23.3%</td><td>30.8%</td><td>−7.5</td><td>−9.7 to −5.4</td></tr><tr><th scope="row">Ghana</th><td>119</td><td>39.7%</td><td>46.1%</td><td>−6.3</td><td>−16.8 to +5.1</td></tr><tr><th scope="row">Sudan</th><td>13</td><td>24.8%</td><td>30.0%</td><td>−5.3</td><td>−10.5 to +1.4</td></tr><tr><th scope="row">Bangladesh</th><td>86</td><td>21.2%</td><td>25.3%</td><td>−4.2</td><td>−9.0 to +1.1</td></tr><tr><th scope="row">Samoa</th><td>72</td><td>43.3%</td><td>45.6%</td><td>−2.2</td><td>−10.6 to +3.7</td></tr><tr><th scope="row">Egypt, Arab Rep.</th><td>40</td><td>24.4%</td><td>26.3%</td><td>−2.0</td><td>−9.6 to +8.3</td></tr><tr><th scope="row">Ethiopia</th><td>37</td><td>35.9%</td><td>36.2%</td><td>−0.3</td><td>−8.7 to +7.0</td></tr><tr><th scope="row">Sierra Leone</th><td>39</td><td>36.4%</td><td>33.7%</td><td>+2.8</td><td>−7.3 to +13.8</td></tr><tr><th scope="row">Jordan</th><td>20</td><td>41.8%</td><td>29.7%</td><td>+12.1</td><td>+4.9 to +21.6</td></tr><tr><th scope="row">Australia</th><td>88</td><td>39.8%</td><td>50.1%</td><td>−10.2</td><td>−21.9 to +1.6</td></tr><tr><th scope="row">Azerbaijan</th><td>18</td><td>43.0%</td><td>53.3%</td><td>−10.3</td><td>−21.8 to +0.8</td></tr><tr><th scope="row">Bahrain</th><td>13</td><td>41.7%</td><td>51.2%</td><td>−9.5</td><td>−29.3 to +12.0</td></tr><tr><th scope="row">Bhutan</th><td>19</td><td>42.4%</td><td>34.1%</td><td>+8.3</td><td>−3.8 to +18.9</td></tr><tr><th scope="row">Cambodia</th><td>15</td><td>48.1%</td><td>53.2%</td><td>−5.1</td><td>−17.0 to +7.3</td></tr><tr><th scope="row">Canada</th><td>12</td><td>27.8%</td><td>45.2%</td><td>−17.4</td><td>−38.4 to +16.2</td></tr><tr><th scope="row">Ecuador</th><td>15</td><td>43.5%</td><td>51.2%</td><td>−7.7</td><td>−41.4 to +23.4</td></tr><tr><th scope="row">Guyana</th><td>35</td><td>38.0%</td><td>54.1%</td><td>−16.1</td><td>−25.2 to +1.0</td></tr><tr><th scope="row">Indonesia</th><td>32</td><td>53.6%</td><td>51.5%</td><td>+2.0</td><td>−8.5 to +13.8</td></tr><tr><th scope="row">Kenya</th><td>12</td><td>100.0%</td><td>36.7%</td><td>+63.3</td><td>—</td></tr><tr><th scope="row">Kiribati</th><td>25</td><td>23.5%</td><td>48.8%</td><td>−25.3</td><td>−59.2 to −11.9</td></tr><tr><th scope="row">Maldives</th><td>25</td><td>75.0%</td><td>56.1%</td><td>+18.9</td><td>−20.2 to +50.4</td></tr><tr><th scope="row">Mauritius</th><td>10</td><td>40.0%</td><td>30.2%</td><td>+9.8</td><td>−13.8 to +45.2</td></tr><tr><th scope="row">Nepal</th><td>21</td><td>41.9%</td><td>41.4%</td><td>+0.4</td><td>−19.2 to +22.1</td></tr><tr><th scope="row">Nigeria</th><td>12</td><td>50.0%</td><td>38.0%</td><td>+12.0</td><td>−36.2 to +28.1</td></tr><tr><th scope="row">Oman</th><td>37</td><td>36.7%</td><td>44.2%</td><td>−7.4</td><td>−18.9 to +3.6</td></tr><tr><th scope="row">South Africa</th><td>52</td><td>28.6%</td><td>43.5%</td><td>−14.9</td><td>−24.8 to −2.3</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>53</td><td>33.3%</td><td>46.2%</td><td>−12.8</td><td>−28.1 to +2.8</td></tr><tr><th scope="row">Türkiye</th><td>26</td><td>43.6%</td><td>43.7%</td><td>−0.1</td><td>−10.8 to +12.4</td></tr><tr><th scope="row">Uganda</th><td>37</td><td>36.8%</td><td>35.4%</td><td>+1.4</td><td>−13.2 to +15.5</td></tr><tr><th scope="row">United Kingdom</th><td>21</td><td>48.9%</td><td>39.2%</td><td>+9.7</td><td>−7.6 to +21.4</td></tr><tr><th scope="row">Zimbabwe</th><td>13</td><td>53.4%</td><td>42.8%</td><td>+10.6</td><td>+0.9 to +30.6</td></tr></tbody></table></div></details><p class="embed-link"><a href="embed/jobs.html">Embed this chart<span class="vh"> (the jobs they are shown in)</span></a></p></section><section id="collections" aria-labelledby="h-collections"><h2 id="h-collections">National textbooks and other books</h2><p class="lede">The headline counts national textbooks only. The same measure for teacher guides, readers, programme books, NGO collections and excerpts (sample pages, not whole books), which are not mixed into it.</p><div class="chartbox"><svg class="chart" id="tg-collections" viewBox="0 0 560 383" role="img" aria-labelledby="tg-collections-t tg-collections-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-collections-t">Female share of gendered words by collection</title>
 <desc id="tg-collections-d">National textbooks 34.9%; Teacher guides 40.4%; Readers and supplementary books 40.5%; Programme books 40.6%; Pratham Books 47.9%; The Citizens Foundation 47.0%; Luminos Fund 47.2%; African Storybook 32.7%; Excerpts (sample pages, not whole books) 24.8%</desc>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Can children read their textbooks?: Gender in School Textbooks</title>
+<style>
+:root{
+  color-scheme:light;
+  --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
+  --rule:#D5DEE0; --rule-soft:#E8EEEF;
+  --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f-text:#007590; --m-text:#946000;
+  --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
+  --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+    --rule:#33454A; --rule-soft:#243337;
+    --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f-text:#3DB8D3; --m-text:#D98F2E;
+    --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
+  --rule:#33454A; --rule-soft:#243337;
+  --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f-text:#3DB8D3; --m-text:#D98F2E;
+  --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
+}
+*{box-sizing:border-box}
+body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:0;
+  line-height:1.5; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums}
+.tg{background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-variant-numeric:tabular-nums; overflow-x:hidden}
+.tg a{color:var(--accent)}
+.tg :focus-visible{outline:2px solid var(--focus); outline-offset:2px}
+.tg .wrap{max-width:820px; margin:0 auto; padding-inline:16px; padding-block:0 48px}
+.tg .band{background:var(--band); color:var(--band-ink)}
+.tg .bandin{max-width:820px; margin:0 auto; padding:20px 16px 22px}
+.tg .org{font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--band-sub);
+  margin:0 0 10px}
+.tg h1{font-size:clamp(24px,5vw,31px); line-height:1.15; letter-spacing:-.01em; margin:0;
+  color:var(--band-ink)}
+.tg .sub{font-size:15.5px; color:var(--band-sub); margin:8px 0 0; max-width:62ch; line-height:1.55}
+.tg .sub a{color:var(--band-ink)}
+.tg .goldrule{height:4px; background:var(--gold)}
+.tg section{padding-block:28px 26px}
+.tg section + section{border-top:1px solid var(--rule)}
+.tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
+.tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
+.tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
+.tg .note{font-size:13.5px; color:var(--muted); margin-top:12px}
+
+.tg .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:22px 28px;
+  margin:0; padding:0; list-style:none}
+.tg .stat{border-top:3px solid var(--f); padding-top:12px}
+.tg .stat.m{border-top-color:var(--m)}
+.tg .stat.n{border-top-color:var(--brand)}
+.tg .big{display:block; font-size:clamp(36px,8vw,46px); font-weight:700; letter-spacing:-.03em;
+  line-height:1; color:var(--ink)}
+.tg .stat p{font-size:14.5px; margin:8px 0 0}
+
+.tg .chartbox{max-width:680px}
+.tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
+.tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
+.tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
+.tg .chart .axis{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lab{font-weight:700}
+.tg .chart .cnt{font-weight:400; fill:var(--muted)}
+.tg .chart .val{font-weight:700}
+.tg .chart .bf{fill:var(--f)}
+.tg .chart .bm{fill:var(--m)}
+.tg .chart .few rect{opacity:.45}
+.tg .chart .few .lab{font-weight:400}
+.tg .chart .halo{stroke:var(--paper); stroke-width:5.5}
+.tg .chart .par{stroke:var(--gold); stroke-width:2.5}
+@media (max-width:600px){
+  .tg .chart text{font-size:18px}
+  .tg .chart .axis{font-size:15px}
+}
+
+.tg .filters{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px;
+  margin-top:14px}
+.tg .filters .q{grid-column:1 / -1}
+.tg label{display:block; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:5px}
+.tg input, .tg select{width:100%; font:inherit; font-size:14.5px; padding:8px 10px;
+  border:1px solid var(--rule); border-radius:6px; background:var(--card); color:var(--ink)}
+.tg .bar{display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;
+  margin:16px 0 8px}
+.tg .count{font-size:14px; color:var(--ink-2); margin:0}
+.tg .count b{color:var(--ink)}
+.tg button{font:inherit; font-size:13.5px; cursor:pointer}
+.tg .ghost{padding:6px 12px; border:1px solid var(--rule); border-radius:6px; background:var(--card);
+  color:var(--ink-2)}
+.tg .ghost:disabled{opacity:.45; cursor:default}
+.tg .tscroll{overflow-x:auto; border-top:1px solid var(--rule); -webkit-overflow-scrolling:touch}
+.tg table{width:100%; min-width:760px; border-collapse:collapse; font-size:13.5px}
+.tg th{text-align:left; font-size:11px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--muted); font-weight:400; padding:10px 10px 8px 0; border-bottom:1px solid var(--rule);
+  white-space:nowrap}
+.tg th button{background:none; border:0; padding:0; color:inherit; font:inherit;
+  letter-spacing:inherit; text-transform:inherit}
+.tg th button::after{content:" \2195"; opacity:.45}
+.tg th[aria-sort="ascending"] button::after{content:" \2191"; opacity:1}
+.tg th[aria-sort="descending"] button::after{content:" \2193"; opacity:1}
+.tg td{padding:8px 10px 8px 0; border-bottom:1px solid var(--rule-soft); color:var(--ink-2);
+  vertical-align:top}
+.tg .num{text-align:right}
+.tg td.num{color:var(--ink); white-space:nowrap}
+.tg td.t{min-width:220px; max-width:340px; color:var(--ink); overflow-wrap:anywhere}
+.tg .mini{display:inline-block; width:56px; height:8px; background:var(--m); border-radius:2px;
+  position:relative; vertical-align:middle; margin-right:8px; overflow:hidden}
+.tg .mini i{position:absolute; inset:0 auto 0 0; background:var(--f)}
+.tg .mini b{position:absolute; top:0; bottom:0; left:50%; width:1px; background:var(--card)}
+.tg .none{color:var(--muted)}
+.tg .pager{display:flex; gap:10px; align-items:center; justify-content:flex-end; margin-top:12px;
+  font-size:13.5px; color:var(--muted)}
+
+.tg dl{margin:8px 0 0; display:grid; grid-template-columns:max-content 1fr; gap:6px 16px;
+  font-size:14.5px; max-width:68ch}
+.tg dt{font-weight:700; color:var(--ink)}
+.tg dd{margin:0; color:var(--ink-2)}
+@media (max-width:520px){ .tg dl{grid-template-columns:1fr} .tg dd{margin-bottom:6px} }
+.tg .cite{background:var(--card); border-left:3px solid var(--brand); padding:10px 14px;
+  font-size:14px; color:var(--ink-2); max-width:68ch}
+.tg .dl{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; padding:0; list-style:none}
+.tg .dl a{display:inline-block; padding:8px 14px; border:1px solid var(--accent); border-radius:6px;
+  text-decoration:none; font-weight:700; font-size:14px}
+.tg .vh{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0);
+  white-space:nowrap}
+@media (prefers-reduced-motion: reduce){
+  .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+}
+
+.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold)}
+.tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
+.tg .sitename a{color:var(--band-ink);text-decoration:none}
+.tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
+.tg .topnav a{color:var(--band-sub);text-decoration:none;padding:.15rem 0;
+  border-bottom:2px solid transparent}
+.tg .topnav a:hover{color:var(--band-ink)}
+.tg .topnav a[aria-current="page"]{color:var(--band-ink);border-bottom-color:var(--gold)}
+.tg .band :focus-visible{outline-color:var(--gold)}
+.tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
+.tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .chart .ci{stroke:var(--muted);stroke-width:2}
+.tg .chart .pt{fill:var(--f)}
+.tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
+.tg .chart .dot{fill:var(--f);fill-opacity:.85}
+.tg .chart .grid{stroke:var(--rule-soft)}
+.tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
+.tg .chart .sq{fill:var(--ink-2)}
+.tg .chart .sqm{fill:var(--m)}
+.tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
+  stroke-width:3px; stroke-linejoin:round}
+.tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
+.tg .chart .dl-ci{fill:var(--muted)} .tg .chart .dl-sq,.tg .chart .dl-fit{fill:var(--ink-2)}
+.tg .chart .dl-par{fill:var(--muted)}
+.tg .chart .plab{font-weight:700; fill:var(--muted)}
+.tg .chart .ytitle{font-size:11.5px; fill:var(--muted)}
+.tg .chart .lead{stroke:var(--muted); stroke-width:1}
+@media (max-width:600px){ .tg .chart .dl,.tg .chart .ytitle{font-size:15px} }
+.tg .chart.map .dl,.tg .chart.map .axis{font-size:11.5px}
+@media (max-width:600px){ .tg .chart.map .dl,.tg .chart.map .axis{font-size:18px} }
+.tg .chart.map .ct{stroke:var(--paper);stroke-width:.6;stroke-linejoin:round;fill-rule:evenodd}
+.tg .chart.map .f{fill:var(--f)}
+.tg .chart.map .m{fill:var(--m)}
+.tg .chart.map .none{fill:var(--rule)}
+.tg .chart.map .ct[tabindex]{cursor:pointer}
+.tg .chart.map.js .ct:focus{outline:none}
+.tg .chart.map .hl{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;
+  pointer-events:none}
+.tg .chart .hatch-bg{fill:var(--rule)}
+.tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .gs-f{stop-color:var(--f)}
+.tg .chart .gs-m{stop-color:var(--m)}
+.tg .chart .swatch{stroke:var(--rule)}
+.tg .chart .swatch.none{fill:var(--rule)}
+.tg .chart .dl-key{fill:var(--ink-2);font-weight:400}
+.tg .mapread{min-height:1.6em;margin:6px 0 0;font-size:13.5px;color:var(--ink-2)}
+.tg tr.hl th,.tg tr.hl td{background:var(--accent-soft)}
+.tg details.dt{margin:.6rem 0 1.2rem}
+.tg details.dt summary{cursor:pointer;color:var(--muted);font-size:.9rem}
+.tg details.dt table{min-width:0}
+.tg details.dt th{white-space:normal}
+.tg details.dt tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink-2);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top}
+.tg #tg-table td.t{max-width:28ch;white-space:normal;min-width:190px}
+.tg .embed-link{font-size:.85rem;margin:-.4rem 0 1.6rem}
+.tg .embed-link a{color:var(--muted)}
+.tg .wrap.foot{border-top:1px solid var(--rule);margin-top:2.5rem;padding-block:1.2rem}
+.tg.embed .wrap{padding-block:.5rem}
+.tg code.snip{display:block;overflow-x:auto;padding:.4rem .6rem;background:var(--accent-soft);
+  font-size:.82rem}
+.tgtip{position:fixed;z-index:20;max-width:280px;padding:6px 9px;border-radius:4px;
+  background:var(--ink);color:var(--paper);font-size:13px;line-height:1.35;pointer-events:none;
+  box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tg .chart .dot[data-tip]:hover,.tg .chart .dot[data-tip]:focus{fill-opacity:1;stroke:var(--ink);
+  stroke-width:1.5;outline:none}
+.tg .chart g.row[data-tip]:focus{outline:none}
+</style>
+</head>
+<body>
+<div class="tg embed"><main class="wrap">
+<h1 class="vh">Can children read their textbooks?: Gender in School Textbooks</h1>
+<section id="reading" aria-labelledby="h-reading"><h2 id="h-reading">Can children read their textbooks?</h2><p class="lede">How far the textbooks for Grades 1&ndash;6 sit above the text that children are tested on (a Grade 2 story; for South Africa, PIRLS&rsquo;s Grade 4 passages), in the language children are tested in, in 13 countries. A child who cannot read the test text cannot read a harder book, so the share who can read it is a ceiling on the share who can read their textbooks.</p><div class="chartbox"><svg class="chart scatter" id="tg-reading" viewBox="0 0 560 320" role="img" aria-labelledby="tg-reading-t tg-reading-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-reading-t">Children who can read their reading test, and how far their textbooks sit above it</title>
+<desc id="tg-reading-d">One dot per country.</desc>
+<line class="grid" x1="46" y1="274.0" x2="410" y2="274.0"/>
+<text class="axis" x="40" y="278.0" text-anchor="end">−10</text>
+<line class="grid" x1="46" y1="233.7" x2="410" y2="233.7"/>
+<text class="axis" x="40" y="237.7" text-anchor="end">−5</text>
+<line class="par" x1="46" y1="193.3" x2="410" y2="193.3"/>
+<text class="axis" x="40" y="197.3" text-anchor="end">0</text>
+<line class="grid" x1="46" y1="153.0" x2="410" y2="153.0"/>
+<text class="axis" x="40" y="157.0" text-anchor="end">5</text>
+<line class="grid" x1="46" y1="112.7" x2="410" y2="112.7"/>
+<text class="axis" x="40" y="116.7" text-anchor="end">10</text>
+<line class="grid" x1="46" y1="72.3" x2="410" y2="72.3"/>
+<text class="axis" x="40" y="76.3" text-anchor="end">15</text>
+<line class="grid" x1="46" y1="32.0" x2="410" y2="32.0"/>
+<text class="axis" x="40" y="36.0" text-anchor="end">20</text>
+<line class="grid" x1="46.0" y1="32" x2="46.0" y2="274"/>
+<text class="axis" x="46.0" y="292" text-anchor="middle">0%</text>
+<line class="grid" x1="118.8" y1="32" x2="118.8" y2="274"/>
+<text class="axis" x="118.8" y="292" text-anchor="middle">20%</text>
+<line class="grid" x1="191.6" y1="32" x2="191.6" y2="274"/>
+<text class="axis" x="191.6" y="292" text-anchor="middle">40%</text>
+<line class="grid" x1="264.4" y1="32" x2="264.4" y2="274"/>
+<text class="axis" x="264.4" y="292" text-anchor="middle">60%</text>
+<line class="grid" x1="337.2" y1="32" x2="337.2" y2="274"/>
+<text class="axis" x="337.2" y="292" text-anchor="middle">80%</text>
+<line class="grid" x1="410.0" y1="32" x2="410.0" y2="274"/>
+<text class="axis" x="410.0" y="292" text-anchor="middle">100%</text>
+<text class="axis" x="228.0" y="316" text-anchor="middle">Children who can read a Grade 2 text</text>
+<text class="ytitle" x="0" y="12">Textbooks above the Grade 2 text (points more uncommon words)</text>
+<circle class="dot" cx="72.9" cy="131.1" r="5"><title>Uganda (Uwezo): 7.4% can read the Grade 2 text; textbooks 7.7 points above it</title></circle>
+<circle class="dot" cx="81.7" cy="146.9" r="5"><title>Pakistan (ASER): 9.8% can read the Grade 2 text; textbooks 5.8 points above it</title></circle>
+<circle class="dot" cx="84.2" cy="34.4" r="5"><title>India (ASER): 10.5% can read the Grade 2 text; textbooks 19.7 points above it</title></circle>
+<circle class="dot" cx="100.6" cy="180.7" r="5"><title>Tanzania (Uwezo): 15.0% can read the Grade 2 text; textbooks 1.6 points above it</title></circle>
+<circle class="dot" cx="104.6" cy="172.8" r="5"><title>Malawi (MICS6): 16.1% can read the Grade 2 text; textbooks 2.5 points above it</title></circle>
+<circle class="dot" cx="142.1" cy="119.9" r="5"><title>Kiribati (MICS6): 26.4% can read the Grade 2 text; textbooks 9.1 points above it</title></circle>
+<circle class="dot" cx="165.0" cy="112.7" r="5"><title>Bangladesh (Bangla) (MICS6): 32.7% can read the Grade 2 text; textbooks 10.0 points above it</title></circle>
+<circle class="dot" cx="184.3" cy="168.3" r="5"><title>Nigeria (MICS6): 38.0% can read the Grade 2 text; textbooks 3.1 points above it</title></circle>
+<circle class="dot" cx="191.2" cy="262.5" r="5"><title>Kenya (Uwezo): 39.9% can read the Grade 2 text; textbooks −8.6 points above it</title></circle>
+<circle class="dot" cx="222.5" cy="247.2" r="5"><title>South Africa (PIRLS): 48.5% can read the Grade 2 text; textbooks −6.7 points above it</title></circle>
+<circle class="dot" cx="317.5" cy="163.8" r="5"><title>Guyana (MICS6): 74.6% can read the Grade 2 text; textbooks 3.7 points above it</title></circle>
+<text class="dl" x="93.2" y="38.4">India (ASER)</text>
+<text class="dl" x="174.0" y="116.7">Bangladesh (Bangla) (MICS6)</text>
+<text class="dl" x="151.1" y="129.7">Kiribati (MICS6)</text>
+<line class="lead" x1="147.1" y1="119.9" x2="150.1" y2="125.7"/>
+<text class="dl" x="81.9" y="142.7">Uganda (Uwezo)</text>
+<line class="lead" x1="77.9" y1="131.1" x2="80.9" y2="138.7"/>
+<text class="dl" x="90.7" y="155.7">Pakistan (ASER)</text>
+<line class="lead" x1="86.7" y1="146.9" x2="89.7" y2="151.7"/>
+<text class="dl" x="326.5" y="168.7">Guyana (MICS6)</text>
+<line class="lead" x1="322.5" y1="163.8" x2="325.5" y2="164.7"/>
+<text class="dl" x="193.3" y="181.7">Nigeria (MICS6)</text>
+<line class="lead" x1="189.3" y1="168.3" x2="192.3" y2="177.7"/>
+<text class="dl" x="113.6" y="194.7">Malawi (MICS6)</text>
+<line class="lead" x1="109.6" y1="172.8" x2="112.6" y2="190.7"/>
+<text class="dl" x="109.6" y="207.7">Tanzania (Uwezo)</text>
+<line class="lead" x1="105.6" y1="180.7" x2="108.6" y2="203.7"/>
+<text class="dl" x="231.5" y="251.2">South Africa (PIRLS)</text>
+<text class="dl" x="200.2" y="266.5">Kenya (Uwezo)</text>
+</svg></div><ul><li>In Uganda, 7% of children in Grade 3 can read a Grade 2 story (Uwezo, 2024), and 16 of its 18 Grade 1&ndash;5 textbooks are harder than that. Against each grade&rsquo;s figure, at most 7% can read the harder ones in Grade 3 (4 textbooks), 22% in Grade 4 (3 textbooks), 36% in Grade 5 (5 textbooks) and 53% in Grade 6 (4 textbooks). Taken together, at most 38% (90% interval 34%&ndash;54%) can read a textbook drawn at random from them.</li><li>In Pakistan, 10% of children in Grade 3 can read simple English sentences (ASER, 2025; provisional report), and 23 of its 31 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 10% can read the harder ones in Grade 3 (2 textbooks), 16% in Grade 4 (2 textbooks), 54% in Grade 5 (6 textbooks), 54% in Grade 6 (6 textbooks) and 66% in Grade 7 (7 textbooks). Taken together, at most 63% (90% interval 58%&ndash;70%) can read a textbook drawn at random from them.</li><li>In India, 10% of children in Grade 3 can read simple English sentences (ASER, 2022; rural children only), and all of its 238 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 6% can read the harder ones in Grade 2 (34 textbooks), 10% in Grade 3 (27 textbooks), 17% in Grade 4 (49 textbooks), 24% in Grade 5 (41 textbooks), 32% in Grade 6 (35 textbooks) and 40% in Grade 7 (52 textbooks). Taken together, at most 23% (90% interval 23%&ndash;25%) can read a textbook drawn at random from them.</li><li>In Tanzania, 15% of children in Grade 3 can read a Grade 2 story (Uwezo, 2017), and 6 of its 13 Grade 1&ndash;5 textbooks are harder than that. Against each grade&rsquo;s figure, at most 15% can read the harder ones in Grade 3 (1 textbook), 33% in Grade 5 (3 textbooks) and 40% in Grade 6 (2 textbooks). Taken together, at most 69% (90% interval 55%&ndash;80%) can read a textbook drawn at random from them.</li><li>In Malawi, of the children in Grade 3 given the English Grade 2 story, 16% could read it (MICS6, 2019), and 2 of its 5 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 14% can read the harder ones in Grade 5 (1 textbook) and 22% in Grade 7 (1 textbook). Taken together, at most 67% (90% interval 49%&ndash;81%) can read a textbook drawn at random from them.</li><li>In Kiribati, of the children in Grade 5 given the English Grade 2 story, 26% could read it (MICS6, 2018), and 15 of its 16 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 26% can read the harder ones in Grade 5 (3 textbooks), 22% in Grade 6 (6 textbooks) and 40% in Grade 7 (6 textbooks). Taken together, at most 35% (90% interval 31%&ndash;51%) can read a textbook drawn at random from them.</li><li>In Bangladesh (Bangla), 33% of children in Grade 3 can read a Grade 2 story in Bangla or English (MICS6, 2019), and 36 of its 47 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 33% can read the harder ones in Grade 3 (1 textbook), 45% in Grade 4 (7 textbooks), 64% in Grade 5 (7 textbooks), 74% in Grade 6 (7 textbooks) and 80% in Grade 7 (14 textbooks). Taken together, at most 75% (90% interval 72%&ndash;79%) can read a textbook drawn at random from them.</li><li>In Nigeria, of the children in Grade 3 given the English Grade 2 story, 38% could read it (MICS6, 2021), and 3 of its 11 Grade 1&ndash;3 textbooks are harder than that: at most 83% (90% interval 66%&ndash;91%) can read a textbook drawn at random from them.</li><li>In Guyana, of the children in Grade 3 given the English Grade 2 story, 75% could read it (MICS6, 2019), and 21 of its 35 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 51% can read the harder ones in Grade 2 (3 textbooks), 75% in Grade 3 (1 textbook), 79% in Grade 4 (4 textbooks), 65% in Grade 5 (5 textbooks), 62% in Grade 6 (4 textbooks) and 72% in Grade 7 (4 textbooks). Taken together, at most 80% (90% interval 76%&ndash;85%) can read a textbook drawn at random from them.</li></ul><p>For books in a language fewer of its children were tested in:</p><ul><li>In Rwanda (English), 0% of children in Grade 6 can read a Grade 2 story (EGRA, 2011; 2011, before the 2015 curriculum; tested at the start of P6), and 2 of its 49 Grade 1&ndash;5 textbooks are harder than that: at most 96% (90% interval 89%&ndash;99%) can read a textbook drawn at random from them.</li><li>In South Sudan (English), 2% of children in Grade 3 can read a Grade 2 story (EGRA, 2016; 25 chosen schools; the MICS story stands in for the unprinted passage), and 2 of its 10 Grade 1&ndash;2 textbooks are harder than that: at most 80% (90% interval 56%&ndash;94%) can read a textbook drawn at random from them.</li><li>In Bangladesh (English), 33% of children in Grade 3 can read a Grade 2 story in Bangla or English (MICS6, 2019), and 24 of its 29 Grade 1&ndash;6 textbooks are harder than that. Against each grade&rsquo;s figure, at most 64% can read the harder ones in Grade 5 (5 textbooks), 74% in Grade 6 (5 textbooks) and 80% in Grade 7 (14 textbooks). Taken together, at most 80% (90% interval 78%&ndash;84%) can read a textbook drawn at random from them.</li></ul><p>Kenya: 40% of children read the Uwezo Grade 2 English story; in Glewwe, Kremer and Moulin&rsquo;s schools (2009), the median pupil could read the English textbook in 16% of Grade 3 classes and 28% of Grade 4.</p><p class="note">Note: Each dot is a country and language with at least 5 scored textbooks for Grades 1&ndash;6 in the language of the test. The horizontal axis is the share of children who read the survey&rsquo;s text (a Grade 2 story from MICS6 or a citizen-led assessment, or PIRLS&rsquo;s Grade 4 passages; named beside each country); the vertical axis is the median textbook&rsquo;s share of words outside the 2,000 most frequent words of its language (names left out in English), minus the test text&rsquo;s, in percentage points, for the books of each grade with a reading figure at or above it. ASER&rsquo;s English test is four short sentences, not a story, so its countries are measured against a lower bar. A country&rsquo;s line for books in a language fewer of its children were tested in is in the table only.</p><details class="dt"><summary>Data table: textbooks against the test text</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: textbooks against the test text, scrolls sideways"><table><caption class="vh">Data table: textbooks against the test text</caption><thead><tr><th scope="col">Country</th><th scope="col">Source</th><th scope="col">Year</th><th scope="col">Can read the test text</th><th scope="col">Textbooks</th><th scope="col">Harder than it</th><th scope="col">Gap (points)</th><th scope="col">Flesch&amp;ndash;Kincaid gap (grades)</th><th scope="col">Spache gap (grades)</th></tr></thead><tbody><tr><th scope="row">Rwanda (English)</th><td>EGRA</td><td>2011</td><td>0%</td><td>49</td><td>4%</td><td>7.0</td><td>2.7</td><td>1.1</td></tr><tr><th scope="row">South Sudan (English)</th><td>EGRA</td><td>2016</td><td>2%</td><td>10</td><td>20%</td><td>−0.8</td><td>1.7</td><td>1.1</td></tr><tr><th scope="row">Uganda</th><td>Uwezo</td><td>2024</td><td>7%</td><td>18</td><td>89%</td><td>7.7</td><td>3.9</td><td>1.8</td></tr><tr><th scope="row">Pakistan</th><td>ASER</td><td>2025</td><td>10%</td><td>31</td><td>74%</td><td>5.8</td><td>7.6</td><td>2.1</td></tr><tr><th scope="row">India</th><td>ASER</td><td>2022</td><td>10%</td><td>238</td><td>100%</td><td>19.7</td><td>6.4</td><td>2.2</td></tr><tr><th scope="row">Tanzania</th><td>Uwezo</td><td>2017</td><td>15%</td><td>13</td><td>46%</td><td>1.6</td><td>2.4</td><td>0.6</td></tr><tr><th scope="row">Malawi</th><td>MICS6</td><td>2019</td><td>16%</td><td>5</td><td>40%</td><td>2.5</td><td>2.1</td><td>1.4</td></tr><tr><th scope="row">Kiribati</th><td>MICS6</td><td>2018</td><td>26%</td><td>16</td><td>94%</td><td>9.1</td><td>6.1</td><td>2.8</td></tr><tr><th scope="row">Bangladesh (Bangla)</th><td>MICS6</td><td>2019</td><td>33%</td><td>47</td><td>77%</td><td>10.0</td><td>—</td><td>—</td></tr><tr><th scope="row">Bangladesh (English)</th><td>MICS6</td><td>2019</td><td>33%</td><td>29</td><td>83%</td><td>7.0</td><td>3.8</td><td>1.9</td></tr><tr><th scope="row">Nigeria</th><td>MICS6</td><td>2021</td><td>38%</td><td>11</td><td>27%</td><td>3.1</td><td>1.6</td><td>0.6</td></tr><tr><th scope="row">Kenya</th><td>Uwezo</td><td>2015</td><td>40%</td><td>5</td><td>0%</td><td>−8.6</td><td>1.9</td><td>0.3</td></tr><tr><th scope="row">South Africa</th><td>PIRLS</td><td>2021</td><td>48%</td><td>14</td><td>0%</td><td>−6.7</td><td>−1.8</td><td>0.1</td></tr><tr><th scope="row">Guyana</th><td>MICS6</td><td>2019</td><td>75%</td><td>35</td><td>60%</td><td>3.7</td><td>2.3</td><td>1.5</td></tr></tbody></table></div></details></section>
+<p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
+</main></div>
+<script>
+(function () {
+  function post() {
+    window.parent.postMessage({tgsEmbed: "reading", height: Math.ceil(document.documentElement.getBoundingClientRect().height)}, "*");
+  }
+  window.addEventListener("load", post);
+  window.addEventListener("resize", post);
+  document.addEventListener("toggle", post, true);
+})();
+</script>
+<script>
+(function () {
+  var marks = document.querySelectorAll(".tg svg.chart:not(.map) .dot, .tg svg.chart:not(.map) g.row");
+  if (!marks.length) return;
+  var tip = document.createElement("div");
+  tip.className = "tgtip";
+  tip.setAttribute("role", "tooltip");
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  marks.forEach(function (el) {
+    var t = el.querySelector("title");
+    if (!t) return;
+    el.setAttribute("data-tip", t.textContent);
+    el.setAttribute("aria-label", t.textContent);
+    el.setAttribute("tabindex", "0");
+    t.remove();
+  });
+  function place(x, y) {
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = Math.min(Math.max(8, x + 12), window.innerWidth - w - 8);
+    var top = y - h - 12 < 8 ? y + 16 : y - h - 12;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function show(el, x, y) {
+    tip.textContent = el.getAttribute("data-tip");
+    tip.hidden = false;
+    place(x, y);
+  }
+  function hide() { tip.hidden = true; }
+  function mark(e) { return e.target.closest ? e.target.closest("[data-tip]") : null; }
+  document.addEventListener("mouseover", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (!tip.hidden && mark(e)) place(e.clientX, e.clientY);
+  });
+  document.addEventListener("focusin", function (e) {
+    var el = mark(e);
+    if (!el) return hide();
+    var r = el.getBoundingClientRect();
+    show(el, r.left + r.width / 2, r.top);
+  });
+  document.addEventListener("focusout", hide);
+  document.addEventListener("click", function (e) {
+    var el = mark(e);
+    if (el) show(el, e.clientX, e.clientY); else hide();
+  });
+  window.addEventListener("scroll", hide, {passive: true});
+})();
+</script>
+</body>
+</html>

@@ -1,14 +1,14 @@
 {
- "built": "2026-10-13",
+ "built": "2026-11-06",
  "headline": {
-  "books": 3259,
-  "female": 313318,
-  "male": 581216,
-  "share": 35.03,
+  "books": 3157,
+  "female": 306752,
+  "male": 572062,
+  "share": 34.91,
   "countries": 78,
   "ratio": 1.86,
   "paper_books": 1210,
-  "search_books": 1650
+  "search_books": 1548
  },
  "countries": {
   "ranked": [
@@ -19,9 +19,9 @@
     "model": 23,
     "raw": 44.99,
     "new": false,
-    "adjusted": 28.53,
-    "lo": 21.21,
-    "hi": 35.85
+    "adjusted": 28.48,
+    "lo": 21.04,
+    "hi": 35.92
    },
    {
     "iso3": "PAK",
@@ -30,9 +30,9 @@
     "model": 92,
     "raw": 25.27,
     "new": false,
-    "adjusted": 29.01,
-    "lo": 25.45,
-    "hi": 32.57
+    "adjusted": 29.02,
+    "lo": 25.4,
+    "hi": 32.63
    },
    {
     "iso3": "LKA",
@@ -41,20 +41,20 @@
     "model": 98,
     "raw": 24.96,
     "new": false,
-    "adjusted": 30.29,
-    "lo": 26.84,
-    "hi": 33.73
+    "adjusted": 30.0,
+    "lo": 26.5,
+    "hi": 33.5
    },
    {
     "iso3": "IND",
     "name": "India",
-    "books": 992,
-    "model": 973,
-    "raw": 32.06,
+    "books": 888,
+    "model": 869,
+    "raw": 31.53,
     "new": false,
-    "adjusted": 32.68,
-    "lo": 31.51,
-    "hi": 33.86
+    "adjusted": 32.4,
+    "lo": 31.15,
+    "hi": 33.65
    },
    {
     "iso3": "SLB",
@@ -63,9 +63,9 @@
     "model": 53,
     "raw": 24.79,
     "new": false,
-    "adjusted": 33.07,
-    "lo": 28.37,
-    "hi": 37.76
+    "adjusted": 32.61,
+    "lo": 27.85,
+    "hi": 37.38
    },
    {
     "iso3": "BGD",
@@ -74,9 +74,9 @@
     "model": 86,
     "raw": 26.48,
     "new": false,
-    "adjusted": 34.05,
-    "lo": 30.18,
-    "hi": 37.93
+    "adjusted": 33.97,
+    "lo": 30.03,
+    "hi": 37.91
    },
    {
     "iso3": "SSD",
@@ -85,9 +85,9 @@
     "model": 84,
     "raw": 31.02,
     "new": false,
-    "adjusted": 34.48,
-    "lo": 30.75,
-    "hi": 38.21
+    "adjusted": 34.28,
+    "lo": 30.5,
+    "hi": 38.07
    },
    {
     "iso3": "KNA",
@@ -96,9 +96,9 @@
     "model": 44,
     "raw": 40.09,
     "new": false,
-    "adjusted": 35.01,
-    "lo": 29.67,
-    "hi": 40.36
+    "adjusted": 34.67,
+    "lo": 29.25,
+    "hi": 40.1
    },
    {
     "iso3": "BTN",
@@ -107,9 +107,9 @@
     "model": 19,
     "raw": 39.41,
     "new": false,
-    "adjusted": 36.45,
-    "lo": 28.68,
-    "hi": 44.22
+    "adjusted": 36.06,
+    "lo": 28.18,
+    "hi": 43.95
    },
    {
     "iso3": "TJK",
@@ -118,9 +118,9 @@
     "model": 10,
     "raw": 30.18,
     "new": true,
-    "adjusted": 36.51,
-    "lo": 25.82,
-    "hi": 47.19
+    "adjusted": 36.3,
+    "lo": 25.46,
+    "hi": 47.15
    },
    {
     "iso3": "PNG",
@@ -129,9 +129,9 @@
     "model": 14,
     "raw": 41.85,
     "new": false,
-    "adjusted": 37.45,
-    "lo": 28.37,
-    "hi": 46.52
+    "adjusted": 37.4,
+    "lo": 28.18,
+    "hi": 46.62
    },
    {
     "iso3": "NPL",
@@ -140,9 +140,9 @@
     "model": 15,
     "raw": 49.24,
     "new": true,
-    "adjusted": 37.51,
-    "lo": 27.78,
-    "hi": 47.24
+    "adjusted": 37.41,
+    "lo": 27.53,
+    "hi": 47.29
    },
    {
     "iso3": "WSM",
@@ -151,31 +151,20 @@
     "model": 66,
     "raw": 44.73,
     "new": false,
-    "adjusted": 38.8,
-    "lo": 34.37,
-    "hi": 43.23
+    "adjusted": 38.42,
+    "lo": 33.92,
+    "hi": 42.92
    },
    {
     "iso3": "USA",
     "name": "United States",
-    "books": 475,
+    "books": 474,
     "model": 362,
     "raw": 40.22,
     "new": false,
-    "adjusted": 38.83,
-    "lo": 36.91,
-    "hi": 40.75
-   },
-   {
-    "iso3": "GUY",
-    "name": "Guyana",
-    "books": 35,
-    "model": 32,
-    "raw": 38.45,
-    "new": false,
-    "adjusted": 39.63,
-    "lo": 33.6,
-    "hi": 45.67
+    "adjusted": 38.71,
+    "lo": 36.76,
+    "hi": 40.67
    },
    {
     "iso3": "SDN",
@@ -184,9 +173,20 @@
     "model": 12,
     "raw": 38.67,
     "new": true,
-    "adjusted": 39.63,
-    "lo": 29.89,
-    "hi": 49.38
+    "adjusted": 39.42,
+    "lo": 29.53,
+    "hi": 49.31
+   },
+   {
+    "iso3": "GUY",
+    "name": "Guyana",
+    "books": 35,
+    "model": 32,
+    "raw": 38.45,
+    "new": false,
+    "adjusted": 40.03,
+    "lo": 33.88,
+    "hi": 46.17
    },
    {
     "iso3": "ZAF",
@@ -195,9 +195,9 @@
     "model": 51,
     "raw": 40.84,
     "new": false,
-    "adjusted": 40.82,
-    "lo": 36.05,
-    "hi": 45.59
+    "adjusted": 40.7,
+    "lo": 35.86,
+    "hi": 45.54
    },
    {
     "iso3": "GRC",
@@ -206,9 +206,9 @@
     "model": 24,
     "raw": 42.11,
     "new": true,
-    "adjusted": 41.16,
-    "lo": 34.19,
-    "hi": 48.13
+    "adjusted": 40.92,
+    "lo": 33.84,
+    "hi": 47.99
    },
    {
     "iso3": "ECU",
@@ -217,31 +217,20 @@
     "model": 15,
     "raw": 45.14,
     "new": true,
-    "adjusted": 41.51,
-    "lo": 32.75,
-    "hi": 50.27
+    "adjusted": 41.07,
+    "lo": 32.18,
+    "hi": 49.96
    },
    {
     "iso3": "UGA",
     "name": "Uganda",
-    "books": 36,
-    "model": 24,
-    "raw": 32.87,
-    "new": false,
-    "adjusted": 41.91,
-    "lo": 34.79,
-    "hi": 49.03
-   },
-   {
-    "iso3": "ETH",
-    "name": "Ethiopia",
     "books": 37,
-    "model": 37,
-    "raw": 45.43,
+    "model": 25,
+    "raw": 34.56,
     "new": false,
-    "adjusted": 41.94,
-    "lo": 36.35,
-    "hi": 47.53
+    "adjusted": 41.4,
+    "lo": 34.33,
+    "hi": 48.47
    },
    {
     "iso3": "AUS",
@@ -250,9 +239,9 @@
     "model": 76,
     "raw": 41.74,
     "new": false,
-    "adjusted": 42.07,
-    "lo": 38.14,
-    "hi": 45.99
+    "adjusted": 41.79,
+    "lo": 37.81,
+    "hi": 45.77
    },
    {
     "iso3": "GBR",
@@ -261,9 +250,9 @@
     "model": 17,
     "raw": 42.75,
     "new": false,
-    "adjusted": 42.12,
-    "lo": 33.93,
-    "hi": 50.31
+    "adjusted": 41.91,
+    "lo": 33.59,
+    "hi": 50.23
    },
    {
     "iso3": "SLE",
@@ -272,9 +261,20 @@
     "model": 39,
     "raw": 41.5,
     "new": false,
-    "adjusted": 42.27,
-    "lo": 36.79,
-    "hi": 47.76
+    "adjusted": 41.98,
+    "lo": 36.42,
+    "hi": 47.55
+   },
+   {
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "books": 37,
+    "model": 37,
+    "raw": 45.43,
+    "new": false,
+    "adjusted": 42.02,
+    "lo": 36.34,
+    "hi": 47.69
    },
    {
     "iso3": "PSE",
@@ -283,9 +283,9 @@
     "model": 25,
     "raw": 36.93,
     "new": true,
-    "adjusted": 42.71,
-    "lo": 35.92,
-    "hi": 49.5
+    "adjusted": 42.42,
+    "lo": 35.54,
+    "hi": 49.31
    },
    {
     "iso3": "SYR",
@@ -294,9 +294,9 @@
     "model": 24,
     "raw": 40.55,
     "new": true,
-    "adjusted": 42.89,
-    "lo": 35.96,
-    "hi": 49.82
+    "adjusted": 42.58,
+    "lo": 35.54,
+    "hi": 49.62
    },
    {
     "iso3": "RWA",
@@ -305,9 +305,9 @@
     "model": 116,
     "raw": 34.64,
     "new": false,
-    "adjusted": 43.09,
-    "lo": 39.89,
-    "hi": 46.28
+    "adjusted": 43.05,
+    "lo": 39.8,
+    "hi": 46.3
    },
    {
     "iso3": "JOR",
@@ -316,9 +316,9 @@
     "model": 20,
     "raw": 42.16,
     "new": true,
-    "adjusted": 43.55,
-    "lo": 35.97,
-    "hi": 51.14
+    "adjusted": 43.35,
+    "lo": 35.65,
+    "hi": 51.05
    },
    {
     "iso3": "OMN",
@@ -327,9 +327,20 @@
     "model": 37,
     "raw": 44.96,
     "new": true,
-    "adjusted": 43.69,
-    "lo": 38.07,
-    "hi": 49.31
+    "adjusted": 43.47,
+    "lo": 37.77,
+    "hi": 49.17
+   },
+   {
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "books": 12,
+    "model": 12,
+    "raw": 46.15,
+    "new": false,
+    "adjusted": 43.8,
+    "lo": 33.63,
+    "hi": 53.97
    },
    {
     "iso3": "BLR",
@@ -338,9 +349,9 @@
     "model": 26,
     "raw": 42.86,
     "new": true,
-    "adjusted": 44.98,
-    "lo": 38.27,
-    "hi": 51.69
+    "adjusted": 44.8,
+    "lo": 37.99,
+    "hi": 51.61
    },
    {
     "iso3": "AZE",
@@ -349,20 +360,9 @@
     "model": 18,
     "raw": 44.1,
     "new": true,
-    "adjusted": 45.14,
-    "lo": 37.15,
-    "hi": 53.12
-   },
-   {
-    "iso3": "NGA",
-    "name": "Nigeria",
-    "books": 11,
-    "model": 11,
-    "raw": 54.78,
-    "new": false,
-    "adjusted": 45.44,
-    "lo": 34.95,
-    "hi": 55.93
+    "adjusted": 44.87,
+    "lo": 36.77,
+    "hi": 52.98
    },
    {
     "iso3": "TUN",
@@ -371,9 +371,9 @@
     "model": 15,
     "raw": 44.22,
     "new": true,
-    "adjusted": 45.75,
-    "lo": 36.94,
-    "hi": 54.57
+    "adjusted": 45.29,
+    "lo": 36.34,
+    "hi": 54.24
    },
    {
     "iso3": "GHA",
@@ -382,9 +382,9 @@
     "model": 101,
     "raw": 46.98,
     "new": true,
-    "adjusted": 49.2,
-    "lo": 45.56,
-    "hi": 52.84
+    "adjusted": 48.97,
+    "lo": 45.28,
+    "hi": 52.67
    },
    {
     "iso3": "KWT",
@@ -393,9 +393,9 @@
     "model": 32,
     "raw": 39.71,
     "new": true,
-    "adjusted": 49.57,
-    "lo": 43.51,
-    "hi": 55.62
+    "adjusted": 49.13,
+    "lo": 42.99,
+    "hi": 55.27
    },
    {
     "iso3": "IDN",
@@ -404,9 +404,9 @@
     "model": 12,
     "raw": 50.28,
     "new": true,
-    "adjusted": 49.73,
-    "lo": 39.98,
-    "hi": 59.48
+    "adjusted": 49.46,
+    "lo": 39.57,
+    "hi": 59.36
    },
    {
     "iso3": "KHM",
@@ -415,20 +415,9 @@
     "model": 13,
     "raw": 50.92,
     "new": true,
-    "adjusted": 50.75,
-    "lo": 41.36,
-    "hi": 60.14
-   },
-   {
-    "iso3": "TUR",
-    "name": "Türkiye",
-    "books": 26,
-    "model": 22,
-    "raw": 50.73,
-    "new": true,
-    "adjusted": 51.32,
-    "lo": 44.05,
-    "hi": 58.59
+    "adjusted": 50.36,
+    "lo": 40.83,
+    "hi": 59.89
    },
    {
     "iso3": "KEN",
@@ -437,9 +426,20 @@
     "model": 11,
     "raw": 53.44,
     "new": false,
-    "adjusted": 51.37,
-    "lo": 40.99,
-    "hi": 61.76
+    "adjusted": 51.04,
+    "lo": 40.49,
+    "hi": 61.58
+   },
+   {
+    "iso3": "TUR",
+    "name": "Türkiye",
+    "books": 26,
+    "model": 22,
+    "raw": 50.73,
+    "new": true,
+    "adjusted": 51.13,
+    "lo": 43.75,
+    "hi": 58.51
    },
    {
     "iso3": "KIR",
@@ -448,9 +448,9 @@
     "model": 22,
     "raw": 43.03,
     "new": false,
-    "adjusted": 54.74,
-    "lo": 47.37,
-    "hi": 62.11
+    "adjusted": 54.06,
+    "lo": 46.57,
+    "hi": 61.54
    },
    {
     "iso3": "ZWE",
@@ -459,9 +459,9 @@
     "model": 12,
     "raw": 59.96,
     "new": false,
-    "adjusted": 69.1,
-    "lo": 59.33,
-    "hi": 78.87
+    "adjusted": 68.77,
+    "lo": 58.85,
+    "hi": 78.69
    }
   ],
   "few": [
@@ -472,9 +472,9 @@
     "model": 9,
     "raw": 29.28,
     "new": false,
-    "adjusted": 32.61,
-    "lo": 21.38,
-    "hi": 43.85
+    "adjusted": 32.21,
+    "lo": 20.81,
+    "hi": 43.62
    },
    {
     "iso3": "DZA",
@@ -527,9 +527,9 @@
     "model": 6,
     "raw": 54.58,
     "new": true,
-    "adjusted": 57.4,
-    "lo": 43.65,
-    "hi": 71.15
+    "adjusted": 56.92,
+    "lo": 42.96,
+    "hi": 70.88
    },
    {
     "iso3": "CAN",
@@ -538,9 +538,9 @@
     "model": 6,
     "raw": 33.06,
     "new": true,
-    "adjusted": 51.66,
-    "lo": 37.89,
-    "hi": 65.42
+    "adjusted": 51.63,
+    "lo": 37.65,
+    "hi": 65.61
    },
    {
     "iso3": "CUB",
@@ -549,9 +549,9 @@
     "model": 8,
     "raw": 48.3,
     "new": true,
-    "adjusted": 47.77,
-    "lo": 35.85,
-    "hi": 59.69
+    "adjusted": 47.5,
+    "lo": 35.4,
+    "hi": 59.6
    },
    {
     "iso3": "DJI",
@@ -571,9 +571,9 @@
     "model": 5,
     "raw": 50.0,
     "new": false,
-    "adjusted": 54.18,
-    "lo": 39.03,
-    "hi": 69.33
+    "adjusted": 53.62,
+    "lo": 38.24,
+    "hi": 69.0
    },
    {
     "iso3": "EGY",
@@ -615,9 +615,9 @@
     "model": 9,
     "raw": 38.46,
     "new": true,
-    "adjusted": 32.92,
-    "lo": 21.68,
-    "hi": 44.16
+    "adjusted": 32.58,
+    "lo": 21.17,
+    "hi": 43.99
    },
    {
     "iso3": "GEO",
@@ -688,9 +688,9 @@
    {
     "iso3": "LBR",
     "name": "Liberia",
-    "books": 1,
-    "model": 1,
-    "raw": 60.94,
+    "books": 2,
+    "model": 2,
+    "raw": 55.45,
     "new": false,
     "adjusted": null,
     "lo": null,
@@ -725,9 +725,9 @@
     "model": 5,
     "raw": 19.17,
     "new": true,
-    "adjusted": 29.17,
-    "lo": 14.03,
-    "hi": 44.31
+    "adjusted": 28.77,
+    "lo": 13.4,
+    "hi": 44.14
    },
    {
     "iso3": "MRT",
@@ -736,9 +736,9 @@
     "model": 7,
     "raw": 38.78,
     "new": true,
-    "adjusted": 41.85,
-    "lo": 28.98,
-    "hi": 54.72
+    "adjusted": 41.3,
+    "lo": 28.24,
+    "hi": 54.37
    },
    {
     "iso3": "MUS",
@@ -747,9 +747,9 @@
     "model": 7,
     "raw": 42.31,
     "new": true,
-    "adjusted": 32.61,
-    "lo": 19.66,
-    "hi": 45.55
+    "adjusted": 34.46,
+    "lo": 21.23,
+    "hi": 47.7
    },
    {
     "iso3": "FSM",
@@ -780,9 +780,9 @@
     "model": 6,
     "raw": 42.08,
     "new": false,
-    "adjusted": 52.98,
-    "lo": 39.13,
-    "hi": 66.84
+    "adjusted": 52.64,
+    "lo": 38.57,
+    "hi": 66.72
    },
    {
     "iso3": "PAN",
@@ -813,9 +813,9 @@
     "model": 6,
     "raw": 48.44,
     "new": true,
-    "adjusted": 38.63,
-    "lo": 24.86,
-    "hi": 52.4
+    "adjusted": 38.02,
+    "lo": 24.04,
+    "hi": 51.99
    },
    {
     "iso3": "TON",
@@ -857,9 +857,9 @@
     "model": 8,
     "raw": 30.87,
     "new": true,
-    "adjusted": 37.58,
-    "lo": 25.63,
-    "hi": 49.54
+    "adjusted": 37.05,
+    "lo": 24.91,
+    "hi": 49.19
    },
    {
     "iso3": "ZMB",
@@ -873,15 +873,15 @@
     "hi": null
    }
   ],
-  "model_books": 2907
+  "model_books": 2806
  },
  "within": {
   "IND": {
    "iso3": "IND",
    "name": "India",
-   "books": 992,
-   "model_books": 973,
-   "state_books": 763,
+   "books": 888,
+   "model_books": 869,
+   "state_books": 659,
    "i4i_state_books": 364,
    "units": [
     {
@@ -901,9 +901,9 @@
       "Physical Education",
       "Social Science"
      ],
-     "adjusted": 26.7,
-     "lo": 22.57,
-     "hi": 30.84
+     "adjusted": 25.87,
+     "lo": 21.52,
+     "hi": 30.21
     },
     {
      "label": "Kerala",
@@ -922,9 +922,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 28.46,
-     "lo": 24.93,
-     "hi": 32.0
+     "adjusted": 27.28,
+     "lo": 23.57,
+     "hi": 31.0
     },
     {
      "label": "Punjab",
@@ -946,16 +946,16 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 30.68,
-     "lo": 27.49,
-     "hi": 33.86
+     "adjusted": 29.91,
+     "lo": 26.58,
+     "hi": 33.25
     },
     {
      "label": "Maharashtra",
      "subnational": "Maharashtra",
-     "books": 311,
-     "model": 304,
-     "raw": 33.14,
+     "books": 207,
+     "model": 200,
+     "raw": 30.09,
      "subjects": [
       "Agriculture",
       "Arts",
@@ -970,9 +970,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 31.23,
-     "lo": 29.42,
-     "hi": 33.05
+     "adjusted": 30.36,
+     "lo": 28.14,
+     "hi": 32.57
     },
     {
      "label": "Tamil Nadu",
@@ -992,9 +992,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 31.46,
-     "lo": 28.28,
-     "hi": 34.64
+     "adjusted": 30.63,
+     "lo": 27.31,
+     "hi": 33.96
     },
     {
      "label": "Gujarat",
@@ -1012,9 +1012,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 31.92,
-     "lo": 27.56,
-     "hi": 36.29
+     "adjusted": 30.97,
+     "lo": 26.4,
+     "hi": 35.54
     },
     {
      "label": "Telangana",
@@ -1028,9 +1028,9 @@
       "Maths",
       "Science"
      ],
-     "adjusted": 32.4,
-     "lo": 26.95,
-     "hi": 37.85
+     "adjusted": 31.44,
+     "lo": 25.7,
+     "hi": 37.17
     },
     {
      "label": "Andhra Pradesh",
@@ -1045,9 +1045,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 33.58,
-     "lo": 27.9,
-     "hi": 39.26
+     "adjusted": 32.72,
+     "lo": 26.73,
+     "hi": 38.72
     },
     {
      "label": "Mizoram",
@@ -1061,9 +1061,9 @@
       "Maths",
       "Social Science"
      ],
-     "adjusted": 34.24,
-     "lo": 24.9,
-     "hi": 43.58
+     "adjusted": 33.58,
+     "lo": 23.72,
+     "hi": 43.44
     },
     {
      "label": "Chhattisgarh",
@@ -1074,9 +1074,9 @@
      "subjects": [
       "Maths"
      ],
-     "adjusted": 37.36,
-     "lo": 27.86,
-     "hi": 46.86
+     "adjusted": 36.47,
+     "lo": 26.47,
+     "hi": 46.47
     },
     {
      "label": "NCERT (national)",
@@ -1097,9 +1097,9 @@
       "Science",
       "Social Science"
      ],
-     "adjusted": 38.51,
-     "lo": 36.44,
-     "hi": 40.59
+     "adjusted": 37.64,
+     "lo": 35.49,
+     "hi": 39.8
     }
    ],
    "few": []
@@ -1107,15 +1107,15 @@
   "USA": {
    "iso3": "USA",
    "name": "United States",
-   "books": 475,
+   "books": 474,
    "model_books": 362,
-   "state_books": 379,
+   "state_books": 378,
    "i4i_state_books": 0,
    "units": [
     {
      "label": "Texas",
      "subnational": "Texas",
-     "books": 360,
+     "books": 359,
      "model": 252,
      "raw": 36.55,
      "subjects": [
@@ -1166,63 +1166,63 @@
    "books": 79,
    "model": 72,
    "raw": 19.13,
-   "adjusted": 20.88,
-   "lo": 16.64,
-   "hi": 25.12
+   "adjusted": 20.84,
+   "lo": 16.54,
+   "hi": 25.14
   },
   {
    "label": "Humanities",
-   "books": 180,
-   "model": 168,
-   "raw": 20.76,
-   "adjusted": 27.56,
-   "lo": 24.87,
-   "hi": 30.25
+   "books": 155,
+   "model": 143,
+   "raw": 20.71,
+   "adjusted": 28.28,
+   "lo": 25.31,
+   "hi": 31.24
   },
   {
    "label": "Arts",
    "books": 51,
    "model": 50,
    "raw": 30.93,
-   "adjusted": 32.15,
-   "lo": 27.25,
-   "hi": 37.05
+   "adjusted": 32.17,
+   "lo": 27.19,
+   "hi": 37.14
   },
   {
    "label": "IT",
    "books": 114,
    "model": 111,
    "raw": 25.57,
-   "adjusted": 34.46,
-   "lo": 31.18,
-   "hi": 37.74
+   "adjusted": 34.43,
+   "lo": 31.1,
+   "hi": 37.76
   },
   {
    "label": "Business and Economics",
    "books": 116,
    "model": 102,
    "raw": 28.79,
-   "adjusted": 35.67,
-   "lo": 32.15,
-   "hi": 39.19
+   "adjusted": 35.79,
+   "lo": 32.22,
+   "hi": 39.37
   },
   {
    "label": "Science",
-   "books": 368,
-   "model": 349,
-   "raw": 37.72,
-   "adjusted": 35.73,
-   "lo": 33.81,
-   "hi": 37.64
+   "books": 366,
+   "model": 347,
+   "raw": 37.81,
+   "adjusted": 35.84,
+   "lo": 33.89,
+   "hi": 37.79
   },
   {
    "label": "Language",
-   "books": 1183,
-   "model": 1069,
-   "raw": 37.13,
-   "adjusted": 37.28,
-   "lo": 36.05,
-   "hi": 38.51
+   "books": 1179,
+   "model": 1066,
+   "raw": 37.19,
+   "adjusted": 37.38,
+   "lo": 36.13,
+   "hi": 38.63
   },
   {
    "label": "Physical Education",
@@ -1230,35 +1230,35 @@
    "model": 52,
    "raw": 31.41,
    "adjusted": 39.23,
-   "lo": 34.49,
-   "hi": 43.96
+   "lo": 34.43,
+   "hi": 44.04
   },
   {
    "label": "Social Science",
    "books": 178,
    "model": 157,
    "raw": 30.83,
-   "adjusted": 39.44,
+   "adjusted": 39.49,
    "lo": 36.62,
-   "hi": 42.27
-  },
-  {
-   "label": "Maths",
-   "books": 592,
-   "model": 516,
-   "raw": 43.05,
-   "adjusted": 41.26,
-   "lo": 39.67,
-   "hi": 42.84
+   "hi": 42.36
   },
   {
    "label": "General and Social Studies",
-   "books": 193,
-   "model": 182,
-   "raw": 41.49,
-   "adjusted": 42.61,
-   "lo": 39.89,
-   "hi": 45.33
+   "books": 127,
+   "model": 116,
+   "raw": 39.28,
+   "adjusted": 40.09,
+   "lo": 36.78,
+   "hi": 43.41
+  },
+  {
+   "label": "Maths",
+   "books": 587,
+   "model": 511,
+   "raw": 43.06,
+   "adjusted": 41.32,
+   "lo": 39.7,
+   "hi": 42.94
   },
   {
    "label": "Agriculture",
@@ -1266,28 +1266,28 @@
    "model": 41,
    "raw": 48.77,
    "adjusted": 47.52,
-   "lo": 41.56,
-   "hi": 53.48
+   "lo": 41.47,
+   "hi": 53.57
   },
   {
    "label": "Home Economics",
    "books": 38,
    "model": 38,
    "raw": 59.76,
-   "adjusted": 57.44,
-   "lo": 51.79,
-   "hi": 63.1
+   "adjusted": 57.47,
+   "lo": 51.74,
+   "hi": 63.21
   }
  ],
  "ages": {
   "overall": {
    "label": "All countries",
-   "books": 2486,
-   "child": 38.2,
-   "adult": 41.07,
-   "gap": -2.87,
-   "lo": -4.13,
-   "hi": -1.6
+   "books": 2423,
+   "child": 38.3,
+   "adult": 41.21,
+   "gap": -2.91,
+   "lo": -4.2,
+   "hi": -1.62
   },
   "regions": [
    {
@@ -1337,61 +1337,62 @@
    },
    {
     "label": "South Asia",
-    "books": 1052,
-    "child": 36.79,
-    "adult": 39.18,
-    "gap": -2.39,
-    "lo": -4.26,
-    "hi": -0.53
+    "books": 986,
+    "child": 36.9,
+    "adult": 39.42,
+    "gap": -2.52,
+    "lo": -4.48,
+    "hi": -0.57
    },
    {
     "label": "Sub-Saharan Africa",
-    "books": 481,
-    "child": 43.67,
-    "adult": 43.37,
-    "gap": 0.3,
-    "lo": -2.7,
-    "hi": 3.3
+    "books": 484,
+    "child": 43.75,
+    "adult": 43.35,
+    "gap": 0.4,
+    "lo": -2.58,
+    "hi": 3.38
    }
   ]
  },
  "time": {
-  "books": 1781,
+  "books": 1677,
+  "earlier": 172,
   "before": 9,
   "periods": [
    {
     "label": "2000–09",
     "books": 93,
-    "adjusted": 37.25,
-    "lo": 30.49,
-    "hi": 44.01
+    "adjusted": 37.37,
+    "lo": 30.6,
+    "hi": 44.14
    },
    {
     "label": "2010–14",
-    "books": 217,
-    "adjusted": 36.82,
-    "lo": 33.71,
-    "hi": 39.93
+    "books": 197,
+    "adjusted": 38.85,
+    "lo": 35.56,
+    "hi": 42.13
    },
    {
     "label": "2015–19",
-    "books": 304,
-    "adjusted": 40.1,
-    "lo": 37.09,
-    "hi": 43.11
+    "books": 405,
+    "adjusted": 41.46,
+    "lo": 39.12,
+    "hi": 43.79
    },
    {
     "label": "2020 on",
-    "books": 1167,
-    "adjusted": 39.86,
-    "lo": 38.59,
-    "hi": 41.13
+    "books": 1154,
+    "adjusted": 38.04,
+    "lo": 36.75,
+    "hi": 39.33
    }
   ],
   "per_decade": {
-   "estimate": 2.18,
-   "lo": -0.24,
-   "hi": 4.61
+   "estimate": -0.09,
+   "lo": -2.65,
+   "hi": 2.48
   }
  },
  "links": [
@@ -1405,280 +1406,280 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 10.102,
-     "y": 28.53,
+     "y": 28.48,
      "value": 24401.3159253635
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 8.634,
-     "y": 29.01,
+     "y": 29.02,
      "value": 5617.25078028458
     },
     {
      "iso3": "LKA",
      "name": "Sri Lanka",
      "x": 9.588,
-     "y": 30.29,
+     "y": 30.0,
      "value": 14582.7603740374
     },
     {
      "iso3": "IND",
      "name": "India",
      "x": 9.214,
-     "y": 32.68,
+     "y": 32.4,
      "value": 10039.0708910587
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 7.776,
-     "y": 33.07,
+     "y": 32.61,
      "value": 2382.1314520674
     },
     {
      "iso3": "BGD",
      "name": "Bangladesh",
      "x": 9.068,
-     "y": 34.05,
+     "y": 33.97,
      "value": 8676.7557622508
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 10.355,
-     "y": 35.01,
+     "y": 34.67,
      "value": 31427.6630825717
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 9.726,
-     "y": 36.45,
+     "y": 36.06,
      "value": 16743.8703854575
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 8.529,
-     "y": 36.51,
+     "y": 36.3,
      "value": 5061.84700623649
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 8.402,
-     "y": 37.45,
+     "y": 37.4,
      "value": 4456.23105962118
     },
     {
      "iso3": "NPL",
      "name": "Nepal",
      "x": 8.571,
-     "y": 37.51,
+     "y": 37.41,
      "value": 5276.92387725538
     },
     {
      "iso3": "WSM",
      "name": "Samoa",
      "x": 8.983,
-     "y": 38.8,
+     "y": 38.42,
      "value": 7963.42749052153
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 11.251,
-     "y": 38.83,
+     "y": 38.71,
      "value": 76931.3106990408
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 11.335,
-     "y": 39.63,
-     "value": 83658.6773475997
     },
     {
      "iso3": "SDN",
      "name": "Sudan",
      "x": 7.536,
-     "y": 39.63,
+     "y": 39.42,
      "value": 1873.38562011719
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 11.335,
+     "y": 40.03,
+     "value": 83658.6773475997
     },
     {
      "iso3": "ZAF",
      "name": "South Africa",
      "x": 9.517,
-     "y": 40.82,
+     "y": 40.7,
      "value": 13592.0484020929
     },
     {
      "iso3": "GRC",
      "name": "Greece",
      "x": 10.551,
-     "y": 41.16,
+     "y": 40.92,
      "value": 38218.721628616
     },
     {
      "iso3": "ECU",
      "name": "Ecuador",
      "x": 9.569,
-     "y": 41.51,
+     "y": 41.07,
      "value": 14319.2406558299
     },
     {
      "iso3": "UGA",
      "name": "Uganda",
      "x": 8.0,
-     "y": 41.91,
+     "y": 41.4,
      "value": 2980.37942135501
-    },
-    {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 8.038,
-     "y": 41.94,
-     "value": 3094.86811868352
     },
     {
      "iso3": "AUS",
      "name": "Australia",
      "x": 11.005,
-     "y": 42.07,
+     "y": 41.79,
      "value": 60194.0633547961
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 10.897,
-     "y": 42.12,
+     "y": 41.91,
      "value": 53993.1172607885
     },
     {
      "iso3": "SLE",
      "name": "Sierra Leone",
      "x": 8.063,
-     "y": 42.27,
+     "y": 41.98,
      "value": 3176.23681292996
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 8.038,
+     "y": 42.02,
+     "value": 3094.86811868352
     },
     {
      "iso3": "PSE",
      "name": "West Bank and Gaza",
      "x": 8.36,
-     "y": 42.71,
+     "y": 42.42,
      "value": 4272.45762077019
     },
     {
      "iso3": "SYR",
      "name": "Syrian Arab Republic",
      "x": 8.429,
-     "y": 42.89,
+     "y": 42.58,
      "value": 4579.43973633341
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 8.177,
-     "y": 43.09,
+     "y": 43.05,
      "value": 3558.68003753808
     },
     {
      "iso3": "JOR",
      "name": "Jordan",
      "x": 9.287,
-     "y": 43.55,
+     "y": 43.35,
      "value": 10794.2402687732
     },
     {
      "iso3": "OMN",
      "name": "Oman",
      "x": 10.495,
-     "y": 43.69,
+     "y": 43.47,
      "value": 36142.9439797194
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 9.005,
+     "y": 43.8,
+     "value": 8145.14808387469
     },
     {
      "iso3": "BLR",
      "name": "Belarus",
      "x": 10.298,
-     "y": 44.98,
+     "y": 44.8,
      "value": 29666.2115719117
     },
     {
      "iso3": "AZE",
      "name": "Azerbaijan",
      "x": 10.013,
-     "y": 45.14,
+     "y": 44.87,
      "value": 22314.2168957333
-    },
-    {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 9.005,
-     "y": 45.44,
-     "value": 8145.14808387469
     },
     {
      "iso3": "TUN",
      "name": "Tunisia",
      "x": 9.474,
-     "y": 45.75,
+     "y": 45.29,
      "value": 13017.6340422977
     },
     {
      "iso3": "GHA",
      "name": "Ghana",
      "x": 8.904,
-     "y": 49.2,
+     "y": 48.97,
      "value": 7357.83332993014
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 10.784,
-     "y": 49.57,
+     "y": 49.13,
      "value": 48253.963885132
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 9.622,
-     "y": 49.73,
+     "y": 49.46,
      "value": 15091.0088604652
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 8.896,
-     "y": 50.75,
+     "y": 50.36,
      "value": 7300.08078250634
-    },
-    {
-     "iso3": "TUR",
-     "name": "Türkiye",
-     "x": 10.527,
-     "y": 51.32,
-     "value": 37300.7485739354
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 8.699,
-     "y": 51.37,
+     "y": 51.04,
      "value": 5995.40177895632
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 10.527,
+     "y": 51.13,
+     "value": 37300.7485739354
     },
     {
      "iso3": "KIR",
      "name": "Kiribati",
      "x": 8.121,
-     "y": 54.74,
+     "y": 54.06,
      "value": 3363.99521326766
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 8.618,
-     "y": 69.1,
+     "y": 68.77,
      "value": 5529.23310016154
     }
    ],
@@ -1686,10 +1687,10 @@
     "South Sudan"
    ],
    "fit": {
-    "slope": -0.254,
-    "intercept": 44.476,
-    "lo": -2.662,
-    "hi": 2.153,
+    "slope": -0.205,
+    "intercept": 43.742,
+    "lo": -2.591,
+    "hi": 2.181,
     "r": -0.03
    }
   },
@@ -1703,273 +1704,273 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 0.93,
-     "y": 28.53,
+     "y": 28.48,
      "value": 0.930400013923645
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 0.868,
-     "y": 29.01,
+     "y": 29.02,
      "value": 0.868359982967377
     },
     {
      "iso3": "LKA",
      "name": "Sri Lanka",
      "x": 1.047,
-     "y": 30.29,
+     "y": 30.0,
      "value": 1.04683005809784
     },
     {
      "iso3": "IND",
      "name": "India",
      "x": 0.97,
-     "y": 32.68,
+     "y": 32.4,
      "value": 0.969559252262115
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 0.95,
-     "y": 33.07,
+     "y": 32.61,
      "value": 0.949559986591339
     },
     {
      "iso3": "BGD",
      "name": "Bangladesh",
      "x": 1.244,
-     "y": 34.05,
+     "y": 33.97,
      "value": 1.24441254138947
     },
     {
      "iso3": "SSD",
      "name": "South Sudan",
      "x": 0.537,
-     "y": 34.48,
+     "y": 34.28,
      "value": 0.536710023880005
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 0.991,
-     "y": 35.01,
+     "y": 34.67,
      "value": 0.990710020065308
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 1.13,
-     "y": 36.45,
+     "y": 36.06,
      "value": 1.12988996505737
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 0.901,
-     "y": 36.51,
+     "y": 36.3,
      "value": 0.901369988918304
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 0.799,
-     "y": 37.45,
+     "y": 37.4,
      "value": 0.799239993095398
     },
     {
      "iso3": "NPL",
      "name": "Nepal",
      "x": 0.987,
-     "y": 37.51,
+     "y": 37.41,
      "value": 0.987173140048981
     },
     {
      "iso3": "WSM",
      "name": "Samoa",
      "x": 1.103,
-     "y": 38.8,
+     "y": 38.42,
      "value": 1.10344994068146
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 0.979,
-     "y": 38.83,
+     "y": 38.71,
      "value": 0.978860020637512
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 1.03,
-     "y": 39.63,
-     "value": 1.03032994270325
     },
     {
      "iso3": "SDN",
      "name": "Sudan",
      "x": 1.02,
-     "y": 39.63,
+     "y": 39.42,
      "value": 1.02030003070831
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 1.03,
+     "y": 40.03,
+     "value": 1.03032994270325
     },
     {
      "iso3": "ZAF",
      "name": "South Africa",
      "x": 1.089,
-     "y": 40.82,
+     "y": 40.7,
      "value": 1.08913004398346
     },
     {
      "iso3": "GRC",
      "name": "Greece",
      "x": 0.955,
-     "y": 41.16,
+     "y": 40.92,
      "value": 0.954909980297089
     },
     {
      "iso3": "ECU",
      "name": "Ecuador",
      "x": 1.025,
-     "y": 41.51,
+     "y": 41.07,
      "value": 1.02479004859924
     },
     {
      "iso3": "UGA",
      "name": "Uganda",
      "x": 0.901,
-     "y": 41.91,
+     "y": 41.4,
      "value": 0.901470303535461
-    },
-    {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 0.962,
-     "y": 41.94,
-     "value": 0.961709976196289
     },
     {
      "iso3": "AUS",
      "name": "Australia",
      "x": 0.962,
-     "y": 42.07,
+     "y": 41.79,
      "value": 0.962329983711243
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 1.024,
-     "y": 42.12,
+     "y": 41.91,
      "value": 1.024090051651
     },
     {
      "iso3": "SLE",
      "name": "Sierra Leone",
      "x": 0.966,
-     "y": 42.27,
+     "y": 41.98,
      "value": 0.965510010719299
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 0.962,
+     "y": 42.02,
+     "value": 0.961709976196289
     },
     {
      "iso3": "PSE",
      "name": "West Bank and Gaza",
      "x": 1.092,
-     "y": 42.71,
+     "y": 42.42,
      "value": 1.09232997894287
     },
     {
      "iso3": "SYR",
      "name": "Syrian Arab Republic",
      "x": 0.994,
-     "y": 42.89,
+     "y": 42.58,
      "value": 0.994440019130707
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 1.145,
-     "y": 43.09,
+     "y": 43.05,
      "value": 1.1450400352478
     },
     {
      "iso3": "JOR",
      "name": "Jordan",
      "x": 1.02,
-     "y": 43.55,
+     "y": 43.35,
      "value": 1.02014994621277
     },
     {
      "iso3": "OMN",
      "name": "Oman",
      "x": 0.937,
-     "y": 43.69,
+     "y": 43.47,
      "value": 0.936540007591248
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 0.952,
+     "y": 43.8,
+     "value": 0.951550006866455
     },
     {
      "iso3": "BLR",
      "name": "Belarus",
      "x": 0.985,
-     "y": 44.98,
+     "y": 44.8,
      "value": 0.984879970550537
     },
     {
      "iso3": "AZE",
      "name": "Azerbaijan",
      "x": 0.983,
-     "y": 45.14,
+     "y": 44.87,
      "value": 0.983489990234375
-    },
-    {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 0.952,
-     "y": 45.44,
-     "value": 0.951550006866455
     },
     {
      "iso3": "TUN",
      "name": "Tunisia",
      "x": 1.143,
-     "y": 45.75,
+     "y": 45.29,
      "value": 1.14288997650146
     },
     {
      "iso3": "GHA",
      "name": "Ghana",
      "x": 1.004,
-     "y": 49.2,
+     "y": 48.97,
      "value": 1.00419998168945
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 1.064,
-     "y": 49.57,
+     "y": 49.13,
      "value": 1.06357002258301
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 1.025,
-     "y": 49.73,
+     "y": 49.46,
      "value": 1.02502000331879
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 1.148,
-     "y": 50.75,
+     "y": 50.36,
      "value": 1.14830851554871
     },
     {
      "iso3": "TUR",
      "name": "Türkiye",
      "x": 0.973,
-     "y": 51.32,
+     "y": 51.13,
      "value": 0.973070025444031
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 0.96,
-     "y": 69.1,
+     "y": 68.77,
      "value": 0.959890007972717
     }
    ],
@@ -1978,10 +1979,10 @@
     "Kiribati"
    ],
    "fit": {
-    "slope": 11.618,
-    "intercept": 29.792,
-    "lo": -9.59,
-    "hi": 32.826,
+    "slope": 11.562,
+    "intercept": 29.586,
+    "lo": -9.484,
+    "hi": 32.608,
     "r": 0.18
    }
   },
@@ -1995,280 +1996,280 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 3.226,
-     "y": 28.53,
+     "y": 28.48,
      "value": 3.2258064516129
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 17.042,
-     "y": 29.01,
+     "y": 29.02,
      "value": 17.0418006430868
     },
     {
      "iso3": "LKA",
      "name": "Sri Lanka",
      "x": 9.778,
-     "y": 30.29,
+     "y": 30.0,
      "value": 9.77777777777778
     },
     {
      "iso3": "IND",
      "name": "India",
      "x": 13.787,
-     "y": 32.68,
+     "y": 32.4,
      "value": 13.7867647058824
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 6.0,
-     "y": 33.07,
+     "y": 32.61,
      "value": 6.0
     },
     {
      "iso3": "BGD",
      "name": "Bangladesh",
      "x": 20.857,
-     "y": 34.05,
+     "y": 33.97,
      "value": 20.8571428571429
     },
     {
      "iso3": "SSD",
      "name": "South Sudan",
      "x": 32.364,
-     "y": 34.48,
+     "y": 34.28,
      "value": 32.3636363636364
     },
     {
      "iso3": "KNA",
      "name": "St. Kitts and Nevis",
      "x": 31.25,
-     "y": 35.01,
+     "y": 34.67,
      "value": 31.25
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 4.255,
-     "y": 36.45,
+     "y": 36.06,
      "value": 4.25531914893617
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 28.571,
-     "y": 36.51,
+     "y": 36.3,
      "value": 28.5714285714286
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 2.703,
-     "y": 37.45,
+     "y": 37.4,
      "value": 2.7027027027027
     },
     {
      "iso3": "NPL",
      "name": "Nepal",
      "x": 33.088,
-     "y": 37.51,
+     "y": 37.41,
      "value": 33.0882352941176
     },
     {
      "iso3": "WSM",
      "name": "Samoa",
      "x": 9.804,
-     "y": 38.8,
+     "y": 38.42,
      "value": 9.80392156862745
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 28.935,
-     "y": 38.83,
+     "y": 38.71,
      "value": 28.9351851851852
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 36.111,
-     "y": 39.63,
-     "value": 36.1111111111111
     },
     {
      "iso3": "SDN",
      "name": "Sudan",
      "x": 30.516,
-     "y": 39.63,
+     "y": 39.42,
      "value": 30.5164319248826
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 36.111,
+     "y": 40.03,
+     "value": 36.1111111111111
     },
     {
      "iso3": "ZAF",
      "name": "South Africa",
      "x": 44.862,
-     "y": 40.82,
+     "y": 40.7,
      "value": 44.8621553884712
     },
     {
      "iso3": "GRC",
      "name": "Greece",
      "x": 22.896,
-     "y": 41.16,
+     "y": 40.92,
      "value": 22.8956228956229
     },
     {
      "iso3": "ECU",
      "name": "Ecuador",
      "x": 45.033,
-     "y": 41.51,
+     "y": 41.07,
      "value": 45.0331125827815
     },
     {
      "iso3": "UGA",
      "name": "Uganda",
      "x": 34.054,
-     "y": 41.91,
+     "y": 41.4,
      "value": 34.0540540540541
-    },
-    {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 41.909,
-     "y": 41.94,
-     "value": 41.9087136929461
     },
     {
      "iso3": "AUS",
      "name": "Australia",
      "x": 46.0,
-     "y": 42.07,
+     "y": 41.79,
      "value": 46.0
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 40.462,
-     "y": 42.12,
+     "y": 41.91,
      "value": 40.4615384615385
     },
     {
      "iso3": "SLE",
      "name": "Sierra Leone",
      "x": 29.53,
-     "y": 42.27,
+     "y": 41.98,
      "value": 29.5302013422819
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 41.909,
+     "y": 42.02,
+     "value": 41.9087136929461
     },
     {
      "iso3": "SYR",
      "name": "Syrian Arab Republic",
      "x": 4.918,
-     "y": 42.89,
+     "y": 42.58,
      "value": 4.91803278688525
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 63.75,
-     "y": 43.09,
+     "y": 43.05,
      "value": 63.75
     },
     {
      "iso3": "JOR",
      "name": "Jordan",
      "x": 19.565,
-     "y": 43.55,
+     "y": 43.35,
      "value": 19.5652173913043
     },
     {
      "iso3": "OMN",
      "name": "Oman",
      "x": 0.0,
-     "y": 43.69,
+     "y": 43.47,
      "value": 0.0
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 4.213,
+     "y": 43.8,
+     "value": 4.21348314606742
     },
     {
      "iso3": "BLR",
      "name": "Belarus",
      "x": 33.945,
-     "y": 44.98,
+     "y": 44.8,
      "value": 33.9449541284404
     },
     {
      "iso3": "AZE",
      "name": "Azerbaijan",
      "x": 20.8,
-     "y": 45.14,
+     "y": 44.87,
      "value": 20.8
-    },
-    {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 4.213,
-     "y": 45.44,
-     "value": 4.21348314606742
     },
     {
      "iso3": "TUN",
      "name": "Tunisia",
      "x": 15.789,
-     "y": 45.75,
+     "y": 45.29,
      "value": 15.7894736842105
     },
     {
      "iso3": "GHA",
      "name": "Ghana",
      "x": 14.545,
-     "y": 49.2,
+     "y": 48.97,
      "value": 14.5454545454545
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 3.077,
-     "y": 49.57,
+     "y": 49.13,
      "value": 3.07692307692308
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 21.897,
-     "y": 49.73,
+     "y": 49.46,
      "value": 21.8965517241379
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 13.6,
-     "y": 50.75,
+     "y": 50.36,
      "value": 13.6
-    },
-    {
-     "iso3": "TUR",
-     "name": "Türkiye",
-     "x": 19.899,
-     "y": 51.32,
-     "value": 19.8988195615514
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 23.392,
-     "y": 51.37,
+     "y": 51.04,
      "value": 23.3918128654971
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 19.899,
+     "y": 51.13,
+     "value": 19.8988195615514
     },
     {
      "iso3": "KIR",
      "name": "Kiribati",
      "x": 11.111,
-     "y": 54.74,
+     "y": 54.06,
      "value": 11.1111111111111
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 30.108,
-     "y": 69.1,
+     "y": 68.77,
      "value": 30.1075268817204
     }
    ],
@@ -2276,11 +2277,11 @@
     "West Bank and Gaza"
    ],
    "fit": {
-    "slope": 0.037,
-    "intercept": 41.057,
-    "lo": -0.133,
-    "hi": 0.207,
-    "r": 0.07
+    "slope": 0.044,
+    "intercept": 40.629,
+    "lo": -0.125,
+    "hi": 0.212,
+    "r": 0.08
    }
   },
   {
@@ -2293,273 +2294,273 @@
      "iso3": "MDV",
      "name": "Maldives",
      "x": 40.732,
-     "y": 28.53,
+     "y": 28.48,
      "value": 40.732
     },
     {
      "iso3": "PAK",
      "name": "Pakistan",
      "x": 24.046,
-     "y": 29.01,
+     "y": 29.02,
      "value": 24.046
     },
     {
      "iso3": "LKA",
      "name": "Sri Lanka",
      "x": 30.992,
-     "y": 30.29,
+     "y": 30.0,
      "value": 30.992
     },
     {
      "iso3": "IND",
      "name": "India",
      "x": 32.425,
-     "y": 32.68,
+     "y": 32.4,
      "value": 32.425
     },
     {
      "iso3": "SLB",
      "name": "Solomon Islands",
      "x": 82.337,
-     "y": 33.07,
+     "y": 32.61,
      "value": 82.337
     },
     {
      "iso3": "BGD",
      "name": "Bangladesh",
      "x": 38.649,
-     "y": 34.05,
+     "y": 33.97,
      "value": 38.649
     },
     {
      "iso3": "SSD",
      "name": "South Sudan",
      "x": 70.393,
-     "y": 34.48,
+     "y": 34.28,
      "value": 70.393
     },
     {
      "iso3": "BTN",
      "name": "Bhutan",
      "x": 56.7,
-     "y": 36.45,
+     "y": 36.06,
      "value": 56.7
     },
     {
      "iso3": "TJK",
      "name": "Tajikistan",
      "x": 21.897,
-     "y": 36.51,
+     "y": 36.3,
      "value": 21.897
     },
     {
      "iso3": "PNG",
      "name": "Papua New Guinea",
      "x": 50.822,
-     "y": 37.45,
+     "y": 37.4,
      "value": 50.822
     },
     {
      "iso3": "NPL",
      "name": "Nepal",
      "x": 27.473,
-     "y": 37.51,
+     "y": 37.41,
      "value": 27.473
     },
     {
      "iso3": "WSM",
      "name": "Samoa",
      "x": 30.739,
-     "y": 38.8,
+     "y": 38.42,
      "value": 30.739
     },
     {
      "iso3": "USA",
      "name": "United States",
      "x": 56.343,
-     "y": 38.83,
+     "y": 38.71,
      "value": 56.343
-    },
-    {
-     "iso3": "GUY",
-     "name": "Guyana",
-     "x": 47.35,
-     "y": 39.63,
-     "value": 47.35
     },
     {
      "iso3": "SDN",
      "name": "Sudan",
      "x": 14.452,
-     "y": 39.63,
+     "y": 39.42,
      "value": 14.452
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 47.35,
+     "y": 40.03,
+     "value": 47.35
     },
     {
      "iso3": "ZAF",
      "name": "South Africa",
      "x": 49.881,
-     "y": 40.82,
+     "y": 40.7,
      "value": 49.881
     },
     {
      "iso3": "GRC",
      "name": "Greece",
      "x": 44.666,
-     "y": 41.16,
+     "y": 40.92,
      "value": 44.666
     },
     {
      "iso3": "ECU",
      "name": "Ecuador",
      "x": 52.386,
-     "y": 41.51,
+     "y": 41.07,
      "value": 52.386
     },
     {
      "iso3": "UGA",
      "name": "Uganda",
      "x": 75.595,
-     "y": 41.91,
+     "y": 41.4,
      "value": 75.595
-    },
-    {
-     "iso3": "ETH",
-     "name": "Ethiopia",
-     "x": 58.456,
-     "y": 41.94,
-     "value": 58.456
     },
     {
      "iso3": "AUS",
      "name": "Australia",
      "x": 62.513,
-     "y": 42.07,
+     "y": 41.79,
      "value": 62.513
     },
     {
      "iso3": "GBR",
      "name": "United Kingdom",
      "x": 57.333,
-     "y": 42.12,
+     "y": 41.91,
      "value": 57.333
     },
     {
      "iso3": "SLE",
      "name": "Sierra Leone",
      "x": 51.604,
-     "y": 42.27,
+     "y": 41.98,
      "value": 51.604
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 58.456,
+     "y": 42.02,
+     "value": 58.456
     },
     {
      "iso3": "PSE",
      "name": "West Bank and Gaza",
      "x": 18.934,
-     "y": 42.71,
+     "y": 42.42,
      "value": 18.934
     },
     {
      "iso3": "SYR",
      "name": "Syrian Arab Republic",
      "x": 12.727,
-     "y": 42.89,
+     "y": 42.58,
      "value": 12.727
     },
     {
      "iso3": "RWA",
      "name": "Rwanda",
      "x": 57.304,
-     "y": 43.09,
+     "y": 43.05,
      "value": 57.304
     },
     {
      "iso3": "JOR",
      "name": "Jordan",
      "x": 16.029,
-     "y": 43.55,
+     "y": 43.35,
      "value": 16.029
     },
     {
      "iso3": "OMN",
      "name": "Oman",
      "x": 29.958,
-     "y": 43.69,
+     "y": 43.47,
      "value": 29.958
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 80.7,
+     "y": 43.8,
+     "value": 80.7
     },
     {
      "iso3": "BLR",
      "name": "Belarus",
      "x": 56.769,
-     "y": 44.98,
+     "y": 44.8,
      "value": 56.769
     },
     {
      "iso3": "AZE",
      "name": "Azerbaijan",
      "x": 60.759,
-     "y": 45.14,
+     "y": 44.87,
      "value": 60.759
-    },
-    {
-     "iso3": "NGA",
-     "name": "Nigeria",
-     "x": 80.7,
-     "y": 45.44,
-     "value": 80.7
     },
     {
      "iso3": "TUN",
      "name": "Tunisia",
      "x": 26.497,
-     "y": 45.75,
+     "y": 45.29,
      "value": 26.497
     },
     {
      "iso3": "GHA",
      "name": "Ghana",
      "x": 55.265,
-     "y": 49.2,
+     "y": 48.97,
      "value": 55.265
     },
     {
      "iso3": "KWT",
      "name": "Kuwait",
      "x": 47.2,
-     "y": 49.57,
+     "y": 49.13,
      "value": 47.2
     },
     {
      "iso3": "IDN",
      "name": "Indonesia",
      "x": 53.72,
-     "y": 49.73,
+     "y": 49.46,
      "value": 53.72
     },
     {
      "iso3": "KHM",
      "name": "Cambodia",
      "x": 77.351,
-     "y": 50.75,
+     "y": 50.36,
      "value": 77.351
-    },
-    {
-     "iso3": "TUR",
-     "name": "Türkiye",
-     "x": 37.145,
-     "y": 51.32,
-     "value": 37.145
     },
     {
      "iso3": "KEN",
      "name": "Kenya",
      "x": 63.036,
-     "y": 51.37,
+     "y": 51.04,
      "value": 63.036
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 37.145,
+     "y": 51.13,
+     "value": 37.145
     },
     {
      "iso3": "ZWE",
      "name": "Zimbabwe",
      "x": 62.155,
-     "y": 69.1,
+     "y": 68.77,
      "value": 62.155
     }
    ],
@@ -2568,11 +2569,11 @@
     "Kiribati"
    ],
    "fit": {
-    "slope": 0.101,
-    "intercept": 37.012,
-    "lo": -0.026,
-    "hi": 0.228,
-    "r": 0.26
+    "slope": 0.096,
+    "intercept": 36.982,
+    "lo": -0.03,
+    "hi": 0.223,
+    "r": 0.25
    }
   }
  ],
@@ -2613,7 +2614,7 @@
    {
     "label": "North America",
     "countries": 2,
-    "books": 487,
+    "books": 486,
     "female": 27489,
     "male": 41379,
     "share": 39.92
@@ -2621,25 +2622,25 @@
    {
     "label": "South Asia",
     "countries": 6,
-    "books": 1242,
-    "female": 128791,
-    "male": 282049,
-    "share": 31.35
+    "books": 1138,
+    "female": 121961,
+    "male": 272577,
+    "share": 30.91
    },
    {
     "label": "Sub-Saharan Africa",
     "countries": 19,
-    "books": 606,
-    "female": 54331,
-    "male": 82566,
-    "share": 39.69
+    "books": 609,
+    "female": 54595,
+    "male": 82884,
+    "share": 39.71
    }
   ],
   "income": [
    {
     "label": "High income",
     "countries": 17,
-    "books": 818,
+    "books": 817,
     "female": 48308,
     "male": 70613,
     "share": 40.62
@@ -2647,18 +2648,18 @@
    {
     "label": "Low income",
     "countries": 11,
-    "books": 405,
-    "female": 42709,
-    "male": 72503,
-    "share": 37.07
+    "books": 407,
+    "female": 42940,
+    "male": 72761,
+    "share": 37.11
    },
    {
     "label": "Lower middle income",
     "countries": 25,
-    "books": 1590,
-    "female": 177847,
-    "male": 371574,
-    "share": 32.37
+    "books": 1487,
+    "female": 171050,
+    "male": 362162,
+    "share": 32.08
    },
    {
     "label": "Upper middle income",
@@ -2674,10 +2675,10 @@
   {
    "key": "national",
    "label": "National textbooks",
-   "books": 3259,
-   "female": 313318,
-   "male": 581216,
-   "share": 35.03
+   "books": 3157,
+   "female": 306752,
+   "male": 572062,
+   "share": 34.91
   },
   {
    "key": "teacher-guides",
@@ -2690,10 +2691,10 @@
   {
    "key": "readers",
    "label": "Readers and supplementary books",
-   "books": 591,
-   "female": 6374,
-   "male": 9756,
-   "share": 39.52
+   "books": 592,
+   "female": 7086,
+   "male": 10427,
+   "share": 40.46
   },
   {
    "key": "programme",
@@ -2745,26 +2746,185 @@
   }
  ],
  "counts": {
-  "books": 4995,
-  "national": 3259,
-  "model": 2907,
-  "no_share": 133,
+  "books": 5066,
+  "national": 3157,
+  "model": 2806,
+  "no_share": 132,
   "no_subject": 73,
-  "no_grade": 204,
-  "no_year": 1369,
-  "no_share_with_year": 100,
+  "no_grade": 203,
+  "no_year": 1372,
+  "no_share_with_year": 99,
   "paper_with_year": 378,
-  "search_national": 1650,
+  "search_national": 1548,
   "india_i4i": 399,
   "kind_from_title": 22,
   "kind_from_file": 2,
-  "parts_combined": 1486,
-  "combined_books": 139,
-  "dropped": 1175,
-  "dropped_national": 1127,
+  "parts_combined": 1504,
+  "combined_books": 141,
+  "dropped": 1326,
+  "dropped_national": 1217,
   "excerpts": 90,
   "excerpt_min_pages": 5,
-  "excerpt_max_pages": 22
+  "excerpt_max_pages": 22,
+  "earlier": 172
+ },
+ "editions": {
+  "pairs": [
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "Class 12 Computerised Accounting System (Accountancy), NCERT, pre-2022 edition",
+    "title_new": "Accountancy (E) PART-3 (Class 12, 2025-26)",
+    "year_old": 2019,
+    "year_new": 2025,
+    "share_old": 40.5,
+    "share_new": 44.0
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "१ ली बालभारती इंग्रजी",
+    "title_new": "१ ली बालभारती इंग्रजी",
+    "year_old": 2013,
+    "year_new": 2026,
+    "share_old": 62.9,
+    "share_new": 38.2
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "२ री गणित इंग्रजी",
+    "title_new": "२ री गणित इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2013,
+    "share_old": 58.3,
+    "share_new": 39.1
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "२ री गणित इंग्रजी",
+    "title_new": "२ री गणित इंग्रजी",
+    "year_old": 2013,
+    "year_new": 2026,
+    "share_old": 39.1,
+    "share_new": 43.8
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "२ री बालभारती इंग्रजी",
+    "title_new": "२ री बालभारती इंग्रजी",
+    "year_old": 2013,
+    "year_new": 2026,
+    "share_old": 29.0,
+    "share_new": 39.7
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "३ री बालभारती इंग्रजी",
+    "title_new": "३ री बालभारती इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 26.3,
+    "share_new": 56.4
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "४ थी गणित इंग्रजी",
+    "title_new": "४ थी गणित इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 28.6,
+    "share_new": 37.7
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "४ थी बालभारती इंग्रजी",
+    "title_new": "४ थी बालभारती इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 20.0,
+    "share_new": 38.9
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "५ वी गणित इंग्रजी",
+    "title_new": "५ वी गणित इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2022,
+    "share_old": 29.2,
+    "share_new": 18.1
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "६ वी तारूफे उर्दू उर्दू",
+    "title_new": "६ वी तारूफे उर्दू उर्दू",
+    "year_old": 2006,
+    "year_new": 2021,
+    "share_old": 18.2,
+    "share_new": 17.1
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "६ वी बालभारती इंग्रजी",
+    "title_new": "६ वी बालभारती इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 28.2,
+    "share_new": 37.1
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "६ वी भूगोल इंग्रजी",
+    "title_new": "६ वी भूगोल इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 21.2,
+    "share_new": 26.3
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "६ वी सामान्य विज्ञान इंग्रजी",
+    "title_new": "६ वी सामान्य विज्ञान इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2026,
+    "share_old": 24.0,
+    "share_new": 38.6
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "८ वी भूगोल इंग्रजी",
+    "title_new": "८ वी भूगोल इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2022,
+    "share_old": 3.6,
+    "share_new": 31.0
+   },
+   {
+    "country": "India",
+    "iso3": "IND",
+    "title_old": "८ वी सामान्य विज्ञान इंग्रजी",
+    "title_new": "८ वी सामान्य विज्ञान इंग्रजी",
+    "year_old": 2011,
+    "year_new": 2022,
+    "share_old": 8.8,
+    "share_new": 16.7
+   }
+  ],
+  "pooled_old": 28.1,
+  "pooled_new": 38.55,
+  "up": 11,
+  "down": 4
  },
  "themes": [
   {
@@ -2772,13 +2932,13 @@
    "label": "Achievement words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -0.7064,
-    "low": -0.8468,
-    "high": -0.525,
-    "female": 1.3758,
-    "male": 2.0821
+    "value": -0.7074,
+    "low": -0.8486,
+    "high": -0.5264,
+    "female": 1.4055,
+    "male": 2.113
    },
    "region": [
     {
@@ -2823,7 +2983,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": -0.9344,
      "low": -1.0977,
@@ -2833,29 +2993,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -0.7573,
+     "value": -0.7448,
      "low": -1.3194,
      "high": -0.5112,
-     "female": 1.3737,
-     "male": 2.131
+     "female": 1.4577,
+     "male": 2.2025
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": -0.742,
-     "low": -1.0122,
-     "high": -0.2987,
-     "female": 1.5535,
-     "male": 2.2955
+     "value": -0.7437,
+     "low": -1.0127,
+     "high": -0.3044,
+     "female": 1.5478,
+     "male": 2.2915
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": -0.6224,
      "low": -0.8734,
@@ -2865,23 +3025,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": -0.8721,
-     "low": -1.0849,
-     "high": -0.5021,
-     "female": 1.3253,
-     "male": 2.1974
+     "value": -0.8747,
+     "low": -1.0847,
+     "high": -0.506,
+     "female": 1.3205,
+     "male": 2.1951
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -0.6461,
-     "low": -0.7124,
-     "high": -0.4149,
-     "female": 1.4202,
-     "male": 2.0663
+     "value": -0.6371,
+     "low": -0.7039,
+     "high": -0.4146,
+     "female": 1.4793,
+     "male": 2.1164
     },
     {
      "group": "Upper middle income",
@@ -2894,7 +3054,7 @@
      "male": 2.2564
     }
    ],
-   "detectable": 1.3753,
+   "detectable": 1.3515,
    "theme": "achievement",
    "name": "Achievement"
   },
@@ -2903,13 +3063,13 @@
    "label": "Appearance words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 0.2721,
-    "low": 0.223,
-    "high": 0.3455,
-    "female": 0.4703,
-    "male": 0.1982
+    "value": 0.2777,
+    "low": 0.2257,
+    "high": 0.3473,
+    "female": 0.4778,
+    "male": 0.2001
    },
    "region": [
     {
@@ -2954,7 +3114,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.1,
      "low": -0.0508,
@@ -2964,29 +3124,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 0.2587,
-     "low": 0.2279,
+     "value": 0.2727,
+     "low": 0.2418,
      "high": 0.4692,
-     "female": 0.4301,
-     "male": 0.1714
+     "female": 0.4474,
+     "male": 0.1747
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 0.2523,
-     "low": 0.0716,
-     "high": 0.3582,
-     "female": 0.5006,
-     "male": 0.2483
+     "value": 0.2545,
+     "low": 0.0778,
+     "high": 0.3609,
+     "female": 0.5019,
+     "male": 0.2474
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 0.1229,
      "low": 0.0949,
@@ -2996,23 +3156,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 0.3806,
-     "low": 0.3213,
-     "high": 0.4341,
-     "female": 0.6041,
-     "male": 0.2235
+     "value": 0.3828,
+     "low": 0.3237,
+     "high": 0.4409,
+     "female": 0.6055,
+     "male": 0.2227
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 0.2554,
-     "low": 0.209,
-     "high": 0.3433,
-     "female": 0.4468,
-     "male": 0.1914
+     "value": 0.2649,
+     "low": 0.2128,
+     "high": 0.343,
+     "female": 0.4593,
+     "male": 0.1944
     },
     {
      "group": "Upper middle income",
@@ -3025,7 +3185,7 @@
      "male": 0.248
     }
    ],
-   "detectable": 0.5828,
+   "detectable": 0.5692,
    "theme": "appearance",
    "name": "Appearance"
   },
@@ -3034,13 +3194,13 @@
    "label": "Family words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 2.1103,
-    "low": 1.315,
-    "high": 2.5567,
-    "female": 5.827,
-    "male": 3.7167
+    "value": 2.0866,
+    "low": 1.3141,
+    "high": 2.5355,
+    "female": 5.7866,
+    "male": 3.7
    },
    "region": [
     {
@@ -3085,7 +3245,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.9724,
      "low": 0.9495,
@@ -3095,29 +3255,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 2.9627,
+     "value": 2.9419,
      "low": 1.8744,
      "high": 4.9229,
-     "female": 6.4722,
-     "male": 3.5095
+     "female": 6.4041,
+     "male": 3.4621
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 1.9275,
-     "low": 1.3677,
-     "high": 2.3726,
-     "female": 6.4955,
-     "male": 4.568
+     "value": 1.9188,
+     "low": 1.3537,
+     "high": 2.3375,
+     "female": 6.4897,
+     "male": 4.571
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 0.7417,
      "low": 0.0674,
@@ -3127,23 +3287,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 2.0298,
-     "low": 1.3496,
-     "high": 2.6072,
-     "female": 6.404,
-     "male": 4.3742
+     "value": 2.0149,
+     "low": 1.3144,
+     "high": 2.5793,
+     "female": 6.3928,
+     "male": 4.3779
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 2.5651,
-     "low": 1.4951,
-     "high": 3.2265,
-     "female": 6.0639,
-     "male": 3.4987
+     "value": 2.5366,
+     "low": 1.4966,
+     "high": 3.2296,
+     "female": 6.0006,
+     "male": 3.464
     },
     {
      "group": "Upper middle income",
@@ -3156,7 +3316,7 @@
      "male": 4.5068
     }
    ],
-   "detectable": 2.9171,
+   "detectable": 2.8619,
    "theme": "family",
    "name": "Family and the home"
   },
@@ -3165,13 +3325,13 @@
    "label": "Work words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -0.3659,
-    "low": -0.6721,
-    "high": 0.0802,
-    "female": 3.373,
-    "male": 3.7389
+    "value": -0.3411,
+    "low": -0.6318,
+    "high": 0.0775,
+    "female": 3.4213,
+    "male": 3.7625
    },
    "region": [
     {
@@ -3216,7 +3376,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.636,
      "low": 0.5928,
@@ -3226,29 +3386,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -0.7152,
-     "low": -0.839,
+     "value": -0.6532,
+     "low": -0.775,
      "high": -0.1013,
-     "female": 3.1375,
-     "male": 3.8526
+     "female": 3.2578,
+     "male": 3.9111
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 0.2346,
-     "low": -0.2181,
-     "high": 0.6887,
-     "female": 4.6015,
-     "male": 4.3669
+     "value": 0.2305,
+     "low": -0.2256,
+     "high": 0.6766,
+     "female": 4.5902,
+     "male": 4.3598
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 0.0038,
      "low": -1.1117,
@@ -3258,23 +3418,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": -0.0034,
-     "low": -0.6128,
-     "high": 0.4984,
-     "female": 4.0742,
-     "male": 4.0776
+     "value": -0.0065,
+     "low": -0.6165,
+     "high": 0.4826,
+     "female": 4.0662,
+     "male": 4.0727
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -0.4699,
-     "low": -0.7607,
-     "high": 0.3079,
-     "female": 3.1882,
-     "male": 3.658
+     "value": -0.423,
+     "low": -0.7156,
+     "high": 0.3058,
+     "female": 3.2719,
+     "male": 3.6949
     },
     {
      "group": "Upper middle income",
@@ -3287,7 +3447,7 @@
      "male": 4.0949
     }
    ],
-   "detectable": 2.4069,
+   "detectable": 2.3983,
    "theme": "work",
    "name": "Work"
   }
@@ -3298,13 +3458,13 @@
    "label": "Dominance of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -0.0193,
-    "low": -0.028,
-    "high": -0.0092,
-    "female": 0.5168,
-    "male": 0.5361
+    "value": -0.0186,
+    "low": -0.0279,
+    "high": -0.0093,
+    "female": 0.5177,
+    "male": 0.5362
    },
    "region": [
     {
@@ -3349,7 +3509,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.0192,
      "low": 0.0103,
@@ -3359,29 +3519,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -0.0273,
+     "value": -0.0253,
      "low": -0.0533,
      "high": -0.0065,
-     "female": 0.5111,
-     "male": 0.5385
+     "female": 0.5134,
+     "male": 0.5387
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": -0.0168,
-     "low": -0.0297,
-     "high": 0.0031,
-     "female": 0.5234,
-     "male": 0.5403
+     "value": -0.0176,
+     "low": -0.0307,
+     "high": 0.0024,
+     "female": 0.5229,
+     "male": 0.5405
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": -0.0001,
      "low": -0.0286,
@@ -3391,22 +3551,22 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": -0.0208,
-     "low": -0.0307,
-     "high": -0.0022,
-     "female": 0.5136,
-     "male": 0.5345
+     "value": -0.0217,
+     "low": -0.0321,
+     "high": -0.0035,
+     "female": 0.5131,
+     "male": 0.5348
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -0.0223,
+     "value": -0.0207,
      "low": -0.0374,
      "high": -0.0038,
-     "female": 0.5117,
+     "female": 0.5132,
      "male": 0.534
     },
     {
@@ -3420,7 +3580,7 @@
      "male": 0.5493
     }
    ],
-   "detectable": 0.1223,
+   "detectable": 0.1186,
    "kind": "Adjectives",
    "scale": "dominance"
   },
@@ -3429,13 +3589,13 @@
    "label": "Valence of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 0.0084,
-    "low": -0.0052,
-    "high": 0.0178,
-    "female": 0.6041,
-    "male": 0.5957
+    "value": 0.0076,
+    "low": -0.0058,
+    "high": 0.0171,
+    "female": 0.6043,
+    "male": 0.5967
    },
    "region": [
     {
@@ -3480,7 +3640,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.0223,
      "low": 0.0174,
@@ -3490,29 +3650,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 0.0049,
+     "value": 0.0035,
      "low": -0.0355,
-     "high": 0.0185,
-     "female": 0.601,
-     "male": 0.5961
+     "high": 0.0175,
+     "female": 0.6015,
+     "male": 0.5981
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 0.0211,
-     "low": 0.0064,
-     "high": 0.0439,
-     "female": 0.61,
-     "male": 0.5889
+     "value": 0.0202,
+     "low": 0.0051,
+     "high": 0.0432,
+     "female": 0.6096,
+     "male": 0.5894
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 0.0118,
      "low": -0.0098,
@@ -3522,23 +3682,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 0.0058,
-     "low": -0.0094,
-     "high": 0.0193,
-     "female": 0.5932,
-     "male": 0.5874
+     "value": 0.0049,
+     "low": -0.0105,
+     "high": 0.0183,
+     "female": 0.5929,
+     "male": 0.588
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 0.0081,
+     "value": 0.0071,
      "low": -0.0182,
-     "high": 0.0225,
-     "female": 0.6008,
-     "male": 0.5928
+     "high": 0.0216,
+     "female": 0.6012,
+     "male": 0.5941
     },
     {
      "group": "Upper middle income",
@@ -3551,7 +3711,7 @@
      "male": 0.6185
     }
    ],
-   "detectable": 0.1444,
+   "detectable": 0.1437,
    "kind": "Adjectives",
    "scale": "valence"
   },
@@ -3560,13 +3720,13 @@
    "label": "Arousal of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 0.0076,
-    "low": 0.0,
-    "high": 0.0137,
-    "female": 0.4819,
-    "male": 0.4743
+    "value": 0.0094,
+    "low": -0.0001,
+    "high": 0.0154,
+    "female": 0.4835,
+    "male": 0.4742
    },
    "region": [
     {
@@ -3611,7 +3771,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": -0.0055,
      "low": -0.0097,
@@ -3621,29 +3781,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 0.011,
-     "low": 0.0095,
+     "value": 0.0157,
+     "low": 0.0108,
      "high": 0.028,
-     "female": 0.4781,
-     "male": 0.467
+     "female": 0.4822,
+     "male": 0.4664
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 0.0239,
-     "low": -0.0029,
-     "high": 0.0477,
-     "female": 0.4963,
-     "male": 0.4725
+     "value": 0.0233,
+     "low": -0.0032,
+     "high": 0.0462,
+     "female": 0.4959,
+     "male": 0.4726
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": -0.0119,
      "low": -0.0254,
@@ -3653,23 +3813,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 0.0152,
-     "low": -0.0113,
-     "high": 0.0346,
-     "female": 0.4899,
-     "male": 0.4747
+     "value": 0.0146,
+     "low": -0.0117,
+     "high": 0.0338,
+     "female": 0.4895,
+     "male": 0.4748
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 0.0089,
+     "value": 0.012,
      "low": -0.0034,
-     "high": 0.0183,
-     "female": 0.4781,
-     "male": 0.4692
+     "high": 0.0191,
+     "female": 0.4809,
+     "male": 0.4689
     },
     {
      "group": "Upper middle income",
@@ -3682,7 +3842,7 @@
      "male": 0.4847
     }
    ],
-   "detectable": 0.0996,
+   "detectable": 0.1056,
    "kind": "Adjectives",
    "scale": "arousal"
   },
@@ -3691,13 +3851,13 @@
    "label": "Dominance of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -0.0113,
-    "low": -0.0147,
+    "value": -0.0108,
+    "low": -0.0139,
     "high": -0.0049,
-    "female": 0.524,
-    "male": 0.5353
+    "female": 0.5249,
+    "male": 0.5356
    },
    "region": [
     {
@@ -3742,7 +3902,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": -0.0006,
      "low": -0.0012,
@@ -3752,21 +3912,21 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -0.0181,
+     "value": -0.0167,
      "low": -0.0217,
-     "high": -0.0158,
-     "female": 0.5235,
-     "male": 0.5416
+     "high": -0.0156,
+     "female": 0.5261,
+     "male": 0.5427
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": -0.0101,
-     "low": -0.0142,
-     "high": -0.0043,
+     "value": -0.01,
+     "low": -0.0141,
+     "high": -0.0042,
      "female": 0.5281,
      "male": 0.5381
     }
@@ -3774,7 +3934,7 @@
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": -0.0036,
      "low": -0.0112,
@@ -3784,23 +3944,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
      "value": -0.0111,
-     "low": -0.0154,
+     "low": -0.0153,
      "high": -0.0028,
-     "female": 0.5251,
-     "male": 0.5363
+     "female": 0.5252,
+     "male": 0.5362
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -0.0137,
-     "low": -0.0165,
+     "value": -0.0128,
+     "low": -0.0152,
      "high": -0.0043,
-     "female": 0.5235,
-     "male": 0.5373
+     "female": 0.5252,
+     "male": 0.538
     },
     {
      "group": "Upper middle income",
@@ -3813,7 +3973,7 @@
      "male": 0.5343
     }
    ],
-   "detectable": 0.0259,
+   "detectable": 0.0262,
    "kind": "Verbs",
    "scale": "dominance"
   },
@@ -3822,13 +3982,13 @@
    "label": "Valence of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 0.011,
-    "low": 0.0078,
+    "value": 0.0119,
+    "low": 0.0088,
     "high": 0.0148,
-    "female": 0.6326,
-    "male": 0.6216
+    "female": 0.6333,
+    "male": 0.6214
    },
    "region": [
     {
@@ -3873,7 +4033,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 0.0166,
      "low": 0.0155,
@@ -3883,29 +4043,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 0.0041,
+     "value": 0.0061,
      "low": -0.0024,
-     "high": 0.0077,
-     "female": 0.6253,
-     "male": 0.6212
+     "high": 0.0092,
+     "female": 0.6268,
+     "male": 0.6207
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 0.0141,
-     "low": 0.008,
-     "high": 0.019,
-     "female": 0.635,
+     "value": 0.0143,
+     "low": 0.0085,
+     "high": 0.0193,
+     "female": 0.6351,
      "male": 0.6209
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 0.0135,
      "low": 0.0049,
@@ -3915,23 +4075,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 0.0157,
-     "low": 0.0089,
-     "high": 0.0216,
-     "female": 0.6344,
+     "value": 0.0159,
+     "low": 0.0093,
+     "high": 0.0219,
+     "female": 0.6346,
      "male": 0.6187
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 0.0084,
-     "low": 0.0057,
+     "value": 0.01,
+     "low": 0.007,
      "high": 0.0162,
-     "female": 0.6278,
-     "male": 0.6194
+     "female": 0.6289,
+     "male": 0.619
     },
     {
      "group": "Upper middle income",
@@ -3944,7 +4104,7 @@
      "male": 0.6323
     }
    ],
-   "detectable": 0.0311,
+   "detectable": 0.032,
    "kind": "Verbs",
    "scale": "valence"
   },
@@ -3953,13 +4113,13 @@
    "label": "Arousal of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -0.0091,
-    "low": -0.0119,
+    "value": -0.0089,
+    "low": -0.0116,
     "high": -0.0047,
-    "female": 0.4749,
-    "male": 0.484
+    "female": 0.4753,
+    "male": 0.4842
    },
    "region": [
     {
@@ -4004,7 +4164,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": -0.0088,
      "low": -0.0091,
@@ -4014,29 +4174,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -0.0138,
-     "low": -0.0161,
+     "value": -0.0135,
+     "low": -0.016,
      "high": -0.0058,
-     "female": 0.4718,
-     "male": 0.4856
+     "female": 0.4726,
+     "male": 0.486
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": -0.0051,
+     "value": -0.0052,
      "low": -0.0089,
-     "high": -0.0011,
+     "high": -0.0013,
      "female": 0.4836,
-     "male": 0.4887
+     "male": 0.4888
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": -0.0114,
      "low": -0.0171,
@@ -4046,23 +4206,23 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
      "value": -0.0077,
-     "low": -0.0147,
-     "high": -0.0032,
+     "low": -0.0148,
+     "high": -0.0033,
      "female": 0.4807,
-     "male": 0.4884
+     "male": 0.4885
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -0.0097,
-     "low": -0.0135,
+     "value": -0.0093,
+     "low": -0.0131,
      "high": 0.0002,
-     "female": 0.4729,
-     "male": 0.4825
+     "female": 0.4734,
+     "male": 0.4827
     },
     {
      "group": "Upper middle income",
@@ -4075,7 +4235,7 @@
      "male": 0.485
     }
    ],
-   "detectable": 0.0261,
+   "detectable": 0.0252,
    "kind": "Verbs",
    "scale": "arousal"
   }
@@ -4086,12 +4246,12 @@
    "label": "Women's share of occupation mentions",
    "unit": "per cent",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 28.8874,
-    "low": 25.9301,
-    "high": 34.7571,
-    "female": 28.8874,
+    "value": 28.8751,
+    "low": 25.8346,
+    "high": 34.7505,
+    "female": 28.8751,
     "male": null
    },
    "region": [
@@ -4137,7 +4297,7 @@
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
      "value": 40.4171,
      "low": 29.8701,
@@ -4147,29 +4307,29 @@
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 23.7273,
+     "value": 23.5378,
      "low": 21.2249,
      "high": 33.6604,
-     "female": 23.7273,
+     "female": 23.5378,
      "male": null
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 32.4089,
-     "low": 27.8802,
-     "high": 37.7105,
-     "female": 32.4089,
+     "value": 32.3955,
+     "low": 27.8836,
+     "high": 37.6569,
+     "female": 32.3955,
      "male": null
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
      "value": 38.7516,
      "low": 33.7916,
@@ -4179,22 +4339,22 @@
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 30.7109,
-     "low": 27.2989,
-     "high": 36.1076,
-     "female": 30.7109,
+     "value": 30.7136,
+     "low": 27.2999,
+     "high": 36.0922,
+     "female": 30.7136,
      "male": null
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 25.2457,
-     "low": 23.4584,
-     "high": 32.8742,
-     "female": 25.2457,
+     "value": 25.1404,
+     "low": 23.298,
+     "high": 32.8638,
+     "female": 25.1404,
      "male": null
     },
     {
@@ -4208,323 +4368,323 @@
      "male": null
     }
    ],
-   "detectable": 21.5624
+   "detectable": 22.0943
   },
   "market": {
    "key": "occ_vs_labour_market",
    "label": "Women's share of the jobs shown, minus their labour-market share of them",
    "unit": "percentage points",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": -8.753,
-    "low": -12.334,
-    "high": -6.5851,
-    "female": 28.7608,
-    "male": 37.5138
+    "value": -8.8044,
+    "low": -12.3526,
+    "high": -6.5832,
+    "female": 28.7473,
+    "male": 37.5517
    },
    "region": [
     {
      "group": "East Asia & Pacific",
      "books": 329,
      "countries": 15,
-     "value": -11.621,
-     "low": -18.5369,
-     "high": -4.9579,
+     "value": -11.6823,
+     "low": -18.5802,
+     "high": -5.0924,
      "female": 33.1609,
-     "male": 44.7819
+     "male": 44.8432
     },
     {
      "group": "Europe & Central Asia",
      "books": 135,
      "countries": 11,
-     "value": -14.5719,
-     "low": -24.4246,
-     "high": -4.2736,
+     "value": -14.5777,
+     "low": -24.4353,
+     "high": -4.2802,
      "female": 34.2518,
-     "male": 48.8237
+     "male": 48.8295
     },
     {
      "group": "Latin America & Caribbean",
      "books": 134,
      "countries": 10,
-     "value": -12.3625,
-     "low": -15.6432,
-     "high": -8.1388,
+     "value": -12.3698,
+     "low": -15.652,
+     "high": -8.1507,
      "female": 40.4372,
-     "male": 52.7996
+     "male": 52.8069
     },
     {
      "group": "Middle East, North Africa, Afghanistan & Pakistan",
      "books": 326,
      "countries": 15,
-     "value": -5.7778,
-     "low": -10.071,
-     "high": 0.8537,
+     "value": -5.7957,
+     "low": -10.0839,
+     "high": 0.852,
      "female": 27.3968,
-     "male": 33.1746
+     "male": 33.1925
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
-     "value": -8.2741,
-     "low": -17.4353,
+     "value": -8.2748,
+     "low": -17.4497,
      "high": -7.8478,
      "female": 39.3453,
-     "male": 47.6194
+     "male": 47.62
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": -7.4139,
+     "value": -7.4863,
      "low": -17.8809,
      "high": -1.535,
-     "female": 23.6949,
-     "male": 31.1089
+     "female": 23.4925,
+     "male": 30.9788
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": -9.9472,
-     "low": -15.8053,
-     "high": -2.0726,
-     "female": 32.1933,
-     "male": 42.1405
+     "value": -9.896,
+     "low": -15.7874,
+     "high": -1.9805,
+     "female": 32.1891,
+     "male": 42.0851
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
-     "value": -9.5689,
-     "low": -13.9155,
-     "high": -7.9341,
+     "value": -9.5792,
+     "low": -13.9247,
+     "high": -7.9378,
      "female": 38.3333,
-     "male": 47.9023
+     "male": 47.9125
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": -8.5975,
-     "low": -15.8423,
-     "high": 4.6368,
-     "female": 30.7047,
-     "male": 39.3022
+     "value": -8.5514,
+     "low": -15.7947,
+     "high": 4.6019,
+     "female": 30.7076,
+     "male": 39.259
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": -7.4069,
-     "low": -10.4549,
-     "high": -4.5482,
-     "female": 25.1613,
-     "male": 32.5682
+     "value": -7.4606,
+     "low": -10.4612,
+     "high": -4.5483,
+     "female": 25.0492,
+     "male": 32.5097
     },
     {
      "group": "Upper middle income",
      "books": 446,
      "countries": 25,
-     "value": -14.2944,
-     "low": -22.5977,
-     "high": -4.6344,
+     "value": -14.3358,
+     "low": -22.6573,
+     "high": -4.6635,
      "female": 33.7337,
-     "male": 48.0281
+     "male": 48.0695
     }
    ],
-   "detectable": 21.9914,
+   "detectable": 21.9657,
    "countries": [
     {
      "iso3": "AUS",
      "country": "Australia",
      "books": 88,
      "value": -10.2459,
-     "low": -22.9198,
-     "high": 3.8016,
+     "low": -21.8631,
+     "high": 1.6132,
      "female": 39.823,
      "male": 50.069,
-     "shrunk": -10.0883
+     "shrunk": -10.1262
     },
     {
      "iso3": "AZE",
      "country": "Azerbaijan",
      "books": 18,
      "value": -10.2692,
-     "low": -21.9305,
-     "high": 0.2309,
+     "low": -21.8192,
+     "high": 0.8244,
      "female": 43.0279,
      "male": 53.2971,
-     "shrunk": -10.1571
+     "shrunk": -10.1562
     },
     {
      "iso3": "BGD",
      "country": "Bangladesh",
      "books": 86,
      "value": -4.1569,
-     "low": -8.7653,
-     "high": 0.587,
+     "low": -9.0125,
+     "high": 1.0748,
      "female": 21.1798,
      "male": 25.3367,
-     "shrunk": -4.1923
+     "shrunk": -4.1954
     },
     {
      "iso3": "BHR",
      "country": "Bahrain",
      "books": 13,
-     "value": -9.4729,
-     "low": -37.611,
-     "high": 11.5603,
+     "value": -9.5164,
+     "low": -29.2784,
+     "high": 11.9675,
      "female": 41.6667,
-     "male": 51.1396,
-     "shrunk": -9.1738
+     "male": 51.1831,
+     "shrunk": -9.2898
     },
     {
      "iso3": "BLR",
      "country": "Belarus",
      "books": 26,
      "value": -33.8728,
-     "low": -42.3134,
-     "high": -23.0513,
+     "low": -42.377,
+     "high": -23.0357,
      "female": 29.6214,
      "male": 63.4941,
-     "shrunk": -32.8922
+     "shrunk": -32.9334
     },
     {
      "iso3": "BTN",
      "country": "Bhutan",
      "books": 19,
      "value": 8.2744,
-     "low": -3.5728,
-     "high": 18.0301,
+     "low": -3.8147,
+     "high": 18.8625,
      "female": 42.3977,
      "male": 34.1232,
-     "shrunk": 7.5054
+     "shrunk": 7.4759
     },
     {
      "iso3": "CAN",
      "country": "Canada",
      "books": 12,
-     "value": -17.4353,
-     "low": -35.7825,
-     "high": 13.4643,
+     "value": -17.4497,
+     "low": -38.445,
+     "high": 16.1697,
      "female": 27.7778,
-     "male": 45.2131,
-     "shrunk": -15.5046
+     "male": 45.2274,
+     "shrunk": -15.2611
     },
     {
      "iso3": "ECU",
      "country": "Ecuador",
      "books": 15,
      "value": -7.7033,
-     "low": -40.4,
-     "high": 23.126,
+     "low": -41.4232,
+     "high": 23.3705,
      "female": 43.4783,
      "male": 51.1815,
-     "shrunk": -7.795
+     "shrunk": -7.7809
     },
     {
      "iso3": "EGY",
      "country": "Egypt, Arab Rep.",
      "books": 40,
      "value": -1.977,
-     "low": -9.6868,
-     "high": 8.0862,
+     "low": -9.6286,
+     "high": 8.276,
      "female": 24.3542,
      "male": 26.3313,
-     "shrunk": -2.1728
+     "shrunk": -2.164
     },
     {
      "iso3": "ETH",
      "country": "Ethiopia",
      "books": 37,
      "value": -0.3028,
-     "low": -9.3009,
-     "high": 6.414,
+     "low": -8.674,
+     "high": 6.9609,
      "female": 35.9413,
      "male": 36.2441,
-     "shrunk": -0.4998
+     "shrunk": -0.4867
     },
     {
      "iso3": "GBR",
      "country": "United Kingdom",
      "books": 21,
      "value": 9.7177,
-     "low": -10.4267,
-     "high": 20.6979,
+     "low": -7.639,
+     "high": 21.418,
      "female": 48.9362,
      "male": 39.2185,
-     "shrunk": 8.064
+     "shrunk": 8.3338
     },
     {
      "iso3": "GHA",
      "country": "Ghana",
      "books": 119,
      "value": -6.3438,
-     "low": -16.332,
-     "high": 5.7199,
+     "low": -16.7691,
+     "high": 5.1008,
      "female": 39.7188,
      "male": 46.0626,
-     "shrunk": -6.4256
+     "shrunk": -6.4182
     },
     {
      "iso3": "GRC",
      "country": "Greece",
      "books": 26,
      "value": -13.3055,
-     "low": -22.2979,
-     "high": -3.8805,
+     "low": -21.5773,
+     "high": -3.5242,
      "female": 36.5782,
      "male": 49.8837,
-     "shrunk": -13.1213
+     "shrunk": -13.136
     },
     {
      "iso3": "GUY",
      "country": "Guyana",
      "books": 35,
      "value": -16.1443,
-     "low": -24.9608,
-     "high": 0.2842,
+     "low": -25.2328,
+     "high": 1.0298,
      "female": 37.963,
      "male": 54.1072,
-     "shrunk": -15.6285
+     "shrunk": -15.6137
     },
     {
      "iso3": "IDN",
      "country": "Indonesia",
      "books": 32,
-     "value": 3.0691,
-     "low": -9.0541,
-     "high": 15.2405,
+     "value": 2.0247,
+     "low": -8.5379,
+     "high": 13.7517,
      "female": 53.5714,
-     "male": 50.5023,
-     "shrunk": 2.4156
+     "male": 51.5468,
+     "shrunk": 1.5493
     },
     {
      "iso3": "IND",
      "country": "India",
-     "books": 992,
-     "value": -7.44,
-     "low": -9.2961,
-     "high": -5.5289,
-     "female": 23.5681,
-     "male": 31.0081,
-     "shrunk": -7.4408
+     "books": 888,
+     "value": -7.5369,
+     "low": -9.6754,
+     "high": -5.4284,
+     "female": 23.2947,
+     "male": 30.8316,
+     "shrunk": -7.5376
     },
     {
      "iso3": "JOR",
      "country": "Jordan",
      "books": 20,
      "value": 12.1179,
-     "low": 4.7757,
-     "high": 20.7586,
+     "low": 4.9133,
+     "high": 21.5546,
      "female": 41.8182,
      "male": 29.7003,
-     "shrunk": 11.5863
+     "shrunk": 11.5738
     },
     {
      "iso3": "KEN",
@@ -4541,66 +4701,66 @@
      "country": "Cambodia",
      "books": 15,
      "value": -5.1164,
-     "low": -16.4033,
-     "high": 7.4525,
+     "low": -16.9534,
+     "high": 7.3316,
      "female": 48.1308,
      "male": 53.2473,
-     "shrunk": -5.2813
+     "shrunk": -5.2759
     },
     {
      "iso3": "KIR",
      "country": "Kiribati",
      "books": 25,
      "value": -25.2541,
-     "low": -62.0413,
-     "high": -11.9895,
+     "low": -59.1808,
+     "high": -11.925,
      "female": 23.5294,
      "male": 48.7835,
-     "shrunk": -21.6299
+     "shrunk": -22.0834
     },
     {
      "iso3": "KNA",
      "country": "St. Kitts and Nevis",
      "books": 53,
-     "value": -12.787,
-     "low": -28.0797,
-     "high": 1.8882,
+     "value": -12.8353,
+     "low": -28.1481,
+     "high": 2.8213,
      "female": 33.3333,
-     "male": 46.1204,
-     "shrunk": -12.371
+     "male": 46.1686,
+     "shrunk": -12.4068
     },
     {
      "iso3": "KWT",
      "country": "Kuwait",
      "books": 34,
      "value": -12.6299,
-     "low": -20.3781,
-     "high": -4.774,
+     "low": -19.4288,
+     "high": -4.8739,
      "female": 31.4286,
      "male": 44.0585,
-     "shrunk": -12.5134
+     "shrunk": -12.5326
     },
     {
      "iso3": "LKA",
      "country": "Sri Lanka",
      "books": 99,
      "value": -29.3525,
-     "low": -35.0632,
-     "high": -22.7739,
+     "low": -35.3561,
+     "high": -22.5366,
      "female": 17.4194,
      "male": 46.7718,
-     "shrunk": -29.0155
+     "shrunk": -29.0047
     },
     {
      "iso3": "MDV",
      "country": "Maldives",
      "books": 25,
      "value": 18.9495,
-     "low": -24.1785,
-     "high": 49.3976,
+     "low": -20.2124,
+     "high": 50.4287,
      "female": 75.0,
      "male": 56.0505,
-     "shrunk": 9.1079
+     "shrunk": 9.9561
     },
     {
      "iso3": "MUS",
@@ -4611,227 +4771,227 @@
      "high": 45.1709,
      "female": 40.0,
      "male": 30.2208,
-     "shrunk": 4.9794
+     "shrunk": 5.1799
     },
     {
      "iso3": "NGA",
      "country": "Nigeria",
-     "books": 11,
-     "value": 11.6787,
-     "low": -36.9037,
-     "high": 27.8728,
+     "books": 12,
+     "value": 12.0266,
+     "low": -36.2015,
+     "high": 28.1026,
      "female": 50.0,
-     "male": 38.3213,
-     "shrunk": 5.6095
+     "male": 37.9734,
+     "shrunk": 6.155
     },
     {
      "iso3": "NPL",
      "country": "Nepal",
      "books": 21,
      "value": 0.4458,
-     "low": -22.9318,
-     "high": 26.2483,
+     "low": -19.1811,
+     "high": 22.0541,
      "female": 41.8605,
      "male": 41.4147,
-     "shrunk": -1.2823
+     "shrunk": -0.7824
     },
     {
      "iso3": "OMN",
      "country": "Oman",
      "books": 37,
-     "value": -7.3062,
-     "low": -18.5609,
-     "high": 3.377,
+     "value": -7.4332,
+     "low": -18.8541,
+     "high": 3.6345,
      "female": 36.7232,
-     "male": 44.0294,
-     "shrunk": -7.3404
+     "male": 44.1563,
+     "shrunk": -7.4589
     },
     {
      "iso3": "PAK",
      "country": "Pakistan",
      "books": 92,
      "value": -11.5748,
-     "low": -16.6209,
-     "high": -6.813,
+     "low": -16.2354,
+     "high": -6.2613,
      "female": 18.8679,
      "male": 30.4427,
-     "shrunk": -11.5387
+     "shrunk": -11.539
     },
     {
      "iso3": "PNG",
      "country": "Papua New Guinea",
      "books": 14,
      "value": -50.2204,
-     "low": -51.2467,
-     "high": -48.8754,
+     "low": -51.3245,
+     "high": -49.1293,
      "female": 0.0,
      "male": 50.2204,
-     "shrunk": -50.1952
+     "shrunk": -50.1999
     },
     {
      "iso3": "PSE",
      "country": "West Bank and Gaza",
      "books": 25,
      "value": -9.4217,
-     "low": -16.6497,
-     "high": -1.1588,
+     "low": -17.1094,
+     "high": -0.9578,
      "female": 28.91,
      "male": 38.3316,
-     "shrunk": -9.3866
+     "shrunk": -9.3844
     },
     {
      "iso3": "RWA",
      "country": "Rwanda",
      "books": 121,
      "value": -17.8201,
-     "low": -23.4531,
-     "high": -10.6735,
+     "low": -23.4808,
+     "high": -11.0078,
      "female": 26.5896,
      "male": 44.4097,
-     "shrunk": -17.6528
+     "shrunk": -17.6683
     },
     {
      "iso3": "SDN",
      "country": "Sudan",
      "books": 13,
      "value": -5.2624,
-     "low": -10.1744,
-     "high": 1.0889,
+     "low": -10.5435,
+     "high": 1.4131,
      "female": 24.7706,
      "male": 30.0331,
-     "shrunk": -5.2989
+     "shrunk": -5.3007
     },
     {
      "iso3": "SLB",
      "country": "Solomon Islands",
      "books": 53,
      "value": -15.6834,
-     "low": -20.1942,
-     "high": -8.8267,
+     "low": -19.532,
+     "high": -8.5292,
      "female": 24.4444,
      "male": 40.1279,
-     "shrunk": -15.5795
+     "shrunk": -15.5906
     },
     {
      "iso3": "SLE",
      "country": "Sierra Leone",
      "books": 39,
      "value": 2.7667,
-     "low": -7.3322,
-     "high": 13.929,
+     "low": -7.2779,
+     "high": 13.7609,
      "female": 36.4465,
      "male": 33.6797,
-     "shrunk": 2.2731
+     "shrunk": 2.3094
     },
     {
      "iso3": "SSD",
      "country": "South Sudan",
      "books": 112,
-     "value": -21.9777,
-     "low": -28.4442,
-     "high": -14.5367,
+     "value": -22.0441,
+     "low": -28.6566,
+     "high": -15.0155,
      "female": 23.3096,
-     "male": 45.2873,
-     "shrunk": -21.6965
+     "male": 45.3538,
+     "shrunk": -21.7855
     },
     {
      "iso3": "SYR",
      "country": "Syrian Arab Republic",
      "books": 24,
-     "value": -11.1005,
-     "low": -20.6281,
-     "high": -2.1647,
+     "value": -11.2084,
+     "low": -20.5314,
+     "high": -1.0565,
      "female": 37.5,
-     "male": 48.6005,
-     "shrunk": -10.9924
+     "male": 48.7084,
+     "shrunk": -11.0893
     },
     {
      "iso3": "TJK",
      "country": "Tajikistan",
      "books": 10,
      "value": -10.8172,
-     "low": -17.362,
-     "high": 2.457,
+     "low": -17.3496,
+     "high": 2.8085,
      "female": 21.0526,
      "male": 31.8698,
-     "shrunk": -10.7047
+     "shrunk": -10.7052
     },
     {
      "iso3": "TUN",
      "country": "Tunisia",
      "books": 15,
      "value": -9.6756,
-     "low": -20.1092,
-     "high": 3.8764,
+     "low": -19.9515,
+     "high": 1.6685,
      "female": 34.6369,
      "male": 44.3125,
-     "shrunk": -9.5796
+     "shrunk": -9.5988
     },
     {
      "iso3": "TUR",
      "country": "Türkiye",
      "books": 26,
      "value": -0.0516,
-     "low": -11.8238,
-     "high": 11.2015,
+     "low": -10.7806,
+     "high": 12.4127,
      "female": 43.6364,
      "male": 43.688,
-     "shrunk": -0.4758
+     "shrunk": -0.4577
     },
     {
      "iso3": "UGA",
      "country": "Uganda",
-     "books": 36,
-     "value": 0.8573,
-     "low": -15.3491,
-     "high": 15.8976,
-     "female": 38.0282,
-     "male": 37.1709,
-     "shrunk": 0.0242
+     "books": 37,
+     "value": 1.4228,
+     "low": -13.2056,
+     "high": 15.5399,
+     "female": 36.7816,
+     "male": 35.3588,
+     "shrunk": 0.7026
     },
     {
      "iso3": "USA",
      "country": "United States",
-     "books": 475,
+     "books": 474,
      "value": -7.8478,
-     "low": -11.7741,
-     "high": -3.2466,
+     "low": -11.9821,
+     "high": -3.051,
      "female": 39.8836,
      "male": 47.7314,
-     "shrunk": -7.849
+     "shrunk": -7.8487
     },
     {
      "iso3": "WSM",
      "country": "Samoa",
      "books": 72,
      "value": -2.2332,
-     "low": -11.1016,
-     "high": 4.9327,
+     "low": -10.5702,
+     "high": 3.7275,
      "female": 43.3255,
      "male": 45.5587,
-     "shrunk": -2.3867
+     "shrunk": -2.3486
     },
     {
      "iso3": "ZAF",
      "country": "South Africa",
      "books": 52,
-     "value": -14.9332,
-     "low": -24.4114,
-     "high": -2.3232,
+     "value": -14.9268,
+     "low": -24.7946,
+     "high": -2.3466,
      "female": 28.5714,
-     "male": 43.5046,
-     "shrunk": -14.592
+     "male": 43.4982,
+     "shrunk": -14.591
     },
     {
      "iso3": "ZWE",
      "country": "Zimbabwe",
      "books": 13,
      "value": 10.5699,
-     "low": 0.1187,
-     "high": 34.5551,
+     "low": 0.9147,
+     "high": 30.5972,
      "female": 53.4091,
      "male": 42.8392,
-     "shrunk": 8.4916
+     "shrunk": 9.0614
     }
    ]
   },
@@ -4840,154 +5000,154 @@
    "label": "Female share of the jobs they are shown in",
    "unit": "percentage points",
    "all": {
-    "books": 3259,
+    "books": 3157,
     "countries": 78,
-    "value": 4.9537,
-    "low": 3.1626,
-    "high": 5.8702,
-    "female": 0.4104,
-    "male": 0.3609
+    "value": 5.0235,
+    "low": 3.1673,
+    "high": 5.9292,
+    "female": 0.4113,
+    "male": 0.3611
    },
    "region": [
     {
      "group": "East Asia & Pacific",
      "books": 329,
      "countries": 15,
-     "value": 4.3121,
-     "low": 2.2199,
-     "high": 6.4837,
-     "female": 0.4766,
-     "male": 0.4335
+     "value": 4.3842,
+     "low": 2.3584,
+     "high": 6.4969,
+     "female": 0.4777,
+     "male": 0.4339
     },
     {
      "group": "Europe & Central Asia",
      "books": 135,
      "countries": 11,
-     "value": 3.5305,
-     "low": -0.2011,
+     "value": 3.5299,
+     "low": -0.2051,
      "high": 6.9201,
-     "female": 0.5114,
-     "male": 0.4761
+     "female": 0.5115,
+     "male": 0.4762
     },
     {
      "group": "Latin America & Caribbean",
      "books": 134,
      "countries": 10,
-     "value": 7.4324,
-     "low": -1.0772,
-     "high": 13.2631,
-     "female": 0.5723,
-     "male": 0.4979
+     "value": 7.4465,
+     "low": -1.0604,
+     "high": 13.2694,
+     "female": 0.5724,
+     "male": 0.498
     },
     {
      "group": "Middle East, North Africa, Afghanistan & Pakistan",
      "books": 326,
      "countries": 15,
-     "value": 7.0471,
-     "low": 4.2761,
-     "high": 9.7353,
+     "value": 7.0193,
+     "low": 4.2406,
+     "high": 9.698,
      "female": 0.3829,
-     "male": 0.3124
+     "male": 0.3127
     },
     {
      "group": "North America",
-     "books": 487,
+     "books": 486,
      "countries": 2,
-     "value": 2.0207,
+     "value": 2.0193,
      "low": 1.9529,
-     "high": 2.4506,
-     "female": 0.4885,
-     "male": 0.4682
+     "high": 2.4233,
+     "female": 0.4884,
+     "male": 0.4683
     },
     {
      "group": "South Asia",
-     "books": 1242,
+     "books": 1138,
      "countries": 6,
-     "value": 2.532,
+     "value": 2.5475,
      "low": -3.0407,
-     "high": 3.2351,
-     "female": 0.3304,
-     "male": 0.3051
+     "high": 3.2922,
+     "female": 0.3293,
+     "male": 0.3038
     },
     {
      "group": "Sub-Saharan Africa",
-     "books": 606,
+     "books": 609,
      "countries": 19,
-     "value": 1.2418,
-     "low": -0.4315,
-     "high": 3.4538,
-     "female": 0.4298,
-     "male": 0.4174
+     "value": 1.2926,
+     "low": -0.3961,
+     "high": 3.4857,
+     "female": 0.4296,
+     "male": 0.4167
     }
    ],
    "income_group": [
     {
      "group": "High income",
-     "books": 818,
+     "books": 817,
      "countries": 17,
-     "value": 3.0621,
-     "low": 1.9294,
-     "high": 7.9469,
+     "value": 3.0476,
+     "low": 1.9287,
+     "high": 7.8898,
      "female": 0.4979,
-     "male": 0.4673
+     "male": 0.4674
     },
     {
      "group": "Low income",
-     "books": 405,
+     "books": 407,
      "countries": 11,
-     "value": 0.8589,
-     "low": -0.7276,
-     "high": 3.6113,
-     "female": 0.399,
-     "male": 0.3904
+     "value": 0.9072,
+     "low": -0.656,
+     "high": 3.7636,
+     "female": 0.3989,
+     "male": 0.3898
     },
     {
      "group": "Lower middle income",
-     "books": 1590,
+     "books": 1487,
      "countries": 25,
-     "value": 4.1737,
-     "low": 3.0118,
-     "high": 6.5169,
+     "value": 4.2452,
+     "low": 3.0298,
+     "high": 6.518,
      "female": 0.3569,
-     "male": 0.3152
+     "male": 0.3145
     },
     {
      "group": "Upper middle income",
      "books": 446,
      "countries": 25,
-     "value": 3.8721,
-     "low": 1.987,
-     "high": 7.2771,
-     "female": 0.5059,
-     "male": 0.4672
+     "value": 3.9194,
+     "low": 2.0449,
+     "high": 7.33,
+     "female": 0.5067,
+     "male": 0.4675
     }
    ],
-   "detectable": 8.4821
+   "detectable": 8.4368
   }
  },
  "stereo": {
-  "computed": "2026-10-12",
-  "books": 3259,
+  "computed": "2026-11-06",
+  "books": 3157,
   "compared": [
    {
     "theme": "achievement",
     "name": "Achievement",
     "counted": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": -0.7064,
-     "low": -0.8468,
-     "high": -0.525,
-     "female": 1.3758,
-     "male": 2.0821
+     "value": -0.7074,
+     "low": -0.8486,
+     "high": -0.5264,
+     "female": 1.4055,
+     "male": 2.113
     },
     "glove": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": -0.0087,
+     "value": -0.0089,
      "low": -0.0149,
-     "high": -0.0049,
-     "female": 0.6598,
+     "high": -0.0052,
+     "female": 0.6596,
      "male": 0.6685
     },
     "w2v_median": -0.0175,
@@ -4998,22 +5158,22 @@
     "theme": "appearance",
     "name": "Appearance",
     "counted": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": 0.2721,
-     "low": 0.223,
-     "high": 0.3455,
-     "female": 0.4703,
-     "male": 0.1982
+     "value": 0.2777,
+     "low": 0.2257,
+     "high": 0.3473,
+     "female": 0.4778,
+     "male": 0.2001
     },
     "glove": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": 0.0098,
+     "value": 0.0099,
      "low": 0.0052,
-     "high": 0.0121,
-     "female": 0.2206,
-     "male": 0.2108
+     "high": 0.0122,
+     "female": 0.2204,
+     "male": 0.2105
     },
     "w2v_median": 0.0196,
     "w2v_countries": 11,
@@ -5023,22 +5183,22 @@
     "theme": "family",
     "name": "Family and the home",
     "counted": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": 2.1103,
-     "low": 1.315,
-     "high": 2.5567,
-     "female": 5.827,
-     "male": 3.7167
+     "value": 2.0866,
+     "low": 1.3141,
+     "high": 2.5355,
+     "female": 5.7866,
+     "male": 3.7
     },
     "glove": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": 0.0069,
+     "value": 0.0068,
      "low": 0.0011,
-     "high": 0.0109,
-     "female": 0.5354,
-     "male": 0.5285
+     "high": 0.0108,
+     "female": 0.5352,
+     "male": 0.5284
     },
     "w2v_median": 0.0134,
     "w2v_countries": 11,
@@ -5048,22 +5208,22 @@
     "theme": "work",
     "name": "Work",
     "counted": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": -0.3659,
-     "low": -0.6721,
-     "high": 0.0802,
-     "female": 3.373,
-     "male": 3.7389
+     "value": -0.3411,
+     "low": -0.6318,
+     "high": 0.0775,
+     "female": 3.4213,
+     "male": 3.7625
     },
     "glove": {
-     "books": 3259,
+     "books": 3157,
      "countries": 78,
-     "value": -0.0032,
+     "value": -0.0033,
      "low": -0.0085,
-     "high": -0.0001,
-     "female": 0.6131,
-     "male": 0.6164
+     "high": -0.0002,
+     "female": 0.613,
+     "male": 0.6163
     },
     "w2v_median": -0.0066,
     "w2v_countries": 11,
@@ -5468,5 +5628,1019 @@
     "hi": 0.0359
    }
   ]
+ },
+ "reading": {
+  "made": "2026-11-02",
+  "countries": [
+   {
+    "iso3": "RWA",
+    "language": "en",
+    "country": "Rwanda",
+    "source": "EGRA",
+    "year": 2011,
+    "grade": 6,
+    "age": "",
+    "share": 0.0,
+    "other": null,
+    "books": 49,
+    "book_grades": "1-5",
+    "by_grade": [
+     {
+      "grade": 6,
+      "share": 0.0,
+      "books": 49,
+      "harder_books": 2,
+      "harder_share": 0.0408
+     }
+    ],
+    "caveat": "2011, before the 2015 curriculum; tested at the start of P6",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 18,
+    "harder_share": 0.0408,
+    "harder_books": 2,
+    "words_only": {
+     "harder_books": 49,
+     "ceiling": 0.0,
+     "ceiling_low": 0.0,
+     "ceiling_high": 3.8
+    },
+    "comparative": {
+     "books": 49,
+     "harder_books": 45,
+     "ceiling": 8.2,
+     "ceiling_low": 3.5,
+     "ceiling_high": 16.4
+    },
+    "sentence_bar": 10.0,
+    "books_with_sentences": 49,
+    "sentence_gap": -2.0,
+    "gap": 7.04,
+    "fk_gap": 2.72,
+    "spache_gap": 1.14,
+    "ceiling": 95.9,
+    "ceiling_low": 89.1,
+    "ceiling_high": 98.8,
+    "pass_rate_error": "none",
+    "secondary": true
+   },
+   {
+    "iso3": "SSD",
+    "language": "en",
+    "country": "South Sudan",
+    "source": "EGRA",
+    "year": 2016,
+    "grade": 3,
+    "age": "",
+    "share": 2.0,
+    "other": null,
+    "books": 10,
+    "book_grades": "1-2",
+    "by_grade": [
+     {
+      "grade": 3,
+      "share": 2.0,
+      "books": 10,
+      "harder_books": 2,
+      "harder_share": 0.2
+     }
+    ],
+    "caveat": "25 chosen schools; the MICS story stands in for the unprinted passage",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 2,
+    "harder_share": 0.2,
+    "harder_books": 2,
+    "words_only": {
+     "harder_books": 4,
+     "ceiling": 60.8,
+     "ceiling_low": 36.1,
+     "ceiling_high": 81.6
+    },
+    "comparative": {
+     "books": 10,
+     "harder_books": 10,
+     "ceiling": 2.0,
+     "ceiling_low": 1.3,
+     "ceiling_high": 19.0
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 10,
+    "sentence_gap": 1.0,
+    "gap": -0.82,
+    "fk_gap": 1.72,
+    "spache_gap": 1.12,
+    "ceiling": 80.4,
+    "ceiling_low": 55.5,
+    "ceiling_high": 94.2,
+    "pass_rate_error": "children tested",
+    "secondary": true
+   },
+   {
+    "iso3": "UGA",
+    "language": "en",
+    "country": "Uganda",
+    "source": "Uwezo",
+    "year": 2024,
+    "grade": 3,
+    "age": "",
+    "share": 7.4,
+    "other": null,
+    "books": 18,
+    "book_grades": "1-5",
+    "by_grade": [
+     {
+      "grade": 3,
+      "share": 7.4,
+      "books": 6,
+      "harder_books": 4,
+      "harder_share": 0.6667
+     },
+     {
+      "grade": 4,
+      "share": 22.0,
+      "books": 3,
+      "harder_books": 3,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 5,
+      "share": 35.6,
+      "books": 5,
+      "harder_books": 5,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 6,
+      "share": 53.1,
+      "books": 4,
+      "harder_books": 4,
+      "harder_share": 1.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 9,
+    "harder_share": 0.8889,
+    "harder_books": 16,
+    "words_only": {
+     "harder_books": 18,
+     "ceiling": 27.8,
+     "ceiling_low": 27.8,
+     "ceiling_high": 42.0
+    },
+    "comparative": {
+     "books": 18,
+     "harder_books": 15,
+     "ceiling": 41.7,
+     "ceiling_low": 36.1,
+     "ceiling_high": 57.0
+    },
+    "sentence_bar": 6.5,
+    "books_with_sentences": 18,
+    "sentence_gap": 1.5,
+    "gap": 7.72,
+    "fk_gap": 3.92,
+    "spache_gap": 1.82,
+    "ceiling": 38.1,
+    "ceiling_low": 33.8,
+    "ceiling_high": 53.6,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "PAK",
+    "language": "en",
+    "country": "Pakistan",
+    "source": "ASER",
+    "year": 2025,
+    "grade": 3,
+    "age": "",
+    "share": 9.8,
+    "other": null,
+    "books": 31,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 2,
+      "share": 1.5,
+      "books": 3,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 3,
+      "share": 9.8,
+      "books": 3,
+      "harder_books": 2,
+      "harder_share": 0.6667
+     },
+     {
+      "grade": 4,
+      "share": 15.7,
+      "books": 3,
+      "harder_books": 2,
+      "harder_share": 0.6667
+     },
+     {
+      "grade": 5,
+      "share": 53.7,
+      "books": 7,
+      "harder_books": 6,
+      "harder_share": 0.8571
+     },
+     {
+      "grade": 6,
+      "share": 53.6,
+      "books": 7,
+      "harder_books": 6,
+      "harder_share": 0.8571
+     },
+     {
+      "grade": 7,
+      "share": 66.3,
+      "books": 8,
+      "harder_books": 7,
+      "harder_share": 0.875
+     }
+    ],
+    "caveat": "provisional report",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 8,
+    "harder_share": 0.7419,
+    "harder_books": 23,
+    "words_only": {
+     "harder_books": 24,
+     "ceiling": 60.0,
+     "ceiling_low": 55.2,
+     "ceiling_high": 68.3
+    },
+    "comparative": {
+     "books": 31,
+     "harder_books": 31,
+     "ceiling": 44.0,
+     "ceiling_low": 44.0,
+     "ceiling_high": 53.9
+    },
+    "sentence_bar": 6.0,
+    "books_with_sentences": 31,
+    "sentence_gap": 3.0,
+    "gap": 5.75,
+    "fk_gap": 7.63,
+    "spache_gap": 2.08,
+    "ceiling": 63.2,
+    "ceiling_low": 58.1,
+    "ceiling_high": 70.2,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "IND",
+    "language": "en",
+    "country": "India",
+    "source": "ASER",
+    "year": 2022,
+    "grade": 3,
+    "age": "",
+    "share": 10.5,
+    "other": null,
+    "books": 238,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 2,
+      "share": 5.8,
+      "books": 34,
+      "harder_books": 34,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 3,
+      "share": 10.5,
+      "books": 27,
+      "harder_books": 27,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 4,
+      "share": 17.0,
+      "books": 49,
+      "harder_books": 49,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 5,
+      "share": 24.5,
+      "books": 41,
+      "harder_books": 41,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 6,
+      "share": 31.9,
+      "books": 35,
+      "harder_books": 35,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 7,
+      "share": 39.7,
+      "books": 52,
+      "harder_books": 52,
+      "harder_share": 1.0
+     }
+    ],
+    "caveat": "rural children only",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 66,
+    "harder_share": 1.0,
+    "harder_books": 238,
+    "words_only": {
+     "harder_books": 238,
+     "ceiling": 23.1,
+     "ceiling_low": 23.1,
+     "ceiling_high": 25.1
+    },
+    "comparative": {
+     "books": 238,
+     "harder_books": 238,
+     "ceiling": 23.1,
+     "ceiling_low": 23.1,
+     "ceiling_high": 25.1
+    },
+    "sentence_bar": 4.0,
+    "books_with_sentences": 238,
+    "sentence_gap": 5.0,
+    "gap": 19.7,
+    "fk_gap": 6.42,
+    "spache_gap": 2.21,
+    "ceiling": 23.1,
+    "ceiling_low": 23.1,
+    "ceiling_high": 25.1,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "TZA",
+    "language": "en",
+    "country": "Tanzania",
+    "source": "Uwezo",
+    "year": 2017,
+    "grade": 3,
+    "age": "",
+    "share": 15.0,
+    "other": null,
+    "books": 13,
+    "book_grades": "1-5",
+    "by_grade": [
+     {
+      "grade": 3,
+      "share": 15.0,
+      "books": 6,
+      "harder_books": 1,
+      "harder_share": 0.1667
+     },
+     {
+      "grade": 5,
+      "share": 33.0,
+      "books": 4,
+      "harder_books": 3,
+      "harder_share": 0.75
+     },
+     {
+      "grade": 6,
+      "share": 40.0,
+      "books": 3,
+      "harder_books": 2,
+      "harder_share": 0.6667
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 6,
+    "harder_share": 0.4615,
+    "harder_books": 6,
+    "words_only": {
+     "harder_books": 7,
+     "ceiling": 62.2,
+     "ceiling_low": 48.7,
+     "ceiling_high": 76.0
+    },
+    "comparative": {
+     "books": 13,
+     "harder_books": 12,
+     "ceiling": 32.8,
+     "ceiling_low": 29.5,
+     "ceiling_high": 51.0
+    },
+    "sentence_bar": 6.0,
+    "books_with_sentences": 13,
+    "sentence_gap": 2.0,
+    "gap": 1.56,
+    "fk_gap": 2.37,
+    "spache_gap": 0.58,
+    "ceiling": 68.8,
+    "ceiling_low": 55.2,
+    "ceiling_high": 80.3,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "MWI",
+    "language": "en",
+    "country": "Malawi",
+    "source": "MICS6",
+    "year": 2019,
+    "grade": 3,
+    "age": "",
+    "share": 16.1,
+    "other": null,
+    "books": 5,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 3,
+      "share": 16.1,
+      "books": 2,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 4,
+      "share": 17.9,
+      "books": 1,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 5,
+      "share": 13.8,
+      "books": 1,
+      "harder_books": 1,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 7,
+      "share": 21.9,
+      "books": 1,
+      "harder_books": 1,
+      "harder_share": 1.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "english-tested",
+    "reading_books": 4,
+    "harder_share": 0.4,
+    "harder_books": 2,
+    "words_only": {
+     "harder_books": 3,
+     "ceiling": 50.4,
+     "ceiling_low": 36.8,
+     "ceiling_high": 72.8
+    },
+    "comparative": {
+     "books": 5,
+     "harder_books": 5,
+     "ceiling": 17.2,
+     "ceiling_low": 17.2,
+     "ceiling_high": 52.7
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 5,
+    "sentence_gap": 0.0,
+    "gap": 2.54,
+    "fk_gap": 2.06,
+    "spache_gap": 1.41,
+    "ceiling": 67.1,
+    "ceiling_low": 49.2,
+    "ceiling_high": 80.6,
+    "pass_rate_error": "se",
+    "secondary": false
+   },
+   {
+    "iso3": "KIR",
+    "language": "en",
+    "country": "Kiribati",
+    "source": "MICS6",
+    "year": 2018,
+    "grade": 5,
+    "age": "",
+    "share": 26.4,
+    "other": null,
+    "books": 16,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 5,
+      "share": 26.4,
+      "books": 3,
+      "harder_books": 3,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 6,
+      "share": 22.4,
+      "books": 7,
+      "harder_books": 6,
+      "harder_share": 0.8571
+     },
+     {
+      "grade": 7,
+      "share": 40.4,
+      "books": 6,
+      "harder_books": 6,
+      "harder_share": 1.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "english-tested",
+    "reading_books": 2,
+    "harder_share": 0.9375,
+    "harder_books": 15,
+    "words_only": {
+     "harder_books": 15,
+     "ceiling": 34.8,
+     "ceiling_low": 30.6,
+     "ceiling_high": 50.7
+    },
+    "comparative": {
+     "books": 16,
+     "harder_books": 16,
+     "ceiling": 29.9,
+     "ceiling_low": 27.8,
+     "ceiling_high": 45.0
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 16,
+    "sentence_gap": 7.0,
+    "gap": 9.1,
+    "fk_gap": 6.12,
+    "spache_gap": 2.81,
+    "ceiling": 34.8,
+    "ceiling_low": 30.6,
+    "ceiling_high": 50.7,
+    "pass_rate_error": "se",
+    "secondary": false
+   },
+   {
+    "iso3": "BGD",
+    "language": "bn",
+    "country": "Bangladesh",
+    "source": "MICS6",
+    "year": 2019,
+    "grade": 3,
+    "age": "",
+    "share": 32.7,
+    "other": null,
+    "books": 47,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 2,
+      "share": 15.5,
+      "books": 2,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 3,
+      "share": 32.7,
+      "books": 2,
+      "harder_books": 1,
+      "harder_share": 0.5
+     },
+     {
+      "grade": 4,
+      "share": 44.8,
+      "books": 9,
+      "harder_books": 7,
+      "harder_share": 0.7778
+     },
+     {
+      "grade": 5,
+      "share": 63.5,
+      "books": 9,
+      "harder_books": 7,
+      "harder_share": 0.7778
+     },
+     {
+      "grade": 6,
+      "share": 74.2,
+      "books": 9,
+      "harder_books": 7,
+      "harder_share": 0.7778
+     },
+     {
+      "grade": 7,
+      "share": 80.4,
+      "books": 16,
+      "harder_books": 14,
+      "harder_share": 0.875
+     }
+    ],
+    "caveat": "",
+    "tested_in": "Bangla or English",
+    "scope": "any-language",
+    "reading_books": 8,
+    "harder_share": 0.766,
+    "harder_books": 36,
+    "words_only": {
+     "harder_books": 42,
+     "ceiling": 67.7,
+     "ceiling_low": 67.0,
+     "ceiling_high": 73.1
+    },
+    "comparative": {
+     "books": 47,
+     "harder_books": 47,
+     "ceiling": 64.4,
+     "ceiling_low": 64.4,
+     "ceiling_high": 69.2
+    },
+    "sentence_bar": 6.0,
+    "books_with_sentences": 44,
+    "sentence_gap": 3.0,
+    "gap": 10.0,
+    "fk_gap": null,
+    "spache_gap": null,
+    "ceiling": 75.2,
+    "ceiling_low": 72.0,
+    "ceiling_high": 79.0,
+    "pass_rate_error": "se",
+    "secondary": false
+   },
+   {
+    "iso3": "BGD",
+    "language": "en",
+    "country": "Bangladesh",
+    "source": "MICS6",
+    "year": 2019,
+    "grade": 3,
+    "age": "",
+    "share": 32.7,
+    "other": null,
+    "books": 29,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 5,
+      "share": 63.5,
+      "books": 7,
+      "harder_books": 5,
+      "harder_share": 0.7143
+     },
+     {
+      "grade": 6,
+      "share": 74.2,
+      "books": 6,
+      "harder_books": 5,
+      "harder_share": 0.8333
+     },
+     {
+      "grade": 7,
+      "share": 80.4,
+      "books": 16,
+      "harder_books": 14,
+      "harder_share": 0.875
+     }
+    ],
+    "caveat": "",
+    "tested_in": "Bangla or English",
+    "scope": "any-language",
+    "reading_books": 4,
+    "harder_share": 0.8276,
+    "harder_books": 24,
+    "words_only": {
+     "harder_books": 24,
+     "ceiling": 79.8,
+     "ceiling_low": 77.6,
+     "ceiling_high": 83.8
+    },
+    "comparative": {
+     "books": 29,
+     "harder_books": 29,
+     "ceiling": 75.0,
+     "ceiling_low": 74.6,
+     "ceiling_high": 78.4
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 29,
+    "sentence_gap": 4.0,
+    "gap": 6.98,
+    "fk_gap": 3.82,
+    "spache_gap": 1.92,
+    "ceiling": 79.8,
+    "ceiling_low": 77.6,
+    "ceiling_high": 83.8,
+    "pass_rate_error": "se",
+    "secondary": true
+   },
+   {
+    "iso3": "NGA",
+    "language": "en",
+    "country": "Nigeria",
+    "source": "MICS6",
+    "year": 2021,
+    "grade": 3,
+    "age": "",
+    "share": 38.0,
+    "other": null,
+    "books": 11,
+    "book_grades": "1-3",
+    "by_grade": [
+     {
+      "grade": 2,
+      "share": 36.5,
+      "books": 8,
+      "harder_books": 3,
+      "harder_share": 0.375
+     },
+     {
+      "grade": 3,
+      "share": 38.0,
+      "books": 2,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 4,
+      "share": 40.3,
+      "books": 1,
+      "harder_books": 0,
+      "harder_share": 0.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "english-tested",
+    "reading_books": 11,
+    "harder_share": 0.2727,
+    "harder_books": 3,
+    "words_only": {
+     "harder_books": 6,
+     "ceiling": 65.7,
+     "ceiling_low": 53.4,
+     "ceiling_high": 79.0
+    },
+    "comparative": {
+     "books": 11,
+     "harder_books": 11,
+     "ceiling": 37.1,
+     "ceiling_low": 35.7,
+     "ceiling_high": 51.9
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 11,
+    "sentence_gap": 2.0,
+    "gap": 3.1,
+    "fk_gap": 1.65,
+    "spache_gap": 0.63,
+    "ceiling": 82.7,
+    "ceiling_low": 65.7,
+    "ceiling_high": 90.6,
+    "pass_rate_error": "se",
+    "secondary": false
+   },
+   {
+    "iso3": "KEN",
+    "language": "en",
+    "country": "Kenya",
+    "source": "Uwezo",
+    "year": 2015,
+    "grade": 3,
+    "age": "",
+    "share": 39.9,
+    "other": null,
+    "books": 5,
+    "book_grades": "1-3",
+    "by_grade": [
+     {
+      "grade": 3,
+      "share": 39.9,
+      "books": 4,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 8,
+      "share": 96.2,
+      "books": 1,
+      "harder_books": 0,
+      "harder_share": 0.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "all-english",
+    "reading_books": 2,
+    "harder_share": 0.0,
+    "harder_books": 0,
+    "words_only": {
+     "harder_books": 0,
+     "ceiling": 100.0,
+     "ceiling_low": 82.3,
+     "ceiling_high": 100.0
+    },
+    "comparative": {
+     "books": 5,
+     "harder_books": 3,
+     "ceiling": 75.2,
+     "ceiling_low": 59.2,
+     "ceiling_high": 91.5
+    },
+    "sentence_bar": 6.0,
+    "books_with_sentences": 5,
+    "sentence_gap": 1.0,
+    "gap": -8.58,
+    "fk_gap": 1.95,
+    "spache_gap": 0.31,
+    "ceiling": 100.0,
+    "ceiling_low": 82.3,
+    "ceiling_high": 100.0,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "ZAF",
+    "language": "en",
+    "country": "South Africa",
+    "source": "PIRLS",
+    "year": 2021,
+    "grade": 4,
+    "age": "",
+    "share": 48.5,
+    "other": null,
+    "books": 14,
+    "book_grades": "1-5",
+    "by_grade": [
+     {
+      "grade": 4,
+      "share": 48.5,
+      "books": 3,
+      "harder_books": 0,
+      "harder_share": 0.0
+     },
+     {
+      "grade": 6,
+      "share": 41.8,
+      "books": 11,
+      "harder_books": 0,
+      "harder_share": 0.0
+     }
+    ],
+    "caveat": "children taught in English from Grade 1",
+    "tested_in": "English",
+    "scope": "english-tested",
+    "reading_books": 6,
+    "harder_share": 0.0,
+    "harder_books": 0,
+    "words_only": {
+     "harder_books": 0,
+     "ceiling": 100.0,
+     "ceiling_low": 90.8,
+     "ceiling_high": 100.0
+    },
+    "comparative": {
+     "books": 8,
+     "harder_books": 6,
+     "ceiling": 56.3,
+     "ceiling_low": 46.3,
+     "ceiling_high": 73.1
+    },
+    "sentence_bar": 14.0,
+    "books_with_sentences": 14,
+    "sentence_gap": -4.0,
+    "gap": -6.68,
+    "fk_gap": -1.77,
+    "spache_gap": 0.1,
+    "ceiling": 100.0,
+    "ceiling_low": 90.8,
+    "ceiling_high": 100.0,
+    "pass_rate_error": "children tested",
+    "secondary": false
+   },
+   {
+    "iso3": "GUY",
+    "language": "en",
+    "country": "Guyana",
+    "source": "MICS6",
+    "year": 2019,
+    "grade": 3,
+    "age": "",
+    "share": 74.6,
+    "other": null,
+    "books": 35,
+    "book_grades": "1-6",
+    "by_grade": [
+     {
+      "grade": 2,
+      "share": 51.2,
+      "books": 11,
+      "harder_books": 3,
+      "harder_share": 0.2727
+     },
+     {
+      "grade": 3,
+      "share": 74.6,
+      "books": 5,
+      "harder_books": 1,
+      "harder_share": 0.2
+     },
+     {
+      "grade": 4,
+      "share": 78.8,
+      "books": 6,
+      "harder_books": 4,
+      "harder_share": 0.6667
+     },
+     {
+      "grade": 5,
+      "share": 64.6,
+      "books": 5,
+      "harder_books": 5,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 6,
+      "share": 62.0,
+      "books": 4,
+      "harder_books": 4,
+      "harder_share": 1.0
+     },
+     {
+      "grade": 7,
+      "share": 71.7,
+      "books": 4,
+      "harder_books": 4,
+      "harder_share": 1.0
+     }
+    ],
+    "caveat": "",
+    "tested_in": "English",
+    "scope": "english-tested",
+    "reading_books": 6,
+    "harder_share": 0.6,
+    "harder_books": 21,
+    "words_only": {
+     "harder_books": 28,
+     "ceiling": 73.1,
+     "ceiling_low": 69.4,
+     "ceiling_high": 79.3
+    },
+    "comparative": {
+     "books": 30,
+     "harder_books": 30,
+     "ceiling": 67.0,
+     "ceiling_low": 65.4,
+     "ceiling_high": 73.9
+    },
+    "sentence_bar": 7.0,
+    "books_with_sentences": 34,
+    "sentence_gap": 2.0,
+    "gap": 3.66,
+    "fk_gap": 2.26,
+    "spache_gap": 1.52,
+    "ceiling": 80.0,
+    "ceiling_low": 76.1,
+    "ceiling_high": 84.8,
+    "pass_rate_error": "se",
+    "secondary": false
+   }
+  ],
+  "left_out": [
+   {
+    "iso3": "GHA",
+    "language": "en",
+    "why": "0 scored books (minimum 5)"
+   },
+   {
+    "iso3": "LSO",
+    "language": "en",
+    "why": "0 scored books (minimum 5)"
+   },
+   {
+    "iso3": "SLE",
+    "language": "en",
+    "why": "0 scored books (minimum 5)"
+   },
+   {
+    "iso3": "ZWE",
+    "language": "en",
+    "why": "2 scored books (minimum 5)"
+   }
+  ],
+  "kenya_check": {
+   "uwezo_share": 39.9,
+   "gkm": {
+    "grade3": 16,
+    "grade4": 28
+   }
+  }
  }
 }

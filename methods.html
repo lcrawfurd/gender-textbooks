@@ -71,6 +71,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
 .tg .chart .axis{font-size:11.5px; fill:var(--muted)}
@@ -160,6 +161,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
+.tg .chart .sqm{fill:var(--m)}
 .tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
   stroke-width:3px; stroke-linejoin:round}
 .tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
@@ -225,25 +227,25 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <p>Each book&rsquo;s text is matched against the paper&rsquo;s list of gendered nouns and pronouns
   (&ldquo;she&rdquo;, &ldquo;mother&rdquo;, &ldquo;queen&rdquo;; &ldquo;he&rdquo;,
   &ldquo;father&rdquo;, &ldquo;king&rdquo;&hellip;). The female share is female words divided by
-  female and male words. 133 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
+  female and male words. 132 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
   the <code>tgs</code> software, on a larger set of books, so they differ from the published
-  paper. 1,175 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 1,486 files that hold a chapter, section or unit of a book are counted as the 139 books they belong to.</p>
+  paper. 1,326 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 1,504 files that hold a chapter, section or unit of a book are counted as the 141 books they belong to.</p>
 <h2>Which books count</h2>
 <p>The headline and every cross-country result use national textbooks only, the paper&rsquo;s own
   rule: official English student textbooks. That is the paper&rsquo;s corpus plus the student books
   the 2026 systematic search found on ministry and agency sites and their official mirrors
-  (1,650 books). The 399 Indian state-board and NCERT textbooks among them (2020&ndash;23 editions) come from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, which took them from an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Teacher guides, readers, programme books and NGO
+  (1,548 books). The 399 Indian state-board and NCERT textbooks among them (2020&ndash;23 editions) come from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, which took them from an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Teacher guides, readers, programme books and NGO
   collections are shown beside them, never mixed in. 90 files from Lebanon&rsquo;s curriculum centre are excerpts (5 to 22 pages each), not whole textbooks; they are shown beside the national textbooks as their own group and are in no national result, so Lebanon is not ranked. For 22 of the search&rsquo;s books the title names a different kind from the search&rsquo;s guess from the file (a &ldquo;Student Textbook&rdquo; filed as a teacher&rsquo;s guide, a &ldquo;Teacher&rsquo;s Guide&rdquo; filed as a student book), and the title is taken; for 2 files whose titles contradict their contents, the file is followed.</p>
 <h2>Subjects and grades</h2>
 <p>New books&rsquo; subject and grade labels are mapped to the paper&rsquo;s 13 subject groups and
-  to grades 1&ndash;13 by rule, then by hand. Of 3,259 national textbooks,
-  73 have no subject group and 204
+  to grades 1&ndash;13 by rule, then by hand. Of 3,157 national textbooks,
+  73 have no subject group and 203
   have no grade; books missing either count in the headline but not in the
   adjusted results.</p>
 <h2>The adjustment</h2>
 <p>Country and subject shares come from the paper&rsquo;s regression of each book&rsquo;s female
   share on country, subject group, grade and the log of its length
-  (2,907 books with a country, a subject group, a grade and at least one gendered
+  (2,806 books with a country, a subject group, a grade and at least one gendered
   word), summarised as the average prediction for each country or subject
   (Stata&rsquo;s <code>margins</code>), with 95% intervals. Countries with fewer than 5
   books in the model share one level of the country factor, as the paper&rsquo;s
@@ -260,9 +262,21 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Over time</h2>
 <p>The time chart compares books within countries: a regression of each book&rsquo;s share on its
   country, its period of publication and the log of its length (no subject or grade), on books
-  with a publication year from 2000 on (1,781); 9 books with an earlier year are left out, since some of those years are misread; 100 books with no gendered words are left out (the other 33 are among those with no year). 1,369 national textbooks have no publication year and are not in the time chart. The change
+  with a publication year from 2000 on (1,677); 9 books with an earlier year are left out, since some of those years are misread; 99 books with no gendered words are left out (the other 33 are among those with no year). 1,372 national textbooks have no publication year and are not in the time chart. The change
   per decade comes from a second regression that uses the year, in decades, in place of the
   period.</p>
+<h2>Earlier editions</h2>
+<p>Earlier editions are older editions of books the site holds in a newer one: pre-2022 NCERT
+  books, Rwanda&rsquo;s 2014&ndash;15 readers, and Punjab&rsquo;s books from before the Single
+  National Curriculum, found as Internet Archive and Wayback copies of the publishers&rsquo; own
+  files. A book&rsquo;s year is the year printed in it where it shows one, otherwise the year it
+  was captured. They count in the time chart and the same-title table only, not in the headline
+  or any other result, which describe current books. Where the site holds two editions of one
+  title, the older is an earlier edition (the duplicate table marks the pair
+  &ldquo;edition&rdquo;): so far Maharashtra&rsquo;s 2006&ndash;13 textbooks, whose newer
+  editions the site counts instead. NCERT&rsquo;s Class 1&ndash;8 books were replaced under the
+  2023 curriculum framework by new titles rather than revised, so they have no pair in the table
+  and count in the time chart only. 172 are in the time chart.</p>
 <h2>Limits</h2>
 <p>The adjustment holds subject, grade and book length fixed, but not which books each ministry
   has put online, so a country&rsquo;s share describes the books found for it, and countries with
@@ -279,7 +293,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 
 <h2 id="stereotypes">Stereotype measures</h2>
 <p>The three stereotype sections measure what the 2024 paper measured for its whole corpus, now
-  book by book for the 3,259 national textbooks (results of 12 October 2026),
+  book by book for the 3,157 national textbooks (results of 6 November 2026),
   so that they can be pooled by region and income group. Only counts leave each book; no text
   is kept or published.</p>
 <p><strong>Words near women and men.</strong> For each mention of a woman or a man (the
@@ -313,19 +327,62 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   to each theme in GloVe vectors trained on other text (300 dimensions), and the paper&rsquo;s own
   method, word2vec trained on each country&rsquo;s textbooks where a country has 1.5 million words
   or more (11 countries, 50 runs on resampled sentences each). Positive numbers mean the theme sits nearer women.</p>
-<details class="dt"><summary>Three ways to measure the themes</summary><div class="tscroll" tabindex="0" role="region" aria-label="Three ways to measure the themes, scrolls sideways"><table><caption class="vh">Three ways to measure the themes</caption><thead><tr><th scope="col">Theme</th><th scope="col">Counted (per 100 mentions)</th><th scope="col">GloVe similarity</th><th scope="col">word2vec, median of countries</th><th scope="col">Countries where word2vec agrees</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>−0.7 (95% interval −0.8 to −0.5)</td><td>−0.009</td><td>−0.018</td><td>9 of 11</td></tr><tr><th scope="row">Appearance</th><td>+0.3 (95% interval +0.2 to +0.3)</td><td>+0.010</td><td>+0.020</td><td>11 of 11</td></tr><tr><th scope="row">Family and the home</th><td>+2.1 (95% interval +1.3 to +2.6)</td><td>+0.007</td><td>+0.013</td><td>8 of 11</td></tr><tr><th scope="row">Work</th><td>−0.4 (95% interval −0.7 to +0.1)</td><td>−0.003</td><td>−0.007</td><td>9 of 11</td></tr></tbody></table></div></details>
+<details class="dt"><summary>Three ways to measure the themes</summary><div class="tscroll" tabindex="0" role="region" aria-label="Three ways to measure the themes, scrolls sideways"><table><caption class="vh">Three ways to measure the themes</caption><thead><tr><th scope="col">Theme</th><th scope="col">Counted (per 100 mentions)</th><th scope="col">GloVe similarity</th><th scope="col">word2vec, median of countries</th><th scope="col">Countries where word2vec agrees</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>−0.7 (95% interval −0.8 to −0.5)</td><td>−0.009</td><td>−0.018</td><td>9 of 11</td></tr><tr><th scope="row">Appearance</th><td>+0.3 (95% interval +0.2 to +0.3)</td><td>+0.010</td><td>+0.020</td><td>11 of 11</td></tr><tr><th scope="row">Family and the home</th><td>+2.1 (95% interval +1.3 to +2.5)</td><td>+0.007</td><td>+0.013</td><td>8 of 11</td></tr><tr><th scope="row">Work</th><td>−0.3 (95% interval −0.6 to +0.1)</td><td>−0.003</td><td>−0.007</td><td>9 of 11</td></tr></tbody></table></div></details>
 <details class="dt"><summary>word2vec by country: similarity to each theme, women minus men</summary><div class="tscroll" tabindex="0" role="region" aria-label="word2vec by country: similarity to each theme, women minus men, scrolls sideways"><table><caption class="vh">word2vec by country: similarity to each theme, women minus men</caption><thead><tr><th scope="col">Country</th><th scope="col">Theme</th><th scope="col">Women minus men</th><th scope="col">Range of 95% of runs</th><th scope="col">Runs</th></tr></thead><tbody><tr><th scope="row">Bangladesh</th><td>Achievement</td><td>−0.032</td><td>−0.046 to −0.018</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Appearance</td><td>+0.058</td><td>+0.032 to +0.084</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Family and the home</td><td>+0.013</td><td>−0.003 to +0.030</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Work</td><td>−0.003</td><td>−0.020 to +0.013</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Achievement</td><td>−0.005</td><td>−0.018 to +0.008</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Appearance</td><td>+0.020</td><td>−0.004 to +0.043</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Family and the home</td><td>+0.026</td><td>+0.008 to +0.045</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Work</td><td>−0.007</td><td>−0.023 to +0.010</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Achievement</td><td>−0.010</td><td>−0.019 to 0.000</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Appearance</td><td>+0.032</td><td>+0.015 to +0.049</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Family and the home</td><td>+0.001</td><td>−0.014 to +0.016</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Work</td><td>−0.009</td><td>−0.021 to +0.003</td><td>50</td></tr><tr><th scope="row">India</th><td>Achievement</td><td>−0.030</td><td>−0.036 to −0.024</td><td>50</td></tr><tr><th scope="row">India</th><td>Appearance</td><td>+0.039</td><td>+0.031 to +0.048</td><td>50</td></tr><tr><th scope="row">India</th><td>Family and the home</td><td>+0.025</td><td>+0.015 to +0.034</td><td>50</td></tr><tr><th scope="row">India</th><td>Work</td><td>−0.025</td><td>−0.032 to −0.018</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Achievement</td><td>−0.018</td><td>−0.030 to −0.005</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Appearance</td><td>+0.019</td><td>−0.002 to +0.041</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Family and the home</td><td>−0.002</td><td>−0.020 to +0.016</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Work</td><td>−0.005</td><td>−0.020 to +0.010</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Achievement</td><td>−0.041</td><td>−0.052 to −0.029</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Appearance</td><td>+0.014</td><td>−0.006 to +0.033</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Family and the home</td><td>+0.011</td><td>−0.005 to +0.027</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Work</td><td>−0.017</td><td>−0.032 to −0.003</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Achievement</td><td>+0.004</td><td>−0.006 to +0.014</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Appearance</td><td>+0.025</td><td>+0.005 to +0.045</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Family and the home</td><td>+0.019</td><td>+0.006 to +0.032</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Work</td><td>−0.002</td><td>−0.016 to +0.011</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Achievement</td><td>+0.014</td><td>−0.005 to +0.034</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Appearance</td><td>+0.009</td><td>−0.021 to +0.039</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Family and the home</td><td>+0.015</td><td>−0.008 to +0.039</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Work</td><td>+0.015</td><td>−0.006 to +0.036</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Achievement</td><td>−0.019</td><td>−0.034 to −0.004</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Appearance</td><td>+0.001</td><td>−0.027 to +0.029</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Family and the home</td><td>−0.014</td><td>−0.030 to +0.002</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Work</td><td>−0.012</td><td>−0.028 to +0.005</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Achievement</td><td>−0.014</td><td>−0.030 to +0.002</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Appearance</td><td>+0.048</td><td>+0.018 to +0.079</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Family and the home</td><td>+0.022</td><td>+0.003 to +0.042</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Work</td><td>+0.010</td><td>−0.010 to +0.030</td><td>50</td></tr><tr><th scope="row">United States</th><td>Achievement</td><td>−0.051</td><td>−0.063 to −0.038</td><td>50</td></tr><tr><th scope="row">United States</th><td>Appearance</td><td>+0.012</td><td>−0.013 to +0.037</td><td>50</td></tr><tr><th scope="row">United States</th><td>Family and the home</td><td>−0.005</td><td>−0.016 to +0.006</td><td>50</td></tr><tr><th scope="row">United States</th><td>Work</td><td>−0.025</td><td>−0.038 to −0.011</td><td>50</td></tr></tbody></table></div></details>
 <p><strong>Limits.</strong> English textbooks only, and the lexicons are English. What women and
   men do in the text (their roles) is not measured yet. The occupation mapping is a judgement and
   is published with the data.</p>
 
+
+<h2>Can children read their textbooks?</h2>
+<p>Each textbook for Grades 1&ndash;6 is scored as passages of 70 running words, the
+  length of the Grade 2 stories children are tested on, skipping tables and badly read pages; a
+  book is the median of its passages. The main measure is the share of a passage&rsquo;s words
+  outside the 2,000 most frequent words of its language (wordfreq), the measure second-language
+  reading research ties to comprehension. A book is set against a figure for children tested in
+  the book&rsquo;s language, whatever that language is; a language wordfreq has no list for is
+  not scored. Two grade formulas are computed alongside: Flesch&ndash;Kincaid
+  (sentence and word length) and the revised Spache formula (sentence length and words outside a
+  list of about 1,000 words familiar to children in Grades 1&ndash;3), which was built for early
+  grades; both are computed for English only. Copyright, licence and imprint passages are left out. The surveys&rsquo;
+  own Grade 2 passages (UNICEF MICS6 Foundational Learning Skills; Uwezo, ASER and the PAL Network)
+  are scored the same way. A survey counts when every child was tested in one language, or when
+  it pools several, as a ceiling on reading in each. For the MICS countries the figure is computed from the
+  child-level data: the share who read the English story among the children given it, which is a
+  ceiling if the children not given it (mostly those taught in another language) read English no
+  better; a grade counts with at least 50 children given the story. South Africa has no Grade 2
+  story test, so its figure is PIRLS 2021: the share of children tested in English who reached the
+  lowest benchmark (400 points: finding facts stated plainly in a simple text), in Grade 4 and Grade
+  6, against the two released passages, a story and an information text. In Grade 4 these are the
+  children taught in English from Grade 1, about a fifth of the grade; in Grade 6 nearly all
+  children were tested in English. Each book is set against the
+  figure for the next grade or, where there is none, the nearest grade above that: those children
+  have all finished the book&rsquo;s grade, so the ceiling holds wherever in the school year the
+  survey was done (most test mid-year). For this, MICS figures include Grade 7, the year after
+  Grade 6. A country is shown with at least 5 scored books. A book is harder only when it is harder on two measures: more of its
+  words fall outside the 2,000 most common words than in the hardest version of its test passage,
+  by more than one percentage point, and its sentences are longer (median words per finished
+  sentence, in any language) than in that version.
+  Names are left out of the word counts. The ceiling is the most children who could read a
+  textbook drawn at random from the country&rsquo;s set: a harder book at most the share who
+  read the test passage, any other book at most all of them. Its 90% interval comes from
+  20,000 draws: each grade&rsquo;s share of harder books from its Beta posterior (Jeffreys prior),
+  and each pass rate from a Beta with its sampling error: for MICS, the survey-design standard
+  error from the microdata (clusters within strata); for Bangladesh, the report&rsquo;s design
+  effect; for ASER, Uwezo and PIRLS, which print no standard error, one from the number of
+  children tested with a design effect of 2. Where no survey
+  has a figure, an Early Grade Reading Assessment (EGRA) is used: the share of children who
+  answer at least 80% of the comprehension questions on its passage, the most lenient standard
+  that still asks them to understand it. An EGRA from a sample that is not national, with no printed
+  passage, or from long before the books, gives a line apart from the others.
+  Left out: GHA (0 scored books (minimum 5)), LSO (0 scored books (minimum 5)), SLE (0 scored books (minimum 5)), ZWE (2 scored books (minimum 5)).</p>
 <h2>Changes</h2>
-<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-10-12</td><td>+7 books, +2 countries</td><td class="num">3,259</td><td class="num">78</td><td class="num">35.03%</td></tr><tr><td>2026-10-11</td><td>+278 books, 0 countries</td><td class="num">3,252</td><td class="num">76</td><td class="num">35.03%</td></tr><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
+<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-11-06</td><td>+2 books, 0 countries</td><td class="num">3,157</td><td class="num">78</td><td class="num">34.91%</td></tr><tr><td>2026-10-15</td><td>−14 books, 0 countries</td><td class="num">3,155</td><td class="num">78</td><td class="num">34.90%</td></tr><tr><td>2026-10-14</td><td>−90 books, 0 countries</td><td class="num">3,169</td><td class="num">78</td><td class="num">34.87%</td></tr><tr><td>2026-10-12</td><td>+7 books, +2 countries</td><td class="num">3,259</td><td class="num">78</td><td class="num">35.03%</td></tr><tr><td>2026-10-11</td><td>+278 books, 0 countries</td><td class="num">3,252</td><td class="num">76</td><td class="num">35.03%</td></tr><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
 
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2290</li><li><code>embed/within.html</code>, height 1359</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/themes.html</code>, height 777</li><li><code>embed/descriptors.html</code>, height 860</li><li><code>embed/jobs.html</code>, height 1087</li><li><code>embed/collections.html</code>, height 1018</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2290</li><li><code>embed/within.html</code>, height 1359</li><li><code>embed/subjects.html</code>, height 1129</li><li><code>embed/ages.html</code>, height 921</li><li><code>embed/time.html</code>, height 755</li><li><code>embed/reading.html</code>, height 941</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/themes.html</code>, height 777</li><li><code>embed/descriptors.html</code>, height 860</li><li><code>embed/jobs.html</code>, height 1087</li><li><code>embed/collections.html</code>, height 1018</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2290&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

@@ -70,6 +70,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
 .tg .chart .axis{font-size:11.5px; fill:var(--muted)}
@@ -159,6 +160,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
+.tg .chart .sqm{fill:var(--m)}
 .tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
   stroke-width:3px; stroke-linejoin:round}
 .tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
@@ -214,14 +216,16 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h1 class="vh">Within countries: Gender in School Textbooks</h1>
 <section id="within" aria-labelledby="h-within"><h2 id="h-within">Within countries</h2><p class="lede">Where a country&rsquo;s national textbooks come from at least two states with 10 or more books in the model each, the same model within that country, with state in place of country: each dot is a state&rsquo;s female share after adjusting for subject, grade and book length, at the country&rsquo;s own mix of them; lines are 95% intervals. Books with no state form a group of their own.</p><h3>India</h3><div class="chartbox"><svg class="chart" id="tg-within-ind" viewBox="0 0 560 406" role="img" aria-labelledby="tg-within-ind-t tg-within-ind-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-within-ind-t">Female share of gendered words by state, India, adjusted</title>
-<desc id="tg-within-ind-d">11 groups of the 973 books from India in the model, lowest to highest adjusted female share.</desc>
+<desc id="tg-within-ind-d">11 groups of the 869 books from India in the model, lowest to highest adjusted female share.</desc>
 <text class="axis" x="0.0" y="14" text-anchor="start">20%</text>
 <text class="axis" x="122.5" y="14" text-anchor="middle">30%</text>
 <text class="axis" x="245.0" y="14" text-anchor="middle">40%</text>
 <text class="axis" x="367.5" y="14" text-anchor="middle">50%</text>
 <text class="axis plab" x="384.5" y="14">parity</text>
 <text class="axis" x="490.0" y="14" text-anchor="end">60%</text>
-<g class="row"><title>Karnataka: 26.7% female, 95% interval 22.6–30.8, 52 books; raw share 22.4%</title>
+<text class="dl dl-f" x="133.1" y="53">Adjusted share</text>
+<text class="dl dl-ci" x="260.7" y="53">95% interval</text>
+<g class="row"><title>Karnataka: 25.9% female, 95% interval 21.5–30.2, 52 books; raw share 22.4%</title>
 <text class="lab" x="0" y="38">Karnataka<tspan class="cnt" dx="8">52 books</tspan></text>
 <line class="grid" x1="0.0" y1="44.0" x2="0.0" y2="54.0"/>
 <line class="grid" x1="122.5" y1="44.0" x2="122.5" y2="54.0"/>
@@ -229,10 +233,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="44.0" x2="490.0" y2="54.0"/>
 <line class="halo" x1="367.5" y1="43.0" x2="367.5" y2="55.0"/>
 <line class="par" x1="367.5" y1="43.0" x2="367.5" y2="55.0"/>
-<line class="ci" x1="31.5" y1="49" x2="132.8" y2="49"/>
-<circle class="pt" cx="82.1" cy="49" r="4.5"/>
-<text class="val" x="560" y="53" text-anchor="end">26.7%</text></g>
-<g class="row"><title>Kerala: 28.5% female, 95% interval 24.9–32.0, 84 books; raw share 30.7%</title>
+<line class="ci" x1="18.6" y1="49" x2="125.1" y2="49"/>
+<circle class="pt" cx="71.9" cy="49" r="4.5"/>
+<text class="val" x="560" y="53" text-anchor="end">25.9%</text></g>
+<g class="row"><title>Kerala: 27.3% female, 95% interval 23.6–31.0, 84 books; raw share 30.7%</title>
 <text class="lab" x="0" y="72">Kerala<tspan class="cnt" dx="8">84 books</tspan></text>
 <line class="grid" x1="0.0" y1="78.0" x2="0.0" y2="88.0"/>
 <line class="grid" x1="122.5" y1="78.0" x2="122.5" y2="88.0"/>
@@ -240,10 +244,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="78.0" x2="490.0" y2="88.0"/>
 <line class="halo" x1="367.5" y1="77.0" x2="367.5" y2="89.0"/>
 <line class="par" x1="367.5" y1="77.0" x2="367.5" y2="89.0"/>
-<line class="ci" x1="60.4" y1="83" x2="147.0" y2="83"/>
-<circle class="pt" cx="103.6" cy="83" r="4.5"/>
-<text class="val" x="560" y="87" text-anchor="end">28.5%</text></g>
-<g class="row"><title>Punjab: 30.7% female, 95% interval 27.5–33.9, 95 books; raw share 30.5%</title>
+<line class="ci" x1="43.7" y1="83" x2="134.8" y2="83"/>
+<circle class="pt" cx="89.2" cy="83" r="4.5"/>
+<text class="val" x="560" y="87" text-anchor="end">27.3%</text></g>
+<g class="row"><title>Punjab: 29.9% female, 95% interval 26.6–33.2, 95 books; raw share 30.5%</title>
 <text class="lab" x="0" y="106">Punjab<tspan class="cnt" dx="8">95 books</tspan></text>
 <line class="grid" x1="0.0" y1="112.0" x2="0.0" y2="122.0"/>
 <line class="grid" x1="122.5" y1="112.0" x2="122.5" y2="122.0"/>
@@ -251,21 +255,21 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="112.0" x2="490.0" y2="122.0"/>
 <line class="halo" x1="367.5" y1="111.0" x2="367.5" y2="123.0"/>
 <line class="par" x1="367.5" y1="111.0" x2="367.5" y2="123.0"/>
-<line class="ci" x1="91.8" y1="117" x2="169.8" y2="117"/>
-<circle class="pt" cx="130.8" cy="117" r="4.5"/>
-<text class="val" x="560" y="121" text-anchor="end">30.7%</text></g>
-<g class="row"><title>Maharashtra: 31.2% female, 95% interval 29.4–33.0, 311 books; raw share 33.1%</title>
-<text class="lab" x="0" y="140">Maharashtra<tspan class="cnt" dx="8">311 books</tspan></text>
+<line class="ci" x1="80.6" y1="117" x2="162.3" y2="117"/>
+<circle class="pt" cx="121.4" cy="117" r="4.5"/>
+<text class="val" x="560" y="121" text-anchor="end">29.9%</text></g>
+<g class="row"><title>Maharashtra: 30.4% female, 95% interval 28.1–32.6, 207 books; raw share 30.1%</title>
+<text class="lab" x="0" y="140">Maharashtra<tspan class="cnt" dx="8">207 books</tspan></text>
 <line class="grid" x1="0.0" y1="146.0" x2="0.0" y2="156.0"/>
 <line class="grid" x1="122.5" y1="146.0" x2="122.5" y2="156.0"/>
 <line class="grid" x1="245.0" y1="146.0" x2="245.0" y2="156.0"/>
 <line class="grid" x1="490.0" y1="146.0" x2="490.0" y2="156.0"/>
 <line class="halo" x1="367.5" y1="145.0" x2="367.5" y2="157.0"/>
 <line class="par" x1="367.5" y1="145.0" x2="367.5" y2="157.0"/>
-<line class="ci" x1="115.4" y1="151" x2="159.9" y2="151"/>
-<circle class="pt" cx="137.6" cy="151" r="4.5"/>
-<text class="val" x="560" y="155" text-anchor="end">31.2%</text></g>
-<g class="row"><title>Tamil Nadu: 31.5% female, 95% interval 28.3–34.6, 91 books; raw share 27.4%</title>
+<line class="ci" x1="99.7" y1="151" x2="154.0" y2="151"/>
+<circle class="pt" cx="126.9" cy="151" r="4.5"/>
+<text class="val" x="560" y="155" text-anchor="end">30.4%</text></g>
+<g class="row"><title>Tamil Nadu: 30.6% female, 95% interval 27.3–34.0, 91 books; raw share 27.4%</title>
 <text class="lab" x="0" y="174">Tamil Nadu<tspan class="cnt" dx="8">91 books</tspan></text>
 <line class="grid" x1="0.0" y1="180.0" x2="0.0" y2="190.0"/>
 <line class="grid" x1="122.5" y1="180.0" x2="122.5" y2="190.0"/>
@@ -273,10 +277,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="180.0" x2="490.0" y2="190.0"/>
 <line class="halo" x1="367.5" y1="179.0" x2="367.5" y2="191.0"/>
 <line class="par" x1="367.5" y1="179.0" x2="367.5" y2="191.0"/>
-<line class="ci" x1="101.4" y1="185" x2="179.3" y2="185"/>
-<circle class="pt" cx="140.4" cy="185" r="4.5"/>
-<text class="val" x="560" y="189" text-anchor="end">31.5%</text></g>
-<g class="row"><title>Gujarat: 31.9% female, 95% interval 27.6–36.3, 47 books; raw share 28.9%</title>
+<line class="ci" x1="89.5" y1="185" x2="171.0" y2="185"/>
+<circle class="pt" cx="130.2" cy="185" r="4.5"/>
+<text class="val" x="560" y="189" text-anchor="end">30.6%</text></g>
+<g class="row"><title>Gujarat: 31.0% female, 95% interval 26.4–35.5, 47 books; raw share 28.9%</title>
 <text class="lab" x="0" y="208">Gujarat<tspan class="cnt" dx="8">47 books</tspan></text>
 <line class="grid" x1="0.0" y1="214.0" x2="0.0" y2="224.0"/>
 <line class="grid" x1="122.5" y1="214.0" x2="122.5" y2="224.0"/>
@@ -284,10 +288,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="214.0" x2="490.0" y2="224.0"/>
 <line class="halo" x1="367.5" y1="213.0" x2="367.5" y2="225.0"/>
 <line class="par" x1="367.5" y1="213.0" x2="367.5" y2="225.0"/>
-<line class="ci" x1="92.6" y1="219" x2="199.6" y2="219"/>
-<circle class="pt" cx="146.0" cy="219" r="4.5"/>
-<text class="val" x="560" y="223" text-anchor="end">31.9%</text></g>
-<g class="row"><title>Telangana: 32.4% female, 95% interval 26.9–37.9, 31 books; raw share 33.1%</title>
+<line class="ci" x1="78.4" y1="219" x2="190.4" y2="219"/>
+<circle class="pt" cx="134.4" cy="219" r="4.5"/>
+<text class="val" x="560" y="223" text-anchor="end">31.0%</text></g>
+<g class="row"><title>Telangana: 31.4% female, 95% interval 25.7–37.2, 31 books; raw share 33.1%</title>
 <text class="lab" x="0" y="242">Telangana<tspan class="cnt" dx="8">31 books</tspan></text>
 <line class="grid" x1="0.0" y1="248.0" x2="0.0" y2="258.0"/>
 <line class="grid" x1="122.5" y1="248.0" x2="122.5" y2="258.0"/>
@@ -295,10 +299,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="248.0" x2="490.0" y2="258.0"/>
 <line class="halo" x1="367.5" y1="247.0" x2="367.5" y2="259.0"/>
 <line class="par" x1="367.5" y1="247.0" x2="367.5" y2="259.0"/>
-<line class="ci" x1="85.1" y1="253" x2="218.7" y2="253"/>
-<circle class="pt" cx="151.9" cy="253" r="4.5"/>
-<text class="val" x="560" y="257" text-anchor="end">32.4%</text></g>
-<g class="row"><title>Andhra Pradesh: 33.6% female, 95% interval 27.9–39.3, 32 books; raw share 34.6%</title>
+<line class="ci" x1="69.8" y1="253" x2="210.3" y2="253"/>
+<circle class="pt" cx="140.1" cy="253" r="4.5"/>
+<text class="val" x="560" y="257" text-anchor="end">31.4%</text></g>
+<g class="row"><title>Andhra Pradesh: 32.7% female, 95% interval 26.7–38.7, 32 books; raw share 34.6%</title>
 <text class="lab" x="0" y="276">Andhra Pradesh<tspan class="cnt" dx="8">32 books</tspan></text>
 <line class="grid" x1="0.0" y1="282.0" x2="0.0" y2="292.0"/>
 <line class="grid" x1="122.5" y1="282.0" x2="122.5" y2="292.0"/>
@@ -306,10 +310,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="282.0" x2="490.0" y2="292.0"/>
 <line class="halo" x1="367.5" y1="281.0" x2="367.5" y2="293.0"/>
 <line class="par" x1="367.5" y1="281.0" x2="367.5" y2="293.0"/>
-<line class="ci" x1="96.8" y1="287" x2="235.9" y2="287"/>
-<circle class="pt" cx="166.4" cy="287" r="4.5"/>
-<text class="val" x="560" y="291" text-anchor="end">33.6%</text></g>
-<g class="row"><title>Mizoram: 34.2% female, 95% interval 24.9–43.6, 10 books; raw share 35.0%</title>
+<line class="ci" x1="82.4" y1="287" x2="229.3" y2="287"/>
+<circle class="pt" cx="155.8" cy="287" r="4.5"/>
+<text class="val" x="560" y="291" text-anchor="end">32.7%</text></g>
+<g class="row"><title>Mizoram: 33.6% female, 95% interval 23.7–43.4, 10 books; raw share 35.0%</title>
 <text class="lab" x="0" y="310">Mizoram<tspan class="cnt" dx="8">10 books</tspan></text>
 <line class="grid" x1="0.0" y1="316.0" x2="0.0" y2="326.0"/>
 <line class="grid" x1="122.5" y1="316.0" x2="122.5" y2="326.0"/>
@@ -317,10 +321,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="316.0" x2="490.0" y2="326.0"/>
 <line class="halo" x1="367.5" y1="315.0" x2="367.5" y2="327.0"/>
 <line class="par" x1="367.5" y1="315.0" x2="367.5" y2="327.0"/>
-<line class="ci" x1="60.0" y1="321" x2="288.9" y2="321"/>
-<circle class="pt" cx="174.4" cy="321" r="4.5"/>
-<text class="val" x="560" y="325" text-anchor="end">34.2%</text></g>
-<g class="row"><title>Chhattisgarh: 37.4% female, 95% interval 27.9–46.9, 10 books; raw share 42.5%</title>
+<line class="ci" x1="45.6" y1="321" x2="287.1" y2="321"/>
+<circle class="pt" cx="166.4" cy="321" r="4.5"/>
+<text class="val" x="560" y="325" text-anchor="end">33.6%</text></g>
+<g class="row"><title>Chhattisgarh: 36.5% female, 95% interval 26.5–46.5, 10 books; raw share 42.5%</title>
 <text class="lab" x="0" y="344">Chhattisgarh<tspan class="cnt" dx="8">10 books</tspan></text>
 <line class="grid" x1="0.0" y1="350.0" x2="0.0" y2="360.0"/>
 <line class="grid" x1="122.5" y1="350.0" x2="122.5" y2="360.0"/>
@@ -328,10 +332,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="350.0" x2="490.0" y2="360.0"/>
 <line class="halo" x1="367.5" y1="349.0" x2="367.5" y2="361.0"/>
 <line class="par" x1="367.5" y1="349.0" x2="367.5" y2="361.0"/>
-<line class="ci" x1="96.3" y1="355" x2="329.0" y2="355"/>
-<circle class="pt" cx="212.7" cy="355" r="4.5"/>
-<text class="val" x="560" y="359" text-anchor="end">37.4%</text></g>
-<g class="row"><title>NCERT (national): 38.5% female, 95% interval 36.4–40.6, 229 books; raw share 36.1%</title>
+<line class="ci" x1="79.3" y1="355" x2="324.3" y2="355"/>
+<circle class="pt" cx="201.8" cy="355" r="4.5"/>
+<text class="val" x="560" y="359" text-anchor="end">36.5%</text></g>
+<g class="row"><title>NCERT (national): 37.6% female, 95% interval 35.5–39.8, 229 books; raw share 36.1%</title>
 <text class="lab" x="0" y="378">NCERT (national)<tspan class="cnt" dx="8">229 books</tspan></text>
 <line class="grid" x1="0.0" y1="384.0" x2="0.0" y2="394.0"/>
 <line class="grid" x1="122.5" y1="384.0" x2="122.5" y2="394.0"/>
@@ -339,14 +343,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="384.0" x2="490.0" y2="394.0"/>
 <line class="halo" x1="367.5" y1="383.0" x2="367.5" y2="395.0"/>
 <line class="par" x1="367.5" y1="383.0" x2="367.5" y2="395.0"/>
-<line class="ci" x1="201.4" y1="389" x2="252.2" y2="389"/>
-<circle class="pt" cx="226.7" cy="389" r="4.5"/>
-<text class="val" x="560" y="393" text-anchor="end">38.5%</text></g>
-<text class="dl dl-f" x="185.8" y="38.0">Adjusted share</text>
-<line class="lead" x1="187.8" y1="41.0" x2="82.1" y2="44.5"/>
-<text class="dl dl-ci" x="313.4" y="38.0">95% interval</text>
-<line class="lead" x1="315.4" y1="41.0" x2="132.8" y2="48.0"/>
-</svg></div><p class="note">State figures cover each board&rsquo;s own books; where a state board reprints NCERT books, those count once, as NCERT, and a book Andhra Pradesh and Telangana share counts once, as the 2024 paper&rsquo;s Telangana copy. 364 of the 763 state books are 2020&ndash;23 editions from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, obtained through an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Chhattisgarh has books in one subject group only (Maths), so its figure assumes that the subject differences seen elsewhere in India hold there too.</p><details class="dt"><summary>Data table: adjusted female share by state, India</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by state, India, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by state, India</caption><thead><tr><th scope="col">State</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Karnataka</th><td>26.7%</td><td>22.6–30.8</td><td>22.4%</td><td>52</td><td>52</td></tr><tr><th scope="row">Kerala</th><td>28.5%</td><td>24.9–32.0</td><td>30.7%</td><td>84</td><td>84</td></tr><tr><th scope="row">Punjab</th><td>30.7%</td><td>27.5–33.9</td><td>30.5%</td><td>95</td><td>95</td></tr><tr><th scope="row">Maharashtra</th><td>31.2%</td><td>29.4–33.0</td><td>33.1%</td><td>311</td><td>304</td></tr><tr><th scope="row">Tamil Nadu</th><td>31.5%</td><td>28.3–34.6</td><td>27.4%</td><td>91</td><td>91</td></tr><tr><th scope="row">Gujarat</th><td>31.9%</td><td>27.6–36.3</td><td>28.9%</td><td>47</td><td>47</td></tr><tr><th scope="row">Telangana</th><td>32.4%</td><td>26.9–37.9</td><td>33.1%</td><td>31</td><td>31</td></tr><tr><th scope="row">Andhra Pradesh</th><td>33.6%</td><td>27.9–39.3</td><td>34.6%</td><td>32</td><td>29</td></tr><tr><th scope="row">Mizoram</th><td>34.2%</td><td>24.9–43.6</td><td>35.0%</td><td>10</td><td>10</td></tr><tr><th scope="row">Chhattisgarh</th><td>37.4%</td><td>27.9–46.9</td><td>42.5%</td><td>10</td><td>10</td></tr><tr><th scope="row">NCERT (national)</th><td>38.5%</td><td>36.4–40.6</td><td>36.1%</td><td>229</td><td>220</td></tr></tbody></table></div></details><h3>United States</h3><div class="chartbox"><svg class="chart" id="tg-within-usa" viewBox="0 0 560 134" role="img" aria-labelledby="tg-within-usa-t tg-within-usa-d" preserveAspectRatio="xMinYMin meet">
+<line class="ci" x1="189.8" y1="389" x2="242.5" y2="389"/>
+<circle class="pt" cx="216.1" cy="389" r="4.5"/>
+<text class="val" x="560" y="393" text-anchor="end">37.6%</text></g>
+</svg></div><p class="note">State figures cover each board&rsquo;s own books; where a state board reprints NCERT books, those count once, as NCERT, and a book Andhra Pradesh and Telangana share counts once, as the 2024 paper&rsquo;s Telangana copy. Most of the state books (364 of 659) are 2020&ndash;23 editions from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, obtained through an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Chhattisgarh has books in one subject group only (Maths), so its figure assumes that the subject differences seen elsewhere in India hold there too.</p><details class="dt"><summary>Data table: adjusted female share by state, India</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by state, India, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by state, India</caption><thead><tr><th scope="col">State</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Karnataka</th><td>25.9%</td><td>21.5–30.2</td><td>22.4%</td><td>52</td><td>52</td></tr><tr><th scope="row">Kerala</th><td>27.3%</td><td>23.6–31.0</td><td>30.7%</td><td>84</td><td>84</td></tr><tr><th scope="row">Punjab</th><td>29.9%</td><td>26.6–33.2</td><td>30.5%</td><td>95</td><td>95</td></tr><tr><th scope="row">Maharashtra</th><td>30.4%</td><td>28.1–32.6</td><td>30.1%</td><td>207</td><td>200</td></tr><tr><th scope="row">Tamil Nadu</th><td>30.6%</td><td>27.3–34.0</td><td>27.4%</td><td>91</td><td>91</td></tr><tr><th scope="row">Gujarat</th><td>31.0%</td><td>26.4–35.5</td><td>28.9%</td><td>47</td><td>47</td></tr><tr><th scope="row">Telangana</th><td>31.4%</td><td>25.7–37.2</td><td>33.1%</td><td>31</td><td>31</td></tr><tr><th scope="row">Andhra Pradesh</th><td>32.7%</td><td>26.7–38.7</td><td>34.6%</td><td>32</td><td>29</td></tr><tr><th scope="row">Mizoram</th><td>33.6%</td><td>23.7–43.4</td><td>35.0%</td><td>10</td><td>10</td></tr><tr><th scope="row">Chhattisgarh</th><td>36.5%</td><td>26.5–46.5</td><td>42.5%</td><td>10</td><td>10</td></tr><tr><th scope="row">NCERT (national)</th><td>37.6%</td><td>35.5–39.8</td><td>36.1%</td><td>229</td><td>220</td></tr></tbody></table></div></details><h3>United States</h3><div class="chartbox"><svg class="chart" id="tg-within-usa" viewBox="0 0 560 134" role="img" aria-labelledby="tg-within-usa-t tg-within-usa-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-within-usa-t">Female share of gendered words by state, United States, adjusted</title>
 <desc id="tg-within-usa-d">3 groups of the 362 books from United States in the model, lowest to highest adjusted female share.</desc>
 <text class="axis" x="0.0" y="14" text-anchor="start">20%</text>
@@ -355,8 +355,8 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="367.5" y="14" text-anchor="middle">50%</text>
 <text class="axis plab" x="384.5" y="14">parity</text>
 <text class="axis" x="490.0" y="14" text-anchor="end">60%</text>
-<g class="row"><title>Texas: 38.2% female, 95% interval 35.0–41.4, 360 books; raw share 36.5%</title>
-<text class="lab" x="0" y="38">Texas<tspan class="cnt" dx="8">360 books</tspan></text>
+<g class="row"><title>Texas: 38.2% female, 95% interval 35.0–41.4, 359 books; raw share 36.5%</title>
+<text class="lab" x="0" y="38">Texas<tspan class="cnt" dx="8">359 books</tspan></text>
 <line class="grid" x1="0.0" y1="44.0" x2="0.0" y2="54.0"/>
 <line class="grid" x1="122.5" y1="44.0" x2="122.5" y2="54.0"/>
 <line class="grid" x1="245.0" y1="44.0" x2="245.0" y2="54.0"/>
@@ -391,7 +391,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="dl dl-f" x="164.2" y="38.0">Adjusted share</text>
 <text class="dl dl-ci" x="291.8" y="38.0">95% interval</text>
 <line class="lead" x1="293.8" y1="41.0" x2="261.7" y2="48.0"/>
-</svg></div><p class="note">Most of the 475 United States books (379) come from the state-made materials of Texas and Utah. Utah has books in one subject group only (Maths), so its figure assumes that the subject differences seen elsewhere in the United States hold there too.</p><details class="dt"><summary>Data table: adjusted female share by state, United States</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by state, United States, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by state, United States</caption><thead><tr><th scope="col">State</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Texas</th><td>38.2%</td><td>35.0–41.4</td><td>36.5%</td><td>360</td><td>252</td></tr><tr><th scope="row">Utah</th><td>40.8%</td><td>28.6–53.0</td><td>49.6%</td><td>19</td><td>19</td></tr><tr><th scope="row">No state recorded</th><td>51.2%</td><td>44.7–57.8</td><td>44.0%</td><td>96</td><td>91</td></tr></tbody></table></div></details></section>
+</svg></div><p class="note">Most of the 474 United States books (378) come from the state-made materials of Texas and Utah. Utah has books in one subject group only (Maths), so its figure assumes that the subject differences seen elsewhere in the United States hold there too.</p><details class="dt"><summary>Data table: adjusted female share by state, United States</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by state, United States, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by state, United States</caption><thead><tr><th scope="col">State</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th></tr></thead><tbody><tr><th scope="row">Texas</th><td>38.2%</td><td>35.0–41.4</td><td>36.5%</td><td>359</td><td>252</td></tr><tr><th scope="row">Utah</th><td>40.8%</td><td>28.6–53.0</td><td>49.6%</td><td>19</td><td>19</td></tr><tr><th scope="row">No state recorded</th><td>51.2%</td><td>44.7–57.8</td><td>44.0%</td><td>96</td><td>91</td></tr></tbody></table></div></details></section>
 <p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
 </main></div>
 <script>

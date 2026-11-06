@@ -70,6 +70,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
 .tg .chart .axis{font-size:11.5px; fill:var(--muted)}
@@ -159,6 +160,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .grid{stroke:var(--rule-soft)}
 .tg .chart .fitline{stroke:var(--ink-2);stroke-width:2}
 .tg .chart .sq{fill:var(--ink-2)}
+.tg .chart .sqm{fill:var(--m)}
 .tg .chart .dl{font-size:11.5px; font-weight:700; paint-order:stroke; stroke:var(--paper);
   stroke-width:3px; stroke-linejoin:round}
 .tg .chart .dl-f{fill:var(--f-text)} .tg .chart .dl-m{fill:var(--m-text)}
@@ -212,7 +214,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <body>
 <div class="tg embed"><main class="wrap">
 <h1 class="vh">Countries: Gender in School Textbooks</h1>
-<section id="countries" aria-labelledby="h-countries"><h2 id="h-countries">Countries</h2><p class="lede">National textbooks, 2,907 books in the model. Each dot is a country&rsquo;s female share of gendered words after adjusting for subject, grade and book length (the paper&rsquo;s model); lines are 95% intervals; open dots are countries added since the paper. Countries with fewer than 5 books in the model are pooled into one level of the model, as the paper&rsquo;s &ldquo;Other&rdquo; was, and countries with fewer than 10 are listed below the chart, not ranked.</p><div class="chartbox"><svg class="chart" id="tg-countries" viewBox="0 0 560 1426" role="img" aria-labelledby="tg-countries-t tg-countries-d" preserveAspectRatio="xMinYMin meet">
+<section id="countries" aria-labelledby="h-countries"><h2 id="h-countries">Countries</h2><p class="lede">National textbooks, 2,806 books in the model. Each dot is a country&rsquo;s female share of gendered words after adjusting for subject, grade and book length (the paper&rsquo;s model); lines are 95% intervals; open dots are countries added since the paper. Countries with fewer than 5 books in the model are pooled into one level of the model, as the paper&rsquo;s &ldquo;Other&rdquo; was, and countries with fewer than 10 are listed below the chart, not ranked.</p><div class="chartbox"><svg class="chart" id="tg-countries" viewBox="0 0 560 1426" role="img" aria-labelledby="tg-countries-t tg-countries-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-countries-t">Female share of gendered words by country, adjusted</title>
 <desc id="tg-countries-d">41 countries, lowest to highest adjusted female share.</desc>
 <text class="axis" x="0.0" y="14" text-anchor="start">20%</text>
@@ -223,7 +225,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="326.7" y="14" text-anchor="middle">60%</text>
 <text class="axis" x="408.3" y="14" text-anchor="middle">70%</text>
 <text class="axis" x="490.0" y="14" text-anchor="end">80%</text>
-<g class="row"><title>Maldives: 28.5% female, 95% interval 21.2–35.9, 25 books; raw share 45.0%</title>
+<g class="row"><title>Maldives: 28.5% female, 95% interval 21.0–35.9, 25 books; raw share 45.0%</title>
 <text class="lab" x="0" y="38">Maldives<tspan class="cnt" dx="8">25 books</tspan></text>
 <line class="grid" x1="0.0" y1="44.0" x2="0.0" y2="54.0"/>
 <line class="grid" x1="81.7" y1="44.0" x2="81.7" y2="54.0"/>
@@ -233,8 +235,8 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="44.0" x2="490.0" y2="54.0"/>
 <line class="halo" x1="245.0" y1="43.0" x2="245.0" y2="55.0"/>
 <line class="par" x1="245.0" y1="43.0" x2="245.0" y2="55.0"/>
-<line class="ci" x1="9.9" y1="49" x2="129.4" y2="49"/>
-<circle class="pt" cx="69.7" cy="49" r="4.5"/>
+<line class="ci" x1="8.5" y1="49" x2="130.0" y2="49"/>
+<circle class="pt" cx="69.3" cy="49" r="4.5"/>
 <text class="val" x="560" y="53" text-anchor="end">28.5%</text></g>
 <g class="row"><title>Pakistan: 29.0% female, 95% interval 25.4–32.6, 92 books; raw share 25.3%</title>
 <text class="lab" x="0" y="72">Pakistan<tspan class="cnt" dx="8">92 books</tspan></text>
@@ -246,10 +248,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="78.0" x2="490.0" y2="88.0"/>
 <line class="halo" x1="245.0" y1="77.0" x2="245.0" y2="89.0"/>
 <line class="par" x1="245.0" y1="77.0" x2="245.0" y2="89.0"/>
-<line class="ci" x1="44.5" y1="83" x2="102.7" y2="83"/>
-<circle class="pt" cx="73.6" cy="83" r="4.5"/>
+<line class="ci" x1="44.1" y1="83" x2="103.1" y2="83"/>
+<circle class="pt" cx="73.7" cy="83" r="4.5"/>
 <text class="val" x="560" y="87" text-anchor="end">29.0%</text></g>
-<g class="row"><title>Sri Lanka: 30.3% female, 95% interval 26.8–33.7, 99 books; raw share 25.0%</title>
+<g class="row"><title>Sri Lanka: 30.0% female, 95% interval 26.5–33.5, 99 books; raw share 25.0%</title>
 <text class="lab" x="0" y="106">Sri Lanka<tspan class="cnt" dx="8">99 books</tspan></text>
 <line class="grid" x1="0.0" y1="112.0" x2="0.0" y2="122.0"/>
 <line class="grid" x1="81.7" y1="112.0" x2="81.7" y2="122.0"/>
@@ -259,11 +261,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="112.0" x2="490.0" y2="122.0"/>
 <line class="halo" x1="245.0" y1="111.0" x2="245.0" y2="123.0"/>
 <line class="par" x1="245.0" y1="111.0" x2="245.0" y2="123.0"/>
-<line class="ci" x1="55.9" y1="117" x2="112.1" y2="117"/>
-<circle class="pt" cx="84.0" cy="117" r="4.5"/>
-<text class="val" x="560" y="121" text-anchor="end">30.3%</text></g>
-<g class="row"><title>India: 32.7% female, 95% interval 31.5–33.9, 992 books; raw share 32.1%</title>
-<text class="lab" x="0" y="140">India<tspan class="cnt" dx="8">992 books</tspan></text>
+<line class="ci" x1="53.1" y1="117" x2="110.2" y2="117"/>
+<circle class="pt" cx="81.7" cy="117" r="4.5"/>
+<text class="val" x="560" y="121" text-anchor="end">30.0%</text></g>
+<g class="row"><title>India: 32.4% female, 95% interval 31.1–33.6, 888 books; raw share 31.5%</title>
+<text class="lab" x="0" y="140">India<tspan class="cnt" dx="8">888 books</tspan></text>
 <line class="grid" x1="0.0" y1="146.0" x2="0.0" y2="156.0"/>
 <line class="grid" x1="81.7" y1="146.0" x2="81.7" y2="156.0"/>
 <line class="grid" x1="163.3" y1="146.0" x2="163.3" y2="156.0"/>
@@ -272,10 +274,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="146.0" x2="490.0" y2="156.0"/>
 <line class="halo" x1="245.0" y1="145.0" x2="245.0" y2="157.0"/>
 <line class="par" x1="245.0" y1="145.0" x2="245.0" y2="157.0"/>
-<line class="ci" x1="94.0" y1="151" x2="113.2" y2="151"/>
-<circle class="pt" cx="103.6" cy="151" r="4.5"/>
-<text class="val" x="560" y="155" text-anchor="end">32.7%</text></g>
-<g class="row"><title>Solomon Islands: 33.1% female, 95% interval 28.4–37.8, 53 books; raw share 24.8%</title>
+<line class="ci" x1="91.1" y1="151" x2="111.5" y2="151"/>
+<circle class="pt" cx="101.3" cy="151" r="4.5"/>
+<text class="val" x="560" y="155" text-anchor="end">32.4%</text></g>
+<g class="row"><title>Solomon Islands: 32.6% female, 95% interval 27.9–37.4, 53 books; raw share 24.8%</title>
 <text class="lab" x="0" y="174">Solomon Islands<tspan class="cnt" dx="8">53 books</tspan></text>
 <line class="grid" x1="0.0" y1="180.0" x2="0.0" y2="190.0"/>
 <line class="grid" x1="81.7" y1="180.0" x2="81.7" y2="190.0"/>
@@ -285,10 +287,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="180.0" x2="490.0" y2="190.0"/>
 <line class="halo" x1="245.0" y1="179.0" x2="245.0" y2="191.0"/>
 <line class="par" x1="245.0" y1="179.0" x2="245.0" y2="191.0"/>
-<line class="ci" x1="68.4" y1="185" x2="145.0" y2="185"/>
-<circle class="pt" cx="106.7" cy="185" r="4.5"/>
-<text class="val" x="560" y="189" text-anchor="end">33.1%</text></g>
-<g class="row"><title>Bangladesh: 34.0% female, 95% interval 30.2–37.9, 86 books; raw share 26.5%</title>
+<line class="ci" x1="64.1" y1="185" x2="141.9" y2="185"/>
+<circle class="pt" cx="103.0" cy="185" r="4.5"/>
+<text class="val" x="560" y="189" text-anchor="end">32.6%</text></g>
+<g class="row"><title>Bangladesh: 34.0% female, 95% interval 30.0–37.9, 86 books; raw share 26.5%</title>
 <text class="lab" x="0" y="208">Bangladesh<tspan class="cnt" dx="8">86 books</tspan></text>
 <line class="grid" x1="0.0" y1="214.0" x2="0.0" y2="224.0"/>
 <line class="grid" x1="81.7" y1="214.0" x2="81.7" y2="224.0"/>
@@ -298,10 +300,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="214.0" x2="490.0" y2="224.0"/>
 <line class="halo" x1="245.0" y1="213.0" x2="245.0" y2="225.0"/>
 <line class="par" x1="245.0" y1="213.0" x2="245.0" y2="225.0"/>
-<line class="ci" x1="83.1" y1="219" x2="146.4" y2="219"/>
-<circle class="pt" cx="114.7" cy="219" r="4.5"/>
+<line class="ci" x1="81.9" y1="219" x2="146.3" y2="219"/>
+<circle class="pt" cx="114.1" cy="219" r="4.5"/>
 <text class="val" x="560" y="223" text-anchor="end">34.0%</text></g>
-<g class="row"><title>South Sudan: 34.5% female, 95% interval 30.8–38.2, 112 books; raw share 31.0%</title>
+<g class="row"><title>South Sudan: 34.3% female, 95% interval 30.5–38.1, 112 books; raw share 31.0%</title>
 <text class="lab" x="0" y="242">South Sudan<tspan class="cnt" dx="8">112 books</tspan></text>
 <line class="grid" x1="0.0" y1="248.0" x2="0.0" y2="258.0"/>
 <line class="grid" x1="81.7" y1="248.0" x2="81.7" y2="258.0"/>
@@ -311,10 +313,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="248.0" x2="490.0" y2="258.0"/>
 <line class="halo" x1="245.0" y1="247.0" x2="245.0" y2="259.0"/>
 <line class="par" x1="245.0" y1="247.0" x2="245.0" y2="259.0"/>
-<line class="ci" x1="87.8" y1="253" x2="148.7" y2="253"/>
-<circle class="pt" cx="118.3" cy="253" r="4.5"/>
-<text class="val" x="560" y="257" text-anchor="end">34.5%</text></g>
-<g class="row"><title>St. Kitts and Nevis: 35.0% female, 95% interval 29.7–40.4, 53 books; raw share 40.1%</title>
+<line class="ci" x1="85.8" y1="253" x2="147.6" y2="253"/>
+<circle class="pt" cx="116.6" cy="253" r="4.5"/>
+<text class="val" x="560" y="257" text-anchor="end">34.3%</text></g>
+<g class="row"><title>St. Kitts and Nevis: 34.7% female, 95% interval 29.2–40.1, 53 books; raw share 40.1%</title>
 <text class="lab" x="0" y="276">St. Kitts and Nevis<tspan class="cnt" dx="8">53 books</tspan></text>
 <line class="grid" x1="0.0" y1="282.0" x2="0.0" y2="292.0"/>
 <line class="grid" x1="81.7" y1="282.0" x2="81.7" y2="292.0"/>
@@ -324,10 +326,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="282.0" x2="490.0" y2="292.0"/>
 <line class="halo" x1="245.0" y1="281.0" x2="245.0" y2="293.0"/>
 <line class="par" x1="245.0" y1="281.0" x2="245.0" y2="293.0"/>
-<line class="ci" x1="79.0" y1="287" x2="166.3" y2="287"/>
-<circle class="pt" cx="122.6" cy="287" r="4.5"/>
-<text class="val" x="560" y="291" text-anchor="end">35.0%</text></g>
-<g class="row"><title>Bhutan: 36.5% female, 95% interval 28.7–44.2, 19 books; raw share 39.4%</title>
+<line class="ci" x1="75.5" y1="287" x2="164.2" y2="287"/>
+<circle class="pt" cx="119.8" cy="287" r="4.5"/>
+<text class="val" x="560" y="291" text-anchor="end">34.7%</text></g>
+<g class="row"><title>Bhutan: 36.1% female, 95% interval 28.2–44.0, 19 books; raw share 39.4%</title>
 <text class="lab" x="0" y="310">Bhutan<tspan class="cnt" dx="8">19 books</tspan></text>
 <line class="grid" x1="0.0" y1="316.0" x2="0.0" y2="326.0"/>
 <line class="grid" x1="81.7" y1="316.0" x2="81.7" y2="326.0"/>
@@ -337,10 +339,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="316.0" x2="490.0" y2="326.0"/>
 <line class="halo" x1="245.0" y1="315.0" x2="245.0" y2="327.0"/>
 <line class="par" x1="245.0" y1="315.0" x2="245.0" y2="327.0"/>
-<line class="ci" x1="70.9" y1="321" x2="197.8" y2="321"/>
-<circle class="pt" cx="134.3" cy="321" r="4.5"/>
-<text class="val" x="560" y="325" text-anchor="end">36.5%</text></g>
-<g class="row new"><title>Tajikistan: 36.5% female, 95% interval 25.8–47.2, 10 books; raw share 30.2%; added since the paper</title>
+<line class="ci" x1="66.8" y1="321" x2="195.6" y2="321"/>
+<circle class="pt" cx="131.2" cy="321" r="4.5"/>
+<text class="val" x="560" y="325" text-anchor="end">36.1%</text></g>
+<g class="row new"><title>Tajikistan: 36.3% female, 95% interval 25.5–47.1, 10 books; raw share 30.2%; added since the paper</title>
 <text class="lab" x="0" y="344">Tajikistan<tspan class="cnt" dx="8">10 books</tspan></text>
 <line class="grid" x1="0.0" y1="350.0" x2="0.0" y2="360.0"/>
 <line class="grid" x1="81.7" y1="350.0" x2="81.7" y2="360.0"/>
@@ -350,10 +352,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="350.0" x2="490.0" y2="360.0"/>
 <line class="halo" x1="245.0" y1="349.0" x2="245.0" y2="361.0"/>
 <line class="par" x1="245.0" y1="349.0" x2="245.0" y2="361.0"/>
-<line class="ci" x1="47.5" y1="355" x2="222.1" y2="355"/>
-<circle class="pt" cx="134.8" cy="355" r="4.5"/>
-<text class="val" x="560" y="359" text-anchor="end">36.5%</text></g>
-<g class="row"><title>Papua New Guinea: 37.5% female, 95% interval 28.4–46.5, 14 books; raw share 41.9%</title>
+<line class="ci" x1="44.6" y1="355" x2="221.7" y2="355"/>
+<circle class="pt" cx="133.1" cy="355" r="4.5"/>
+<text class="val" x="560" y="359" text-anchor="end">36.3%</text></g>
+<g class="row"><title>Papua New Guinea: 37.4% female, 95% interval 28.2–46.6, 14 books; raw share 41.9%</title>
 <text class="lab" x="0" y="378">Papua New Guinea<tspan class="cnt" dx="8">14 books</tspan></text>
 <line class="grid" x1="0.0" y1="384.0" x2="0.0" y2="394.0"/>
 <line class="grid" x1="81.7" y1="384.0" x2="81.7" y2="394.0"/>
@@ -363,10 +365,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="384.0" x2="490.0" y2="394.0"/>
 <line class="halo" x1="245.0" y1="383.0" x2="245.0" y2="395.0"/>
 <line class="par" x1="245.0" y1="383.0" x2="245.0" y2="395.0"/>
-<line class="ci" x1="68.4" y1="389" x2="216.6" y2="389"/>
-<circle class="pt" cx="142.5" cy="389" r="4.5"/>
-<text class="val" x="560" y="393" text-anchor="end">37.5%</text></g>
-<g class="row new"><title>Nepal: 37.5% female, 95% interval 27.8–47.2, 21 books; raw share 49.2%; added since the paper</title>
+<line class="ci" x1="66.8" y1="389" x2="217.4" y2="389"/>
+<circle class="pt" cx="142.1" cy="389" r="4.5"/>
+<text class="val" x="560" y="393" text-anchor="end">37.4%</text></g>
+<g class="row new"><title>Nepal: 37.4% female, 95% interval 27.5–47.3, 21 books; raw share 49.2%; added since the paper</title>
 <text class="lab" x="0" y="412">Nepal<tspan class="cnt" dx="8">21 books</tspan></text>
 <line class="grid" x1="0.0" y1="418.0" x2="0.0" y2="428.0"/>
 <line class="grid" x1="81.7" y1="418.0" x2="81.7" y2="428.0"/>
@@ -376,10 +378,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="418.0" x2="490.0" y2="428.0"/>
 <line class="halo" x1="245.0" y1="417.0" x2="245.0" y2="429.0"/>
 <line class="par" x1="245.0" y1="417.0" x2="245.0" y2="429.0"/>
-<line class="ci" x1="63.5" y1="423" x2="222.5" y2="423"/>
-<circle class="pt" cx="143.0" cy="423" r="4.5"/>
-<text class="val" x="560" y="427" text-anchor="end">37.5%</text></g>
-<g class="row"><title>Samoa: 38.8% female, 95% interval 34.4–43.2, 72 books; raw share 44.7%</title>
+<line class="ci" x1="61.5" y1="423" x2="222.9" y2="423"/>
+<circle class="pt" cx="142.2" cy="423" r="4.5"/>
+<text class="val" x="560" y="427" text-anchor="end">37.4%</text></g>
+<g class="row"><title>Samoa: 38.4% female, 95% interval 33.9–42.9, 72 books; raw share 44.7%</title>
 <text class="lab" x="0" y="446">Samoa<tspan class="cnt" dx="8">72 books</tspan></text>
 <line class="grid" x1="0.0" y1="452.0" x2="0.0" y2="462.0"/>
 <line class="grid" x1="81.7" y1="452.0" x2="81.7" y2="462.0"/>
@@ -389,11 +391,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="452.0" x2="490.0" y2="462.0"/>
 <line class="halo" x1="245.0" y1="451.0" x2="245.0" y2="463.0"/>
 <line class="par" x1="245.0" y1="451.0" x2="245.0" y2="463.0"/>
-<line class="ci" x1="117.4" y1="457" x2="189.7" y2="457"/>
-<circle class="pt" cx="153.5" cy="457" r="4.5"/>
-<text class="val" x="560" y="461" text-anchor="end">38.8%</text></g>
-<g class="row"><title>United States: 38.8% female, 95% interval 36.9–40.8, 475 books; raw share 40.2%</title>
-<text class="lab" x="0" y="480">United States<tspan class="cnt" dx="8">475 books</tspan></text>
+<line class="ci" x1="113.7" y1="457" x2="187.2" y2="457"/>
+<circle class="pt" cx="150.4" cy="457" r="4.5"/>
+<text class="val" x="560" y="461" text-anchor="end">38.4%</text></g>
+<g class="row"><title>United States: 38.7% female, 95% interval 36.8–40.7, 474 books; raw share 40.2%</title>
+<text class="lab" x="0" y="480">United States<tspan class="cnt" dx="8">474 books</tspan></text>
 <line class="grid" x1="0.0" y1="486.0" x2="0.0" y2="496.0"/>
 <line class="grid" x1="81.7" y1="486.0" x2="81.7" y2="496.0"/>
 <line class="grid" x1="163.3" y1="486.0" x2="163.3" y2="496.0"/>
@@ -402,11 +404,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="486.0" x2="490.0" y2="496.0"/>
 <line class="halo" x1="245.0" y1="485.0" x2="245.0" y2="497.0"/>
 <line class="par" x1="245.0" y1="485.0" x2="245.0" y2="497.0"/>
-<line class="ci" x1="138.1" y1="491" x2="169.5" y2="491"/>
-<circle class="pt" cx="153.8" cy="491" r="4.5"/>
-<text class="val" x="560" y="495" text-anchor="end">38.8%</text></g>
-<g class="row"><title>Guyana: 39.6% female, 95% interval 33.6–45.7, 35 books; raw share 38.5%</title>
-<text class="lab" x="0" y="514">Guyana<tspan class="cnt" dx="8">35 books</tspan></text>
+<line class="ci" x1="136.9" y1="491" x2="168.8" y2="491"/>
+<circle class="pt" cx="152.8" cy="491" r="4.5"/>
+<text class="val" x="560" y="495" text-anchor="end">38.7%</text></g>
+<g class="row new"><title>Sudan: 39.4% female, 95% interval 29.5–49.3, 13 books; raw share 38.7%; added since the paper</title>
+<text class="lab" x="0" y="514">Sudan<tspan class="cnt" dx="8">13 books</tspan></text>
 <line class="grid" x1="0.0" y1="520.0" x2="0.0" y2="530.0"/>
 <line class="grid" x1="81.7" y1="520.0" x2="81.7" y2="530.0"/>
 <line class="grid" x1="163.3" y1="520.0" x2="163.3" y2="530.0"/>
@@ -415,11 +417,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="520.0" x2="490.0" y2="530.0"/>
 <line class="halo" x1="245.0" y1="519.0" x2="245.0" y2="531.0"/>
 <line class="par" x1="245.0" y1="519.0" x2="245.0" y2="531.0"/>
-<line class="ci" x1="111.1" y1="525" x2="209.6" y2="525"/>
-<circle class="pt" cx="160.3" cy="525" r="4.5"/>
-<text class="val" x="560" y="529" text-anchor="end">39.6%</text></g>
-<g class="row new"><title>Sudan: 39.6% female, 95% interval 29.9–49.4, 13 books; raw share 38.7%; added since the paper</title>
-<text class="lab" x="0" y="548">Sudan<tspan class="cnt" dx="8">13 books</tspan></text>
+<line class="ci" x1="77.8" y1="525" x2="239.4" y2="525"/>
+<circle class="pt" cx="158.6" cy="525" r="4.5"/>
+<text class="val" x="560" y="529" text-anchor="end">39.4%</text></g>
+<g class="row"><title>Guyana: 40.0% female, 95% interval 33.9–46.2, 35 books; raw share 38.5%</title>
+<text class="lab" x="0" y="548">Guyana<tspan class="cnt" dx="8">35 books</tspan></text>
 <line class="grid" x1="0.0" y1="554.0" x2="0.0" y2="564.0"/>
 <line class="grid" x1="81.7" y1="554.0" x2="81.7" y2="564.0"/>
 <line class="grid" x1="163.3" y1="554.0" x2="163.3" y2="564.0"/>
@@ -428,10 +430,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="554.0" x2="490.0" y2="564.0"/>
 <line class="halo" x1="245.0" y1="553.0" x2="245.0" y2="565.0"/>
 <line class="par" x1="245.0" y1="553.0" x2="245.0" y2="565.0"/>
-<line class="ci" x1="80.8" y1="559" x2="239.9" y2="559"/>
-<circle class="pt" cx="160.3" cy="559" r="4.5"/>
-<text class="val" x="560" y="563" text-anchor="end">39.6%</text></g>
-<g class="row"><title>South Africa: 40.8% female, 95% interval 36.0–45.6, 52 books; raw share 40.8%</title>
+<line class="ci" x1="113.4" y1="559" x2="213.7" y2="559"/>
+<circle class="pt" cx="163.6" cy="559" r="4.5"/>
+<text class="val" x="560" y="563" text-anchor="end">40.0%</text></g>
+<g class="row"><title>South Africa: 40.7% female, 95% interval 35.9–45.5, 52 books; raw share 40.8%</title>
 <text class="lab" x="0" y="582">South Africa<tspan class="cnt" dx="8">52 books</tspan></text>
 <line class="grid" x1="0.0" y1="588.0" x2="0.0" y2="598.0"/>
 <line class="grid" x1="81.7" y1="588.0" x2="81.7" y2="598.0"/>
@@ -441,10 +443,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="588.0" x2="490.0" y2="598.0"/>
 <line class="halo" x1="245.0" y1="587.0" x2="245.0" y2="599.0"/>
 <line class="par" x1="245.0" y1="587.0" x2="245.0" y2="599.0"/>
-<line class="ci" x1="131.1" y1="593" x2="209.0" y2="593"/>
-<circle class="pt" cx="170.0" cy="593" r="4.5"/>
-<text class="val" x="560" y="597" text-anchor="end">40.8%</text></g>
-<g class="row new"><title>Greece: 41.2% female, 95% interval 34.2–48.1, 26 books; raw share 42.1%; added since the paper</title>
+<line class="ci" x1="129.5" y1="593" x2="208.6" y2="593"/>
+<circle class="pt" cx="169.1" cy="593" r="4.5"/>
+<text class="val" x="560" y="597" text-anchor="end">40.7%</text></g>
+<g class="row new"><title>Greece: 40.9% female, 95% interval 33.8–48.0, 26 books; raw share 42.1%; added since the paper</title>
 <text class="lab" x="0" y="616">Greece<tspan class="cnt" dx="8">26 books</tspan></text>
 <line class="grid" x1="0.0" y1="622.0" x2="0.0" y2="632.0"/>
 <line class="grid" x1="81.7" y1="622.0" x2="81.7" y2="632.0"/>
@@ -454,10 +456,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="622.0" x2="490.0" y2="632.0"/>
 <line class="halo" x1="245.0" y1="621.0" x2="245.0" y2="633.0"/>
 <line class="par" x1="245.0" y1="621.0" x2="245.0" y2="633.0"/>
-<line class="ci" x1="115.9" y1="627" x2="229.7" y2="627"/>
-<circle class="pt" cx="172.8" cy="627" r="4.5"/>
-<text class="val" x="560" y="631" text-anchor="end">41.2%</text></g>
-<g class="row new"><title>Ecuador: 41.5% female, 95% interval 32.8–50.3, 15 books; raw share 45.1%; added since the paper</title>
+<line class="ci" x1="113.0" y1="627" x2="228.6" y2="627"/>
+<circle class="pt" cx="170.8" cy="627" r="4.5"/>
+<text class="val" x="560" y="631" text-anchor="end">40.9%</text></g>
+<g class="row new"><title>Ecuador: 41.1% female, 95% interval 32.2–50.0, 15 books; raw share 45.1%; added since the paper</title>
 <text class="lab" x="0" y="650">Ecuador<tspan class="cnt" dx="8">15 books</tspan></text>
 <line class="grid" x1="0.0" y1="656.0" x2="0.0" y2="666.0"/>
 <line class="grid" x1="81.7" y1="656.0" x2="81.7" y2="666.0"/>
@@ -467,11 +469,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="656.0" x2="490.0" y2="666.0"/>
 <line class="halo" x1="245.0" y1="655.0" x2="245.0" y2="667.0"/>
 <line class="par" x1="245.0" y1="655.0" x2="245.0" y2="667.0"/>
-<line class="ci" x1="104.1" y1="661" x2="247.2" y2="661"/>
-<circle class="pt" cx="175.7" cy="661" r="4.5"/>
-<text class="val" x="560" y="665" text-anchor="end">41.5%</text></g>
-<g class="row"><title>Uganda: 41.9% female, 95% interval 34.8–49.0, 36 books; raw share 32.9%</title>
-<text class="lab" x="0" y="684">Uganda<tspan class="cnt" dx="8">36 books</tspan></text>
+<line class="ci" x1="99.5" y1="661" x2="244.7" y2="661"/>
+<circle class="pt" cx="172.1" cy="661" r="4.5"/>
+<text class="val" x="560" y="665" text-anchor="end">41.1%</text></g>
+<g class="row"><title>Uganda: 41.4% female, 95% interval 34.3–48.5, 37 books; raw share 34.6%</title>
+<text class="lab" x="0" y="684">Uganda<tspan class="cnt" dx="8">37 books</tspan></text>
 <line class="grid" x1="0.0" y1="690.0" x2="0.0" y2="700.0"/>
 <line class="grid" x1="81.7" y1="690.0" x2="81.7" y2="700.0"/>
 <line class="grid" x1="163.3" y1="690.0" x2="163.3" y2="700.0"/>
@@ -480,11 +482,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="690.0" x2="490.0" y2="700.0"/>
 <line class="halo" x1="245.0" y1="689.0" x2="245.0" y2="701.0"/>
 <line class="par" x1="245.0" y1="689.0" x2="245.0" y2="701.0"/>
-<line class="ci" x1="120.8" y1="695" x2="237.1" y2="695"/>
-<circle class="pt" cx="178.9" cy="695" r="4.5"/>
-<text class="val" x="560" y="699" text-anchor="end">41.9%</text></g>
-<g class="row"><title>Ethiopia: 41.9% female, 95% interval 36.4–47.5, 37 books; raw share 45.4%</title>
-<text class="lab" x="0" y="718">Ethiopia<tspan class="cnt" dx="8">37 books</tspan></text>
+<line class="ci" x1="117.0" y1="695" x2="232.5" y2="695"/>
+<circle class="pt" cx="174.8" cy="695" r="4.5"/>
+<text class="val" x="560" y="699" text-anchor="end">41.4%</text></g>
+<g class="row"><title>Australia: 41.8% female, 95% interval 37.8–45.8, 88 books; raw share 41.7%</title>
+<text class="lab" x="0" y="718">Australia<tspan class="cnt" dx="8">88 books</tspan></text>
 <line class="grid" x1="0.0" y1="724.0" x2="0.0" y2="734.0"/>
 <line class="grid" x1="81.7" y1="724.0" x2="81.7" y2="734.0"/>
 <line class="grid" x1="163.3" y1="724.0" x2="163.3" y2="734.0"/>
@@ -493,11 +495,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="724.0" x2="490.0" y2="734.0"/>
 <line class="halo" x1="245.0" y1="723.0" x2="245.0" y2="735.0"/>
 <line class="par" x1="245.0" y1="723.0" x2="245.0" y2="735.0"/>
-<line class="ci" x1="133.5" y1="729" x2="224.8" y2="729"/>
-<circle class="pt" cx="179.2" cy="729" r="4.5"/>
-<text class="val" x="560" y="733" text-anchor="end">41.9%</text></g>
-<g class="row"><title>Australia: 42.1% female, 95% interval 38.1–46.0, 88 books; raw share 41.7%</title>
-<text class="lab" x="0" y="752">Australia<tspan class="cnt" dx="8">88 books</tspan></text>
+<line class="ci" x1="145.4" y1="729" x2="210.5" y2="729"/>
+<circle class="pt" cx="178.0" cy="729" r="4.5"/>
+<text class="val" x="560" y="733" text-anchor="end">41.8%</text></g>
+<g class="row"><title>United Kingdom: 41.9% female, 95% interval 33.6–50.2, 21 books; raw share 42.8%</title>
+<text class="lab" x="0" y="752">United Kingdom<tspan class="cnt" dx="8">21 books</tspan></text>
 <line class="grid" x1="0.0" y1="758.0" x2="0.0" y2="768.0"/>
 <line class="grid" x1="81.7" y1="758.0" x2="81.7" y2="768.0"/>
 <line class="grid" x1="163.3" y1="758.0" x2="163.3" y2="768.0"/>
@@ -506,11 +508,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="758.0" x2="490.0" y2="768.0"/>
 <line class="halo" x1="245.0" y1="757.0" x2="245.0" y2="769.0"/>
 <line class="par" x1="245.0" y1="757.0" x2="245.0" y2="769.0"/>
-<line class="ci" x1="148.1" y1="763" x2="212.3" y2="763"/>
-<circle class="pt" cx="180.2" cy="763" r="4.5"/>
-<text class="val" x="560" y="767" text-anchor="end">42.1%</text></g>
-<g class="row"><title>United Kingdom: 42.1% female, 95% interval 33.9–50.3, 21 books; raw share 42.8%</title>
-<text class="lab" x="0" y="786">United Kingdom<tspan class="cnt" dx="8">21 books</tspan></text>
+<line class="ci" x1="111.0" y1="763" x2="246.9" y2="763"/>
+<circle class="pt" cx="178.9" cy="763" r="4.5"/>
+<text class="val" x="560" y="767" text-anchor="end">41.9%</text></g>
+<g class="row"><title>Sierra Leone: 42.0% female, 95% interval 36.4–47.5, 39 books; raw share 41.5%</title>
+<text class="lab" x="0" y="786">Sierra Leone<tspan class="cnt" dx="8">39 books</tspan></text>
 <line class="grid" x1="0.0" y1="792.0" x2="0.0" y2="802.0"/>
 <line class="grid" x1="81.7" y1="792.0" x2="81.7" y2="802.0"/>
 <line class="grid" x1="163.3" y1="792.0" x2="163.3" y2="802.0"/>
@@ -519,11 +521,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="792.0" x2="490.0" y2="802.0"/>
 <line class="halo" x1="245.0" y1="791.0" x2="245.0" y2="803.0"/>
 <line class="par" x1="245.0" y1="791.0" x2="245.0" y2="803.0"/>
-<line class="ci" x1="113.8" y1="797" x2="247.5" y2="797"/>
-<circle class="pt" cx="180.6" cy="797" r="4.5"/>
-<text class="val" x="560" y="801" text-anchor="end">42.1%</text></g>
-<g class="row"><title>Sierra Leone: 42.3% female, 95% interval 36.8–47.8, 39 books; raw share 41.5%</title>
-<text class="lab" x="0" y="820">Sierra Leone<tspan class="cnt" dx="8">39 books</tspan></text>
+<line class="ci" x1="134.1" y1="797" x2="225.0" y2="797"/>
+<circle class="pt" cx="179.5" cy="797" r="4.5"/>
+<text class="val" x="560" y="801" text-anchor="end">42.0%</text></g>
+<g class="row"><title>Ethiopia: 42.0% female, 95% interval 36.3–47.7, 37 books; raw share 45.4%</title>
+<text class="lab" x="0" y="820">Ethiopia<tspan class="cnt" dx="8">37 books</tspan></text>
 <line class="grid" x1="0.0" y1="826.0" x2="0.0" y2="836.0"/>
 <line class="grid" x1="81.7" y1="826.0" x2="81.7" y2="836.0"/>
 <line class="grid" x1="163.3" y1="826.0" x2="163.3" y2="836.0"/>
@@ -532,10 +534,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="826.0" x2="490.0" y2="836.0"/>
 <line class="halo" x1="245.0" y1="825.0" x2="245.0" y2="837.0"/>
 <line class="par" x1="245.0" y1="825.0" x2="245.0" y2="837.0"/>
-<line class="ci" x1="137.1" y1="831" x2="226.7" y2="831"/>
-<circle class="pt" cx="181.9" cy="831" r="4.5"/>
-<text class="val" x="560" y="835" text-anchor="end">42.3%</text></g>
-<g class="row new"><title>West Bank and Gaza: 42.7% female, 95% interval 35.9–49.5, 25 books; raw share 36.9%; added since the paper</title>
+<line class="ci" x1="133.4" y1="831" x2="226.1" y2="831"/>
+<circle class="pt" cx="179.8" cy="831" r="4.5"/>
+<text class="val" x="560" y="835" text-anchor="end">42.0%</text></g>
+<g class="row new"><title>West Bank and Gaza: 42.4% female, 95% interval 35.5–49.3, 25 books; raw share 36.9%; added since the paper</title>
 <text class="lab" x="0" y="854">West Bank and Gaza<tspan class="cnt" dx="8">25 books</tspan></text>
 <line class="grid" x1="0.0" y1="860.0" x2="0.0" y2="870.0"/>
 <line class="grid" x1="81.7" y1="860.0" x2="81.7" y2="870.0"/>
@@ -545,10 +547,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="860.0" x2="490.0" y2="870.0"/>
 <line class="halo" x1="245.0" y1="859.0" x2="245.0" y2="871.0"/>
 <line class="par" x1="245.0" y1="859.0" x2="245.0" y2="871.0"/>
-<line class="ci" x1="130.0" y1="865" x2="240.9" y2="865"/>
-<circle class="pt" cx="185.5" cy="865" r="4.5"/>
-<text class="val" x="560" y="869" text-anchor="end">42.7%</text></g>
-<g class="row new"><title>Syrian Arab Republic: 42.9% female, 95% interval 36.0–49.8, 24 books; raw share 40.5%; added since the paper</title>
+<line class="ci" x1="126.9" y1="865" x2="239.4" y2="865"/>
+<circle class="pt" cx="183.1" cy="865" r="4.5"/>
+<text class="val" x="560" y="869" text-anchor="end">42.4%</text></g>
+<g class="row new"><title>Syrian Arab Republic: 42.6% female, 95% interval 35.5–49.6, 24 books; raw share 40.5%; added since the paper</title>
 <text class="lab" x="0" y="888">Syrian Arab Republic<tspan class="cnt" dx="8">24 books</tspan></text>
 <line class="grid" x1="0.0" y1="894.0" x2="0.0" y2="904.0"/>
 <line class="grid" x1="81.7" y1="894.0" x2="81.7" y2="904.0"/>
@@ -558,10 +560,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="894.0" x2="490.0" y2="904.0"/>
 <line class="halo" x1="245.0" y1="893.0" x2="245.0" y2="905.0"/>
 <line class="par" x1="245.0" y1="893.0" x2="245.0" y2="905.0"/>
-<line class="ci" x1="130.3" y1="899" x2="243.5" y2="899"/>
-<circle class="pt" cx="186.9" cy="899" r="4.5"/>
-<text class="val" x="560" y="903" text-anchor="end">42.9%</text></g>
-<g class="row"><title>Rwanda: 43.1% female, 95% interval 39.9–46.3, 121 books; raw share 34.6%</title>
+<line class="ci" x1="126.9" y1="899" x2="241.9" y2="899"/>
+<circle class="pt" cx="184.4" cy="899" r="4.5"/>
+<text class="val" x="560" y="903" text-anchor="end">42.6%</text></g>
+<g class="row"><title>Rwanda: 43.0% female, 95% interval 39.8–46.3, 121 books; raw share 34.6%</title>
 <text class="lab" x="0" y="922">Rwanda<tspan class="cnt" dx="8">121 books</tspan></text>
 <line class="grid" x1="0.0" y1="928.0" x2="0.0" y2="938.0"/>
 <line class="grid" x1="81.7" y1="928.0" x2="81.7" y2="938.0"/>
@@ -571,10 +573,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="928.0" x2="490.0" y2="938.0"/>
 <line class="halo" x1="245.0" y1="927.0" x2="245.0" y2="939.0"/>
 <line class="par" x1="245.0" y1="927.0" x2="245.0" y2="939.0"/>
-<line class="ci" x1="162.4" y1="933" x2="214.6" y2="933"/>
-<circle class="pt" cx="188.6" cy="933" r="4.5"/>
-<text class="val" x="560" y="937" text-anchor="end">43.1%</text></g>
-<g class="row new"><title>Jordan: 43.5% female, 95% interval 36.0–51.1, 20 books; raw share 42.2%; added since the paper</title>
+<line class="ci" x1="161.7" y1="933" x2="214.8" y2="933"/>
+<circle class="pt" cx="188.2" cy="933" r="4.5"/>
+<text class="val" x="560" y="937" text-anchor="end">43.0%</text></g>
+<g class="row new"><title>Jordan: 43.4% female, 95% interval 35.6–51.0, 20 books; raw share 42.2%; added since the paper</title>
 <text class="lab" x="0" y="956">Jordan<tspan class="cnt" dx="8">20 books</tspan></text>
 <line class="grid" x1="0.0" y1="962.0" x2="0.0" y2="972.0"/>
 <line class="grid" x1="81.7" y1="962.0" x2="81.7" y2="972.0"/>
@@ -584,10 +586,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="962.0" x2="490.0" y2="972.0"/>
 <line class="halo" x1="245.0" y1="961.0" x2="245.0" y2="973.0"/>
 <line class="par" x1="245.0" y1="961.0" x2="245.0" y2="973.0"/>
-<line class="ci" x1="130.4" y1="967" x2="254.3" y2="967"/>
-<circle class="pt" cx="192.3" cy="967" r="4.5"/>
-<text class="val" x="560" y="971" text-anchor="end">43.5%</text></g>
-<g class="row new"><title>Oman: 43.7% female, 95% interval 38.1–49.3, 37 books; raw share 45.0%; added since the paper</title>
+<line class="ci" x1="127.8" y1="967" x2="253.6" y2="967"/>
+<circle class="pt" cx="190.7" cy="967" r="4.5"/>
+<text class="val" x="560" y="971" text-anchor="end">43.4%</text></g>
+<g class="row new"><title>Oman: 43.5% female, 95% interval 37.8–49.2, 37 books; raw share 45.0%; added since the paper</title>
 <text class="lab" x="0" y="990">Oman<tspan class="cnt" dx="8">37 books</tspan></text>
 <line class="grid" x1="0.0" y1="996.0" x2="0.0" y2="1006.0"/>
 <line class="grid" x1="81.7" y1="996.0" x2="81.7" y2="1006.0"/>
@@ -597,11 +599,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="996.0" x2="490.0" y2="1006.0"/>
 <line class="halo" x1="245.0" y1="995.0" x2="245.0" y2="1007.0"/>
 <line class="par" x1="245.0" y1="995.0" x2="245.0" y2="1007.0"/>
-<line class="ci" x1="147.6" y1="1001" x2="239.4" y2="1001"/>
-<circle class="pt" cx="193.5" cy="1001" r="4.5"/>
-<text class="val" x="560" y="1005" text-anchor="end">43.7%</text></g>
-<g class="row new"><title>Belarus: 45.0% female, 95% interval 38.3–51.7, 26 books; raw share 42.9%; added since the paper</title>
-<text class="lab" x="0" y="1024">Belarus<tspan class="cnt" dx="8">26 books</tspan></text>
+<line class="ci" x1="145.1" y1="1001" x2="238.2" y2="1001"/>
+<circle class="pt" cx="191.7" cy="1001" r="4.5"/>
+<text class="val" x="560" y="1005" text-anchor="end">43.5%</text></g>
+<g class="row"><title>Nigeria: 43.8% female, 95% interval 33.6–54.0, 12 books; raw share 46.1%</title>
+<text class="lab" x="0" y="1024">Nigeria<tspan class="cnt" dx="8">12 books</tspan></text>
 <line class="grid" x1="0.0" y1="1030.0" x2="0.0" y2="1040.0"/>
 <line class="grid" x1="81.7" y1="1030.0" x2="81.7" y2="1040.0"/>
 <line class="grid" x1="163.3" y1="1030.0" x2="163.3" y2="1040.0"/>
@@ -610,11 +612,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1030.0" x2="490.0" y2="1040.0"/>
 <line class="halo" x1="245.0" y1="1029.0" x2="245.0" y2="1041.0"/>
 <line class="par" x1="245.0" y1="1029.0" x2="245.0" y2="1041.0"/>
-<line class="ci" x1="149.2" y1="1035" x2="258.8" y2="1035"/>
-<circle class="pt" cx="204.0" cy="1035" r="4.5"/>
-<text class="val" x="560" y="1039" text-anchor="end">45.0%</text></g>
-<g class="row new"><title>Azerbaijan: 45.1% female, 95% interval 37.1–53.1, 18 books; raw share 44.1%; added since the paper</title>
-<text class="lab" x="0" y="1058">Azerbaijan<tspan class="cnt" dx="8">18 books</tspan></text>
+<line class="ci" x1="111.3" y1="1035" x2="277.4" y2="1035"/>
+<circle class="pt" cx="194.4" cy="1035" r="4.5"/>
+<text class="val" x="560" y="1039" text-anchor="end">43.8%</text></g>
+<g class="row new"><title>Belarus: 44.8% female, 95% interval 38.0–51.6, 26 books; raw share 42.9%; added since the paper</title>
+<text class="lab" x="0" y="1058">Belarus<tspan class="cnt" dx="8">26 books</tspan></text>
 <line class="grid" x1="0.0" y1="1064.0" x2="0.0" y2="1074.0"/>
 <line class="grid" x1="81.7" y1="1064.0" x2="81.7" y2="1074.0"/>
 <line class="grid" x1="163.3" y1="1064.0" x2="163.3" y2="1074.0"/>
@@ -623,11 +625,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1064.0" x2="490.0" y2="1074.0"/>
 <line class="halo" x1="245.0" y1="1063.0" x2="245.0" y2="1075.0"/>
 <line class="par" x1="245.0" y1="1063.0" x2="245.0" y2="1075.0"/>
-<line class="ci" x1="140.1" y1="1069" x2="270.5" y2="1069"/>
-<circle class="pt" cx="205.3" cy="1069" r="4.5"/>
-<text class="val" x="560" y="1073" text-anchor="end">45.1%</text></g>
-<g class="row"><title>Nigeria: 45.4% female, 95% interval 35.0–55.9, 11 books; raw share 54.8%</title>
-<text class="lab" x="0" y="1092">Nigeria<tspan class="cnt" dx="8">11 books</tspan></text>
+<line class="ci" x1="146.9" y1="1069" x2="258.1" y2="1069"/>
+<circle class="pt" cx="202.5" cy="1069" r="4.5"/>
+<text class="val" x="560" y="1073" text-anchor="end">44.8%</text></g>
+<g class="row new"><title>Azerbaijan: 44.9% female, 95% interval 36.8–53.0, 18 books; raw share 44.1%; added since the paper</title>
+<text class="lab" x="0" y="1092">Azerbaijan<tspan class="cnt" dx="8">18 books</tspan></text>
 <line class="grid" x1="0.0" y1="1098.0" x2="0.0" y2="1108.0"/>
 <line class="grid" x1="81.7" y1="1098.0" x2="81.7" y2="1108.0"/>
 <line class="grid" x1="163.3" y1="1098.0" x2="163.3" y2="1108.0"/>
@@ -636,10 +638,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1098.0" x2="490.0" y2="1108.0"/>
 <line class="halo" x1="245.0" y1="1097.0" x2="245.0" y2="1109.0"/>
 <line class="par" x1="245.0" y1="1097.0" x2="245.0" y2="1109.0"/>
-<line class="ci" x1="122.1" y1="1103" x2="293.4" y2="1103"/>
-<circle class="pt" cx="207.8" cy="1103" r="4.5"/>
-<text class="val" x="560" y="1107" text-anchor="end">45.4%</text></g>
-<g class="row new"><title>Tunisia: 45.8% female, 95% interval 36.9–54.6, 15 books; raw share 44.2%; added since the paper</title>
+<line class="ci" x1="137.0" y1="1103" x2="269.3" y2="1103"/>
+<circle class="pt" cx="203.1" cy="1103" r="4.5"/>
+<text class="val" x="560" y="1107" text-anchor="end">44.9%</text></g>
+<g class="row new"><title>Tunisia: 45.3% female, 95% interval 36.3–54.2, 15 books; raw share 44.2%; added since the paper</title>
 <text class="lab" x="0" y="1126">Tunisia<tspan class="cnt" dx="8">15 books</tspan></text>
 <line class="grid" x1="0.0" y1="1132.0" x2="0.0" y2="1142.0"/>
 <line class="grid" x1="81.7" y1="1132.0" x2="81.7" y2="1142.0"/>
@@ -649,10 +651,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1132.0" x2="490.0" y2="1142.0"/>
 <line class="halo" x1="245.0" y1="1131.0" x2="245.0" y2="1143.0"/>
 <line class="par" x1="245.0" y1="1131.0" x2="245.0" y2="1143.0"/>
-<line class="ci" x1="138.3" y1="1137" x2="282.3" y2="1137"/>
-<circle class="pt" cx="210.3" cy="1137" r="4.5"/>
-<text class="val" x="560" y="1141" text-anchor="end">45.8%</text></g>
-<g class="row new"><title>Ghana: 49.2% female, 95% interval 45.6–52.8, 119 books; raw share 47.0%; added since the paper</title>
+<line class="ci" x1="133.4" y1="1137" x2="279.6" y2="1137"/>
+<circle class="pt" cx="206.5" cy="1137" r="4.5"/>
+<text class="val" x="560" y="1141" text-anchor="end">45.3%</text></g>
+<g class="row new"><title>Ghana: 49.0% female, 95% interval 45.3–52.7, 119 books; raw share 47.0%; added since the paper</title>
 <text class="lab" x="0" y="1160">Ghana<tspan class="cnt" dx="8">119 books</tspan></text>
 <line class="grid" x1="0.0" y1="1166.0" x2="0.0" y2="1176.0"/>
 <line class="grid" x1="81.7" y1="1166.0" x2="81.7" y2="1176.0"/>
@@ -662,10 +664,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1166.0" x2="490.0" y2="1176.0"/>
 <line class="halo" x1="245.0" y1="1165.0" x2="245.0" y2="1177.0"/>
 <line class="par" x1="245.0" y1="1165.0" x2="245.0" y2="1177.0"/>
-<line class="ci" x1="208.7" y1="1171" x2="268.2" y2="1171"/>
-<circle class="pt" cx="238.5" cy="1171" r="4.5"/>
-<text class="val" x="560" y="1175" text-anchor="end">49.2%</text></g>
-<g class="row new"><title>Kuwait: 49.6% female, 95% interval 43.5–55.6, 34 books; raw share 39.7%; added since the paper</title>
+<line class="ci" x1="206.5" y1="1171" x2="266.8" y2="1171"/>
+<circle class="pt" cx="236.6" cy="1171" r="4.5"/>
+<text class="val" x="560" y="1175" text-anchor="end">49.0%</text></g>
+<g class="row new"><title>Kuwait: 49.1% female, 95% interval 43.0–55.3, 34 books; raw share 39.7%; added since the paper</title>
 <text class="lab" x="0" y="1194">Kuwait<tspan class="cnt" dx="8">34 books</tspan></text>
 <line class="grid" x1="0.0" y1="1200.0" x2="0.0" y2="1210.0"/>
 <line class="grid" x1="81.7" y1="1200.0" x2="81.7" y2="1210.0"/>
@@ -675,10 +677,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1200.0" x2="490.0" y2="1210.0"/>
 <line class="halo" x1="245.0" y1="1199.0" x2="245.0" y2="1211.0"/>
 <line class="par" x1="245.0" y1="1199.0" x2="245.0" y2="1211.0"/>
-<line class="ci" x1="192.0" y1="1205" x2="290.9" y2="1205"/>
-<circle class="pt" cx="241.5" cy="1205" r="4.5"/>
-<text class="val" x="560" y="1209" text-anchor="end">49.6%</text></g>
-<g class="row new"><title>Indonesia: 49.7% female, 95% interval 40.0–59.5, 32 books; raw share 50.3%; added since the paper</title>
+<line class="ci" x1="187.8" y1="1205" x2="288.0" y2="1205"/>
+<circle class="pt" cx="237.9" cy="1205" r="4.5"/>
+<text class="val" x="560" y="1209" text-anchor="end">49.1%</text></g>
+<g class="row new"><title>Indonesia: 49.5% female, 95% interval 39.6–59.4, 32 books; raw share 50.3%; added since the paper</title>
 <text class="lab" x="0" y="1228">Indonesia<tspan class="cnt" dx="8">32 books</tspan></text>
 <line class="grid" x1="0.0" y1="1234.0" x2="0.0" y2="1244.0"/>
 <line class="grid" x1="81.7" y1="1234.0" x2="81.7" y2="1244.0"/>
@@ -688,10 +690,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1234.0" x2="490.0" y2="1244.0"/>
 <line class="halo" x1="245.0" y1="1233.0" x2="245.0" y2="1245.0"/>
 <line class="par" x1="245.0" y1="1233.0" x2="245.0" y2="1245.0"/>
-<line class="ci" x1="163.2" y1="1239" x2="322.4" y2="1239"/>
-<circle class="pt" cx="242.8" cy="1239" r="4.5"/>
-<text class="val" x="560" y="1243" text-anchor="end">49.7%</text></g>
-<g class="row new"><title>Cambodia: 50.8% female, 95% interval 41.4–60.1, 15 books; raw share 50.9%; added since the paper</title>
+<line class="ci" x1="159.8" y1="1239" x2="321.4" y2="1239"/>
+<circle class="pt" cx="240.6" cy="1239" r="4.5"/>
+<text class="val" x="560" y="1243" text-anchor="end">49.5%</text></g>
+<g class="row new"><title>Cambodia: 50.4% female, 95% interval 40.8–59.9, 15 books; raw share 50.9%; added since the paper</title>
 <text class="lab" x="0" y="1262">Cambodia<tspan class="cnt" dx="8">15 books</tspan></text>
 <line class="grid" x1="0.0" y1="1268.0" x2="0.0" y2="1278.0"/>
 <line class="grid" x1="81.7" y1="1268.0" x2="81.7" y2="1278.0"/>
@@ -701,11 +703,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1268.0" x2="490.0" y2="1278.0"/>
 <line class="halo" x1="245.0" y1="1267.0" x2="245.0" y2="1279.0"/>
 <line class="par" x1="245.0" y1="1267.0" x2="245.0" y2="1279.0"/>
-<line class="ci" x1="174.4" y1="1273" x2="327.8" y2="1273"/>
-<circle class="pt" cx="251.1" cy="1273" r="4.5"/>
-<text class="val" x="560" y="1277" text-anchor="end">50.8%</text></g>
-<g class="row new"><title>Türkiye: 51.3% female, 95% interval 44.0–58.6, 26 books; raw share 50.7%; added since the paper</title>
-<text class="lab" x="0" y="1296">Türkiye<tspan class="cnt" dx="8">26 books</tspan></text>
+<line class="ci" x1="170.1" y1="1273" x2="325.8" y2="1273"/>
+<circle class="pt" cx="247.9" cy="1273" r="4.5"/>
+<text class="val" x="560" y="1277" text-anchor="end">50.4%</text></g>
+<g class="row"><title>Kenya: 51.0% female, 95% interval 40.5–61.6, 12 books; raw share 53.4%</title>
+<text class="lab" x="0" y="1296">Kenya<tspan class="cnt" dx="8">12 books</tspan></text>
 <line class="grid" x1="0.0" y1="1302.0" x2="0.0" y2="1312.0"/>
 <line class="grid" x1="81.7" y1="1302.0" x2="81.7" y2="1312.0"/>
 <line class="grid" x1="163.3" y1="1302.0" x2="163.3" y2="1312.0"/>
@@ -714,11 +716,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1302.0" x2="490.0" y2="1312.0"/>
 <line class="halo" x1="245.0" y1="1301.0" x2="245.0" y2="1313.0"/>
 <line class="par" x1="245.0" y1="1301.0" x2="245.0" y2="1313.0"/>
-<line class="ci" x1="196.4" y1="1307" x2="315.2" y2="1307"/>
-<circle class="pt" cx="255.8" cy="1307" r="4.5"/>
-<text class="val" x="560" y="1311" text-anchor="end">51.3%</text></g>
-<g class="row"><title>Kenya: 51.4% female, 95% interval 41.0–61.8, 12 books; raw share 53.4%</title>
-<text class="lab" x="0" y="1330">Kenya<tspan class="cnt" dx="8">12 books</tspan></text>
+<line class="ci" x1="167.3" y1="1307" x2="339.6" y2="1307"/>
+<circle class="pt" cx="253.5" cy="1307" r="4.5"/>
+<text class="val" x="560" y="1311" text-anchor="end">51.0%</text></g>
+<g class="row new"><title>Türkiye: 51.1% female, 95% interval 43.8–58.5, 26 books; raw share 50.7%; added since the paper</title>
+<text class="lab" x="0" y="1330">Türkiye<tspan class="cnt" dx="8">26 books</tspan></text>
 <line class="grid" x1="0.0" y1="1336.0" x2="0.0" y2="1346.0"/>
 <line class="grid" x1="81.7" y1="1336.0" x2="81.7" y2="1346.0"/>
 <line class="grid" x1="163.3" y1="1336.0" x2="163.3" y2="1346.0"/>
@@ -727,10 +729,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1336.0" x2="490.0" y2="1346.0"/>
 <line class="halo" x1="245.0" y1="1335.0" x2="245.0" y2="1347.0"/>
 <line class="par" x1="245.0" y1="1335.0" x2="245.0" y2="1347.0"/>
-<line class="ci" x1="171.4" y1="1341" x2="341.0" y2="1341"/>
-<circle class="pt" cx="256.2" cy="1341" r="4.5"/>
-<text class="val" x="560" y="1345" text-anchor="end">51.4%</text></g>
-<g class="row"><title>Kiribati: 54.7% female, 95% interval 47.4–62.1, 25 books; raw share 43.0%</title>
+<line class="ci" x1="194.0" y1="1341" x2="314.5" y2="1341"/>
+<circle class="pt" cx="254.2" cy="1341" r="4.5"/>
+<text class="val" x="560" y="1345" text-anchor="end">51.1%</text></g>
+<g class="row"><title>Kiribati: 54.1% female, 95% interval 46.6–61.5, 25 books; raw share 43.0%</title>
 <text class="lab" x="0" y="1364">Kiribati<tspan class="cnt" dx="8">25 books</tspan></text>
 <line class="grid" x1="0.0" y1="1370.0" x2="0.0" y2="1380.0"/>
 <line class="grid" x1="81.7" y1="1370.0" x2="81.7" y2="1380.0"/>
@@ -740,10 +742,10 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1370.0" x2="490.0" y2="1380.0"/>
 <line class="halo" x1="245.0" y1="1369.0" x2="245.0" y2="1381.0"/>
 <line class="par" x1="245.0" y1="1369.0" x2="245.0" y2="1381.0"/>
-<line class="ci" x1="223.5" y1="1375" x2="343.9" y2="1375"/>
-<circle class="pt" cx="283.7" cy="1375" r="4.5"/>
-<text class="val" x="560" y="1379" text-anchor="end">54.7%</text></g>
-<g class="row"><title>Zimbabwe: 69.1% female, 95% interval 59.3–78.9, 13 books; raw share 60.0%</title>
+<line class="ci" x1="217.0" y1="1375" x2="339.2" y2="1375"/>
+<circle class="pt" cx="278.2" cy="1375" r="4.5"/>
+<text class="val" x="560" y="1379" text-anchor="end">54.1%</text></g>
+<g class="row"><title>Zimbabwe: 68.8% female, 95% interval 58.9–78.7, 13 books; raw share 60.0%</title>
 <text class="lab" x="0" y="1398">Zimbabwe<tspan class="cnt" dx="8">13 books</tspan></text>
 <line class="grid" x1="0.0" y1="1404.0" x2="0.0" y2="1414.0"/>
 <line class="grid" x1="81.7" y1="1404.0" x2="81.7" y2="1414.0"/>
@@ -753,14 +755,14 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="490.0" y1="1404.0" x2="490.0" y2="1414.0"/>
 <line class="halo" x1="245.0" y1="1403.0" x2="245.0" y2="1415.0"/>
 <line class="par" x1="245.0" y1="1403.0" x2="245.0" y2="1415.0"/>
-<line class="ci" x1="321.2" y1="1409" x2="480.8" y2="1409"/>
-<circle class="pt" cx="401.0" cy="1409" r="4.5"/>
-<text class="val" x="560" y="1413" text-anchor="end">69.1%</text></g>
-<text class="dl dl-f" x="179.7" y="1160.0">Adjusted share</text>
-<text class="dl dl-ci" x="307.3" y="1160.0">95% interval</text>
-<line class="lead" x1="309.3" y1="1163.0" x2="268.2" y2="1170.0"/>
-<text class="dl dl-f" x="167.6" y="1296.0">Added since the paper</text>
-</svg></div><p class="note">Fewer than 10 books in the model, so not ranked (books in the model in brackets): Afghanistan (9); Algeria (1); Bahrain (2); Belize (4); Brunei Darussalam (4); Cabo Verde (6); Canada (6); Cuba (8); Djibouti (0); Dominica (5); Egypt, Arab Rep. (3); El Salvador (0); Estonia (0); Fiji (9); Georgia (0); Grenada (0); Guam (0); Jamaica (3); Kazakhstan (1); Lesotho (2); Liberia (1); Libya (1); Malawi (4); Malta (5); Mauritania (7); Mauritius (7); Micronesia, Fed. Sts. (0); Myanmar (1); Namibia (6); Panama (4); Spain (0); Taiwan, China (6); Tonga (3); Uzbekistan (4); Vanuatu (0); Yemen, Rep. (8); Zambia (4).</p><details class="dt"><summary>Data table: adjusted female share by country</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by country, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th><th scope="col">Added since the paper</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>28.5%</td><td>21.2–35.9</td><td>45.0%</td><td>25</td><td>23</td><td></td></tr><tr><th scope="row">Pakistan</th><td>29.0%</td><td>25.4–32.6</td><td>25.3%</td><td>92</td><td>92</td><td></td></tr><tr><th scope="row">Sri Lanka</th><td>30.3%</td><td>26.8–33.7</td><td>25.0%</td><td>99</td><td>98</td><td></td></tr><tr><th scope="row">India</th><td>32.7%</td><td>31.5–33.9</td><td>32.1%</td><td>992</td><td>973</td><td></td></tr><tr><th scope="row">Solomon Islands</th><td>33.1%</td><td>28.4–37.8</td><td>24.8%</td><td>53</td><td>53</td><td></td></tr><tr><th scope="row">Bangladesh</th><td>34.0%</td><td>30.2–37.9</td><td>26.5%</td><td>86</td><td>86</td><td></td></tr><tr><th scope="row">South Sudan</th><td>34.5%</td><td>30.8–38.2</td><td>31.0%</td><td>112</td><td>84</td><td></td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>35.0%</td><td>29.7–40.4</td><td>40.1%</td><td>53</td><td>44</td><td></td></tr><tr><th scope="row">Bhutan</th><td>36.5%</td><td>28.7–44.2</td><td>39.4%</td><td>19</td><td>19</td><td></td></tr><tr><th scope="row">Tajikistan</th><td>36.5%</td><td>25.8–47.2</td><td>30.2%</td><td>10</td><td>10</td><td>yes</td></tr><tr><th scope="row">Papua New Guinea</th><td>37.5%</td><td>28.4–46.5</td><td>41.9%</td><td>14</td><td>14</td><td></td></tr><tr><th scope="row">Nepal</th><td>37.5%</td><td>27.8–47.2</td><td>49.2%</td><td>21</td><td>15</td><td>yes</td></tr><tr><th scope="row">Samoa</th><td>38.8%</td><td>34.4–43.2</td><td>44.7%</td><td>72</td><td>66</td><td></td></tr><tr><th scope="row">United States</th><td>38.8%</td><td>36.9–40.8</td><td>40.2%</td><td>475</td><td>362</td><td></td></tr><tr><th scope="row">Guyana</th><td>39.6%</td><td>33.6–45.7</td><td>38.5%</td><td>35</td><td>32</td><td></td></tr><tr><th scope="row">Sudan</th><td>39.6%</td><td>29.9–49.4</td><td>38.7%</td><td>13</td><td>12</td><td>yes</td></tr><tr><th scope="row">South Africa</th><td>40.8%</td><td>36.0–45.6</td><td>40.8%</td><td>52</td><td>51</td><td></td></tr><tr><th scope="row">Greece</th><td>41.2%</td><td>34.2–48.1</td><td>42.1%</td><td>26</td><td>24</td><td>yes</td></tr><tr><th scope="row">Ecuador</th><td>41.5%</td><td>32.8–50.3</td><td>45.1%</td><td>15</td><td>15</td><td>yes</td></tr><tr><th scope="row">Uganda</th><td>41.9%</td><td>34.8–49.0</td><td>32.9%</td><td>36</td><td>24</td><td></td></tr><tr><th scope="row">Ethiopia</th><td>41.9%</td><td>36.4–47.5</td><td>45.4%</td><td>37</td><td>37</td><td></td></tr><tr><th scope="row">Australia</th><td>42.1%</td><td>38.1–46.0</td><td>41.7%</td><td>88</td><td>76</td><td></td></tr><tr><th scope="row">United Kingdom</th><td>42.1%</td><td>33.9–50.3</td><td>42.8%</td><td>21</td><td>17</td><td></td></tr><tr><th scope="row">Sierra Leone</th><td>42.3%</td><td>36.8–47.8</td><td>41.5%</td><td>39</td><td>39</td><td></td></tr><tr><th scope="row">West Bank and Gaza</th><td>42.7%</td><td>35.9–49.5</td><td>36.9%</td><td>25</td><td>25</td><td>yes</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>42.9%</td><td>36.0–49.8</td><td>40.5%</td><td>24</td><td>24</td><td>yes</td></tr><tr><th scope="row">Rwanda</th><td>43.1%</td><td>39.9–46.3</td><td>34.6%</td><td>121</td><td>116</td><td></td></tr><tr><th scope="row">Jordan</th><td>43.5%</td><td>36.0–51.1</td><td>42.2%</td><td>20</td><td>20</td><td>yes</td></tr><tr><th scope="row">Oman</th><td>43.7%</td><td>38.1–49.3</td><td>45.0%</td><td>37</td><td>37</td><td>yes</td></tr><tr><th scope="row">Belarus</th><td>45.0%</td><td>38.3–51.7</td><td>42.9%</td><td>26</td><td>26</td><td>yes</td></tr><tr><th scope="row">Azerbaijan</th><td>45.1%</td><td>37.1–53.1</td><td>44.1%</td><td>18</td><td>18</td><td>yes</td></tr><tr><th scope="row">Nigeria</th><td>45.4%</td><td>35.0–55.9</td><td>54.8%</td><td>11</td><td>11</td><td></td></tr><tr><th scope="row">Tunisia</th><td>45.8%</td><td>36.9–54.6</td><td>44.2%</td><td>15</td><td>15</td><td>yes</td></tr><tr><th scope="row">Ghana</th><td>49.2%</td><td>45.6–52.8</td><td>47.0%</td><td>119</td><td>101</td><td>yes</td></tr><tr><th scope="row">Kuwait</th><td>49.6%</td><td>43.5–55.6</td><td>39.7%</td><td>34</td><td>32</td><td>yes</td></tr><tr><th scope="row">Indonesia</th><td>49.7%</td><td>40.0–59.5</td><td>50.3%</td><td>32</td><td>12</td><td>yes</td></tr><tr><th scope="row">Cambodia</th><td>50.8%</td><td>41.4–60.1</td><td>50.9%</td><td>15</td><td>13</td><td>yes</td></tr><tr><th scope="row">Türkiye</th><td>51.3%</td><td>44.0–58.6</td><td>50.7%</td><td>26</td><td>22</td><td>yes</td></tr><tr><th scope="row">Kenya</th><td>51.4%</td><td>41.0–61.8</td><td>53.4%</td><td>12</td><td>11</td><td></td></tr><tr><th scope="row">Kiribati</th><td>54.7%</td><td>47.4–62.1</td><td>43.0%</td><td>25</td><td>22</td><td></td></tr><tr><th scope="row">Zimbabwe</th><td>69.1%</td><td>59.3–78.9</td><td>60.0%</td><td>13</td><td>12</td><td></td></tr></tbody></table></div></details></section>
+<line class="ci" x1="317.3" y1="1409" x2="479.3" y2="1409"/>
+<circle class="pt" cx="398.3" cy="1409" r="4.5"/>
+<text class="val" x="560" y="1413" text-anchor="end">68.8%</text></g>
+<text class="dl dl-f" x="177.8" y="1160.0">Adjusted share</text>
+<text class="dl dl-ci" x="305.4" y="1160.0">95% interval</text>
+<line class="lead" x1="307.4" y1="1163.0" x2="266.8" y2="1170.0"/>
+<text class="dl dl-f" x="166.0" y="1330.0">Added since the paper</text>
+</svg></div><p class="note">Fewer than 10 books in the model, so not ranked (books in the model in brackets): Afghanistan (9); Algeria (1); Bahrain (2); Belize (4); Brunei Darussalam (4); Cabo Verde (6); Canada (6); Cuba (8); Djibouti (0); Dominica (5); Egypt, Arab Rep. (3); El Salvador (0); Estonia (0); Fiji (9); Georgia (0); Grenada (0); Guam (0); Jamaica (3); Kazakhstan (1); Lesotho (2); Liberia (2); Libya (1); Malawi (4); Malta (5); Mauritania (7); Mauritius (7); Micronesia, Fed. Sts. (0); Myanmar (1); Namibia (6); Panama (4); Spain (0); Taiwan, China (6); Tonga (3); Uzbekistan (4); Vanuatu (0); Yemen, Rep. (8); Zambia (4).</p><details class="dt"><summary>Data table: adjusted female share by country</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: adjusted female share by country, scrolls sideways"><table><caption class="vh">Data table: adjusted female share by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Adjusted share</th><th scope="col">95% interval</th><th scope="col">Pooled share (all its national textbooks)</th><th scope="col">Books</th><th scope="col">Books in the model</th><th scope="col">Added since the paper</th></tr></thead><tbody><tr><th scope="row">Maldives</th><td>28.5%</td><td>21.0–35.9</td><td>45.0%</td><td>25</td><td>23</td><td></td></tr><tr><th scope="row">Pakistan</th><td>29.0%</td><td>25.4–32.6</td><td>25.3%</td><td>92</td><td>92</td><td></td></tr><tr><th scope="row">Sri Lanka</th><td>30.0%</td><td>26.5–33.5</td><td>25.0%</td><td>99</td><td>98</td><td></td></tr><tr><th scope="row">India</th><td>32.4%</td><td>31.1–33.6</td><td>31.5%</td><td>888</td><td>869</td><td></td></tr><tr><th scope="row">Solomon Islands</th><td>32.6%</td><td>27.9–37.4</td><td>24.8%</td><td>53</td><td>53</td><td></td></tr><tr><th scope="row">Bangladesh</th><td>34.0%</td><td>30.0–37.9</td><td>26.5%</td><td>86</td><td>86</td><td></td></tr><tr><th scope="row">South Sudan</th><td>34.3%</td><td>30.5–38.1</td><td>31.0%</td><td>112</td><td>84</td><td></td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>34.7%</td><td>29.2–40.1</td><td>40.1%</td><td>53</td><td>44</td><td></td></tr><tr><th scope="row">Bhutan</th><td>36.1%</td><td>28.2–44.0</td><td>39.4%</td><td>19</td><td>19</td><td></td></tr><tr><th scope="row">Tajikistan</th><td>36.3%</td><td>25.5–47.1</td><td>30.2%</td><td>10</td><td>10</td><td>yes</td></tr><tr><th scope="row">Papua New Guinea</th><td>37.4%</td><td>28.2–46.6</td><td>41.9%</td><td>14</td><td>14</td><td></td></tr><tr><th scope="row">Nepal</th><td>37.4%</td><td>27.5–47.3</td><td>49.2%</td><td>21</td><td>15</td><td>yes</td></tr><tr><th scope="row">Samoa</th><td>38.4%</td><td>33.9–42.9</td><td>44.7%</td><td>72</td><td>66</td><td></td></tr><tr><th scope="row">United States</th><td>38.7%</td><td>36.8–40.7</td><td>40.2%</td><td>474</td><td>362</td><td></td></tr><tr><th scope="row">Sudan</th><td>39.4%</td><td>29.5–49.3</td><td>38.7%</td><td>13</td><td>12</td><td>yes</td></tr><tr><th scope="row">Guyana</th><td>40.0%</td><td>33.9–46.2</td><td>38.5%</td><td>35</td><td>32</td><td></td></tr><tr><th scope="row">South Africa</th><td>40.7%</td><td>35.9–45.5</td><td>40.8%</td><td>52</td><td>51</td><td></td></tr><tr><th scope="row">Greece</th><td>40.9%</td><td>33.8–48.0</td><td>42.1%</td><td>26</td><td>24</td><td>yes</td></tr><tr><th scope="row">Ecuador</th><td>41.1%</td><td>32.2–50.0</td><td>45.1%</td><td>15</td><td>15</td><td>yes</td></tr><tr><th scope="row">Uganda</th><td>41.4%</td><td>34.3–48.5</td><td>34.6%</td><td>37</td><td>25</td><td></td></tr><tr><th scope="row">Australia</th><td>41.8%</td><td>37.8–45.8</td><td>41.7%</td><td>88</td><td>76</td><td></td></tr><tr><th scope="row">United Kingdom</th><td>41.9%</td><td>33.6–50.2</td><td>42.8%</td><td>21</td><td>17</td><td></td></tr><tr><th scope="row">Sierra Leone</th><td>42.0%</td><td>36.4–47.5</td><td>41.5%</td><td>39</td><td>39</td><td></td></tr><tr><th scope="row">Ethiopia</th><td>42.0%</td><td>36.3–47.7</td><td>45.4%</td><td>37</td><td>37</td><td></td></tr><tr><th scope="row">West Bank and Gaza</th><td>42.4%</td><td>35.5–49.3</td><td>36.9%</td><td>25</td><td>25</td><td>yes</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>42.6%</td><td>35.5–49.6</td><td>40.5%</td><td>24</td><td>24</td><td>yes</td></tr><tr><th scope="row">Rwanda</th><td>43.0%</td><td>39.8–46.3</td><td>34.6%</td><td>121</td><td>116</td><td></td></tr><tr><th scope="row">Jordan</th><td>43.4%</td><td>35.6–51.0</td><td>42.2%</td><td>20</td><td>20</td><td>yes</td></tr><tr><th scope="row">Oman</th><td>43.5%</td><td>37.8–49.2</td><td>45.0%</td><td>37</td><td>37</td><td>yes</td></tr><tr><th scope="row">Nigeria</th><td>43.8%</td><td>33.6–54.0</td><td>46.1%</td><td>12</td><td>12</td><td></td></tr><tr><th scope="row">Belarus</th><td>44.8%</td><td>38.0–51.6</td><td>42.9%</td><td>26</td><td>26</td><td>yes</td></tr><tr><th scope="row">Azerbaijan</th><td>44.9%</td><td>36.8–53.0</td><td>44.1%</td><td>18</td><td>18</td><td>yes</td></tr><tr><th scope="row">Tunisia</th><td>45.3%</td><td>36.3–54.2</td><td>44.2%</td><td>15</td><td>15</td><td>yes</td></tr><tr><th scope="row">Ghana</th><td>49.0%</td><td>45.3–52.7</td><td>47.0%</td><td>119</td><td>101</td><td>yes</td></tr><tr><th scope="row">Kuwait</th><td>49.1%</td><td>43.0–55.3</td><td>39.7%</td><td>34</td><td>32</td><td>yes</td></tr><tr><th scope="row">Indonesia</th><td>49.5%</td><td>39.6–59.4</td><td>50.3%</td><td>32</td><td>12</td><td>yes</td></tr><tr><th scope="row">Cambodia</th><td>50.4%</td><td>40.8–59.9</td><td>50.9%</td><td>15</td><td>13</td><td>yes</td></tr><tr><th scope="row">Kenya</th><td>51.0%</td><td>40.5–61.6</td><td>53.4%</td><td>12</td><td>11</td><td></td></tr><tr><th scope="row">Türkiye</th><td>51.1%</td><td>43.8–58.5</td><td>50.7%</td><td>26</td><td>22</td><td>yes</td></tr><tr><th scope="row">Kiribati</th><td>54.1%</td><td>46.6–61.5</td><td>43.0%</td><td>25</td><td>22</td><td></td></tr><tr><th scope="row">Zimbabwe</th><td>68.8%</td><td>58.9–78.7</td><td>60.0%</td><td>13</td><td>12</td><td></td></tr></tbody></table></div></details></section>
 <p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
 </main></div>
 <script>

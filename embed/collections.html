@@ -142,6 +142,23 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
 }
 
+.tg .rev{border:1px solid var(--rule);background:var(--card);padding:12px 14px;margin:0 0 12px}
+.tg .rkind{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.tg .rpair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tg .rlab{font-size:12px;font-weight:600;margin:0 0 2px;color:var(--muted)}
+.tg .rtext{margin:0;font-size:15px;line-height:1.45}
+.tg .rpair div:first-child mark{background:none;color:var(--m-text);font-weight:600}
+.tg .rpair div:last-child mark{background:none;color:var(--f-text);font-weight:600}
+.tg .rmeta,.tg .rnote{font-size:12px;color:var(--muted);margin:6px 0 0}
+@media (max-width:560px){.tg .rpair{grid-template-columns:1fr;gap:8px}}
+.tg .side{border-left:3px solid var(--gold);padding:4px 12px;font-size:14px;margin:12px 0}
+.tg .exs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:0 0 24px}
+.tg .ex{margin:0;background:var(--card);border:1px solid var(--rule)}
+.tg .ex img{width:100%;height:150px;object-fit:cover;display:block;background:#fff}
+.tg .ex figcaption{padding:8px 10px;font-size:13px}
+.tg .ex b{display:block}
+.tg .ex .code{display:block;color:var(--muted);font-size:12px;margin:2px 0}
+.tg .ex .mnote{display:block;color:var(--muted);font-size:12px}
 .tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold);font-size:22px;
   color:var(--ink)}
 .tg section > h2.part:first-child{margin-top:.5rem}

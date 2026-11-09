@@ -5144,11 +5144,11 @@
     "glove": {
      "books": 3225,
      "countries": 78,
-     "value": -0.0089,
-     "low": -0.0149,
+     "value": -0.0088,
+     "low": -0.0147,
      "high": -0.0052,
-     "female": 0.6596,
-     "male": 0.6685
+     "female": 0.6595,
+     "male": 0.6682
     },
     "w2v_median": -0.0175,
     "w2v_countries": 11,
@@ -5169,11 +5169,11 @@
     "glove": {
      "books": 3225,
      "countries": 78,
-     "value": 0.0099,
-     "low": 0.0052,
-     "high": 0.0122,
-     "female": 0.2204,
-     "male": 0.2105
+     "value": 0.01,
+     "low": 0.0055,
+     "high": 0.0123,
+     "female": 0.2202,
+     "male": 0.2102
     },
     "w2v_median": 0.0196,
     "w2v_countries": 11,
@@ -5194,11 +5194,11 @@
     "glove": {
      "books": 3225,
      "countries": 78,
-     "value": 0.0068,
-     "low": 0.0011,
+     "value": 0.0069,
+     "low": 0.0012,
      "high": 0.0108,
-     "female": 0.5352,
-     "male": 0.5284
+     "female": 0.535,
+     "male": 0.5281
     },
     "w2v_median": 0.0134,
     "w2v_countries": 11,
@@ -5219,11 +5219,11 @@
     "glove": {
      "books": 3225,
      "countries": 78,
-     "value": -0.0033,
-     "low": -0.0085,
-     "high": -0.0002,
-     "female": 0.613,
-     "male": 0.6163
+     "value": -0.0032,
+     "low": -0.0083,
+     "high": -0.0001,
+     "female": 0.6129,
+     "male": 0.6161
     },
     "w2v_median": -0.0066,
     "w2v_countries": 11,

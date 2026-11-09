@@ -143,7 +143,19 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
 }
 
-.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold)}
+.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold);font-size:22px;
+  color:var(--ink)}
+.tg section > h2.part:first-child{margin-top:.5rem}
+.tg .stats.four{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}
+.tg table.plain.narrow{width:auto;min-width:min(24rem,100%)}
+.tg .chart .s1{fill:#DCE8EA}
+.tg .chart .s2{fill:#7FA6AF}
+.tg .chart .s3{fill:#2E5F6B}
+.tg .chart .s1,.tg .chart .s2,.tg .chart .s3{stroke:var(--paper);stroke-width:1}
+.tg .chart .sv{font-size:11.5px;font-weight:700;fill:#1A272A}
+@media (max-width:600px){ .tg .chart .sv{font-size:15px} }
+@media (max-width:420px){ .tg table.plain td,.tg table.plain th{padding-right:5px}
+  .tg table.plain thead th{letter-spacing:.02em} }
 .tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
 .tg .sitename a{color:var(--band-ink);text-decoration:none}
 .tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
@@ -154,6 +166,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .band :focus-visible{outline-color:var(--gold)}
 .tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
 .tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .summary + .summary{margin-top:0}
 .tg .chart .ci{stroke:var(--muted);stroke-width:2}
 .tg .chart .pt{fill:var(--f)}
 .tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
@@ -189,6 +202,17 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   pointer-events:none}
 .tg .chart .hatch-bg{fill:var(--rule)}
 .tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .bn{fill:var(--brand);fill-opacity:.75}
+.tg .chart .lnk{fill:var(--accent);text-decoration:underline}
+.tg .chart .lnk:hover{text-decoration-thickness:2px}
+.tg .stats a.more{font-size:13.5px}
+.tg table.plain{min-width:0;margin:.4rem 0 .6rem}
+.tg table.plain td,.tg table.plain th{white-space:normal}
+.tg table.plain tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top;font-weight:700}
+.tg .country-list{columns:3 11rem;margin:.4rem 0 0;padding:0;list-style:none;font-size:14px}
+.tg .country-list li{margin:0 0 4px}
 .tg .chart .gs-f{stop-color:var(--f)}
 .tg .chart .gs-m{stop-color:var(--m)}
 .tg .chart .swatch{stroke:var(--rule)}
@@ -235,17 +259,17 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   &ldquo;father&rdquo;, &ldquo;king&rdquo;&hellip;). The female share is female words divided by
   female and male words. 132 national textbooks have no gendered words; they count in the headline but add nothing to it. The numbers come from the paper&rsquo;s method, reimplemented in
   the <code>tgs</code> software, on a larger set of books, so they differ from the published
-  paper. 1,326 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 1,504 files that hold a chapter, section or unit of a book are counted as the 141 books they belong to.</p>
+  paper. 1,343 extra copies of books found more than once were left out, so each book is counted once; the list, with how each pair was judged, is in the repository (search/v1/site/duplicates.csv). A few of the paper&rsquo;s books were filed under the wrong country or grade (a Sri Lankan health book under Pakistan, South African maths books under Solomon Islands, a Grade 6 maths book under Grade 7); each is counted once, where it belongs, and the table notes it. The check against the published paper uses the paper&rsquo;s books as it filed them. 1,504 files that hold a chapter, section or unit of a book are counted as the 141 books they belong to.</p>
 <h2>Which books count</h2>
 <p>The headline and every cross-country result use national textbooks only, the paper&rsquo;s own
   rule: official English student textbooks. That is the paper&rsquo;s corpus plus the student books
   the 2026 systematic search found on ministry and agency sites and their official mirrors
-  (1,548 books). The 399 Indian state-board and NCERT textbooks among them (2020&ndash;23 editions) come from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, which took them from an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Teacher guides, readers, programme books and NGO
+  (1,616 books). The 399 Indian state-board and NCERT textbooks among them (2020&ndash;23 editions) come from Lee Crawfurd&rsquo;s 2024 Ideas for India analysis, which took them from an unofficial mirror of the boards&rsquo; books (ncertbooks.guru). Teacher guides, readers, programme books and NGO
   collections are shown beside them, never mixed in. 90 files from Lebanon&rsquo;s curriculum centre are excerpts (5 to 22 pages each), not whole textbooks; they are shown beside the national textbooks as their own group and are in no national result, so Lebanon is not ranked. For 22 of the search&rsquo;s books the title names a different kind from the search&rsquo;s guess from the file (a &ldquo;Student Textbook&rdquo; filed as a teacher&rsquo;s guide, a &ldquo;Teacher&rsquo;s Guide&rdquo; filed as a student book), and the title is taken; for 2 files whose titles contradict their contents, the file is followed.</p>
 <h2>Subjects and grades</h2>
 <p>New books&rsquo; subject and grade labels are mapped to the paper&rsquo;s 13 subject groups and
-  to grades 1&ndash;13 by rule, then by hand. Of 3,157 national textbooks,
-  73 have no subject group and 203
+  to grades 1&ndash;13 by rule, then by hand. Of 3,225 national textbooks,
+  118 have no subject group and 269
   have no grade; books missing either count in the headline but not in the
   adjusted results.</p>
 <h2>The adjustment</h2>
@@ -268,7 +292,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Over time</h2>
 <p>The time chart compares books within countries: a regression of each book&rsquo;s share on its
   country, its period of publication and the log of its length (no subject or grade), on books
-  with a publication year from 2000 on (1,677); 9 books with an earlier year are left out, since some of those years are misread; 99 books with no gendered words are left out (the other 33 are among those with no year). 1,372 national textbooks have no publication year and are not in the time chart. The change
+  with a publication year from 2000 on (1,677); 9 books with an earlier year are left out, since some of those years are misread; 99 books with no gendered words are left out (the other 33 are among those with no year). 1,440 national textbooks have no publication year and are not in the time chart. The change
   per decade comes from a second regression that uses the year, in decades, in place of the
   period.</p>
 <h2>Earlier editions</h2>
@@ -282,7 +306,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   &ldquo;edition&rdquo;): so far Maharashtra&rsquo;s 2006&ndash;13 textbooks, whose newer
   editions the site counts instead. NCERT&rsquo;s Class 1&ndash;8 books were replaced under the
   2023 curriculum framework by new titles rather than revised, so they have no pair in the table
-  and count in the time chart only. 172 are in the time chart.</p>
+  and count in the time chart only. 170 are in the time chart.</p>
 <h2>Limits</h2>
 <p>The adjustment holds subject, grade and book length fixed, but not which books each ministry
   has put online, so a country&rsquo;s share describes the books found for it, and countries with
@@ -299,7 +323,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 
 <h2 id="stereotypes">Stereotype measures</h2>
 <p>The three stereotype sections measure what the 2024 paper measured for its whole corpus, now
-  book by book for the 3,157 national textbooks (results of 6 November 2026),
+  book by book for the 3,225 national textbooks (results of 9 November 2026),
   so that they can be pooled by region and income group. Only counts leave each book; no text
   is kept or published.</p>
 <p><strong>Words near women and men.</strong> For each mention of a woman or a man (the
@@ -333,20 +357,46 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   to each theme in GloVe vectors trained on other text (300 dimensions), and the paper&rsquo;s own
   method, word2vec trained on each country&rsquo;s textbooks where a country has 1.5 million words
   or more (11 countries, 50 runs on resampled sentences each). Positive numbers mean the theme sits nearer women.</p>
-<details class="dt"><summary>Three ways to measure the themes</summary><div class="tscroll" tabindex="0" role="region" aria-label="Three ways to measure the themes, scrolls sideways"><table><caption class="vh">Three ways to measure the themes</caption><thead><tr><th scope="col">Theme</th><th scope="col">Counted (per 100 mentions)</th><th scope="col">GloVe similarity</th><th scope="col">word2vec, median of countries</th><th scope="col">Countries where word2vec agrees</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>−0.7 (95% interval −0.8 to −0.5)</td><td>−0.009</td><td>−0.018</td><td>9 of 11</td></tr><tr><th scope="row">Appearance</th><td>+0.3 (95% interval +0.2 to +0.3)</td><td>+0.010</td><td>+0.020</td><td>11 of 11</td></tr><tr><th scope="row">Family and the home</th><td>+2.1 (95% interval +1.3 to +2.5)</td><td>+0.007</td><td>+0.013</td><td>8 of 11</td></tr><tr><th scope="row">Work</th><td>−0.3 (95% interval −0.6 to +0.1)</td><td>−0.003</td><td>−0.007</td><td>9 of 11</td></tr></tbody></table></div></details>
+<details class="dt"><summary>Three ways to measure the themes</summary><div class="tscroll" tabindex="0" role="region" aria-label="Three ways to measure the themes, scrolls sideways"><table><caption class="vh">Three ways to measure the themes</caption><thead><tr><th scope="col">Theme</th><th scope="col">Counted (per 100 mentions)</th><th scope="col">GloVe similarity</th><th scope="col">word2vec, median of countries</th><th scope="col">Countries where word2vec agrees</th></tr></thead><tbody><tr><th scope="row">Achievement</th><td>−0.7 (95% interval −0.9 to −0.5)</td><td>−0.009</td><td>−0.018</td><td>9 of 11</td></tr><tr><th scope="row">Appearance</th><td>+0.3 (95% interval +0.2 to +0.3)</td><td>+0.010</td><td>+0.020</td><td>11 of 11</td></tr><tr><th scope="row">Family and the home</th><td>+2.1 (95% interval +1.3 to +2.5)</td><td>+0.007</td><td>+0.013</td><td>8 of 11</td></tr><tr><th scope="row">Work</th><td>−0.3 (95% interval −0.6 to +0.1)</td><td>−0.003</td><td>−0.007</td><td>9 of 11</td></tr></tbody></table></div></details>
 <details class="dt"><summary>word2vec by country: similarity to each theme, women minus men</summary><div class="tscroll" tabindex="0" role="region" aria-label="word2vec by country: similarity to each theme, women minus men, scrolls sideways"><table><caption class="vh">word2vec by country: similarity to each theme, women minus men</caption><thead><tr><th scope="col">Country</th><th scope="col">Theme</th><th scope="col">Women minus men</th><th scope="col">Range of 95% of runs</th><th scope="col">Runs</th></tr></thead><tbody><tr><th scope="row">Bangladesh</th><td>Achievement</td><td>−0.032</td><td>−0.046 to −0.018</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Appearance</td><td>+0.058</td><td>+0.032 to +0.084</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Family and the home</td><td>+0.013</td><td>−0.003 to +0.030</td><td>50</td></tr><tr><th scope="row">Bangladesh</th><td>Work</td><td>−0.003</td><td>−0.020 to +0.013</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Achievement</td><td>−0.005</td><td>−0.018 to +0.008</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Appearance</td><td>+0.020</td><td>−0.004 to +0.043</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Family and the home</td><td>+0.026</td><td>+0.008 to +0.045</td><td>50</td></tr><tr><th scope="row">Ethiopia</th><td>Work</td><td>−0.007</td><td>−0.023 to +0.010</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Achievement</td><td>−0.010</td><td>−0.019 to 0.000</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Appearance</td><td>+0.032</td><td>+0.015 to +0.049</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Family and the home</td><td>+0.001</td><td>−0.014 to +0.016</td><td>50</td></tr><tr><th scope="row">Ghana</th><td>Work</td><td>−0.009</td><td>−0.021 to +0.003</td><td>50</td></tr><tr><th scope="row">India</th><td>Achievement</td><td>−0.030</td><td>−0.036 to −0.024</td><td>50</td></tr><tr><th scope="row">India</th><td>Appearance</td><td>+0.039</td><td>+0.031 to +0.048</td><td>50</td></tr><tr><th scope="row">India</th><td>Family and the home</td><td>+0.025</td><td>+0.015 to +0.034</td><td>50</td></tr><tr><th scope="row">India</th><td>Work</td><td>−0.025</td><td>−0.032 to −0.018</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Achievement</td><td>−0.018</td><td>−0.030 to −0.005</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Appearance</td><td>+0.019</td><td>−0.002 to +0.041</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Family and the home</td><td>−0.002</td><td>−0.020 to +0.016</td><td>50</td></tr><tr><th scope="row">Pakistan</th><td>Work</td><td>−0.005</td><td>−0.020 to +0.010</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Achievement</td><td>−0.041</td><td>−0.052 to −0.029</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Appearance</td><td>+0.014</td><td>−0.006 to +0.033</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Family and the home</td><td>+0.011</td><td>−0.005 to +0.027</td><td>50</td></tr><tr><th scope="row">Rwanda</th><td>Work</td><td>−0.017</td><td>−0.032 to −0.003</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Achievement</td><td>+0.004</td><td>−0.006 to +0.014</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Appearance</td><td>+0.025</td><td>+0.005 to +0.045</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Family and the home</td><td>+0.019</td><td>+0.006 to +0.032</td><td>50</td></tr><tr><th scope="row">Samoa</th><td>Work</td><td>−0.002</td><td>−0.016 to +0.011</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Achievement</td><td>+0.014</td><td>−0.005 to +0.034</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Appearance</td><td>+0.009</td><td>−0.021 to +0.039</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Family and the home</td><td>+0.015</td><td>−0.008 to +0.039</td><td>50</td></tr><tr><th scope="row">South Africa</th><td>Work</td><td>+0.015</td><td>−0.006 to +0.036</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Achievement</td><td>−0.019</td><td>−0.034 to −0.004</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Appearance</td><td>+0.001</td><td>−0.027 to +0.029</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Family and the home</td><td>−0.014</td><td>−0.030 to +0.002</td><td>50</td></tr><tr><th scope="row">South Sudan</th><td>Work</td><td>−0.012</td><td>−0.028 to +0.005</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Achievement</td><td>−0.014</td><td>−0.030 to +0.002</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Appearance</td><td>+0.048</td><td>+0.018 to +0.079</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Family and the home</td><td>+0.022</td><td>+0.003 to +0.042</td><td>50</td></tr><tr><th scope="row">Sri Lanka</th><td>Work</td><td>+0.010</td><td>−0.010 to +0.030</td><td>50</td></tr><tr><th scope="row">United States</th><td>Achievement</td><td>−0.051</td><td>−0.063 to −0.038</td><td>50</td></tr><tr><th scope="row">United States</th><td>Appearance</td><td>+0.012</td><td>−0.013 to +0.037</td><td>50</td></tr><tr><th scope="row">United States</th><td>Family and the home</td><td>−0.005</td><td>−0.016 to +0.006</td><td>50</td></tr><tr><th scope="row">United States</th><td>Work</td><td>−0.025</td><td>−0.038 to −0.011</td><td>50</td></tr></tbody></table></div></details>
 <p><strong>Limits.</strong> English textbooks only, and the lexicons are English. What women and
   men do in the text (their roles) is not measured yet. The occupation mapping is a judgement and
   is published with the data.</p>
 
 
+<h2 id="pictures">Pictures</h2>
+<p>A model (Gemini 3.5 Flash-Lite) looks at 30 pages drawn at random from each national
+  textbook, in whatever language it is written, and records every person pictured on them:
+  gender (where it can tell), age group, role, whether a main or background figure, activity,
+  setting, dress, head covering, any visible disability or aid, and whether the person is a real,
+  named figure. It also records whether each page&rsquo;s pictures are drawings or photos and
+  whether the scene looks local. It follows a written coding manual, version 3
+  (<code>docs/reference/image-coding-manual-v3.md</code> in the repository), which defines each
+  code. Coded so far: Pakistan (367 national textbooks, 10,984 pages). Other countries follow; until then, the picture figures describe
+  Pakistan&rsquo;s national textbooks only.</p>
+<p>Second copies of a book (the same book found twice) are counted once. Every disability flag is
+  checked by eye, and only confirmed flags count: of 32 people
+  flagged, 3 are false alarms. A share is shown only with at
+  least 30 people whose gender the model could tell; thinner cells keep their count and show
+  a dash. The model&rsquo;s answers are not published, only the figures made from them.</p>
+<p>Skin tone is judged by eye, by the model in a second pass over the pages with people, in three
+  bands (lighter, medium, darker); the shares are of the people whose tone could be judged, and
+  black-and-white pictures get no tone. Photos and drawings are reported apart, since a
+  drawing&rsquo;s colours are the illustrator&rsquo;s choice. As a check, a second measure comes
+  from the pixels of each face: the individual typology angle of the skin pixels, following
+  Adukia et al. (2023), possible only where a face is large and clear enough. The site reports
+  only whether it agrees with the judgement by eye, not its shares: shadows, and faded or sepia
+  photos, darken the pixels of a face, so the pixel measure puts too many people in the darker
+  band, above all in photos. Skin tone is shown where it has been measured.</p>
+
+
 <h2>Changes</h2>
-<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-11-06</td><td>+2 books, 0 countries</td><td class="num">3,157</td><td class="num">78</td><td class="num">34.91%</td></tr><tr><td>2026-10-15</td><td>−14 books, 0 countries</td><td class="num">3,155</td><td class="num">78</td><td class="num">34.90%</td></tr><tr><td>2026-10-14</td><td>−90 books, 0 countries</td><td class="num">3,169</td><td class="num">78</td><td class="num">34.87%</td></tr><tr><td>2026-10-12</td><td>+7 books, +2 countries</td><td class="num">3,259</td><td class="num">78</td><td class="num">35.03%</td></tr><tr><td>2026-10-11</td><td>+278 books, 0 countries</td><td class="num">3,252</td><td class="num">76</td><td class="num">35.03%</td></tr><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
+<div class="tscroll" tabindex="0" role="region" aria-label="Changes, scrolls sideways"><table><caption class="vh">Changes</caption><thead><tr><th scope="col">Date</th><th scope="col">Change</th><th scope="col" class="num">National textbooks</th><th scope="col" class="num">Countries</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><td>2026-11-09</td><td>+68 books, 0 countries</td><td class="num">3,225</td><td class="num">78</td><td class="num">34.88%</td></tr><tr><td>2026-11-06</td><td>+2 books, 0 countries</td><td class="num">3,157</td><td class="num">78</td><td class="num">34.91%</td></tr><tr><td>2026-10-15</td><td>−14 books, 0 countries</td><td class="num">3,155</td><td class="num">78</td><td class="num">34.90%</td></tr><tr><td>2026-10-14</td><td>−90 books, 0 countries</td><td class="num">3,169</td><td class="num">78</td><td class="num">34.87%</td></tr><tr><td>2026-10-12</td><td>+7 books, +2 countries</td><td class="num">3,259</td><td class="num">78</td><td class="num">35.03%</td></tr><tr><td>2026-10-11</td><td>+278 books, 0 countries</td><td class="num">3,252</td><td class="num">76</td><td class="num">35.03%</td></tr><tr><td>2026-10-10</td><td>+1,006 books, +10 countries</td><td class="num">2,974</td><td class="num">76</td><td class="num">35.14%</td></tr><tr><td>2026-10-08</td><td>−5 books, 0 countries</td><td class="num">1,968</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-08</td><td>−353 books, 0 countries</td><td class="num">1,973</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-07</td><td>−43 books, 0 countries</td><td class="num">2,326</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>−88 books, −1 country</td><td class="num">2,369</td><td class="num">66</td><td class="num">36.56%</td></tr><tr><td>2026-10-05</td><td>First build</td><td class="num">2,457</td><td class="num">67</td><td class="num">36.55%</td></tr></tbody></table></div>
 
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/themes.html</code>, height 777</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li><li><code>embed/collections.html</code>, height 1018</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/collections.html</code>, height 1018</li><li><code>embed/themes.html</code>, height 807</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2334&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

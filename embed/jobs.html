@@ -142,7 +142,19 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   .tg *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
 }
 
-.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold)}
+.tg h2.part{margin-top:3rem;padding-top:1rem;border-top:3px solid var(--gold);font-size:22px;
+  color:var(--ink)}
+.tg section > h2.part:first-child{margin-top:.5rem}
+.tg .stats.four{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}
+.tg table.plain.narrow{width:auto;min-width:min(24rem,100%)}
+.tg .chart .s1{fill:#DCE8EA}
+.tg .chart .s2{fill:#7FA6AF}
+.tg .chart .s3{fill:#2E5F6B}
+.tg .chart .s1,.tg .chart .s2,.tg .chart .s3{stroke:var(--paper);stroke-width:1}
+.tg .chart .sv{font-size:11.5px;font-weight:700;fill:#1A272A}
+@media (max-width:600px){ .tg .chart .sv{font-size:15px} }
+@media (max-width:420px){ .tg table.plain td,.tg table.plain th{padding-right:5px}
+  .tg table.plain thead th{letter-spacing:.02em} }
 .tg .sitename{margin:.2rem 0 .6rem;font-size:1.35rem;font-weight:700}
 .tg .sitename a{color:var(--band-ink);text-decoration:none}
 .tg .topnav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem;font-size:.95rem}
@@ -153,6 +165,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .band :focus-visible{outline-color:var(--gold)}
 .tg main.wrap > h1{margin:28px 0 8px;color:var(--brand)}
 .tg .summary{font-size:1.08rem;line-height:1.6;max-width:68ch;margin-top:22px}
+.tg .summary + .summary{margin-top:0}
 .tg .chart .ci{stroke:var(--muted);stroke-width:2}
 .tg .chart .pt{fill:var(--f)}
 .tg .chart .new .pt{fill:var(--card);stroke:var(--f);stroke-width:2}
@@ -188,6 +201,17 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   pointer-events:none}
 .tg .chart .hatch-bg{fill:var(--rule)}
 .tg .chart .hatch-ln{stroke:var(--muted);stroke-width:1.2}
+.tg .chart .bn{fill:var(--brand);fill-opacity:.75}
+.tg .chart .lnk{fill:var(--accent);text-decoration:underline}
+.tg .chart .lnk:hover{text-decoration-thickness:2px}
+.tg .stats a.more{font-size:13.5px}
+.tg table.plain{min-width:0;margin:.4rem 0 .6rem}
+.tg table.plain td,.tg table.plain th{white-space:normal}
+.tg table.plain tbody th{font-size:13.5px;letter-spacing:normal;text-transform:none;
+  color:var(--ink);padding:8px 10px 8px 0;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top;font-weight:700}
+.tg .country-list{columns:3 11rem;margin:.4rem 0 0;padding:0;list-style:none;font-size:14px}
+.tg .country-list li{margin:0 0 4px}
 .tg .chart .gs-f{stop-color:var(--f)}
 .tg .chart .gs-m{stop-color:var(--m)}
 .tg .chart .swatch{stroke:var(--rule)}
@@ -220,9 +244,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <body>
 <div class="tg embed"><main class="wrap">
 <h1 class="vh">The jobs they are shown in: Gender in School Textbooks</h1>
-<section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs">The jobs they are shown in</h2><p class="lede">Women are 28.9% of the people the books show in a job (95% interval 25.8–34.8). Among the jobs that can be matched to labour-market data, women are 28.7% of the people shown, against 37.6% of the same jobs in the labour market (ILOSTAT): a gap of −8.8 points (95% interval −12.4 to −6.6). Women are also shown in more female-typed jobs than men: in the labour market, the jobs women are shown in are 5.0 points more female than the jobs men are shown in (95% interval +3.2 to +5.9).</p><div class="chartbox"><svg class="chart" id="tg-jobs" viewBox="0 0 560 458" role="img" aria-labelledby="tg-jobs-t tg-jobs-d" preserveAspectRatio="xMinYMin meet">
+<section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs">The jobs they are shown in</h2><p class="lede">Women are 28.9% of the people the books show in a job (95% interval 25.9–34.7). Among the jobs that can be matched to labour-market data, women are 28.8% of the people shown, against 37.5% of the same jobs in the labour market (ILOSTAT): a gap of −8.7 points (95% interval −12.2 to −6.5). Women are also shown in more female-typed jobs than men: in the labour market, the jobs women are shown in are 5.0 points more female than the jobs men are shown in (95% interval +3.2 to +5.9).</p><div class="chartbox"><svg class="chart" id="tg-jobs" viewBox="0 0 560 458" role="img" aria-labelledby="tg-jobs-t tg-jobs-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-jobs-t">Women&#x27;s share of the people shown in a job, and of the same jobs in the labour market</title>
-<desc id="tg-jobs-d">All national textbooks: women 28.7% of the people shown in a job; 37.6% of the same jobs in the labour market; gap −8.8 (95% interval −12.4 to −6.6); East Asia &amp; Pacific: women 33.2% of the people shown in a job; 44.8% of the same jobs in the labour market; gap −11.7 (95% interval −18.6 to −5.1); Europe &amp; Central Asia: women 34.3% of the people shown in a job; 48.8% of the same jobs in the labour market; gap −14.6 (95% interval −24.4 to −4.3); Latin America &amp; Caribbean: women 40.4% of the people shown in a job; 52.8% of the same jobs in the labour market; gap −12.4 (95% interval −15.7 to −8.2); Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.4% of the people shown in a job; 33.2% of the same jobs in the labour market; gap −5.8 (95% interval −10.1 to +0.9); North America: women 39.3% of the people shown in a job; 47.6% of the same jobs in the labour market; gap −8.3 (95% interval −17.4 to −7.8); South Asia: women 23.5% of the people shown in a job; 31.0% of the same jobs in the labour market; gap −7.5 (95% interval −17.9 to −1.5); Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.1% of the same jobs in the labour market; gap −9.9 (95% interval −15.8 to −2.0); High income: women 38.3% of the people shown in a job; 47.9% of the same jobs in the labour market; gap −9.6 (95% interval −13.9 to −7.9); Low income: women 30.7% of the people shown in a job; 39.3% of the same jobs in the labour market; gap −8.6 (95% interval −15.8 to +4.6); Lower middle income: women 25.0% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.5 (95% interval −10.5 to −4.5); Upper middle income: women 33.7% of the people shown in a job; 48.1% of the same jobs in the labour market; gap −14.3 (95% interval −22.7 to −4.7)</desc>
+<desc id="tg-jobs-d">All national textbooks: women 28.8% of the people shown in a job; 37.5% of the same jobs in the labour market; gap −8.7 (95% interval −12.2 to −6.5); East Asia &amp; Pacific: women 33.2% of the people shown in a job; 44.8% of the same jobs in the labour market; gap −11.7 (95% interval −18.6 to −5.1); Europe &amp; Central Asia: women 34.3% of the people shown in a job; 48.8% of the same jobs in the labour market; gap −14.6 (95% interval −24.4 to −4.3); Latin America &amp; Caribbean: women 40.4% of the people shown in a job; 52.8% of the same jobs in the labour market; gap −12.4 (95% interval −15.7 to −8.2); Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.7% of the people shown in a job; 33.0% of the same jobs in the labour market; gap −5.4 (95% interval −9.0 to +0.9); North America: women 39.3% of the people shown in a job; 47.6% of the same jobs in the labour market; gap −8.3 (95% interval −17.4 to −7.8); South Asia: women 23.5% of the people shown in a job; 31.0% of the same jobs in the labour market; gap −7.5 (95% interval −17.9 to −1.5); Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.0% of the same jobs in the labour market; gap −9.8 (95% interval −15.8 to −1.9); High income: women 38.3% of the people shown in a job; 47.9% of the same jobs in the labour market; gap −9.6 (95% interval −13.9 to −7.9); Low income: women 30.8% of the people shown in a job; 39.2% of the same jobs in the labour market; gap −8.5 (95% interval −15.7 to +4.6); Lower middle income: women 25.1% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.3 (95% interval −9.9 to −4.6); Upper middle income: women 33.7% of the people shown in a job; 48.1% of the same jobs in the labour market; gap −14.3 (95% interval −22.7 to −4.7)</desc>
 <text class="axis" x="6.0" y="32" text-anchor="start">20%</text>
 <text class="axis" x="143.0" y="32" text-anchor="middle">30%</text>
 <text class="axis" x="280.0" y="32" text-anchor="middle">40%</text>
@@ -230,7 +254,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="554.0" y="32" text-anchor="end">60%</text>
 <text class="dl dl-m" x="409.0" y="14" text-anchor="end">More men</text>
 <text class="dl dl-f" x="425.0" y="14">More women</text>
-<g class="row"><title>All national textbooks: women 28.7% of the people shown in a job; 37.6% of the same jobs in the labour market; gap −8.8 (95% interval −12.4 to −6.6)</title>
+<g class="row"><title>All national textbooks: women 28.8% of the people shown in a job; 37.5% of the same jobs in the labour market; gap −8.7 (95% interval −12.2 to −6.5)</title>
 <text class="lab" x="0" y="56">All national textbooks</text>
 <rect class="half-m" x="6.0" y="61" width="411.0" height="12"/>
 <rect class="half-f" x="417.0" y="61" width="137.0" height="12"/>
@@ -238,9 +262,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="143.0" y1="62.0" x2="143.0" y2="72.0"/>
 <line class="grid" x1="280.0" y1="62.0" x2="280.0" y2="72.0"/>
 <line class="grid" x1="554.0" y1="62.0" x2="554.0" y2="72.0"/>
-<line class="ci" x1="125.8" y1="67" x2="246.5" y2="67"/>
-<rect class="sq" x="242.0" y="62.5" width="9" height="9"/>
-<circle class="pt" cx="125.8" cy="67" r="4.5"/>
+<line class="ci" x1="126.3" y1="67" x2="245.7" y2="67"/>
+<rect class="sq" x="241.2" y="62.5" width="9" height="9"/>
+<circle class="pt" cx="126.3" cy="67" r="4.5"/>
 </g>
 <g class="row"><title>East Asia &amp; Pacific: women 33.2% of the people shown in a job; 44.8% of the same jobs in the labour market; gap −11.7 (95% interval −18.6 to −5.1)</title>
 <text class="lab" x="0" y="90">East Asia &amp; Pacific</text>
@@ -278,7 +302,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <rect class="sq" x="451.0" y="164.5" width="9" height="9"/>
 <circle class="pt" cx="286.0" cy="169" r="4.5"/>
 </g>
-<g class="row"><title>Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.4% of the people shown in a job; 33.2% of the same jobs in the labour market; gap −5.8 (95% interval −10.1 to +0.9)</title>
+<g class="row"><title>Middle East, North Africa, Afghanistan &amp; Pakistan: women 27.7% of the people shown in a job; 33.0% of the same jobs in the labour market; gap −5.4 (95% interval −9.0 to +0.9)</title>
 <text class="lab" x="0" y="192">Middle East, North Africa, Afghanistan &amp; Pakistan</text>
 <rect class="half-m" x="6.0" y="197" width="411.0" height="12"/>
 <rect class="half-f" x="417.0" y="197" width="137.0" height="12"/>
@@ -286,9 +310,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="143.0" y1="198.0" x2="143.0" y2="208.0"/>
 <line class="grid" x1="280.0" y1="198.0" x2="280.0" y2="208.0"/>
 <line class="grid" x1="554.0" y1="198.0" x2="554.0" y2="208.0"/>
-<line class="ci" x1="107.3" y1="203" x2="186.7" y2="203"/>
-<rect class="sq" x="182.2" y="198.5" width="9" height="9"/>
-<circle class="pt" cx="107.3" cy="203" r="4.5"/>
+<line class="ci" x1="111.1" y1="203" x2="184.5" y2="203"/>
+<rect class="sq" x="180.0" y="198.5" width="9" height="9"/>
+<circle class="pt" cx="111.1" cy="203" r="4.5"/>
 </g>
 <g class="row"><title>North America: women 39.3% of the people shown in a job; 47.6% of the same jobs in the labour market; gap −8.3 (95% interval −17.4 to −7.8)</title>
 <text class="lab" x="0" y="226">North America</text>
@@ -314,7 +338,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <rect class="sq" x="151.9" y="266.5" width="9" height="9"/>
 <circle class="pt" cx="53.8" cy="271" r="4.5"/>
 </g>
-<g class="row"><title>Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.1% of the same jobs in the labour market; gap −9.9 (95% interval −15.8 to −2.0)</title>
+<g class="row"><title>Sub-Saharan Africa: women 32.2% of the people shown in a job; 42.0% of the same jobs in the labour market; gap −9.8 (95% interval −15.8 to −1.9)</title>
 <text class="lab" x="0" y="294">Sub-Saharan Africa</text>
 <rect class="half-m" x="6.0" y="299" width="411.0" height="12"/>
 <rect class="half-f" x="417.0" y="299" width="137.0" height="12"/>
@@ -322,9 +346,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="143.0" y1="300.0" x2="143.0" y2="310.0"/>
 <line class="grid" x1="280.0" y1="300.0" x2="280.0" y2="310.0"/>
 <line class="grid" x1="554.0" y1="300.0" x2="554.0" y2="310.0"/>
-<line class="ci" x1="173.0" y1="305" x2="308.6" y2="305"/>
-<rect class="sq" x="304.1" y="300.5" width="9" height="9"/>
-<circle class="pt" cx="173.0" cy="305" r="4.5"/>
+<line class="ci" x1="173.3" y1="305" x2="308.0" y2="305"/>
+<rect class="sq" x="303.5" y="300.5" width="9" height="9"/>
+<circle class="pt" cx="173.3" cy="305" r="4.5"/>
 </g>
 <g class="row"><title>High income: women 38.3% of the people shown in a job; 47.9% of the same jobs in the labour market; gap −9.6 (95% interval −13.9 to −7.9)</title>
 <text class="lab" x="0" y="328">High income</text>
@@ -338,7 +362,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <rect class="sq" x="383.9" y="334.5" width="9" height="9"/>
 <circle class="pt" cx="257.2" cy="339" r="4.5"/>
 </g>
-<g class="row"><title>Low income: women 30.7% of the people shown in a job; 39.3% of the same jobs in the labour market; gap −8.6 (95% interval −15.8 to +4.6)</title>
+<g class="row"><title>Low income: women 30.8% of the people shown in a job; 39.2% of the same jobs in the labour market; gap −8.5 (95% interval −15.7 to +4.6)</title>
 <text class="lab" x="0" y="362">Low income</text>
 <rect class="half-m" x="6.0" y="367" width="411.0" height="12"/>
 <rect class="half-f" x="417.0" y="367" width="137.0" height="12"/>
@@ -346,11 +370,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="143.0" y1="368.0" x2="143.0" y2="378.0"/>
 <line class="grid" x1="280.0" y1="368.0" x2="280.0" y2="378.0"/>
 <line class="grid" x1="554.0" y1="368.0" x2="554.0" y2="378.0"/>
-<line class="ci" x1="152.7" y1="373" x2="269.8" y2="373"/>
-<rect class="sq" x="265.3" y="368.5" width="9" height="9"/>
-<circle class="pt" cx="152.7" cy="373" r="4.5"/>
+<line class="ci" x1="153.4" y1="373" x2="269.4" y2="373"/>
+<rect class="sq" x="264.9" y="368.5" width="9" height="9"/>
+<circle class="pt" cx="153.4" cy="373" r="4.5"/>
 </g>
-<g class="row"><title>Lower middle income: women 25.0% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.5 (95% interval −10.5 to −4.5)</title>
+<g class="row"><title>Lower middle income: women 25.1% of the people shown in a job; 32.5% of the same jobs in the labour market; gap −7.3 (95% interval −9.9 to −4.6)</title>
 <text class="lab" x="0" y="396">Lower middle income</text>
 <rect class="half-m" x="6.0" y="401" width="411.0" height="12"/>
 <rect class="half-f" x="417.0" y="401" width="137.0" height="12"/>
@@ -358,9 +382,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="grid" x1="143.0" y1="402.0" x2="143.0" y2="412.0"/>
 <line class="grid" x1="280.0" y1="402.0" x2="280.0" y2="412.0"/>
 <line class="grid" x1="554.0" y1="402.0" x2="554.0" y2="412.0"/>
-<line class="ci" x1="75.2" y1="407" x2="177.4" y2="407"/>
-<rect class="sq" x="172.9" y="402.5" width="9" height="9"/>
-<circle class="pt" cx="75.2" cy="407" r="4.5"/>
+<line class="ci" x1="76.4" y1="407" x2="177.0" y2="407"/>
+<rect class="sq" x="172.5" y="402.5" width="9" height="9"/>
+<circle class="pt" cx="76.4" cy="407" r="4.5"/>
 </g>
 <g class="row"><title>Upper middle income: women 33.7% of the people shown in a job; 48.1% of the same jobs in the labour market; gap −14.3 (95% interval −22.7 to −4.7)</title>
 <text class="lab" x="0" y="430">Upper middle income</text>
@@ -374,9 +398,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <rect class="sq" x="386.1" y="436.5" width="9" height="9"/>
 <circle class="pt" cx="194.2" cy="441" r="4.5"/>
 </g>
-<text class="dl dl-f" x="115.8" y="71" text-anchor="end">In the books</text>
-<text class="dl dl-sq" x="256.5" y="71">Same jobs, labour market</text>
-</svg></div><details class="dt"><summary>Data table: women in the jobs shown, by group</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by group, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by group</caption><thead><tr><th scope="col">Group</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">All national textbooks</th><td>3,157</td><td>28.7%</td><td>37.6%</td><td>−8.8</td><td>−12.4 to −6.6</td></tr><tr><th scope="row">East Asia &amp; Pacific</th><td>329</td><td>33.2%</td><td>44.8%</td><td>−11.7</td><td>−18.6 to −5.1</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>135</td><td>34.3%</td><td>48.8%</td><td>−14.6</td><td>−24.4 to −4.3</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>134</td><td>40.4%</td><td>52.8%</td><td>−12.4</td><td>−15.7 to −8.2</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>326</td><td>27.4%</td><td>33.2%</td><td>−5.8</td><td>−10.1 to +0.9</td></tr><tr><th scope="row">North America</th><td>486</td><td>39.3%</td><td>47.6%</td><td>−8.3</td><td>−17.4 to −7.8</td></tr><tr><th scope="row">South Asia</th><td>1,138</td><td>23.5%</td><td>31.0%</td><td>−7.5</td><td>−17.9 to −1.5</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>609</td><td>32.2%</td><td>42.1%</td><td>−9.9</td><td>−15.8 to −2.0</td></tr><tr><th scope="row">High income</th><td>817</td><td>38.3%</td><td>47.9%</td><td>−9.6</td><td>−13.9 to −7.9</td></tr><tr><th scope="row">Low income</th><td>407</td><td>30.7%</td><td>39.3%</td><td>−8.6</td><td>−15.8 to +4.6</td></tr><tr><th scope="row">Lower middle income</th><td>1,487</td><td>25.0%</td><td>32.5%</td><td>−7.5</td><td>−10.5 to −4.5</td></tr><tr><th scope="row">Upper middle income</th><td>446</td><td>33.7%</td><td>48.1%</td><td>−14.3</td><td>−22.7 to −4.7</td></tr></tbody></table></div></details><p class="note">Countries with at least 10 national textbooks. The 23 countries whose 95% interval is narrower than 22.0 points (the least difference between two countries the data can detect) come first, lowest gap first; the rest follow alphabetically.</p><details class="dt"><summary>Data table: women in the jobs shown, by country</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by country, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">Papua New Guinea</th><td>14</td><td>0.0%</td><td>50.2%</td><td>−50.2</td><td>−51.3 to −49.1</td></tr><tr><th scope="row">Belarus</th><td>26</td><td>29.6%</td><td>63.5%</td><td>−33.9</td><td>−42.4 to −23.0</td></tr><tr><th scope="row">Sri Lanka</th><td>99</td><td>17.4%</td><td>46.8%</td><td>−29.4</td><td>−35.4 to −22.5</td></tr><tr><th scope="row">South Sudan</th><td>112</td><td>23.3%</td><td>45.4%</td><td>−22.0</td><td>−28.7 to −15.0</td></tr><tr><th scope="row">Rwanda</th><td>121</td><td>26.6%</td><td>44.4%</td><td>−17.8</td><td>−23.5 to −11.0</td></tr><tr><th scope="row">Solomon Islands</th><td>53</td><td>24.4%</td><td>40.1%</td><td>−15.7</td><td>−19.5 to −8.5</td></tr><tr><th scope="row">Greece</th><td>26</td><td>36.6%</td><td>49.9%</td><td>−13.3</td><td>−21.6 to −3.5</td></tr><tr><th scope="row">Kuwait</th><td>34</td><td>31.4%</td><td>44.1%</td><td>−12.6</td><td>−19.4 to −4.9</td></tr><tr><th scope="row">Pakistan</th><td>92</td><td>18.9%</td><td>30.4%</td><td>−11.6</td><td>−16.2 to −6.3</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>24</td><td>37.5%</td><td>48.7%</td><td>−11.2</td><td>−20.5 to −1.1</td></tr><tr><th scope="row">Tajikistan</th><td>10</td><td>21.1%</td><td>31.9%</td><td>−10.8</td><td>−17.3 to +2.8</td></tr><tr><th scope="row">Tunisia</th><td>15</td><td>34.6%</td><td>44.3%</td><td>−9.7</td><td>−20.0 to +1.7</td></tr><tr><th scope="row">West Bank and Gaza</th><td>25</td><td>28.9%</td><td>38.3%</td><td>−9.4</td><td>−17.1 to −1.0</td></tr><tr><th scope="row">United States</th><td>474</td><td>39.9%</td><td>47.7%</td><td>−7.8</td><td>−12.0 to −3.1</td></tr><tr><th scope="row">India</th><td>888</td><td>23.3%</td><td>30.8%</td><td>−7.5</td><td>−9.7 to −5.4</td></tr><tr><th scope="row">Ghana</th><td>119</td><td>39.7%</td><td>46.1%</td><td>−6.3</td><td>−16.8 to +5.1</td></tr><tr><th scope="row">Sudan</th><td>13</td><td>24.8%</td><td>30.0%</td><td>−5.3</td><td>−10.5 to +1.4</td></tr><tr><th scope="row">Bangladesh</th><td>86</td><td>21.2%</td><td>25.3%</td><td>−4.2</td><td>−9.0 to +1.1</td></tr><tr><th scope="row">Samoa</th><td>72</td><td>43.3%</td><td>45.6%</td><td>−2.2</td><td>−10.6 to +3.7</td></tr><tr><th scope="row">Egypt, Arab Rep.</th><td>40</td><td>24.4%</td><td>26.3%</td><td>−2.0</td><td>−9.6 to +8.3</td></tr><tr><th scope="row">Ethiopia</th><td>37</td><td>35.9%</td><td>36.2%</td><td>−0.3</td><td>−8.7 to +7.0</td></tr><tr><th scope="row">Sierra Leone</th><td>39</td><td>36.4%</td><td>33.7%</td><td>+2.8</td><td>−7.3 to +13.8</td></tr><tr><th scope="row">Jordan</th><td>20</td><td>41.8%</td><td>29.7%</td><td>+12.1</td><td>+4.9 to +21.6</td></tr><tr><th scope="row">Australia</th><td>88</td><td>39.8%</td><td>50.1%</td><td>−10.2</td><td>−21.9 to +1.6</td></tr><tr><th scope="row">Azerbaijan</th><td>18</td><td>43.0%</td><td>53.3%</td><td>−10.3</td><td>−21.8 to +0.8</td></tr><tr><th scope="row">Bahrain</th><td>13</td><td>41.7%</td><td>51.2%</td><td>−9.5</td><td>−29.3 to +12.0</td></tr><tr><th scope="row">Bhutan</th><td>19</td><td>42.4%</td><td>34.1%</td><td>+8.3</td><td>−3.8 to +18.9</td></tr><tr><th scope="row">Cambodia</th><td>15</td><td>48.1%</td><td>53.2%</td><td>−5.1</td><td>−17.0 to +7.3</td></tr><tr><th scope="row">Canada</th><td>12</td><td>27.8%</td><td>45.2%</td><td>−17.4</td><td>−38.4 to +16.2</td></tr><tr><th scope="row">Ecuador</th><td>15</td><td>43.5%</td><td>51.2%</td><td>−7.7</td><td>−41.4 to +23.4</td></tr><tr><th scope="row">Guyana</th><td>35</td><td>38.0%</td><td>54.1%</td><td>−16.1</td><td>−25.2 to +1.0</td></tr><tr><th scope="row">Indonesia</th><td>32</td><td>53.6%</td><td>51.5%</td><td>+2.0</td><td>−8.5 to +13.8</td></tr><tr><th scope="row">Kenya</th><td>12</td><td>100.0%</td><td>36.7%</td><td>+63.3</td><td>—</td></tr><tr><th scope="row">Kiribati</th><td>25</td><td>23.5%</td><td>48.8%</td><td>−25.3</td><td>−59.2 to −11.9</td></tr><tr><th scope="row">Maldives</th><td>25</td><td>75.0%</td><td>56.1%</td><td>+18.9</td><td>−20.2 to +50.4</td></tr><tr><th scope="row">Mauritius</th><td>10</td><td>40.0%</td><td>30.2%</td><td>+9.8</td><td>−13.8 to +45.2</td></tr><tr><th scope="row">Nepal</th><td>21</td><td>41.9%</td><td>41.4%</td><td>+0.4</td><td>−19.2 to +22.1</td></tr><tr><th scope="row">Nigeria</th><td>12</td><td>50.0%</td><td>38.0%</td><td>+12.0</td><td>−36.2 to +28.1</td></tr><tr><th scope="row">Oman</th><td>37</td><td>36.7%</td><td>44.2%</td><td>−7.4</td><td>−18.9 to +3.6</td></tr><tr><th scope="row">South Africa</th><td>52</td><td>28.6%</td><td>43.5%</td><td>−14.9</td><td>−24.8 to −2.3</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>53</td><td>33.3%</td><td>46.2%</td><td>−12.8</td><td>−28.1 to +2.8</td></tr><tr><th scope="row">Türkiye</th><td>26</td><td>43.6%</td><td>43.7%</td><td>−0.1</td><td>−10.8 to +12.4</td></tr><tr><th scope="row">Uganda</th><td>37</td><td>36.8%</td><td>35.4%</td><td>+1.4</td><td>−13.2 to +15.5</td></tr><tr><th scope="row">United Kingdom</th><td>21</td><td>48.9%</td><td>39.2%</td><td>+9.7</td><td>−7.6 to +21.4</td></tr><tr><th scope="row">Zimbabwe</th><td>13</td><td>53.4%</td><td>42.8%</td><td>+10.6</td><td>+0.9 to +30.6</td></tr></tbody></table></div></details></section>
+<text class="dl dl-f" x="116.3" y="71" text-anchor="end">In the books</text>
+<text class="dl dl-sq" x="255.7" y="71">Same jobs, labour market</text>
+</svg></div><p class="note">Dots are women&rsquo;s share of the people the books show in a job that can be matched to labour-market data; squares are women&rsquo;s share of the same jobs in the labour market (ILOSTAT); the line joins the two. All national textbooks, then by World Bank region and income group.</p><details class="dt"><summary>Data table: women in the jobs shown, by group</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by group, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by group</caption><thead><tr><th scope="col">Group</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">All national textbooks</th><td>3,225</td><td>28.8%</td><td>37.5%</td><td>−8.7</td><td>−12.2 to −6.5</td></tr><tr><th scope="row">East Asia &amp; Pacific</th><td>329</td><td>33.2%</td><td>44.8%</td><td>−11.7</td><td>−18.6 to −5.1</td></tr><tr><th scope="row">Europe &amp; Central Asia</th><td>135</td><td>34.3%</td><td>48.8%</td><td>−14.6</td><td>−24.4 to −4.3</td></tr><tr><th scope="row">Latin America &amp; Caribbean</th><td>134</td><td>40.4%</td><td>52.8%</td><td>−12.4</td><td>−15.7 to −8.2</td></tr><tr><th scope="row">Middle East, North Africa, Afghanistan &amp; Pakistan</th><td>381</td><td>27.7%</td><td>33.0%</td><td>−5.4</td><td>−9.0 to +0.9</td></tr><tr><th scope="row">North America</th><td>486</td><td>39.3%</td><td>47.6%</td><td>−8.3</td><td>−17.4 to −7.8</td></tr><tr><th scope="row">South Asia</th><td>1,138</td><td>23.5%</td><td>31.0%</td><td>−7.5</td><td>−17.9 to −1.5</td></tr><tr><th scope="row">Sub-Saharan Africa</th><td>622</td><td>32.2%</td><td>42.0%</td><td>−9.8</td><td>−15.8 to −1.9</td></tr><tr><th scope="row">High income</th><td>817</td><td>38.3%</td><td>47.9%</td><td>−9.6</td><td>−13.9 to −7.9</td></tr><tr><th scope="row">Low income</th><td>413</td><td>30.8%</td><td>39.2%</td><td>−8.5</td><td>−15.7 to +4.6</td></tr><tr><th scope="row">Lower middle income</th><td>1,549</td><td>25.1%</td><td>32.5%</td><td>−7.3</td><td>−9.9 to −4.6</td></tr><tr><th scope="row">Upper middle income</th><td>446</td><td>33.7%</td><td>48.1%</td><td>−14.3</td><td>−22.7 to −4.7</td></tr></tbody></table></div></details><p class="note">Countries with at least 10 national textbooks. The 23 countries whose 95% interval is narrower than 21.9 points (the least difference between two countries the data can detect) come first, lowest gap first; the rest follow alphabetically.</p><details class="dt"><summary>Data table: women in the jobs shown, by country</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: women in the jobs shown, by country, scrolls sideways"><table><caption class="vh">Data table: women in the jobs shown, by country</caption><thead><tr><th scope="col">Country</th><th scope="col">Books</th><th scope="col">Women in the books</th><th scope="col">Women in the same jobs</th><th scope="col">Gap</th><th scope="col">95% interval</th></tr></thead><tbody><tr><th scope="row">Papua New Guinea</th><td>14</td><td>0.0%</td><td>50.2%</td><td>−50.2</td><td>−51.4 to −49.1</td></tr><tr><th scope="row">Belarus</th><td>26</td><td>29.6%</td><td>63.5%</td><td>−33.9</td><td>−41.9 to −23.0</td></tr><tr><th scope="row">Sri Lanka</th><td>99</td><td>17.4%</td><td>46.8%</td><td>−29.4</td><td>−35.1 to −23.3</td></tr><tr><th scope="row">South Sudan</th><td>112</td><td>23.3%</td><td>45.4%</td><td>−22.0</td><td>−28.6 to −14.2</td></tr><tr><th scope="row">Rwanda</th><td>121</td><td>26.6%</td><td>44.4%</td><td>−17.8</td><td>−23.9 to −10.3</td></tr><tr><th scope="row">Solomon Islands</th><td>53</td><td>24.4%</td><td>40.1%</td><td>−15.7</td><td>−19.7 to −8.7</td></tr><tr><th scope="row">Greece</th><td>26</td><td>36.6%</td><td>49.9%</td><td>−13.3</td><td>−21.3 to −3.7</td></tr><tr><th scope="row">Kuwait</th><td>34</td><td>31.4%</td><td>44.1%</td><td>−12.6</td><td>−21.0 to −4.7</td></tr><tr><th scope="row">Syrian Arab Republic</th><td>24</td><td>37.5%</td><td>48.7%</td><td>−11.2</td><td>−20.9 to −1.8</td></tr><tr><th scope="row">Tajikistan</th><td>10</td><td>21.1%</td><td>31.9%</td><td>−10.8</td><td>−17.4 to +1.1</td></tr><tr><th scope="row">West Bank and Gaza</th><td>25</td><td>28.9%</td><td>38.3%</td><td>−9.4</td><td>−16.9 to −0.9</td></tr><tr><th scope="row">Pakistan</th><td>147</td><td>21.0%</td><td>30.4%</td><td>−9.4</td><td>−14.0 to −3.8</td></tr><tr><th scope="row">United States</th><td>474</td><td>39.9%</td><td>47.7%</td><td>−7.8</td><td>−11.5 to −3.4</td></tr><tr><th scope="row">India</th><td>888</td><td>23.3%</td><td>30.8%</td><td>−7.5</td><td>−9.6 to −5.4</td></tr><tr><th scope="row">Ghana</th><td>126</td><td>39.6%</td><td>46.1%</td><td>−6.4</td><td>−16.1 to +5.6</td></tr><tr><th scope="row">Sudan</th><td>13</td><td>24.8%</td><td>30.0%</td><td>−5.3</td><td>−10.9 to +1.1</td></tr><tr><th scope="row">Bangladesh</th><td>86</td><td>21.2%</td><td>25.3%</td><td>−4.2</td><td>−8.8 to +0.6</td></tr><tr><th scope="row">Samoa</th><td>72</td><td>43.3%</td><td>45.6%</td><td>−2.2</td><td>−10.7 to +4.8</td></tr><tr><th scope="row">Egypt, Arab Rep.</th><td>40</td><td>24.4%</td><td>26.3%</td><td>−2.0</td><td>−9.9 to +8.3</td></tr><tr><th scope="row">Ethiopia</th><td>37</td><td>35.9%</td><td>36.2%</td><td>−0.3</td><td>−8.7 to +6.9</td></tr><tr><th scope="row">Türkiye</th><td>26</td><td>43.6%</td><td>43.7%</td><td>−0.1</td><td>−10.4 to +11.0</td></tr><tr><th scope="row">Bhutan</th><td>19</td><td>42.4%</td><td>34.1%</td><td>+8.3</td><td>−3.6 to +18.0</td></tr><tr><th scope="row">Jordan</th><td>20</td><td>41.8%</td><td>29.7%</td><td>+12.1</td><td>+5.1 to +21.3</td></tr><tr><th scope="row">Australia</th><td>88</td><td>39.8%</td><td>50.1%</td><td>−10.2</td><td>−23.2 to +3.7</td></tr><tr><th scope="row">Azerbaijan</th><td>18</td><td>43.0%</td><td>53.3%</td><td>−10.3</td><td>−21.4 to +1.4</td></tr><tr><th scope="row">Bahrain</th><td>13</td><td>41.7%</td><td>51.2%</td><td>−9.5</td><td>−33.0 to +16.0</td></tr><tr><th scope="row">Cambodia</th><td>15</td><td>48.1%</td><td>53.2%</td><td>−5.1</td><td>−16.9 to +8.1</td></tr><tr><th scope="row">Canada</th><td>12</td><td>27.8%</td><td>45.2%</td><td>−17.4</td><td>−34.3 to +15.3</td></tr><tr><th scope="row">Ecuador</th><td>15</td><td>43.5%</td><td>51.2%</td><td>−7.7</td><td>−39.9 to +23.8</td></tr><tr><th scope="row">Guyana</th><td>35</td><td>38.0%</td><td>54.1%</td><td>−16.1</td><td>−25.1 to +0.4</td></tr><tr><th scope="row">Indonesia</th><td>32</td><td>53.6%</td><td>51.5%</td><td>+2.0</td><td>−8.9 to +13.9</td></tr><tr><th scope="row">Kenya</th><td>12</td><td>100.0%</td><td>36.7%</td><td>+63.3</td><td>—</td></tr><tr><th scope="row">Kiribati</th><td>25</td><td>23.5%</td><td>48.8%</td><td>−25.3</td><td>−61.3 to −12.5</td></tr><tr><th scope="row">Maldives</th><td>25</td><td>75.0%</td><td>56.1%</td><td>+18.9</td><td>−24.2 to +50.4</td></tr><tr><th scope="row">Mauritius</th><td>10</td><td>40.0%</td><td>30.2%</td><td>+9.8</td><td>−13.8 to +45.2</td></tr><tr><th scope="row">Nepal</th><td>21</td><td>41.9%</td><td>41.4%</td><td>+0.4</td><td>−18.8 to +25.1</td></tr><tr><th scope="row">Nigeria</th><td>12</td><td>50.0%</td><td>38.0%</td><td>+12.0</td><td>−36.2 to +28.1</td></tr><tr><th scope="row">Oman</th><td>37</td><td>36.7%</td><td>44.2%</td><td>−7.4</td><td>−18.7 to +3.5</td></tr><tr><th scope="row">Sierra Leone</th><td>39</td><td>36.4%</td><td>33.7%</td><td>+2.8</td><td>−7.1 to +14.9</td></tr><tr><th scope="row">South Africa</th><td>52</td><td>28.6%</td><td>43.5%</td><td>−14.9</td><td>−24.5 to −2.4</td></tr><tr><th scope="row">St. Kitts and Nevis</th><td>53</td><td>33.3%</td><td>46.2%</td><td>−12.8</td><td>−25.9 to +4.2</td></tr><tr><th scope="row">Tunisia</th><td>15</td><td>34.6%</td><td>44.3%</td><td>−9.7</td><td>−20.5 to +3.4</td></tr><tr><th scope="row">Uganda</th><td>43</td><td>37.1%</td><td>35.0%</td><td>+2.1</td><td>−10.4 to +13.8</td></tr><tr><th scope="row">United Kingdom</th><td>21</td><td>48.9%</td><td>39.2%</td><td>+9.7</td><td>−11.2 to +21.6</td></tr><tr><th scope="row">Zimbabwe</th><td>13</td><td>53.4%</td><td>42.8%</td><td>+10.6</td><td>+0.1 to +32.1</td></tr></tbody></table></div></details></section>
 <p class="note"><a href="../index.html" target="_blank" rel="noopener">Gender in School Textbooks</a>, Center for Global Development. CC-BY 4.0.</p>
 </main></div>
 <script>

@@ -1,14 +1,14 @@
 {
  "built": "2026-11-09",
  "headline": {
-  "books": 3225,
-  "female": 308339,
-  "male": 575561,
+  "books": 3226,
+  "female": 308344,
+  "male": 575570,
   "share": 34.88,
   "countries": 78,
   "ratio": 1.87,
   "paper_books": 1210,
-  "search_books": 1616
+  "search_books": 1617
  },
  "countries": {
   "ranked": [
@@ -70,7 +70,7 @@
    {
     "iso3": "BGD",
     "name": "Bangladesh",
-    "books": 86,
+    "books": 87,
     "model": 86,
     "raw": 26.48,
     "new": false,
@@ -1208,7 +1208,7 @@
   },
   {
    "label": "Science",
-   "books": 371,
+   "books": 372,
    "model": 347,
    "raw": 37.67,
    "adjusted": 35.84,
@@ -2622,9 +2622,9 @@
    {
     "label": "South Asia",
     "countries": 6,
-    "books": 1138,
-    "female": 121961,
-    "male": 272577,
+    "books": 1139,
+    "female": 121966,
+    "male": 272586,
     "share": 30.91
    },
    {
@@ -2656,9 +2656,9 @@
    {
     "label": "Lower middle income",
     "countries": 25,
-    "books": 1549,
-    "female": 172353,
-    "male": 365337,
+    "books": 1550,
+    "female": 172358,
+    "male": 365346,
     "share": 32.05
    },
    {
@@ -2675,9 +2675,9 @@
   {
    "key": "national",
    "label": "National textbooks",
-   "books": 3225,
-   "female": 308339,
-   "male": 575561,
+   "books": 3226,
+   "female": 308344,
+   "male": 575570,
    "share": 34.88
   },
   {
@@ -2691,10 +2691,10 @@
   {
    "key": "readers",
    "label": "Readers and supplementary books",
-   "books": 594,
-   "female": 7346,
-   "male": 11507,
-   "share": 38.96
+   "books": 627,
+   "female": 9623,
+   "male": 11591,
+   "share": 45.36
   },
   {
    "key": "programme",
@@ -2746,23 +2746,23 @@
   }
  ],
  "counts": {
-  "books": 5141,
-  "national": 3225,
+  "books": 5175,
+  "national": 3226,
   "model": 2806,
   "no_share": 132,
   "no_subject": 118,
-  "no_grade": 269,
-  "no_year": 1440,
+  "no_grade": 270,
+  "no_year": 1441,
   "no_share_with_year": 99,
   "paper_with_year": 378,
-  "search_national": 1616,
+  "search_national": 1617,
   "india_i4i": 399,
   "kind_from_title": 22,
   "kind_from_file": 2,
   "parts_combined": 1504,
   "combined_books": 141,
-  "dropped": 1343,
-  "dropped_national": 1233,
+  "dropped": 1355,
+  "dropped_national": 1245,
   "excerpts": 90,
   "excerpt_min_pages": 5,
   "excerpt_max_pages": 22,
@@ -2932,12 +2932,12 @@
    "label": "Achievement words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -0.709,
     "low": -0.851,
     "high": -0.5296,
-    "female": 1.4027,
+    "female": 1.4026,
     "male": 2.1117
    },
    "region": [
@@ -2993,13 +2993,13 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -0.7448,
      "low": -1.3194,
      "high": -0.5112,
-     "female": 1.4577,
-     "male": 2.2025
+     "female": 1.4576,
+     "male": 2.2024
     },
     {
      "group": "Sub-Saharan Africa",
@@ -3035,7 +3035,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -0.6404,
      "low": -0.7082,
@@ -3054,7 +3054,7 @@
      "male": 2.2564
     }
    ],
-   "detectable": 1.438,
+   "detectable": 1.4325,
    "theme": "achievement",
    "name": "Achievement"
   },
@@ -3063,12 +3063,12 @@
    "label": "Appearance words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 0.2783,
-    "low": 0.2265,
+    "low": 0.2264,
     "high": 0.3481,
-    "female": 0.4773,
+    "female": 0.4772,
     "male": 0.199
    },
    "region": [
@@ -3124,7 +3124,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 0.2727,
      "low": 0.2418,
@@ -3166,7 +3166,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 0.2652,
      "low": 0.2146,
@@ -3185,7 +3185,7 @@
      "male": 0.248
     }
    ],
-   "detectable": 0.5752,
+   "detectable": 0.5538,
    "theme": "appearance",
    "name": "Appearance"
   },
@@ -3194,13 +3194,13 @@
    "label": "Family words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 2.093,
     "low": 1.3365,
-    "high": 2.5364,
-    "female": 5.7801,
-    "male": 3.6871
+    "high": 2.5362,
+    "female": 5.78,
+    "male": 3.687
    },
    "region": [
     {
@@ -3255,13 +3255,13 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
-     "value": 2.9419,
+     "value": 2.9418,
      "low": 1.8744,
-     "high": 4.9229,
-     "female": 6.4041,
-     "male": 3.4621
+     "high": 4.9211,
+     "female": 6.4038,
+     "male": 3.462
     },
     {
      "group": "Sub-Saharan Africa",
@@ -3297,13 +3297,13 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
-     "value": 2.5399,
+     "value": 2.5398,
      "low": 1.5689,
-     "high": 3.2238,
-     "female": 5.9871,
-     "male": 3.4471
+     "high": 3.2232,
+     "female": 5.9869,
+     "male": 3.447
     },
     {
      "group": "Upper middle income",
@@ -3316,7 +3316,7 @@
      "male": 4.5068
     }
    ],
-   "detectable": 2.8907,
+   "detectable": 2.8912,
    "theme": "family",
    "name": "Family and the home"
   },
@@ -3325,13 +3325,13 @@
    "label": "Work words near a mention",
    "unit": "per 100 mentions",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -0.3457,
     "low": -0.6326,
     "high": 0.0633,
     "female": 3.4243,
-    "male": 3.7701
+    "male": 3.77
    },
    "region": [
     {
@@ -3386,13 +3386,13 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -0.6532,
      "low": -0.775,
-     "high": -0.1013,
-     "female": 3.2578,
-     "male": 3.9111
+     "high": -0.1017,
+     "female": 3.2577,
+     "male": 3.9109
     },
     {
      "group": "Sub-Saharan Africa",
@@ -3428,13 +3428,13 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -0.4248,
      "low": -0.7127,
-     "high": 0.296,
-     "female": 3.2837,
-     "male": 3.7085
+     "high": 0.2959,
+     "female": 3.2836,
+     "male": 3.7084
     },
     {
      "group": "Upper middle income",
@@ -3447,7 +3447,7 @@
      "male": 4.0949
     }
    ],
-   "detectable": 2.3668,
+   "detectable": 2.3347,
    "theme": "work",
    "name": "Work"
   }
@@ -3458,7 +3458,7 @@
    "label": "Dominance of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -0.0187,
     "low": -0.0281,
@@ -3519,7 +3519,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -0.0253,
      "low": -0.0533,
@@ -3561,7 +3561,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -0.021,
      "low": -0.0375,
@@ -3580,7 +3580,7 @@
      "male": 0.5493
     }
    ],
-   "detectable": 0.1192,
+   "detectable": 0.1174,
    "kind": "Adjectives",
    "scale": "dominance"
   },
@@ -3589,7 +3589,7 @@
    "label": "Valence of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 0.0073,
     "low": -0.0066,
@@ -3650,7 +3650,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 0.0035,
      "low": -0.0355,
@@ -3692,7 +3692,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 0.0067,
      "low": -0.0189,
@@ -3711,7 +3711,7 @@
      "male": 0.6185
     }
    ],
-   "detectable": 0.1434,
+   "detectable": 0.1456,
    "kind": "Adjectives",
    "scale": "valence"
   },
@@ -3720,7 +3720,7 @@
    "label": "Arousal of the adjectives used of them",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 0.0092,
     "low": -0.0001,
@@ -3781,7 +3781,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 0.0157,
      "low": 0.0108,
@@ -3823,7 +3823,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 0.0117,
      "low": -0.0039,
@@ -3842,7 +3842,7 @@
      "male": 0.4847
     }
    ],
-   "detectable": 0.0992,
+   "detectable": 0.1015,
    "kind": "Adjectives",
    "scale": "arousal"
   },
@@ -3851,7 +3851,7 @@
    "label": "Dominance of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -0.0109,
     "low": -0.0139,
@@ -3912,12 +3912,12 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -0.0167,
-     "low": -0.0217,
+     "low": -0.0218,
      "high": -0.0156,
-     "female": 0.5261,
+     "female": 0.526,
      "male": 0.5427
     },
     {
@@ -3954,7 +3954,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -0.0129,
      "low": -0.0153,
@@ -3973,7 +3973,7 @@
      "male": 0.5343
     }
    ],
-   "detectable": 0.0262,
+   "detectable": 0.0265,
    "kind": "Verbs",
    "scale": "dominance"
   },
@@ -3982,7 +3982,7 @@
    "label": "Valence of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 0.0118,
     "low": 0.0088,
@@ -4043,7 +4043,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 0.0061,
      "low": -0.0024,
@@ -4085,7 +4085,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 0.0099,
      "low": 0.007,
@@ -4104,7 +4104,7 @@
      "male": 0.6323
     }
    ],
-   "detectable": 0.0301,
+   "detectable": 0.031,
    "kind": "Verbs",
    "scale": "valence"
   },
@@ -4113,7 +4113,7 @@
    "label": "Arousal of the verbs they are the subject of",
    "unit": "VAD score (0-1)",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -0.0089,
     "low": -0.0116,
@@ -4174,12 +4174,12 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -0.0135,
      "low": -0.016,
      "high": -0.0058,
-     "female": 0.4726,
+     "female": 0.4725,
      "male": 0.486
     },
     {
@@ -4216,12 +4216,12 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -0.0093,
      "low": -0.0131,
      "high": 0.0002,
-     "female": 0.4736,
+     "female": 0.4735,
      "male": 0.4828
     },
     {
@@ -4235,7 +4235,7 @@
      "male": 0.485
     }
    ],
-   "detectable": 0.0257,
+   "detectable": 0.0261,
    "kind": "Verbs",
    "scale": "arousal"
   }
@@ -4246,7 +4246,7 @@
    "label": "Women's share of occupation mentions",
    "unit": "per cent",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 28.928,
     "low": 25.9142,
@@ -4307,7 +4307,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 23.5378,
      "low": 21.2249,
@@ -4349,7 +4349,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 25.2675,
      "low": 23.5175,
@@ -4368,14 +4368,14 @@
      "male": null
     }
    ],
-   "detectable": 21.1641
+   "detectable": 21.3005
   },
   "market": {
    "key": "occ_vs_labour_market",
    "label": "Women's share of the jobs shown, minus their labour-market share of them",
    "unit": "percentage points",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": -8.7113,
     "low": -12.1741,
@@ -4436,7 +4436,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": -7.4863,
      "low": -17.8809,
@@ -4478,7 +4478,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": -7.3414,
      "low": -9.9149,
@@ -4497,194 +4497,194 @@
      "male": 48.0695
     }
    ],
-   "detectable": 21.8884,
+   "detectable": 21.6903,
    "countries": [
     {
      "iso3": "AUS",
      "country": "Australia",
      "books": 88,
      "value": -10.2459,
-     "low": -23.2043,
-     "high": 3.6592,
+     "low": -21.7482,
+     "high": 2.0018,
      "female": 39.823,
      "male": 50.069,
-     "shrunk": -10.0884
+     "shrunk": -10.1188
     },
     {
      "iso3": "AZE",
      "country": "Azerbaijan",
      "books": 18,
      "value": -10.2692,
-     "low": -21.3925,
-     "high": 1.424,
+     "low": -22.4136,
+     "high": -0.3818,
      "female": 43.0279,
      "male": 53.2971,
-     "shrunk": -10.1522
+     "shrunk": -10.1578
     },
     {
      "iso3": "BGD",
      "country": "Bangladesh",
-     "books": 86,
+     "books": 87,
      "value": -4.1569,
-     "low": -8.8145,
-     "high": 0.6386,
+     "low": -8.4881,
+     "high": 0.7329,
      "female": 21.1798,
      "male": 25.3367,
-     "shrunk": -4.1906
+     "shrunk": -4.1891
     },
     {
      "iso3": "BHR",
      "country": "Bahrain",
      "books": 13,
      "value": -9.5164,
-     "low": -33.0352,
-     "high": 15.9861,
+     "low": -31.8583,
+     "high": 17.9629,
      "female": 41.6667,
      "male": 51.1831,
-     "shrunk": -9.2061
+     "shrunk": -9.1915
     },
     {
      "iso3": "BLR",
      "country": "Belarus",
      "books": 26,
      "value": -33.8728,
-     "low": -41.9449,
-     "high": -22.9844,
+     "low": -41.8347,
+     "high": -22.3621,
      "female": 29.6214,
      "male": 63.4941,
-     "shrunk": -32.9634
+     "shrunk": -32.9059
     },
     {
      "iso3": "BTN",
      "country": "Bhutan",
      "books": 19,
      "value": 8.2744,
-     "low": -3.6243,
-     "high": 17.9982,
+     "low": -4.3054,
+     "high": 17.5227,
      "female": 42.3977,
      "male": 34.1232,
-     "shrunk": 7.5436
+     "shrunk": 7.5244
     },
     {
      "iso3": "CAN",
      "country": "Canada",
      "books": 12,
      "value": -17.4497,
-     "low": -34.3211,
-     "high": 15.2998,
+     "low": -38.3852,
+     "high": 18.0361,
      "female": 27.7778,
      "male": 45.2274,
-     "shrunk": -15.5528
+     "shrunk": -15.1108
     },
     {
      "iso3": "ECU",
      "country": "Ecuador",
      "books": 15,
      "value": -7.7033,
-     "low": -39.9299,
-     "high": 23.7718,
+     "low": -39.0502,
+     "high": 25.4973,
      "female": 43.4783,
      "male": 51.1815,
-     "shrunk": -7.7686
+     "shrunk": -7.7644
     },
     {
      "iso3": "EGY",
      "country": "Egypt, Arab Rep.",
      "books": 40,
      "value": -1.977,
-     "low": -9.8867,
-     "high": 8.2843,
+     "low": -9.9591,
+     "high": 8.5731,
      "female": 24.3542,
      "male": 26.3313,
-     "shrunk": -2.1692
+     "shrunk": -2.1778
     },
     {
      "iso3": "ETH",
      "country": "Ethiopia",
      "books": 37,
      "value": -0.3028,
-     "low": -8.6516,
-     "high": 6.9017,
+     "low": -7.818,
+     "high": 6.7693,
      "female": 35.9413,
      "male": 36.2441,
-     "shrunk": -0.4848
+     "shrunk": -0.4644
     },
     {
      "iso3": "GBR",
      "country": "United Kingdom",
      "books": 21,
      "value": 9.7177,
-     "low": -11.1606,
-     "high": 21.5902,
+     "low": -10.157,
+     "high": 21.2419,
      "female": 48.9362,
      "male": 39.2185,
-     "shrunk": 7.9923
+     "shrunk": 8.1071
     },
     {
      "iso3": "GHA",
      "country": "Ghana",
      "books": 126,
      "value": -6.415,
-     "low": -16.0656,
-     "high": 5.6488,
+     "low": -16.5855,
+     "high": 4.3553,
      "female": 39.6491,
      "male": 46.0641,
-     "shrunk": -6.4838
+     "shrunk": -6.4789
     },
     {
      "iso3": "GRC",
      "country": "Greece",
      "books": 26,
      "value": -13.3055,
-     "low": -21.2862,
-     "high": -3.7477,
+     "low": -21.9074,
+     "high": -3.1042,
      "female": 36.5782,
      "male": 49.8837,
-     "shrunk": -13.1434
+     "shrunk": -13.1176
     },
     {
      "iso3": "GUY",
      "country": "Guyana",
      "books": 35,
      "value": -16.1443,
-     "low": -25.1492,
-     "high": 0.438,
+     "low": -25.012,
+     "high": 2.4205,
      "female": 37.963,
      "male": 54.1072,
-     "shrunk": -15.6345
+     "shrunk": -15.5571
     },
     {
      "iso3": "IDN",
      "country": "Indonesia",
      "books": 32,
      "value": 2.0247,
-     "low": -8.9394,
-     "high": 13.9096,
+     "low": -8.0847,
+     "high": 14.3916,
      "female": 53.5714,
      "male": 51.5468,
-     "shrunk": 1.526
+     "shrunk": 1.5379
     },
     {
      "iso3": "IND",
      "country": "India",
      "books": 888,
      "value": -7.5369,
-     "low": -9.6161,
-     "high": -5.4291,
+     "low": -9.6593,
+     "high": -5.5669,
      "female": 23.2947,
      "male": 30.8316,
-     "shrunk": -7.5376
+     "shrunk": -7.5375
     },
     {
      "iso3": "JOR",
      "country": "Jordan",
      "books": 20,
      "value": 12.1179,
-     "low": 5.0985,
-     "high": 21.2752,
+     "low": 5.0169,
+     "high": 20.8761,
      "female": 41.8182,
      "male": 29.7003,
-     "shrunk": 11.6016
+     "shrunk": 11.617
     },
     {
      "iso3": "KEN",
@@ -4701,55 +4701,55 @@
      "country": "Cambodia",
      "books": 15,
      "value": -5.1164,
-     "low": -16.9377,
-     "high": 8.1152,
+     "low": -16.7362,
+     "high": 8.3174,
      "female": 48.1308,
      "male": 53.2473,
-     "shrunk": -5.2841
+     "shrunk": -5.2844
     },
     {
      "iso3": "KIR",
      "country": "Kiribati",
      "books": 25,
      "value": -25.2541,
-     "low": -61.2811,
-     "high": -12.4828,
+     "low": -61.5795,
+     "high": -12.1768,
      "female": 23.5294,
      "male": 48.7835,
-     "shrunk": -21.8939
+     "shrunk": -21.7965
     },
     {
      "iso3": "KNA",
      "country": "St. Kitts and Nevis",
      "books": 53,
      "value": -12.8353,
-     "low": -25.9033,
-     "high": 4.1562,
+     "low": -27.2556,
+     "high": 1.9115,
      "female": 33.3333,
      "male": 46.1686,
-     "shrunk": -12.4247
+     "shrunk": -12.4418
     },
     {
      "iso3": "KWT",
      "country": "Kuwait",
      "books": 34,
      "value": -12.6299,
-     "low": -21.031,
-     "high": -4.6913,
+     "low": -20.2728,
+     "high": -4.3217,
      "female": 31.4286,
      "male": 44.0585,
-     "shrunk": -12.5064
+     "shrunk": -12.5105
     },
     {
      "iso3": "LKA",
      "country": "Sri Lanka",
      "books": 99,
      "value": -29.3525,
-     "low": -35.1022,
-     "high": -23.2647,
+     "low": -35.0293,
+     "high": -22.779,
      "female": 17.4194,
      "male": 46.7718,
-     "shrunk": -29.0534
+     "shrunk": -29.0291
     },
     {
      "iso3": "MDV",
@@ -4757,10 +4757,10 @@
      "books": 25,
      "value": 18.9495,
      "low": -24.1785,
-     "high": 50.4287,
+     "high": 49.1596,
      "female": 75.0,
      "male": 56.0505,
-     "shrunk": 9.2746
+     "shrunk": 9.4347
     },
     {
      "iso3": "MUS",
@@ -4771,7 +4771,7 @@
      "high": 45.1709,
      "female": 40.0,
      "male": 30.2208,
-     "shrunk": 5.1734
+     "shrunk": 5.1461
     },
     {
      "iso3": "NGA",
@@ -4782,216 +4782,216 @@
      "high": 28.1026,
      "female": 50.0,
      "male": 37.9734,
-     "shrunk": 6.1463
+     "shrunk": 6.1127
     },
     {
      "iso3": "NPL",
      "country": "Nepal",
      "books": 21,
      "value": 0.4458,
-     "low": -18.8087,
-     "high": 25.134,
+     "low": -20.3806,
+     "high": 24.8564,
      "female": 41.8605,
      "male": 41.4147,
-     "shrunk": -0.9213
+     "shrunk": -0.9969
     },
     {
      "iso3": "OMN",
      "country": "Oman",
      "books": 37,
      "value": -7.4332,
-     "low": -18.6636,
-     "high": 3.533,
+     "low": -18.4874,
+     "high": 3.9677,
      "female": 36.7232,
      "male": 44.1563,
-     "shrunk": -7.4567
+     "shrunk": -7.4564
     },
     {
      "iso3": "PAK",
      "country": "Pakistan",
      "books": 147,
      "value": -9.3607,
-     "low": -14.0095,
-     "high": -3.7561,
+     "low": -14.3079,
+     "high": -4.205,
      "female": 21.0317,
      "male": 30.3924,
-     "shrunk": -9.3456
+     "shrunk": -9.3457
     },
     {
      "iso3": "PNG",
      "country": "Papua New Guinea",
      "books": 14,
      "value": -50.2204,
-     "low": -51.3509,
-     "high": -49.1242,
+     "low": -51.3695,
+     "high": -49.0746,
      "female": 0.0,
      "male": 50.2204,
-     "shrunk": -50.1992
+     "shrunk": -50.1977
     },
     {
      "iso3": "PSE",
      "country": "West Bank and Gaza",
      "books": 25,
      "value": -9.4217,
-     "low": -16.8917,
-     "high": -0.8938,
+     "low": -16.8149,
+     "high": -0.9712,
      "female": 28.91,
      "male": 38.3316,
-     "shrunk": -9.384
+     "shrunk": -9.3839
     },
     {
      "iso3": "RWA",
      "country": "Rwanda",
      "books": 121,
      "value": -17.8201,
-     "low": -23.8836,
-     "high": -10.3285,
+     "low": -23.5388,
+     "high": -10.9433,
      "female": 26.5896,
      "male": 44.4097,
-     "shrunk": -17.6398
+     "shrunk": -17.6623
     },
     {
      "iso3": "SDN",
      "country": "Sudan",
      "books": 13,
      "value": -5.2624,
-     "low": -10.8931,
-     "high": 1.119,
+     "low": -10.6503,
+     "high": 1.3898,
      "female": 24.7706,
      "male": 30.0331,
-     "shrunk": -5.3007
+     "shrunk": -5.301
     },
     {
      "iso3": "SLB",
      "country": "Solomon Islands",
      "books": 53,
      "value": -15.6834,
-     "low": -19.7205,
-     "high": -8.7014,
+     "low": -19.9641,
+     "high": -8.62,
      "female": 24.4444,
      "male": 40.1279,
-     "shrunk": -15.5895
+     "shrunk": -15.5827
     },
     {
      "iso3": "SLE",
      "country": "Sierra Leone",
      "books": 39,
      "value": 2.7667,
-     "low": -7.0669,
-     "high": 14.8807,
+     "low": -6.899,
+     "high": 15.099,
      "female": 36.4465,
      "male": 33.6797,
-     "shrunk": 2.2704
+     "shrunk": 2.2646
     },
     {
      "iso3": "SSD",
      "country": "South Sudan",
      "books": 112,
      "value": -22.0441,
-     "low": -28.5824,
-     "high": -14.2283,
+     "low": -28.5398,
+     "high": -13.8743,
      "female": 23.3096,
      "male": 45.3538,
-     "shrunk": -21.7563
+     "shrunk": -21.7407
     },
     {
      "iso3": "SYR",
      "country": "Syrian Arab Republic",
      "books": 24,
      "value": -11.2084,
-     "low": -20.8866,
-     "high": -1.8207,
+     "low": -21.1466,
+     "high": -0.9862,
      "female": 37.5,
      "male": 48.7084,
-     "shrunk": -11.0922
+     "shrunk": -11.0771
     },
     {
      "iso3": "TJK",
      "country": "Tajikistan",
      "books": 10,
      "value": -10.8172,
-     "low": -17.3915,
-     "high": 1.0639,
+     "low": -17.4978,
+     "high": 1.3316,
      "female": 21.0526,
      "male": 31.8698,
-     "shrunk": -10.7211
+     "shrunk": -10.7157
     },
     {
      "iso3": "TUN",
      "country": "Tunisia",
      "books": 15,
      "value": -9.6756,
-     "low": -20.5082,
-     "high": 3.4085,
+     "low": -21.1201,
+     "high": 2.9805,
      "female": 34.6369,
      "male": 44.3125,
-     "shrunk": -9.5801
+     "shrunk": -9.5767
     },
     {
      "iso3": "TUR",
      "country": "Türkiye",
      "books": 26,
      "value": -0.0516,
-     "low": -10.4111,
-     "high": 11.0258,
+     "low": -10.2973,
+     "high": 10.8192,
      "female": 43.6364,
      "male": 43.688,
-     "shrunk": -0.4011
+     "shrunk": -0.3934
     },
     {
      "iso3": "UGA",
      "country": "Uganda",
      "books": 43,
      "value": 2.1016,
-     "low": -10.4116,
-     "high": 13.8476,
+     "low": -10.9695,
+     "high": 14.329,
      "female": 37.1429,
      "male": 35.0413,
-     "shrunk": 1.5387
+     "shrunk": 1.4881
     },
     {
      "iso3": "USA",
      "country": "United States",
      "books": 474,
      "value": -7.8478,
-     "low": -11.5148,
-     "high": -3.4406,
+     "low": -12.0188,
+     "high": -3.0916,
      "female": 39.8836,
      "male": 47.7314,
-     "shrunk": -7.8483
+     "shrunk": -7.8482
     },
     {
      "iso3": "WSM",
      "country": "Samoa",
      "books": 72,
      "value": -2.2332,
-     "low": -10.6716,
-     "high": 4.8133,
+     "low": -10.311,
+     "high": 5.0183,
      "female": 43.3255,
      "male": 45.5587,
-     "shrunk": -2.3679
+     "shrunk": -2.366
     },
     {
      "iso3": "ZAF",
      "country": "South Africa",
      "books": 52,
      "value": -14.9268,
-     "low": -24.5007,
-     "high": -2.4,
+     "low": -25.0366,
+     "high": -0.9902,
      "female": 28.5714,
      "male": 43.4982,
-     "shrunk": -14.5976
+     "shrunk": -14.5358
     },
     {
      "iso3": "ZWE",
      "country": "Zimbabwe",
      "books": 13,
      "value": 10.5699,
-     "low": 0.0852,
-     "high": 32.0649,
+     "low": -0.4637,
+     "high": 31.5452,
      "female": 53.4091,
      "male": 42.8392,
-     "shrunk": 8.8375
+     "shrunk": 8.8215
     }
    ]
   },
@@ -5000,7 +5000,7 @@
    "label": "Female share of the jobs they are shown in",
    "unit": "percentage points",
    "all": {
-    "books": 3225,
+    "books": 3226,
     "countries": 78,
     "value": 5.0276,
     "low": 3.2004,
@@ -5061,7 +5061,7 @@
     },
     {
      "group": "South Asia",
-     "books": 1138,
+     "books": 1139,
      "countries": 6,
      "value": 2.5475,
      "low": -3.0407,
@@ -5103,7 +5103,7 @@
     },
     {
      "group": "Lower middle income",
-     "books": 1549,
+     "books": 1550,
      "countries": 25,
      "value": 4.2655,
      "low": 3.0586,
@@ -5122,27 +5122,27 @@
      "male": 0.4675
     }
    ],
-   "detectable": 8.4816
+   "detectable": 8.4867
   }
  },
  "stereo": {
   "computed": "2026-11-09",
-  "books": 3225,
+  "books": 3226,
   "compared": [
    {
     "theme": "achievement",
     "name": "Achievement",
     "counted": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": -0.709,
      "low": -0.851,
      "high": -0.5296,
-     "female": 1.4027,
+     "female": 1.4026,
      "male": 2.1117
     },
     "glove": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": -0.0088,
      "low": -0.0147,
@@ -5158,16 +5158,16 @@
     "theme": "appearance",
     "name": "Appearance",
     "counted": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": 0.2783,
-     "low": 0.2265,
+     "low": 0.2264,
      "high": 0.3481,
-     "female": 0.4773,
+     "female": 0.4772,
      "male": 0.199
     },
     "glove": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": 0.01,
      "low": 0.0055,
@@ -5183,16 +5183,16 @@
     "theme": "family",
     "name": "Family and the home",
     "counted": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": 2.093,
      "low": 1.3365,
-     "high": 2.5364,
-     "female": 5.7801,
-     "male": 3.6871
+     "high": 2.5362,
+     "female": 5.78,
+     "male": 3.687
     },
     "glove": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": 0.0069,
      "low": 0.0012,
@@ -5208,16 +5208,16 @@
     "theme": "work",
     "name": "Work",
     "counted": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": -0.3457,
      "low": -0.6326,
      "high": 0.0633,
      "female": 3.4243,
-     "male": 3.7701
+     "male": 3.77
     },
     "glove": {
-     "books": 3225,
+     "books": 3226,
      "countries": 78,
      "value": -0.0032,
      "low": -0.0083,
@@ -5938,6 +5938,111 @@
      ]
     },
     "skin": {
+     "face": {
+      "rows": [
+       {
+        "key": "all",
+        "label": "All people",
+        "n": 1576,
+        "unclear": 183,
+        "lighter": 46.38,
+        "medium": 52.47,
+        "darker": 1.14
+       },
+       {
+        "key": "photos",
+        "label": "In photos",
+        "n": 559,
+        "unclear": 89,
+        "lighter": 20.75,
+        "medium": 77.1,
+        "darker": 2.15
+       },
+       {
+        "key": "drawings",
+        "label": "In drawings",
+        "n": 855,
+        "unclear": 67,
+        "lighter": 62.34,
+        "medium": 36.96,
+        "darker": 0.7
+       },
+       {
+        "key": "women",
+        "label": "Women and girls",
+        "n": 609,
+        "unclear": 42,
+        "lighter": 51.07,
+        "medium": 48.6,
+        "darker": 0.33
+       },
+       {
+        "key": "men",
+        "label": "Men and boys",
+        "n": 879,
+        "unclear": 122,
+        "lighter": 42.09,
+        "medium": 56.77,
+        "darker": 1.14
+       }
+      ],
+      "agreement": null,
+      "comparison": {
+       "n": 1502,
+       "same": 1154,
+       "by_role": [
+        {
+         "key": "leadership",
+         "label": "Leaders",
+         "n": 169,
+         "lighter_face": 21.89,
+         "lighter_page": 28.4
+        },
+        {
+         "key": "professional",
+         "label": "Professionals",
+         "n": 83,
+         "lighter_face": 56.63,
+         "lighter_page": 49.4
+        },
+        {
+         "key": "service",
+         "label": "Service work",
+         "n": 68,
+         "lighter_face": 32.35,
+         "lighter_page": 38.24
+        },
+        {
+         "key": "manual",
+         "label": "Manual work",
+         "n": 36,
+         "lighter_face": 13.89,
+         "lighter_page": 5.56
+        },
+        {
+         "key": "domestic",
+         "label": "Domestic work",
+         "n": 205,
+         "lighter_face": 40.98,
+         "lighter_page": 25.85
+        },
+        {
+         "key": "student",
+         "label": "Students",
+         "n": 542,
+         "lighter_face": 54.61,
+         "lighter_page": 47.42
+        },
+        {
+         "key": "none",
+         "label": "No role shown",
+         "n": 399,
+         "lighter_face": 53.13,
+         "lighter_page": 45.36
+        }
+       ]
+      }
+     },
      "eye": {
       "rows": [
        {

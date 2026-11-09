@@ -5641,6 +5641,7 @@
     "pages": 10984,
     "pages_with_pictures": 2135,
     "people": 5223,
+    "screened_out": 0,
     "gendered": 4238,
     "share": 34.24,
     "women": 1451,
@@ -6574,18 +6575,529 @@
       ]
      }
     }
+   },
+   {
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "books": 95,
+    "pages": 760,
+    "pages_with_pictures": 728,
+    "people": 3101,
+    "screened_out": 2061,
+    "gendered": 2706,
+    "share": 35.22,
+    "women": 953,
+    "roles": [
+     {
+      "key": "leadership",
+      "label": "Leaders",
+      "n": 141,
+      "share": 12.06
+     },
+     {
+      "key": "professional",
+      "label": "Professionals",
+      "n": 121,
+      "share": 47.11
+     },
+     {
+      "key": "service",
+      "label": "Service work",
+      "n": 140,
+      "share": 49.29
+     },
+     {
+      "key": "manual",
+      "label": "Manual work",
+      "n": 189,
+      "share": 21.16
+     },
+     {
+      "key": "domestic",
+      "label": "Domestic work",
+      "n": 462,
+      "share": 51.3
+     },
+     {
+      "key": "student",
+      "label": "Students",
+      "n": 997,
+      "share": 33.0
+     },
+     {
+      "key": "none",
+      "label": "No role shown",
+      "n": 656,
+      "share": 31.1
+     }
+    ],
+    "ages": [
+     {
+      "key": "child",
+      "label": "Children",
+      "n": 1702,
+      "share": 33.14
+     },
+     {
+      "key": "adult",
+      "label": "Adults",
+      "n": 951,
+      "share": 39.43
+     },
+     {
+      "key": "older",
+      "label": "Older people",
+      "n": 35,
+      "share": 28.57
+     }
+    ],
+    "prominence": [
+     {
+      "key": "main",
+      "label": "Main figure",
+      "n": 2136,
+      "share": 38.01
+     },
+     {
+      "key": "background",
+      "label": "Background figure",
+      "n": 570,
+      "share": 24.74
+     }
+    ],
+    "setting": [
+     {
+      "key": "home",
+      "label": "At home",
+      "n": 448,
+      "share": 48.66
+     },
+     {
+      "key": "school",
+      "label": "At school",
+      "n": 579,
+      "share": 30.22
+     },
+     {
+      "key": "work",
+      "label": "At work",
+      "n": 163,
+      "share": 28.83
+     },
+     {
+      "key": "public",
+      "label": "In public",
+      "n": 307,
+      "share": 36.16
+     },
+     {
+      "key": "outdoors",
+      "label": "Outdoors",
+      "n": 633,
+      "share": 33.49
+     },
+     {
+      "key": "none",
+      "label": "No setting",
+      "n": 576,
+      "share": 32.99
+     }
+    ],
+    "activity": [
+     {
+      "key": "stem",
+      "label": "Science or technology",
+      "female": 1.05,
+      "male": 2.45,
+      "n_women": 10,
+      "n_men": 43
+     },
+     {
+      "key": "sport",
+      "label": "Sport",
+      "female": 3.88,
+      "male": 6.62,
+      "n_women": 37,
+      "n_men": 116
+     },
+     {
+      "key": "active",
+      "label": "Active",
+      "female": 63.59,
+      "male": 53.34,
+      "n_women": 606,
+      "n_men": 935
+     },
+     {
+      "key": "passive",
+      "label": "Passive",
+      "female": 31.48,
+      "male": 37.59,
+      "n_women": 300,
+      "n_men": 659
+     }
+    ],
+    "dress": [
+     {
+      "key": "traditional",
+      "label": "Traditional dress",
+      "female": 15.63,
+      "male": 3.99,
+      "n_women": 149,
+      "n_men": 70
+     },
+     {
+      "key": "western",
+      "label": "Western dress",
+      "female": 50.05,
+      "male": 57.56,
+      "n_women": 477,
+      "n_men": 1009
+     },
+     {
+      "key": "uniform",
+      "label": "Uniform",
+      "female": 28.96,
+      "male": 32.23,
+      "n_women": 276,
+      "n_men": 565
+     },
+     {
+      "key": "unclear",
+      "label": "Dress unclear",
+      "female": 5.35,
+      "male": 6.22,
+      "n_women": 51,
+      "n_men": 109
+     }
+    ],
+    "head": {
+     "female": 11.96,
+     "male": 3.25,
+     "n_women": 953,
+     "n_men": 1753
+    },
+    "kinds": [
+     {
+      "key": "drawing",
+      "label": "Drawings",
+      "pages": 550,
+      "share": 75.55
+     },
+     {
+      "key": "photo",
+      "label": "Photos",
+      "pages": 124,
+      "share": 17.03
+     },
+     {
+      "key": "mixed",
+      "label": "Drawings and photos",
+      "pages": 54,
+      "share": 7.42
+     }
+    ],
+    "local": [
+     {
+      "key": "local",
+      "label": "Local",
+      "pages": 450,
+      "share": 61.81
+     },
+     {
+      "key": "foreign",
+      "label": "Foreign",
+      "pages": 32,
+      "share": 4.4
+     },
+     {
+      "key": "mixed",
+      "label": "Local and foreign",
+      "pages": 3,
+      "share": 0.41
+     },
+     {
+      "key": "unclear",
+      "label": "Unclear",
+      "pages": 243,
+      "share": 33.38
+     }
+    ],
+    "disability": {
+     "people": 29,
+     "women": 10,
+     "men": 18,
+     "pages": 26,
+     "flagged": 32,
+     "false_alarms": 3,
+     "unchecked": 0,
+     "sign_chart_figures": 0
+    },
+    "named": {
+     "people": 66,
+     "women": 12,
+     "men": 54,
+     "top": [
+      {
+       "name": "General Lafayette",
+       "count": 1
+      },
+      {
+       "name": "Samori Toure",
+       "count": 1
+      },
+      {
+       "name": "Grégoire Kayibanda",
+       "count": 1
+      },
+      {
+       "name": "Voltaire",
+       "count": 1
+      },
+      {
+       "name": "Mikhail Gorbachev",
+       "count": 1
+      },
+      {
+       "name": "Winnie Madikizela-Mandela",
+       "count": 1
+      },
+      {
+       "name": "George Bernard Shaw",
+       "count": 1
+      },
+      {
+       "name": "Trygve Lie",
+       "count": 1
+      },
+      {
+       "name": "Dag Hammarskjöld",
+       "count": 1
+      },
+      {
+       "name": "U Thant",
+       "count": 1
+      }
+     ]
+    },
+    "skin": {
+     "face": null,
+     "eye": null,
+     "pixels": null
+    },
+    "scatter": [
+     {
+      "title": "Rwanda · Grade 2 · Maths · MATH P2-SB",
+      "words": 38.24,
+      "pictures": 23.19,
+      "n": 69
+     },
+     {
+      "title": "Rwanda · Grade 2 · English · ENGLISH P2",
+      "words": 44.79,
+      "pictures": 39.62,
+      "n": 53
+     },
+     {
+      "title": "Rwanda · Grade 1 · English · English P1_",
+      "words": 43.07,
+      "pictures": 38.36,
+      "n": 73
+     },
+     {
+      "title": "Rwanda · Grade 1 · Maths · MATH P1",
+      "words": 43.48,
+      "pictures": 53.57,
+      "n": 56
+     },
+     {
+      "title": "Rwanda · Grade 3 · Science · SET P3 SB",
+      "words": 41.67,
+      "pictures": 39.53,
+      "n": 43
+     },
+     {
+      "title": "Rwanda · Grade 2 · English · PA00M87K",
+      "words": 45.24,
+      "pictures": 59.18,
+      "n": 49
+     },
+     {
+      "title": "Rwanda · Grade 3 · English · English p3",
+      "words": 53.26,
+      "pictures": 31.25,
+      "n": 64
+     },
+     {
+      "title": "P2: Social and Religious Studies PB",
+      "words": 44.08,
+      "pictures": 38.16,
+      "n": 152
+     },
+     {
+      "title": "P1: Revised Social Studies and Religious Education PB",
+      "words": 50.98,
+      "pictures": 42.25,
+      "n": 142
+     },
+     {
+      "title": "Read Aloud P3 Term 2",
+      "words": 88.24,
+      "pictures": 42.31,
+      "n": 104
+     },
+     {
+      "title": "Read Aloud P3 Term 3",
+      "words": 47.47,
+      "pictures": 42.71,
+      "n": 96
+     },
+     {
+      "title": "Read aloud P2 Term 2",
+      "words": 37.5,
+      "pictures": 38.46,
+      "n": 78
+     },
+     {
+      "title": "Read aloud P2 Term 1",
+      "words": 8.33,
+      "pictures": 29.31,
+      "n": 58
+     },
+     {
+      "title": "P6: Revised English PB",
+      "words": 50.72,
+      "pictures": 37.7,
+      "n": 61
+     },
+     {
+      "title": "P3: Social and Religious Studies PB",
+      "words": 46.02,
+      "pictures": 32.32,
+      "n": 99
+     },
+     {
+      "title": "Read aloud P2 Term 3",
+      "words": 0.0,
+      "pictures": 27.14,
+      "n": 70
+     },
+     {
+      "title": "P1: Revised SET PB",
+      "words": 100.0,
+      "pictures": 29.73,
+      "n": 74
+     },
+     {
+      "title": "P2: Revised SET PB",
+      "words": 13.33,
+      "pictures": 29.73,
+      "n": 37
+     },
+     {
+      "title": "P4: Revised Social and Religious Studies PB",
+      "words": 39.23,
+      "pictures": 57.14,
+      "n": 35
+     },
+     {
+      "title": "Read Aloud p1 term 2",
+      "words": 59.26,
+      "pictures": 31.08,
+      "n": 74
+     },
+     {
+      "title": "P5: Revised Social and Religious Studies PB",
+      "words": 17.69,
+      "pictures": 34.09,
+      "n": 44
+     },
+     {
+      "title": "S6: General Studies and Communication Skills SB",
+      "words": 48.14,
+      "pictures": 37.21,
+      "n": 43
+     },
+     {
+      "title": "P4: Revised Creative Arts",
+      "words": 60.98,
+      "pictures": 50.0,
+      "n": 36
+     },
+     {
+      "title": "P5: Revised SET PB",
+      "words": 70.9,
+      "pictures": 35.42,
+      "n": 48
+     },
+     {
+      "title": "S2: Religious and Ethics SB",
+      "words": 12.57,
+      "pictures": 5.41,
+      "n": 37
+     },
+     {
+      "title": "P6: Revised Social and Religious Studies PB",
+      "words": 23.3,
+      "pictures": 33.33,
+      "n": 48
+     },
+     {
+      "title": "P5: Revised English PB",
+      "words": 54.62,
+      "pictures": 40.58,
+      "n": 69
+     },
+     {
+      "title": "Entrepreneurship S1 SB",
+      "words": 51.0,
+      "pictures": 38.0,
+      "n": 50
+     },
+     {
+      "title": "Read Aloud P1 Term 3",
+      "words": 64.58,
+      "pictures": 34.25,
+      "n": 73
+     },
+     {
+      "title": "Read Alound P3 Term1",
+      "words": 54.0,
+      "pictures": 61.47,
+      "n": 109
+     },
+     {
+      "title": "P6: Revised SET PB",
+      "words": 51.15,
+      "pictures": 21.62,
+      "n": 37
+     },
+     {
+      "title": "Read Aloud p1 Term 1",
+      "words": 41.54,
+      "pictures": 21.37,
+      "n": 131
+     },
+     {
+      "title": "P4: Revised English PB",
+      "words": 60.7,
+      "pictures": 26.0,
+      "n": 50
+     }
+    ],
+    "detail": null
    }
   ],
   "pooled": {
-   "countries": 1,
-   "books": 367,
-   "pages": 10984,
-   "people": 5223,
-   "gendered": 4238,
-   "share": 34.24,
-   "leaders": 429,
-   "leaders_share": 7.23,
-   "disability": 11
+   "countries": 2,
+   "books": 462,
+   "pages": 11744,
+   "people": 8324,
+   "gendered": 6944,
+   "share": 34.62,
+   "leaders": 570,
+   "leaders_share": 8.42,
+   "disability": 40
   }
  }
 }

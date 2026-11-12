@@ -5897,12 +5897,12 @@
      "men": 3242,
      "top": [
       {
-       "name": "Mahatma Gandhi",
-       "count": 80
+       "name": "Shivaji",
+       "count": 111
       },
       {
-       "name": "Chhatrapati Shivaji Maharaj",
-       "count": 39
+       "name": "Mahatma Gandhi",
+       "count": 80
       },
       {
        "name": "Jawaharlal Nehru",
@@ -5914,10 +5914,6 @@
       },
       {
        "name": "Swami Vivekananda",
-       "count": 15
-      },
-      {
-       "name": "Shivaji Maharaj",
        "count": 15
       },
       {
@@ -5935,6 +5931,10 @@
       {
        "name": "Pandita Ramabai",
        "count": 9
+      },
+      {
+       "name": "Subhas Chandra Bose",
+       "count": 8
       }
      ]
     },
@@ -9803,7 +9803,7 @@
      "top": [
       {
        "name": "Muhammad Ali Jinnah",
-       "count": 36
+       "count": 33
       },
       {
        "name": "Allama Iqbal",
@@ -9811,10 +9811,14 @@
       },
       {
        "name": "Benazir Bhutto",
-       "count": 4
+       "count": 3
       },
       {
        "name": "Dr Ruth Pfau",
+       "count": 3
+      },
+      {
+       "name": "Fatima Jinnah",
        "count": 3
       },
       {
@@ -9835,10 +9839,6 @@
       },
       {
        "name": "Theodor Schwann",
-       "count": 2
-      },
-      {
-       "name": "Rudolf Virchow",
        "count": 2
       }
      ]
@@ -37800,7 +37800,171 @@
      "n": 6116,
      "share": 31.13
     }
-   ]
+   ],
+   "settings": [
+    {
+     "key": "home",
+     "label": "At home",
+     "n": 17407,
+     "share": 52.24
+    },
+    {
+     "key": "school",
+     "label": "At school",
+     "n": 24011,
+     "share": 48.1
+    },
+    {
+     "key": "work",
+     "label": "At work",
+     "n": 8627,
+     "share": 30.89
+    },
+    {
+     "key": "public",
+     "label": "In public",
+     "n": 23886,
+     "share": 33.3
+    },
+    {
+     "key": "outdoors",
+     "label": "Outdoors",
+     "n": 53745,
+     "share": 36.78
+    }
+   ],
+   "named": {
+    "people": 10442,
+    "women": 1577,
+    "men": 8823,
+    "top": [
+     {
+      "name": "Shivaji",
+      "count": 111
+     },
+     {
+      "name": "Mahatma Gandhi",
+      "count": 81
+     },
+     {
+      "name": "Heydar Aliyev",
+      "count": 58
+     },
+     {
+      "name": "Muhammad Ali Jinnah",
+      "count": 34
+     },
+     {
+      "name": "Jawaharlal Nehru",
+      "count": 26
+     },
+     {
+      "name": "Isaac Newton",
+      "count": 23
+     },
+     {
+      "name": "Queen Elizabeth II",
+      "count": 20
+     },
+     {
+      "name": "Simon Bolivar",
+      "count": 17
+     },
+     {
+      "name": "Allama Iqbal",
+      "count": 17
+     },
+     {
+      "name": "George Washington",
+      "count": 16
+     }
+    ],
+    "named_by_name": 3257,
+    "top_women": [
+     {
+      "name": "Queen Elizabeth II",
+      "count": 20
+     },
+     {
+      "name": "Savitribai Phule",
+      "count": 14
+     },
+     {
+      "name": "Pandita Ramabai",
+      "count": 9
+     },
+     {
+      "name": "Begum Hazrat Mahal",
+      "count": 7
+     },
+     {
+      "name": "Indira Gandhi",
+      "count": 6
+     },
+     {
+      "name": "Lata Mangeshkar",
+      "count": 6
+     },
+     {
+      "name": "Rani Lakshmibai",
+      "count": 6
+     },
+     {
+      "name": "Rani Abbakka Devi",
+      "count": 6
+     },
+     {
+      "name": "Aruna Asaf Ali",
+      "count": 5
+     },
+     {
+      "name": "Kasturba Gandhi",
+      "count": 5
+     }
+    ],
+    "top_men": [
+     {
+      "name": "Shivaji",
+      "count": 110
+     },
+     {
+      "name": "Mahatma Gandhi",
+      "count": 81
+     },
+     {
+      "name": "Heydar Aliyev",
+      "count": 58
+     },
+     {
+      "name": "Muhammad Ali Jinnah",
+      "count": 34
+     },
+     {
+      "name": "Jawaharlal Nehru",
+      "count": 26
+     },
+     {
+      "name": "Isaac Newton",
+      "count": 23
+     },
+     {
+      "name": "Simon Bolivar",
+      "count": 17
+     },
+     {
+      "name": "Allama Iqbal",
+      "count": 17
+     },
+     {
+      "name": "George Washington",
+      "count": 16
+     },
+     {
+      "name": "Thomas Jefferson",
+      "count": 16
+     }
+    ]
+   }
   }
  }
 }

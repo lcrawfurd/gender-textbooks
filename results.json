@@ -37964,7 +37964,27 @@
       "count": 16
      }
     ]
-   }
+   },
+   "grades": [
+    {
+     "key": "primary",
+     "label": "Primary (grades 1–6)",
+     "n": 106793,
+     "share": 43.47
+    },
+    {
+     "key": "lower",
+     "label": "Lower secondary (7–9)",
+     "n": 29787,
+     "share": 35.29
+    },
+    {
+     "key": "upper",
+     "label": "Upper secondary (10–13)",
+     "n": 15815,
+     "share": 31.2
+    }
+   ]
   }
  }
 }

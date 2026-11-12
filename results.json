@@ -37736,7 +37736,71 @@
    "share": 40.57,
    "leaders": 14124,
    "leaders_share": null,
-   "disability": 40
+   "disability": 40,
+   "roles": [
+    {
+     "key": "leadership",
+     "label": "Leaders",
+     "n": 14124,
+     "share": 7.04
+    },
+    {
+     "key": "professional",
+     "label": "Professionals",
+     "n": 9990,
+     "share": 42.13
+    },
+    {
+     "key": "service",
+     "label": "Service work",
+     "n": 8533,
+     "share": 30.09
+    },
+    {
+     "key": "manual",
+     "label": "Manual work",
+     "n": 11405,
+     "share": 20.89
+    },
+    {
+     "key": "domestic",
+     "label": "Domestic work",
+     "n": 20847,
+     "share": 59.09
+    },
+    {
+     "key": "student",
+     "label": "Students",
+     "n": 79802,
+     "share": 47.06
+    },
+    {
+     "key": "none",
+     "label": "No role shown",
+     "n": 65362,
+     "share": 38.69
+    }
+   ],
+   "ages": [
+    {
+     "key": "child",
+     "label": "Children",
+     "n": 129192,
+     "share": 45.08
+    },
+    {
+     "key": "adult",
+     "label": "Adults",
+     "n": 74074,
+     "share": 33.51
+    },
+    {
+     "key": "older",
+     "label": "Older people",
+     "n": 6116,
+     "share": 31.13
+    }
+   ]
   }
  }
 }

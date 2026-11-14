@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12",
+ "built": "2026-11-13",
  "headline": {
   "books": 3226,
   "female": 308344,
@@ -5630,14 +5630,14 @@
   ]
  },
  "pictures": {
-  "made": "2026-11-12",
+  "made": "2026-11-13",
   "manual": "images-3",
   "min_n": 30,
   "countries": [
    {
     "iso3": "IND",
     "name": "India",
-    "books": 8755,
+    "books": 3031,
     "pages": 25659,
     "pages_with_pictures": 24520,
     "people": 104287,
@@ -8789,6 +8789,10 @@
        "count": 2
       },
       {
+       "name": "Simón Bolívar",
+       "count": 2
+      },
+      {
        "name": "Rene Caillie",
        "count": 2
       },
@@ -8798,10 +8802,6 @@
       },
       {
        "name": "Betico Croes",
-       "count": 1
-      },
-      {
-       "name": "Simon Bolivar",
        "count": 1
       },
       {
@@ -12638,8 +12638,8 @@
      "men": 337,
      "top": [
       {
-       "name": "Simon Bolivar",
-       "count": 13
+       "name": "Simón Bolívar",
+       "count": 32
       },
       {
        "name": "Simon Rodriguez",
@@ -12950,6 +12950,10 @@
      "men": 69,
      "top": [
       {
+       "name": "Simón Bolívar",
+       "count": 2
+      },
+      {
        "name": "Julio Ramón Ribeyro",
        "count": 1
       },
@@ -12959,10 +12963,6 @@
       },
       {
        "name": "Louis Pasteur",
-       "count": 1
-      },
-      {
-       "name": "Simon Bolivar",
        "count": 1
       },
       {
@@ -15134,7 +15134,7 @@
        "count": 1
       },
       {
-       "name": "Simon Bolivar",
+       "name": "Simón Bolívar",
        "count": 1
       },
       {
@@ -15805,6 +15805,10 @@
        "count": 1
       },
       {
+       "name": "Simón Bolívar",
+       "count": 1
+      },
+      {
        "name": "Manuel Francisco Gran Guilledo",
        "count": 1
       },
@@ -15818,10 +15822,6 @@
       },
       {
        "name": "Maximo Gomez Baez",
-       "count": 1
-      },
-      {
-       "name": "Don Fernando Ortiz",
        "count": 1
       }
      ]
@@ -17561,7 +17561,7 @@
    {
     "iso3": "GHA",
     "name": "Ghana",
-    "books": 511,
+    "books": 154,
     "pages": 351,
     "pages_with_pictures": 330,
     "people": 1520,
@@ -22415,7 +22415,7 @@
    {
     "iso3": "LKA",
     "name": "Sri Lanka",
-    "books": 50,
+    "books": 31,
     "pages": 183,
     "pages_with_pictures": 176,
     "people": 625,
@@ -23980,7 +23980,7 @@
    {
     "iso3": "TWN",
     "name": "Taiwan, China",
-    "books": 47,
+    "books": 7,
     "pages": 84,
     "pages_with_pictures": 83,
     "people": 348,
@@ -29736,7 +29736,7 @@
    {
     "iso3": "BRN",
     "name": "Brunei Darussalam",
-    "books": 29,
+    "books": 4,
     "pages": 43,
     "pages_with_pictures": 43,
     "people": 98,
@@ -34977,7 +34977,7 @@
    {
     "iso3": "CZE",
     "name": "Czechia",
-    "books": 29,
+    "books": 4,
     "pages": 9,
     "pages_with_pictures": 9,
     "people": 14,
@@ -37729,7 +37729,7 @@
   ],
   "pooled": {
    "countries": 97,
-   "books": 15862,
+   "books": 9672,
    "pages": 75965,
    "people": 243893,
    "gendered": 210063,
@@ -37851,6 +37851,10 @@
       "count": 58
      },
      {
+      "name": "Simón Bolívar",
+      "count": 39
+     },
+     {
       "name": "Muhammad Ali Jinnah",
       "count": 34
      },
@@ -37867,10 +37871,6 @@
       "count": 20
      },
      {
-      "name": "Simon Bolivar",
-      "count": 17
-     },
-     {
       "name": "Allama Iqbal",
       "count": 17
      },
@@ -37879,7 +37879,7 @@
       "count": 16
      }
     ],
-    "named_by_name": 3257,
+    "named_by_name": 3277,
     "top_women": [
      {
       "name": "Queen Elizabeth II",
@@ -37936,6 +37936,10 @@
       "count": 58
      },
      {
+      "name": "Simón Bolívar",
+      "count": 39
+     },
+     {
       "name": "Muhammad Ali Jinnah",
       "count": 34
      },
@@ -37946,10 +37950,6 @@
      {
       "name": "Isaac Newton",
       "count": 23
-     },
-     {
-      "name": "Simon Bolivar",
-      "count": 17
      },
      {
       "name": "Allama Iqbal",

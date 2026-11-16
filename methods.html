@@ -376,8 +376,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   country, or the world where ILOSTAT has no figure. The mapping is in the repository
   (research/stereo/lists/occupation_isco.csv).</p>
 <p><strong>Estimates.</strong> Each value pools the counts of the books it covers. Intervals
-  come from 500 resamples of whole countries (books in one country are alike); a country&rsquo;s
-  own interval resamples its books. Each measure states the least difference between two
+  come from 500 resamples of whole countries (books in one country are alike); a group of fewer
+  than five countries, such as North America, resamples books within its countries instead, since
+  resampling two or three countries gives intervals that can miss the group&rsquo;s own value. A
+  country&rsquo;s own interval resamples its books. In the jobs table a country needs at least
+  100 people shown in a job that can be matched to labour-market data. Each measure states the least difference between two
   countries that the data can detect, and only countries whose interval is narrower than it are
   ranked. The research files (research/stereo/estimates.csv) also give each country with at least
   10 national textbooks a value shrunk towards the mean of all countries in

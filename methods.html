@@ -347,10 +347,20 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Country characteristics</h2>
 <p>From the World Bank API, the most recent value for each country, if from 2010 or
   later:</p><ul><li>GDP per head, PPP (constant international dollars) (<code>NY.GDP.PCAP.PP.KD</code>)</li><li>Gender parity index of gross secondary school enrolment (<code>SE.ENR.SECO.FM.ZS</code>)</li><li>Seats held by women in national parliaments (%) (<code>SG.GEN.PARL.ZS</code>)</li><li>Female labour-force participation (% of women 15+, ILO modelled estimate) (<code>SL.TLF.CACT.FE.ZS</code>)</li></ul>
-<p>Each country-characteristics panel is an unweighted least-squares line through the ranked
-  countries&rsquo; adjusted shares; it ignores the uncertainty of each share, uses
-  Student&rsquo;s <em>t</em> for its interval, and is not the paper&rsquo;s book-level regression
-  (which found a positive link with income).</p>
+<p>The index of equal laws is the World Bank&rsquo;s Women, Business and the Law 2026 score
+  (version 1.0, 0 to 100, from the file on wbl.worldbank.org): how far a country&rsquo;s laws
+  treat women and men alike in mobility, work, pay, marriage, parenthood, entrepreneurship,
+  assets and pensions.</p>
+<p>The slope in each country-characteristics caption comes from a book-level regression: each
+  national textbook&rsquo;s female share (of gendered words, or of the people pictured) on its
+  country&rsquo;s characteristic, with a term for each subject group and grade band. Each country
+  carries the same total weight, shared among its books by their gendered words or people, so a
+  country with many books does not dominate. Standard errors are clustered by country and the
+  95% interval uses Student&rsquo;s <em>t</em> on the number of countries less one. The line
+  drawn has that slope and passes through the countries&rsquo; average; the correlation is
+  between the countries&rsquo; shares. The words panels use the ranked countries&rsquo; adjusted
+  shares; the pictures panels every country with at least the picture minimum of people, a
+  dot&rsquo;s area growing with them up to 2,000.</p>
 
 <h2 id="stereotypes">Stereotype measures</h2>
 <p>The three stereotype sections measure what the 2024 paper measured for its whole corpus, now
@@ -438,7 +448,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 3464</li><li><code>embed/collections.html</code>, height 1018</li><li><code>embed/themes.html</code>, height 807</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 4004</li><li><code>embed/collections.html</code>, height 1018</li><li><code>embed/themes.html</code>, height 807</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2334&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

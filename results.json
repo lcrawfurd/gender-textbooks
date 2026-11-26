@@ -44335,5 +44335,6633 @@
     }
    }
   ]
+ },
+ "named_people": {
+  "AFG": {
+   "books": 9,
+   "people": [
+    {
+     "name": "Ali ibn Abi Talib",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mirwais Nika",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Akram Osman",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Amanullah Khan",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Grace Hopper",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Gustave Eiffel",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Habibullah Khan",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mahmud Hotak",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Richard Blechynden",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Sher Shah Suri",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Jefferson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Timur Shah Durrani",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "AUS": {
+   "books": 88,
+   "people": [
+    {
+     "name": "George Orwell",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Kingsford Smith",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Greg Norman",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "James Cook",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Marsden",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Matthew Flinders",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mother Teresa",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Roald Dahl",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Sally Pearson",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Thor Heyerdahl",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Barack Obama",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Bert Hinkler",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christopher Columbus",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Unaipon",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Elizabeth Macarthur",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Emily Dickinson",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Jeannie Baker",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "John Macarthur",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lady Gaga",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Lores Bonney",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Marco Polo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mary Wade",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Muhammad Ali",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "AZE": {
+   "books": 18,
+   "people": [
+    {
+     "name": "Heydar Aliyev",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ilham Aliyev",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mikayil Mushfig",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ada Lovelace",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Amelia Earhart",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Ann Makosinski",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Frida Kahlo",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Lee Hadwin",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Louis Braille",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mehriban Aliyeva",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Melati Wijsen",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Oprah Winfrey",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Pablo Picasso",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Zeynalabdin Taghiyev",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Frank Epperson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Quinones",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mark Boyle",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mir Jalal Pashayev",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nellie Bly",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Rashid Behbudov",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Rowan Atkinson",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Teymur Rajabov",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Zion Clark",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "BGD": {
+   "books": 87,
+   "people": [
+    {
+     "name": "Sheikh Mujibur Rahman",
+     "books": 16,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kazi Nazrul Islam",
+     "books": 11,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gautama Buddha",
+     "books": 10,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Jesus",
+     "books": 9,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Zainul Abedin",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Adam",
+     "books": 6,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Begum Rokeya",
+     "books": 6,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Umar ibn al-Khattab",
+     "books": 6,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abraham",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ayub Khan",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bimbisara",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Krishna",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Moses",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Queen Victoria",
+     "books": 5,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Syed Nazrul Islam",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abd al-Muttalib",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gabriel",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "George Harrison",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Helen Keller",
+     "books": 4,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Israfil",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Kamal Hossain",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mary, mother of Jesus",
+     "books": 4,
+     "gender": "female",
+     "kind": "religious"
+    }
+   ]
+  },
+  "BLR": {
+   "books": 26,
+   "people": [
+    {
+     "name": "Prince William",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bill Gates",
+     "books": 7,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Francysk Skaryna",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Roald Dahl",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Steven Spielberg",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Winston Churchill",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yakub Kolas",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yanka Kupala",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Arthur Conan Doyle",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Beckham",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Henry Ford",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kate Middleton",
+     "books": 5,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Marc Chagall",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Jackson",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Saint Patrick",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Angelina Jolie",
+     "books": 4,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Benjamin Franklin",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Brad Pitt",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Emma Watson",
+     "books": 4,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Isaac Asimov",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "BLZ": {
+   "books": 4,
+   "people": [
+    {
+     "name": "Barack Obama",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Bob Marley",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Malala Yousafzai",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Louis Stevenson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Toor Pekai Yousafzai",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Ziauddin Yousafzai",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "BTN": {
+   "books": 19,
+   "people": [
+    {
+     "name": "Robert Browning",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Mills Gayley",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jones Very",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kenn Nesbitt",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Pema Lingpa",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Thomas Wyatt",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Ellery Leonard",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Anne Hathaway",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Gary Paulsen",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Helen Keller",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Condell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Asimov",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Hall",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Heminges",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mary Arden",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Padmasambhava",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Richard Burbage",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Greene",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ruskin Bond",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Walter Scott",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Will Kempe",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Amy Tan",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Anne Frank",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    }
+   ]
+  },
+  "CAN": {
+   "books": 12,
+   "people": [
+    {
+     "name": "Alfred Waddington",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Andrew Paull",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bill Reid",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Dan Cranmer",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dan George",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Daniel Harmon",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dave Elliott",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "David Neel",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Doreen Jensen",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Dorothy Grant",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Duncan Campbell Scott",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Edward Curtis",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Frank Calder",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Franz Boas",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gabriel Dumont",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "George Blondin",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George Manuel",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Harry Assu",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Douglas",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Sewid",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jeannette Armstrong",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "John Wesley",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Johnny Chillihitzia",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph Trutch",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Juan Perez",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "CPV": {
+   "books": 6,
+   "people": [
+    {
+     "name": "Germano Almeida",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alicia Keys",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Amanda Gorman",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Aretha Franklin",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Aristides Pereira",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Augustus Pugin",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bob Marley",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Childish Gambino",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Eddie Murphy",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George Clooney",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Gracelino Barbosa",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Julia Roberts",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Kanye West",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mayra Andrade",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Merit-Ptah",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Tito Paris",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "CUB": {
+   "books": 8,
+   "people": [
+    {
+     "name": "Che Guevara",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Fidel Castro",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ignacio Agramonte",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Pujols",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alejo Carpentier",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alice Walker",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Antonio Maceo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Camilo Cienfuegos",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charlie Chaplin",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Cirilo Villaverde",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Felix Savon",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Harry Belafonte",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Javier Sotomayor",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Justin Timberlake",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Legna Verdecia",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Louis Braille",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Luis Ulacia",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Miguel de Cervantes",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Rigoberta Menchu",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Rita del Prado",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Steven Spielberg",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "DMA": {
+   "books": 6,
+   "people": [
+    {
+     "name": "Brian Lara",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Carl Hooper",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Chris Gayle",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Cissie Caudeiron",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Emmanuel Christopher Loblack",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Bonsack",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Venn",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Saint Peter",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Shivnarine Chanderpaul",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Washington Duke",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Herschel",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yuri Gagarin",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "DZA": {
+   "books": 1,
+   "people": [
+    {
+     "name": "Christopher Columbus",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marco Polo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Rudyard Kipling",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Whoopi Goldberg",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "ECU": {
+   "books": 15,
+   "people": [
+    {
+     "name": "Alexander Graham Bell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Akim Camara",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Andre Rieu",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Gonzalo Endara Crow",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jamie Cullum",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Glenn",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jorge Drexler",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Justin Bieber",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Katy Perry",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Marta Gomez",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Ripley",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Steven Spielberg",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Story Musgrave",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shockley",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Yann Martel",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "EGY": {
+   "books": 40,
+   "people": [
+    {
+     "name": "Prophet Muhammad",
+     "books": 18,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 8,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ahmed Zewail",
+     "books": 7,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mohamed Salah",
+     "books": 7,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abraham",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ahmed el-Tayeb",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ali ibn Abi Talib",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Magdi Yacoub",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Tutankhamun",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Umar ibn al-Khattab",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Hurairah",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Talib",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Gabriel",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Hassan Fathy",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jesus",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Khalid ibn al-Walid",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Nour El Sherbini",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Pope Francis",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Taha Hussein",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abd Allah ibn Abbas",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abd Allah ibn Umar",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Jahl",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Lahab",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Aisha",
+     "books": 2,
+     "gender": "female",
+     "kind": "religious"
+    }
+   ]
+  },
+  "EST": {
+   "books": 1,
+   "people": [
+    {
+     "name": "Astrid Lindgren",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Ilon Wikland",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "ETH": {
+   "books": 37,
+   "people": [
+    {
+     "name": "Haile Selassie",
+     "books": 8,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Tirunesh Dibaba",
+     "books": 6,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Abebech Gobena",
+     "books": 5,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Camara Laye",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Hooke",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Antoine Lavoisier",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bill Gates",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Dmitri Mendeleev",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Heinrich Hertz",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Moseley",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Dalton",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Newlands",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kebede Michael",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kofi Annan",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kwame Nkrumah",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Faraday",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Miruts Yifter",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Niels Bohr",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "FJI": {
+   "books": 9,
+   "people": [
+    {
+     "name": "Carl Friedrich Gauss",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Cook",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nikolai Lobachevsky",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Blaise Pascal",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Edward Wright",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kamisese Mara",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Lala Sukuna",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Stifel",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Pierre Bouguer",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Bunsen",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Recorde",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Simon Stevin",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Harriot",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Tycho Brahe",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "FSM": {
+   "books": 2,
+   "people": [
+    {
+     "name": "Andon Amaraich",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Arno Senfft",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bethwell Henry",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Carl Boeder",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Ramarui",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Dwight Heine",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Edward Johnston",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Harry Truman",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Nanpei",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jacob Nena",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John F. Kennedy",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Mangefel",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Sigrah",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "King George",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lazarus Salii",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Luther Gulick",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Max Iriarte",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Logan",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ronald Reagan",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Susan Sturges",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Tosiwo Nakayama",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Victor Uherbelau",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Adolph Capelle",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Andrew Cheyne",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bailey Olter",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "GBR": {
+   "books": 21,
+   "people": [
+    {
+     "name": "Charles Dickens",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Florence Nightingale",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Jesse Owens",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "GHA": {
+   "books": 126,
+   "people": [
+    {
+     "name": "Kwame Nkrumah",
+     "books": 16,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ablade Glover",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ibrahim Mahama",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jesus",
+     "books": 6,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Efua Sutherland",
+     "books": 5,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Andreas Riis",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chinua Achebe",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Gabriel Okara",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kofi Awoonor",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mamle Wolo",
+     "books": 4,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ama Ata Aidoo",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Diana Hamilton",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Jerry Rawlings",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Joe Mettle",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ola Rotimi",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Serge Attukwei Clottey",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Wilfred Owen",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Kentridge",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yaw Asare",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Yinka Shonibare",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "GRC": {
+   "books": 26,
+   "people": [
+    {
+     "name": "Leonardo da Vinci",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Vincent van Gogh",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Elvis Presley",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Louis Braille",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Pablo Picasso",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Tom Cruise",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jacqueline Wilson",
+     "books": 4,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "John Lennon",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Nikos Kazantzakis",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Andrew Lloyd Webber",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Guy Fawkes",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Hans Christian Andersen",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marie Curie",
+     "books": 3,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Pyrros Dimas",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Steven Spielberg",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Agatha Christie",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alki Zei",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Ben Affleck",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Elizabeth I",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    }
+   ]
+  },
+  "GRD": {
+   "books": 1,
+   "people": [
+    {
+     "name": "Didacus Jules",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Dwight Venner",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Eric Williams",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Grantley Adams",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Compton",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Maurice Bishop",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Norman Manley",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Paul Southwell",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Pedro Arias Davila",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ralph Gonsalves",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Wilfred Jacobs",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "GUM": {
+   "books": 1,
+   "people": [
+    {
+     "name": "Alejandro Parreno",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Andres de Urdaneta",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Aniceto Ibanez del Carmen",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Damian de Esplana",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Diego Luis de San Vitores",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Felipe de la Corte",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Francis Drake",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Francisco Esquerra",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Francisco Irisarri",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Francisco Solano",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "George Anson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ignatius of Loyola",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "John Clipperton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jose Bernardo Palomo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jose Ganga Herrero",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jose de Arlegui",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jose de Medinilla",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jose de Quiroga",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mariana of Austria",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Mariano Tobias",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Olivier van Noort",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Pablo Perez",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Woodes Rogers",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "GUY": {
+   "books": 35,
+   "people": [
+    {
+     "name": "Cheddi Jagan",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Brian Lara",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Carl Hooper",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Forbes Burnham",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Hubert Nathaniel Critchlow",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Janet Jagan",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Johnny Appleseed",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Clive Lloyd",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Walter Raleigh",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "IDN": {
+   "books": 32,
+   "people": [
+    {
+     "name": "Lionel Messi",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "IND": {
+   "books": 766,
+   "people": [
+    {
+     "name": "Mahatma Gandhi",
+     "books": 128,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jawaharlal Nehru",
+     "books": 81,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Indira Gandhi",
+     "books": 35,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Rajendra Prasad",
+     "books": 35,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "A. P. J. Abdul Kalam",
+     "books": 34,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 33,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Karl Marx",
+     "books": 33,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Vallabhbhai Patel",
+     "books": 32,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Swami Vivekananda",
+     "books": 31,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 28,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bal Gangadhar Tilak",
+     "books": 27,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Guru Nanak",
+     "books": 27,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Michael Faraday",
+     "books": 27,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Shivaji",
+     "books": 27,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bhagat Singh",
+     "books": 26,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chandragupta Maurya",
+     "books": 25,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gautama Buddha",
+     "books": 25,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Sarojini Naidu",
+     "books": 25,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Amartya Sen",
+     "books": 24,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "B. R. Ambedkar",
+     "books": 24,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 24,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Sachin Tendulkar",
+     "books": 24,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Subhas Chandra Bose",
+     "books": 23,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Vasco da Gama",
+     "books": 23,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jesus",
+     "books": 22,
+     "gender": "male",
+     "kind": "religious"
+    }
+   ]
+  },
+  "JAM": {
+   "books": 3,
+   "people": [
+    {
+     "name": "Benjamin Robert Haydon",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "JOR": {
+   "books": 20,
+   "people": [
+    {
+     "name": "Abdullah II of Jordan",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Arthur Conan Doyle",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Buzz Aldrin",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Dorothy Hodgkin",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Guglielmo Marconi",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Miguel de Cervantes",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Percy Spencer",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Sheku Kanneh-Mason",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Thomas Edison",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yasser Al-Masri",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alessandro Volta",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Anna Sewell",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Chris Milk",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George Clooney",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Helen Keller",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Ibn al-Haytham",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lance Armstrong",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Laura Buxton",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mohanna Durra",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Nabil Sawalha",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Neil Papworth",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "KHM": {
+   "books": 15,
+   "people": [
+    {
+     "name": "Norodom of Cambodia",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Beckham",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Norodom Sihanouk",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert H. Goddard",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ros Serey Sothea",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Vann Molyvann",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Yuri Gagarin",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "KIR": {
+   "books": 25,
+   "people": [
+    {
+     "name": "Alan Paton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chiang Kai-shek",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Fidel Castro",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George W. Bush",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jimmy Carter",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mao Zedong",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Otto Braun",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Richard Nixon",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Saddam Hussein",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Zhu De",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "KNA": {
+   "books": 53,
+   "people": [
+    {
+     "name": "Christopher Columbus",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isabella I of Castile",
+     "books": 4,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Denzil Douglas",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Thomas Warner",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Edgar Allan Poe",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Harrison Prosper",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Henry the Navigator",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jeffrey Dellimore",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kim Collins",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mark Brantley",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Thomas Lecky",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Timothy Harris",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Chris Brown",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Clara Barton",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Cuthbert Sebastian",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Eminem",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George Washington",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gertrude Ederle",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "James Somerset",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Magic Johnson",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Paul Southwell",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Samuel Sharpe",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Fowell Buxton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Wilberforce",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "KWT": {
+   "books": 34,
+   "people": [
+    {
+     "name": "Mishal Al-Ahmad Al-Jaber Al-Sabah",
+     "books": 8,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "George Eliot",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Abdul Rahman Al-Sumait",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ahmad Meshari Al-Adwani",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Anne Sullivan",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Helen Keller",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph (son of Jacob)",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "King Henry",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Laszlo Biro",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marcel Bich",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mohammad Al-Sharekh",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Moses",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Mubarak Al-Sabah",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Richard III of England",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "LBY": {
+   "books": 1,
+   "people": [
+    {
+     "name": "James Cameron",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kate Winslet",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Peter Jackson",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Louis Stevenson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "LKA": {
+   "books": 99,
+   "people": [
+    {
+     "name": "Jesus",
+     "books": 12,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Mary, mother of Jesus",
+     "books": 8,
+     "gender": "female",
+     "kind": "religious"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Parakramabahu I",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christopher Columbus",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Devanampiya Tissa",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kalinga Magha",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kashyapa I",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kirti Sri Rajasinha",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mahasena",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Blaise Pascal",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Pope Pius",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Prince Vijaya",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Rajadhi Rajasinha",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bhatikabhaya",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dudley Senanayake",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Isaiah",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mahinda (monk)",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Knox",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Sri Vijaya Rajasinha",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Edison",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "MDV": {
+   "books": 25,
+   "people": [
+    {
+     "name": "Mahatma Gandhi",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    }
+   ]
+  },
+  "MLT": {
+   "books": 6,
+   "people": [
+    {
+     "name": "Antoine Lavoisier",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mikhail Lomonosov",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Carl Bosch",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Carl Wilhelm Scheele",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Claude Louis Berthollet",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Daniel Rutherford",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dmitri Mendeleev",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Elizabeth Fulhame",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Ernest Rutherford",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Eugene Houdry",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "F. Herbert Bormann",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Fritz Haber",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gilbert N. Lewis",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Cavendish",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Louis Le Chatelier",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Irving Langmuir",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "J. J. Thomson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jean Perrin",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Dalton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Kidd",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Mayow",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph Black",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph Priestley",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph Proust",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Louis Pasteur",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "MRT": {
+   "books": 7,
+   "people": [
+    {
+     "name": "Alexander Fleming",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gamal Abdel Nasser",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mike Tyson",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Muhammad al-Bukhari",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Umar ibn al-Khattab",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    }
+   ]
+  },
+  "NAM": {
+   "books": 6,
+   "people": [
+    {
+     "name": "Charles Darwin",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ed Harris",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Elphinstone Dayrell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Dean",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jesus",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Leonardo DiCaprio",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mariah Carey",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Seretse Khama",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Sheila Hocken",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "NGA": {
+   "books": 12,
+   "people": [
+    {
+     "name": "Ladi Kwali",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "NPL": {
+   "books": 21,
+   "people": [
+    {
+     "name": "Charles Babbage",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "OMN": {
+   "books": 37,
+   "people": [
+    {
+     "name": "Haitham bin Tariq",
+     "books": 13,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ahmad ibn Majid",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Beckham",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Isadore Sharp",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Pablo Picasso",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Percy Spencer",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Qaboos bin Said",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Gair",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Rusty Haight",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Terry Fox",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Frank Epperson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Guy Fawkes",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Vanessa-Mae",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "PAK": {
+   "books": 147,
+   "people": [
+    {
+     "name": "Prophet Muhammad",
+     "books": 24,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Muhammad Ali Jinnah",
+     "books": 17,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Muhammad Iqbal",
+     "books": 17,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ali ibn Abi Talib",
+     "books": 11,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abdullah ibn Abd al-Muttalib",
+     "books": 10,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Liaquat Ali Khan",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Shah Abdul Latif Bhittai",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 9,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Adam",
+     "books": 9,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Faraday",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Muhammad bin Qasim",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Syed Ahmad Khan",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Umar ibn al-Khattab",
+     "books": 8,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Uthman ibn Affan",
+     "books": 8,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abraham",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Talib",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Aisha",
+     "books": 7,
+     "gender": "female",
+     "kind": "religious"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Khadija",
+     "books": 7,
+     "gender": "female",
+     "kind": "religious"
+    },
+    {
+     "name": "Abd al-Muttalib",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benazir Bhutto",
+     "books": 6,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Fatima Jinnah",
+     "books": 6,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Fatimah",
+     "books": 6,
+     "gender": "female",
+     "kind": "religious"
+    },
+    {
+     "name": "Georg Ohm",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "PAN": {
+   "books": 4,
+   "people": [
+    {
+     "name": "Olga Sinclair",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Roberto Duran",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Belisario Porras",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Brad Pitt",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Danilo Perez",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Eileen Coparropa",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Irving Saladino",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jackie Chan",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jake Nava",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Cabot",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Joseph Fourier",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Juan Gabriel",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Justine Pasek",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "L.A. Reid",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Laurentino Cortizo",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Luciano Pavarotti",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Michelle Obama",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Oprah Winfrey",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Osvaldo Ayala",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Saint Patrick",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Vincent van Gogh",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Yvette Lewis",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "PNG": {
+   "books": 14,
+   "people": [
+    {
+     "name": "Benjamin Franklin",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Edison",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Khufu",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "PSE": {
+   "books": 25,
+   "people": [
+    {
+     "name": "Mahmoud Darwish",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Umm Kulthum",
+     "books": 3,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Saladin",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Abu Jahl",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Arthur Conan Doyle",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dr. Seuss",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dwight Howard",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Edward Said",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Erin Langworthy",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Freya Stark",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "G. K. Chesterton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ibn Battuta",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jacques Cousteau",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Marie Curie",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Nick Hornby",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Louis Stevenson",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Rines",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Steve Jobs",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Tim Dinsdale",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Valentina Tereshkova",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "RWA": {
+   "books": 121,
+   "people": [
+    {
+     "name": "Jesus",
+     "books": 13,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Mutara III Rudahigwa",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 9,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Adolf Hitler",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Fred Rwigema",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kwame Nkrumah",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benjamin Franklin",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Carl Peters",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dominique Mbonyumutwa",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Gabriel",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Gregoire Kayibanda",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kigeli IV Rwabugiri",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michel Rwagasana",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Paul Kagame",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Thomas Jefferson",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chinua Achebe",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Franklin D. Roosevelt",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "George Orwell",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gregory Stanton",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Joseph Hirth",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "SDN": {
+   "books": 13,
+   "people": [
+    {
+     "name": "Mo Farah",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Muhammad Ali",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abebe Bikila",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gene Cernan",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Harrison Schmitt",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ibn Battuta",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jules Verne",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Louis Pasteur",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Muhammad Ahmad",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abu Bakr",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Agatha Christie",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Ibrahim El-Salahi",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Marco Polo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Osman Digna",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "SLB": {
+   "books": 53,
+   "people": [
+    {
+     "name": "Alvaro de Mendana",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abel Tasman",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gabriel",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Jesus",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Thomas Becket",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Aethelberht of Kent",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Anna Sewell",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Bob Marley",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Eve Merriam",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Fletcher Christian",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "H. Rider Haggard",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Harun al-Rashid",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Heinrich Cornelius Agrippa",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John F. Kennedy",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mary Wollstonecraft",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Mother Teresa",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "SLE": {
+   "books": 39,
+   "people": [
+    {
+     "name": "William Shakespeare",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Wordsworth",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Colley Cibber",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Frost",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chinua Achebe",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Hans Christian Andersen",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Keats",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Pepper Clark",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mariama Ba",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Oliver Goldsmith",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Winston Churchill",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marie Curie",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    }
+   ]
+  },
+  "SLV": {
+   "books": 5,
+   "people": [
+    {
+     "name": "Alberto Masferrer",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Francisco Gavidia",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kobe Bryant",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Michael Jackson",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Selena Quintanilla",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "SSD": {
+   "books": 112,
+   "people": [
+    {
+     "name": "Jesus",
+     "books": 16,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "John Garang",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Salva Kiir",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "David",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 7,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Nelson Mandela",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Gabriel",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Isaiah",
+     "books": 5,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christopher Columbus",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kofi Annan",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mahatma Gandhi",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Faraday",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Saint Peter",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Adolf Hitler",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Daniel Comboni",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Daniel Deng Atong",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Elijah",
+     "books": 3,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Karl Marx",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Malala Yousafzai",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Mary Magdalene",
+     "books": 3,
+     "gender": "female",
+     "kind": "religious"
+    },
+    {
+     "name": "Muhammad Ali",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "SYR": {
+   "books": 24,
+   "people": [
+    {
+     "name": "Thomas Edison",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Walt Disney",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Leonardo da Vinci",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Vincent van Gogh",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Adel Emam",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ahlam Mosteghanemi",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Asma al-Assad",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Chris Grosser",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Edward Jenner",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John C. Maxwell",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Logie Baird",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Khalil Gibran",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marie Curie",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Jordan",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Peter Jackson",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert F. Kennedy",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Tom Cruise",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Winston Churchill",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Agatha Christie",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Alan Emtage",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Cristiano Ronaldo",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "TJK": {
+   "books": 10,
+   "people": [
+    {
+     "name": "Dilshod Nazarov",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles Dickens",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Emomali Rahmon",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bobojon Gafurov",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Sadriddin Aini",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jack London",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mirzo Tursunzoda",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Yuri Gagarin",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abolqasem Lahouti",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Maltz",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benjamin Hall",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Barry",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christopher Columbus",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Dymphna Cusack",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Edward Jenner",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Florence Nightingale",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "George Bernard Shaw",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "George Washington",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Henry Wadsworth Longfellow",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ismail Samani",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "TON": {
+   "books": 3,
+   "people": [
+    {
+     "name": "Edward W. Dolch",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ella Jenkins",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  },
+  "TUN": {
+   "books": 15,
+   "people": [
+    {
+     "name": "Alexander Fleming",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alfred Nobel",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Beckham",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Diana, Princess of Wales",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Maria Montessori",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Melissa Poe",
+     "books": 2,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Tom Cruise",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alexander Melville Bell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Anne Sullivan",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Lamb",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Helen Keller",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Helen Mirren",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Ibn Khaldun",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Joyce",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Watt",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jesse Gelsinger",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Grisham",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Macy",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ken Kutaragi",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Louis Armstrong",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Muhammad Ali",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Polly Thomson",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    }
+   ]
+  },
+  "TUR": {
+   "books": 26,
+   "people": [
+    {
+     "name": "Mete Gazoz",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "UGA": {
+   "books": 43,
+   "people": [
+    {
+     "name": "Jesus",
+     "books": 6,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Yoweri Museveni",
+     "books": 4,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Semei Kakungulu",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Apolo Kagwa",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Darwin",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Milton Obote",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Nuwa Mbaguta",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Prophet Muhammad",
+     "books": 2,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Ahmed Ben Bella",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Alan Lakein",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "David",
+     "books": 1,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Florence Nightingale",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Francis William Aston",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Gamal Abdel Nasser",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Harry Thuku",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Hastings Kamuzu Banda",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ignatius Musaazi",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Irving Fisher",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Hannington",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Kwame Nkrumah",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lord Aberdeen",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lord Palmerston",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Louis Leakey",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marie Antoinette",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Muhammad Bello",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "USA": {
+   "books": 474,
+   "people": [
+    {
+     "name": "George Washington",
+     "books": 29,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Jefferson",
+     "books": 20,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 17,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christopher Columbus",
+     "books": 16,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benjamin Franklin",
+     "books": 15,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Franklin D. Roosevelt",
+     "books": 14,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Theodore Roosevelt",
+     "books": 12,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Madison",
+     "books": 11,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Paul Revere",
+     "books": 11,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Adolf Hitler",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Elizabeth I",
+     "books": 10,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "John F. Kennedy",
+     "books": 10,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mark Twain",
+     "books": 10,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 10,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "John Adams",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 9,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Patrick Henry",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Thomas Edison",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Andrew Jackson",
+     "books": 8,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "King James",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Walt Whitman",
+     "books": 7,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Buzz Aldrin",
+     "books": 6,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Edgar Allan Poe",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "UZB": {
+   "books": 4,
+   "people": [
+    {
+     "name": "David Beckham",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Yuri Gagarin",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Francis Bacon",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marco Polo",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Neil Armstrong",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Timur",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ahmad Donish",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Amelia Earhart",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Anne Frank",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Antonio Vivaldi",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Arthur Fry",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles III",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Charles Strite",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Clifford Berry",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Constantin Perskyi",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Eadweard Muybridge",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Fazliddin Gaibnazarov",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Frank Drake",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "George Bernard Shaw",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Hubert Cecil Booth",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ibn Battuta",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Asimov",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "James Cook",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Atanasoff",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Logie Baird",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "WSM": {
+   "books": 72,
+   "people": [
+    {
+     "name": "Robert Louis Stevenson",
+     "books": 9,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 6,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Albert Wendt",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Graeme Lay",
+     "books": 5,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Rupert Brooke",
+     "books": 5,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Jesus",
+     "books": 4,
+     "gender": "male",
+     "kind": "religious"
+    },
+    {
+     "name": "Tupua Tamasese Lealofi III",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Wordsworth",
+     "books": 4,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abel Tasman",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Anne Frank",
+     "books": 3,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Cherie Barford",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Helen Clark",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Martin Luther King Jr.",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Pablo Picasso",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Queen Victoria",
+     "books": 3,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Rosa Parks",
+     "books": 3,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Stevie Wonder",
+     "books": 3,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abraham Lincoln",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Adolf Hitler",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benito Mussolini",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Brian Lima",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "David Tua",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Fatu Feu'u",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Henry Ward Beecher",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isadora Duncan",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    }
+   ]
+  },
+  "YEM": {
+   "books": 8,
+   "people": [
+    {
+     "name": "Ibn Battuta",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Cook",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Agatha Christie",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Graham Bell",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Edmund Hillary",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Mike Powell",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Samuel Morse",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Shah Jahan",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Tenzing Norgay",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Vasco da Gama",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "ZAF": {
+   "books": 52,
+   "people": [
+    {
+     "name": "Nelson Mandela",
+     "books": 7,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Albert Einstein",
+     "books": 3,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Alexander Fleming",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Fritz Haber",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "John Dalton",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Marie Curie",
+     "books": 2,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Roald Dahl",
+     "books": 2,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Boyle",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "William Shakespeare",
+     "books": 2,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Antonie van Leeuwenhoek",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Bryan Habana",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Carl Linnaeus",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Christiaan Huygens",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Ernest Rutherford",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Isaac Newton",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Lewis Carroll",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Niels Bohr",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Pierre Curie",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Robert Hooke",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Siya Kolisi",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    }
+   ]
+  },
+  "ZMB": {
+   "books": 4,
+   "people": [
+    {
+     "name": "Rene Descartes",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    }
+   ]
+  },
+  "ZWE": {
+   "books": 13,
+   "people": [
+    {
+     "name": "Aaron Jacha",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Abel Muzorewa",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Abraham Twala",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Benjamin Burombo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Charles Mzingeli",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Chido Govera",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Clements Kadalie",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "David Lloyd George",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "George Nyandoro",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Georges Clemenceau",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Haile Selassie",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "James Chikerema",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Jason Moyo",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Joshua Nkomo",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kenneth Kaunda",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Kwame Nkrumah",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Leopold Takawira",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Margaret Thatcher",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    },
+    {
+     "name": "Martha Ngano",
+     "books": 1,
+     "gender": "female",
+     "kind": "historical"
+    },
+    {
+     "name": "Michael Mawema",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Morton Malianga",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Ndabaningi Sithole",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Mugabe",
+     "books": 1,
+     "gender": "male",
+     "kind": "modern"
+    },
+    {
+     "name": "Robert Sambo",
+     "books": 1,
+     "gender": "male",
+     "kind": "historical"
+    },
+    {
+     "name": "Tererai Trent",
+     "books": 1,
+     "gender": "female",
+     "kind": "modern"
+    }
+   ]
+  }
  }
 }

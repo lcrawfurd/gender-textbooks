@@ -2888,6 +2888,738 @@
     "books": 2903,
     "countries": 41
    }
+  },
+  {
+   "key": "sigi",
+   "label": "Discriminatory institutions",
+   "axis": "OECD SIGI score (0 none to 100 absolute)",
+   "log": false,
+   "points": [
+    {
+     "iso3": "PAK",
+     "name": "Pakistan",
+     "x": 59.7,
+     "y": 29.02,
+     "value": 59.7
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 53.4,
+     "y": 30.0,
+     "value": 53.4
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 43.0,
+     "y": 32.4,
+     "value": 43.0
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 49.3,
+     "y": 33.97,
+     "value": 49.3
+    },
+    {
+     "iso3": "SSD",
+     "name": "South Sudan",
+     "x": 40.6,
+     "y": 34.28,
+     "value": 40.6
+    },
+    {
+     "iso3": "BTN",
+     "name": "Bhutan",
+     "x": 32.9,
+     "y": 36.06,
+     "value": 32.9
+    },
+    {
+     "iso3": "TJK",
+     "name": "Tajikistan",
+     "x": 40.0,
+     "y": 36.3,
+     "value": 40.0
+    },
+    {
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 30.6,
+     "y": 37.41,
+     "value": 30.6
+    },
+    {
+     "iso3": "USA",
+     "name": "United States",
+     "x": 19.1,
+     "y": 38.71,
+     "value": 19.1
+    },
+    {
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 64.6,
+     "y": 39.42,
+     "value": 64.6
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 23.0,
+     "y": 40.7,
+     "value": 23.0
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 18.9,
+     "y": 40.92,
+     "value": 18.9
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 17.0,
+     "y": 41.07,
+     "value": 17.0
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 27.4,
+     "y": 41.4,
+     "value": 27.4
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 15.4,
+     "y": 41.79,
+     "value": 15.4
+    },
+    {
+     "iso3": "GBR",
+     "name": "United Kingdom",
+     "x": 12.0,
+     "y": 41.91,
+     "value": 12.0
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 47.8,
+     "y": 41.98,
+     "value": 47.8
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 30.8,
+     "y": 42.02,
+     "value": 30.8
+    },
+    {
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 51.0,
+     "y": 42.42,
+     "value": 51.0
+    },
+    {
+     "iso3": "RWA",
+     "name": "Rwanda",
+     "x": 19.0,
+     "y": 43.05,
+     "value": 19.0
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 58.5,
+     "y": 43.35,
+     "value": 58.5
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 39.5,
+     "y": 43.8,
+     "value": 39.5
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 29.8,
+     "y": 44.87,
+     "value": 29.8
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 46.5,
+     "y": 45.29,
+     "value": 46.5
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 38.2,
+     "y": 48.97,
+     "value": 38.2
+    },
+    {
+     "iso3": "IDN",
+     "name": "Indonesia",
+     "x": 44.6,
+     "y": 49.46,
+     "value": 44.6
+    },
+    {
+     "iso3": "KHM",
+     "name": "Cambodia",
+     "x": 21.7,
+     "y": 50.36,
+     "value": 21.7
+    },
+    {
+     "iso3": "KEN",
+     "name": "Kenya",
+     "x": 32.9,
+     "y": 51.04,
+     "value": 32.9
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 24.0,
+     "y": 51.13,
+     "value": 24.0
+    },
+    {
+     "iso3": "ZWE",
+     "name": "Zimbabwe",
+     "x": 19.3,
+     "y": 68.77,
+     "value": 19.3
+    }
+   ],
+   "missing": [
+    "Maldives",
+    "Solomon Islands",
+    "St. Kitts and Nevis",
+    "Papua New Guinea",
+    "Samoa",
+    "Guyana",
+    "Syrian Arab Republic",
+    "Oman",
+    "Belarus",
+    "Kuwait",
+    "Kiribati"
+   ],
+   "fit": {
+    "slope": -0.19,
+    "intercept": 48.715,
+    "lo": -0.33,
+    "hi": -0.05,
+    "r": -0.38,
+    "books": 2526,
+    "countries": 30
+   }
+  },
+  {
+   "key": "att_leaders",
+   "label": "Men better leaders",
+   "axis": "Adults agreeing men make better political leaders (%)",
+   "log": false,
+   "points": [
+    {
+     "iso3": "MDV",
+     "name": "Maldives",
+     "x": 51.0,
+     "y": 28.48,
+     "value": 51.0
+    },
+    {
+     "iso3": "PAK",
+     "name": "Pakistan",
+     "x": 77.6,
+     "y": 29.02,
+     "value": 77.6
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 58.7,
+     "y": 32.4,
+     "value": 58.7
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 64.1,
+     "y": 33.97,
+     "value": 64.1
+    },
+    {
+     "iso3": "TJK",
+     "name": "Tajikistan",
+     "x": 74.5,
+     "y": 36.3,
+     "value": 74.5
+    },
+    {
+     "iso3": "USA",
+     "name": "United States",
+     "x": 16.5,
+     "y": 38.71,
+     "value": 16.5
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 53.4,
+     "y": 40.7,
+     "value": 53.4
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 27.1,
+     "y": 40.92,
+     "value": 27.1
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 22.8,
+     "y": 41.07,
+     "value": 22.8
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 68.1,
+     "y": 41.4,
+     "value": 68.1
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 12.6,
+     "y": 41.79,
+     "value": 12.6
+    },
+    {
+     "iso3": "GBR",
+     "name": "United Kingdom",
+     "x": 8.8,
+     "y": 41.91,
+     "value": 8.8
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 40.7,
+     "y": 42.02,
+     "value": 40.7
+    },
+    {
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 80.8,
+     "y": 42.42,
+     "value": 80.8
+    },
+    {
+     "iso3": "RWA",
+     "name": "Rwanda",
+     "x": 45.7,
+     "y": 43.05,
+     "value": 45.7
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 71.9,
+     "y": 43.35,
+     "value": 71.9
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 75.7,
+     "y": 43.8,
+     "value": 75.7
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 62.7,
+     "y": 44.87,
+     "value": 62.7
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 58.5,
+     "y": 45.29,
+     "value": 58.5
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 81.3,
+     "y": 48.97,
+     "value": 81.3
+    },
+    {
+     "iso3": "KWT",
+     "name": "Kuwait",
+     "x": 79.0,
+     "y": 49.13,
+     "value": 79.0
+    },
+    {
+     "iso3": "IDN",
+     "name": "Indonesia",
+     "x": 72.2,
+     "y": 49.46,
+     "value": 72.2
+    },
+    {
+     "iso3": "KEN",
+     "name": "Kenya",
+     "x": 42.2,
+     "y": 51.04,
+     "value": 42.2
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 53.5,
+     "y": 51.13,
+     "value": 53.5
+    },
+    {
+     "iso3": "ZWE",
+     "name": "Zimbabwe",
+     "x": 45.0,
+     "y": 68.77,
+     "value": 45.0
+    }
+   ],
+   "missing": [
+    "Sri Lanka",
+    "Solomon Islands",
+    "South Sudan",
+    "St. Kitts and Nevis",
+    "Bhutan",
+    "Papua New Guinea",
+    "Nepal",
+    "Samoa",
+    "Sudan",
+    "Guyana",
+    "Sierra Leone",
+    "Syrian Arab Republic",
+    "Oman",
+    "Belarus",
+    "Cambodia",
+    "Kiribati"
+   ],
+   "fit": {
+    "slope": -0.033,
+    "intercept": 44.555,
+    "lo": -0.138,
+    "hi": 0.073,
+    "r": -0.01,
+    "books": 2266,
+    "countries": 25
+   }
+  },
+  {
+   "key": "att_dv",
+   "label": "Wife-beating justified",
+   "axis": "Women saying a husband may be justified in beating his wife (%)",
+   "log": false,
+   "points": [
+    {
+     "iso3": "MDV",
+     "name": "Maldives",
+     "x": 35.0,
+     "y": 28.48,
+     "value": 35.0
+    },
+    {
+     "iso3": "PAK",
+     "name": "Pakistan",
+     "x": 51.0,
+     "y": 29.02,
+     "value": 51.0
+    },
+    {
+     "iso3": "LKA",
+     "name": "Sri Lanka",
+     "x": 54.0,
+     "y": 30.0,
+     "value": 54.0
+    },
+    {
+     "iso3": "IND",
+     "name": "India",
+     "x": 41.0,
+     "y": 32.4,
+     "value": 41.0
+    },
+    {
+     "iso3": "SLB",
+     "name": "Solomon Islands",
+     "x": 78.0,
+     "y": 32.61,
+     "value": 78.0
+    },
+    {
+     "iso3": "BGD",
+     "name": "Bangladesh",
+     "x": 17.0,
+     "y": 33.97,
+     "value": 17.0
+    },
+    {
+     "iso3": "SSD",
+     "name": "South Sudan",
+     "x": 72.0,
+     "y": 34.28,
+     "value": 72.0
+    },
+    {
+     "iso3": "BTN",
+     "name": "Bhutan",
+     "x": 70.0,
+     "y": 36.06,
+     "value": 70.0
+    },
+    {
+     "iso3": "TJK",
+     "name": "Tajikistan",
+     "x": 75.1,
+     "y": 36.3,
+     "value": 75.1
+    },
+    {
+     "iso3": "PNG",
+     "name": "Papua New Guinea",
+     "x": 69.0,
+     "y": 37.4,
+     "value": 69.0
+    },
+    {
+     "iso3": "NPL",
+     "name": "Nepal",
+     "x": 22.0,
+     "y": 37.41,
+     "value": 22.0
+    },
+    {
+     "iso3": "WSM",
+     "name": "Samoa",
+     "x": 36.2,
+     "y": 38.42,
+     "value": 36.2
+    },
+    {
+     "iso3": "USA",
+     "name": "United States",
+     "x": 13.9,
+     "y": 38.71,
+     "value": 13.9
+    },
+    {
+     "iso3": "SDN",
+     "name": "Sudan",
+     "x": 36.0,
+     "y": 39.42,
+     "value": 36.0
+    },
+    {
+     "iso3": "GUY",
+     "name": "Guyana",
+     "x": 10.0,
+     "y": 40.03,
+     "value": 10.0
+    },
+    {
+     "iso3": "ZAF",
+     "name": "South Africa",
+     "x": 7.0,
+     "y": 40.7,
+     "value": 7.0
+    },
+    {
+     "iso3": "GRC",
+     "name": "Greece",
+     "x": 5.0,
+     "y": 40.92,
+     "value": 5.0
+    },
+    {
+     "iso3": "ECU",
+     "name": "Ecuador",
+     "x": 20.2,
+     "y": 41.07,
+     "value": 20.2
+    },
+    {
+     "iso3": "UGA",
+     "name": "Uganda",
+     "x": 58.0,
+     "y": 41.4,
+     "value": 58.0
+    },
+    {
+     "iso3": "AUS",
+     "name": "Australia",
+     "x": 6.8,
+     "y": 41.79,
+     "value": 6.8
+    },
+    {
+     "iso3": "GBR",
+     "name": "United Kingdom",
+     "x": 12.3,
+     "y": 41.91,
+     "value": 12.3
+    },
+    {
+     "iso3": "SLE",
+     "name": "Sierra Leone",
+     "x": 44.0,
+     "y": 41.98,
+     "value": 44.0
+    },
+    {
+     "iso3": "ETH",
+     "name": "Ethiopia",
+     "x": 13.7,
+     "y": 42.02,
+     "value": 13.7
+    },
+    {
+     "iso3": "PSE",
+     "name": "West Bank and Gaza",
+     "x": 15.7,
+     "y": 42.42,
+     "value": 15.7
+    },
+    {
+     "iso3": "RWA",
+     "name": "Rwanda",
+     "x": 45.0,
+     "y": 43.05,
+     "value": 45.0
+    },
+    {
+     "iso3": "JOR",
+     "name": "Jordan",
+     "x": 63.0,
+     "y": 43.35,
+     "value": 63.0
+    },
+    {
+     "iso3": "OMN",
+     "name": "Oman",
+     "x": 10.0,
+     "y": 43.47,
+     "value": 10.0
+    },
+    {
+     "iso3": "NGA",
+     "name": "Nigeria",
+     "x": 29.3,
+     "y": 43.8,
+     "value": 29.3
+    },
+    {
+     "iso3": "AZE",
+     "name": "Azerbaijan",
+     "x": 24.0,
+     "y": 44.87,
+     "value": 24.0
+    },
+    {
+     "iso3": "TUN",
+     "name": "Tunisia",
+     "x": 29.4,
+     "y": 45.29,
+     "value": 29.4
+    },
+    {
+     "iso3": "GHA",
+     "name": "Ghana",
+     "x": 37.0,
+     "y": 48.97,
+     "value": 37.0
+    },
+    {
+     "iso3": "KWT",
+     "name": "Kuwait",
+     "x": 38.2,
+     "y": 49.13,
+     "value": 38.2
+    },
+    {
+     "iso3": "IDN",
+     "name": "Indonesia",
+     "x": 20.2,
+     "y": 49.46,
+     "value": 20.2
+    },
+    {
+     "iso3": "KHM",
+     "name": "Cambodia",
+     "x": 46.0,
+     "y": 50.36,
+     "value": 46.0
+    },
+    {
+     "iso3": "KEN",
+     "name": "Kenya",
+     "x": 50.4,
+     "y": 51.04,
+     "value": 50.4
+    },
+    {
+     "iso3": "TUR",
+     "name": "Türkiye",
+     "x": 6.0,
+     "y": 51.13,
+     "value": 6.0
+    },
+    {
+     "iso3": "ZWE",
+     "name": "Zimbabwe",
+     "x": 17.9,
+     "y": 68.77,
+     "value": 17.9
+    }
+   ],
+   "missing": [
+    "St. Kitts and Nevis",
+    "Syrian Arab Republic",
+    "Belarus",
+    "Kiribati"
+   ],
+   "fit": {
+    "slope": -0.111,
+    "intercept": 45.223,
+    "lo": -0.224,
+    "hi": 0.002,
+    "r": -0.34,
+    "books": 2787,
+    "countries": 37
+   }
   }
  ],
  "groups": {
@@ -40684,6 +41416,38 @@
     }
    ]
   },
+  "age_cut": {
+   "age_within_book": {
+    "books": 3967,
+    "countries": 84,
+    "raw_children": 45.08,
+    "raw_adults": 33.51,
+    "within_book_gap": -3.11,
+    "ci": [
+     -5.74,
+     -0.1
+    ]
+   },
+   "grade_within_country_subject": {
+    "lower_vs_primary": -6.29,
+    "lower_ci": [
+     -9.44,
+     -3.3
+    ],
+    "upper_vs_primary": -6.15,
+    "upper_ci": [
+     -9.56,
+     -2.84
+    ],
+    "books": 5212
+   },
+   "age_by_subject": {
+    "Language": {
+     "books": 482,
+     "gap": -0.24
+    }
+   }
+  },
   "links": [
    {
     "key": "log_gdp",
@@ -44332,6 +45096,1725 @@
      "r": 0.25,
      "books": 7233,
      "countries": 80
+    }
+   },
+   {
+    "key": "sigi",
+    "label": "Discriminatory institutions",
+    "axis": "OECD SIGI score (0 none to 100 absolute)",
+    "log": false,
+    "points": [
+     {
+      "iso3": "IND",
+      "name": "India",
+      "x": 43.0,
+      "y": 42.88,
+      "value": 43.0,
+      "n": 91481,
+      "w": 2000
+     },
+     {
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "x": 29.8,
+      "y": 37.11,
+      "value": 29.8,
+      "n": 15965,
+      "w": 2000
+     },
+     {
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "x": 44.6,
+      "y": 37.55,
+      "value": 44.6,
+      "n": 10744,
+      "w": 2000
+     },
+     {
+      "iso3": "GRC",
+      "name": "Greece",
+      "x": 18.9,
+      "y": 33.04,
+      "value": 18.9,
+      "n": 7044,
+      "w": 2000
+     },
+     {
+      "iso3": "MEX",
+      "name": "Mexico",
+      "x": 21.9,
+      "y": 42.57,
+      "value": 21.9,
+      "n": 4700,
+      "w": 2000
+     },
+     {
+      "iso3": "KHM",
+      "name": "Cambodia",
+      "x": 21.7,
+      "y": 42.83,
+      "value": 21.7,
+      "n": 4658,
+      "w": 2000
+     },
+     {
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "x": 59.7,
+      "y": 34.24,
+      "value": 59.7,
+      "n": 4238,
+      "w": 2000
+     },
+     {
+      "iso3": "PER",
+      "name": "Peru",
+      "x": 18.6,
+      "y": 49.54,
+      "value": 18.6,
+      "n": 4160,
+      "w": 2000
+     },
+     {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "x": 58.5,
+      "y": 37.6,
+      "value": 58.5,
+      "n": 3104,
+      "w": 2000
+     },
+     {
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "x": 19.0,
+      "y": 35.22,
+      "value": 19.0,
+      "n": 2706,
+      "w": 2000
+     },
+     {
+      "iso3": "VEN",
+      "name": "Venezuela, RB",
+      "x": 16.5,
+      "y": 34.15,
+      "value": 16.5,
+      "n": 2624,
+      "w": 2000
+     },
+     {
+      "iso3": "COL",
+      "name": "Colombia",
+      "x": 23.5,
+      "y": 42.25,
+      "value": 23.5,
+      "n": 2457,
+      "w": 2000
+     },
+     {
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "x": 21.2,
+      "y": 43.63,
+      "value": 21.2,
+      "n": 2331,
+      "w": 2000
+     },
+     {
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "x": 25.7,
+      "y": 46.43,
+      "value": 25.7,
+      "n": 2322,
+      "w": 2000
+     },
+     {
+      "iso3": "SSD",
+      "name": "South Sudan",
+      "x": 40.6,
+      "y": 38.97,
+      "value": 40.6,
+      "n": 2230,
+      "w": 2000
+     },
+     {
+      "iso3": "HND",
+      "name": "Honduras",
+      "x": 26.0,
+      "y": 36.9,
+      "value": 26.0,
+      "n": 1786,
+      "w": 1786
+     },
+     {
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "x": 17.0,
+      "y": 46.38,
+      "value": 17.0,
+      "n": 1630,
+      "w": 1630
+     },
+     {
+      "iso3": "USA",
+      "name": "United States",
+      "x": 19.1,
+      "y": 31.78,
+      "value": 19.1,
+      "n": 1570,
+      "w": 1570
+     },
+     {
+      "iso3": "TJK",
+      "name": "Tajikistan",
+      "x": 40.0,
+      "y": 27.96,
+      "value": 40.0,
+      "n": 1459,
+      "w": 1459
+     },
+     {
+      "iso3": "PSE",
+      "name": "West Bank and Gaza",
+      "x": 51.0,
+      "y": 44.84,
+      "value": 51.0,
+      "n": 1309,
+      "w": 1309
+     },
+     {
+      "iso3": "CHL",
+      "name": "Chile",
+      "x": 27.2,
+      "y": 48.72,
+      "value": 27.2,
+      "n": 1252,
+      "w": 1252
+     },
+     {
+      "iso3": "GHA",
+      "name": "Ghana",
+      "x": 38.2,
+      "y": 37.11,
+      "value": 38.2,
+      "n": 1226,
+      "w": 1226
+     },
+     {
+      "iso3": "EST",
+      "name": "Estonia",
+      "x": 13.1,
+      "y": 44.79,
+      "value": 13.1,
+      "n": 1161,
+      "w": 1161
+     },
+     {
+      "iso3": "TUR",
+      "name": "Türkiye",
+      "x": 24.0,
+      "y": 49.13,
+      "value": 24.0,
+      "n": 1091,
+      "w": 1091
+     },
+     {
+      "iso3": "ARG",
+      "name": "Argentina",
+      "x": 17.7,
+      "y": 41.04,
+      "value": 17.7,
+      "n": 1077,
+      "w": 1077
+     },
+     {
+      "iso3": "NPL",
+      "name": "Nepal",
+      "x": 30.6,
+      "y": 44.06,
+      "value": 30.6,
+      "n": 1019,
+      "w": 1019
+     },
+     {
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "x": 22.0,
+      "y": 40.42,
+      "value": 22.0,
+      "n": 955,
+      "w": 955
+     },
+     {
+      "iso3": "EGY",
+      "name": "Egypt, Arab Rep.",
+      "x": 54.6,
+      "y": 28.18,
+      "value": 54.6,
+      "n": 905,
+      "w": 905
+     },
+     {
+      "iso3": "GEO",
+      "name": "Georgia",
+      "x": 27.6,
+      "y": 39.9,
+      "value": 27.6,
+      "n": 797,
+      "w": 797
+     },
+     {
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "x": 23.0,
+      "y": 48.15,
+      "value": 23.0,
+      "n": 677,
+      "w": 677
+     },
+     {
+      "iso3": "AGO",
+      "name": "Angola",
+      "x": 25.9,
+      "y": 33.98,
+      "value": 25.9,
+      "n": 671,
+      "w": 671
+     },
+     {
+      "iso3": "PRY",
+      "name": "Paraguay",
+      "x": 20.6,
+      "y": 50.59,
+      "value": 20.6,
+      "n": 597,
+      "w": 597
+     },
+     {
+      "iso3": "AUS",
+      "name": "Australia",
+      "x": 15.4,
+      "y": 44.6,
+      "value": 15.4,
+      "n": 583,
+      "w": 583
+     },
+     {
+      "iso3": "LKA",
+      "name": "Sri Lanka",
+      "x": 53.4,
+      "y": 39.5,
+      "value": 53.4,
+      "n": 476,
+      "w": 476
+     },
+     {
+      "iso3": "UGA",
+      "name": "Uganda",
+      "x": 27.4,
+      "y": 26.43,
+      "value": 27.4,
+      "n": 367,
+      "w": 367
+     },
+     {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "x": 12.0,
+      "y": 35.82,
+      "value": 12.0,
+      "n": 349,
+      "w": 349
+     },
+     {
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "x": 30.8,
+      "y": 33.73,
+      "value": 30.8,
+      "n": 332,
+      "w": 332
+     },
+     {
+      "iso3": "TWN",
+      "name": "Taiwan, China",
+      "x": 9.2,
+      "y": 46.77,
+      "value": 9.2,
+      "n": 310,
+      "w": 310
+     },
+     {
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "x": 19.6,
+      "y": 55.43,
+      "value": 19.6,
+      "n": 276,
+      "w": 276
+     },
+     {
+      "iso3": "BRA",
+      "name": "Brazil",
+      "x": 21.6,
+      "y": 37.13,
+      "value": 21.6,
+      "n": 202,
+      "w": 202
+     },
+     {
+      "iso3": "LAO",
+      "name": "Lao PDR",
+      "x": 25.1,
+      "y": 43.07,
+      "value": 25.1,
+      "n": 202,
+      "w": 202
+     },
+     {
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "x": 18.9,
+      "y": 50.87,
+      "value": 18.9,
+      "n": 173,
+      "w": 173
+     },
+     {
+      "iso3": "IRN",
+      "name": "Iran, Islamic Rep.",
+      "x": 62.9,
+      "y": 44.31,
+      "value": 62.9,
+      "n": 167,
+      "w": 167
+     },
+     {
+      "iso3": "MWI",
+      "name": "Malawi",
+      "x": 31.5,
+      "y": 42.51,
+      "value": 31.5,
+      "n": 167,
+      "w": 167
+     },
+     {
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "x": 25.4,
+      "y": 38.4,
+      "value": 25.4,
+      "n": 125,
+      "w": 125
+     },
+     {
+      "iso3": "COD",
+      "name": "Congo, Dem. Rep.",
+      "x": 46.9,
+      "y": 52.0,
+      "value": 46.9,
+      "n": 125,
+      "w": 125
+     },
+     {
+      "iso3": "BEN",
+      "name": "Benin",
+      "x": 34.4,
+      "y": 52.46,
+      "value": 34.4,
+      "n": 122,
+      "w": 122
+     },
+     {
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "x": 20.9,
+      "y": 46.49,
+      "value": 20.9,
+      "n": 114,
+      "w": 114
+     },
+     {
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "x": 49.3,
+      "y": 27.52,
+      "value": 49.3,
+      "n": 109,
+      "w": 109
+     },
+     {
+      "iso3": "BOL",
+      "name": "Bolivia",
+      "x": 20.6,
+      "y": 58.42,
+      "value": 20.6,
+      "n": 101,
+      "w": 101
+     },
+     {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "x": 32.9,
+      "y": 51.11,
+      "value": 32.9,
+      "n": 90,
+      "w": 90
+     },
+     {
+      "iso3": "MRT",
+      "name": "Mauritania",
+      "x": 67.4,
+      "y": 35.14,
+      "value": 67.4,
+      "n": 74,
+      "w": 74
+     },
+     {
+      "iso3": "ARM",
+      "name": "Armenia",
+      "x": 23.7,
+      "y": 7.46,
+      "value": 23.7,
+      "n": 67,
+      "w": 67
+     },
+     {
+      "iso3": "BTN",
+      "name": "Bhutan",
+      "x": 32.9,
+      "y": 25.45,
+      "value": 32.9,
+      "n": 55,
+      "w": 55
+     },
+     {
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "x": 39.5,
+      "y": 41.67,
+      "value": 39.5,
+      "n": 36,
+      "w": 36
+     },
+     {
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "x": 19.3,
+      "y": 88.24,
+      "value": 19.3,
+      "n": 34,
+      "w": 34
+     },
+     {
+      "iso3": "LBR",
+      "name": "Liberia",
+      "x": 38.3,
+      "y": 25.0,
+      "value": 38.3,
+      "n": 32,
+      "w": 32
+     }
+    ],
+    "missing": [
+     "Aruba",
+     "Bahrain",
+     "Kuwait",
+     "Cyprus",
+     "Oman",
+     "Cuba",
+     "Cabo Verde",
+     "Syrian Arab Republic",
+     "Djibouti",
+     "Solomon Islands",
+     "Papua New Guinea",
+     "Mauritius",
+     "Samoa",
+     "Belarus",
+     "Afghanistan",
+     "Guyana",
+     "Uzbekistan",
+     "Micronesia, Fed. Sts.",
+     "Brunei Darussalam",
+     "Vanuatu",
+     "Libya",
+     "Iceland",
+     "Algeria",
+     "Fiji",
+     "Grenada"
+    ],
+    "fit": {
+     "slope": -0.114,
+     "intercept": 43.537,
+     "lo": -0.272,
+     "hi": 0.045,
+     "r": -0.28,
+     "books": 6333,
+     "countries": 57
+    }
+   },
+   {
+    "key": "att_leaders",
+    "label": "Men better leaders",
+    "axis": "Adults agreeing men make better political leaders (%)",
+    "log": false,
+    "points": [
+     {
+      "iso3": "IND",
+      "name": "India",
+      "x": 58.7,
+      "y": 42.88,
+      "value": 58.7,
+      "n": 91481,
+      "w": 2000
+     },
+     {
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "x": 62.7,
+      "y": 37.11,
+      "value": 62.7,
+      "n": 15965,
+      "w": 2000
+     },
+     {
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "x": 72.2,
+      "y": 37.55,
+      "value": 72.2,
+      "n": 10744,
+      "w": 2000
+     },
+     {
+      "iso3": "GRC",
+      "name": "Greece",
+      "x": 27.1,
+      "y": 33.04,
+      "value": 27.1,
+      "n": 7044,
+      "w": 2000
+     },
+     {
+      "iso3": "MEX",
+      "name": "Mexico",
+      "x": 24.0,
+      "y": 42.57,
+      "value": 24.0,
+      "n": 4700,
+      "w": 2000
+     },
+     {
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "x": 77.6,
+      "y": 34.24,
+      "value": 77.6,
+      "n": 4238,
+      "w": 2000
+     },
+     {
+      "iso3": "PER",
+      "name": "Peru",
+      "x": 16.6,
+      "y": 49.54,
+      "value": 16.6,
+      "n": 4160,
+      "w": 2000
+     },
+     {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "x": 79.0,
+      "y": 25.66,
+      "value": 79.0,
+      "n": 3340,
+      "w": 2000
+     },
+     {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "x": 71.9,
+      "y": 37.6,
+      "value": 71.9,
+      "n": 3104,
+      "w": 2000
+     },
+     {
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "x": 45.7,
+      "y": 35.22,
+      "value": 45.7,
+      "n": 2706,
+      "w": 2000
+     },
+     {
+      "iso3": "VEN",
+      "name": "Venezuela, RB",
+      "x": 25.8,
+      "y": 34.15,
+      "value": 25.8,
+      "n": 2624,
+      "w": 2000
+     },
+     {
+      "iso3": "COL",
+      "name": "Colombia",
+      "x": 24.1,
+      "y": 42.25,
+      "value": 24.1,
+      "n": 2457,
+      "w": 2000
+     },
+     {
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "x": 25.2,
+      "y": 43.63,
+      "value": 25.2,
+      "n": 2331,
+      "w": 2000
+     },
+     {
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "x": 20.8,
+      "y": 46.43,
+      "value": 20.8,
+      "n": 2322,
+      "w": 2000
+     },
+     {
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "x": 28.7,
+      "y": 45.57,
+      "value": 28.7,
+      "n": 2271,
+      "w": 2000
+     },
+     {
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "x": 22.8,
+      "y": 46.38,
+      "value": 22.8,
+      "n": 1630,
+      "w": 1630
+     },
+     {
+      "iso3": "USA",
+      "name": "United States",
+      "x": 16.5,
+      "y": 31.78,
+      "value": 16.5,
+      "n": 1570,
+      "w": 1570
+     },
+     {
+      "iso3": "TJK",
+      "name": "Tajikistan",
+      "x": 74.5,
+      "y": 27.96,
+      "value": 74.5,
+      "n": 1459,
+      "w": 1459
+     },
+     {
+      "iso3": "PSE",
+      "name": "West Bank and Gaza",
+      "x": 80.8,
+      "y": 44.84,
+      "value": 80.8,
+      "n": 1309,
+      "w": 1309
+     },
+     {
+      "iso3": "CHL",
+      "name": "Chile",
+      "x": 33.3,
+      "y": 48.72,
+      "value": 33.3,
+      "n": 1252,
+      "w": 1252
+     },
+     {
+      "iso3": "GHA",
+      "name": "Ghana",
+      "x": 81.3,
+      "y": 37.11,
+      "value": 81.3,
+      "n": 1226,
+      "w": 1226
+     },
+     {
+      "iso3": "EST",
+      "name": "Estonia",
+      "x": 37.2,
+      "y": 44.79,
+      "value": 37.2,
+      "n": 1161,
+      "w": 1161
+     },
+     {
+      "iso3": "TUR",
+      "name": "Türkiye",
+      "x": 53.5,
+      "y": 49.13,
+      "value": 53.5,
+      "n": 1091,
+      "w": 1091
+     },
+     {
+      "iso3": "ARG",
+      "name": "Argentina",
+      "x": 22.7,
+      "y": 41.04,
+      "value": 22.7,
+      "n": 1077,
+      "w": 1077
+     },
+     {
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "x": 46.1,
+      "y": 40.42,
+      "value": 46.1,
+      "n": 955,
+      "w": 955
+     },
+     {
+      "iso3": "EGY",
+      "name": "Egypt, Arab Rep.",
+      "x": 83.0,
+      "y": 28.18,
+      "value": 83.0,
+      "n": 905,
+      "w": 905
+     },
+     {
+      "iso3": "GEO",
+      "name": "Georgia",
+      "x": 57.4,
+      "y": 39.9,
+      "value": 57.4,
+      "n": 797,
+      "w": 797
+     },
+     {
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "x": 53.4,
+      "y": 48.15,
+      "value": 53.4,
+      "n": 677,
+      "w": 677
+     },
+     {
+      "iso3": "AUS",
+      "name": "Australia",
+      "x": 12.6,
+      "y": 44.6,
+      "value": 12.6,
+      "n": 583,
+      "w": 583
+     },
+     {
+      "iso3": "UGA",
+      "name": "Uganda",
+      "x": 68.1,
+      "y": 26.43,
+      "value": 68.1,
+      "n": 367,
+      "w": 367
+     },
+     {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "x": 8.8,
+      "y": 35.82,
+      "value": 8.8,
+      "n": 349,
+      "w": 349
+     },
+     {
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "x": 40.7,
+      "y": 33.73,
+      "value": 40.7,
+      "n": 332,
+      "w": 332
+     },
+     {
+      "iso3": "TWN",
+      "name": "Taiwan, China",
+      "x": 22.1,
+      "y": 46.77,
+      "value": 22.1,
+      "n": 310,
+      "w": 310
+     },
+     {
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "x": 37.0,
+      "y": 55.43,
+      "value": 37.0,
+      "n": 276,
+      "w": 276
+     },
+     {
+      "iso3": "BRA",
+      "name": "Brazil",
+      "x": 18.6,
+      "y": 37.13,
+      "value": 18.6,
+      "n": 202,
+      "w": 202
+     },
+     {
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "x": 45.4,
+      "y": 50.87,
+      "value": 45.4,
+      "n": 173,
+      "w": 173
+     },
+     {
+      "iso3": "IRN",
+      "name": "Iran, Islamic Rep.",
+      "x": 55.3,
+      "y": 44.31,
+      "value": 55.3,
+      "n": 167,
+      "w": 167
+     },
+     {
+      "iso3": "UZB",
+      "name": "Uzbekistan",
+      "x": 77.2,
+      "y": 51.02,
+      "value": 77.2,
+      "n": 147,
+      "w": 147
+     },
+     {
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "x": 62.7,
+      "y": 38.4,
+      "value": 62.7,
+      "n": 125,
+      "w": 125
+     },
+     {
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "x": 51.6,
+      "y": 46.49,
+      "value": 51.6,
+      "n": 114,
+      "w": 114
+     },
+     {
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "x": 64.1,
+      "y": 27.52,
+      "value": 64.1,
+      "n": 109,
+      "w": 109
+     },
+     {
+      "iso3": "BOL",
+      "name": "Bolivia",
+      "x": 22.6,
+      "y": 58.42,
+      "value": 22.6,
+      "n": 101,
+      "w": 101
+     },
+     {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "x": 42.2,
+      "y": 51.11,
+      "value": 42.2,
+      "n": 90,
+      "w": 90
+     },
+     {
+      "iso3": "LBY",
+      "name": "Libya",
+      "x": 73.5,
+      "y": 49.37,
+      "value": 73.5,
+      "n": 79,
+      "w": 79
+     },
+     {
+      "iso3": "ISL",
+      "name": "Iceland",
+      "x": 5.3,
+      "y": 50.0,
+      "value": 5.3,
+      "n": 72,
+      "w": 72
+     },
+     {
+      "iso3": "ARM",
+      "name": "Armenia",
+      "x": 52.1,
+      "y": 7.46,
+      "value": 52.1,
+      "n": 67,
+      "w": 67
+     },
+     {
+      "iso3": "DZA",
+      "name": "Algeria",
+      "x": 74.6,
+      "y": 42.55,
+      "value": 74.6,
+      "n": 47,
+      "w": 47
+     },
+     {
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "x": 75.7,
+      "y": 41.67,
+      "value": 75.7,
+      "n": 36,
+      "w": 36
+     },
+     {
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "x": 45.0,
+      "y": 88.24,
+      "value": 45.0,
+      "n": 34,
+      "w": 34
+     }
+    ],
+    "missing": [
+     "Aruba",
+     "Cambodia",
+     "Bahrain",
+     "South Sudan",
+     "Oman",
+     "Honduras",
+     "Cuba",
+     "Cabo Verde",
+     "Nepal",
+     "Syrian Arab Republic",
+     "Djibouti",
+     "Angola",
+     "Paraguay",
+     "Solomon Islands",
+     "Sri Lanka",
+     "Papua New Guinea",
+     "Mauritius",
+     "Samoa",
+     "Belarus",
+     "Lao PDR",
+     "Afghanistan",
+     "Malawi",
+     "Guyana",
+     "Congo, Dem. Rep.",
+     "Benin",
+     "Micronesia, Fed. Sts.",
+     "Brunei Darussalam",
+     "Vanuatu",
+     "Mauritania",
+     "Bhutan",
+     "Fiji",
+     "Grenada",
+     "Liberia"
+    ],
+    "fit": {
+     "slope": -0.084,
+     "intercept": 43.536,
+     "lo": -0.2,
+     "hi": 0.032,
+     "r": -0.44,
+     "books": 6230,
+     "countries": 49
+    }
+   },
+   {
+    "key": "att_dv",
+    "label": "Wife-beating justified",
+    "axis": "Women saying a husband may be justified in beating his wife (%)",
+    "log": false,
+    "points": [
+     {
+      "iso3": "IND",
+      "name": "India",
+      "x": 41.0,
+      "y": 42.88,
+      "value": 41.0,
+      "n": 91481,
+      "w": 2000
+     },
+     {
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "x": 24.0,
+      "y": 37.11,
+      "value": 24.0,
+      "n": 15965,
+      "w": 2000
+     },
+     {
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "x": 20.2,
+      "y": 37.55,
+      "value": 20.2,
+      "n": 10744,
+      "w": 2000
+     },
+     {
+      "iso3": "GRC",
+      "name": "Greece",
+      "x": 5.0,
+      "y": 33.04,
+      "value": 5.0,
+      "n": 7044,
+      "w": 2000
+     },
+     {
+      "iso3": "MEX",
+      "name": "Mexico",
+      "x": 31.8,
+      "y": 42.57,
+      "value": 31.8,
+      "n": 4700,
+      "w": 2000
+     },
+     {
+      "iso3": "KHM",
+      "name": "Cambodia",
+      "x": 46.0,
+      "y": 42.83,
+      "value": 46.0,
+      "n": 4658,
+      "w": 2000
+     },
+     {
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "x": 51.0,
+      "y": 34.24,
+      "value": 51.0,
+      "n": 4238,
+      "w": 2000
+     },
+     {
+      "iso3": "PER",
+      "name": "Peru",
+      "x": 11.4,
+      "y": 49.54,
+      "value": 11.4,
+      "n": 4160,
+      "w": 2000
+     },
+     {
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "x": 38.2,
+      "y": 25.66,
+      "value": 38.2,
+      "n": 3340,
+      "w": 2000
+     },
+     {
+      "iso3": "JOR",
+      "name": "Jordan",
+      "x": 63.0,
+      "y": 37.6,
+      "value": 63.0,
+      "n": 3104,
+      "w": 2000
+     },
+     {
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "x": 45.0,
+      "y": 35.22,
+      "value": 45.0,
+      "n": 2706,
+      "w": 2000
+     },
+     {
+      "iso3": "VEN",
+      "name": "Venezuela, RB",
+      "x": 27.9,
+      "y": 34.15,
+      "value": 27.9,
+      "n": 2624,
+      "w": 2000
+     },
+     {
+      "iso3": "COL",
+      "name": "Colombia",
+      "x": 12.3,
+      "y": 42.25,
+      "value": 12.3,
+      "n": 2457,
+      "w": 2000
+     },
+     {
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "x": 12.0,
+      "y": 43.63,
+      "value": 12.0,
+      "n": 2331,
+      "w": 2000
+     },
+     {
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "x": 23.5,
+      "y": 46.43,
+      "value": 23.5,
+      "n": 2322,
+      "w": 2000
+     },
+     {
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "x": 7.8,
+      "y": 45.57,
+      "value": 7.8,
+      "n": 2271,
+      "w": 2000
+     },
+     {
+      "iso3": "SSD",
+      "name": "South Sudan",
+      "x": 72.0,
+      "y": 38.97,
+      "value": 72.0,
+      "n": 2230,
+      "w": 2000
+     },
+     {
+      "iso3": "OMN",
+      "name": "Oman",
+      "x": 10.0,
+      "y": 44.7,
+      "value": 10.0,
+      "n": 1857,
+      "w": 1857
+     },
+     {
+      "iso3": "HND",
+      "name": "Honduras",
+      "x": 6.2,
+      "y": 36.9,
+      "value": 6.2,
+      "n": 1786,
+      "w": 1786
+     },
+     {
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "x": 20.2,
+      "y": 46.38,
+      "value": 20.2,
+      "n": 1630,
+      "w": 1630
+     },
+     {
+      "iso3": "CUB",
+      "name": "Cuba",
+      "x": 3.0,
+      "y": 37.26,
+      "value": 3.0,
+      "n": 1594,
+      "w": 1594
+     },
+     {
+      "iso3": "USA",
+      "name": "United States",
+      "x": 13.9,
+      "y": 31.78,
+      "value": 13.9,
+      "n": 1570,
+      "w": 1570
+     },
+     {
+      "iso3": "TJK",
+      "name": "Tajikistan",
+      "x": 75.1,
+      "y": 27.96,
+      "value": 75.1,
+      "n": 1459,
+      "w": 1459
+     },
+     {
+      "iso3": "CPV",
+      "name": "Cabo Verde",
+      "x": 23.0,
+      "y": 42.83,
+      "value": 23.0,
+      "n": 1429,
+      "w": 1429
+     },
+     {
+      "iso3": "PSE",
+      "name": "West Bank and Gaza",
+      "x": 15.7,
+      "y": 44.84,
+      "value": 15.7,
+      "n": 1309,
+      "w": 1309
+     },
+     {
+      "iso3": "CHL",
+      "name": "Chile",
+      "x": 31.3,
+      "y": 48.72,
+      "value": 31.3,
+      "n": 1252,
+      "w": 1252
+     },
+     {
+      "iso3": "GHA",
+      "name": "Ghana",
+      "x": 37.0,
+      "y": 37.11,
+      "value": 37.0,
+      "n": 1226,
+      "w": 1226
+     },
+     {
+      "iso3": "EST",
+      "name": "Estonia",
+      "x": 17.8,
+      "y": 44.79,
+      "value": 17.8,
+      "n": 1161,
+      "w": 1161
+     },
+     {
+      "iso3": "TUR",
+      "name": "Türkiye",
+      "x": 6.0,
+      "y": 49.13,
+      "value": 6.0,
+      "n": 1091,
+      "w": 1091
+     },
+     {
+      "iso3": "ARG",
+      "name": "Argentina",
+      "x": 14.1,
+      "y": 41.04,
+      "value": 14.1,
+      "n": 1077,
+      "w": 1077
+     },
+     {
+      "iso3": "NPL",
+      "name": "Nepal",
+      "x": 22.0,
+      "y": 44.06,
+      "value": 22.0,
+      "n": 1019,
+      "w": 1019
+     },
+     {
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "x": 11.0,
+      "y": 40.42,
+      "value": 11.0,
+      "n": 955,
+      "w": 955
+     },
+     {
+      "iso3": "EGY",
+      "name": "Egypt, Arab Rep.",
+      "x": 34.7,
+      "y": 28.18,
+      "value": 34.7,
+      "n": 905,
+      "w": 905
+     },
+     {
+      "iso3": "GEO",
+      "name": "Georgia",
+      "x": 8.7,
+      "y": 39.9,
+      "value": 8.7,
+      "n": 797,
+      "w": 797
+     },
+     {
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "x": 7.0,
+      "y": 48.15,
+      "value": 7.0,
+      "n": 677,
+      "w": 677
+     },
+     {
+      "iso3": "AGO",
+      "name": "Angola",
+      "x": 25.0,
+      "y": 33.98,
+      "value": 25.0,
+      "n": 671,
+      "w": 671
+     },
+     {
+      "iso3": "PRY",
+      "name": "Paraguay",
+      "x": 7.0,
+      "y": 50.59,
+      "value": 7.0,
+      "n": 597,
+      "w": 597
+     },
+     {
+      "iso3": "AUS",
+      "name": "Australia",
+      "x": 6.8,
+      "y": 44.6,
+      "value": 6.8,
+      "n": 583,
+      "w": 583
+     },
+     {
+      "iso3": "SLB",
+      "name": "Solomon Islands",
+      "x": 78.0,
+      "y": 32.91,
+      "value": 78.0,
+      "n": 556,
+      "w": 556
+     },
+     {
+      "iso3": "LKA",
+      "name": "Sri Lanka",
+      "x": 54.0,
+      "y": 39.5,
+      "value": 54.0,
+      "n": 476,
+      "w": 476
+     },
+     {
+      "iso3": "UGA",
+      "name": "Uganda",
+      "x": 58.0,
+      "y": 26.43,
+      "value": 58.0,
+      "n": 367,
+      "w": 367
+     },
+     {
+      "iso3": "PNG",
+      "name": "Papua New Guinea",
+      "x": 69.0,
+      "y": 43.87,
+      "value": 69.0,
+      "n": 351,
+      "w": 351
+     },
+     {
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "x": 12.3,
+      "y": 35.82,
+      "value": 12.3,
+      "n": 349,
+      "w": 349
+     },
+     {
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "x": 13.7,
+      "y": 33.73,
+      "value": 13.7,
+      "n": 332,
+      "w": 332
+     },
+     {
+      "iso3": "TWN",
+      "name": "Taiwan, China",
+      "x": 19.8,
+      "y": 46.77,
+      "value": 19.8,
+      "n": 310,
+      "w": 310
+     },
+     {
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "x": 10.0,
+      "y": 55.43,
+      "value": 10.0,
+      "n": 276,
+      "w": 276
+     },
+     {
+      "iso3": "WSM",
+      "name": "Samoa",
+      "x": 36.2,
+      "y": 55.04,
+      "value": 36.2,
+      "n": 258,
+      "w": 258
+     },
+     {
+      "iso3": "BRA",
+      "name": "Brazil",
+      "x": 11.7,
+      "y": 37.13,
+      "value": 11.7,
+      "n": 202,
+      "w": 202
+     },
+     {
+      "iso3": "LAO",
+      "name": "Lao PDR",
+      "x": 30.0,
+      "y": 43.07,
+      "value": 30.0,
+      "n": 202,
+      "w": 202
+     },
+     {
+      "iso3": "AFG",
+      "name": "Afghanistan",
+      "x": 78.0,
+      "y": 33.14,
+      "value": 78.0,
+      "n": 175,
+      "w": 175
+     },
+     {
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "x": 18.3,
+      "y": 50.87,
+      "value": 18.3,
+      "n": 173,
+      "w": 173
+     },
+     {
+      "iso3": "IRN",
+      "name": "Iran, Islamic Rep.",
+      "x": 9.8,
+      "y": 44.31,
+      "value": 9.8,
+      "n": 167,
+      "w": 167
+     },
+     {
+      "iso3": "MWI",
+      "name": "Malawi",
+      "x": 18.9,
+      "y": 42.51,
+      "value": 18.9,
+      "n": 167,
+      "w": 167
+     },
+     {
+      "iso3": "GUY",
+      "name": "Guyana",
+      "x": 10.0,
+      "y": 37.16,
+      "value": 10.0,
+      "n": 148,
+      "w": 148
+     },
+     {
+      "iso3": "UZB",
+      "name": "Uzbekistan",
+      "x": 39.7,
+      "y": 51.02,
+      "value": 39.7,
+      "n": 147,
+      "w": 147
+     },
+     {
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "x": 39.0,
+      "y": 38.4,
+      "value": 39.0,
+      "n": 125,
+      "w": 125
+     },
+     {
+      "iso3": "COD",
+      "name": "Congo, Dem. Rep.",
+      "x": 60.0,
+      "y": 52.0,
+      "value": 60.0,
+      "n": 125,
+      "w": 125
+     },
+     {
+      "iso3": "BEN",
+      "name": "Benin",
+      "x": 29.0,
+      "y": 52.46,
+      "value": 29.0,
+      "n": 122,
+      "w": 122
+     },
+     {
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "x": 37.4,
+      "y": 46.49,
+      "value": 37.4,
+      "n": 114,
+      "w": 114
+     },
+     {
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "x": 17.0,
+      "y": 27.52,
+      "value": 17.0,
+      "n": 109,
+      "w": 109
+     },
+     {
+      "iso3": "BOL",
+      "name": "Bolivia",
+      "x": 22.1,
+      "y": 58.42,
+      "value": 22.1,
+      "n": 101,
+      "w": 101
+     },
+     {
+      "iso3": "KEN",
+      "name": "Kenya",
+      "x": 50.4,
+      "y": 51.11,
+      "value": 50.4,
+      "n": 90,
+      "w": 90
+     },
+     {
+      "iso3": "LBY",
+      "name": "Libya",
+      "x": 11.3,
+      "y": 49.37,
+      "value": 11.3,
+      "n": 79,
+      "w": 79
+     },
+     {
+      "iso3": "MRT",
+      "name": "Mauritania",
+      "x": 26.0,
+      "y": 35.14,
+      "value": 26.0,
+      "n": 74,
+      "w": 74
+     },
+     {
+      "iso3": "ARM",
+      "name": "Armenia",
+      "x": 3.7,
+      "y": 7.46,
+      "value": 3.7,
+      "n": 67,
+      "w": 67
+     },
+     {
+      "iso3": "BTN",
+      "name": "Bhutan",
+      "x": 70.0,
+      "y": 25.45,
+      "value": 70.0,
+      "n": 55,
+      "w": 55
+     },
+     {
+      "iso3": "DZA",
+      "name": "Algeria",
+      "x": 25.0,
+      "y": 42.55,
+      "value": 25.0,
+      "n": 47,
+      "w": 47
+     },
+     {
+      "iso3": "FJI",
+      "name": "Fiji",
+      "x": 24.2,
+      "y": 31.11,
+      "value": 24.2,
+      "n": 45,
+      "w": 45
+     },
+     {
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "x": 29.3,
+      "y": 41.67,
+      "value": 29.3,
+      "n": 36,
+      "w": 36
+     },
+     {
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "x": 17.9,
+      "y": 88.24,
+      "value": 17.9,
+      "n": 34,
+      "w": 34
+     },
+     {
+      "iso3": "LBR",
+      "name": "Liberia",
+      "x": 45.0,
+      "y": 25.0,
+      "value": 45.0,
+      "n": 32,
+      "w": 32
+     }
+    ],
+    "missing": [
+     "Aruba",
+     "Bahrain",
+     "Syrian Arab Republic",
+     "Djibouti",
+     "Mauritius",
+     "Belarus",
+     "Micronesia, Fed. Sts.",
+     "Brunei Darussalam",
+     "Vanuatu",
+     "Iceland",
+     "Grenada"
+    ],
+    "fit": {
+     "slope": -0.08,
+     "intercept": 42.206,
+     "lo": -0.193,
+     "hi": 0.033,
+     "r": -0.35,
+     "books": 6981,
+     "countries": 71
     }
    }
   ]

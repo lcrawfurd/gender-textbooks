@@ -11,7 +11,7 @@
   --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
   --rule:#D5DEE0; --rule-soft:#E8EEEF;
   --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
-  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C; --both:#8E7CB8;
   --f-text:#007590; --m-text:#946000;
   --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
   --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -22,7 +22,7 @@
     --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
     --rule:#33454A; --rule-soft:#243337;
     --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
-    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C; --both:#A796D4;
     --f-text:#3DB8D3; --m-text:#D98F2E;
     --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
   }
@@ -32,7 +32,7 @@
   --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
   --rule:#33454A; --rule-soft:#243337;
   --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
-  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C; --both:#A796D4;
   --f-text:#3DB8D3; --m-text:#D98F2E;
   --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
 }
@@ -56,6 +56,18 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg section{padding-block:28px 26px}
 .tg section + section{border-top:1px solid var(--rule)}
 .tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg blockquote.passage{margin:6px 0 0; padding:14px 18px; background:var(--card);
+  border-left:3px solid var(--rule); font-family:Georgia,serif; font-size:17px; line-height:1.65;
+  color:var(--ink); max-width:62ch}
+.tg mark.gm{background:none; color:var(--m-text); font-weight:700; border-bottom:2px solid var(--m)}
+.tg mark.gf{background:none; color:var(--f-text); font-weight:700; border-bottom:2px solid var(--f)}
+.tg ul.wall{list-style:none; margin:8px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:5px}
+.tg ul.wall li{font-size:12.5px; line-height:1.2; padding:3px 7px; border-radius:3px;
+  border:1px solid var(--rule); color:var(--muted); cursor:default}
+.tg ul.wall li.many{font-size:14px; color:var(--ink-2); border-color:var(--ink-2)}
+.tg ul.wall li span{font-size:10.5px; margin-left:4px; opacity:.8}
+.tg ul.wall li.wf{background:var(--f); border-color:var(--f); color:#fff; font-weight:600}
+.tg ul.wall li:focus{outline:2px solid var(--gold); outline-offset:1px}
 .tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
 .tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
 .tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
@@ -81,6 +93,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .lab{font-weight:700}
 .tg .chart .cnt{font-weight:400; fill:var(--muted)}
 .tg .chart .val{font-weight:700}
+.tg .chart .su{fill:var(--muted)}
+.tg .chart .sb{fill:var(--both)}
+.tg .chart .sn{fill:var(--rule)}
+.tg .chart .shelfbg{fill:none}
+.tg .key i{display:inline-block;width:9px;height:9px;margin:0 4px 0 10px;vertical-align:-1px}
 .tg .chart .bf{fill:var(--f)}
 .tg .chart .bm{fill:var(--m)}
 .tg .chart .mk{fill:var(--ink); stroke:var(--paper); stroke-width:1}
@@ -349,7 +366,585 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
 <line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
 </g>
-</svg></div><p class="note">The 7 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count. Labour-market figures exist only for broad job groups (a nurse and a priest fall in the same one), so they are compared with the books over all jobs together, above, not job by job.</p><details class="dt"><summary>Data table: mentions of each job, West Bank and Gaza</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, West Bank and Gaza, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, West Bank and Gaza</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Nurse</th><td>8</td><td>4</td><td>66.7%</td></tr><tr><th scope="row">Doctor</th><td>16</td><td>15</td><td>51.6%</td></tr><tr><th scope="row">Driver</th><td>3</td><td>9</td><td>25.0%</td></tr><tr><th scope="row">Engineer</th><td>1</td><td>10</td><td>9.1%</td></tr><tr><th scope="row">Farmer</th><td>2</td><td>21</td><td>8.7%</td></tr><tr><th scope="row">Judge</th><td>0</td><td>10</td><td>0.0%</td></tr><tr><th scope="row">Waiter</th><td>0</td><td>15</td><td>0.0%</td></tr></tbody></table></div></details></section><section id="people" aria-labelledby="h-people"><h2 id="h-people" class="part">Real people named</h2><p class="lede">The real people West Bank and Gaza&rsquo;s national textbooks name most often in their text, by how many of its 25 national textbooks name them. 1 of these 6 is a woman.</p><div class="tscroll" tabindex="0" role="region" aria-label="The real people named most often, West Bank and Gaza"><table class="plain"><caption class="vh">The real people named most often, West Bank and Gaza</caption><thead><tr><th scope="col">Person</th><th scope="col">Woman or man</th><th scope="col">Who</th><th scope="col" class="num">Books naming them</th></tr></thead><tbody><tr><th scope="row">Mahmoud Darwish</th><td>Man</td><td>Public figure since 1950</td><td class="num">3</td></tr><tr><th scope="row">Umm Kulthum</th><td>Woman</td><td>Historical figure</td><td class="num">3</td></tr><tr><th scope="row">William Shakespeare</th><td>Man</td><td>Historical figure</td><td class="num">3</td></tr><tr><th scope="row">Albert Einstein</th><td>Man</td><td>Historical figure</td><td class="num">2</td></tr><tr><th scope="row">Nelson Mandela</th><td>Man</td><td>Public figure since 1950</td><td class="num">2</td></tr><tr><th scope="row">Saladin</th><td>Man</td><td>Historical figure</td><td class="num">2</td></tr></tbody></table></div><p class="note">A person is listed when named, by at least two words (such as Kwame Nkrumah or Prophet Muhammad), in the body of at least 2 national textbooks; at most 10 are listed, and a list that would end inside a tie leaves out everyone with the last count. Names were found by a name finder (spaCy) in each book&rsquo;s text, leaving out the first 8% and last 5% (forewords, author lists, references), and sorted by hand into real people and others (invented characters, the books&rsquo; own authors and officials, places); variants of one name count once. Names written only in a script other than the Latin alphabet are not found.</p></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of West Bank and Gaza&rsquo;s 25 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">44.8%</span><p>of the people pictured are women or girls (1,309 people).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, West Bank and Gaza.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-pse" viewBox="0 0 560 220" role="img" aria-labelledby="tg-pic-roles-pse-t tg-pic-roles-pse-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><p class="note">The 7 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count. Labour-market figures exist only for broad job groups (a nurse and a priest fall in the same one), so they are compared with the books over all jobs together, above, not job by job.</p><details class="dt"><summary>Data table: mentions of each job, West Bank and Gaza</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, West Bank and Gaza, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, West Bank and Gaza</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Nurse</th><td>8</td><td>4</td><td>66.7%</td></tr><tr><th scope="row">Doctor</th><td>16</td><td>15</td><td>51.6%</td></tr><tr><th scope="row">Driver</th><td>3</td><td>9</td><td>25.0%</td></tr><tr><th scope="row">Engineer</th><td>1</td><td>10</td><td>9.1%</td></tr><tr><th scope="row">Farmer</th><td>2</td><td>21</td><td>8.7%</td></tr><tr><th scope="row">Judge</th><td>0</td><td>10</td><td>0.0%</td></tr><tr><th scope="row">Waiter</th><td>0</td><td>15</td><td>0.0%</td></tr></tbody></table></div></details></section><section id="people" aria-labelledby="h-people"><h2 id="h-people" class="part">Real people named</h2><p class="lede">The real people West Bank and Gaza&rsquo;s national textbooks name most often in their text, by how many of its 25 national textbooks name them. 1 of these 6 is a woman.</p><div class="tscroll" tabindex="0" role="region" aria-label="The real people named most often, West Bank and Gaza"><table class="plain"><caption class="vh">The real people named most often, West Bank and Gaza</caption><thead><tr><th scope="col">Person</th><th scope="col">Woman or man</th><th scope="col">Who</th><th scope="col" class="num">Books naming them</th></tr></thead><tbody><tr><th scope="row">Mahmoud Darwish</th><td>Man</td><td>Public figure since 1950</td><td class="num">3</td></tr><tr><th scope="row">Umm Kulthum</th><td>Woman</td><td>Historical figure</td><td class="num">3</td></tr><tr><th scope="row">William Shakespeare</th><td>Man</td><td>Historical figure</td><td class="num">3</td></tr><tr><th scope="row">Albert Einstein</th><td>Man</td><td>Historical figure</td><td class="num">2</td></tr><tr><th scope="row">Nelson Mandela</th><td>Man</td><td>Public figure since 1950</td><td class="num">2</td></tr><tr><th scope="row">Saladin</th><td>Man</td><td>Historical figure</td><td class="num">2</td></tr></tbody></table></div><p class="note">A person is listed when named, by at least two words (such as Kwame Nkrumah or Prophet Muhammad), in the body of at least 2 national textbooks; at most 10 are listed, and a list that would end inside a tie leaves out everyone with the last count. Names were found by a name finder (spaCy) in each book&rsquo;s text, leaving out the first 8% and last 5% (forewords, author lists, references), and sorted by hand into real people and others (invented characters, the books&rsquo; own authors and officials, places); variants of one name count once. Names written only in a script other than the Latin alphabet are not found.</p></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of West Bank and Gaza&rsquo;s 25 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">44.8%</span><p>of the people pictured are women or girls (1,309 people).</p></li></ul><section id="pic-shelf" aria-labelledby="h-pic-shelf"><h2 id="h-pic-shelf">Page by page</h2><p class="lede">Each block is one of West Bank and Gaza&rsquo;s textbooks and each square one of its coded pages, in page order: 11.4% of the pages show men or boys only, 5.0% women or girls only.</p><p class="key"><i class="kf" style="background:var(--f)"></i>Women or girls only<i style="background:var(--m)"></i>Men or boys only<i style="background:var(--both)"></i>Both<i style="background:var(--muted)"></i>Unclear<i style="background:var(--rule)"></i>No one</p><div class="chartbox"><svg class="chart shelf" id="tg-c-shelf" viewBox="0 0 560 76" role="img" aria-labelledby="tg-c-shelf-t tg-c-shelf-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-shelf-t">Who is pictured on each coded page, West Bank and Gaza</title>
+<desc id="tg-c-shelf-d">25 books; of their coded pages 5.0% women or girls only; 11.4% men or boys only; 32.4% both; 2.8% people of unclear gender; 48.4% no one</desc>
+<g class="row"><title>اللغة الإنجليزية | الصف الثالث الأساسي | فصل ثاني: 20 pages coded; 1 women or girls only, 2 men or boys only, 12 both, 1 people of unclear gender, 4 no one</title>
+<rect class="shelfbg" x="-1" y="-1" width="36" height="29"/>
+<rect class="sn" x="0" y="0" width="6" height="6"/>
+<rect class="sn" x="7" y="0" width="6" height="6"/>
+<rect class="bm" x="14" y="0" width="6" height="6"/>
+<rect class="sn" x="21" y="0" width="6" height="6"/>
+<rect class="sn" x="28" y="0" width="6" height="6"/>
+<rect class="sb" x="0" y="7" width="6" height="6"/>
+<rect class="sb" x="7" y="7" width="6" height="6"/>
+<rect class="sb" x="14" y="7" width="6" height="6"/>
+<rect class="sb" x="21" y="7" width="6" height="6"/>
+<rect class="sb" x="28" y="7" width="6" height="6"/>
+<rect class="sb" x="0" y="14" width="6" height="6"/>
+<rect class="sb" x="7" y="14" width="6" height="6"/>
+<rect class="sb" x="14" y="14" width="6" height="6"/>
+<rect class="su" x="21" y="14" width="6" height="6"/>
+<rect class="bf" x="28" y="14" width="6" height="6"/>
+<rect class="bm" x="0" y="21" width="6" height="6"/>
+<rect class="sb" x="7" y="21" width="6" height="6"/>
+<rect class="sb" x="14" y="21" width="6" height="6"/>
+<rect class="sb" x="21" y="21" width="6" height="6"/>
+<rect class="sb" x="28" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف السادس الأساسي | فصل أول: 20 pages coded; 1 women or girls only, 4 men or boys only, 11 both, 4 no one</title>
+<rect class="shelfbg" x="40" y="-1" width="36" height="29"/>
+<rect class="sn" x="41" y="0" width="6" height="6"/>
+<rect class="bm" x="48" y="0" width="6" height="6"/>
+<rect class="sb" x="55" y="0" width="6" height="6"/>
+<rect class="bm" x="62" y="0" width="6" height="6"/>
+<rect class="bm" x="69" y="0" width="6" height="6"/>
+<rect class="sb" x="41" y="7" width="6" height="6"/>
+<rect class="sb" x="48" y="7" width="6" height="6"/>
+<rect class="bm" x="55" y="7" width="6" height="6"/>
+<rect class="sn" x="62" y="7" width="6" height="6"/>
+<rect class="sb" x="69" y="7" width="6" height="6"/>
+<rect class="sb" x="41" y="14" width="6" height="6"/>
+<rect class="sb" x="48" y="14" width="6" height="6"/>
+<rect class="sb" x="55" y="14" width="6" height="6"/>
+<rect class="sn" x="62" y="14" width="6" height="6"/>
+<rect class="sb" x="69" y="14" width="6" height="6"/>
+<rect class="bf" x="41" y="21" width="6" height="6"/>
+<rect class="sb" x="48" y="21" width="6" height="6"/>
+<rect class="sb" x="55" y="21" width="6" height="6"/>
+<rect class="sb" x="62" y="21" width="6" height="6"/>
+<rect class="sn" x="69" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف السادس الأساسي | فصل ثاني: 20 pages coded; 3 men or boys only, 12 both, 5 no one</title>
+<rect class="shelfbg" x="81" y="-1" width="36" height="29"/>
+<rect class="bm" x="82" y="0" width="6" height="6"/>
+<rect class="sb" x="89" y="0" width="6" height="6"/>
+<rect class="bm" x="96" y="0" width="6" height="6"/>
+<rect class="bm" x="103" y="0" width="6" height="6"/>
+<rect class="sb" x="110" y="0" width="6" height="6"/>
+<rect class="sn" x="82" y="7" width="6" height="6"/>
+<rect class="sb" x="89" y="7" width="6" height="6"/>
+<rect class="sb" x="96" y="7" width="6" height="6"/>
+<rect class="sb" x="103" y="7" width="6" height="6"/>
+<rect class="sb" x="110" y="7" width="6" height="6"/>
+<rect class="sb" x="82" y="14" width="6" height="6"/>
+<rect class="sb" x="89" y="14" width="6" height="6"/>
+<rect class="sb" x="96" y="14" width="6" height="6"/>
+<rect class="sb" x="103" y="14" width="6" height="6"/>
+<rect class="sb" x="110" y="14" width="6" height="6"/>
+<rect class="sb" x="82" y="21" width="6" height="6"/>
+<rect class="sn" x="89" y="21" width="6" height="6"/>
+<rect class="sn" x="96" y="21" width="6" height="6"/>
+<rect class="sn" x="103" y="21" width="6" height="6"/>
+<rect class="sn" x="110" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الثاني الأساسي | فصل أول: 20 pages coded; 1 women or girls only, 2 men or boys only, 11 both, 6 no one</title>
+<rect class="shelfbg" x="122" y="-1" width="36" height="29"/>
+<rect class="sn" x="123" y="0" width="6" height="6"/>
+<rect class="sb" x="130" y="0" width="6" height="6"/>
+<rect class="sn" x="137" y="0" width="6" height="6"/>
+<rect class="sb" x="144" y="0" width="6" height="6"/>
+<rect class="sn" x="151" y="0" width="6" height="6"/>
+<rect class="sb" x="123" y="7" width="6" height="6"/>
+<rect class="bf" x="130" y="7" width="6" height="6"/>
+<rect class="sb" x="137" y="7" width="6" height="6"/>
+<rect class="sb" x="144" y="7" width="6" height="6"/>
+<rect class="sb" x="151" y="7" width="6" height="6"/>
+<rect class="sb" x="123" y="14" width="6" height="6"/>
+<rect class="bm" x="130" y="14" width="6" height="6"/>
+<rect class="bm" x="137" y="14" width="6" height="6"/>
+<rect class="sb" x="144" y="14" width="6" height="6"/>
+<rect class="sn" x="151" y="14" width="6" height="6"/>
+<rect class="sb" x="123" y="21" width="6" height="6"/>
+<rect class="sb" x="130" y="21" width="6" height="6"/>
+<rect class="sb" x="137" y="21" width="6" height="6"/>
+<rect class="sn" x="144" y="21" width="6" height="6"/>
+<rect class="sn" x="151" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>English for Palestine Grade 2 (Grade Two): 20 pages coded; 2 women or girls only, 4 men or boys only, 4 both, 3 people of unclear gender, 7 no one</title>
+<rect class="shelfbg" x="163" y="-1" width="36" height="29"/>
+<rect class="bm" x="164" y="0" width="6" height="6"/>
+<rect class="sn" x="171" y="0" width="6" height="6"/>
+<rect class="sb" x="178" y="0" width="6" height="6"/>
+<rect class="bf" x="185" y="0" width="6" height="6"/>
+<rect class="sn" x="192" y="0" width="6" height="6"/>
+<rect class="bm" x="164" y="7" width="6" height="6"/>
+<rect class="su" x="171" y="7" width="6" height="6"/>
+<rect class="bm" x="178" y="7" width="6" height="6"/>
+<rect class="sn" x="185" y="7" width="6" height="6"/>
+<rect class="bm" x="192" y="7" width="6" height="6"/>
+<rect class="sn" x="164" y="14" width="6" height="6"/>
+<rect class="sb" x="171" y="14" width="6" height="6"/>
+<rect class="sn" x="178" y="14" width="6" height="6"/>
+<rect class="sn" x="185" y="14" width="6" height="6"/>
+<rect class="sn" x="192" y="14" width="6" height="6"/>
+<rect class="su" x="164" y="21" width="6" height="6"/>
+<rect class="su" x="171" y="21" width="6" height="6"/>
+<rect class="sb" x="178" y="21" width="6" height="6"/>
+<rect class="sb" x="185" y="21" width="6" height="6"/>
+<rect class="bf" x="192" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الخامس الأساسي | فصل ثاني: 20 pages coded; 1 women or girls only, 2 men or boys only, 10 both, 7 no one</title>
+<rect class="shelfbg" x="204" y="-1" width="36" height="29"/>
+<rect class="sn" x="205" y="0" width="6" height="6"/>
+<rect class="sn" x="212" y="0" width="6" height="6"/>
+<rect class="bm" x="219" y="0" width="6" height="6"/>
+<rect class="sb" x="226" y="0" width="6" height="6"/>
+<rect class="sb" x="233" y="0" width="6" height="6"/>
+<rect class="sb" x="205" y="7" width="6" height="6"/>
+<rect class="sn" x="212" y="7" width="6" height="6"/>
+<rect class="sn" x="219" y="7" width="6" height="6"/>
+<rect class="sb" x="226" y="7" width="6" height="6"/>
+<rect class="bm" x="233" y="7" width="6" height="6"/>
+<rect class="bf" x="205" y="14" width="6" height="6"/>
+<rect class="sb" x="212" y="14" width="6" height="6"/>
+<rect class="sn" x="219" y="14" width="6" height="6"/>
+<rect class="sb" x="226" y="14" width="6" height="6"/>
+<rect class="sb" x="233" y="14" width="6" height="6"/>
+<rect class="sb" x="205" y="21" width="6" height="6"/>
+<rect class="sb" x="212" y="21" width="6" height="6"/>
+<rect class="sb" x="219" y="21" width="6" height="6"/>
+<rect class="sn" x="226" y="21" width="6" height="6"/>
+<rect class="sn" x="233" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف السابع الأساسي | فصل ثاني: 20 pages coded; 2 women or girls only, 4 men or boys only, 6 both, 1 people of unclear gender, 7 no one</title>
+<rect class="shelfbg" x="245" y="-1" width="36" height="29"/>
+<rect class="sn" x="246" y="0" width="6" height="6"/>
+<rect class="sb" x="253" y="0" width="6" height="6"/>
+<rect class="sn" x="260" y="0" width="6" height="6"/>
+<rect class="sb" x="267" y="0" width="6" height="6"/>
+<rect class="bm" x="274" y="0" width="6" height="6"/>
+<rect class="su" x="246" y="7" width="6" height="6"/>
+<rect class="bf" x="253" y="7" width="6" height="6"/>
+<rect class="sb" x="260" y="7" width="6" height="6"/>
+<rect class="bm" x="267" y="7" width="6" height="6"/>
+<rect class="sb" x="274" y="7" width="6" height="6"/>
+<rect class="sb" x="246" y="14" width="6" height="6"/>
+<rect class="sn" x="253" y="14" width="6" height="6"/>
+<rect class="sn" x="260" y="14" width="6" height="6"/>
+<rect class="sn" x="267" y="14" width="6" height="6"/>
+<rect class="bm" x="274" y="14" width="6" height="6"/>
+<rect class="sb" x="246" y="21" width="6" height="6"/>
+<rect class="bm" x="253" y="21" width="6" height="6"/>
+<rect class="sn" x="260" y="21" width="6" height="6"/>
+<rect class="sn" x="267" y="21" width="6" height="6"/>
+<rect class="bf" x="274" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الأول الأساسي | فصل ثاني: 20 pages coded; 1 women or girls only, 3 men or boys only, 6 both, 2 people of unclear gender, 8 no one</title>
+<rect class="shelfbg" x="286" y="-1" width="36" height="29"/>
+<rect class="sn" x="287" y="0" width="6" height="6"/>
+<rect class="sn" x="294" y="0" width="6" height="6"/>
+<rect class="su" x="301" y="0" width="6" height="6"/>
+<rect class="sb" x="308" y="0" width="6" height="6"/>
+<rect class="sb" x="315" y="0" width="6" height="6"/>
+<rect class="sn" x="287" y="7" width="6" height="6"/>
+<rect class="sn" x="294" y="7" width="6" height="6"/>
+<rect class="bm" x="301" y="7" width="6" height="6"/>
+<rect class="sn" x="308" y="7" width="6" height="6"/>
+<rect class="su" x="315" y="7" width="6" height="6"/>
+<rect class="bf" x="287" y="14" width="6" height="6"/>
+<rect class="bm" x="294" y="14" width="6" height="6"/>
+<rect class="bm" x="301" y="14" width="6" height="6"/>
+<rect class="sn" x="308" y="14" width="6" height="6"/>
+<rect class="sb" x="315" y="14" width="6" height="6"/>
+<rect class="sb" x="287" y="21" width="6" height="6"/>
+<rect class="sn" x="294" y="21" width="6" height="6"/>
+<rect class="sb" x="301" y="21" width="6" height="6"/>
+<rect class="sb" x="308" y="21" width="6" height="6"/>
+<rect class="sn" x="315" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الخامس الأساسي | فصل أول: 20 pages coded; 1 women or girls only, 2 men or boys only, 9 both, 8 no one</title>
+<rect class="shelfbg" x="327" y="-1" width="36" height="29"/>
+<rect class="sn" x="328" y="0" width="6" height="6"/>
+<rect class="sn" x="335" y="0" width="6" height="6"/>
+<rect class="sn" x="342" y="0" width="6" height="6"/>
+<rect class="sn" x="349" y="0" width="6" height="6"/>
+<rect class="sb" x="356" y="0" width="6" height="6"/>
+<rect class="bm" x="328" y="7" width="6" height="6"/>
+<rect class="sb" x="335" y="7" width="6" height="6"/>
+<rect class="sb" x="342" y="7" width="6" height="6"/>
+<rect class="sb" x="349" y="7" width="6" height="6"/>
+<rect class="bm" x="356" y="7" width="6" height="6"/>
+<rect class="sn" x="328" y="14" width="6" height="6"/>
+<rect class="sb" x="335" y="14" width="6" height="6"/>
+<rect class="sb" x="342" y="14" width="6" height="6"/>
+<rect class="sb" x="349" y="14" width="6" height="6"/>
+<rect class="sn" x="356" y="14" width="6" height="6"/>
+<rect class="sn" x="328" y="21" width="6" height="6"/>
+<rect class="sb" x="335" y="21" width="6" height="6"/>
+<rect class="sb" x="342" y="21" width="6" height="6"/>
+<rect class="bf" x="349" y="21" width="6" height="6"/>
+<rect class="sn" x="356" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الرابع الأساسي | فصل ثاني: 20 pages coded; 1 men or boys only, 8 both, 3 people of unclear gender, 8 no one</title>
+<rect class="shelfbg" x="368" y="-1" width="36" height="29"/>
+<rect class="sb" x="369" y="0" width="6" height="6"/>
+<rect class="sn" x="376" y="0" width="6" height="6"/>
+<rect class="su" x="383" y="0" width="6" height="6"/>
+<rect class="sn" x="390" y="0" width="6" height="6"/>
+<rect class="su" x="397" y="0" width="6" height="6"/>
+<rect class="sb" x="369" y="7" width="6" height="6"/>
+<rect class="sb" x="376" y="7" width="6" height="6"/>
+<rect class="bm" x="383" y="7" width="6" height="6"/>
+<rect class="sb" x="390" y="7" width="6" height="6"/>
+<rect class="sb" x="397" y="7" width="6" height="6"/>
+<rect class="sn" x="369" y="14" width="6" height="6"/>
+<rect class="sn" x="376" y="14" width="6" height="6"/>
+<rect class="su" x="383" y="14" width="6" height="6"/>
+<rect class="sn" x="390" y="14" width="6" height="6"/>
+<rect class="sb" x="397" y="14" width="6" height="6"/>
+<rect class="sn" x="369" y="21" width="6" height="6"/>
+<rect class="sb" x="376" y="21" width="6" height="6"/>
+<rect class="sb" x="383" y="21" width="6" height="6"/>
+<rect class="sn" x="390" y="21" width="6" height="6"/>
+<rect class="sn" x="397" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الأول الأساسي | فصل أول: 20 pages coded; 4 women or girls only, 2 men or boys only, 5 both, 9 no one</title>
+<rect class="shelfbg" x="409" y="-1" width="36" height="29"/>
+<rect class="sb" x="410" y="0" width="6" height="6"/>
+<rect class="sb" x="417" y="0" width="6" height="6"/>
+<rect class="sn" x="424" y="0" width="6" height="6"/>
+<rect class="sn" x="431" y="0" width="6" height="6"/>
+<rect class="sn" x="438" y="0" width="6" height="6"/>
+<rect class="bf" x="410" y="7" width="6" height="6"/>
+<rect class="sn" x="417" y="7" width="6" height="6"/>
+<rect class="sn" x="424" y="7" width="6" height="6"/>
+<rect class="sb" x="431" y="7" width="6" height="6"/>
+<rect class="sn" x="438" y="7" width="6" height="6"/>
+<rect class="bf" x="410" y="14" width="6" height="6"/>
+<rect class="bf" x="417" y="14" width="6" height="6"/>
+<rect class="sn" x="424" y="14" width="6" height="6"/>
+<rect class="sb" x="431" y="14" width="6" height="6"/>
+<rect class="bm" x="438" y="14" width="6" height="6"/>
+<rect class="sb" x="410" y="21" width="6" height="6"/>
+<rect class="sn" x="417" y="21" width="6" height="6"/>
+<rect class="bm" x="424" y="21" width="6" height="6"/>
+<rect class="sn" x="431" y="21" width="6" height="6"/>
+<rect class="bf" x="438" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الثامن الأساسي | فصل أول: 20 pages coded; 2 men or boys only, 8 both, 1 people of unclear gender, 9 no one</title>
+<rect class="shelfbg" x="450" y="-1" width="36" height="29"/>
+<rect class="sn" x="451" y="0" width="6" height="6"/>
+<rect class="bm" x="458" y="0" width="6" height="6"/>
+<rect class="sb" x="465" y="0" width="6" height="6"/>
+<rect class="sb" x="472" y="0" width="6" height="6"/>
+<rect class="bm" x="479" y="0" width="6" height="6"/>
+<rect class="sn" x="451" y="7" width="6" height="6"/>
+<rect class="sb" x="458" y="7" width="6" height="6"/>
+<rect class="sb" x="465" y="7" width="6" height="6"/>
+<rect class="sb" x="472" y="7" width="6" height="6"/>
+<rect class="sb" x="479" y="7" width="6" height="6"/>
+<rect class="sb" x="451" y="14" width="6" height="6"/>
+<rect class="sn" x="458" y="14" width="6" height="6"/>
+<rect class="sn" x="465" y="14" width="6" height="6"/>
+<rect class="sn" x="472" y="14" width="6" height="6"/>
+<rect class="su" x="479" y="14" width="6" height="6"/>
+<rect class="sn" x="451" y="21" width="6" height="6"/>
+<rect class="sn" x="458" y="21" width="6" height="6"/>
+<rect class="sn" x="465" y="21" width="6" height="6"/>
+<rect class="sb" x="472" y="21" width="6" height="6"/>
+<rect class="sn" x="479" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الثاني الأساسي | فصل ثاني: 20 pages coded; 1 men or boys only, 10 both, 9 no one</title>
+<rect class="shelfbg" x="491" y="-1" width="36" height="29"/>
+<rect class="sb" x="492" y="0" width="6" height="6"/>
+<rect class="sb" x="499" y="0" width="6" height="6"/>
+<rect class="sn" x="506" y="0" width="6" height="6"/>
+<rect class="sn" x="513" y="0" width="6" height="6"/>
+<rect class="sn" x="520" y="0" width="6" height="6"/>
+<rect class="sn" x="492" y="7" width="6" height="6"/>
+<rect class="sn" x="499" y="7" width="6" height="6"/>
+<rect class="sb" x="506" y="7" width="6" height="6"/>
+<rect class="sb" x="513" y="7" width="6" height="6"/>
+<rect class="sn" x="520" y="7" width="6" height="6"/>
+<rect class="sb" x="492" y="14" width="6" height="6"/>
+<rect class="sn" x="499" y="14" width="6" height="6"/>
+<rect class="sb" x="506" y="14" width="6" height="6"/>
+<rect class="sb" x="513" y="14" width="6" height="6"/>
+<rect class="bm" x="520" y="14" width="6" height="6"/>
+<rect class="sb" x="492" y="21" width="6" height="6"/>
+<rect class="sb" x="499" y="21" width="6" height="6"/>
+<rect class="sb" x="506" y="21" width="6" height="6"/>
+<rect class="sn" x="513" y="21" width="6" height="6"/>
+<rect class="sn" x="520" y="21" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف السابع الأساسي | فصل أول: 20 pages coded; 3 women or girls only, 2 men or boys only, 6 both, 9 no one</title>
+<rect class="shelfbg" x="-1" y="37" width="36" height="29"/>
+<rect class="sn" x="0" y="38" width="6" height="6"/>
+<rect class="sb" x="7" y="38" width="6" height="6"/>
+<rect class="sn" x="14" y="38" width="6" height="6"/>
+<rect class="sb" x="21" y="38" width="6" height="6"/>
+<rect class="bf" x="28" y="38" width="6" height="6"/>
+<rect class="bf" x="0" y="45" width="6" height="6"/>
+<rect class="sn" x="7" y="45" width="6" height="6"/>
+<rect class="sb" x="14" y="45" width="6" height="6"/>
+<rect class="sb" x="21" y="45" width="6" height="6"/>
+<rect class="sn" x="28" y="45" width="6" height="6"/>
+<rect class="sn" x="0" y="52" width="6" height="6"/>
+<rect class="bm" x="7" y="52" width="6" height="6"/>
+<rect class="sb" x="14" y="52" width="6" height="6"/>
+<rect class="sn" x="21" y="52" width="6" height="6"/>
+<rect class="sb" x="28" y="52" width="6" height="6"/>
+<rect class="bf" x="0" y="59" width="6" height="6"/>
+<rect class="sn" x="7" y="59" width="6" height="6"/>
+<rect class="bm" x="14" y="59" width="6" height="6"/>
+<rect class="sn" x="21" y="59" width="6" height="6"/>
+<rect class="sn" x="28" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف التاسع الأساسي | فصل ثاني: 20 pages coded; 1 women or girls only, 1 men or boys only, 7 both, 1 people of unclear gender, 10 no one</title>
+<rect class="shelfbg" x="40" y="37" width="36" height="29"/>
+<rect class="sn" x="41" y="38" width="6" height="6"/>
+<rect class="sb" x="48" y="38" width="6" height="6"/>
+<rect class="sb" x="55" y="38" width="6" height="6"/>
+<rect class="sn" x="62" y="38" width="6" height="6"/>
+<rect class="sb" x="69" y="38" width="6" height="6"/>
+<rect class="sn" x="41" y="45" width="6" height="6"/>
+<rect class="sn" x="48" y="45" width="6" height="6"/>
+<rect class="bm" x="55" y="45" width="6" height="6"/>
+<rect class="sb" x="62" y="45" width="6" height="6"/>
+<rect class="sb" x="69" y="45" width="6" height="6"/>
+<rect class="bf" x="41" y="52" width="6" height="6"/>
+<rect class="sn" x="48" y="52" width="6" height="6"/>
+<rect class="sn" x="55" y="52" width="6" height="6"/>
+<rect class="sb" x="62" y="52" width="6" height="6"/>
+<rect class="sb" x="69" y="52" width="6" height="6"/>
+<rect class="sn" x="41" y="59" width="6" height="6"/>
+<rect class="sn" x="48" y="59" width="6" height="6"/>
+<rect class="sn" x="55" y="59" width="6" height="6"/>
+<rect class="su" x="62" y="59" width="6" height="6"/>
+<rect class="sn" x="69" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الثالث الأساسي | فصل أول: 20 pages coded; 2 men or boys only, 8 both, 10 no one</title>
+<rect class="shelfbg" x="81" y="37" width="36" height="29"/>
+<rect class="sn" x="82" y="38" width="6" height="6"/>
+<rect class="sn" x="89" y="38" width="6" height="6"/>
+<rect class="sb" x="96" y="38" width="6" height="6"/>
+<rect class="sb" x="103" y="38" width="6" height="6"/>
+<rect class="sn" x="110" y="38" width="6" height="6"/>
+<rect class="sn" x="82" y="45" width="6" height="6"/>
+<rect class="sb" x="89" y="45" width="6" height="6"/>
+<rect class="sb" x="96" y="45" width="6" height="6"/>
+<rect class="sn" x="103" y="45" width="6" height="6"/>
+<rect class="sn" x="110" y="45" width="6" height="6"/>
+<rect class="sb" x="82" y="52" width="6" height="6"/>
+<rect class="bm" x="89" y="52" width="6" height="6"/>
+<rect class="sb" x="96" y="52" width="6" height="6"/>
+<rect class="sn" x="103" y="52" width="6" height="6"/>
+<rect class="sb" x="110" y="52" width="6" height="6"/>
+<rect class="sn" x="82" y="59" width="6" height="6"/>
+<rect class="bm" x="89" y="59" width="6" height="6"/>
+<rect class="sb" x="96" y="59" width="6" height="6"/>
+<rect class="sn" x="103" y="59" width="6" height="6"/>
+<rect class="sn" x="110" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الرابع الأساسي | فصل أول: 20 pages coded; 1 women or girls only, 3 men or boys only, 6 both, 10 no one</title>
+<rect class="shelfbg" x="122" y="37" width="36" height="29"/>
+<rect class="sb" x="123" y="38" width="6" height="6"/>
+<rect class="sb" x="130" y="38" width="6" height="6"/>
+<rect class="sb" x="137" y="38" width="6" height="6"/>
+<rect class="sn" x="144" y="38" width="6" height="6"/>
+<rect class="sn" x="151" y="38" width="6" height="6"/>
+<rect class="sb" x="123" y="45" width="6" height="6"/>
+<rect class="sn" x="130" y="45" width="6" height="6"/>
+<rect class="bm" x="137" y="45" width="6" height="6"/>
+<rect class="sn" x="144" y="45" width="6" height="6"/>
+<rect class="sb" x="151" y="45" width="6" height="6"/>
+<rect class="bf" x="123" y="52" width="6" height="6"/>
+<rect class="sb" x="130" y="52" width="6" height="6"/>
+<rect class="sn" x="137" y="52" width="6" height="6"/>
+<rect class="bm" x="144" y="52" width="6" height="6"/>
+<rect class="sn" x="151" y="52" width="6" height="6"/>
+<rect class="bm" x="123" y="59" width="6" height="6"/>
+<rect class="sn" x="130" y="59" width="6" height="6"/>
+<rect class="sn" x="137" y="59" width="6" height="6"/>
+<rect class="sn" x="144" y="59" width="6" height="6"/>
+<rect class="sn" x="151" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف العاشر الأساسي | أكاديمي | فصل أول: 20 pages coded; 1 women or girls only, 5 men or boys only, 3 both, 1 people of unclear gender, 10 no one</title>
+<rect class="shelfbg" x="163" y="37" width="36" height="29"/>
+<rect class="sn" x="164" y="38" width="6" height="6"/>
+<rect class="sn" x="171" y="38" width="6" height="6"/>
+<rect class="sn" x="178" y="38" width="6" height="6"/>
+<rect class="bm" x="185" y="38" width="6" height="6"/>
+<rect class="sb" x="192" y="38" width="6" height="6"/>
+<rect class="bm" x="164" y="45" width="6" height="6"/>
+<rect class="bm" x="171" y="45" width="6" height="6"/>
+<rect class="sn" x="178" y="45" width="6" height="6"/>
+<rect class="sn" x="185" y="45" width="6" height="6"/>
+<rect class="sn" x="192" y="45" width="6" height="6"/>
+<rect class="sn" x="164" y="52" width="6" height="6"/>
+<rect class="bm" x="171" y="52" width="6" height="6"/>
+<rect class="su" x="178" y="52" width="6" height="6"/>
+<rect class="sb" x="185" y="52" width="6" height="6"/>
+<rect class="bf" x="192" y="52" width="6" height="6"/>
+<rect class="sb" x="164" y="59" width="6" height="6"/>
+<rect class="bm" x="171" y="59" width="6" height="6"/>
+<rect class="sn" x="178" y="59" width="6" height="6"/>
+<rect class="sn" x="185" y="59" width="6" height="6"/>
+<rect class="sn" x="192" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف التاسع الأساسي | فصل أول: 20 pages coded; 1 women or girls only, 4 men or boys only, 4 both, 11 no one</title>
+<rect class="shelfbg" x="204" y="37" width="36" height="29"/>
+<rect class="sn" x="205" y="38" width="6" height="6"/>
+<rect class="sn" x="212" y="38" width="6" height="6"/>
+<rect class="sn" x="219" y="38" width="6" height="6"/>
+<rect class="bf" x="226" y="38" width="6" height="6"/>
+<rect class="sb" x="233" y="38" width="6" height="6"/>
+<rect class="sb" x="205" y="45" width="6" height="6"/>
+<rect class="sn" x="212" y="45" width="6" height="6"/>
+<rect class="sn" x="219" y="45" width="6" height="6"/>
+<rect class="sn" x="226" y="45" width="6" height="6"/>
+<rect class="bm" x="233" y="45" width="6" height="6"/>
+<rect class="bm" x="205" y="52" width="6" height="6"/>
+<rect class="sb" x="212" y="52" width="6" height="6"/>
+<rect class="sn" x="219" y="52" width="6" height="6"/>
+<rect class="bm" x="226" y="52" width="6" height="6"/>
+<rect class="sn" x="233" y="52" width="6" height="6"/>
+<rect class="sn" x="205" y="59" width="6" height="6"/>
+<rect class="sn" x="212" y="59" width="6" height="6"/>
+<rect class="bm" x="219" y="59" width="6" height="6"/>
+<rect class="sb" x="226" y="59" width="6" height="6"/>
+<rect class="sn" x="233" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف الثامن الأساسي | فصل ثاني: 20 pages coded; 1 women or girls only, 1 men or boys only, 7 both, 11 no one</title>
+<rect class="shelfbg" x="245" y="37" width="36" height="29"/>
+<rect class="sn" x="246" y="38" width="6" height="6"/>
+<rect class="sn" x="253" y="38" width="6" height="6"/>
+<rect class="sb" x="260" y="38" width="6" height="6"/>
+<rect class="sb" x="267" y="38" width="6" height="6"/>
+<rect class="sb" x="274" y="38" width="6" height="6"/>
+<rect class="sn" x="246" y="45" width="6" height="6"/>
+<rect class="sn" x="253" y="45" width="6" height="6"/>
+<rect class="sb" x="260" y="45" width="6" height="6"/>
+<rect class="sn" x="267" y="45" width="6" height="6"/>
+<rect class="sn" x="274" y="45" width="6" height="6"/>
+<rect class="bf" x="246" y="52" width="6" height="6"/>
+<rect class="sb" x="253" y="52" width="6" height="6"/>
+<rect class="sn" x="260" y="52" width="6" height="6"/>
+<rect class="sn" x="267" y="52" width="6" height="6"/>
+<rect class="bm" x="274" y="52" width="6" height="6"/>
+<rect class="sn" x="246" y="59" width="6" height="6"/>
+<rect class="sn" x="253" y="59" width="6" height="6"/>
+<rect class="sb" x="260" y="59" width="6" height="6"/>
+<rect class="sb" x="267" y="59" width="6" height="6"/>
+<rect class="sn" x="274" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | Reading Plus | الصف 12 أدبي | سنوي: 20 pages coded; 1 men or boys only, 4 both, 15 no one</title>
+<rect class="shelfbg" x="286" y="37" width="36" height="29"/>
+<rect class="sn" x="287" y="38" width="6" height="6"/>
+<rect class="sb" x="294" y="38" width="6" height="6"/>
+<rect class="sn" x="301" y="38" width="6" height="6"/>
+<rect class="sn" x="308" y="38" width="6" height="6"/>
+<rect class="sn" x="315" y="38" width="6" height="6"/>
+<rect class="sb" x="287" y="45" width="6" height="6"/>
+<rect class="sn" x="294" y="45" width="6" height="6"/>
+<rect class="sn" x="301" y="45" width="6" height="6"/>
+<rect class="sb" x="308" y="45" width="6" height="6"/>
+<rect class="sn" x="315" y="45" width="6" height="6"/>
+<rect class="bm" x="287" y="52" width="6" height="6"/>
+<rect class="sn" x="294" y="52" width="6" height="6"/>
+<rect class="sn" x="301" y="52" width="6" height="6"/>
+<rect class="sn" x="308" y="52" width="6" height="6"/>
+<rect class="sb" x="315" y="52" width="6" height="6"/>
+<rect class="sn" x="287" y="59" width="6" height="6"/>
+<rect class="sn" x="294" y="59" width="6" height="6"/>
+<rect class="sn" x="301" y="59" width="6" height="6"/>
+<rect class="sn" x="308" y="59" width="6" height="6"/>
+<rect class="sn" x="315" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف 12 زراعي | سنوي: 20 pages coded; 3 women or girls only, 1 men or boys only, 1 both, 15 no one</title>
+<rect class="shelfbg" x="327" y="37" width="36" height="29"/>
+<rect class="bm" x="328" y="38" width="6" height="6"/>
+<rect class="sn" x="335" y="38" width="6" height="6"/>
+<rect class="sn" x="342" y="38" width="6" height="6"/>
+<rect class="sn" x="349" y="38" width="6" height="6"/>
+<rect class="sn" x="356" y="38" width="6" height="6"/>
+<rect class="bf" x="328" y="45" width="6" height="6"/>
+<rect class="bf" x="335" y="45" width="6" height="6"/>
+<rect class="bf" x="342" y="45" width="6" height="6"/>
+<rect class="sn" x="349" y="45" width="6" height="6"/>
+<rect class="sn" x="356" y="45" width="6" height="6"/>
+<rect class="sn" x="328" y="52" width="6" height="6"/>
+<rect class="sb" x="335" y="52" width="6" height="6"/>
+<rect class="sn" x="342" y="52" width="6" height="6"/>
+<rect class="sn" x="349" y="52" width="6" height="6"/>
+<rect class="sn" x="356" y="52" width="6" height="6"/>
+<rect class="sn" x="328" y="59" width="6" height="6"/>
+<rect class="sn" x="335" y="59" width="6" height="6"/>
+<rect class="sn" x="342" y="59" width="6" height="6"/>
+<rect class="sn" x="349" y="59" width="6" height="6"/>
+<rect class="sn" x="356" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف العاشر الأساسي | أكاديمي | فصل ثاني: 20 pages coded; 1 men or boys only, 3 both, 16 no one</title>
+<rect class="shelfbg" x="368" y="37" width="36" height="29"/>
+<rect class="sb" x="369" y="38" width="6" height="6"/>
+<rect class="bm" x="376" y="38" width="6" height="6"/>
+<rect class="sn" x="383" y="38" width="6" height="6"/>
+<rect class="sn" x="390" y="38" width="6" height="6"/>
+<rect class="sn" x="397" y="38" width="6" height="6"/>
+<rect class="sb" x="369" y="45" width="6" height="6"/>
+<rect class="sn" x="376" y="45" width="6" height="6"/>
+<rect class="sn" x="383" y="45" width="6" height="6"/>
+<rect class="sn" x="390" y="45" width="6" height="6"/>
+<rect class="sn" x="397" y="45" width="6" height="6"/>
+<rect class="sn" x="369" y="52" width="6" height="6"/>
+<rect class="sn" x="376" y="52" width="6" height="6"/>
+<rect class="sn" x="383" y="52" width="6" height="6"/>
+<rect class="sn" x="390" y="52" width="6" height="6"/>
+<rect class="sb" x="397" y="52" width="6" height="6"/>
+<rect class="sn" x="369" y="59" width="6" height="6"/>
+<rect class="sn" x="376" y="59" width="6" height="6"/>
+<rect class="sn" x="383" y="59" width="6" height="6"/>
+<rect class="sn" x="390" y="59" width="6" height="6"/>
+<rect class="sn" x="397" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | Reading Plus | الصف 11 أدبي | سنوي: 20 pages coded; 2 men or boys only, 1 both, 17 no one</title>
+<rect class="shelfbg" x="409" y="37" width="36" height="29"/>
+<rect class="sn" x="410" y="38" width="6" height="6"/>
+<rect class="bm" x="417" y="38" width="6" height="6"/>
+<rect class="bm" x="424" y="38" width="6" height="6"/>
+<rect class="sb" x="431" y="38" width="6" height="6"/>
+<rect class="sn" x="438" y="38" width="6" height="6"/>
+<rect class="sn" x="410" y="45" width="6" height="6"/>
+<rect class="sn" x="417" y="45" width="6" height="6"/>
+<rect class="sn" x="424" y="45" width="6" height="6"/>
+<rect class="sn" x="431" y="45" width="6" height="6"/>
+<rect class="sn" x="438" y="45" width="6" height="6"/>
+<rect class="sn" x="410" y="52" width="6" height="6"/>
+<rect class="sn" x="417" y="52" width="6" height="6"/>
+<rect class="sn" x="424" y="52" width="6" height="6"/>
+<rect class="sn" x="431" y="52" width="6" height="6"/>
+<rect class="sn" x="438" y="52" width="6" height="6"/>
+<rect class="sn" x="410" y="59" width="6" height="6"/>
+<rect class="sn" x="417" y="59" width="6" height="6"/>
+<rect class="sn" x="424" y="59" width="6" height="6"/>
+<rect class="sn" x="431" y="59" width="6" height="6"/>
+<rect class="sn" x="438" y="59" width="6" height="6"/>
+</g>
+<g class="row"><title>اللغة الإنجليزية | الصف 11 زراعي | سنوي: 20 pages coded; 2 men or boys only, 1 people of unclear gender, 17 no one</title>
+<rect class="shelfbg" x="450" y="37" width="36" height="29"/>
+<rect class="sn" x="451" y="38" width="6" height="6"/>
+<rect class="sn" x="458" y="38" width="6" height="6"/>
+<rect class="sn" x="465" y="38" width="6" height="6"/>
+<rect class="sn" x="472" y="38" width="6" height="6"/>
+<rect class="sn" x="479" y="38" width="6" height="6"/>
+<rect class="su" x="451" y="45" width="6" height="6"/>
+<rect class="bm" x="458" y="45" width="6" height="6"/>
+<rect class="sn" x="465" y="45" width="6" height="6"/>
+<rect class="sn" x="472" y="45" width="6" height="6"/>
+<rect class="sn" x="479" y="45" width="6" height="6"/>
+<rect class="sn" x="451" y="52" width="6" height="6"/>
+<rect class="sn" x="458" y="52" width="6" height="6"/>
+<rect class="sn" x="465" y="52" width="6" height="6"/>
+<rect class="sn" x="472" y="52" width="6" height="6"/>
+<rect class="bm" x="479" y="52" width="6" height="6"/>
+<rect class="sn" x="451" y="59" width="6" height="6"/>
+<rect class="sn" x="458" y="59" width="6" height="6"/>
+<rect class="sn" x="465" y="59" width="6" height="6"/>
+<rect class="sn" x="472" y="59" width="6" height="6"/>
+<rect class="sn" x="479" y="59" width="6" height="6"/>
+</g>
+</svg></div><p class="note">The pages are the random pages coded in each book, five squares to a row, so a block is a sample of its book, not every page. A square is filled by who is pictured on the page: women and girls only, men and boys only, both (purple), people whose gender the model could not tell, or no one. Books with the most pages showing people come first; point at or tap a block for its title and counts. Second copies of a book are left out.</p></section><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, West Bank and Gaza.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-pse" viewBox="0 0 560 220" role="img" aria-labelledby="tg-pic-roles-pse-t tg-pic-roles-pse-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-pic-roles-pse-t">Women&#x27;s share of people pictured, by role, West Bank and Gaza</title>
 <desc id="tg-pic-roles-pse-d">Professionals 42.2%; Service work 27.8%; Domestic work 61.2%; Students 48.4%; No role shown 37.0%</desc>
 <text class="dl dl-m" x="286.0" y="14" text-anchor="end">More men</text>

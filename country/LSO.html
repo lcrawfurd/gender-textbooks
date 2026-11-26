@@ -11,7 +11,7 @@
   --paper:#F8F8F8; --card:#FFFFFF; --ink:#1A272A; --ink-2:#3C4A4E; --muted:#5F6368;
   --rule:#D5DEE0; --rule-soft:#E8EEEF;
   --brand:#0B4C5B; --band:#0B4C5B; --band-ink:#FFFFFF; --band-sub:#CFE0E3;
-  --f:#00809C; --m:#BF7F00; --gold:#FFB52C;
+  --f:#00809C; --m:#BF7F00; --gold:#FFB52C; --both:#8E7CB8;
   --f-text:#007590; --m-text:#946000;
   --accent:#0B4C5B; --accent-soft:#E4EDEF; --on-accent:#FFFFFF; --focus:#0B4C5B;
   --sans:Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -22,7 +22,7 @@
     --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
     --rule:#33454A; --rule-soft:#243337;
     --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
-    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+    --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C; --both:#A796D4;
     --f-text:#3DB8D3; --m-text:#D98F2E;
     --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
   }
@@ -32,7 +32,7 @@
   --paper:#111A1C; --card:#182427; --ink:#E7EEF0; --ink-2:#C4D1D4; --muted:#9AA9AD;
   --rule:#33454A; --rule-soft:#243337;
   --brand:#8ACFDD; --band:#0A3A45; --band-ink:#FFFFFF; --band-sub:#B9D3D8;
-  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C;
+  --f:#3DB8D3; --m:#D98F2E; --gold:#FFB52C; --both:#A796D4;
   --f-text:#3DB8D3; --m-text:#D98F2E;
   --accent:#8ACFDD; --accent-soft:#1F3337; --on-accent:#0D1719; --focus:#FFB52C;
 }
@@ -56,6 +56,18 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg section{padding-block:28px 26px}
 .tg section + section{border-top:1px solid var(--rule)}
 .tg h2{font-size:17px; color:var(--brand); margin:0 0 6px}
+.tg blockquote.passage{margin:6px 0 0; padding:14px 18px; background:var(--card);
+  border-left:3px solid var(--rule); font-family:Georgia,serif; font-size:17px; line-height:1.65;
+  color:var(--ink); max-width:62ch}
+.tg mark.gm{background:none; color:var(--m-text); font-weight:700; border-bottom:2px solid var(--m)}
+.tg mark.gf{background:none; color:var(--f-text); font-weight:700; border-bottom:2px solid var(--f)}
+.tg ul.wall{list-style:none; margin:8px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:5px}
+.tg ul.wall li{font-size:12.5px; line-height:1.2; padding:3px 7px; border-radius:3px;
+  border:1px solid var(--rule); color:var(--muted); cursor:default}
+.tg ul.wall li.many{font-size:14px; color:var(--ink-2); border-color:var(--ink-2)}
+.tg ul.wall li span{font-size:10.5px; margin-left:4px; opacity:.8}
+.tg ul.wall li.wf{background:var(--f); border-color:var(--f); color:#fff; font-weight:600}
+.tg ul.wall li:focus{outline:2px solid var(--gold); outline-offset:1px}
 .tg h3{font-size:14.5px; color:var(--ink); margin:20px 0 4px}
 .tg p{margin:0 0 10px; color:var(--ink-2); font-size:15px; max-width:68ch}
 .tg .lede{color:var(--muted); font-size:14px; margin-bottom:16px}
@@ -81,6 +93,11 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .lab{font-weight:700}
 .tg .chart .cnt{font-weight:400; fill:var(--muted)}
 .tg .chart .val{font-weight:700}
+.tg .chart .su{fill:var(--muted)}
+.tg .chart .sb{fill:var(--both)}
+.tg .chart .sn{fill:var(--rule)}
+.tg .chart .shelfbg{fill:none}
+.tg .key i{display:inline-block;width:9px;height:9px;margin:0 4px 0 10px;vertical-align:-1px}
 .tg .chart .bf{fill:var(--f)}
 .tg .chart .bm{fill:var(--m)}
 .tg .chart .mk{fill:var(--ink); stroke:var(--paper); stroke-width:1}

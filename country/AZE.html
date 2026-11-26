@@ -83,6 +83,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .chart .val{font-weight:700}
 .tg .chart .bf{fill:var(--f)}
 .tg .chart .bm{fill:var(--m)}
+.tg .chart .mk{fill:var(--ink); stroke:var(--paper); stroke-width:1}
 .tg .chart .few rect{opacity:.45}
 .tg .chart .few .lab{font-weight:400}
 .tg .chart .halo{stroke:var(--paper); stroke-width:5.5}
@@ -285,69 +286,61 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 </div></header>
 <div class="goldrule"></div>
 <main class="wrap">
-<h1>Azerbaijan</h1><p class="lede">Gender in Azerbaijan&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 26 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Azerbaijan&rsquo;s 18 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Azerbaijan&rsquo;s share is the tenth highest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">44.9%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 36.8–53.0).</p></li><li class="stat m"><span class="big">44.1%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">18</span><p>national textbooks scored, added since the 2024 paper.</p></li></ul><h3>By subject</h3><p class="lede">The female share of gendered words in each subject group of Azerbaijan&rsquo;s national textbooks, highest first.</p><div class="chartbox"><svg class="chart" id="tg-c-subjects" viewBox="0 0 560 71" role="img" aria-labelledby="tg-c-subjects-t tg-c-subjects-d" preserveAspectRatio="xMinYMin meet">
-<title id="tg-c-subjects-t">Female share of gendered words by subject, Azerbaijan</title>
-<desc id="tg-c-subjects-d">Language 44.1%</desc>
-<text class="dl dl-f" x="0" y="14">Women and girls</text>
-<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
-<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
-<text class="axis" x="560" y="14" text-anchor="end">Female</text>
-<g class="row"><title>Language: 44.1% female, 18 books</title>
-<text class="lab" x="0" y="42">Language<tspan class="cnt" dx="8">18 books</tspan></text>
-<rect class="bf" x="0" y="48" width="216.11" height="13"/>
-<rect class="bm" x="216.11" y="48" width="273.89" height="13"/>
-<text class="val" x="560" y="59" text-anchor="end">44.1%</text>
-<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
-<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
-</g>
-</svg></div><p class="note">Each bar splits a subject group&rsquo;s gendered words into female (left) and male (right), pooled over its books with no adjustment; the line marks parity. Groups with at least 200 gendered words.</p><details class="dt"><summary>Data table: female share of gendered words by subject, Azerbaijan</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share of gendered words by subject, Azerbaijan, scrolls sideways"><table><caption class="vh">Data table: female share of gendered words by subject, Azerbaijan</caption><thead><tr><th scope="col">Subject group</th><th scope="col">Books</th><th scope="col">Gendered words</th><th scope="col">Female share</th></tr></thead><tbody><tr><th scope="row">Language</th><td>18</td><td>9,618</td><td>44.1%</td></tr></tbody></table></div></details><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Azerbaijan"><table class="plain"><caption class="vh">Female share of gendered words by grade, Azerbaijan</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">8</td><td class="num">2,532</td><td class="num">47.8%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">6</td><td class="num">3,915</td><td class="num">40.7%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">4</td><td class="num">3,171</td><td class="num">45.4%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs" class="part">Jobs</h2><p class="lede">The jobs people are shown in, in Azerbaijan&rsquo;s national textbooks. Women are 43.0% of the people shown in a job that can be matched to labour-market data, against 53.3% of the same jobs in Azerbaijan&rsquo;s labour market (ILOSTAT): a gap of −10.3 points (95% interval −20.6 to +0.2).</p><div class="chartbox"><svg class="chart" id="tg-c-jobs" viewBox="0 0 560 227" role="img" aria-labelledby="tg-c-jobs-t tg-c-jobs-d" preserveAspectRatio="xMinYMin meet">
+<h1>Azerbaijan</h1><p class="lede">Gender in Azerbaijan&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 26 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Azerbaijan&rsquo;s 18 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Azerbaijan&rsquo;s share is the tenth highest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">44.9%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 36.8–53.0).</p></li><li class="stat m"><span class="big">44.1%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">18</span><p>national textbooks scored, added since the 2024 paper.</p></li></ul><h3>By subject</h3><p>Only one subject group, Language, has at least 200 gendered words in Azerbaijan&rsquo;s national textbooks: 44.1% of them are female, over 18 books.</p><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Azerbaijan"><table class="plain"><caption class="vh">Female share of gendered words by grade, Azerbaijan</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">8</td><td class="num">2,532</td><td class="num">47.8%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">6</td><td class="num">3,915</td><td class="num">40.7%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">4</td><td class="num">3,171</td><td class="num">45.4%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs" class="part">Jobs</h2><p class="lede">The jobs people are shown in, in Azerbaijan&rsquo;s national textbooks. Women are 43.0% of the people shown in a job that can be matched to labour-market data, against 53.3% of the same jobs in Azerbaijan&rsquo;s labour market (ILOSTAT): a gap of −10.3 points (95% interval −20.6 to +0.2).</p><div class="chartbox"><svg class="chart" id="tg-c-jobs" viewBox="0 0 560 249" role="img" aria-labelledby="tg-c-jobs-t tg-c-jobs-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-c-jobs-t">Women&#x27;s share of the mentions of each job, Azerbaijan</title>
 <desc id="tg-c-jobs-d">doctor 47.4% of 19; pilot 41.7% of 12; artist 5.9% of 17; driver 0.0% of 10; waiter 0.0% of 22</desc>
 <text class="dl dl-f" x="0" y="14">Women and girls</text>
 <text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
 <text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
 <text class="axis" x="560" y="14" text-anchor="end">Female</text>
-<g class="row"><title>Doctor: 47.4% female, 19 mentions</title>
+<rect class="mk" x="0" y="233" width="3" height="14"/>
+<text class="axis" x="9" y="245">Women&#x27;s share of the job&#x27;s group in the labour market (ILOSTAT)</text>
+<g class="row"><title>Doctor: 47.4% female, 19 mentions; women in its job group, labour market 59.5%</title>
 <text class="lab" x="0" y="42">Doctor<tspan class="cnt" dx="8">19 mentions</tspan></text>
 <rect class="bf" x="0" y="48" width="232.11" height="13"/>
 <rect class="bm" x="232.11" y="48" width="257.89" height="13"/>
 <text class="val" x="560" y="59" text-anchor="end">47.4%</text>
 <line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
 <line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<rect class="mk" x="289.90" y="45" width="3" height="19"/>
 </g>
-<g class="row"><title>Pilot: 41.7% female, 12 mentions</title>
+<g class="row"><title>Pilot: 41.7% female, 12 mentions; women in its job group, labour market 57.8%</title>
 <text class="lab" x="0" y="81">Pilot<tspan class="cnt" dx="8">12 mentions</tspan></text>
 <rect class="bf" x="0" y="87" width="204.17" height="13"/>
 <rect class="bm" x="204.17" y="87" width="285.83" height="13"/>
 <text class="val" x="560" y="98" text-anchor="end">41.7%</text>
 <line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
 <line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<rect class="mk" x="281.87" y="84" width="3" height="19"/>
 </g>
-<g class="row"><title>Artist: 5.9% female, 17 mentions</title>
+<g class="row"><title>Artist: 5.9% female, 17 mentions; women in its job group, labour market 59.5%</title>
 <text class="lab" x="0" y="120">Artist<tspan class="cnt" dx="8">17 mentions</tspan></text>
 <rect class="bf" x="0" y="126" width="28.82" height="13"/>
 <rect class="bm" x="28.82" y="126" width="461.18" height="13"/>
 <text class="val" x="560" y="137" text-anchor="end">5.9%</text>
 <line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
 <line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<rect class="mk" x="289.90" y="123" width="3" height="19"/>
 </g>
-<g class="row"><title>Driver: 0.0% female, 10 mentions</title>
+<g class="row"><title>Driver: 0.0% female, 10 mentions; women in its job group, labour market 8.2%</title>
 <text class="lab" x="0" y="159">Driver<tspan class="cnt" dx="8">10 mentions</tspan></text>
 <rect class="bf" x="0" y="165" width="0.00" height="13"/>
 <rect class="bm" x="0.00" y="165" width="490.00" height="13"/>
 <text class="val" x="560" y="176" text-anchor="end">0.0%</text>
 <line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
 <line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<rect class="mk" x="38.73" y="162" width="3" height="19"/>
 </g>
-<g class="row"><title>Waiter: 0.0% female, 22 mentions</title>
+<g class="row"><title>Waiter: 0.0% female, 22 mentions; women in its job group, labour market 52.0%</title>
 <text class="lab" x="0" y="198">Waiter<tspan class="cnt" dx="8">22 mentions</tspan></text>
 <rect class="bf" x="0" y="204" width="0.00" height="13"/>
 <rect class="bm" x="0.00" y="204" width="490.00" height="13"/>
 <text class="val" x="560" y="215" text-anchor="end">0.0%</text>
 <line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
 <line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+<rect class="mk" x="253.20" y="201" width="3" height="19"/>
 </g>
-</svg></div><p class="note">The 5 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count.</p><details class="dt"><summary>Data table: mentions of each job, Azerbaijan</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, Azerbaijan, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, Azerbaijan</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Doctor</th><td>9</td><td>10</td><td>47.4%</td></tr><tr><th scope="row">Pilot</th><td>5</td><td>7</td><td>41.7%</td></tr><tr><th scope="row">Artist</th><td>1</td><td>16</td><td>5.9%</td></tr><tr><th scope="row">Driver</th><td>0</td><td>10</td><td>0.0%</td></tr><tr><th scope="row">Waiter</th><td>0</td><td>22</td><td>0.0%</td></tr></tbody></table></div></details></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Azerbaijan&rsquo;s 524 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">37.1%</span><p>of the people pictured are women or girls (15,965 people).</p></li><li class="stat m"><span class="big">3.1%</span><p>of the people shown as leaders are women (1,811 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Azerbaijan.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-aze" viewBox="0 0 560 288" role="img" aria-labelledby="tg-pic-roles-aze-t tg-pic-roles-aze-d" preserveAspectRatio="xMinYMin meet">
+</svg></div><p class="note">The 5 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). The dark tick is women&rsquo;s share of employment in the job&rsquo;s ISCO-08 major group (professionals, say, for a nurse) in Azerbaijan&rsquo;s labour market, latest year (ILOSTAT): a whole group, not the one job. A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count.</p><details class="dt"><summary>Data table: mentions of each job, Azerbaijan</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, Azerbaijan, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, Azerbaijan</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th><th scope="col">Its group, labour market</th></tr></thead><tbody><tr><th scope="row">Doctor</th><td>9</td><td>10</td><td>47.4%</td><td>59.5%</td></tr><tr><th scope="row">Pilot</th><td>5</td><td>7</td><td>41.7%</td><td>57.8%</td></tr><tr><th scope="row">Artist</th><td>1</td><td>16</td><td>5.9%</td><td>59.5%</td></tr><tr><th scope="row">Driver</th><td>0</td><td>10</td><td>0.0%</td><td>8.2%</td></tr><tr><th scope="row">Waiter</th><td>0</td><td>22</td><td>0.0%</td><td>52.0%</td></tr></tbody></table></div></details></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Azerbaijan&rsquo;s 524 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">37.1%</span><p>of the people pictured are women or girls (15,965 people).</p></li><li class="stat m"><span class="big">3.1%</span><p>of the people shown as leaders are women (1,811 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Azerbaijan.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-aze" viewBox="0 0 560 288" role="img" aria-labelledby="tg-pic-roles-aze-t tg-pic-roles-aze-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-pic-roles-aze-t">Women&#x27;s share of people pictured, by role, Azerbaijan</title>
 <desc id="tg-pic-roles-aze-d">Leaders 3.1%; Professionals 33.3%; Service work 32.1%; Manual work 9.2%; Domestic work 59.2%; Students 47.8%; No role shown 38.1%</desc>
 <text class="dl dl-m" x="400.3" y="14" text-anchor="end">More men</text>

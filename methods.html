@@ -71,6 +71,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .multiples{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:8px 28px; max-width:760px}
+.tg .multi .ptitle{text-align:left; padding:0; margin:12px 0 4px; font-size:1rem}
+.tg .multi .note{font-size:.85rem; margin:4px 0}
 .tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
@@ -364,7 +367,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 
 <h2 id="stereotypes">Stereotype measures</h2>
 <p>The three stereotype sections measure what the 2024 paper measured for its whole corpus, now
-  book by book for the 3,226 national textbooks (results of 9 November 2026),
+  book by book for the 3,226 national textbooks (results of 26 November 2026),
   so that they can be pooled by region and income group. Only counts leave each book; no text
   is kept or published.</p>
 <p><strong>Words near women and men.</strong> For each mention of a woman or a man (the
@@ -448,7 +451,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <h2>Embedding the charts</h2>
 <p>Each chart also has a page of its own, for an <code>iframe</code> on another site: this
   site&rsquo;s address followed by one of these paths, with the height to give the frame if
-  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 4004</li><li><code>embed/collections.html</code>, height 1018</li><li><code>embed/themes.html</code>, height 807</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li></ul>
+  nothing else sets it:</p><ul><li><code>embed/map.html</code>, height 936</li><li><code>embed/countries.html</code>, height 2334</li><li><code>embed/within.html</code>, height 1403</li><li><code>embed/subjects.html</code>, height 1151</li><li><code>embed/ages.html</code>, height 943</li><li><code>embed/time.html</code>, height 777</li><li><code>embed/links.html</code>, height 3455</li><li><code>embed/collections.html</code>, height 1018</li><li><code>embed/themes.html</code>, height 807</li><li><code>embed/descriptors.html</code>, height 882</li><li><code>embed/jobs.html</code>, height 1109</li></ul>
 <p>For example, with this site&rsquo;s address in place of the dots:</p>
 <pre><code class="snip" tabindex="0">&lt;iframe src=&quot;…/embed/countries.html&quot; title=&quot;Female share of gendered words by country&quot;
   width=&quot;100%&quot; height=&quot;2334&quot; style=&quot;border:0&quot;&gt;&lt;/iframe&gt;</code></pre>

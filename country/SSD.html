@@ -71,6 +71,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .multiples{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:8px 28px; max-width:760px}
+.tg .multi .ptitle{text-align:left; padding:0; margin:12px 0 4px; font-size:1rem}
+.tg .multi .note{font-size:.85rem; margin:4px 0}
 .tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
@@ -282,7 +285,149 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 </div></header>
 <div class="goldrule"></div>
 <main class="wrap">
-<h1>South Sudan</h1><p class="lede">Gender in South Sudan&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 17 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in South Sudan&rsquo;s 112 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), South Sudan&rsquo;s share is the seventh lowest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">34.3%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 30.5–38.1).</p></li><li class="stat m"><span class="big">31.0%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">112</span><p>national textbooks scored.</p></li></ul><h3>By subject</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by subject, South Sudan"><table class="plain"><caption class="vh">Female share of gendered words by subject, South Sudan</caption><thead><tr><th scope="col">Subject group</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Business and Economics</th><td class="num">1</td><td class="num">15</td><td class="num">—</td></tr><tr><th scope="row">General and Social Studies</th><td class="num">8</td><td class="num">588</td><td class="num">45.2%</td></tr><tr><th scope="row">Humanities</th><td class="num">8</td><td class="num">1,876</td><td class="num">20.2%</td></tr><tr><th scope="row">IT</th><td class="num">4</td><td class="num">141</td><td class="num">—</td></tr><tr><th scope="row">Language</th><td class="num">23</td><td class="num">8,207</td><td class="num">41.0%</td></tr><tr><th scope="row">Maths</th><td class="num">22</td><td class="num">976</td><td class="num">38.1%</td></tr><tr><th scope="row">Religion</th><td class="num">15</td><td class="num">6,423</td><td class="num">15.9%</td></tr><tr><th scope="row">Science</th><td class="num">23</td><td class="num">1,404</td><td class="num">42.6%</td></tr><tr><th scope="row">Social Science</th><td class="num">8</td><td class="num">505</td><td class="num">35.8%</td></tr></tbody></table></div><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, South Sudan"><table class="plain"><caption class="vh">Female share of gendered words by grade, South Sudan</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">30</td><td class="num">4,180</td><td class="num">27.5%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">21</td><td class="num">5,024</td><td class="num">30.7%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">33</td><td class="num">9,032</td><td class="num">31.2%</td></tr><tr><th scope="row">Grade not recorded</th><td class="num">28</td><td class="num">1,899</td><td class="num">38.6%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of South Sudan&rsquo;s 91 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">39.0%</span><p>of the people pictured are women or girls (2,230 people).</p></li><li class="stat m"><span class="big">6.8%</span><p>of the people shown as leaders are women (236 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, South Sudan.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-ssd" viewBox="0 0 560 288" role="img" aria-labelledby="tg-pic-roles-ssd-t tg-pic-roles-ssd-d" preserveAspectRatio="xMinYMin meet">
+<h1>South Sudan</h1><p class="lede">Gender in South Sudan&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 26 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in South Sudan&rsquo;s 112 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), South Sudan&rsquo;s share is the seventh lowest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">34.3%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 30.5–38.1).</p></li><li class="stat m"><span class="big">31.0%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">112</span><p>national textbooks scored.</p></li></ul><h3>By subject</h3><p class="lede">The female share of gendered words in each subject group of South Sudan&rsquo;s national textbooks, highest first.</p><div class="chartbox"><svg class="chart" id="tg-c-subjects" viewBox="0 0 560 305" role="img" aria-labelledby="tg-c-subjects-t tg-c-subjects-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-subjects-t">Female share of gendered words by subject, South Sudan</title>
+<desc id="tg-c-subjects-d">General and Social Studies 45.2%; Science 42.6%; Language 41.0%; Maths 38.1%; Social Science 35.8%; Humanities 20.2%; Religion 15.9%</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>General and Social Studies: 45.2% female, 8 books</title>
+<text class="lab" x="0" y="42">General and Social Studies<tspan class="cnt" dx="8">8 books</tspan></text>
+<rect class="bf" x="0" y="48" width="221.67" height="13"/>
+<rect class="bm" x="221.67" y="48" width="268.33" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">45.2%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Science: 42.6% female, 23 books</title>
+<text class="lab" x="0" y="81">Science<tspan class="cnt" dx="8">23 books</tspan></text>
+<rect class="bf" x="0" y="87" width="208.70" height="13"/>
+<rect class="bm" x="208.70" y="87" width="281.30" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">42.6%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+<g class="row"><title>Language: 41.0% female, 23 books</title>
+<text class="lab" x="0" y="120">Language<tspan class="cnt" dx="8">23 books</tspan></text>
+<rect class="bf" x="0" y="126" width="200.79" height="13"/>
+<rect class="bm" x="200.79" y="126" width="289.21" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">41.0%</text>
+<line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+</g>
+<g class="row"><title>Maths: 38.1% female, 22 books</title>
+<text class="lab" x="0" y="159">Maths<tspan class="cnt" dx="8">22 books</tspan></text>
+<rect class="bf" x="0" y="165" width="186.76" height="13"/>
+<rect class="bm" x="186.76" y="165" width="303.24" height="13"/>
+<text class="val" x="560" y="176" text-anchor="end">38.1%</text>
+<line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+</g>
+<g class="row"><title>Social Science: 35.8% female, 8 books</title>
+<text class="lab" x="0" y="198">Social Science<tspan class="cnt" dx="8">8 books</tspan></text>
+<rect class="bf" x="0" y="204" width="175.62" height="13"/>
+<rect class="bm" x="175.62" y="204" width="314.38" height="13"/>
+<text class="val" x="560" y="215" text-anchor="end">35.8%</text>
+<line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+<line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+</g>
+<g class="row"><title>Humanities: 20.2% female, 8 books</title>
+<text class="lab" x="0" y="237">Humanities<tspan class="cnt" dx="8">8 books</tspan></text>
+<rect class="bf" x="0" y="243" width="98.99" height="13"/>
+<rect class="bm" x="98.99" y="243" width="391.01" height="13"/>
+<text class="val" x="560" y="254" text-anchor="end">20.2%</text>
+<line class="halo" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+<line class="par" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+</g>
+<g class="row"><title>Religion: 15.9% female, 15 books</title>
+<text class="lab" x="0" y="276">Religion<tspan class="cnt" dx="8">15 books</tspan></text>
+<rect class="bf" x="0" y="282" width="77.89" height="13"/>
+<rect class="bm" x="77.89" y="282" width="412.11" height="13"/>
+<text class="val" x="560" y="293" text-anchor="end">15.9%</text>
+<line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+<line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+</g>
+</svg></div><p class="note">Each bar splits a subject group&rsquo;s gendered words into female (left) and male (right), pooled over its books with no adjustment; the line marks parity. Groups with at least 200 gendered words. Not shown, with fewer than 200 gendered words: Business and Economics; IT.</p><details class="dt"><summary>Data table: female share of gendered words by subject, South Sudan</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share of gendered words by subject, South Sudan, scrolls sideways"><table><caption class="vh">Data table: female share of gendered words by subject, South Sudan</caption><thead><tr><th scope="col">Subject group</th><th scope="col">Books</th><th scope="col">Gendered words</th><th scope="col">Female share</th></tr></thead><tbody><tr><th scope="row">General and Social Studies</th><td>8</td><td>588</td><td>45.2%</td></tr><tr><th scope="row">Science</th><td>23</td><td>1,404</td><td>42.6%</td></tr><tr><th scope="row">Language</th><td>23</td><td>8,207</td><td>41.0%</td></tr><tr><th scope="row">Maths</th><td>22</td><td>976</td><td>38.1%</td></tr><tr><th scope="row">Social Science</th><td>8</td><td>505</td><td>35.8%</td></tr><tr><th scope="row">Humanities</th><td>8</td><td>1,876</td><td>20.2%</td></tr><tr><th scope="row">Religion</th><td>15</td><td>6,423</td><td>15.9%</td></tr><tr><th scope="row">Business and Economics</th><td>1</td><td>15</td><td>—</td></tr><tr><th scope="row">IT</th><td>4</td><td>141</td><td>—</td></tr></tbody></table></div></details><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, South Sudan"><table class="plain"><caption class="vh">Female share of gendered words by grade, South Sudan</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">30</td><td class="num">4,180</td><td class="num">27.5%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">21</td><td class="num">5,024</td><td class="num">30.7%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">33</td><td class="num">9,032</td><td class="num">31.2%</td></tr><tr><th scope="row">Grade not recorded</th><td class="num">28</td><td class="num">1,899</td><td class="num">38.6%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs" class="part">Jobs</h2><p class="lede">The jobs people are shown in, in South Sudan&rsquo;s national textbooks. Women are 23.6% of the people shown in a job that can be matched to labour-market data, against 45.5% of the same jobs in South Sudan&rsquo;s labour market (ILOSTAT): a gap of −21.9 points (95% interval −28.7 to −13.8).</p><div class="chartbox"><svg class="chart" id="tg-c-jobs" viewBox="0 0 560 383" role="img" aria-labelledby="tg-c-jobs-t tg-c-jobs-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-jobs-t">Women&#x27;s share of the mentions of each job, South Sudan</title>
+<desc id="tg-c-jobs-d">nurse 80.0% of 10; secretary 40.0% of 10; doctor 34.3% of 35; farmer 21.7% of 23; priest 20.0% of 25; judge 12.5% of 16; mechanic 10.0% of 10; servant 1.7% of 59; driver 0.0% of 11</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>Nurse: 80.0% female, 10 mentions</title>
+<text class="lab" x="0" y="42">Nurse<tspan class="cnt" dx="8">10 mentions</tspan></text>
+<rect class="bf" x="0" y="48" width="392.00" height="13"/>
+<rect class="bm" x="392.00" y="48" width="98.00" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">80.0%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Secretary: 40.0% female, 10 mentions</title>
+<text class="lab" x="0" y="81">Secretary<tspan class="cnt" dx="8">10 mentions</tspan></text>
+<rect class="bf" x="0" y="87" width="196.00" height="13"/>
+<rect class="bm" x="196.00" y="87" width="294.00" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">40.0%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+<g class="row"><title>Doctor: 34.3% female, 35 mentions</title>
+<text class="lab" x="0" y="120">Doctor<tspan class="cnt" dx="8">35 mentions</tspan></text>
+<rect class="bf" x="0" y="126" width="168.00" height="13"/>
+<rect class="bm" x="168.00" y="126" width="322.00" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">34.3%</text>
+<line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+</g>
+<g class="row"><title>Farmer: 21.7% female, 23 mentions</title>
+<text class="lab" x="0" y="159">Farmer<tspan class="cnt" dx="8">23 mentions</tspan></text>
+<rect class="bf" x="0" y="165" width="106.52" height="13"/>
+<rect class="bm" x="106.52" y="165" width="383.48" height="13"/>
+<text class="val" x="560" y="176" text-anchor="end">21.7%</text>
+<line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+</g>
+<g class="row"><title>Priest: 20.0% female, 25 mentions</title>
+<text class="lab" x="0" y="198">Priest<tspan class="cnt" dx="8">25 mentions</tspan></text>
+<rect class="bf" x="0" y="204" width="98.00" height="13"/>
+<rect class="bm" x="98.00" y="204" width="392.00" height="13"/>
+<text class="val" x="560" y="215" text-anchor="end">20.0%</text>
+<line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+<line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+</g>
+<g class="row"><title>Judge: 12.5% female, 16 mentions</title>
+<text class="lab" x="0" y="237">Judge<tspan class="cnt" dx="8">16 mentions</tspan></text>
+<rect class="bf" x="0" y="243" width="61.25" height="13"/>
+<rect class="bm" x="61.25" y="243" width="428.75" height="13"/>
+<text class="val" x="560" y="254" text-anchor="end">12.5%</text>
+<line class="halo" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+<line class="par" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+</g>
+<g class="row"><title>Mechanic: 10.0% female, 10 mentions</title>
+<text class="lab" x="0" y="276">Mechanic<tspan class="cnt" dx="8">10 mentions</tspan></text>
+<rect class="bf" x="0" y="282" width="49.00" height="13"/>
+<rect class="bm" x="49.00" y="282" width="441.00" height="13"/>
+<text class="val" x="560" y="293" text-anchor="end">10.0%</text>
+<line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+<line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+</g>
+<g class="row"><title>Servant: 1.7% female, 59 mentions</title>
+<text class="lab" x="0" y="315">Servant<tspan class="cnt" dx="8">59 mentions</tspan></text>
+<rect class="bf" x="0" y="321" width="8.31" height="13"/>
+<rect class="bm" x="8.31" y="321" width="481.69" height="13"/>
+<text class="val" x="560" y="332" text-anchor="end">1.7%</text>
+<line class="halo" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+<line class="par" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+</g>
+<g class="row"><title>Driver: 0.0% female, 11 mentions</title>
+<text class="lab" x="0" y="354">Driver<tspan class="cnt" dx="8">11 mentions</tspan></text>
+<rect class="bf" x="0" y="360" width="0.00" height="13"/>
+<rect class="bm" x="0.00" y="360" width="490.00" height="13"/>
+<text class="val" x="560" y="371" text-anchor="end">0.0%</text>
+<line class="halo" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
+<line class="par" x1="245.0" y1="358.0" x2="245.0" y2="375.0"/>
+</g>
+</svg></div><p class="note">The 9 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count.</p><details class="dt"><summary>Data table: mentions of each job, South Sudan</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, South Sudan, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, South Sudan</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Nurse</th><td>8</td><td>2</td><td>80.0%</td></tr><tr><th scope="row">Secretary</th><td>4</td><td>6</td><td>40.0%</td></tr><tr><th scope="row">Doctor</th><td>12</td><td>23</td><td>34.3%</td></tr><tr><th scope="row">Farmer</th><td>5</td><td>18</td><td>21.7%</td></tr><tr><th scope="row">Priest</th><td>5</td><td>20</td><td>20.0%</td></tr><tr><th scope="row">Judge</th><td>2</td><td>14</td><td>12.5%</td></tr><tr><th scope="row">Mechanic</th><td>1</td><td>9</td><td>10.0%</td></tr><tr><th scope="row">Servant</th><td>1</td><td>58</td><td>1.7%</td></tr><tr><th scope="row">Driver</th><td>0</td><td>11</td><td>0.0%</td></tr></tbody></table></div></details></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of South Sudan&rsquo;s 91 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">39.0%</span><p>of the people pictured are women or girls (2,230 people).</p></li><li class="stat m"><span class="big">6.8%</span><p>of the people shown as leaders are women (236 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, South Sudan.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-ssd" viewBox="0 0 560 288" role="img" aria-labelledby="tg-pic-roles-ssd-t tg-pic-roles-ssd-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-pic-roles-ssd-t">Women&#x27;s share of people pictured, by role, South Sudan</title>
 <desc id="tg-pic-roles-ssd-d">Leaders 6.8%; Professionals 53.8%; Service work 46.9%; Manual work 28.7%; Domestic work 56.4%; Students 45.6%; No role shown 36.9%</desc>
 <text class="dl dl-m" x="400.3" y="14" text-anchor="end">More men</text>
@@ -388,7 +533,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="245.0" y="32" text-anchor="middle">40%</text>
 <text class="axis" x="367.5" y="32" text-anchor="middle">50%</text>
 <text class="axis" x="490.0" y="32" text-anchor="end">60%</text>
-<g class="row"><title>Children: 40.6% women, of 988 people</title>
+<g class="row"><title>Children: 40.6% girls, of 988 people</title>
 <text class="lab" x="0" y="56">Children<tspan class="cnt" dx="8">988 people</tspan></text>
 <rect class="half-m" x="0.0" y="61" width="367.5" height="12"/>
 <rect class="half-f" x="367.5" y="61" width="122.5" height="12"/>
@@ -708,7 +853,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="lab" x="0" y="157">Unclear<tspan class="cnt" dx="8">138 pages</tspan></text>
 <rect class="bn" x="0" y="163" width="124.8" height="13"/>
 <text class="val" x="130.8" y="174">25.5%</text></g>
-</svg></div><p class="note">Shares of the 542 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. South Sudan, 91 national textbooks, 20 random pages each (1,820 pages; a first look found no person on 1,194 of them, which were not coded further, and 542 of the 626 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once; the model&rsquo;s disability flags are not yet checked by eye, so no disability figures are shown. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: South Sudan. Figures of 17 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
+</svg></div><p class="note">Shares of the 542 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. South Sudan, 91 national textbooks, 20 random pages each (1,820 pages; a first look found no person on 1,194 of them, which were not coded further, and 542 of the 626 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once; the model&rsquo;s disability flags are not yet checked by eye, so no disability figures are shown. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: South Sudan. Figures of 26 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
 </main>
 <footer class="wrap foot"><nav class="footnav" aria-label="Pages"><a href="../index.html">Findings</a><a href="../why.html">Why it matters</a><a href="../countries.html">Countries</a><a href="../edits.html">Solutions</a><a href="../data.html">Data</a><a href="../scan.html">Scan your book</a><a href="../methods.html">Methods</a></nav><p class="cite">Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p><p class="note">Data: Center for Global Development, CC-BY 4.0.</p></footer>
 </div>

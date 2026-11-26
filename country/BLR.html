@@ -71,6 +71,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .multiples{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:8px 28px; max-width:760px}
+.tg .multi .ptitle{text-align:left; padding:0; margin:12px 0 4px; font-size:1rem}
+.tg .multi .note{font-size:.85rem; margin:4px 0}
 .tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
@@ -282,7 +285,93 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 </div></header>
 <div class="goldrule"></div>
 <main class="wrap">
-<h1>Belarus</h1><p class="lede">Gender in Belarus&rsquo; school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 17 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Belarus&rsquo; 26 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Belarus&rsquo; share is the 11th highest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">44.8%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 38.0–51.6).</p></li><li class="stat m"><span class="big">42.9%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">26</span><p>national textbooks scored, added since the 2024 paper.</p></li></ul><h3>By subject</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by subject, Belarus"><table class="plain"><caption class="vh">Female share of gendered words by subject, Belarus</caption><thead><tr><th scope="col">Subject group</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Language</th><td class="num">26</td><td class="num">15,521</td><td class="num">42.9%</td></tr></tbody></table></div><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Belarus"><table class="plain"><caption class="vh">Female share of gendered words by grade, Belarus</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">11</td><td class="num">5,146</td><td class="num">44.4%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">9</td><td class="num">5,788</td><td class="num">45.8%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">6</td><td class="num">4,587</td><td class="num">37.3%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Belarus&rsquo; 23 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">21.8%</span><p>of the people pictured are women or girls (206 people).</p></li><li class="stat m"><span class="big">6.6%</span><p>of the people shown as leaders are women (61 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Belarus.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-blr" viewBox="0 0 560 118" role="img" aria-labelledby="tg-pic-roles-blr-t tg-pic-roles-blr-d" preserveAspectRatio="xMinYMin meet">
+<h1>Belarus</h1><p class="lede">Gender in Belarus&rsquo; school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 26 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Belarus&rsquo; 26 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Belarus&rsquo; share is the 11th highest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">44.8%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 38.0–51.6).</p></li><li class="stat m"><span class="big">42.9%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">26</span><p>national textbooks scored, added since the 2024 paper.</p></li></ul><h3>By subject</h3><p class="lede">The female share of gendered words in each subject group of Belarus&rsquo; national textbooks, highest first.</p><div class="chartbox"><svg class="chart" id="tg-c-subjects" viewBox="0 0 560 71" role="img" aria-labelledby="tg-c-subjects-t tg-c-subjects-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-subjects-t">Female share of gendered words by subject, Belarus</title>
+<desc id="tg-c-subjects-d">Language 42.9%</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>Language: 42.9% female, 26 books</title>
+<text class="lab" x="0" y="42">Language<tspan class="cnt" dx="8">26 books</tspan></text>
+<rect class="bf" x="0" y="48" width="210.00" height="13"/>
+<rect class="bm" x="210.00" y="48" width="280.00" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">42.9%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+</svg></div><p class="note">Each bar splits a subject group&rsquo;s gendered words into female (left) and male (right), pooled over its books with no adjustment; the line marks parity. Groups with at least 200 gendered words.</p><details class="dt"><summary>Data table: female share of gendered words by subject, Belarus</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share of gendered words by subject, Belarus, scrolls sideways"><table><caption class="vh">Data table: female share of gendered words by subject, Belarus</caption><thead><tr><th scope="col">Subject group</th><th scope="col">Books</th><th scope="col">Gendered words</th><th scope="col">Female share</th></tr></thead><tbody><tr><th scope="row">Language</th><td>26</td><td>15,521</td><td>42.9%</td></tr></tbody></table></div></details><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Belarus"><table class="plain"><caption class="vh">Female share of gendered words by grade, Belarus</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">11</td><td class="num">5,146</td><td class="num">44.4%</td></tr><tr><th scope="row">Lower secondary (7–9)</th><td class="num">9</td><td class="num">5,788</td><td class="num">45.8%</td></tr><tr><th scope="row">Upper secondary (10–13)</th><td class="num">6</td><td class="num">4,587</td><td class="num">37.3%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs" class="part">Jobs</h2><p class="lede">The jobs people are shown in, in Belarus&rsquo; national textbooks. Women are 29.7% of the people shown in a job that can be matched to labour-market data, against 63.5% of the same jobs in Belarus&rsquo; labour market (ILOSTAT): a gap of −33.8 points (95% interval −42.0 to −22.2).</p><div class="chartbox"><svg class="chart" id="tg-c-jobs" viewBox="0 0 560 344" role="img" aria-labelledby="tg-c-jobs-t tg-c-jobs-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-jobs-t">Women&#x27;s share of the mentions of each job, Belarus</title>
+<desc id="tg-c-jobs-d">potter 52.6% of 19; journalist 36.4% of 11; musician 30.8% of 13; doctor 23.1% of 26; reporter 12.5% of 16; artist 8.8% of 34; scientist 0.0% of 22; waiter 0.0% of 17</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>Potter: 52.6% female, 19 mentions</title>
+<text class="lab" x="0" y="42">Potter<tspan class="cnt" dx="8">19 mentions</tspan></text>
+<rect class="bf" x="0" y="48" width="257.89" height="13"/>
+<rect class="bm" x="257.89" y="48" width="232.11" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">52.6%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Journalist: 36.4% female, 11 mentions</title>
+<text class="lab" x="0" y="81">Journalist<tspan class="cnt" dx="8">11 mentions</tspan></text>
+<rect class="bf" x="0" y="87" width="178.18" height="13"/>
+<rect class="bm" x="178.18" y="87" width="311.82" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">36.4%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+<g class="row"><title>Musician: 30.8% female, 13 mentions</title>
+<text class="lab" x="0" y="120">Musician<tspan class="cnt" dx="8">13 mentions</tspan></text>
+<rect class="bf" x="0" y="126" width="150.77" height="13"/>
+<rect class="bm" x="150.77" y="126" width="339.23" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">30.8%</text>
+<line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+</g>
+<g class="row"><title>Doctor: 23.1% female, 26 mentions</title>
+<text class="lab" x="0" y="159">Doctor<tspan class="cnt" dx="8">26 mentions</tspan></text>
+<rect class="bf" x="0" y="165" width="113.08" height="13"/>
+<rect class="bm" x="113.08" y="165" width="376.92" height="13"/>
+<text class="val" x="560" y="176" text-anchor="end">23.1%</text>
+<line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+</g>
+<g class="row"><title>Reporter: 12.5% female, 16 mentions</title>
+<text class="lab" x="0" y="198">Reporter<tspan class="cnt" dx="8">16 mentions</tspan></text>
+<rect class="bf" x="0" y="204" width="61.25" height="13"/>
+<rect class="bm" x="61.25" y="204" width="428.75" height="13"/>
+<text class="val" x="560" y="215" text-anchor="end">12.5%</text>
+<line class="halo" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+<line class="par" x1="245.0" y1="202.0" x2="245.0" y2="219.0"/>
+</g>
+<g class="row"><title>Artist: 8.8% female, 34 mentions</title>
+<text class="lab" x="0" y="237">Artist<tspan class="cnt" dx="8">34 mentions</tspan></text>
+<rect class="bf" x="0" y="243" width="43.24" height="13"/>
+<rect class="bm" x="43.24" y="243" width="446.76" height="13"/>
+<text class="val" x="560" y="254" text-anchor="end">8.8%</text>
+<line class="halo" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+<line class="par" x1="245.0" y1="241.0" x2="245.0" y2="258.0"/>
+</g>
+<g class="row"><title>Scientist: 0.0% female, 22 mentions</title>
+<text class="lab" x="0" y="276">Scientist<tspan class="cnt" dx="8">22 mentions</tspan></text>
+<rect class="bf" x="0" y="282" width="0.00" height="13"/>
+<rect class="bm" x="0.00" y="282" width="490.00" height="13"/>
+<text class="val" x="560" y="293" text-anchor="end">0.0%</text>
+<line class="halo" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+<line class="par" x1="245.0" y1="280.0" x2="245.0" y2="297.0"/>
+</g>
+<g class="row"><title>Waiter: 0.0% female, 17 mentions</title>
+<text class="lab" x="0" y="315">Waiter<tspan class="cnt" dx="8">17 mentions</tspan></text>
+<rect class="bf" x="0" y="321" width="0.00" height="13"/>
+<rect class="bm" x="0.00" y="321" width="490.00" height="13"/>
+<text class="val" x="560" y="332" text-anchor="end">0.0%</text>
+<line class="halo" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+<line class="par" x1="245.0" y1="319.0" x2="245.0" y2="336.0"/>
+</g>
+</svg></div><p class="note">The 8 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count.</p><details class="dt"><summary>Data table: mentions of each job, Belarus</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, Belarus, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, Belarus</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Potter</th><td>10</td><td>9</td><td>52.6%</td></tr><tr><th scope="row">Journalist</th><td>4</td><td>7</td><td>36.4%</td></tr><tr><th scope="row">Musician</th><td>4</td><td>9</td><td>30.8%</td></tr><tr><th scope="row">Doctor</th><td>6</td><td>20</td><td>23.1%</td></tr><tr><th scope="row">Reporter</th><td>2</td><td>14</td><td>12.5%</td></tr><tr><th scope="row">Artist</th><td>3</td><td>31</td><td>8.8%</td></tr><tr><th scope="row">Scientist</th><td>0</td><td>22</td><td>0.0%</td></tr><tr><th scope="row">Waiter</th><td>0</td><td>17</td><td>0.0%</td></tr></tbody></table></div></details></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Belarus&rsquo; 23 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">21.8%</span><p>of the people pictured are women or girls (206 people).</p></li><li class="stat m"><span class="big">6.6%</span><p>of the people shown as leaders are women (61 leaders).</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Belarus.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-blr" viewBox="0 0 560 118" role="img" aria-labelledby="tg-pic-roles-blr-t tg-pic-roles-blr-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-pic-roles-blr-t">Women&#x27;s share of people pictured, by role, Belarus</title>
 <desc id="tg-pic-roles-blr-d">Leaders 6.6%; No role shown 36.5%</desc>
 <text class="dl dl-m" x="400.3" y="14" text-anchor="end">More men</text>
@@ -328,7 +417,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="245.0" y="32" text-anchor="middle">40%</text>
 <text class="axis" x="367.5" y="32" text-anchor="middle">50%</text>
 <text class="axis" x="490.0" y="32" text-anchor="end">60%</text>
-<g class="row"><title>Children: 38.7% women, of 31 people</title>
+<g class="row"><title>Children: 38.7% girls, of 31 people</title>
 <text class="lab" x="0" y="56">Children<tspan class="cnt" dx="8">31 people</tspan></text>
 <rect class="half-m" x="0.0" y="61" width="367.5" height="12"/>
 <rect class="half-f" x="367.5" y="61" width="122.5" height="12"/>
@@ -562,7 +651,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="lab" x="0" y="157">Unclear<tspan class="cnt" dx="8">16 pages</tspan></text>
 <rect class="bn" x="0" y="163" width="204.2" height="13"/>
 <text class="val" x="210.2" y="174">25.0%</text></g>
-</svg></div><p class="note">Shares of the 64 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. Belarus, 23 national textbooks, 20 random pages each (460 pages; a first look found no person on 375 of them, which were not coded further, and 64 of the 85 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once; the model&rsquo;s disability flags are not yet checked by eye, so no disability figures are shown. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: Belarus. Figures of 17 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
+</svg></div><p class="note">Shares of the 64 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. Belarus, 23 national textbooks, 20 random pages each (460 pages; a first look found no person on 375 of them, which were not coded further, and 64 of the 85 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once; the model&rsquo;s disability flags are not yet checked by eye, so no disability figures are shown. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: Belarus. Figures of 26 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
 </main>
 <footer class="wrap foot"><nav class="footnav" aria-label="Pages"><a href="../index.html">Findings</a><a href="../why.html">Why it matters</a><a href="../countries.html">Countries</a><a href="../edits.html">Solutions</a><a href="../data.html">Data</a><a href="../scan.html">Scan your book</a><a href="../methods.html">Methods</a></nav><p class="cite">Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p><p class="note">Data: Center for Global Development, CC-BY 4.0.</p></footer>
 </div>

@@ -71,6 +71,9 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 .tg .stat p{font-size:14.5px; margin:8px 0 0}
 
 .tg .chartbox{max-width:680px}
+.tg .multiples{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:8px 28px; max-width:760px}
+.tg .multi .ptitle{text-align:left; padding:0; margin:12px 0 4px; font-size:1rem}
+.tg .multi .note{font-size:.85rem; margin:4px 0}
 .tg .chartbox .ptitle{text-align:center; padding:0 17.14% 0 8.21%} /* scatter plot area: x 46 to 464 of 560 */
 .tg svg.chart{display:block; width:100%; height:auto; overflow:visible}
 .tg .chart text{font-family:var(--sans); font-size:13px; fill:var(--ink)}
@@ -282,7 +285,69 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 </div></header>
 <div class="goldrule"></div>
 <main class="wrap">
-<h1>Guyana</h1><p class="lede">Gender in Guyana&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 17 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Guyana&rsquo;s 35 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Guyana&rsquo;s share is the 16th lowest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">40.0%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 33.9–46.2).</p></li><li class="stat m"><span class="big">38.5%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">35</span><p>national textbooks scored.</p></li></ul><h3>By subject</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by subject, Guyana"><table class="plain"><caption class="vh">Female share of gendered words by subject, Guyana</caption><thead><tr><th scope="col">Subject group</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">General and Social Studies</th><td class="num">6</td><td class="num">604</td><td class="num">33.8%</td></tr><tr><th scope="row">Language</th><td class="num">6</td><td class="num">2,305</td><td class="num">35.7%</td></tr><tr><th scope="row">Maths</th><td class="num">16</td><td class="num">1,174</td><td class="num">45.6%</td></tr><tr><th scope="row">Science</th><td class="num">7</td><td class="num">203</td><td class="num">42.9%</td></tr></tbody></table></div><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Guyana"><table class="plain"><caption class="vh">Female share of gendered words by grade, Guyana</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">35</td><td class="num">4,286</td><td class="num">38.5%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Guyana&rsquo;s 8 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">37.2%</span><p>of the people pictured are women or girls (148 people).</p></li><li class="stat n"><span class="big">0</span><p>of the 171 people pictured have a visible disability.</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Guyana.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-guy" viewBox="0 0 560 84" role="img" aria-labelledby="tg-pic-roles-guy-t tg-pic-roles-guy-d" preserveAspectRatio="xMinYMin meet">
+<h1>Guyana</h1><p class="lede">Gender in Guyana&rsquo;s school textbooks: what the site finds in its national textbooks, in their words and in their pictures. Figures as of 26 November 2026.</p><section id="words" aria-labelledby="h-words"><h2 id="h-words" class="part">Words</h2><p class="lede">How often women and girls are mentioned in Guyana&rsquo;s 35 English national textbooks. Adjusted for subject, grade and book length (the paper&rsquo;s model), Guyana&rsquo;s share is the 16th lowest of the 41 countries ranked.</p><ul class="stats"><li class="stat"><span class="big">40.0%</span><p>of gendered words refer to women and girls, adjusted for subject, grade and book length (95% interval 33.9–46.2).</p></li><li class="stat m"><span class="big">38.5%</span><p>of gendered words in all its national textbooks refer to women and girls (pooled, no adjustment).</p></li><li class="stat n"><span class="big">35</span><p>national textbooks scored.</p></li></ul><h3>By subject</h3><p class="lede">The female share of gendered words in each subject group of Guyana&rsquo;s national textbooks, highest first.</p><div class="chartbox"><svg class="chart" id="tg-c-subjects" viewBox="0 0 560 188" role="img" aria-labelledby="tg-c-subjects-t tg-c-subjects-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-subjects-t">Female share of gendered words by subject, Guyana</title>
+<desc id="tg-c-subjects-d">Maths 45.6%; Science 42.9%; Language 35.7%; General and Social Studies 33.8%</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>Maths: 45.6% female, 16 books</title>
+<text class="lab" x="0" y="42">Maths<tspan class="cnt" dx="8">16 books</tspan></text>
+<rect class="bf" x="0" y="48" width="223.30" height="13"/>
+<rect class="bm" x="223.30" y="48" width="266.70" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">45.6%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Science: 42.9% female, 7 books</title>
+<text class="lab" x="0" y="81">Science<tspan class="cnt" dx="8">7 books</tspan></text>
+<rect class="bf" x="0" y="87" width="210.00" height="13"/>
+<rect class="bm" x="210.00" y="87" width="280.00" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">42.9%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+<g class="row"><title>Language: 35.7% female, 6 books</title>
+<text class="lab" x="0" y="120">Language<tspan class="cnt" dx="8">6 books</tspan></text>
+<rect class="bf" x="0" y="126" width="174.74" height="13"/>
+<rect class="bm" x="174.74" y="126" width="315.26" height="13"/>
+<text class="val" x="560" y="137" text-anchor="end">35.7%</text>
+<line class="halo" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+<line class="par" x1="245.0" y1="124.0" x2="245.0" y2="141.0"/>
+</g>
+<g class="row"><title>General and Social Studies: 33.8% female, 6 books</title>
+<text class="lab" x="0" y="159">General and Social Studies<tspan class="cnt" dx="8">6 books</tspan></text>
+<rect class="bf" x="0" y="165" width="165.50" height="13"/>
+<rect class="bm" x="165.50" y="165" width="324.50" height="13"/>
+<text class="val" x="560" y="176" text-anchor="end">33.8%</text>
+<line class="halo" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+<line class="par" x1="245.0" y1="163.0" x2="245.0" y2="180.0"/>
+</g>
+</svg></div><p class="note">Each bar splits a subject group&rsquo;s gendered words into female (left) and male (right), pooled over its books with no adjustment; the line marks parity. Groups with at least 200 gendered words.</p><details class="dt"><summary>Data table: female share of gendered words by subject, Guyana</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: female share of gendered words by subject, Guyana, scrolls sideways"><table><caption class="vh">Data table: female share of gendered words by subject, Guyana</caption><thead><tr><th scope="col">Subject group</th><th scope="col">Books</th><th scope="col">Gendered words</th><th scope="col">Female share</th></tr></thead><tbody><tr><th scope="row">Maths</th><td>16</td><td>1,174</td><td>45.6%</td></tr><tr><th scope="row">Science</th><td>7</td><td>203</td><td>42.9%</td></tr><tr><th scope="row">Language</th><td>6</td><td>2,305</td><td>35.7%</td></tr><tr><th scope="row">General and Social Studies</th><td>6</td><td>604</td><td>33.8%</td></tr></tbody></table></div></details><h3>By grade</h3><div class="tscroll" tabindex="0" role="region" aria-label="Female share of gendered words by grade, Guyana"><table class="plain"><caption class="vh">Female share of gendered words by grade, Guyana</caption><thead><tr><th scope="col">Grades</th><th scope="col" class="num">Books</th><th scope="col" class="num">Gendered words</th><th scope="col" class="num">Female share</th></tr></thead><tbody><tr><th scope="row">Primary (grades 1–6)</th><td class="num">35</td><td class="num">4,286</td><td class="num">38.5%</td></tr></tbody></table></div><p class="note">The female share is female words over all gendered words in those books (nouns and pronouns such as she, mother and king), pooled, with no adjustment. National textbooks are official English student textbooks. A share is shown only for a row with at least 200 gendered words; under that, a dash.</p></section><section id="jobs" aria-labelledby="h-jobs"><h2 id="h-jobs" class="part">Jobs</h2><p class="lede">The jobs people are shown in, in Guyana&rsquo;s national textbooks. Women are 38.0% of the people shown in a job that can be matched to labour-market data, against 54.1% of the same jobs in Guyana&rsquo;s labour market (ILOSTAT): a gap of −16.1 points (95% interval −24.1 to +3.6).</p><div class="chartbox"><svg class="chart" id="tg-c-jobs" viewBox="0 0 560 110" role="img" aria-labelledby="tg-c-jobs-t tg-c-jobs-d" preserveAspectRatio="xMinYMin meet">
+<title id="tg-c-jobs-t">Women&#x27;s share of the mentions of each job, Guyana</title>
+<desc id="tg-c-jobs-d">pilot 21.4% of 14; farmer 0.0% of 12</desc>
+<text class="dl dl-f" x="0" y="14">Women and girls</text>
+<text class="axis" x="245.0" y="14" text-anchor="middle">50% parity</text>
+<text class="dl dl-m" x="490" y="14" text-anchor="end">Men and boys</text>
+<text class="axis" x="560" y="14" text-anchor="end">Female</text>
+<g class="row"><title>Pilot: 21.4% female, 14 mentions</title>
+<text class="lab" x="0" y="42">Pilot<tspan class="cnt" dx="8">14 mentions</tspan></text>
+<rect class="bf" x="0" y="48" width="105.00" height="13"/>
+<rect class="bm" x="105.00" y="48" width="385.00" height="13"/>
+<text class="val" x="560" y="59" text-anchor="end">21.4%</text>
+<line class="halo" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+<line class="par" x1="245.0" y1="46.0" x2="245.0" y2="63.0"/>
+</g>
+<g class="row"><title>Farmer: 0.0% female, 12 mentions</title>
+<text class="lab" x="0" y="81">Farmer<tspan class="cnt" dx="8">12 mentions</tspan></text>
+<rect class="bf" x="0" y="87" width="0.00" height="13"/>
+<rect class="bm" x="0.00" y="87" width="490.00" height="13"/>
+<text class="val" x="560" y="98" text-anchor="end">0.0%</text>
+<line class="halo" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+<line class="par" x1="245.0" y1="85.0" x2="245.0" y2="102.0"/>
+</g>
+</svg></div><p class="note">The 2 jobs most often mentioned with a woman or a man (at least 10 mentions each), highest female share first; each bar splits a job&rsquo;s mentions into women (left) and men (right). A mention is a job title next to a gendered word, as in the 2024 paper; only titles matched to a labour-market job group count.</p><details class="dt"><summary>Data table: mentions of each job, Guyana</summary><div class="tscroll" tabindex="0" role="region" aria-label="Data table: mentions of each job, Guyana, scrolls sideways"><table><caption class="vh">Data table: mentions of each job, Guyana</caption><thead><tr><th scope="col">Job</th><th scope="col">Women</th><th scope="col">Men</th><th scope="col">Women&#x27;s share</th></tr></thead><tbody><tr><th scope="row">Pilot</th><td>3</td><td>11</td><td>21.4%</td></tr><tr><th scope="row">Farmer</th><td>0</td><td>12</td><td>0.0%</td></tr></tbody></table></div></details></section><h2 id="pictures" class="part">Pictures</h2><p class="lede">A model looked at 20 random pages of each of Guyana&rsquo;s 8 national textbooks, in every language, and recorded each person pictured.</p><ul class="stats"><li class="stat"><span class="big">37.2%</span><p>of the people pictured are women or girls (148 people).</p></li><li class="stat n"><span class="big">0</span><p>of the 171 people pictured have a visible disability.</p></li></ul><section id="pic-roles" aria-labelledby="h-pic-roles"><h2 id="h-pic-roles">Roles</h2><p class="lede">Women and girls as a share of the people pictured in each role, Guyana.</p><div class="chartbox"><svg class="chart" id="tg-pic-roles-guy" viewBox="0 0 560 84" role="img" aria-labelledby="tg-pic-roles-guy-t tg-pic-roles-guy-d" preserveAspectRatio="xMinYMin meet">
 <title id="tg-pic-roles-guy-t">Women&#x27;s share of people pictured, by role, Guyana</title>
 <desc id="tg-pic-roles-guy-d">Students 38.5%</desc>
 <text class="dl dl-m" x="318.7" y="14" text-anchor="end">More men</text>
@@ -309,7 +374,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="axis" x="163.3" y="32" text-anchor="middle">40%</text>
 <text class="axis" x="326.7" y="32" text-anchor="middle">50%</text>
 <text class="axis" x="490.0" y="32" text-anchor="end">60%</text>
-<g class="row"><title>Children: 37.1% women, of 124 people</title>
+<g class="row"><title>Children: 37.1% girls, of 124 people</title>
 <text class="lab" x="0" y="56">Children<tspan class="cnt" dx="8">124 people</tspan></text>
 <rect class="half-m" x="0.0" y="61" width="326.7" height="12"/>
 <rect class="half-f" x="326.7" y="61" width="163.3" height="12"/>
@@ -507,7 +572,7 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
 <text class="lab" x="0" y="157">Unclear<tspan class="cnt" dx="8">65 pages</tspan></text>
 <rect class="bn" x="0" y="163" width="442.4" height="13"/>
 <text class="val" x="448.4" y="174">90.3%</text></g>
-</svg></div><p class="note">Shares of the 72 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. Guyana, 8 national textbooks, 20 random pages each (160 pages; a first look found no person on 86 of them, which were not coded further, and 72 of the 74 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once, and every disability flag was checked by eye. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: Guyana. Figures of 17 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
+</svg></div><p class="note">Shares of the 72 coded pages that have a picture; the count after each kind is its pages. Local means the model judged the people, places and dress to look like the country the book is used in; foreign, like somewhere else; unclear, that it could not tell. Guyana, 8 national textbooks, 20 random pages each (160 pages; a first look found no person on 86 of them, which were not coded further, and 72 of the 74 coded pages have a picture); second copies of a book are counted once.</p></section><p class="note">Other countries compared: <a href="../index.html#pictures">Pictures</a> on the findings page.</p><section id="how" aria-labelledby="h-how"><h2 id="h-how">How the figures are made</h2><p>The words figures count gendered nouns and pronouns (she, mother, queen; he, father, king) in each national textbook, the method of the 2024 paper below, applied to the books found since; the adjusted share comes from a regression of each book&rsquo;s female share on country, subject group, grade and book length. The pictures come from a model (Gemini 3.5 Flash-Lite) that coded 20 random pages of each national textbook, in any language, following a written coding manual (pages a first look found no person on were not coded further); second copies of a book are counted once, and every disability flag was checked by eye. Full details: <a href="../methods.html">Methods</a>. Every book, with its counts: <a href="../data.html">Data</a>.</p><h3>How to cite this page</h3><p class="cite">Center for Global Development (2026). Gender in School Textbooks: Guyana. Figures of 26 November 2026. Based on Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p></section>
 </main>
 <footer class="wrap foot"><nav class="footnav" aria-label="Pages"><a href="../index.html">Findings</a><a href="../why.html">Why it matters</a><a href="../countries.html">Countries</a><a href="../edits.html">Solutions</a><a href="../data.html">Data</a><a href="../scan.html">Scan your book</a><a href="../methods.html">Methods</a></nav><p class="cite">Crawfurd, L., Saintis-Miller, C. and Todd, R. (2024). &ldquo;Sexist textbooks: Automated analysis of gender bias in 1,255 books from 34 countries.&rdquo; <em>PLOS ONE</em> 19(10): e0310366. <a href="https://doi.org/10.1371/journal.pone.0310366">doi:10.1371/journal.pone.0310366</a>.</p><p class="note">Data: Center for Global Development, CC-BY 4.0.</p></footer>
 </div>

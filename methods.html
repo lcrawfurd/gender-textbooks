@@ -382,12 +382,17 @@ body{background:var(--paper); color:var(--ink); font-family:var(--sans); margin:
   use. Dominance stands in for agency, as in the paper.</p>
 <p><strong>The jobs they are shown in.</strong> The paper&rsquo;s 1,155 occupation titles,
   counted in sentences that mention only women or only men (the paper&rsquo;s rule). The 152
-  commonest titles, which cover 96% of the mentions, were mapped by hand to the nine ISCO-08
-  major groups; titles that are not jobs in context (student, retired), too vague (assistant,
-  agent), or mostly something else (actor, as in economic actors; writer, as in the author of a
-  passage) are left out. Women&rsquo;s share of each group&rsquo;s employment comes from ILOSTAT
-  (employment by sex and occupation, the latest year with all nine groups), for the book&rsquo;s
-  country, or the world where ILOSTAT has no figure. The mapping is in the repository
+  commonest titles, which cover 96% of the mentions, were mapped by hand to ISCO-08 groups, both
+  the nine major groups and the finer two-digit groups (health professionals apart from teaching
+  professionals, say); titles that are not jobs in context (student, retired, messenger, which
+  in these books is mostly the Prophet), too vague (assistant, agent), or mostly something else
+  (actor, as in economic actors; writer, as in the author of a passage) are left out.
+  Women&rsquo;s share of each group&rsquo;s employment comes from ILOSTAT (employment by sex and
+  occupation): the two-digit group where the book&rsquo;s country has a figure for it (its latest
+  year with women and men both counted), else the major group (the latest year with all nine);
+  the world&rsquo;s figures where ILOSTAT has none for the country. Even two-digit groups are
+  broad (a doctor and a nurse share one), so the labour market is compared with the books over
+  all jobs together, not job by job. The mapping is in the repository
   (research/stereo/lists/occupation_isco.csv).</p>
 <p><strong>Estimates.</strong> Each value pools the counts of the books it covers. Intervals
   come from 500 resamples of whole countries (books in one country are alike); a group of fewer
